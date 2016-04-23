@@ -1,0 +1,4 @@
+Amstub:          /home/am/ampackager_6.70/bin/ampestub.amplnk
+Ampetool:        /home/am/ampackager_6.70/bin/ampetool
+AmWrapperTool:   /home/am/ampackager_6.70/bin/amwrappertool
+pelock.bcl: /home/am/ampackager_6.70/temp/tmp_20110816_27750/1/pelock.bcl

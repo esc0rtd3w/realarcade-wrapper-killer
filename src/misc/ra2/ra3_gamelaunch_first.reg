@@ -1,0 +1,414 @@
+REGEDIT4
+
+[\Sandbox_Owner_DefaultBox]
+
+[\Sandbox_Owner_DefaultBox\machine]
+
+[\Sandbox_Owner_DefaultBox\machine\software]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\CLSID]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{07B65360-C445-11CE-AFDE-00AA006C14F4}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{07B65360-C445-11CE-AFDE-00AA006C14F4}\InprocServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{1767B93A-B021-44EA-920F-863C11F4F768}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{1767B93A-B021-44EA-920F-863C11F4F768}\Containers]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{1767B93A-B021-44EA-920F-863C11F4F768}\InProcServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{27354124-7F64-5B0F-8F00-5D77AFBE261E}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{27354124-7F64-5B0F-8F00-5D77AFBE261E}\InprocServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{27354124-7F64-5B0F-8F00-5D77AFBE261E}\ProgID]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{27354124-7F64-5B0F-8F00-5D77AFBE261E}\TypeLib]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{27354124-7F64-5B0F-8F00-5D77AFBE261E}\Version]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{27354124-7F64-5B0F-8F00-5D77AFBE261E}\VersionIndependentProgID]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{36f0bd14-d84d-468c-b79c-9990f3fa897f}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{36f0bd14-d84d-468c-b79c-9990f3fa897f}\InProcServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{45FD65ED-6BC2-47ae-B391-9E2B79F07C52}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{45FD65ED-6BC2-47ae-B391-9E2B79F07C52}\InProcServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{54B50739-686F-45EB-9DFF-D6A9A0FAA9AF}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{54B50739-686F-45EB-9DFF-D6A9A0FAA9AF}\InProcServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{63A4B1FC-259A-4A5B-8129-A83B8C9E6F4F}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{63A4B1FC-259A-4A5B-8129-A83B8C9E6F4F}\Implemented Categories]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{63A4B1FC-259A-4A5B-8129-A83B8C9E6F4F}\Implemented Categories\{C501EDBE-9E70-11D1-9053-00C04FD9189D}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{63A4B1FC-259A-4A5B-8129-A83B8C9E6F4F}\InprocServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{63A4B1FC-259A-4A5B-8129-A83B8C9E6F4F}\ProgID]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{63A4B1FC-259A-4A5B-8129-A83B8C9E6F4F}\Programmable]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{63A4B1FC-259A-4A5B-8129-A83B8C9E6F4F}\ToolBoxBitmap32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{63A4B1FC-259A-4A5B-8129-A83B8C9E6F4F}\VersionIndependentProgID]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{7007ACC8-3202-11D1-AAD2-00805FC1270E}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{7007ACC8-3202-11D1-AAD2-00805FC1270E}\InProcServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{7B34CEA0-C948-2A6C-7FF5-109E28D679F7}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{7B34CEA0-C948-2A6C-7FF5-109E28D679F7}\InProcServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{7B769B29-35F0-3BDC-AAE9-E99937F6CDEC}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{7B769B29-35F0-3BDC-AAE9-E99937F6CDEC}\Implemented Categories]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{7B769B29-35F0-3BDC-AAE9-E99937F6CDEC}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{7B769B29-35F0-3BDC-AAE9-E99937F6CDEC}\InprocServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{7B769B29-35F0-3BDC-AAE9-E99937F6CDEC}\InprocServer32\2.0.0.0]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{7B769B29-35F0-3BDC-AAE9-E99937F6CDEC}\ProgId]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{884e202c-217d-11da-b2a4-000e7bbb2b09}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{884e202c-217d-11da-b2a4-000e7bbb2b09}\InprocServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{884e202c-217d-11da-b2a4-000e7bbb2b09}\ProgID]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{884e202c-217d-11da-b2a4-000e7bbb2b09}\VersionIndependentProgID]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{8E959946-ABC8-58B9-C38E-25BD6D1280BD}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{8E959946-ABC8-58B9-C38E-25BD6D1280BD}\InProcServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{93AF0C51-2275-45D2-A35B-F2BA21CAED00}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{93AF0C51-2275-45D2-A35B-F2BA21CAED00}\InprocServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{A198B33C-D411-2B8C-7F24-DD16FB78C5E2}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{A198B33C-D411-2B8C-7F24-DD16FB78C5E2}\Implemented Categories]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{A198B33C-D411-2B8C-7F24-DD16FB78C5E2}\Implemented Categories\{1466537A-1B66-EA14-C7B5-BFC4AF6D5891}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{A198B33C-D411-2B8C-7F24-DD16FB78C5E2}\Implemented Categories\{15BD08B6-C914-1FE4-7AFE-AF6383C9DD92}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{A198B33C-D411-2B8C-7F24-DD16FB78C5E2}\Implemented Categories\{182D4DD2-43C1-1776-F5F5-C622173A342B}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{A198B33C-D411-2B8C-7F24-DD16FB78C5E2}\Implemented Categories\{194FD8A0-C5CC-6D07-C9A8-91E6ABEE030A}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{A198B33C-D411-2B8C-7F24-DD16FB78C5E2}\Implemented Categories\{1A0329C0-21C2-10FF-198F-A27091592936}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{A198B33C-D411-2B8C-7F24-DD16FB78C5E2}\Implemented Categories\{1B5176F0-47B3-2D53-168B-35317504B80C}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{A198B33C-D411-2B8C-7F24-DD16FB78C5E2}\Implemented Categories\{1C3D545B-07CB-36C5-E8B4-295E3382C0EF}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{A198B33C-D411-2B8C-7F24-DD16FB78C5E2}\Implemented Categories\{1D700468-8F39-6B20-2053-2AFDF6374F04}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{A198B33C-D411-2B8C-7F24-DD16FB78C5E2}\Implemented Categories\{1EDFFEDB-9213-CD3C-D44B-7389BE511E2B}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{A198B33C-D411-2B8C-7F24-DD16FB78C5E2}\Implemented Categories\{1FC617F9-52CB-402F-FC3C-D49B395D62C4}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{A198B33C-D411-2B8C-7F24-DD16FB78C5E2}\InprocServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{A198B33C-D411-2B8C-7F24-DD16FB78C5E2}\ProgID]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{A198B33C-D411-2B8C-7F24-DD16FB78C5E2}\VersionIndependentProgID]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{B05DABD9-56E5-4FDC-AFA4-8A47E91F1C9C}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{B05DABD9-56E5-4FDC-AFA4-8A47E91F1C9C}\InprocServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{B14DB1D5-2CA5-C49F-DC06-F939A0ADABF1}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{B14DB1D5-2CA5-C49F-DC06-F939A0ADABF1}\InProcServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{C03E8561-781E-49a1-8190-CE902D0B2CE7}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{C03E8561-781E-49a1-8190-CE902D0B2CE7}\InProcServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{CAFEEFAC-0013-0001-0000-ABCDEFFEDCBA}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{CAFEEFAC-0013-0001-0000-ABCDEFFEDCBA}\InprocServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{CAFEEFAC-0016-0000-0013-ABCDEFFEDCBB}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{CAFEEFAC-0016-0000-0013-ABCDEFFEDCBB}\InprocServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{D5E8041D-920F-45e9-B8FB-B1DEB82C6E5E}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{D5E8041D-920F-45e9-B8FB-B1DEB82C6E5E}\LocalServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{DBC80044-A445-435B-BC74-9C25C1C588A9}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{e5899c7c-0fc7-499e-a262-174fd692dc9f}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{e5899c7c-0fc7-499e-a262-174fd692dc9f}\InprocServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{e5899c7c-0fc7-499e-a262-174fd692dc9f}\ProgID]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{e5899c7c-0fc7-499e-a262-174fd692dc9f}\VersionIndependentProgID]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{EBB9D895-57FC-4C7B-A91F-31303F6C2879}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{EBB9D895-57FC-4C7B-A91F-31303F6C2879}\InProcServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{F22F5E05-585C-4def-8523-6555CFBC0CB3}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{F22F5E05-585C-4def-8523-6555CFBC0CB3}\InprocServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{FFC9F9AE-E87A-3252-8E25-B22423A40065}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{FFC9F9AE-E87A-3252-8E25-B22423A40065}\Implemented Categories]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{FFC9F9AE-E87A-3252-8E25-B22423A40065}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{FFC9F9AE-E87A-3252-8E25-B22423A40065}\InprocServer32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{FFC9F9AE-E87A-3252-8E25-B22423A40065}\InprocServer32\2.0.0.0]
+
+[\Sandbox_Owner_DefaultBox\machine\software\classes\clsid\{FFC9F9AE-E87A-3252-8E25-B22423A40065}\ProgId]
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft]
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\COM3]
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\ole]
+"EnableDCOM"="N"
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\ole\Eventlog]
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\Tracing]
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\Tracing\GH DreamMysteriesCOTRF_RASAPI32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\Tracing\GH DreamMysteriesCOTRF_RASMANCS]
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\Tracing\rundll32_RASAPI32]
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\Tracing\rundll32_RASMANCS]
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\Windows]
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\Windows\CurrentVersion]
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\Windows\CurrentVersion\Explorer]
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\Windows\CurrentVersion\Explorer\BitBucket]
+"NukeOnDelete"=dword:00000001
+"UseGlobalSettings"=dword:00000001
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\Windows\CurrentVersion\Internet Settings]
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\Windows\CurrentVersion\Internet Settings\5.0]
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache]
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Content]
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Cookies]
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\History]
+
+[\Sandbox_Owner_DefaultBox\machine\software\microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap]
+
+[\Sandbox_Owner_DefaultBox\machine\software\Policies]
+
+[\Sandbox_Owner_DefaultBox\machine\System]
+
+[\Sandbox_Owner_DefaultBox\machine\System\CurrentControlSet]
+
+[\Sandbox_Owner_DefaultBox\machine\System\CurrentControlSet\Control]
+
+[\Sandbox_Owner_DefaultBox\machine\System\CurrentControlSet\Control\NetworkProvider]
+
+[\Sandbox_Owner_DefaultBox\machine\System\CurrentControlSet\Control\NetworkProvider\HwOrder]
+
+[\Sandbox_Owner_DefaultBox\machine\System\CurrentControlSet\Services]
+
+[\Sandbox_Owner_DefaultBox\machine\System\CurrentControlSet\Services\WinSock2]
+
+[\Sandbox_Owner_DefaultBox\machine\System\CurrentControlSet\Services\WinSock2\Parameters]
+
+[\Sandbox_Owner_DefaultBox\machine\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5]
+
+[\Sandbox_Owner_DefaultBox\machine\System\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9]
+
+[\Sandbox_Owner_DefaultBox\user]
+
+[\Sandbox_Owner_DefaultBox\user\current]
+
+[\Sandbox_Owner_DefaultBox\user\current\software]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\AppDataLow]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\classes]
+"SymbolicLinkValue"=hex(6):5C,00,52,00,45,00,47,00,49,00,53,00,54,00,52,00,59,00,5C,00,55,00,53,00,45,00,52,00,5C,00,53,00,61,00,6E,00,64,00,62,00,6F,00,78,00,5F,00,4F,00,77,00,6E,00,65,00,72,00,5F,00,44,00,65,00,66,00,61,00,75,00,6C,00,74,00,42,00,6F,00,78,00,5C,00,75,00,73,00,65,00,72,00,5C,00,63,00,75,00,72,00,72,00,65,00,6E,00,74,00,5F,00,63,00,6C,00,61,00,73,00,73,00,65,00,73,00
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Internet Explorer]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Internet Explorer\BrowserEmulation]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Internet Explorer\BrowserEmulation\LowMic]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Internet Explorer\IETld]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Internet Explorer\IETld\LowMic]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Internet Explorer\IntelliForms]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Internet Explorer\InternetRegistry]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Internet Explorer\LowRegistry]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Internet Explorer\LowRegistry\DontShowMeThisDialogAgain]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Internet Explorer\PageSetup]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Internet Explorer\Toolbar]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Internet Explorer\Toolbar\WebBrowser]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Internet Explorer\Zoom]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Explorer]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Explorer\BitBucket]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Explorer\BitBucket\Volume]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Explorer\BitBucket\Volume\{21c6c925-16b1-11e0-9742-00e0b88eebc9}]
+"NukeOnDelete"=dword:00000001
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Explorer\BitBucket\Volume\{3b0fe526-15f2-11e0-aded-806e6f6e6963}]
+"NukeOnDelete"=dword:00000001
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Explorer\BitBucket\Volume\{65ecfcbc-1a14-11e0-9ae2-0014a5820093}]
+"NukeOnDelete"=dword:00000001
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Explorer\BitBucket\Volume\{65ecfcc0-1a14-11e0-9ae2-0014a5820093}]
+"NukeOnDelete"=dword:00000001
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Explorer\BitBucket\Volume\{c48801ac-20e0-11e0-871b-005056c00008}]
+"NukeOnDelete"=dword:00000001
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Explorer\BitBucket\Volume\{c4f8f965-15df-11e0-bcab-00e0b88eebc9}]
+"NukeOnDelete"=dword:00000001
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Explorer\BitBucket\Volume\{c4f8f969-15df-11e0-bcab-00e0b88eebc9}]
+"NukeOnDelete"=dword:00000001
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Explorer\BrowseNewProcess]
+"BrowseNewProcess"="yes"
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Explorer\LowRegistry]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Explorer\MenuOrder]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Explorer\MenuOrder\Favorites]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings]
+"GlobalUserOffline"=dword:00000000
+"ProxyEnable"=dword:00000000
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Content]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Cookies]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\DOMStore]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\feedplat]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\ietld]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012011012020110121]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\PrivacIE:]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\UserData]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\History]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\LowCache]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\LowCache\Content]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\LowCache\Cookies]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\LowCache\Extensible Cache]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\LowCache\Extensible Cache\DOMStore]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\LowCache\Extensible Cache\ietld]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\LowCache\Extensible Cache\MSHist012011010120110102]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\LowCache\Extensible Cache\PrivacIE:]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\LowCache\History]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections]
+"SavedLegacySettings"=hex:46,00,00,00,87,01,00,00,09,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,04,00,00,00,00,00,00,00,90,2D,2C,6A,6C,B8,CB,01,00,00,00,00,00,00,00,00,00,00,00,00,06,00,00,00,17,00,00,00,00,00,00,00,FE,80,00,00,00,00,00,00,65,28,92,50,42,2D,09,10,0C,00,00,00,00,00,00,00,17,00,00,00,00,00,00,00,FE,80,00,00,00,00,00,00,65,28,92,50,42,2D,09,10,0C,00,00,00,00,00,00,00,1C,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,17,00,00,00,00,00,00,00,FE,80,00,00,00,00,00,00,B8,F3,54,F0,58,06,5F,47,11,00,00,00,00,00,00,00,17,00,00,00,00,00,00,00,FE,80,00,00,00,00,00,00,B8,F3,54,F0,58,06,5F,47,11,00,00,00,00,00,00,00,17,00,00,00,00,00,00,00,FE,80,00,00,00,00,00,00,A5,4D,DA,BC,71,CE,E1,FA,13,00,00,00,00,00,00,00,1C,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,17,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,FF,FF,C0,A8,01,64,00,00,00,00,00,00,00,00,17,00,00,00,00,00,00,00,FE,80,00,00,00,00,00,00,A5,4D,DA,BC,71,CE,E1,FA,13,00,00,00,00,00,00,00,17,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,FF,FF,C0,A8,82,01,00,00,00,00,00,00,00,00,1C,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,17,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,FF,FF,C0,A8,BE,01,00,00,00,00,00,00,00,00,02,00,00,00,C0,A8,01,66,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,71,07,00,76,59,77,10,00,C4,00,35,00,F8,8D,49,02,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,02,00,00,00,C0,A8,82,01,00,00,00,00,00,00,00,00,F8,C7,25,00,30,37,2C,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,06,00,00,00,02,00,00,00,00,00,00,00,01,00,00,00,69,BE,55,6E,E6,62,65,49,95,48,49,56,1D,0E,46,A8,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,02,00,00,00,C0,A8,BE,01,00,00,00,00,00,00,00,00,69,00,6E,00,69,00,70,00,6F,00,72,00,74,00,20,00,28,00,50,00,50,00,50,00,4F,00,45,00,29,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\P3P]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\P3P\History]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\Passport]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\Passport\LowDAMap]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap]
+"UNCAsIntranet"=dword:00000000
+"AutoDetect"=dword:00000001
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4]
+
+[\Sandbox_Owner_DefaultBox\user\current\software\SandboxieAutoExec]
+@=hex:31
+
+[\Sandbox_Owner_DefaultBox\user\current_classes]
+
+[\Sandbox_Owner_DefaultBox\user\current_classes\*]
+
+[\Sandbox_Owner_DefaultBox\user\current_classes\*\shell]
+
+[\Sandbox_Owner_DefaultBox\user\current_classes\*\shell\sandbox]
+

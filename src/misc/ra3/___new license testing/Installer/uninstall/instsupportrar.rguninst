@@ -1,0 +1,3 @@
+UNINSTSCR,C:\Program Files\RealArcade\Installer\uninstall\instsupportrar.rguninst
+REGSRVR,C:\Program Files\RealArcade\Installer\CheckInst.dll
+RM,C:\Program Files\RealArcade\Installer/CheckInst.dll

@@ -1,0 +1,85 @@
+00401EA7  |. /74 14         JE SHORT 00401EBD
+
+
+
+
+
+
+right after clicking 2nd PLAY DEMO button
+
+
+004018E4  |. /0F84 12050000 JE 00401DFC
+
+
+
+
+real EXE
+
+0040B212  ê
+
+
+
+after pressing Play Demo button, breaks here:
+
+004018E4  |. /0F84 12050000 JE 00401DFC
+
+
+
+extracting EXE:
+
+004019B5  |. /74 11         JE SHORT 004019C8
+
+
+extracted EXE at 0 bytes long:
+
+004019E0  |. /0F84 5B030000 JE 00401D41
+
+
+extracted game at Full byte length:
+
+**intercept the jump here to close quietly immediately after extraction**
+
+00401A26  |. /75 0D         JNZ SHORT 00401A35
+
+
+2nd window:
+
+00401841   . /75 0A         JNZ SHORT 0040184D
+
+
+0040182E   . /74 47         JE SHORT 00401877
+
+
+
+breaks here immediately after loading window:
+
+00401857   .  E8 34080000   CALL 00402090
+
+
+actual call to the window:
+
+0040186C   .  FF15 28714000 CALL NEAR DWORD PTR DS:[<&USER32.DialogB>; \DialogBoxParamA
+
+
+
+
+aironix:
+
+0040182E  |. /74 47         JE SHORT 00401877
+
+00401FA7  |. /74 3B         JE SHORT 00401FE4
+
+00401FB7  |. /75 15         JNZ SHORT 00401FCE
+
+00401A26  |. /75 0D         JNZ SHORT 00401A35 -> JUMP to exit
+
+
+
+
+
+
+
+expired crap:
+
+0040139F  |. /7C 4A         JL SHORT 004013EB
+

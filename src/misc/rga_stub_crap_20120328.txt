@@ -1,0 +1,7 @@
+RunDll32.exe "C:\Program Files\RealArcade\Installer\bin\OCSetupHlp.dll",_OCPRD504RunOpenCandyDLL@16 5380
+
+
+.\bin\gameinstaller.exe installerMain.clf "sfx:C:\GameHouse-Installer_am-megaworldsmash_gamehouse_.exe"
+
+
+C:\Program Files\RealArcade\Installer\bin\bstrapInstall.exe

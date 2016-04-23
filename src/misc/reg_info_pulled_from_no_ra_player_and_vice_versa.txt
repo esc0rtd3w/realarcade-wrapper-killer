@@ -1,0 +1,14 @@
+Jewel Charm
+
+
+jewel charm_r1a.exe
+
+
+
+;launches game ok with no RA player installed
+pulled from clean install NO RA Player: -1462534838	<- SUCCESS
+
+
+
+;launches RA Player and not game, unless RA Player already running
+pulled from clean install WITH RA Player: -1462528448	<- NOT FOUND (if found, it bypasses RA Player)

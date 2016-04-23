@@ -1,0 +1,12 @@
+Risk:
+
+
+gameExtract:
+
+0041A079  |. /72 0D         JB SHORT 0041A088   <- FORCE EXIT
+
+
+RacNotRunning:
+
+00408454   . /0F84 15010000 JE 0040856F   <- FORCE JUMP
+

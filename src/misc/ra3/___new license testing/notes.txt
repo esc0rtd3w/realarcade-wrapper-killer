@@ -1,0 +1,1 @@
+if *.tmp and *.lcn exists, the LCN will be deleted and the TMP will be renamed to LCN

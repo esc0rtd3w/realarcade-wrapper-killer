@@ -1,0 +1,26 @@
+
+-------------------------------------------------------------------------------------
+http://games-dl2.real.com/gameconsole/realarcadev21/games/dinerdash/DRMConfigdinerdash.rdc
+
+
+This is a sample DRMConfig file. 
+action: full		always	game		none 				none
+action: minutes		pass		game		none				none
+action: date		pass		game		none				none
+
+gameid: dinerdash
+adsOn: False
+adsOnMaxMinutes: -1
+adsOffMaxMinutes: 60
+
+HMAC: WSohuGJwD+kgiidt9GiUQ9wMYLQ=
+-------------------------------------------------------------------------------------
+
+
+http://games-dl2.real.com/gameconsole/realarcadev21/en/games/dinerdash/dinerdash.xml
+
+
+
+http://games-dl.real.com/gameconsole/Bundler/stub_error.html?ID=196&error=80072ee6&file=Download.cpp&line=635&object=farmfrenzygoogle_.xml&retryOpenUrl=2&retryFileInfo=1&retryDownLoadFile=2&version=1.2.0.0
+
+

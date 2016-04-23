@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ArcadeInstaller Tps="test-cl_" Lang="en" 
+                 Src="" StoreFront="RealArcade"
+                 GameId="supertapajam" ClientType="clientless" 
+                 Country="US" Currency="USD" 
+                 RACVersion="2.6.0.333" Base="http://games-dl2.real.com/gameconsole/realarcadeclient/v2-6-0"
+                 GameBase="http://games-dl2.real.com/gameconsole/realarcadev21/games" 
+                 BitsBase="http://games-dl2.real.com/gameconsole/realarcadeclient/v2-6-0/common"
+                 ResourceBase="http://games-dl2.real.com/gameconsole/realarcadeclient/v2-6-0/common/resource/en"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                 xsi:noNamespaceSchemaLocation="..\..\..\..\..\..\..\..\GamesPlatform\RealArcadeInstaller\schema\ArcadeInstaller.xsd">
+
+    <ConditionDef Id="CheckLaunchProgram" Type="LuaBlock" Var="
+        local procMgr = luacom.CreateObject(&quot;StubbyUtil.ProcessMgr&quot;)
+        local exe = 'RealArcade-Installer_supertapajam_test-cl_.exe'
+        procMgr:Exec( exe, &quot;&quot;, false, false, &quot;&quot; )
+        return true
+    "/>
+    <Payload Target="RealArcade-Installer_supertapajam_test-cl_.exe" 
+             Src="http://gamebundles.real.com/installerExe.packages?tps=test-cl_&amp;gameid=supertapajam"
+             Run="false" NoRemove="true" Persist="true" >
+        <Payload Target="2.6.0.269.txt" Src="config.lua" >
+            <ConditionCheck Id="CheckLaunchProgram" Val="false" />
+        </Payload>
+    </Payload>
+    
+</ArcadeInstaller>

@@ -1,0 +1,22 @@
+install yes/no:
+
+Would you like RealArcade to install
+
+
+
+
+when finished installing:
+
+RealArcade needs to download the latest Game News update before it can complete installation.
+
+
+
+when finished installing2:
+
+RealArcade Game News Update
+
+
+
+too new:
+
+RealArcade Game Installer Error

@@ -1,0 +1,8 @@
+TimeStamp: 2011/08/16 13:02:31
+Ampackager version: 6.70.1098
+Amlibtool  revision: ActiveMARK[R] v6.70.1098 [ActiveMARK[R] R6.70]
+Amlibtool  capabilities: amvfs,amcrypt,amshare,amencode,amvm
+Ampetool   revision: ActiveMARK[R] v6.70.1098 [ActiveMARK[R] R6.70]
+Ampetool   capabilities: link,lock,glue,compress,help
+AmWrapperTool   revision: ActiveMARK[R] v6.70.1098 [ActiveMARK[R] R6.70]
+AmWrapperTool   capabilities: image,trace,wrap,prelink

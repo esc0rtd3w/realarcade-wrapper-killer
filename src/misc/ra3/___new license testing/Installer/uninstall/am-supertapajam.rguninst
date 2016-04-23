@@ -1,0 +1,28 @@
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-supertapajam,DisplayIcon
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-supertapajam,UninstallString
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-supertapajam,DisplayName
+UNINSTSCR,C:\Program Files\RealArcade\Installer\uninstall\am-supertapajam.rguninst
+SHORTCUT,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\GameHouse\Super Tap a Jam.lnk
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\94dc6cbfafc66d4cf2bcae256404968c,gameid
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,94dc6cbfafc66d4cf2bcae256404968c
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\94dc6cbfafc66d4cf2bcae256404968c,path
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,94dc6cbfafc66d4cf2bcae256404968c
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\94dc6cbfafc66d4cf2bcae256404968c,installation_time
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,94dc6cbfafc66d4cf2bcae256404968c
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\94dc6cbfafc66d4cf2bcae256404968c,timestamp
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,94dc6cbfafc66d4cf2bcae256404968c
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\94dc6cbfafc66d4cf2bcae256404968c,price
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,94dc6cbfafc66d4cf2bcae256404968c
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\94dc6cbfafc66d4cf2bcae256404968c,currency
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,94dc6cbfafc66d4cf2bcae256404968c
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\94dc6cbfafc66d4cf2bcae256404968c,tracking
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,94dc6cbfafc66d4cf2bcae256404968c
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\94dc6cbfafc66d4cf2bcae256404968c,affiliate
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,94dc6cbfafc66d4cf2bcae256404968c
+RM,C:\GameHouse Games\Super Tap a Jam
+RM,C:\GameHouse Games\Super Tap a Jam\am-supertapajam.rga
+RM,C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_
+RM,C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+RM,C:\Users\ESC0RT~1\AppData\Local\Temp\GameHouse\appresource\appresource.rar
+RM,C:\Users\ESC0RT~1\AppData\Local\Temp\GameHouse\checkinst.rar
+DECGAME

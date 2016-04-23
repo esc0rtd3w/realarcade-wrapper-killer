@@ -1,0 +1,14 @@
+open attempts:
+
+HKCU\Software\Classes\Software\RealNetworks\Games\340285069
+
+HKCR\Software\RealNetworks\Games\340285069
+
+HKCU\Software\Classes\340277177
+
+
+
+
+created:
+
+HKCR\340277177

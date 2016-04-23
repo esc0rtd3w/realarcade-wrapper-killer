@@ -1,0 +1,177 @@
+Memory Dump running 1Penguin100Cases
+
+
+
+ourcePassword=ggp!Pass321&gamecode=1penguin10&userGUID=A1684B051619E0A2E043C0A87FBEE0A2&type=update&sourceID=4&os=WinX&username=
+
+
+
+esc0rtd3w@http://www.gamehouse.com/offline/008ea748/saved.html.com/offline/008ea748/saved.html.6%3A22&license_ts=0&contentid=a92f37af946f85938ee5e9514f13adb1&offering=am-1penguin100cases&file=1penguin100cases.exe&sessiontime=0&userid=50d1a76fd338dabd60e275e6026a09d05b17da0d&adclicks=0&maximumusagetime=0%2f3600&totalusage=0&executions=1.s=1.0&totalusage=0&executions=1.s=1
+
+
+
+1Penguin100Cases_RASAPI32.......................................1.P.e.n.g.u.i.n.1.0.0.C.a.s.e.s._.R.A.S.A.P.I.3.2
+
+
+
+<MR5..?.c.u.r.r.e.n.t.t.i.m.e.=.2.0.1.1.%.2.f.0.5.%.2.f.3.0.@.0.1.%.3.A.2.6.%.3.A.2.2.&.l.i.c.e.n.s.e._.t.s.=.0.&.c.o.n.t.e.n.t.i.d.=.a.9.2.f.3.7.a.f.9.4.6.f.8.5.9.3.8.e.e.5.e.9.5.1.4.f.1.3.a.d.b.1.&.o.f.f.e.r.i.n.g.=.a.m.-.1.p.e.n.g.u.i.n.1.0.0.c.a.s.e.s.&.f.i.l.e.=.1.p.e.n.g.u.i.n.1.0.0.c.a.s.e.s...e.x.e.&.s.e.s.s.i.o.n.t.i.m.e.=.0.&.u.s.e.r.i.d.=.5.0.d.1.a.7.6.f.d.3.3.8.d.a.b.d.6.0.e.2.7.5.e.6.0.2.6.a.0.9.d.0.5.b.1.7.d.a.0.d.&.a.d.c.l.i.c.k.s.=.0.&.m.a.x.i.m.u.m.u.s.a.g.e.t.i.m.e.=.0.%.2.f.3.6.0.0.&.t.o.t.a.l.u.s.a.g.e.=.0.&.e.x.e.c.u.t.i.o.n.s.=.1...........=;05..PP0...2.www.gamehouse.com/trk/track?gameid=am-1penguin100cases&contentid=a92f37af946f85938ee5e9514f13adb1&offering=am-1penguin100cases&sourcePassword=ggp!Pass321&gamecode=1penguin10&userGUID=A1684B051619E0A2E043C0A87FBEE0A2&type=update&sourceID=4&os=WinX&username=esc0rtd3w@gmail.com&sessionID=29B56F3D96453FCCA0636A98C2D0E5D5.realm-app01........................................<7G5
+
+
+
+
+
+=|.5....R..W1./track?gameid=am-1penguin100cases&contentid=a92f37af946f85938ee5e9514f13adb1&offering=am-1penguin100cases&sourcePassword=ggp!Pass321&gamecode=1penguin10&userGUID=A1684B051619E0A2E043C0A87FBEE0A2&type=update&sourceID=4&os=WinX&username=esc0rtd3w@gmail.com&sessionID=29B56F3D96453FCCA0636A98C2D0E5D5.realm-app01 HTTP/1.1..User-Agent: Internet HTTP Request..Host: www.gamehouse.com..Cache-Control: no-cache..Cookie: DiscKnown=1; site.channel=gamehouse; funpass_login=esc0rtd3w@gmail.com; funpass_password=%5E%BDX%2134%21%B5n%3B61%93%17%93; NSC_hi-sfbmn-443-dc=ffffffffaf16e23445525d5f4f58455e445a4a42378b; NSC_hi-usbdl-80-dc=ffffffffaf16e32745525d5f4f58455e445a4a423660; NSC_xxx-hbnfipvtf=ffffffffaf16e33f45525d5f4f58455e445a4a423660; s_pers=%20s_vnum%3D1464385085911%2526vn%253D1%7C1464385085911%3B%20s_lastvisit%3D1306705085919%7C1401313085919%3B%20s_nr%3D1306705183939%7C1464385183939%3B%20s_invisit%3Dtrue%7C1306706983967%3B.............4..5....3...6.........+..t.....^h.p..K.N.5oH./
+
+
+
+
+
+8.5...={.5....2.XL2./track?gameid=am-1penguin100cases&contentid=a92f37af946f85938ee5e9514f13adb1&offering=am-1penguin100cases&sourcePassword=ggp!Pass321&gamecode=1penguin10&userGUID=A1684B051619E0A2E043C0A87FBEE0A2&type=update&sourceID=4&os=WinX&username=esc0rtd3w@gmail.com&sessionID=29B56F3D96453FCCA0636A98C2D0E5D5.realm-app01 HTTP/1.1..User-Agent: Internet HTTP Request..Host: www.gamehouse.com..Cache-Control: no-cache..Cookie: DiscKnown=1; site.channel=gamehouse; funpass_login=esc0rtd3w@gmail.com; funpass_password=%5E%BDX%2134%21%B5n%3B61%93%17%93; NSC_hi-sfbmn-443-dc=ffffffffaf16e23445525d5f4f58455e445a4a42378b; NSC_xxx-hbnfipvtf=ffffffffaf16e33f45525d5f4f58455e445a4a423660; s_pers=%20s_vnum%3D1464385085911%2526vn%253D1%7C1464385085911%3B%20s_lastvisit%3D1306705085919%7C1401313085919%3B%20s_nr%3D1306705183939%7C1464385183939%3B%20s_invisit%3Dtrue%7C1306706983967%3B
+
+
+
+
+
+
+s%26file%3D1penguin100ca............ssiontime%3D0%26userid%3D50d1a76fd33........................7da0d%26....icks.'.......'..0u...'..0u......2F3600%2....alus............................X.8...`............v........HCon................................................................................................use&........................................................................................................www.gamehouse.com%2F..fl........8ea7..............%3......................................................................................................................................................pe
+
+
+
+
+
+r.a.r...........................<Pw7..l.o.g.i.n. .(.s.u.b.s.c.r.i.p.t.i.o.n.f.o.r.m.,. .'.f.u.n.p.a.s.s.'.).;...h.t.t.p.:././.w.w.w...g.a.m.e.h.o.u.s.e...c.o.m./.o.f.f.l.i.n.e./.0.0.8.e.a.7.4.8./.o.p.e.n...h.t.m.l.?.c.u.r.r.e.n.t.t.i.m.e.=.2.0.1.1./.0.5./.3.0.@.0.1.:.2.6.:.2.2.&.l.i.c.e.n.s.e._.t.s.=.0.&.c.o.n.t.e.n.t.i.d.=.a.9.2.f.3.7.a.f.9.4.6.f.8.5.9.3.8.e.e.5.e.9.5.1.4.f.1.3.a.d.b.1.&.o.f.f.e.r.i.n.g.=.a.m.-.1.p.e.n.g.u.i.n.1.0.0.c.a.s.e.s.&.f.i.l.e.=.1.p.e.n.g.u.i.n.1.0.0.c.a.s.e.s...e.x.e.&.s.e.s.s.i.o.n.t.i.m.e.=.0.&.u.s.e.r.i.d.=.5.0.d.1.a.7.6.f.d.3.3.8.d.a.b.d.6.0.e.2.7.5.e.6.0.2.6.a.0.9.d.0.5.b.1.7.d.a.0.d.&.a.d.c.l.i.c.k.s.=.0.&.m.a.x.i.m.u.m.u.s.a.g.e.t.i.m.e.=.0./.3.6.0.0.&.t.o.t.a.l.u.s.a.g.e.=.0.&.e.x.e.c.u.t.i.o.n.s.=.1.......=%-5....2.8.6. http://www.gamehouse.com/offline/008ea748/Connect.amscr?currenttime=2011%2f05%2f30@01%3A26%3A22&license_ts=0&contentid=a92f37af946f85938ee5e9514f13adb1&offering=am-1penguin100cases&file=1penguin100cases.exe&sessiontime=0&userid=50d1a76fd338dabd60e275e6026a09d05b17da0d&adclicks=0&maximumusagetime=0%2f3600&totalusage=0&executions=1........[5...69...4.].<.Y5
+
+
+
+
+w.t....W......./.i.m.a.g.e.s./.g.e.n.e.r.i.c.s./.l.o.g.i.n._.b.u.t.t.o.n...g.i.f......."w.t.......[.......?.................................................................c:......c:...................=.w7..X.8...R.rs=currenttime%3D2011%2F05%2F30@01%3A26%3A22%26license_ts%3D0%26contentid%3Da92f37af946f85938ee5e9514f13adb1%26offering%3Dam-1penguin100cases%26file%3D1penguin100cases.exe%26sessiontime%3D0%26userid%3D50d1a76fd338dabd60e275e6026a09d05b17da0d%26adclicks%3D0%26maximumusagetime%3D0%2F3600%26totalusage%3D0%26executions%3D1&amversion=6.62&contentid=a92f37af946f85938ee5e9514f13adb1&timestamp=0&offering=am-1penguin100cases&mv_pc=gamehouse&affiliate=gamehouse&tracking=undefined&price=undefined&currency=undefined&downloadtimestamp=undefined&referrer=http%3A%2F%2Fwww.gamehouse.com%2Foffline%2F008ea748%2Fopen.html%3Fcurrenttime%3D2011%2F05%2F30@01%3A26%3A22%26license_ts%3D0%26contentid%3Da92f37af946f85938ee5e9514f13adb1%26offering%3Dam-1penguin100cases%26file%3D1penguin100cases.exe%26sessiontime%3D0%26userid%3D50d1a76fd338dabd60e275e6026a09d05b17da0d%26adclicks%3D0%26maximumusagetime%3D0%2F3600%26totalusage%3D0%26executions%3D1&product_name=am-1penguin100cases&lang=&reserved_machineid=%28+1+%3D%3E+%221df0e6aec3136a2342770ae1a8601c6166d4d2b5%22%2C+2+%3D%3E+%22d332cf2840d13a7567db5da05dcff0cfae66ff1e%22%2C+3+%3D%3E+%22aa710eb6bea033d653d5f28155f4825ac0c6a10f%22%2C+4+%3D%3E+%22a969ee411b34c40b80be304d6c19a67c7a214ab1%22%2C+65536+%3D%3E+%228ef3ce5fff1880b000805c489550844ad1426dcd%22%2C+%29&reserved_client_callback=http%3A%2F%2Fwww.gamehouse.com%2Foffline%2F008ea748%2FLicenseSaver.amscr&url=https%3A%2F%2Fwww.gamehouse.com%2Flm%2Ffplogin&connectPage=connect.html&connectingPage=connecting.html&userid=esc0rtd3w@gmail.com&remember=on&pwd=T3chpass1947.........
+
+
+
+
+
+4.W5..p.:...9..........G.|....=.tps://www.gamehouse.com/trk/track?gameid=am-1penguin100cases&contentid=a92f37af946f85938ee5e9514f13adb1&offering=am-1penguin100cases&sourcePassword=ggp!Pass321&gamecode=1penguin10&userGUID=A1684B051619E0A2E043C0A87FBEE0A2&type=update&sourceID=4&os=WinX&username=esc0rtd3w@gmail.com&sessionID=29B56F3D96453FCCA0636A98C2D0E5D5.realm-app01..............3G.|RO..@7.v
+
+
+
+
+ROm[..:...:......km[..:...:........[..:...:...:.........U.][....d...<3c[}.][^G.|......tps://www.gamehouse.com/trk/track?gameid=am-1penguin100cases&contentid=a92f37af946f85938ee5e9514f13adb1&offering=am-1penguin100cases&sourcePassword=ggp!Pass321&gamecode=1penguin10&userGUID=A1684B051619E0A2E043C0A87FBEE0A2&type=update&sourceID=4&os=WinX&username=esc0rtd3w@gmail.com&sessionID=29B56F3D96453FCCA0636A98C2D0E5D5.realm-app01.[5ua[<3c[...[.G.|K...@7.v.....@..............`./v..:...:....e..........9...:...........3.............D....h;................................."...............ourc........d=gg........1&ga....#k.............. .:. .:.............................D.:.D.:.....P.:.P.:.....................ame=............ail...:...:.....D=29..:...:.....CCA0..:...:...:.........-app....(...._.[...[.G.|....\.........................................................................................................................................................................e.n.-.U.S.....................................................................................................................................................................D..[...[.G.|.\..@7.v.....@..............`./vT.:.T.:.............0.:.x.:.........p.1..................n4.........................P....... ...................................R.............................:...:...............................:...:..... .:. .:.........................................P.:.P.:.........`.:.`.:.........p.:.p.:...:.................d............F.|......tps://www.gamehouse.com/trk/track?gameid=am-1penguin100cases&contentid=a92f37af946f85938ee5e9514f13adb1&offering=am-1penguin100cases&sourcePassword=ggp!Pass321&gamecode=1penguin10&userGUID=A1684B051619E0A2E043C0A87FBEE0A2&type=update&sourceID=4&os=WinX&username=esc0rtd3w@gmail.com&sessionID=29B56F3D96453FCCA0636A98C2D0E5D5.realm-app01..(!..........AF.|....j.tps://www.gamehouse.com/trk/track?gameid=am-1penguin100cases&contentid=a92f37af946f85938ee5e9514f13adb1&offering=am-1penguin100cases&sourcePassword=ggp!Pass321&gamecode=1penguin10&userGUID=A1684B051619E0A2E043C0A87FBEE0A2&type=update&sourceID=4&os=WinX&username=esc0rtd3w@gmail.com&sessionID=29B56F3D96453FCCA0636A98C2D0E5D5.realm-app01.[j..[..h[.jm[lF.|RO.....[_..[...[.km[:..[S..[D..[...[...[.\~[N..[..j[K.a[U.][T.][i.][<3c[}.][...[...[(..[ROm[...[G..[...[...[...[P..[...[..m[K.a[..`[.ca[_..[...[5ua[<3c[...[5ua[K.a[...[a3i[..{[..9...............Y[.F.|....`./...i[P.p[D.k[..h[...[._.[...[..h[..a[4..[...[.\~[E.h[.\~[j..[..h[.jm[ROm[ROm[.m.[_..[...[.km[:..[S..[D..[...[...[.\~[N..[..j[K.a[U.][T.][i.][<3c[}.][.F.|.......[ROm[...[G..[...[...[...[P..[...[..m[K.a[..`[.ca[_..[...[5ua[<3c[...[5ua[K.a[...[a3i[..{[..9.........@........F.|.......[...............[...[...[.....E.|.%...... .......,...............................$...H
+
+
+
+
+
+EDIA...t...... .p..... ...........]"...t....&.).p...PT)..%........]"....T......O....C:\ProgramData\Trymedia\licenses/a92f37af946f85938ee5e9514f13adb1.sublcn..K.v.h;...OA...C:\URA\installers\rga\am\tmp\am-1penguin100cases\1Penguin100Cases.exe..............^A...8... .g..............................rogramData......................rymedia.s.......................icenses.........................w...............................mp.............................S.....g........OQ...C:\ProgramData\Trymedia\licenses/a92f37af946f85938ee5e9514f13adb1.sublcn.....
+
+
+
+
+
+URY...?.+..-?...t...........89....q9....*q....9...C..`.G................!..C.q*q..s7....t.r..https://www.gamehouse.com/trk/track?gameid=am-1penguin100cases.....t......h.s.+l..l..Q!.'.@.ns1Z3...-.[}.r..@.ns1Z...[}.r....1s.....}.u7.
+
+
+
+
+
+p..........k\.........g.www.gamehouse.com/trk/track?gameid=am-1penguin100cases&contentid=a92f37af946f85938ee5e9514f13adb1&offering=am-1penguin100cases&sourcePassword=ggp!Pass321&gamecode=1penguin10&userGUID=A1684B051619E0A2E043C0A87FBEE0A2&type=update&sourceID=4&os=WinX&username=esc0rtd3w@gmail.com&sessionID=29B56F3D96453FCCA0636A98C2D0E5D5.realm-app01....1.....f.....g........Md...................d..t........0.........0..;.........t....ssB.0.+}.2sB.0..AqwL0......t............TH..-W../...*q.....t
+
+
+
+
+
+
+@..t........4.|.,.......e.%6..cr........G..t......ic..../Pool$Contai...............t....z.ygAXygAXygAXygAXygAXygAMI........t......ic..../Pool$Contai...............t......ic..../Pool$TimeTr...............t......B......e..s.B......e..?..........t.......................................t......ic.. ./Pool$TimeTr...............t......ic..!./License...................t......AmLicenseLast10Minutes=..........t......AmLicenseLast5Minutes=...........t......IIIXygAXygAXygAXygAXygAMI........t......ic.h!./Pool$OneTim...............t......ameid=am-1penguin100cases........t......ic.:"./Pool$OneTim...............t......ffering=am-1penguin100cases......t.......z..R..Z/..T-7...z..R..X7........t.........89...*q.9.+...Rc....*q........t.........#.)..6t.4.N..d*...............t.......^../.....B.@..G.5...............t.......0..>...Ieg......................t......ite/LicenseSaver.amscr...........t......7.X.........>2.N.U...............t......ite/error.html.................
+
+
+
+
+
+
+
+..t....%.yclass.java.io.encoding_scheme_alias.UTF-8....T..t....,.yclass.java.io.encoding_scheme_alias.utf-8....M..t....3....Q....1YC!..G......./..G..%7GB.)CG...S7.....B..t....:.......`...........(...l.......8...h...........;..t....A.......>..................A..).......2...4?....0..t....H...............................................)..t.........N...N......................m.......G..........t.........K..0O.......ool$Container...........C......'..t.........P...K.......ooks...................HD.........t.........N...Q.......ool$TimeTrial..........pD.........t....O.!..sB.U1YsB.U1YB..}.....1sB.U....s.}..q..........t....]....P...K.......ool.....................D.........t....r.%..)......q..*........%...q@.3s*T.}.E.q..........t....y....N...O.......icense..................E.........t....k...0O...K.......ool$OneTimePop..........E.........t......tiveMARK[R] v6.62.966 [ActiveMARK[R] R6.62]......t......ontentid=a92f37af946f85938ee5e9514f13adb1........t............D8..!...RZ...!..9.RZ.}......R.....9}..7....t.......zB.RB.Z...sB.zB.R*e.Zs}...sB..T*..G}.m.?
+
+
+
+
+
+
+B.M.p.....M.X. ...B....M....p.!................t......-1penguin100cases........t......ublisher=gamehouse..@....t......nstallation_ts=..........t......xtendedtrial=1......k....t......aximumusagetime=.........t......xpirationdays=......;....t......xpirationdate=...........t......xpirationuses=......a....t......stallation_time..........t....".xpiration.html:A]...O....t....&.oaccess.html:A]..........t....*.nternalerror.html:A].....t......ngamead.html:A]..........t....2.sc}.s/..1+tQ1..ttQ1q-....t....6.8.b.u.x.........a.x......t....:....}..89...T-!..9X..7....t...
+
+
+
+
+
+
+"1Penguin100Cases.exe" "/content/raw" "0[1]"7..
+
+
+
+
+
+.9RY}...../..9RY7...R9........T...!W....t.n..29B56F3D96453FCCA0636A98C2D0E5D5.realm-app01.O.....t1q..&contentid=a92f37af946f85938ee5e9514f13adb1........t.9..{B0DBFBC1-1AEF-5B01-8E41-5B1CA9C3DCF1}...cHq9}.....tB...........)8..!...RZ...!..9.RZ.}.$....R.....9}..7....t....ActiveMARK[R] v6.62.966 [ActiveMARK[R] R6.62]......tB...`.!.@.!..Zh.....License...&...s...........&....7...t}.....%..)......q..*........%...q@.3s*T.}.E.q...?.j....t....@.!...!.@.!.....Hooks...1...............0.&....7...t....T$}../.&T$}../..sB..T$T$T*T!sB.|B..sB..}...?.O.....tB.....\ProgramData\Trymedia\licenses\.ublcn.f946f85....t.......................................................t....`.!...!..Yh.85938ee5e9514f13adb1.sublcn...gi.......t............>..................A..).......2...4?..i....t....p.&...&...&.<.&.P.j..vj..{j...j...j.X.h...h...h....t....s....QsB..1YC!..GB...}."/..GB.%7GB.)CG...S78.!W7"..t....tryclass.java.io.encoding_scheme_alias.utf-8.+?.+..t....tryclass.java.io.encoding_scheme_alias.UTF-8....0..t..............................................
+
+
+
+
+
+
+.E...O.....!........./content/raw................`..t....C:\URA\installers\rga\am\tmp\am-1penguin100cases\1Penguin100Cases.exe.RY..H.Q`z/m..ts*....\ProgramData\Trymedia\licenses\a92f37af946f85938ee5e9514f13adb1.sublcn.f......v..t.m..{.\programdata\trymedia\licenses\a92f37af946f85938ee5e9514f13adb1.sublcn.f.db1.>...t.(....\ProgramData\Trymedia\licenses/a92f37af946f85938ee5e9514f13adb1.tmp1.n.f..Me.....t....O.\Px.'.......h.X.....'...'...'...'.p.h.PN)...h..i....h..
+
+
+
+
+
+
+.t29150......ug......b201632...t.I........EA42EE3223Cpe...b45016218........b20200602........h655076942........r88501...tZ.....02472584...u10968...PI...p9254358...m201795712...d436115334...d977855318...t46...t98....158250...g841940...e2024968...PX8gA...s29404...o378524...XygA...am-1penguin100...ts......p897750...gamehouse..#...t900358...0..&...c784812.. a92f37af946f85938ee5e9514...tdb.......p3814.....,...c21487276...a43465440...k2061525852...PXygA...e824200...o3602...t.e....24...p9065734...e4102152...n9057802...p9028854...g420050452...i421372448...e19...t88....42762296...e420918072...a820704...s831863516...s500194012...h43303462...www.gaD..tus....m..B...d1972558...d4177742...p915038...PB...e177544...PPB..._394820..-ActiveMARK[R] v6.62.966 [ActiveM...rJ.... !.X.$...
+
+
+
+
+MC...p.h..'k.........p..}' ..................................w..}_P..p.&...&...&.<.&...&...j...j.t();z..}ur../..................................}me.....|....h.&...'........R...........}rl..>.tm..(. <HEAD><TITL4...?... lic...}ic............'...'.....O}.$...........}yp..................... .. .."?q...?...}+c..YXkgAPXkgAPXkgAXkgAXygAIMV.q..7i...}ge..p.&...&...&.<.&...&..T)..X). ])....}'h..p.&...&...&.<.&...&.x.)...)...)....}co..s..+s.e."s9e..sGe.-s4.e..?.........}ct..4..................................}ag..YXygAXygAXygAXygAXygAXygAMI.ersi...}} ....ersion..txt.Container..n = "ht...}//../site/connecting.html.nse";.  }....}nc..W.ic..j./License.htm........ormO...}t,..--AmLicenseLast10Minutes=.) {.  ...}me..--AmLicenseLast5Minutes=.en' nam...}ar..YIIIIXygAXygAXygAXygAXygAMI.");....}cu..f..w..g.("<input typNG..OG..n' n...}'r..&offering=am-1penguin100cases.);...}M_.........8.......C.......cY9G...7e...}_P.....|..7..?/..T$7...|..7..=7ectPa...}{....Q1-tQsc}.X/..1+tQ1..YtQ1qype='h...}n'.......89...*q.9.+...Rc....*qtryme...}co....ic.eh./Pool$TimeTr........nt.w...}("..s.B......e..s.B......e..?connect...}' .................................f...}nn....ic..g./Pool$TimeTr........rite...}np....ic..g./Pool$OneTim........ingP...} v....icense/Pool$Container..);.    ...}  ....ic..g./Pool$Contai........l_Pr...}s(....icense/Pool$Container..t.metho...}'p....icense/Pool$Container.bject.ac...} =....tps://b.trymedia.com/sr/relice!..};.....}.function AM_Init_Csc(formObj$..} {....ocument.write("<input type='hi+..}' ....='parameters' value='"+strquer...}>".... AM_Internal_Prepare_Post();. 5..}mO....t.action = "https://b.trymedia8..}/s....c";.}.function AM_Init_GetBnDL?..}se....mObject, connectPage, connectiB..}ge....  document.write("<input type=I..}de....ame='parameters' value='"+strqL..}+"....;.  AM_Internal_Prepare_Post()S..}AM....ernal_Prepare_Purchase();.  ifV..}nn....age) {.    document.write("<in]..}ty....hidden' name='url' value='http`..}b.....edia.com/sr/get_bbyt_license'>g..}  ....cument.write("<input type='hidden' name='connectPage' ...xJ....'...O..t.!.........|.'.....@.h.@.i.......h...........'.H.'. .'.H...|.'../~. ...$...........t.....'. .?.................................h.....'.H.'...'...'.|.'.....|.'..... .......P................i)...)..F)...................'...'.^..\..'...'.|.'...'.H.'...'. .'.....`.......^.e|..^bH2..|.'.......\z.kx.`...x=k.....:...............P.......p&..................`.....m.....3.....'.H.'...'...fP..'.|.'...'.....|.'...'.H.'....&.n..|.'...'...'.......'...'.H.'...'...'.....|.'.(...:.m...........'...'...'...'...'.|.'...'.....|.'.\&..`.....h.....B.....'...'...'.........................|.'.......M.\Q..p.N.lx....S.@...`.M.4^..pyQ......yL.....`jL..0....M.X...0,R......,L.T#....L.....@xL.LW..@uM..#...;N.dO...NL.$7....N.Lf...BL.Lf...BL..O....K...'...'.H.'.|.'.......'...'.tu..|.'.Dj....h...O.v.hZ$..............BDj...i..@.O...........}{e....0..Dj....h...N...F.....tm...Fk...<.Dj....h...N..4.%.I...t$#ns<..5..Dj....h...Q.Y..I}......V..P...7.Dj....h...M.*...'...lv.<39;1..$.Dj....h..]L..5...._.n;40.....@..Dj....h. ;N..:[.33B.....u.l4.k.UDj....h. .N.\.E..C.)C...o]...r..Dj..............v~cys]..1^.I....Dj.................
+
+
+
+
+
+............................772..E...-.....!.P.j.........X..t22..&totalusage=.IPI]..tgA..&firstusage=.200^..t....&startdate=...oh#..t=...&resumed=1...qj.$..tIM..&executions=...f)..tYX..r1934098.gA.ig..*..t.a..YPBIPIMZ...YPBMX/..t...._1945892.08!...Y0..t.i..onetimepop....m.5..t...._46992788.PB.h.q6..tj...o1982308..d43345;..t.Y..Xp98330494A....Y<..tA...p98330494...|.z....t....OneTimePop...|.....te...affiliate..|.......tXz..currency.....s42...t4...tracking.A...pf....t..../content/info......tXy.._3046140...........th...s2856999420........tqg.._216155084..XygA...t....YPBMX5gA.4..if.....t....YX6gAMX5gA.........tII..YIJMX5gA......i....t...._7368844..!........t...._19615884..........t....userGUID..MI.......t....gamecode.MXugA.....t....1penguin10.........t....sessionID..........t'...username...........t....sourceID...........t....sourcePassword.....t....ggp!Pass321........t....timestamp./....
+
+
+
+
+tryclass.cpu.endian........t....p.&...&...&.<.&...&........t...........V......T....W?.h....t....p.&...&...&.<.&...&. .V....t..............Q1...1.Q1q.sB....t....V.MI=.F.I.......'.<.I......t....YIPIPIPIPIXygAMI...8.gA....tB...YIIXygAXygAXygAXygAMI.V....t....www.gamehouse.com..ygA.....t....--AmLicenseReset=..........t....--AmLicenseLastMinute=.....t....Client Version: ..PC....@..t....AMCLIENT_VERSION..ll.gA.D..t.....License Version: .XygA.H..t....--AmTriggerPurchase.ygA.L..t....errorcode=201&file=.e.A.P..t....errorcode=202&file=.kgA.T..t....errorcode=203&file=.....X..t....YXygAXygAXygAXygAMI.....\..t........9.@.C...............`..t......$......@.3s.TA}.E.q.q.d..t....S..$..8...w..3....?1....h..t....am-1penguin100cases.....l..t....&installation_ts=.05.!..p..t....&extendedtrial=1..07....t..t....&maximumusagetime=.9....x..t....&expirationdays=..BIIMV.|..t....&expirationdate=..04.......t....&expirationuses=..zgAMV....t....installation_time...q4.....t....esc0rtd3w@gmail.com.84.....t........b.u.x.........a.x......t....sB...}..89...T$!..9X..7....t....................*q.q.......t.....Q!...1Z/...q...1.....*q...t........................?... ..t....YXp98330494AX8fAMV.gAMI.$..t....QOd.....H...............(..t.....@`.....H......
+
+
+
+
+URL ..............),.............x..............`...h...................I........>Y+.........>X+........https://www.gamehouse.com/lm/fplogin626be7a8....fplogin626be7a8[1].txt..HTTP/1.0 200 OK..Content-Type: TEXT/HTML;charset=UTF-8....~U:esc0rtd3w..........URL .............{..............................`...h...........A.......g........>.+.........>.+........https://www.gamehouse.com/trk/track?gameid=am-1penguin100cases&contentid=a92f37af946f85938ee5e9514f13adb1&offering=am-1penguin100cases&sourcePassword=ggp!Pass321&gamecode=1penguin10&userGUID=A1684B051619E0A2E043C0A87FBEE0A2&type=update&sourceID=4&os=WinX&username=esc0rtd3w@gmail.com&sessionID=29B56F3D96453FCCA0636A98C2D0E5D5.realm-app01..track[1].txt....HTTP/1.1 200 OK..Transfer-Encoding: chunked..Content-Type: text/plain; charset=UTF-8....~U:esc0rtd3w................................................................................URL ............}e..............................`...h...........A.......g........>.,.........>.,........https://www.gamehouse.com/trk/track?gameid=am-1penguin100cases&contentid=a92f37af946f85938ee5e9514f13adb1&offering=am-1penguin100cases&sourcePassword=ggp!Pass321&gamecode=1penguin10&userGUID=A1684B051619E0A2E043C0A87FBEE0A2&type=update&sourceID=4&os=WinX&username=esc0rtd3w@gmail.com&sessionID=29B56F3D96453FCCA0636A98C2D0E5D5.realm-app01..track[1].txt....HTTP/1.1 200 OK..Transfer-Encoding: chunked..Content-Type: text/plain; charset=UTF-8....~U:esc0rtd3w................................
+
+
+
+
+URL ....0..5I......5I....>8.....................`...h............. .....d........>8.....................Visited: esc0rtd3w@http://www.gamehouse.com/offline/0067f538/Connect.amscr.................................@0...'......... ........................Bwww.gamehouse.com
+
+
+
+Visited: esc0rtd3w@http://www.gamehouse.com/offline/008ea748/Connect.amscr?currenttime=2011%2f05%2f30@01%3A26%3A22&license_ts=0&contentid=a92f37af946f85938ee5e9514f13adb1&offering=am-1penguin100cases&file=1penguin100cases.exe&sessiontime=0&userid=50d1a76fd338dabd60e275e6026a09d05b17da0d&adclicks=0&maximumusagetime=0%2f3600&totalusage=0&executions=1...................
+
+
+
+
+Visited: esc0rtd3w@http://www.gamehouse.com/offline/008ea748/Connect.amscr?currenttime=2011%2f05%2f30@01%3A26%3A22&license_ts=0&contentid=a92f37af946f85938ee5e9514f13adb1&offering=am-1penguin100cases&file=1penguin100cases.exe&sessiontime=0&userid=50d1a76fd338dabd60e275e6026a09d05b17da0d&adclicks=0&maximumusagetime=0%2f3600&totalusage=0&executions=1......................h.t.t.p.:././.w.w.w...g.a.m.e.h.o.u.s.e...c.o.m./.o.f.f.l.i.n.e./.0.0.8.e.a.7.4.8./.C.o.n.n.e.c.t...a.m.s.c.r.?.c.u.r.r.e.n.t.t.i.m.e.=.2.0.1.1.%.2.f.0.5.%.2.f.3.0.@.0.1.%.3.A.2.6.%.3.A.2.2.&.l.i.c.e.n.s.e._.t.s.=.0.&.c.o.n.t.e.n.t.i.d.=.a.9.2.f.3.7.a.f.9.4.6.f.8.5.9.3.8.e.e.5.e.9.5.1.4.f.1.3.a.d.b.1.&.o.f.f.e.r.i.n.g.=.a.m.-.1.p.e.n.g.u.i.n.1.0.0.c.a.s.e.s.&.f.i.l.e.=.1.p.e.n.g.u.i.n.1.0.0.c.a.s.e.s...e.x.e.&.s.e.s.s.i.o.n.t.i.m.e.=.0.&.u.s.e.r.i.d.=.5.0.d.1.a.7.6.f.d.3.3.8.d.a.b.d.6.0.e.2.7.5.e.6.0.2.6.a.0.9.d......................@....h......... ........................Bwww.gamehouse.com...............................................................................2&jsv=r20110506&saldr=1&correlator=1306285793158&frm=0&adk=2013675114&ga_vid=241568763.1306285793&ga_sid=1306285793&ga_hid=789141867&ga_fc=0&u_tz=-240&u_his=2&u_java=1&u_h=768&u_w=1024&u_ah=768&u_aw=1024&u_cd=32&u_nplug=0&u_nmime=0&biw=735&bih=421&fu=0&ifi=1&dtd=15.........................
+
+
+
+
+Visited: esc0rtd3w@http://www.gamehouse.com/offline/008ea748/open.html?currenttime=2011/05/30@01:26:22&license_ts=0&contentid=a92f37af946f85938ee5e9514f13adb1&offering=am-1penguin100cases&file=1penguin100cases.exe&sessiontime=0&userid=50d1a76fd338dabd60e275e6026a09d05b17da0d&adclicks=0&maximumusagetime=0/3600&totalusage=0&executions=1........................h.t.t.p.:././.w.w.w...g.a.m.e.h.o.u.s.e...c.o.m./.o.f.f.l.i.n.e./.0.0.8.e.a.7.4.8./.o.p.e.n...h.t.m.l.?.c.u.r.r.e.n.t.t.i.m.e.=.2.0.1.1./.0.5./.3.0.@.0.1.:.2.6.:.2.2.&.l.i.c.e.n.s.e._.t.s.=.0.&.c.o.n.t.e.n.t.i.d.=.a.9.2.f.3.7.a.f.9.4.6.f.8.5.9.3.8.e.e.5.e.9.5.1.4.f.1.3.a.d.b.1.&.o.f.f.e.r.i.n.g.=.a.m.-.1.p.e.n.g.u.i.n.1.0.0.c.a.s.e.s.&.f.i.l.e.=.1.p.e.n.g.u.i.n.1.0.0.c.a.s.e.s...e.x.e.&.s.e.s.s.i.o.n.t.i.m.e.=.0.&.u.s.e.r.i.d.=.5.0.d.1.a.7.6.f.d.3.3.8.d.a.b.d.6.0.e.2.7.5.e.6.0.2.6.a.0.9.d.0.5.b.1.7.d.a.0.d.&.a.d......................@.&..h......... ........................Bwww.gamehouse.com..
+
+
+
+
+
+<.=..5...cS...R.rs=currenttime%3D2011%2F05%2F30@01%3A26%3A22%26license_ts%3D0%26contentid%3Da92f37af946f85938ee5e9514f13adb1%26offering%3Dam-1penguin100cases%26file%3D1penguin100cases.exe%26sessiontime%3D0%26userid%3D50d1a76fd338dabd60e275e6026a09d05b17da0d%26adclicks%3D0%26maximumusagetime%3D0%2F3600%26totalusage%3D0%26executions%3D1&amversion=6.62&contentid=a92f37af946f85938ee5e9514f13adb1&timestamp=0&offering=am-1penguin100cases&mv_pc=gamehouse&affiliate=gamehouse&tracking=undefined&price=undefined&currency=undefined&downloadtimestamp=undefined&referrer=http%3A%2F%2Fwww.gamehouse.com%2Foffline%2F008ea748%2Fopen.html%3Fcurrenttime%3D2011%2F05%2F30@01%3A26%3A22%26license_ts%3D0%26contentid%3Da92f37af946f85938ee5e9514f13adb1%26offering%3Dam-1penguin100cases%26file%3D1penguin100cases.exe%26sessiontime%3D0%26userid%3D50d1a76fd338dabd60e275e6026a09d05b17da0d%26adclicks%3D0%26maximumusagetime%3D0%2F3600%26totalusage%3D0%26executions%3D1&product_name=am-1penguin100cases&lang=&reserved_machineid=%28+1+%3D%3E+%221df0e6aec3136a2342770ae1a8601c6166d4d2b5%22%2C+2+%3D%3E+%22d332cf2840d13a7567db5da05dcff0cfae66ff1e%22%2C+3+%3D%3E+%22aa710eb6bea033d653d5f28155f4825ac0c6a10f%22%2C+4+%3D%3E+%22a969ee411b34c40b80be304d6c19a67c7a214ab1%22%2C+65536+%3D%3E+%228ef3ce5fff1880b000805c489550844ad1426dcd%22%2C+%29&reserved_client_callback=http%3A%2F%2Fwww.gamehouse.com%2Foffline%2F008ea748%2FLicenseSaver.amscr&url=https%3A%2F%2Fwww.gamehouse.com%2Flm%2Ffplogin&connectPage=connect.html&connectingPage=connecting.html&userid=esc0rtd3w@gmail.com&remember=on&pwd=T3chpass1947..:......5..x,4.xiN...R.0`S
+
+
+
+
+
+

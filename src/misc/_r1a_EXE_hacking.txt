@@ -1,0 +1,44 @@
+---------------------------------------------------
+This is with NO postgame.htm file
+---------------------------------------------------
+
+Full EXE is extracted right before arriving here:
+
+00419454  |.  68 5C9E4300   PUSH 00439E5C 
+
+
+
+Full EXE is deleted shortly after here:
+
+0041965B  |.  68 F09D4300   PUSH 00439DF0 
+
+---------------------------------------------------
+
+
+---------------------------------------------------
+
+Simple way to force extraction of Full EXE and then crash
+
+
+Insert HEX here to break when extracted then close:
+
+00019447                       CC
+
+
+OFFSET 103502 (DEC)
+
+OLD: 0F84B1010000
+
+NEW: CC84B1010000
+
+
+RA Player must be running when doing this hack
+
+---------------------------------------------------
+
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+
+
+Set unlimited play???
+
+0040BBC4   . /0F82 B6000000 JB 0040BC80
+
+
+
+
+0040BC88   . /0F87 63010000 JA 0040BDF1
+
+
+
+
+
+
+Wrapper:run
+-----------
+
+00409545   . /0F85 B6000000 JNZ 00409601
+
+
+
+
+EXPIRED STUFF
+--------------
+
+00419A4C   . /0F87 90000000 JA 00419AE2
+00419A52   . |68 089F4300   PUSH 00439F08                            ;  ASCII "Launcher::canLaunch"
+00419A57   . |8D4C24 68     LEA ECX,DWORD PTR SS:[ESP+68]
+00419A5B   . |E8 707AFEFF   CALL 004014D0
+00419A60   . |68 909E4300   PUSH 00439E90                            ;  ASCII "Launcher::canLaunch:no game time left"
+
+
+
+
+
+00419D67   . /0F85 80000000 JNZ 00419DED
+00419D6D   . |E8 6E76FEFF   CALL 004013E0
+00419D72   . |6A 22         PUSH 22
+00419D74   . |68 F09F4300   PUSH 00439FF0                            ;  ASCII "Launcher::onLaunch:wrapper expired"
+
+
+
+
+
+
+
+Changes demo window launching
+
+gpatch "trinklit_r1a.exe" /nologo /i633 /h"cc"
+
+
+
+
+
+RacNotRunning Check
+
+004081CB   . /0F84 5F010000 JE 00408330
+
+gpatch "trinklit_r1a.exe" /nologo /i33227 /h"e96001000090"
+
+
+
+0040832B   . /E9 59040000   JMP 00408789
+
+
+
+PreGameURL:
+
+004084E4   . /0F84 94000000 JE 0040857E
+
+
+
+00408318   . /0F82 6B040000 JB 00408789
+
+
+
+
+createBaseBrowser:
+
+00409A06   . /0F85 AA000000 JNZ 00409AB6
+
+
+
+
+
+
