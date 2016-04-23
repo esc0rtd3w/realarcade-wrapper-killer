@@ -1,6 +1,6 @@
 @echo off
 
-title RealArcade Wrapper Killer    (.-+'~^-+ RGA Loader v1.0.1 +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer    (.-+'~^-+ RGA Loader v1.0.2 +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 color 1f
 
@@ -134,13 +134,6 @@ goto end
 
 
 :launch
-::-----------------------------------------------------------------------------------
-:: Launch the main EXE file. 
-::
-:: Original EXE searched for "catalog.xtr" and "html.xtr" files and extracted on load
-:: 
-:: This has been patched to search for "_tmp.rga" or "_unpack.rga" files
-::-----------------------------------------------------------------------------------
 
 cls
 echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
@@ -151,7 +144,6 @@ echo Extracting RGA File To Temp....
 echo.
 echo.
 
-rm /s /q /f  "%root%\_tmp.rga"
 rd /s /q  "%root%\_tmp"
 md "%root%\_tmp"
 
@@ -160,6 +152,9 @@ md "%root%\_tmp"
 cocolor 1f
 
 goto chkxerr
+
+:: Skipping Some Checks
+::goto getini
 
 
 :chkxerr
@@ -179,7 +174,7 @@ echo.
 echo Corrupted Extraction Folder Detected!
 echo.
 echo.
-echo Force v1.x Loader? [Recommended] [Y/N]
+echo Force Retry? [Recommended] [Y/N]
 echo.
 
 if %os%==XP choice /c:yn /n
@@ -320,9 +315,14 @@ exit
 
 :optMenu
 
+:: Remove Temp RGA File
+del /s /q /f  "%root%\_tmp.rga"
+
 cls
-echo Ready to unpack the Demo Protection on this game!
+echo Ready to ATTEMPT Manipulation to this game!
 echo.
+echo.
+echo Please keep in mind that RGA support is currently VERY LIMITED!
 echo.
 echo.
 echo.
