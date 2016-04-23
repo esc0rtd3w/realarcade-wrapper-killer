@@ -6,6 +6,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
                  
 
+                  
                    ²²²²²²²                          ²²²²²        ²²²²²
                  ²²²²²² ²²²                     ²²²²²  ²²       ²²²²²²
            ²²²²² ²²²²²²  ²²      ²²   ²²²²²²²² ²²²²² ²²²  ²²²² ²² ²²²²
@@ -84,10 +85,20 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 Ü  ßßß                      ßÛÛ² ÛÛÛ NEWS ÛÛÛ ²ÛÛß    Û                  ßßß Ü
       
 
-        * Another major shift in game releases. This time Zylom is the main
-          counterpart for distribution. Links to game stubs, files, and other
-          objects have been updated. Currently in the process of breaking down
-          all the new info and including support for it.
+        * I have missed a lot of news over the past couple years. There
+          have been multiple iterations of RGA formats that now have
+          partial support. This includes both stubs and RAR archives.
+
+        * The newest file format is RFS. Very little is known about this
+          format currently. What is known, is that it is made by Activemark,
+          the stubs are labeled as "ACID", and the most current version is
+          v1.20.128.0. The stubs act similar to their RGA cousins, except
+          a new RFS file is now downloaded which has 112 bytes of specific
+          data at the beginning of each file. More information is available
+          at https://github.com/esc0rtd3w/realarcade-wrapper-killer under
+          /src/rfs/rfs-chunks. The RFS data files are NOT standard RAR,
+          ZIP, or similar formats. They can be extracted by invoking the
+          stub normally. The EXE files are still protected by Activemark.
 
 
                                  [ OLD NEWS ]
@@ -133,21 +144,33 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
 
 
-        * ADDED: RFS Loader v1.0.0
-
-                   * Framework for 2015/2016 RFS Activemark v7 Packages
-
-
-
         * UPDATED: RGS Loader to v2.1.3
 
                    * Nothing new here :(
 
 
 
-        * UPDATED: RGA Loader to v1.0.1
+        * UPDATED: RGA Loader to v1.0.2
 
-                   * Nothing new here :(
+                   * Fixed errors from a mis-typed "rm" command
+
+                   * Fixed extraction and cleanup
+
+
+
+        * ADDED: RFS Loader v1.0.0
+
+                   * This module is not currently active
+
+                   * Framework for 2015/2016 RFS Activemark v7 Packages
+
+
+
+        * ADDED: DMG Loader v1.0.0
+
+                   * This module is not currently active
+
+                   * Framework for DMG Image Extraction Setup
 
 
 
@@ -436,7 +459,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
   °    ± ²ÛÛ ²ÛÛ ²ÛÛÛ ßßßßß²ÛÛÛ  °  ²ÛÛÛ ²ÛÛ ß²ÛÛÛ ²ÛÛ  ÛÛÛÛ ²ÛÛÜÜÛÛÛÛ °
     Ü Ü²ÜÜÜÜÜÜÜÜÜÜÜÜÜ ßßßßßßß    °° ßßßß ßßß  ßßßß ßßßßßßß             ±
        ß          ÛÛ² ß ßßßßßßßÜÜ  cRypTiCwaRe  ÜÜßßßßßß ß ²ÛÜÜÜÜÜÜÜÜÜÜÜ²Ü Ü
-       Ü          Üß±            ßþÜ   2o13   Üþßß           ±Ûß          ß
+       Ü          Üß±            ßþÜ   2o16   Üþßß           ±Ûß          ß
                 Ü   °                 Ü ß ß               °  ß         ß
                                                  
                                        
