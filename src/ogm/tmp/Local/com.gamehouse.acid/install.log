@@ -1,0 +1,40 @@
+[0000110c] 08/17/2014@02:31:16  --------------- ActiveMARK Installer v1.00.107 [Acid R1.00] ---------------
+[0000110c] 08/17/2014@02:31:16  Command Line = "C:\Users\hacker\Downloads\ura\Installer_villagequest.exe" 
+[0000110c] 08/17/2014@02:31:16  Stamped Data = installationid:ec03dcc3b6ef41468ec1a4dc07143fd4, affiliate:z_syn_gh_g12, language:en-us
+[0000110c] 08/17/2014@02:31:26  URL: http://installer-manager.gamehouse.com/offline/startup.html (v1.00.107 [Acid R1.00])
+[0000110c] 08/17/2014@02:31:26  Getting config from: http://installer-manager.gamehouse.com/InstallerManager/getinstallersettings?installationid=ec03dcc3b6ef41468ec1a4dc07143fd4&component=acid&version=1.00&userid=c5efcac2c9ef99d2ec308c6ddac8861910531c8b&execid=44913c9ad271aaab&os=w7&arch=x86_64&browserversion=11.0.9600.17207&language=en-us&affiliate=z_syn_gh_g12&_=1408257078158
+[0000110c] 08/17/2014@02:31:27  Acid.Uninstall.previous (6905120d6d26456538d99c04ba583533) ->true
+[0000110c] 08/17/2014@02:31:29  URL: http://cdn.media.zylom.com/images/activemark/acid/1.00/ui/eula.html (v1.00.107 [Acid R1.00])
+[0000110c] 08/17/2014@02:32:58  License agreement: accepted
+[0000110c] 08/17/2014@02:32:58  URL: http://cdn.media.zylom.com/images/activemark/acid/1.00/ui/install.html (v1.00.107 [Acid R1.00])
+[0000110c] 08/17/2014@02:32:58  Acid.Advertisement - init: http://activemark.gamehouse.com/installer/advertisement?contentid=6905120d6d26456538d99c04ba583533&offering=villagequest&affiliate=z_syn_gh_g12&tracking=9494e73c6424462a2c88da34439f6600&price=0000006000&currency=1
+[0000110c] 08/17/2014@02:32:58  Acid.PostActions.init (ogm, http://cdn.media.zylom.com/images/activemark/acid/1.00/postactions/installogm.rar)
+[0000110c] 08/17/2014@02:32:58  Acid.Download (http://cdn.media.zylom.com/images/activemark/acid/1.00/postactions/installogm.rar): 0
+[0000110c] 08/17/2014@02:32:58  Downloading RGA files ...
+[0000110c] 08/17/2014@02:32:58  Acid.Download (http://games-dl.gamehouse.com/zylom/ghmigration/villagequest/villagequest.rga): 1
+[0000110c] 08/17/2014@02:32:59  Acid.Download: http://cdn.media.zylom.com/images/activemark/acid/1.00/postactions/installogm.rar -> ok
+[0000110c] 08/17/2014@02:32:59  Acid.PostActions.init: http://cdn.media.zylom.com/images/activemark/acid/1.00/postactions/installogm.rar -> download ok (C:\Users\hacker\AppData\Local\Temp\amtemp-110c00004c34\installogm.rar)
+[0000110c] 08/17/2014@02:33:01  Acid.Advertisement - loaded
+[0000110c] 08/17/2014@02:34:29  Acid.Download: http://games-dl.gamehouse.com/zylom/ghmigration/villagequest/villagequest.rga -> error (258)
+[0000110c] 08/17/2014@02:35:58  Acid.Download (http://games-dl.gamehouse.com/zylom/ghmigration/villagequest/villagequest.rga): 2
+[0000110c] 08/17/2014@02:36:44  Acid.Download: http://games-dl.gamehouse.com/zylom/ghmigration/villagequest/villagequest.rga -> ok
+[0000110c] 08/17/2014@02:36:44  Downloading DLPR files ...
+[0000110c] 08/17/2014@02:36:44  Installing RGA files ...
+[0000110c] 08/17/2014@02:36:44  Acid.Install (C:\Users\hacker\AppData\Local\Temp\amtemp-110c00004c34\villagequest.rga, C:\GameHouse Games, Village Quest, Village Quest, GameHouse) -> 0
+[0000110c] 08/17/2014@02:36:49  Acid.Install: C:\Users\hacker\AppData\Local\Temp\amtemp-110c00004c34\villagequest.rga -> ok ({
+  "executable" : "VillageQuest.exe",
+  "result" : true,
+  "shortcut" : "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\GameHouse\\Village Quest.lnk"
+})
+[0000110c] 08/17/2014@02:36:50  Enforcing In-RGA post install actions ...
+[0000110c] 08/17/2014@02:36:50  Installing DLPR files ...
+[0000110c] 08/17/2014@02:36:51  Finishing installation ...
+[0000110c] 08/17/2014@02:36:51  Acid.CreateShortcut ({"source":"http://www.zylom.com","target":"[\"<DESKTOP>\\\\Zylom\", \"<COMMON_PROGRAMS>\\\\Zylom\\\\Visit Zylom\"]","description":"Zylom","icon":"http://cdn.zylom.com/acid/1.00/store.ico","uninstallable":true})
+[0000110c] 08/17/2014@02:36:51  Acid.Download (http://cdn.zylom.com/acid/1.00/store.ico): 3
+[0000110c] 08/17/2014@02:36:52  Acid.CreateShortcut ({"source":"C:\\GameHouse Games\\Village Quest\\VillageQuest.exe","target":"C:\\Users\\hacker\\Desktop\\Village Quest","description":"Village Quest","icon":"C:\\GameHouse Games\\Village Quest\\VillageQuest.exe","uninstallable":true})
+[0000110c] 08/17/2014@02:36:53  Acid.CreateShortcut (C:\GameHouse Games\Village Quest\VillageQuest.exe, C:\Users\hacker\Desktop\Village Quest, Village Quest, C:\GameHouse Games\Village Quest\VillageQuest.exe, C:\GameHouse Games\Village Quest\) -> true
+[0000110c] 08/17/2014@02:36:53  Acid.PostAction.execute (ogm, C:\Users\hacker\AppData\Local\Temp\amtemp-110c00004c34\installogm.rar)
+[0000110c] 08/17/2014@02:36:53  Acid.Pack (C:\Users\hacker\AppData\Local\Temp\amtemp-110c00004c34\installogm.rar, null) -> 1
+[0000110c] 08/17/2014@02:36:53  Acid.Download: http://cdn.zylom.com/acid/1.00/store.ico -> error (258)
+[0000110c] 08/17/2014@02:36:54  Acid.Pack: C:\Users\hacker\AppData\Local\Temp\amtemp-110c00004c34\installogm.rar -> ok ()
+[0000110c] 08/17/2014@02:36:54  Acid.PostActions.execute: C:\Users\hacker\AppData\Local\Temp\amtemp-110c00004c34\installogm.rar -> error (result empty)

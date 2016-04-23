@@ -1,0 +1,51 @@
+[
+  {
+    "affiliate" : "",
+    "cid" : "94dc6cbfafc66d4cf2bcae256404968c",
+    "custom" : {},
+    "game_id" : "",
+    "installed" : false,
+    "license_type" : "purchase",
+    "name_guess" : "",
+    "offering" : "",
+    "private" : {
+      "currency" : "",
+      "domain_custom_data" : {},
+      "exe_path" : "",
+      "install_path" : "",
+      "price" : "",
+      "uninstall_app" : "",
+      "uninstall_args" : "",
+      "uninstall_info_file" : ""
+    },
+    "publisher" : "",
+    "stats" : {
+      "has_amiga" : "",
+      "installation_time" : 0,
+      "last_page" : "",
+      "last_played" : 0
+    },
+    "tracking" : "",
+    "trial" : {
+      "max_time" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "max_uses" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "per_usage" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "status" : ""
+    },
+    "uninstallable" : false,
+    "version" : "",
+    "version_txt" : []
+  }
+]

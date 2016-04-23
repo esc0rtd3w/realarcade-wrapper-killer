@@ -1,10 +1,10 @@
 [Setup]
-AppName=RealArcade Demo Unwrapper v5.4.2
-AppVerName=RealArcade Demo Unwrapper v5.4.2
+AppName=RealArcade Demo Unwrapper v5.4.3
+AppVerName=RealArcade Demo Unwrapper v5.4.3
 DefaultDirName=C:\My Games
 OutputBaseFilename=RAWrapperKiller
-OutputDir=C:\URA\rawk\_release
-SetupIconFile=C:\URA\rawk\icons\rawk5.ico
+OutputDir=_release
+SetupIconFile=icons\rawk5.ico
 SolidCompression=true
 Compression=none
 UseSetupLdr=true
@@ -18,17 +18,18 @@ UsePreviousAppDir=false
 AppendDefaultDirName=false
 UsePreviousGroup=false
 AppendDefaultGroupName=false
-PrivilegesRequired=none
+;PrivilegesRequired=none
+PrivilegesRequired=admin
 DirExistsWarning=no
 Uninstallable=false
 CreateUninstallRegKey=false
 WizardImageFile=C:\Program Files\Inno Setup 5\WizModernImage.bmp
 WizardSmallImageFile=C:\Program Files\Inno Setup 5\WizModernSmallImage.bmp
-VersionInfoVersion=5.4.2
+VersionInfoVersion=5.4.3
 VersionInfoCompany=cRypTiCwaRe
 VersionInfoDescription=Unpack ALL RealArcade/Gamehouse RGS/RGA Games
 VersionInfoProductName=RealArcade Wrapper Killer
-VersionInfoProductVersion=5.4.2
+VersionInfoProductVersion=5.4.3
 ;LicenseFile=C:\URA\rawk\rawk_license.txt
 ;InfoBeforeFile=C:\URA\rawk\rawk_license.txt
 
@@ -399,11 +400,11 @@ Source: rgi\v3\template\gameInstall.rgi; DestDir: {app}; Flags: deleteafterinsta
 ; RGA Specific
 
 ; OGM Service
-Source: rga\ogm\ogmservice.exe; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ogm\ogmservice.exe; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 Source: core_ogm_service.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 ;Source: rga\ogm\ogmservice-run.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
-Source: rga\ogm\rgaQuery.url; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
-Source: rga\ogm\rgaQuery.json; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
+Source: ogm\rgaQuery.url; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
+Source: ogm\rgaQuery.json; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
 
 
 [Dirs]

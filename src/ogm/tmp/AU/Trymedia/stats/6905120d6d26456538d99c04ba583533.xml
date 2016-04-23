@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<amcontent version="7.20" offering="villagequest">
+    <path>C:\GameHouse Games\Village Quest\VillageQuest.exe</path>
+    <timestamp>0000000053f04dca</timestamp>
+    <page>[open.html:A]</page>
+    <trial status="trial">
+        <time total="00000e10" used="00000000" />
+    </trial>
+</amcontent>
