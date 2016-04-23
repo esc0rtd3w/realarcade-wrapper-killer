@@ -29,6 +29,8 @@ set root=%ProgramFiles%\unRealArcade\loader4
 
 set unpacked=0
 
+set nameFound=0
+
 
 :: This method works, but causes a path with NO SPACES to have a space as the suffix
 :: Everything seems to copy ok still.
@@ -147,7 +149,7 @@ echo.
 rd /s /q  "%root%\_tmp"
 md "%root%\_tmp"
 
-"%root%\rar.exe" x "%root%\_tmp.dmg" "%root%\_tmp"
+"%root%\7z.exe" x "%root%\_tmp.dmg" -o"%root%\_tmp\"
 
 cocolor 1f
 
@@ -161,8 +163,16 @@ goto chkxerr
 ::-----------------------------------------------------------------------------------
 :: Check for extraction errors
 ::-----------------------------------------------------------------------------------
+cls
+echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
+echo.
+echo.
+echo.
+echo Extracting HFS File To Temp....
+echo.
+echo.
 
-if not exist "%root%\_tmp\*.exe" (
+if not exist "%root%\_tmp\2.hfs" (
 
 color 4f
 
@@ -182,11 +192,19 @@ if %os%==VISTA choice /c yn /n
 if errorlevel 2 exit
 
 
-regedit /s "%ProgramFiles%\unRealArcade\loader3\setDMG.reg"
+regedit /s "%ProgramFiles%\unRealArcade\loader4\setDMG.reg"
 
 exit
 
 )
+
+:: Perform 2nd Extraction (2.hfs)
+"%root%\7z.exe" x "%root%\_tmp\2.hfs" -o"%root%\_tmp\"
+
+:: Cleanup Leftover Files
+del /f /s /q "%root%\_tmp\0.ddm"
+del /f /s /q "%root%\_tmp\1.Apple_partition_map"
+del /f /s /q "%root%\_tmp\2.hfs"
 
 goto chkextr
 
@@ -194,10 +212,16 @@ goto chkextr
 
 :chkextr
 ::-----------------------------------------------------------------------------------
-:: Check _tmp folder again for successful extraction
+:: Check _tmp folder again for successful extraction of "2.hfs"
 ::-----------------------------------------------------------------------------------
 
-if exist "%root%\_tmp" (
+dir /b "%root%\_tmp\">%temp%\checkDmgStatus.txt
+set /p nameFound=<%temp%\checkDmgStatus.txt
+
+::echo %nameFound%
+::pause
+
+if exist "%root%\_tmp\%nameFound%\.DS_Store" (
 
 set unpacked=1
 
@@ -207,7 +231,7 @@ goto getini
 
 goto end
 
-if not exist "%root%\_tmp" (
+if not exist "%root%\_tmp\%nameFound%\.DS_Store" (
 
 color 4f
 
@@ -245,17 +269,10 @@ echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
 echo.
 echo.
 echo.
-echo Extracting Game Name From version.txt....
+echo Extracting Game Name....
 echo.
 
 wait 2
-
-:: Getting Game Name from launch.ini
-
-set /p GameName=<"%root%\_tmp\version.txt"
-
-::if exist "%root%\_tmp\ds.exe" set GameName=DemonStar
-
 
 
 if %unpacked%==1 (
@@ -267,11 +284,11 @@ echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
 echo.
 echo.
 echo.
-echo Extracted Game Name: "%GameName%"
+echo Extracted Game Name: "%nameFound%"
 echo.
 echo.
 echo.
-echo It is located at: "C:\Gamehouse Games\%GameName%"
+echo It is located at: "C:\Gamehouse Games\%nameFound%"
 echo.
 echo.
 echo.
@@ -284,7 +301,7 @@ wait 5
 
 
 
-xcopy /y /c /i /q /h /r /e  "%root%\_tmp" "%gamesroot%\%GameName%"
+xcopy /y /c /i /q /h /r /e  "%root%\_tmp" "%gamesroot%\%nameFound%"
 
 	if %errorlevel%==0 (
 
@@ -326,15 +343,13 @@ echo Please keep in mind that DMG support is currently VERY LIMITED!
 echo.
 echo.
 echo.
-echo The default is to run the CLI version silently.
-echo.
-echo If you would like to change this, please see below.
 echo.
 echo.
 echo.
-echo Press (G) to run GUI unpacking setup or (X) to exit
 echo.
-echo This option will disappear in 5 seconds and load default settings....
+echo.
+echo.
+echo Press (X) to Exit
 echo.
 echo.
 
@@ -348,8 +363,8 @@ if errorlevel 1 goto runCLI
 :runCLI
 ::echo runCLI
 ::pause
-copy %rawkCLILaunch% "%gamesroot%\%GameName%"
-start "" /d "%gamesroot%\%GameName%" "%rawkCLIExe%"
+::copy %rawkCLILaunch% "%gamesroot%\%nameFound%"
+::start "" /d "%gamesroot%\%nameFound%" "%rawkCLIExe%"
 
 goto end
 
@@ -358,13 +373,15 @@ goto end
 ::echo runGUI
 ::pause
 
-::copy %rawkCLILaunch% "%gamesroot%\%GameName%"
-start "" /d "%rawkPath%" "%rawkExe%"
+::copy %rawkCLILaunch% "%gamesroot%\%nameFound%"
+::start "" /d "%rawkPath%" "%rawkExe%"
 
 goto end
 
 
 :end
+
+del /f /s /q "%temp%\checkDmgStatus.txt"
 
 exit
 
