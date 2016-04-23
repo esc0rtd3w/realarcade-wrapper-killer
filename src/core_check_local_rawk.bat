@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Verifying Local Files +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Verifying Local Files +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 ::-----------------------------------------------------------------------------------
 :: This is used for checking rawk.exe for local installer

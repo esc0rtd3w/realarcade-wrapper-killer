@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Writing INI Output +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Writing INI Output +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 echo [%wrapped%] > "%wrapped%.ini"
 echo GameName=%GameName% >> "%wrapped%.ini"

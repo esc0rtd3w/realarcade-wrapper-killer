@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RGA File Checker +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RGA File Checker +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 
 :: DISABLED ON 20131128 BECAUSE GH GAMES ARE NOW DIRECTLY SUPPORTED!

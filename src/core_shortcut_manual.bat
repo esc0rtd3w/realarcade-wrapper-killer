@@ -1,6 +1,6 @@
 @echo off
 
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Shortcut Maker +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Shortcut Maker +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 
 ::-----------------------------------------------------------------------------------
@@ -10,7 +10,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Shortcut Maker +-^~`+-.)
 for %%* in (*.exe) do set unwrapped=%%~n*
 
 
-%show% "[...cRypTiCwaRe 2o13...]"
+%show% "[...cRypTiCwaRe 2o16...]"
 cls
 nircmd shortcut "%cd%\%unwrapped%.exe" "~$folder.desktop$" "%GameName%"
 nircmd shortcut "%cd%\%unwrapped%.exe" "%rashort%" "%GameName%"

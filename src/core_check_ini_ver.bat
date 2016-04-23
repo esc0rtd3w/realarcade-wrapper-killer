@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ INI File Version Check +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ INI File Version Check +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 ::-----------------------------------------------------------------------------------
 :: Checking INI version numbers and copying from \temp folder to rawk root if

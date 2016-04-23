@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Checking Hotkey Flags +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Checking Hotkey Flags +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 ::-----------------------------------------------------------------------------------
 :: Disable/Enable Debug Mode (0 disabled, 1 enabled)

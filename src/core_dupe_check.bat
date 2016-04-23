@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Dupe Filename Checking +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Dupe Filename Checking +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 ::-----------------------------------------------------------------------------------
 :: EXE filenames that are shared across multiple games

@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Checking Override Flags +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Checking Override Flags +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 ::-----------------------------------------------------------------------------------
 :: Main window displayed before the game is unpacked. There are several options

@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 3 unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 3 unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 
 color 0b
@@ -204,7 +204,7 @@ goto end
 :start
 
 call "core_patch_demo3.bat"
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 3 unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 3 unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 cls
 echo ----------------------------------------------------------------------------

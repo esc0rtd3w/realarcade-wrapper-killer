@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RGS Unlock License Check +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RGS Unlock License Check +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 color 0e
 
@@ -52,7 +52,7 @@ color 0e
 :: This will check for an unlock file for a loaded game.
 ::-----------------------------------------------------------------------------------
 
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RGS Unlock License Check +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RGS Unlock License Check +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 ::for %%* in (.) do set RGSunlockGame=%%~n*
 

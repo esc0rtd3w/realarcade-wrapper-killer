@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 3a unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 3a unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 ::-----------------------------------------------------------------------------------
 ::Demo Type 3a has a different text on the 2nd demo window.
@@ -45,7 +45,7 @@ goto start
 :start
 
 call "core_patch_demo3a.bat"
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 3a unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 3a unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 cls
 echo ----------------------------------------------------------------------------

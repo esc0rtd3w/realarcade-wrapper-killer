@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Gamehouse File Patcher +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Gamehouse File Patcher +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 color 02
 

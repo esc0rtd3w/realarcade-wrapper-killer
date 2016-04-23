@@ -1,6 +1,6 @@
 @echo off
 
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RNArcade Spoofer +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RNArcade Spoofer +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 
 cls

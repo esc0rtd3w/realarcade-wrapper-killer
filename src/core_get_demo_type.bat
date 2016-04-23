@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Getting Demo Type +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Getting Demo Type +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 echo -----------------------------------------------------------------------------
 

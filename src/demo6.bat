@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 6 unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 6 unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 color 02
 ::-----------------------------------------------------------------------------------
@@ -33,7 +33,7 @@ goto start
 :: Force CMD Window to be on top
 ::-----------------------------------------------------------------------------------
 
-%show% "[...cRypTiCwaRe 2o13...]"
+%show% "[...cRypTiCwaRe 2o16...]"
 
 ::-----------------------------------------------------------------------------------
 :: Splash Menu

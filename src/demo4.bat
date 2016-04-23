@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 4 unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 4 unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 
 ::temp fix added 11-04-2010
@@ -116,7 +116,7 @@ set acemult="Red Ace Squadron - Multiplayer"
 :start
 
 call "core_patch_demo4.bat"
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 4 unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 4 unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 cls
 echo ----------------------------------------------------------------------------

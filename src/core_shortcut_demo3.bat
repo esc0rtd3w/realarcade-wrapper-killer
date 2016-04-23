@@ -1,6 +1,6 @@
 @echo off
 
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Shortcut Maker +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Shortcut Maker +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 ::-----------------------------------------------------------------------------------
 ::Check For Fixes
@@ -90,7 +90,7 @@ goto end
 :: Force CMD Window to be on top
 ::-----------------------------------------------------------------------------------
 
-%show% "[...cRypTiCwaRe 2o13...]"
+%show% "[...cRypTiCwaRe 2o16...]"
 
 ::-----------------------------------------------------------------------------------
 :: Create shortcuts based on variables

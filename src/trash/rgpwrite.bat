@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RGP Writer +-^~`+-.)     [...cRypTiCwaRe 2o12...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RGP Writer +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 ::-----------------------------------------------------------------------------------
 :: RGP Writer

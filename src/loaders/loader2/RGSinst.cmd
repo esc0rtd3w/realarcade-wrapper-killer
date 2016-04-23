@@ -1,6 +1,6 @@
 @echo off
 
-title RealArcade Wrapper Killer    (.-+'~^-+ RGS Loader v2.1.2 +-^~`+-.)     [...cRypTiCwaRe 2o12...]
+title RealArcade Wrapper Killer    (.-+'~^-+ RGS Loader v2.1.2 +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 color 1f
 

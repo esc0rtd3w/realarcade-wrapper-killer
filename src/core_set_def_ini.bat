@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Setting Default Variables +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Setting Default Variables +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 set verified=0
 set demotype=0

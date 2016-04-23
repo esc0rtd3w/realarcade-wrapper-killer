@@ -1,6 +1,6 @@
 @echo off
 
-title RealArcade Wrapper Killer    (.-+'~^-+ RGA Loader v1.0.1 +-^~`+-.)     [...cRypTiCwaRe 2o12...]
+title RealArcade Wrapper Killer    (.-+'~^-+ RGA Loader v1.0.1 +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 color 1f
 

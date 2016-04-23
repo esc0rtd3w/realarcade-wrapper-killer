@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Multiple EXE Check +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Multiple EXE Check +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 
 if exist "primalprey.exe" goto ppfix

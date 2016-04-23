@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Checking For Empty Variables +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Checking For Empty Variables +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 :stat0
 cls

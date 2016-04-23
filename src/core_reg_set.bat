@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Checking Game Registry Flags +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Checking Game Registry Flags +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 
 :: REGBLOCKS DISABLED ON 08-02-2011
