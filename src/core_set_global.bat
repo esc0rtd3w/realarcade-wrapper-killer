@@ -58,8 +58,9 @@ set rgsroot=http://games-dl2.real.com/gameconsole/games/demorgses
 ::URA and RAWK Custom
 ::-----------------------------------------------------------------------------------
 
-set uraroot=%programfiles%\unRealArcade
-set rawkroot=%programfiles%\unRealArcade\rawk
+set uraRoot=%programfiles%\unRealArcade
+set uraStubRoot=%programfiles%\unRealArcade\stubs
+set rawkRoot=%programfiles%\unRealArcade\rawk
 
 ::-----------------------------------------------------------------------------------
 ::Portable RGS Loader Specific

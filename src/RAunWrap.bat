@@ -6,7 +6,7 @@ title RealArcade Wrapper Killer [Getting Version Info...]    (.-+'~^-+ Demo unWr
 ::RealArcade Wrapper Killer Release Version
 ::-----------------------------------------------------------------------------------
 
-set rawkver=5.4.1
+set rawkver=5.4.2
 
 
 
@@ -144,7 +144,7 @@ set restartcore=0
 :: DESCENDENT CORE BATCH FILES!!!
 ::-----------------------------------------------------------------------------------
 
-set rawkcore=3.0.1
+set rawkcore=3.0.2
 
 ::-----------------------------------------------------------------------------------
 :: RGS Loader Version (used for debug output only)

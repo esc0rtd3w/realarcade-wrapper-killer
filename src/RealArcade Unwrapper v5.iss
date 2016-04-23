@@ -1,6 +1,6 @@
 [Setup]
-AppName=RealArcade Demo Unwrapper v5.4.1
-AppVerName=RealArcade Demo Unwrapper v5.4.1
+AppName=RealArcade Demo Unwrapper v5.4.2
+AppVerName=RealArcade Demo Unwrapper v5.4.2
 DefaultDirName=C:\My Games
 OutputBaseFilename=RAWrapperKiller
 OutputDir=C:\URA\rawk\_release
@@ -24,11 +24,11 @@ Uninstallable=false
 CreateUninstallRegKey=false
 WizardImageFile=C:\Program Files\Inno Setup 5\WizModernImage.bmp
 WizardSmallImageFile=C:\Program Files\Inno Setup 5\WizModernSmallImage.bmp
-VersionInfoVersion=5.4.1
+VersionInfoVersion=5.4.2
 VersionInfoCompany=cRypTiCwaRe
 VersionInfoDescription=Unpack ALL RealArcade/Gamehouse RGS/RGA Games
 VersionInfoProductName=RealArcade Wrapper Killer
-VersionInfoProductVersion=5.4.1
+VersionInfoProductVersion=5.4.2
 ;LicenseFile=C:\URA\rawk\rawk_license.txt
 ;InfoBeforeFile=C:\URA\rawk\rawk_license.txt
 
@@ -252,6 +252,7 @@ Source: sys32\UnlockerCOM.dll; DestDir: {sys}; Attribs: System; Flags: overwrite
 Source: sys32\UnlockerDriver5.sys; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 Source: sys32\wun.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 Source: sys32\innounp.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
+Source: sys32\wget.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 ;Source: sys32\lua\luac.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 ;Source: sys32\lua\luadec.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 
@@ -395,6 +396,15 @@ Source: rga\rgastub.bin; DestDir: {app}; Flags: deleteafterinstall overwriteread
 Source: rgi\v1\template\gameInitializer.rgi; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
 Source: rgi\v3\template\gameInstall.rgi; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
 
+; RGA Specific
+
+; OGM Service
+Source: rga\ogm\ogmservice.exe; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: core_ogm_service.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+;Source: rga\ogm\ogmservice-run.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
+Source: rga\ogm\rgaQuery.url; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
+Source: rga\ogm\rgaQuery.json; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
+
 
 [Dirs]
 Name: {app}\cheats; attribs: hidden; Flags: deleteafterinstall
@@ -441,6 +451,3 @@ Root: HKCR; SubKey: RealArcade.RGA.1\shell\open\command; ValueType: string; Valu
 Root: HKCR; SubKey: realarcade\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER3\RGAinst.cmd %1
 Root: HKCR; SubKey: .RGA; ValueType: string; ValueName: ; ValueData: RealArcade.RGA.1
 Root: HKCR; SubKey: .RGA; ValueType: string; ValueName: Content Type; ValueData: application/vnd.rn-rn_secured_installer
-
-
-

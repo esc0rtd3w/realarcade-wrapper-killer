@@ -6,7 +6,12 @@ color 0e
 
 :start
 
-goto v31
+::set patch="%~dp0gpatch.exe"
+
+set acidEnabled=1
+
+if %acidEnabled%==0 goto v31
+if %acidEnabled%==1 goto acidMain
 
 ::goto end
 
@@ -40,6 +45,7 @@ goto v31
 
 
 set bin=rgastub.bin
+set name=stubname
 set pre=GameHouse-Installer_am-
 set post=_gamehouse_.exe
 
@@ -48,11 +54,12 @@ goto createStub
 
 :v31
 set bin=rgastub.bin
+set name=stubname
 set pre=Installer_
 set post=.exe
 
-
 goto createStub
+
 
 
 
@@ -102,6 +109,107 @@ echo Press any key to continue....
 pause>nul
 
 goto start
+
+goto end
+
+
+
+:acidMain
+
+set bin=rgastub.bin
+set name=stubname
+set pre=Installer_
+set post=.exe
+
+set indexDec=613326
+set bytesHex=FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+set bytesChar=FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+set gamestring=none
+
+cls
+echo.
+echo ---------------------------------------------------------------------
+echo Example: 
+echo.
+echo Folder Name: Village Quest
+echo.
+echo Internal Filename: villagequest
+echo ---------------------------------------------------------------------
+echo.
+echo ---------------------------------------------------------------------
+echo If a game has a trademark or registered trademark, you must include
+echo the "r" or "tm" letters at the end of the filename.
+echo.
+echo Examples: 
+echo.
+echo Bejeweled: bejeweledr
+echo.
+echo Kuros: kurostm
+echo ---------------------------------------------------------------------
+echo.
+echo.
+echo Enter Internal Game Stub Name:
+echo.
+
+set /p gamestring=
+
+if %gamestring%==none goto acidMain
+
+
+copy "rgastub.bin" "%pre%%gamestring%%post%"
+
+set stub=%pre%%gamestring%%post%
+
+
+cls
+echo Using Stub: %stub%
+echo.
+echo.
+echo Input 32 Character Game ID in Hex and press ENTER:
+echo.
+echo DO NOT INCLUDE DASHES (Example: DD098D36998F4B0B81AD7E24A6DAE686)
+echo.
+echo.
+echo.
+
+set /p bytesHex=
+
+if %bytesHex%==FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF goto acidMain
+
+gpatch "%stub%" /nologo /i%indexDec% /h"%bytesHex%"
+
+
+set queryOrig=rgaQuery.url
+set queryNew=rgaQueryNew.url
+
+
+copy "%queryOrig%" "%queryNew%"
+
+set indexDec=170
+::set bytesChar=FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+set bytesChar=%bytesHex%
+
+gpatch "%queryNew%" /nologo /i%indexDec% /s"%bytesChar%"
+
+set urlBase=http://installer-manager.gamehouse.com/InstallerManager/getinstallersettings?installationid=
+set urlTail=^&component=acid^&version=1.00
+
+::echo "%urlBase%%bytesChar%%urlTail%"
+
+::pause
+
+wget -O "rgaQuery.json" "%urlBase%%bytesChar%%urlTail%"
+
+::pause
+
+del /f /q "%queryNew%"
+
+if not exist "C:\Program Files\unRealArcade\stubs\acid" md "C:\Program Files\unRealArcade\stubs\acid"
+copy %stub% "C:\Program Files\unRealArcade\stubs\acid"
+del /f /q %stub%
+
 
 goto end
 

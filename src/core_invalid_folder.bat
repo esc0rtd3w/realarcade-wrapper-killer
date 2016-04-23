@@ -40,7 +40,7 @@ echo.
 echo.
 echo PRESS ENTER TO EXIT THIS WINDOW.....
 echo.
-echo [W] Launch Web Downloader   [A] Load Advanced Options
+echo [W] Web Downloader  [A] Advanced Options  [S] Stub Creator  [O] Run OGM Service
 echo.
 echo.
 
@@ -55,6 +55,10 @@ if %launchwebdl%==w goto uradl
 if %launchwebdl%==W goto uradl
 if %launchwebdl%==a goto advOptions
 if %launchwebdl%==A goto advOptions
+if %launchwebdl%==s goto stubCreator
+if %launchwebdl%==S goto stubCreator
+if %launchwebdl%==o goto ogmService
+if %launchwebdl%==O goto ogmService
 if %launchwebdl%==0 goto cleanup
 
 goto end
@@ -88,6 +92,22 @@ goto end
 
 call "core_advanced_load_options.bat"
 
+
+goto end
+
+
+:stubCreator
+cls
+
+call "core_rga_stub_creator.bat"
+
+goto end
+
+
+:ogmService
+cls
+
+call "core_ogm_service.bat"
 
 goto end
 

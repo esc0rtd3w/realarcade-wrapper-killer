@@ -6,6 +6,81 @@ RealArcade Wrapper Killer Version History From NFO Files
 
 
 
+v5.4.1
+----------
+
+	** NOTE: The HTML Game List Has Not Been Updated In A While! This will
+                 be updated in the next release. I have written some Linux scripts
+                 to help organize and automatically list new entries based on stub
+                 names. I am currently working on a Windows port of the same style
+                 scripting to handle this. The list of games is currently too long
+                 for my brain to take it all in right now ;)
+        
+
+	* UPDATED: RAWK Core to v3.0.1
+
+                   * Added new licensing module templates for RealArcade,
+                     Gamehouse, Zylom, and Activemark. These are currently
+                     not active and won't be until stable.
+
+                   * Added support for "Online Games Manager Service". This
+                     controls various aspects of the trial stuff as well as
+                     the launching directly from a GameHouse page. If the
+                     service is running (ogmservice.exe), then when navigating
+                     to a gamehouse.com download page, the installer will trigger
+                     and automatically initiate the installation based on the
+                     games Content ID. If this service is NOT running, then you
+                     will just get the regular download file prompt. This will
+                     also be used to try and manipulate various trial features in
+                     a future update.
+
+                   * Added support for new "Acid 1.x" branch of RGA stubs.
+
+                   * Added "core_ogm_service" to list of core RAWK modules.
+
+                   * Updated "core_rga_stub_creator" module to handle the newer
+                     Non-Rar compressed stub EXE files. The base stub is used
+                     as a template, and the games Content ID gets injected into
+                     the file. You can then initiate a normal game install by
+                     running the newly created stub EXE.
+
+                   * Added "Create Stub" and "Run OGM Service" to the menu if 
+                     a valid game is not selected.
+
+
+
+        * UPDATED: RGS Loader to v2.1.3
+
+                   * Nothing new here :(
+
+
+
+        * UPDATED: RGA Loader to v1.0.1
+
+                   * Added support for unpacked version of Wrapper Killer
+                     after a successful game installation.
+
+                   * Added default GH icon to display for RGA files.
+
+                   * Fixed version number on title to the correct one ;)
+
+
+
+        * UPDATED: RA Player Mod to v1.9.3
+
+                   * Nothing new here :(
+
+                   * HTML Game Catalogs (2,283 Individual Games)
+                     
+
+
+        * UPDATED: RAWK Game INI Database to v1.2.9
+
+                   [0 Game Entries Added] [86 Total Game Entries]
+
+
+
+
 v5.4.0
 ----------
 

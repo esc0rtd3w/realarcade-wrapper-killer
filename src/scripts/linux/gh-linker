@@ -5,28 +5,38 @@
 
 # Part of the RealArcade Wrapper Killer
 
-# cRypTiCwaRe 2013
+# cRypTiCwaRe 2014
 
 
 
 
-function getPageLinks
+getPageLinks()
 {
 
 content=$(wget http://www.gamehouse.com/new-games -q -O -)
 
 
 
-stripHTMLTags=$(links -dump -width 512 "http://www.gamehouse.com/new-games" | cut -c 4-)
+stripHTMLTagsBase=$(links -dump -width 512 "http://www.gamehouse.com" | cut -c 4-)
 
-stripAllExceptLinks=$(lynx -listonly -dump "http://www.gamehouse.com/new-games" | sed '1,3d' | cut -c 7-)
+stripAllExceptLinksBase=$(lynx -listonly -dump "http://www.gamehouse.com" | sed '1,3d' | cut -c 7-)
+
+
+stripHTMLTagsNewGames=$(links -dump -width 512 "http://www.gamehouse.com/new-games" | cut -c 4-)
+
+stripAllExceptLinksNewGames=$(lynx -listonly -dump "http://www.gamehouse.com/new-games" | sed '1,3d' | cut -c 7-)
+
+
+stripHTMLTagsPostDownload=$(links -dump -width 512 "http://www.gamehouse.com/pc/postdownload" | cut -c 4-)
+stripAllExceptLinksPostDownload=$(lynx -listonly -dump "http://www.gamehouse.com/pc/postdownload" | sed '1,3d' | cut -c 7-)
 
 
 
-pageWindows=$(echo $stripAllExceptLinks | grep '/download-games/')
+pageWindows=$(echo $stripAllExceptLinksNewGames | grep '/download-games/')
 
-pageMac=$(echo $stripAllExceptLinks | grep '/mac-games/')
+pageMac=$(echo $stripAllExceptLinksNewGames | grep '/mac-games/')
 
+pageWindowsOGM=$(echo $stripAllExceptLinksPostDownload | grep '/download/ogm/pc/')
 
 
 
@@ -34,7 +44,7 @@ pageMac=$(echo $stripAllExceptLinks | grep '/mac-games/')
 #echo $content
 
 
-echo $pageWindows
+echo $pageWindowsOGM
 
 #echo $pageMac
 
@@ -45,41 +55,55 @@ echo $pageWindows
 
 
 
-function installerRedirectV3
+installerRedirectV3()
 {
 
 # Set known variables for URL manipulation
 base='http://itm.zylom.com/itm/installer/installerRedirect/'
 pre='Installer_'
-stubname=''
+stubName=''
 post='.exe'
-gameid=''
+contentId=''
 channel=''
 otp=''
-tracking=''
+trackingId=''
 currency=''
 price=''
-installerversion=''
+installerVersion=''
 lang=''
-extratracking=''
+extraTracking=''
 publisher='ghmigration'
 
 
+funpassAutoUnlockBase='http://activemark.gamehouse.com/autounlock/gettoken?'
+funpassAutoUnlockGameSetId='gamesetid='
+funpassAutoUnlockContentId='contentid='
+funpassAutoUnlockLicenseType='licensetype='
+
+
+
+stubLinkBase='http://installer-manager.gamehouse.com/InstallerManager/getinstallersettings?'
+stubLinkPart1installationId='installationid=c03dcc3b6ef41468ec1a4dc07143fd4'
+stubLinkPart2component='component=acid'
+stubLinkPart3version='version=1.00'
+
+
+
 echo ''
-echo 'Enter the [stubname] and press ENTER:'
+echo 'Enter the [stubName] and press ENTER:'
 echo ''
 echo 'Example: puzzlerbraingames'
 echo ''
-read -p "" stubname
+read -p "" stubName
 echo ''
 
 
 echo ''
-echo 'Enter the [gameid] and press ENTER:'
+echo 'Enter the [contentId] and press ENTER:'
 echo ''
 echo 'Example: 7b692f35e9469fc1975e110bf4e217a7'
 echo ''
-read -p "" gameid
+read -p "" contentId
 echo ''
 
 
@@ -97,7 +121,7 @@ echo 'Enter the [trackingid] and press ENTER:'
 echo ''
 echo 'Example: affb9e490b52beeaba62073a45686600'
 echo ''
-read -p "" trackingid
+read -p "" trackingId
 echo ''
 
 
@@ -105,7 +129,7 @@ echo ''
 # http://itm.zylom.com/itm/installer/installerRedirect/Installer_puzzlerbraingames.exe?gameid=7b692f35e9469fc1975e110bf4e217a7&channel=z_syn_gh_g12&otp=&tracking=affb9e490b52beeaba62073a45686600&currency=1&price=60.0&installerversion=&lang=&extratracking=&publisher=ghmigration
 
 # Create a new link from all available input
-linkCreate=$(echo "$base$pre$stubname$post?gameid=$gameid&channel=$channel&otp=$opt&tracking=$tracking&currency=$currency&price=$price&lang=$lang&extratracking=$extratracking&publisher=$publisher")
+linkCreate=$(echo "$base$pre$stubname$post?gameid=$contentId&channel=$channel&otp=$opt&tracking=$trackingId&currency=$currency&price=$price&lang=$lang&extratracking=$extraTracking&publisher=$publisher")
 
 # Send the new URL and retrieve the file
 linkGet=$(wget $linkCreate -O $pre$stubname$post)
@@ -116,8 +140,12 @@ linkGet=$(wget $linkCreate -O $pre$stubname$post)
 }
 
 
+getPageLinks
+#installerRedirectV3
 
-installerRedirectV3
+
+
+read pause
 
 
 

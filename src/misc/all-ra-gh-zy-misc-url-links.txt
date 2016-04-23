@@ -1,0 +1,98 @@
+ONLINE OPEN:
+http://origin.gamehouse.com/gameconsole/
+
+
+ONLINE FORBIDDEN:
+http://origin.zylom.com/gameconsole/
+http://games-dl2.real.com/gameconsole/
+http://cdn.ghstatic.com/gameconsole/
+
+
+ONLINE MOBILE:
+http://m.gamehouse.com/game/ghallgames/all_games/
+http://m.gamehouse.com/games/ghallgames/allgames?offset=6
+http://m.gamehouse.com/dynamicf/gamehouse/gamehouse
+http://m.gamehouse.com/download
+http://cdn.games.mobinozer.com
+
+
+OFFLINE:
+http://games-dl.real.com/gameconsole
+http://nfs-dl04.real.com
+
+
+OTHER:
+http://installer-manager.gamehouse.com/InstallerManager/getinstaller.php
+http://sw-real.jp.real.com/free/windows/installer/stubinst/stub/rp14/R61JADR/RealPlayer_ja.exe
+http://switchboard.real.com/arcade/download.html?file=online/dailyanswer.gif
+
+
+LEAKED INTERNAL PATHS:
+/bin/bash /home/gamesync/.ssh/known_hosts /root/.bashrc
+/home/rawww/html/gameconsole/betatest/push-gameconsolebetatest-all.log
+/home/rawww/html/gameconsole/updatesgold/deltacats/
+/home/rawww/html/gameconsole/updatesgold/deltahtmls/dailyhtml.xtr
+/home/gamesync/dist/games.rsync.sh
+
+
+OTHER SPIDERED AND LEAKED URLS:
+http://rodan.prognet.com/gameystuff/web
+http://cache.real.ne.jp/free/redir.php?gameystuff
+http://jp.real.com/ads/lp/dlo/ck.html
+http://news.jp.realnetworks.com
+http://sw-real.jp.real.com/free/mac/RealPlayerSP.dmg
+http://sw-real.jp.real.com/free/windows/installer/stubinst/stub/rp16/R81JAD/RealPlayer_ja.exe
+http://sw-real.jp.real.com/free/windows/installer/stubinst/stub/rp17/R90JAD/RealPlayerCloud_ja.exe
+http://realplay.com
+
+
+MISC SUBDOMAINS REAL:
+http://cache-download.real.com
+http://cdn.rpa.real.com
+http://cloud.real.com
+http://customers.real.com
+http://forgot.real.com
+http://orders.real.com
+http://service.jp.real.com
+http://support.real.com
+http://games.real.com
+
+
+MISC SUBDOMAINS GAMEHOUSE:
+http://gpn.gamehouse.com
+http://m.gamehouse.com
+http://media.gamehouse.com
+http://mobile.gamehouse.com
+http://news.gamehouse.com
+http://partners.gamehouse.com
+http://playmore.gamehouse.com
+http://support.gamehouse.com
+
+
+MISC SUBDOMAINS ZYLOM:
+http://amlocalhost.zylom.com
+http://cdn.media.zylom.com
+http://demo.zylom.com
+http://game.zylom.com
+http://m.zylom.com
+http://main.zylom.com
+http://origin.zylom.com
+http://partner.zylom.com
+http://partnerprogram.zylom.com
+http://secure2.zylom.com
+
+
+COUNTRIES:
+http://asia.real.com
+http://br.real.com
+http://cn.real.com
+http://eu.real.com
+http://de.real.com
+http://es.real.com
+http://fr.real.com
+http://it.real.com
+http://jp.real.com
+http://kr.real.com
+http://mx.real.com
+http://tw.real.com
+http://uk.real.com
