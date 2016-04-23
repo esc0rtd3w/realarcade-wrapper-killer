@@ -334,7 +334,7 @@ exit
 del /s /q /f  "%root%\_tmp.dmg"
 
 cls
-echo Ready to ATTEMPT Manipulation to this game!
+echo Extracted Mac OSX Game!
 echo.
 echo.
 echo Please keep in mind that DMG support is currently VERY LIMITED!
@@ -379,7 +379,19 @@ goto end
 
 :end
 
+:: Clean Junk Mac Files
+del /f /s /q "%gamesroot%\%nameFound%\.DS_Store"
+del /f /s /q "%gamesroot%\%nameFound%\.VolumeIcon.icns"
+
+:: Clean Junk Mac Directories
+rd /s /q "%gamesroot%\%nameFound%\.background"
+rd /s /q "%gamesroot%\%nameFound%\.HFS+ Private Directory Data_"
+rd /s /q "%gamesroot%\%nameFound%\.Trashes"
+rd /s /q "%gamesroot%\%nameFound%\[]"
+
 del /f /s /q "%temp%\checkDmgStatus.txt"
+
+explorer.exe "%gamesroot%"
 
 exit
 
