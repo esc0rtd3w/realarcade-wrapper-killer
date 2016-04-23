@@ -5,6 +5,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
 
                  
+
                    ²²²²²²²                          ²²²²²        ²²²²²
                  ²²²²²² ²²²                     ²²²²²  ²²       ²²²²²²
            ²²²²² ²²²²²²  ²²      ²²   ²²²²²²²² ²²²²² ²²²  ²²²² ²² ²²²²
@@ -20,7 +21,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
                      ²²²                  proudly presents...
 
               
-                        RealArcade Wrapper Killer v5.4.2
+                        RealArcade Wrapper Killer v5.4.3
 
 
                 -[ PWNING RealNetworks/GameHouse Since 2005 ]-  
@@ -35,7 +36,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
       Category .. [ Utility          ]   ²Ý  Protection. [ RGS/RGA Trials   ]°
       Tested by.. [ cRypTiC          ]   ±   Language..  [ English          ]
-   °  Packed by.. [ cRypTiC          ]   °   Filename .  [ c-rawk542.zip    ]°
+   °  Packed by.. [ cRypTiC          ]   °   Filename .  [ c-rawk543.zip    ]°
       Coded by... [ cRypTiC          ]       Disks ....  [ 01 x 12MB        ]±
 
    ±        .  ß            Ü        °   Ü     Ü ß           Ü       ßÛÜ   þÛ Ü
@@ -125,10 +126,16 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
 
 
-	* UPDATED: RAWK Core to v3.0.2
 
-                   * Support for new RGA Acid Offline License files (.offlcn)
-                     for subscription based accounts.
+	* UPDATED: RAWK Core to v3.0.3
+
+                   * Nothing new here :(
+
+
+
+        * ADDED: RFS Loader v1.0.0
+
+                   * Framework for 2015/2016 RFS Activemark v7 Packages
 
 
 
@@ -152,12 +159,11 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
                      
 
 
-        * UPDATED: RAWK Game INI Database to v1.2.9
+        * UPDATED: RAWK Game INI Database to v1.3.0
 
                    [0 Game Entries Added] [86 Total Game Entries]
 
-                   * Comments updated with GH timer values, see above. They
-                     will be implemented in a future update.
+                   * Nothing new here :(
                      
                    * Just because a game is not in the INI database DOES NOT
                      mean that it will not work. Most games will unpack just
