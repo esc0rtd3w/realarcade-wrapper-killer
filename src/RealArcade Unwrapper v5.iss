@@ -124,6 +124,13 @@ Source: core_rga_stub_creator.bat; DestDir: {app}; Attribs: Hidden; Flags: delet
 ;Source: core_rga_stub_creator.bat; DestDir: {pf}\unRealArcade\rga\; Flags: overwritereadonly
 Source: core_rga_stub_info.bat; DestDir: {app}; Attribs: Hidden; Flags: deleteafterinstall overwritereadonly
 ;Source: core_rga_stub_info.bat; DestDir: {pf}\unRealArcade\rga\; Flags: overwritereadonly
+
+; Mac OSX DMG Support
+Source: core_dmg_loader.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+
+; Newer 2015/2016 RFS Activemark Support
+Source: core_rfs_loader.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+
 Source: core_rgs_loader.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: core_rgs_pre_release.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: core_rgs_unlock_license.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
