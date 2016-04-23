@@ -201,6 +201,8 @@ exit
 :: Perform 2nd Extraction (2.hfs)
 "%root%\7z.exe" x "%root%\_tmp\2.hfs" -o"%root%\_tmp\"
 
+wait 3
+
 :: Cleanup Leftover Files
 del /f /s /q "%root%\_tmp\0.ddm"
 del /f /s /q "%root%\_tmp\1.Apple_partition_map"
