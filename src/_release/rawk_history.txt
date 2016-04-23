@@ -2496,28 +2496,148 @@ No NFO Data!
 v3.1
 ----
 
-No NFO Data!
+-Added a separate patch (RAFix.exe) that disables the second demo window from 
+ popping up after the game is closed for Demo Type 2 games. It will be bundled 
+ with this tool and will make one less window to close during the process. 
+ The patch only needs to be ran once.
+
+-Updated compatibility for Action-Adventure games.
+-Updated compatibility for Board games.
 
 
 
-v3.0
+v3.0 FiNAL
 ----
 
-No NFO Data!
+-Arcade games now have 100% Full Auto-unWrap support! See auto-unWrap List.txt for
+ all currently supported games.
+
+-New games will use the default ALT-TAB, Task Mgr routine. This will be fixed later.
+
+-Fixed games that require default license keys, so they run in Full Version mode now.
+
+-All games bearing an _r1a suffix now have full Auto-unWrap support, but not all
+ shortcuts work yet. You can still manually create a shortcut by opening the
+ "C:\My Games\GAMENAME" folder after the tool is finished running!
+
+-All Demo Type-2 games now have full support, but not all have Auto-unWrap support
+ yet :(
+
+-Puzzle & Jigsaw games do not have full support yet.
+
+
+
+v3.0 BETA7
+----
+
+Added an "Auto-unWrap" function that rids the need for any prompts during the
+unwrapping process. There will also be a shortcut created automatically, and placed
+on the users desktop. THIS IS IN VERY EARLY STAGES AND DOES NOT WORK FOR MOST GAMES 
+YET! For the games that do not use this feature, the normal ALT-TAB, msgbox, etc 
+will be displayed.
+
+From this point forward, all games considered "compatible" will utilize the 
+"Auto-unWrap" feature. All other listed compatible games will still work, you just
+have to click through a few more boxes, and do more work :)
+
+
+
+v3.0 BETA6
+----
+
+-Added generic fix for games that require a license key (works for most games of this type).
+
+-Added Compatibility for the following games (16):
+
+Big Kahuna Words
+BookWorm Deluxe
+Dungeon Scroll
+Infinite Crosswords
+Scrabble Blast!
+Spell Bound
+Spelvin
+Super TextTwist
+Super WHATword
+Super Wild Wild Words
+Typer Shark Deluxe
+Word Challenger
+Word Harmony
+Word Jolt
+Word Mojo Gold
+WordUp
+
+
+
+v3.0 BETA5
+----
+
+-Added Compatibility for the following games (23):
+
+AirStrike 3D
+Ant War
+Axis
+Crimsonland
+Deep Sea Tycoon
+Feeding Frenzy
+Get Medieval
+Golf Adventure Galaxy
+Gutterball 3D
+Hole In One Slots
+Kyodai Mahjongg
+Lemonade Tycoon
+Mini Golf Megaworld
+Moon Tycoon
+NingPo Mahjong
+Pin High Country Club Golf
+RollerCoaster Tycoon
+Star Monkey
+Starlines Inc
+Super Mahjong
+Super Pool
+Touchdown Madness
+Ultimate Dominoes
+
+
+
+v3.0 BETA4
+----
+-Added Compatibility for the following games (7):
+
+Compulsive Solitaire
+Five Card Frenzy
+Flip Wit
+Lucky Streak Poker
+Super GameHouse Blackjack
+Super GameHouse Solitaire Volume 1
+Super GameHouse Solitaire Volume 2
+
+
+
+v3.0 BETA3
+----
+
+-Misc cleanup on code.
+
+
+
+v3.0 BETA2
+----
+
+-Started adding detection for non-compatible games.
+
+
+
+v3.0 BETA1
+----
+
+-Fixed problem when pressing the OK button too soon it would not run again properly without reinstalling the game. This is fixed now!
 
 
 
 v2.1
 ----
 
-No NFO Data!
-
-
-
-v2.0
-----
-
-First Public Release!
+-First public release
 
 
 
@@ -2525,9 +2645,6 @@ v1.X
 ----
 
 Internal Only! No Public Release!
-
-
-
 
 
 
