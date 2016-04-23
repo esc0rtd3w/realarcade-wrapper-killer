@@ -12,7 +12,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Custom RFS Loader +-^~`+
 ::-----------------------------------------------------------------------------------
 
 cls
-echo Preparing To Launch Custom RGS Loader....
+echo Preparing To Launch Custom RFS Loader....
 echo.
 echo.
 echo.
