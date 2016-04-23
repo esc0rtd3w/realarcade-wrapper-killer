@@ -122,6 +122,8 @@ echo RAWK Database Version: %rdb_core%
 echo RA Player Mod Version: %rna_core%
 echo RGS Loader Version: %rgs_loader_core%
 echo RGA Loader Version: %rga_loader_core%
+echo RFS Loader Version: %rfs_loader_core%
+echo DMG Loader Version: %dmg_loader_core%
 echo URA Downloader Version: %uradl_core%
 echo.
 echo Gamehouse Core Version: %gh_core_ver%
