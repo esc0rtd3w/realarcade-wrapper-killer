@@ -6,6 +6,26 @@ RealArcade Wrapper Killer Version History From NFO Files
 
 
 
+v5.4.2
+----------
+
+	* UPDATED: RAWK Core to v3.0.2
+
+                   * Support for new RGA Acid Offline License files (.offlcn)
+                     for subscription based accounts.
+                     
+
+					 
+        * UPDATED: RAWK Game INI Database to v1.3.0
+
+                   [0 Game Entries Added] [86 Total Game Entries]
+
+                   * Comments updated with GH timer values, see above. They
+                     will be implemented in a future update.
+
+					 
+
+
 v5.4.1
 ----------
 
