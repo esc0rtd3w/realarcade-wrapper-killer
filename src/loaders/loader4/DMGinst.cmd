@@ -1,6 +1,6 @@
 @echo off
 
-title RealArcade Wrapper Killer    (.-+'~^-+ DMG Loader v1.0.0 +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer    (.-+'~^-+ DMG Loader v1.0.1 +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 color 1f
 
@@ -293,15 +293,13 @@ echo.
 echo.
 echo.
 echo.
-if %multiDMG%==0 echo Once finished, the Wrapper Killer will launch to unpack this game.
-if %multiDMG%==0 echo.
-if %multiDMG%==0 echo.
 echo.
 wait 5
 
 
 
-xcopy /y /c /i /q /h /r /e  "%root%\_tmp" "%gamesroot%\%nameFound%"
+::xcopy /y /c /i /q /h /r /e  "%root%\_tmp" "%gamesroot%\%nameFound%"
+xcopy /y /c /i /q /h /r /e  "%root%\_tmp" "%gamesroot%"
 
 	if %errorlevel%==0 (
 
