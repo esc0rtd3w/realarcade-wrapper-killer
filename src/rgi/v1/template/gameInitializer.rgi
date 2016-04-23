@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ArcadeInstaller Vendor="RealNetworks" Tps="ambient_" Lang="en"
+                 GameId="STUBNAME_HERE" ClientType="fullclient"
+                 ProductId="TRACKING_ID_HERE" Country="US"
+                 Currency="USD" Src="null,|ambient_|"
+                 GameName="GAMENAME_HERE" StoreFront="RealArcade"/>
+  

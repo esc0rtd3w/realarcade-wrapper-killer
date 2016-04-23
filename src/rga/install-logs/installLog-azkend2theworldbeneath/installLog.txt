@@ -1,0 +1,1916 @@
+
+Stubby command line args...
+ arg[1] = sfx:C:\GameHouse-Installer_am-azkend2theworldbeneath_gamehouse_.exe
+
+**********************STUBBY SECOND INSTANCE***********************
+
+Timestamp: 03/19/12 01:45:53
+
+*******************************************************************
+
+
+03/19/12 01:45:53 Command line SFXPath = C:\GameHouse-Installer_am-azkend2theworldbeneath_gamehouse_.exe
+03/19/12 01:45:53 Loading compat-5.1.lua
+03/19/12 01:45:53 Loading luacom
+03/19/12 01:45:53 Performing environment switch to .\
+03/19/12 01:45:53 Loading config.lua
+03/19/12 01:45:53 Loading blob
+03/19/12 01:45:53 Creating instance of Win32Interop
+03/19/12 01:45:53 Creating instance of Win32Interop
+03/19/12 01:45:53 Creating instance of Win32Interop
+03/19/12 01:45:53 Creating instance of Win32Interop
+03/19/12 01:45:53 Creating instance of Win32Interop
+03/19/12 01:45:53 GetMatchingURLs parameters: storefront = 'RealArcade' and channel = 'nil'
+03/19/12 01:45:53 Attempting to lookup RealArcade.itmUrl and RealArcade.logUrl from config
+03/19/12 01:45:53 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:45:53 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:45:53 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:53 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:53 Creating instance of ErrorHandler
+03/19/12 01:45:53 Creating instance of Win32Interop
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = Software\Mozilla\Mozilla Firefox, key = CurrentVersion
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = Software\Microsoft\Internet Explorer, key = Version
+03/19/12 01:45:53 Checking for V2 installation...
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\RealArcade\CurrentVersion, key = nil
+03/19/12 01:45:53 RACVerLocation: RAC installation not detected.
+03/19/12 01:45:53 RAC Storefront: RealArcade
+03/19/12 01:45:53 Checking for V1 installation...
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\RealNetworks\RealArcade\CurrentVersion, key = nil
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\RealNetworks\RealArcade\1.2\Preferences\MainApp, key = nil
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\RealNetworks\RealArcade\1.2\Preferences\ArcadeVersion, key = nil
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\RealNetworks\RealArcade\1.2\Preferences\InstallPath, key = nil
+03/19/12 01:45:53 RAC Version: 1.2.0.1256
+03/19/12 01:45:53 RAC TPS: none_
+03/19/12 01:45:53 RAC Client Type: Not Found
+03/19/12 01:45:53 V1 location: c:\My Games
+03/19/12 01:45:53 Creating instance of Win32Interop
+03/19/12 01:45:53 Creating instance of Win32Interop
+03/19/12 01:45:53 GetMatchingURLs parameters: storefront = 'RealArcade' and channel = 'nil'
+03/19/12 01:45:53 Attempting to lookup RealArcade.itmUrl and RealArcade.logUrl from config
+03/19/12 01:45:53 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:45:53 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:45:53 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:53 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:53 Creating instance of ErrorHandler
+03/19/12 01:45:53 Creating instance of InstallerUI
+03/19/12 01:45:53 GetMatchingURLs parameters: storefront = 'RealArcade' and channel = 'nil'
+03/19/12 01:45:53 Attempting to lookup RealArcade.itmUrl and RealArcade.logUrl from config
+03/19/12 01:45:53 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:45:53 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:45:53 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:53 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:53 Creating instance of ErrorHandler
+03/19/12 01:45:53 Creating instance of Win32Interop
+03/19/12 01:45:53 GetMatchingURLs parameters: storefront = 'RealArcade' and channel = 'nil'
+03/19/12 01:45:53 Attempting to lookup RealArcade.itmUrl and RealArcade.logUrl from config
+03/19/12 01:45:53 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:45:53 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:45:53 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:53 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:53 Creating instance of ErrorHandler
+03/19/12 01:45:53 LCID = 1033
+03/19/12 01:45:53 Locale set to en-us
+03/19/12 01:45:53 DeleteFile path = .\..\installLogTmp.txt
+03/19/12 01:45:53 Error attempting to delete: .\..\installLogTmp.txt, COM exception:(.\src\library\tLuaCOM.cpp,398):
+03/19/12 01:45:53 DeleteFile path = C:\Program Files\RealArcade\Installer\installLog.txt
+03/19/12 01:45:53 Removing file element: C:\Program Files\RealArcade\Installer\installLog.txt
+03/19/12 01:45:53 FolderExists path = C:\Program Files\RealArcade
+03/19/12 01:45:53 FolderExists path = C:\Program Files\RealArcade\Installer
+03/19/12 01:45:53 FolderExists path = C:\Program Files\RealArcade\Installer\bin
+03/19/12 01:45:53 FolderExists path = C:\Program Files\RealArcade\Installer\chrome
+03/19/12 01:45:53 FolderExists path = C:\Program Files\RealArcade\Installer\commonResources
+03/19/12 01:45:53 FolderExists path = C:\Program Files\RealArcade\Installer\commonResources\GameHouse
+03/19/12 01:45:53 FolderExists path = C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_
+03/19/12 01:45:53 FolderExists path = C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\Splash
+03/19/12 01:45:53 FolderExists path = C:\Program Files\RealArcade\Installer\Extensions
+03/19/12 01:45:53 FolderExists path = C:\Program Files\RealArcade\Installer\socket
+03/19/12 01:45:53 FolderExists path = C:\Program Files\RealArcade\Installer\socket\mime
+03/19/12 01:45:53 FolderExists path = C:\Program Files\RealArcade\Installer\socket\socket
+03/19/12 01:45:53 FolderExists path = C:\Program Files\RealArcade\Installer\uninstall
+03/19/12 01:45:53 5540=> using command line SFXPath C:\GameHouse-Installer_am-azkend2theworldbeneath_gamehouse_.exe. Silent: false
+03/19/12 01:45:53 GetMatchingURLs parameters: storefront = 'RealArcade' and channel = 'nil'
+03/19/12 01:45:53 Attempting to lookup RealArcade.itmUrl and RealArcade.logUrl from config
+03/19/12 01:45:53 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:45:53 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:45:53 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:53 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:53 Creating instance of ErrorHandler
+03/19/12 01:45:53 GetDynamicStampVersion got sfx = C:\GameHouse-Installer_am-azkend2theworldbeneath_gamehouse_.exe
+03/19/12 01:45:53 GetDynamicStampVersion got magic =         
+03/19/12 01:45:53 dynamic stamp is legacy
+03/19/12 01:45:53 StringToHex length = 16
+03/19/12 01:45:53 StringToHex converted ¢5k]oºd}´Í`Õ~‡ to 02A2356B5D6FBA64197DB4CD60D57E87
+03/19/12 01:45:53 StringToHex length = 16
+03/19/12 01:45:53 StringToHex converted                  to 00000000000000000000000000000000
+03/19/12 01:45:53 StringToHex length = 16
+03/19/12 01:45:53 StringToHex converted 6792239          to 36373932323339000000000000000000
+03/19/12 01:45:53 StringToHex length = 6
+03/19/12 01:45:53 StringToHex converted        to 000000000000
+03/19/12 01:45:53 StringToHex length = 5
+03/19/12 01:45:53 StringToHex converted       to 0000000000
+03/19/12 01:45:53 StringToHex length = 5
+03/19/12 01:45:53 StringToHex converted       to 0000000000
+03/19/12 01:45:53 5540=> l_storeFront = GameHouse
+03/19/12 01:45:53 StringToHex length = 16
+03/19/12 01:45:53 StringToHex converted gamehouse_       to 67616D65686F7573655F000000000000
+03/19/12 01:45:53 Dynamic stamp contentid = 02A2356B5D6FBA64197DB4CD60D57E87
+03/19/12 01:45:53 Dynamic stamp OTP = 00000000000000000000000000000000
+03/19/12 01:45:53 Dynamic stamp tracking = 36373932323339000000000000000000
+03/19/12 01:45:53 Dynamic stamp affiliate string = gamehouse_
+03/19/12 01:45:53 Dynamic stamp affiliate = 67616D65686F7573655F000000000000
+03/19/12 01:45:53 Dynamic stamp currency = 000000000000
+03/19/12 01:45:53 Dynamic stamp price = 0000000000
+03/19/12 01:45:53 Dynamic stamp timestamp = 0000000000
+03/19/12 01:45:53 Dynamic stamp language = 
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\gamehouse\CurrentVersion, key = nil
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\gamehouse\2.0\Preferences, key = GamesRoot
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\gamehouse\CurrentVersion, key = nil
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\gamehouse\2.0\Preferences, key = LicenseRoot
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\gamehouse\CurrentVersion, key = nil
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\gamehouse\2.0\Preferences, key = InstallPath
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\gamehouse\CurrentVersion, key = nil
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\gamehouse\2.0\Preferences, key = DatabasePath
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\gamehouse\CurrentVersion, key = nil
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\gamehouse\2.0\Preferences, key = MainApp
+03/19/12 01:45:53 Checking for V2 installation...
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\gamehouse\CurrentVersion, key = nil
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\gamehouse\2.0\Preferences, key = ArcadeVersion
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\gamehouse\2.0\Preferences, key = Tps
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\gamehouse\2.0\Preferences, key = RacType
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\gamehouse\2.0\Preferences, key = CatalogVersion
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\gamehouse\2.0\Preferences, key = HtmlVersion
+03/19/12 01:45:53 RAC Storefront: gamehouse
+03/19/12 01:45:53 RAC Version: 2.5.0.58
+03/19/12 01:45:53 RAC TPS: gamehouse_
+03/19/12 01:45:53 RAC Client Type: 
+03/19/12 01:45:53 V1 location: Not Found
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\gamehouse\CurrentVersion, key = nil
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\RealNetworks\RealArcade\CurrentVersion, key = nil
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\RealNetworks\RealArcade\1.2\Preferences\MainApp, key = nil
+
+03/19/12 01:45:53 *************** Global Metadata Environment ******************
+commonDesktop -> C:\Users\Public\Desktop
+ieVer -> 9.0.8112.16421
+firefoxVer -> 11.0 (en-US)
+tmpDir -> C:\Users\Hacker\AppData\Local\Temp
+appData -> C:\Users\Hacker\AppData\Roaming
+dateTime -> 20120319T054553
+favorites -> C:\Users\Hacker\Favorites
+curTps -> gamehouse_
+programFolder -> Program Files
+windir -> C:\Windows
+IDW_COMPLETED -> 2000
+desktop -> C:\Users\Hacker\Desktop
+racVerInit -> 1.2.0.1256
+curGameId -> realarcade
+dayWeekOfYear -> 201203191079
+sysDrive -> C
+system -> C:\Windows\system32
+dateTimeTM -> 2012/03/19@01:45:53
+v1baseUrl -> http://switchboard.real.com/arcade/feeds.html?client=web&ractype=oldclient&action=download&gametype=download&dltype=bundle&
+public -> C:\Users\Public
+programFiles -> C:\Program Files
+start -> C:\Users\Hacker\AppData\Roaming\Microsoft\Windows\Start Menu
+commonStartMenu -> C:\ProgramData\Microsoft\Windows\Start Menu
+userFavorites -> C:\Users\Hacker\Favorites
+startPrograms -> C:\Users\Hacker\AppData\Roaming\Microsoft\Windows\Start Menu\Programs
+
+03/19/12 01:45:53 *************** Local Metadata Environment *******************
+racRoot -> 
+racVersion -> 2.0
+racApp -> 
+workDir -> C:\Program Files\RealArcade\Installer
+osVersion -> 6
+licenseRoot -> 
+databasePath -> 
+gamesRoot -> C:\GameHouse Games
+v1MainApp -> C:\Program Files\Real\RealArcade\RNArcade.exe
+
+03/19/12 01:45:53 Returning instance of MetadataInterp
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\GameInstaller\Installer, key = Location
+03/19/12 01:45:53 installerLoc =  C:\Program Files\RealArcade\Installer
+03/19/12 01:45:53 5540=> installerLoc =  C:\Program Files\RealArcade\Installer
+03/19/12 01:45:53 5540=> workDir =  C:\Program Files\RealArcade\Installer
+03/19/12 01:45:53 5540=> gamehouse This storefront does not support parallel downloads
+03/19/12 01:45:53 5540=> AreSerialDownloadsRequired returning true
+03/19/12 01:45:53 5540=> Virgin Version updating reg keys
+03/19/12 01:45:53 Creating nil RegKey: HKEY_LOCAL_MACHINE\SOFTWARE\GameInstaller\Installer\Version = 2.6.0.477
+03/19/12 01:45:53 Creating nil RegKey: HKEY_LOCAL_MACHINE\SOFTWARE\GameInstaller\Installer\Location = C:\Program Files\RealArcade\Installer
+03/19/12 01:45:53 Creating DWORD RegKey: HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Low Rights\ElevationPolicy\{D62088BE-DBCC-11DB-8D0A-D0DD55D89595}\Policy = 3
+03/19/12 01:45:53 Creating nil RegKey: HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Low Rights\ElevationPolicy\{D62088BE-DBCC-11DB-8D0A-D0DD55D89595}\AppName = gameinstaller.exe
+03/19/12 01:45:53 Creating nil RegKey: HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Low Rights\ElevationPolicy\{D62088BE-DBCC-11DB-8D0A-D0DD55D89595}\AppPath = C:\Program Files\RealArcade\Installer\bin
+03/19/12 01:45:53 GetMatchingURLs parameters: storefront = 'gamehouse' and channel = 'nil'
+03/19/12 01:45:53 Attempting to lookup gamehouse.itmUrl and gamehouse.logUrl from config
+03/19/12 01:45:53 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:53 Checking for V2 installation...
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = ArcadeVersion
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = Tps
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = RacType
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = CatalogVersion
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = HtmlVersion
+03/19/12 01:45:53 RAC Storefront: GameHouse
+03/19/12 01:45:53 RAC Version: 2.5.0.58
+03/19/12 01:45:53 RAC TPS: gamehouse_
+03/19/12 01:45:53 RAC Client Type: 
+03/19/12 01:45:53 V1 location: Not Found
+03/19/12 01:45:53 SFX Environment: C:\GameHouse-Installer_am-azkend2theworldbeneath_gamehouse_.exe
+03/19/12 01:45:53 RequestURLParams: tps=gamehouse_&installerversion=2.6.0.477&gameid=am-azkend2theworldbeneath&machineid=4ED9D0CFD87324BBCA6AB4F8553A7478&li=en-us&storefront=GameHouse&racversion=2.5.0.58&existingtps=gamehouse_&arcadeinstalled=1&htmlversion=2.6.0.306&src=
+03/19/12 01:45:53 5540=> stamp parameter = contentid
+03/19/12 01:45:53 5540=> adding stamp parameter contentid value = 02A2356B5D6FBA64197DB4CD60D57E87
+03/19/12 01:45:53 5540=> stamp parameter = otp
+03/19/12 01:45:53 5540=> adding stamp parameter otp value = 00000000000000000000000000000000
+03/19/12 01:45:53 5540=> stamp parameter = tracking
+03/19/12 01:45:53 5540=> adding stamp parameter tracking value = 36373932323339000000000000000000
+03/19/12 01:45:53 5540=> stamp parameter = affiliate
+03/19/12 01:45:53 5540=> adding stamp parameter affiliate value = 67616D65686F7573655F000000000000
+03/19/12 01:45:53 5540=> stamp parameter = currency
+03/19/12 01:45:53 5540=> adding stamp parameter currency value = 000000000000
+03/19/12 01:45:53 5540=> stamp parameter = price
+03/19/12 01:45:53 5540=> adding stamp parameter price value = 0000000000
+03/19/12 01:45:53 5540=> stamp parameter = timestamp
+03/19/12 01:45:53 5540=> adding stamp parameter timestamp value = 0000000000
+03/19/12 01:45:53 5540=> stamp parameter = language
+03/19/12 01:45:53 5540=> adding stamp parameter language value = 
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\GameInstaller\Installer, key = upgrade
+03/19/12 01:45:53 hasRgiUpgradeFlag == false
+03/19/12 01:45:53 Adding dynamic stamp parameter contentid
+03/19/12 01:45:53 Adding dynamic stamp parameter otp
+03/19/12 01:45:53 Adding dynamic stamp parameter tracking
+03/19/12 01:45:53 Adding dynamic stamp parameter affiliate
+03/19/12 01:45:53 Adding dynamic stamp parameter currency
+03/19/12 01:45:53 Adding dynamic stamp parameter price
+03/19/12 01:45:53 Adding dynamic stamp parameter timestamp
+03/19/12 01:45:53 Absent dynamic stamp parameter language
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = http\shell\open\command, key = nil
+03/19/12 01:45:53 In IsChromePresent
+03/19/12 01:45:53 IsChromePresent returning true
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = Software\Microsoft\Internet Explorer, key = Version
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = Software\Mozilla\Mozilla Firefox, key = CurrentVersion
+03/19/12 01:45:53 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = Software\Google\Update\Clients\{8A69D345-D564-463c-AFF1-A69D9E530F96}, key = pv
+03/19/12 01:45:53 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:45:53 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:45:53 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:45:53 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:45:53 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:53 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:53 Creating instance of ErrorHandler
+03/19/12 01:45:53 LastSlide = 
+03/19/12 01:45:53 LogPing URL = http://logging.gamehouse.com/arcade/sites.html?component=rac_installer&state=start&downloadevent=start&contentid=02A2356B5D6FBA64197DB4CD60D57E87&otp=00000000000000000000000000000000&tracking=36373932323339000000000000000000&affiliate=67616D65686F7573655F000000000000&currency=000000000000&price=0000000000&timestamp=0000000000&bytecount=0&tps=gamehouse_&installerversion=2.6.0.477&gameid=am-azkend2theworldbeneath&machineid=4ED9D0CFD87324BBCA6AB4F8553A7478&li=en-us&storefront=GameHouse&racversion=2.5.0.58&existingtps=gamehouse_&arcadeinstalled=1&htmlversion=2.6.0.306&src=&platform=Windows:6.1.7601&architecture=x86&Processors=2&browsers=firefox%2eexe%7cIE%3a%209%2e0%2e8112%2e16421%7cFirefox%3a%2011%2e0%20%28en%2dUS%29%7cChrome%3a%20&lastslide=
+03/19/12 01:45:53 Sending: HEAD /arcade/sites.html?component=rac_installer&state=start&downloadevent=start&contentid=02A2356B5D6FBA64197DB4CD60D57E87&otp=00000000000000000000000000000000&tracking=36373932323339000000000000000000&affiliate=67616D65686F7573655F000000000000&currency=000000000000&price=0000000000&timestamp=0000000000&bytecount=0&tps=gamehouse_&installerversion=2.6.0.477&gameid=am-azkend2theworldbeneath&machineid=4ED9D0CFD87324BBCA6AB4F8553A7478&li=en-us&storefront=GameHouse&racversion=2.5.0.58&existingtps=gamehouse_&arcadeinstalled=1&htmlversion=2.6.0.306&src=&platform=Windows:6.1.7601&architecture=x86&Processors=2&browsers=firefox%2eexe%7cIE%3a%209%2e0%2e8112%2e16421%7cFirefox%3a%2011%2e0%20%28en%2dUS%29%7cChrome%3a%20&lastslide= HTTP/1.0
+Host: logging.gamehouse.com
+
+
+03/19/12 01:45:53 5540=> XML Overrides load = nil save = nil
+03/19/12 01:45:53 5540=> Requesting payload xml from http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&tps=gamehouse_&installerversion=2.6.0.477&gameid=am-azkend2theworldbeneath&machineid=4ED9D0CFD87324BBCA6AB4F8553A7478&li=en-us&storefront=GameHouse&racversion=2.5.0.58&existingtps=gamehouse_&arcadeinstalled=1&htmlversion=2.6.0.306&src=&contentid=02A2356B5D6FBA64197DB4CD60D57E87&otp=00000000000000000000000000000000&tracking=36373932323339000000000000000000&affiliate=67616D65686F7573655F000000000000&currency=000000000000&price=0000000000&timestamp=0000000000&language=
+03/19/12 01:45:53 GetFile src = http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&tps=gamehouse_&installerversion=2.6.0.477&gameid=am-azkend2theworldbeneath&machineid=4ED9D0CFD87324BBCA6AB4F8553A7478&li=en-us&storefront=GameHouse&racversion=2.5.0.58&existingtps=gamehouse_&arcadeinstalled=1&htmlversion=2.6.0.306&src=&contentid=02A2356B5D6FBA64197DB4CD60D57E87&otp=00000000000000000000000000000000&tracking=36373932323339000000000000000000&affiliate=67616D65686F7573655F000000000000&currency=000000000000&price=0000000000&timestamp=0000000000&language= dest = tmp.xml
+03/19/12 01:45:53 Downloading http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&tps=gamehouse_&installerversion=2.6.0.477&gameid=am-azkend2theworldbeneath&machineid=4ED9D0CFD87324BBCA6AB4F8553A7478&li=en-us&storefront=GameHouse&racversion=2.5.0.58&existingtps=gamehouse_&arcadeinstalled=1&htmlversion=2.6.0.306&src=&contentid=02A2356B5D6FBA64197DB4CD60D57E87&otp=00000000000000000000000000000000&tracking=36373932323339000000000000000000&affiliate=67616D65686F7573655F000000000000&currency=000000000000&price=0000000000&timestamp=0000000000&language= TO tmp.xml
+03/19/12 01:45:53 CreatePath path = tmp.xml
+03/19/12 01:45:58 Completed download of tmp.xml
+03/19/12 01:45:58 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:45:58 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:45:58 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:45:58 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:45:58 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:58 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:58 Creating instance of ErrorHandler
+03/19/12 01:45:58 UNINST: Azkend 2 - The World Beneath  am-azkend2theworldbeneath
+03/19/12 01:45:58 CreatePath path = C:\Program Files\RealArcade\Installer\uninstall\
+03/19/12 01:45:58 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:45:58 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = LicenseRoot
+03/19/12 01:45:58 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:45:58 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = DatabasePath
+03/19/12 01:45:58 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:45:58 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = InstallPath
+03/19/12 01:45:58 Checking for migration
+03/19/12 01:45:58 Checking for V2 installation...
+03/19/12 01:45:58 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:45:58 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = ArcadeVersion
+03/19/12 01:45:58 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = Tps
+03/19/12 01:45:58 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = RacType
+03/19/12 01:45:58 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = CatalogVersion
+03/19/12 01:45:58 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = HtmlVersion
+03/19/12 01:45:58 RAC Storefront: GameHouse
+03/19/12 01:45:58 RAC Version: 2.5.0.58
+03/19/12 01:45:58 RAC TPS: gamehouse_
+03/19/12 01:45:58 RAC Client Type: 
+03/19/12 01:45:58 V1 location: Not Found
+03/19/12 01:45:58 We are not migrating
+03/19/12 01:45:58 DeleteFile path = tmp.xml
+03/19/12 01:45:58 Removing file element: tmp.xml
+03/19/12 01:45:58 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:45:58 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = ArcadeVersion
+03/19/12 01:45:58 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:45:58 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = MainApp
+03/19/12 01:45:58 publisherName = GameHouse
+03/19/12 01:45:58 sdkKey = 8d30c2d11c2b21cea7900fc2251f51b2
+03/19/12 01:45:58 sdkSecret = 759dc1db79cb03bf36bfe2614209bbc1
+03/19/12 01:45:58 lang = en
+03/19/12 01:45:58 advancedOptions = 
+03/19/12 01:45:58 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:45:58 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = GamesRoot
+03/19/12 01:45:58 See if C:\GameHouse Games\ is writeable
+03/19/12 01:45:58 FolderExists path = C:\GameHouse Games\
+03/19/12 01:45:58 FolderExists path = C:\GameHouse Games\
+03/19/12 01:45:58 C:\GameHouse Games\ IsPathWriteable reply = true
+03/19/12 01:45:58 DeleteFile C:\GameHouse Games\\rad32A35.tmp
+
+03/19/12 01:45:58 Using RACConfigValue gamesRoot: C:\GameHouse Games
+03/19/12 01:45:58 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:45:58 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:45:58 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:45:58 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:45:58 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:58 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:58 Creating instance of ErrorHandler
+03/19/12 01:45:58 GetFile src = http://games-dl2.real.com/gameconsole/realarcadev21/chrome/GHChrome-2.rar dest = .\chrome\chrome.rar
+03/19/12 01:45:58 Downloading http://games-dl2.real.com/gameconsole/realarcadev21/chrome/GHChrome-2.rar TO .\chrome\chrome.rar
+03/19/12 01:45:58 CreatePath path = .\chrome\chrome.rar
+03/19/12 01:45:58 Completed download of .\chrome\chrome.rar
+03/19/12 01:45:58 Launching: .\bin\UnRAR.exe x -ai -o+ -inul ".\chrome\chrome.rar" ".\chrome"
+03/19/12 01:45:59 SetDialogOptions mode = 0
+03/19/12 01:45:59 uiInstance.mainDlg:Create(640 480 0)
+03/19/12 01:45:59 SetDialogOptions gameName = Azkend 2 - The World Beneath
+03/19/12 01:45:59 Checking condition, CheckIsInstallingChrome
+03/19/12 01:45:59 Testing nil == true
+03/19/12 01:45:59 Condition CheckIsInstallingChrome not satisfied.
+03/19/12 01:45:59 Checking condition, IsSC3Endless
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, CheckIsInstallingChrome
+03/19/12 01:45:59 Testing nil == true
+03/19/12 01:45:59 Condition CheckIsInstallingChrome not satisfied.
+03/19/12 01:45:59 Checking condition, IsSC3Endless
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, CheckIsInstallingChrome
+03/19/12 01:45:59 Testing nil == true
+03/19/12 01:45:59 Condition CheckIsInstallingChrome not satisfied.
+03/19/12 01:45:59 Checking condition, IsSC3Endless
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition IsSC3Endless not satisfied.
+03/19/12 01:45:59 Checking condition, IsSC3Endless
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition IsSC3Endless not satisfied.
+03/19/12 01:45:59 Checking condition, IsSC3Endless
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, OpenCandyAcceptedPing
+03/19/12 01:45:59 Checking condition, IsOfferedCandy
+03/19/12 01:45:59 Testing nil == true
+03/19/12 01:45:59 Testing true == true
+03/19/12 01:45:59 Checking condition, InstallCandyOffer
+03/19/12 01:45:59 Checking condition, IsOfferedCandy
+03/19/12 01:45:59 Testing nil == true
+03/19/12 01:45:59 Testing true == true
+03/19/12 01:45:59 Checking condition, IsSC3Endless
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition IsSC3Endless not satisfied.
+03/19/12 01:45:59 Checking condition, SetFirstTimeInstallStatus
+03/19/12 01:45:59 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:45:59 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:45:59 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:45:59 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:45:59 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:59 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:59 Creating instance of ErrorHandler
+03/19/12 01:45:59 Creating instance of Win32Interop
+03/19/12 01:45:59 Checking for V2 installation...
+03/19/12 01:45:59 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:45:59 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = ArcadeVersion
+03/19/12 01:45:59 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = Tps
+03/19/12 01:45:59 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = RacType
+03/19/12 01:45:59 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = CatalogVersion
+03/19/12 01:45:59 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = HtmlVersion
+03/19/12 01:45:59 RAC Storefront: GameHouse
+03/19/12 01:45:59 RAC Version: 2.5.0.58
+03/19/12 01:45:59 RAC TPS: gamehouse_
+03/19/12 01:45:59 RAC Client Type: 
+03/19/12 01:45:59 V1 location: Not Found
+03/19/12 01:45:59 Testing true == true
+03/19/12 01:45:59 Checking condition, IsSC3UnlimitedOrEndless
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, ShouldShowWelcome
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition ShouldShowWelcome not satisfied.
+03/19/12 01:45:59 Checking condition, IsSC3UnlimitedOrEndless
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, CheckForClean
+03/19/12 01:45:59 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = SOFTWARE\GameHouse\2.0\Preferences, key = Tps
+03/19/12 01:45:59 Testing gamehouse_ == nil
+03/19/12 01:45:59 Condition CheckForClean not satisfied.
+03/19/12 01:45:59 Checking condition, IsSC3UnlimitedOrEndless
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, ShouldShowWelcome
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, CheckIfEULASlide
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, GamesRootWriteable
+03/19/12 01:45:59 Testing nil == NotWriteable
+03/19/12 01:45:59 Condition GamesRootWriteable not satisfied.
+03/19/12 01:45:59 Checking condition, IsSC3UnlimitedOrEndless
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, ShouldShowWelcome
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition ShouldShowWelcome not satisfied.
+03/19/12 01:45:59 Checking condition, ReadytoCheckGoogleOffer
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition ReadytoCheckGoogleOffer not satisfied.
+03/19/12 01:45:59 Checking condition, ReadytoCheckGoogleOffer
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition ReadytoCheckGoogleOffer not satisfied.
+03/19/12 01:45:59 Checking condition, ReadytoCheckGoogleOffer
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition ReadytoCheckGoogleOffer not satisfied.
+03/19/12 01:45:59 Checking condition, ReadytoCheckGoogleOffer
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition ReadytoCheckGoogleOffer not satisfied.
+03/19/12 01:45:59 Checking condition, ReadytoCheckGoogleOffer
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition ReadytoCheckGoogleOffer not satisfied.
+03/19/12 01:45:59 Checking condition, ReadytoCheckGoogleOffer
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition ReadytoCheckGoogleOffer not satisfied.
+03/19/12 01:45:59 Checking condition, ReadytoCheckGoogleOffer
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition ReadytoCheckGoogleOffer not satisfied.
+03/19/12 01:45:59 Checking condition, ReadytoCheckGoogleOffer
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition ReadytoCheckGoogleOffer not satisfied.
+03/19/12 01:45:59 Checking condition, CheckInstallComplete
+03/19/12 01:45:59 Testing nil == inprogress
+03/19/12 01:45:59 Condition CheckInstallComplete not satisfied.
+03/19/12 01:45:59 Checking condition, CheckInstallComplete
+03/19/12 01:45:59 Testing nil == inprogress
+03/19/12 01:45:59 Condition CheckInstallComplete not satisfied.
+03/19/12 01:45:59 Checking condition, IsFirstTimeInstall
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, CheckInstallComplete
+03/19/12 01:45:59 Testing nil == true
+03/19/12 01:45:59 Condition CheckInstallComplete not satisfied.
+03/19/12 01:45:59 Checking condition, IsFirstTimeInstall
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, CheckInstallComplete
+03/19/12 01:45:59 Testing nil == true
+03/19/12 01:45:59 Condition CheckInstallComplete not satisfied.
+03/19/12 01:45:59 Checking condition, IsFirstTimeInstall
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition IsFirstTimeInstall not satisfied.
+03/19/12 01:45:59 Checking condition, IsFirstTimeInstall
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition IsFirstTimeInstall not satisfied.
+03/19/12 01:45:59 Checking condition, GoogleTBStatusPing
+03/19/12 01:45:59 Testing true == true
+03/19/12 01:45:59 Checking condition, ChromeStatusPing
+03/19/12 01:45:59 Testing true == true
+03/19/12 01:45:59 Checking condition, ExecuteGoogleChrome
+03/19/12 01:45:59 Checking condition, CheckIsInstallingChrome
+03/19/12 01:45:59 Testing nil == true
+03/19/12 01:45:59 Testing true == true
+03/19/12 01:45:59 Looking in C:\Program Files\RealArcade\Installer\ for 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:45:59 findUninstallScripts C:\Program Files\RealArcade\Installer\uninstall
+03/19/12 01:45:59 Look for 02a2356b5d6fba64197db4cd60d57e87 in C:\Program Files\RealArcade\Installer\uninstall\am-chickeninvaders2thenextwavechristmasedition.rguninst
+03/19/12 01:45:59 Look for 02a2356b5d6fba64197db4cd60d57e87 in C:\Program Files\RealArcade\Installer\uninstall\am-runningsheeptinyworlds.rguninst
+03/19/12 01:45:59 Look for 02a2356b5d6fba64197db4cd60d57e87 in C:\Program Files\RealArcade\Installer\uninstall\am-supertapajam.rguninst
+03/19/12 01:45:59 FolderExists path = C:\
+03/19/12 01:45:59 Setting install path to C:\GameHouse Games
+03/19/12 01:45:59 Checking condition, SetFirstTimeInstallStatus
+03/19/12 01:45:59 Testing true == true
+03/19/12 01:45:59 Checking condition, IsSC3UnlimitedOrEndless
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, ShouldShowWelcome
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition ShouldShowWelcome not satisfied.
+03/19/12 01:45:59 ui.Step: ConditionCheck failed.
+03/19/12 01:45:59 Checking condition, IsSC3UnlimitedOrEndless
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, CheckForClean
+03/19/12 01:45:59 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = SOFTWARE\GameHouse\2.0\Preferences, key = Tps
+03/19/12 01:45:59 Testing gamehouse_ == nil
+03/19/12 01:45:59 Condition CheckForClean not satisfied.
+03/19/12 01:45:59 ui.Step: ConditionCheck failed.
+03/19/12 01:45:59 Checking condition, IsSC3UnlimitedOrEndless
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, ShouldShowWelcome
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, CheckIfEULASlide
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, GamesRootWriteable
+03/19/12 01:45:59 Testing nil == NotWriteable
+03/19/12 01:45:59 Condition GamesRootWriteable not satisfied.
+03/19/12 01:45:59 ui.Step: ConditionCheck failed.
+03/19/12 01:45:59 Checking condition, IsSC3UnlimitedOrEndless
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, ShouldShowWelcome
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition ShouldShowWelcome not satisfied.
+03/19/12 01:45:59 ui.Step: ConditionCheck failed.
+03/19/12 01:45:59 Checking condition, ReadytoCheckGoogleOffer
+03/19/12 01:45:59 Testing true == true
+03/19/12 01:45:59 Checking condition, ShouldOfferGoogle
+03/19/12 01:45:59 Checking condition, IsValidGTBSRC
+03/19/12 01:45:59 The src value is null
+03/19/12 01:45:59 Testing true == false
+03/19/12 01:45:59 shouldOffer (true) returned (4)
+03/19/12 01:45:59 DO NOT offer toolbar. Reason = 4
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition ShouldOfferGoogle not satisfied.
+03/19/12 01:45:59 ui.Step: ConditionCheck failed.
+03/19/12 01:45:59 Checking condition, ReadytoCheckGoogleOffer
+03/19/12 01:45:59 Testing true == true
+03/19/12 01:45:59 Checking condition, ShouldOfferGoogle
+03/19/12 01:45:59 Checking condition, IsValidGTBSRC
+03/19/12 01:45:59 The src value is null
+03/19/12 01:45:59 Testing true == false
+03/19/12 01:45:59 CheckInstallGoogleToolbar returning cached repy 4
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, ShouldOfferChrome
+03/19/12 01:45:59 GoogleChromeCompatibilityCheck: (nil nil)
+03/19/12 01:45:59 GoogleChromeCompatibilityCheck:  ChromeCheck (true) returned (1)
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition ShouldOfferChrome not satisfied.
+03/19/12 01:45:59 ui.Step: ConditionCheck failed.
+03/19/12 01:45:59 Checking condition, ReadytoCheckGoogleOffer
+03/19/12 01:45:59 Testing true == true
+03/19/12 01:45:59 Checking condition, ShouldOfferGoogle
+03/19/12 01:45:59 Checking condition, IsValidGTBSRC
+03/19/12 01:45:59 The src value is null
+03/19/12 01:45:59 Testing true == false
+03/19/12 01:45:59 CheckInstallGoogleToolbar returning cached repy 4
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, ShouldOfferChrome
+03/19/12 01:45:59 GoogleChromeCompatibilityCheck: (nil nil)
+03/19/12 01:45:59 GoogleChromeCompatibilityCheck:  returning cached repy 1
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, IsWeatherChannelCountry
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition IsWeatherChannelCountry not satisfied.
+03/19/12 01:45:59 ui.Step: ConditionCheck failed.
+03/19/12 01:45:59 Checking condition, ReadytoCheckGoogleOffer
+03/19/12 01:45:59 Testing true == true
+03/19/12 01:45:59 Checking condition, ShouldOfferGoogle
+03/19/12 01:45:59 Checking condition, IsValidGTBSRC
+03/19/12 01:45:59 The src value is null
+03/19/12 01:45:59 Testing true == false
+03/19/12 01:45:59 CheckInstallGoogleToolbar returning cached repy 4
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, ShouldOfferChrome
+03/19/12 01:45:59 GoogleChromeCompatibilityCheck: (nil nil)
+03/19/12 01:45:59 GoogleChromeCompatibilityCheck:  returning cached repy 1
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, OfferedWeatherChannel
+03/19/12 01:45:59 Testing nil == nil
+03/19/12 01:45:59 Checking condition, IsShopAtHomeCountry
+03/19/12 01:45:59 Testing true == true
+03/19/12 01:45:59 Checking condition, ShouldOfferShopAtHome
+03/19/12 01:45:59 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:45:59 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:45:59 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:45:59 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:45:59 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:59 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:59 Creating instance of ErrorHandler
+03/19/12 01:45:59 Creating instance of Win32Interop
+03/19/12 01:45:59 The src value is null
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition ShouldOfferShopAtHome not satisfied.
+03/19/12 01:45:59 ui.Step: ConditionCheck failed.
+03/19/12 01:45:59 Checking condition, ReadytoCheckGoogleOffer
+03/19/12 01:45:59 Testing true == true
+03/19/12 01:45:59 Checking condition, ShouldOfferGoogle
+03/19/12 01:45:59 Checking condition, IsValidGTBSRC
+03/19/12 01:45:59 The src value is null
+03/19/12 01:45:59 Testing true == false
+03/19/12 01:45:59 CheckInstallGoogleToolbar returning cached repy 4
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, ShouldOfferChrome
+03/19/12 01:45:59 GoogleChromeCompatibilityCheck: (nil nil)
+03/19/12 01:45:59 GoogleChromeCompatibilityCheck:  returning cached repy 1
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, OfferedWeatherChannel
+03/19/12 01:45:59 Testing nil == nil
+03/19/12 01:45:59 Checking condition, OfferedShopAtHome
+03/19/12 01:45:59 Testing nil == nil
+03/19/12 01:45:59 Checking condition, IsShopToWinCountry
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition IsShopToWinCountry not satisfied.
+03/19/12 01:45:59 ui.Step: ConditionCheck failed.
+03/19/12 01:45:59 Checking condition, ReadytoCheckGoogleOffer
+03/19/12 01:45:59 Testing true == true
+03/19/12 01:45:59 Checking condition, ShouldOfferGoogle
+03/19/12 01:45:59 Checking condition, IsValidGTBSRC
+03/19/12 01:45:59 The src value is null
+03/19/12 01:45:59 Testing true == false
+03/19/12 01:45:59 CheckInstallGoogleToolbar returning cached repy 4
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, ShouldOfferChrome
+03/19/12 01:45:59 GoogleChromeCompatibilityCheck: (nil nil)
+03/19/12 01:45:59 GoogleChromeCompatibilityCheck:  returning cached repy 1
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, OfferedWeatherChannel
+03/19/12 01:45:59 Testing nil == nil
+03/19/12 01:45:59 Checking condition, OfferedShopAtHome
+03/19/12 01:45:59 Testing nil == nil
+03/19/12 01:45:59 Checking condition, OfferedShopToWin
+03/19/12 01:45:59 Testing nil == nil
+03/19/12 01:45:59 Checking condition, ShouldOfferNortonAV
+03/19/12 01:45:59 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:45:59 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:45:59 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:45:59 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:45:59 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:59 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:59 Creating instance of ErrorHandler
+03/19/12 01:45:59 Creating instance of Win32Interop
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition ShouldOfferNortonAV not satisfied.
+03/19/12 01:45:59 ui.Step: ConditionCheck failed.
+03/19/12 01:45:59 Checking condition, ReadytoCheckGoogleOffer
+03/19/12 01:45:59 Testing true == true
+03/19/12 01:45:59 Checking condition, ShouldOfferGoogle
+03/19/12 01:45:59 Checking condition, IsValidGTBSRC
+03/19/12 01:45:59 The src value is null
+03/19/12 01:45:59 Testing true == false
+03/19/12 01:45:59 CheckInstallGoogleToolbar returning cached repy 4
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, ShouldOfferChrome
+03/19/12 01:45:59 GoogleChromeCompatibilityCheck: (nil nil)
+03/19/12 01:45:59 GoogleChromeCompatibilityCheck:  returning cached repy 1
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, OfferedWeatherChannel
+03/19/12 01:45:59 Testing nil == nil
+03/19/12 01:45:59 Checking condition, OfferedShopAtHome
+03/19/12 01:45:59 Testing nil == nil
+03/19/12 01:45:59 Checking condition, OfferedShopToWin
+03/19/12 01:45:59 Testing nil == nil
+03/19/12 01:45:59 Checking condition, OfferedNortonAV
+03/19/12 01:45:59 Testing nil == nil
+03/19/12 01:45:59 Checking condition, ShouldOfferRealDownloader
+03/19/12 01:45:59 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:45:59 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:45:59 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:45:59 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:45:59 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:59 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:59 Creating instance of ErrorHandler
+03/19/12 01:45:59 Creating instance of Win32Interop
+03/19/12 01:45:59 Testing false == true
+03/19/12 01:45:59 Condition ShouldOfferRealDownloader not satisfied.
+03/19/12 01:45:59 ui.Step: ConditionCheck failed.
+03/19/12 01:45:59 Checking condition, ReadytoCheckGoogleOffer
+03/19/12 01:45:59 Testing true == true
+03/19/12 01:45:59 Checking condition, ShouldOfferGoogle
+03/19/12 01:45:59 Checking condition, IsValidGTBSRC
+03/19/12 01:45:59 The src value is null
+03/19/12 01:45:59 Testing true == false
+03/19/12 01:45:59 CheckInstallGoogleToolbar returning cached repy 4
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, ShouldOfferChrome
+03/19/12 01:45:59 GoogleChromeCompatibilityCheck: (nil nil)
+03/19/12 01:45:59 GoogleChromeCompatibilityCheck:  returning cached repy 1
+03/19/12 01:45:59 Testing false == false
+03/19/12 01:45:59 Checking condition, OfferedWeatherChannel
+03/19/12 01:45:59 Testing nil == nil
+03/19/12 01:45:59 Checking condition, OfferedShopAtHome
+03/19/12 01:45:59 Testing nil == nil
+03/19/12 01:45:59 Checking condition, OfferedShopToWin
+03/19/12 01:45:59 Testing nil == nil
+03/19/12 01:45:59 Checking condition, OfferedNortonAV
+03/19/12 01:45:59 Testing nil == nil
+03/19/12 01:45:59 Checking condition, OfferedRealDownloader
+03/19/12 01:45:59 Testing nil == nil
+03/19/12 01:45:59 Checking condition, ShouldOfferCandy
+03/19/12 01:45:59 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:45:59 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:45:59 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:45:59 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:45:59 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:59 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:45:59 Creating instance of ErrorHandler
+03/19/12 01:45:59 Creating instance of Win32Interop
+03/19/12 01:45:59 The subscription value is 
+03/19/12 01:45:59 The src and lsrc values are null and null
+03/19/12 01:45:59 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = OpenCandyOffered
+03/19/12 01:45:59 Creating nil RegKey: HKEY_CLASSES_ROOT\Software\GameHouse\2.0\Preferences\OpenCandyOffered = 2
+03/19/12 01:46:01 Testing true == true
+03/19/12 01:46:01 Checking condition, OpenCandyOfferPing
+03/19/12 01:46:01 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:46:01 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:46:01 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:46:01 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:46:01 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:01 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:01 Creating instance of ErrorHandler
+03/19/12 01:46:01 Creating instance of Win32Interop
+03/19/12 01:46:01 Adding dynamic stamp parameter contentid
+03/19/12 01:46:01 Adding dynamic stamp parameter otp
+03/19/12 01:46:01 Adding dynamic stamp parameter tracking
+03/19/12 01:46:01 Adding dynamic stamp parameter affiliate
+03/19/12 01:46:01 Adding dynamic stamp parameter currency
+03/19/12 01:46:01 Adding dynamic stamp parameter price
+03/19/12 01:46:01 Adding dynamic stamp parameter timestamp
+03/19/12 01:46:01 Absent dynamic stamp parameter language
+03/19/12 01:46:01 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:46:01 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:46:01 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:46:01 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:46:01 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:01 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:01 Creating instance of ErrorHandler
+03/19/12 01:46:01 LastSlide = 
+03/19/12 01:46:01 checking for URL parameter &lsrc=
+03/19/12 01:46:01 Adding URL Parameter "&lsrc=null"
+03/19/12 01:46:01 checking for URL parameter &contentid=
+03/19/12 01:46:01 URL Parameter contentid already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:01 checking for URL parameter &cpath=
+03/19/12 01:46:01 Adding URL Parameter "&cpath=wrapper"
+03/19/12 01:46:01 checking for URL parameter &sparam=
+03/19/12 01:46:01 Adding URL Parameter "&sparam=null"
+03/19/12 01:46:01 checking for URL parameter &currency=
+03/19/12 01:46:01 URL Parameter currency already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:01 checking for URL parameter &rsrc=
+03/19/12 01:46:01 Adding URL Parameter "&rsrc=null"
+03/19/12 01:46:01 checking for URL parameter &timestamp=
+03/19/12 01:46:01 URL Parameter timestamp already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:01 checking for URL parameter &price=
+03/19/12 01:46:01 URL Parameter price already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:01 checking for URL parameter &affiliate=
+03/19/12 01:46:01 URL Parameter affiliate already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:01 checking for URL parameter &otp=
+03/19/12 01:46:01 URL Parameter otp already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:01 checking for URL parameter &tracking=
+03/19/12 01:46:01 URL Parameter tracking already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:01 LogPing URL = http://logging.gamehouse.com/arcade/sites.html?prod=ocinstapp&payload=am%2dazkend2theworldbeneath&action=displayedoffer&value=oc&li=en%2dus&contentid=02A2356B5D6FBA64197DB4CD60D57E87&otp=00000000000000000000000000000000&tracking=36373932323339000000000000000000&affiliate=67616D65686F7573655F000000000000&currency=000000000000&price=0000000000&timestamp=0000000000&bytecount=144430&channel=gamehouse_&installerversion=2.6.0.477&gameid=am-azkend2theworldbeneath&machineid=4ED9D0CFD87324BBCA6AB4F8553A7478&li=en-us&storefront=GameHouse&clientversion=2.5.0.58&existingchannel=gamehouse_&clientinstalled=1&htmlversion=2.6.0.306&src=&platform=Windows:6.1.7601&architecture=x86&Processors=2&browsers=firefox%2eexe%7cIE%3a%209%2e0%2e8112%2e16421%7cFirefox%3a%2011%2e0%20%28en%2dUS%29%7cChrome%3a%20&lastslide=&lsrc=null&cpath=wrapper&sparam=null&rsrc=null
+03/19/12 01:46:01 Sending: HEAD /arcade/sites.html?prod=ocinstapp&payload=am%2dazkend2theworldbeneath&action=displayedoffer&value=oc&li=en%2dus&contentid=02A2356B5D6FBA64197DB4CD60D57E87&otp=00000000000000000000000000000000&tracking=36373932323339000000000000000000&affiliate=67616D65686F7573655F000000000000&currency=000000000000&price=0000000000&timestamp=0000000000&bytecount=144430&channel=gamehouse_&installerversion=2.6.0.477&gameid=am-azkend2theworldbeneath&machineid=4ED9D0CFD87324BBCA6AB4F8553A7478&li=en-us&storefront=GameHouse&clientversion=2.5.0.58&existingchannel=gamehouse_&clientinstalled=1&htmlversion=2.6.0.306&src=&platform=Windows:6.1.7601&architecture=x86&Processors=2&browsers=firefox%2eexe%7cIE%3a%209%2e0%2e8112%2e16421%7cFirefox%3a%2011%2e0%20%28en%2dUS%29%7cChrome%3a%20&lastslide=&lsrc=null&cpath=wrapper&sparam=null&rsrc=null HTTP/1.0
+Host: logging.gamehouse.com
+
+
+03/19/12 01:46:01 Testing true == true
+03/19/12 01:46:01 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:46:01 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = ArcadeVersion
+03/19/12 01:46:01 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:46:01 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = HtmlVersion
+03/19/12 01:46:01 Navigating to http://www.gamehouse.com/installer?sld=opencandypromo&tps=gamehouse_&gameid=am-azkend2theworldbeneath&tracking=36373932323339000000000000000000&locale=en-us&curpage=1&maxpage=1&locale=en-us&racversion=2.5.0.58&installerversion=2.6.0.477&htmlversion=2.6.0.306
+Defining env: OfferedCandy -> true
+03/19/12 01:46:02 Blocking on slide...
+03/19/12 01:46:02 Processing JSLoadComplete Event. clock=9.708
+03/19/12 01:46:05 FolderExists path = C:\
+03/19/12 01:46:05 See if C:\GameHouse Games\ is writeable
+03/19/12 01:46:05 FolderExists path = C:\GameHouse Games\
+03/19/12 01:46:05 FolderExists path = C:\GameHouse Games\
+03/19/12 01:46:05 C:\GameHouse Games\ IsPathWriteable reply = true
+03/19/12 01:46:05 DeleteFile C:\GameHouse Games\\rad7D100.tmp
+
+
+
+
+03/19/12 01:46:05 ************Begin Payload Calculation****************
+
+
+
+
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://games-dl2.real.com/gameconsole/realarcadeclient/v2-6-0/common/gamehouse.txt, display = nil cbPayload = nil
+03/19/12 01:46:05 Checking condition, CheckForMergeFilesUpdated
+03/19/12 01:46:05 Testing false == false
+03/19/12 01:46:05 Checking condition, CheckForMergeFiles
+03/19/12 01:46:05 Testing false == true
+03/19/12 01:46:05 Condition CheckForMergeFiles not satisfied.
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://games-dl2.real.com/gameconsole/realarcadeclient/v2-6-0/common/checkinst.rar, display = nil cbPayload = nil
+03/19/12 01:46:05 Checking condition, CheckForStoreFront
+03/19/12 01:46:05 Checking condition, CheckForGamesRoot
+03/19/12 01:46:05 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = SOFTWARE\GameHouse\2.0\Preferences, key = GamesRoot
+03/19/12 01:46:05 Testing C:\GameHouse Games == nil
+03/19/12 01:46:05 Checking condition, CheckForInstallerDll
+03/19/12 01:46:05  File C:\Program Files\RealArcade\Installer/CheckInst.dll exists.
+03/19/12 01:46:05 Testing true == false
+03/19/12 01:46:05 Testing true == false
+03/19/12 01:46:05 Condition CheckForStoreFront not satisfied.
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://games-dl2.real.com/gameconsole/realarcadeclient/v2-6-0/common/resource/en/gamehouse_/appresource.rar, display = nil cbPayload = nil
+03/19/12 01:46:05 Checking condition, CheckForShortcuts
+03/19/12 01:46:05  File C:\ProgramData\Microsoft\Windows\Start Menu\Programs\GameHouse\Visit GameHouse.url exists.
+03/19/12 01:46:05 Testing true == false
+03/19/12 01:46:05 Condition CheckForShortcuts not satisfied.
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://games-dl2.real.com/gameconsole/realarcadeclient/v2-6-0/common/resource/en/gamehouse_/appresource.rar, display = nil cbPayload = nil
+03/19/12 01:46:05 Checking condition, CheckForShortcuts
+03/19/12 01:46:05  File C:\ProgramData\Microsoft\Windows\Start Menu\Programs\GameHouse\Visit GameHouse.url exists.
+03/19/12 01:46:05 Testing true == false
+03/19/12 01:46:05 Condition CheckForShortcuts not satisfied.
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://games-dl2.real.com/gameconsole/realarcadev21/ThirdPartyOffer/v4-0-google/en/InstallChromeGH12-0icon.rar, display = true cbPayload = nil
+03/19/12 01:46:05 Checking condition, IsSpecialGameForGoogleChrome
+03/19/12 01:46:05 Testing false == false
+03/19/12 01:46:05 Checking condition, OfferedChrome
+03/19/12 01:46:05 Testing nil == true
+03/19/12 01:46:05 Condition OfferedChrome not satisfied.
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://games-dl2.real.com/gameconsole/realarcadev21/ThirdPartyOffer/v4-0-google/en/InstallChromeGHSpecGame.rar, display = true cbPayload = nil
+03/19/12 01:46:05 Checking condition, IsSpecialGameForGoogleChrome
+03/19/12 01:46:05 Testing false == true
+03/19/12 01:46:05 Condition IsSpecialGameForGoogleChrome not satisfied.
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://games-dl2.real.com/gameconsole/realarcadev21/ThirdPartyOffer/v4-0-google/en/GoogleTB9GH.rar, display = true cbPayload = nil
+03/19/12 01:46:05 Checking condition, OfferedGoogle
+03/19/12 01:46:05 Testing nil == true
+03/19/12 01:46:05 Condition OfferedGoogle not satisfied.
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://games-dl2.real.com/gameconsole/realarcadev21/ThirdPartyOffer/v4-0-google/en/WeatherChannel4-3.rar, display = true cbPayload = nil
+03/19/12 01:46:05 Checking condition, OfferedWeatherChannel
+03/19/12 01:46:05 Testing nil == true
+03/19/12 01:46:05 Condition OfferedWeatherChannel not satisfied.
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://games-dl2.real.com/gameconsole/realarcadev21/custom/GameHouse/gamehouse_/custom2.rga, display = nil cbPayload = nil
+03/19/12 01:46:05 Checking condition, CheckForCustomRGAForChannel
+03/19/12 01:46:05 Testing true == true
+03/19/12 01:46:05 payloads.TotalPayloads: check succeeded, num = 0
+03/19/12 01:46:05 Sending: HEAD /gameconsole/realarcadev21/custom/GameHouse/gamehouse_/custom2.rga HTTP/1.0
+Host: games-dl2.real.com
+
+
+03/19/12 01:46:05 payloads.TotalPayloads: counting src = http://games-dl2.real.com/gameconsole/realarcadev21/custom/GameHouse/gamehouse_/custom2.rga file size from HEAD request = 1235851
+
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://games-dl2.real.com/gameconsole/realarcadeclient/v2-6-0/common/resource/en/gamehouse_/appresource.rar, display = nil cbPayload = nil
+03/19/12 01:46:05 Checking condition, OfferedNortonAV
+03/19/12 01:46:05 Testing nil == true
+03/19/12 01:46:05 Condition OfferedNortonAV not satisfied.
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://games-dl2.real.com/gameconsole/realarcadev21/ThirdPartyOffer/v4-0-google/en/ShopToWin-1.rar, display = true cbPayload = nil
+03/19/12 01:46:05 Checking condition, OfferedShopToWin
+03/19/12 01:46:05 Testing nil == true
+03/19/12 01:46:05 Condition OfferedShopToWin not satisfied.
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://cache-download.real.com/free/windows/installer/downloader/rd_1/D10PGH/RealDownloader.msi, display = true cbPayload = nil
+03/19/12 01:46:05 Checking condition, OfferedRealDownloader
+03/19/12 01:46:05 Testing nil == true
+03/19/12 01:46:05 Condition OfferedRealDownloader not satisfied.
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://games-dl2.real.com/gameconsole/realarcadev21/ThirdPartyOffer/v4-0-google/en/w3i.rar, display = true cbPayload = nil
+03/19/12 01:46:05 Checking condition, IsValidW3ISRC
+03/19/12 01:46:05 The src value is null
+03/19/12 01:46:05 Testing false == true
+03/19/12 01:46:05 Condition IsValidW3ISRC not satisfied.
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://www.shopathome.com/join/joinnointerface.aspx?refer=92164&src=AFGHXX&owner=dlnopop&email=[email]&optin=[optin]&zip=[zip], display = true cbPayload = 735336
+03/19/12 01:46:05 Checking condition, OfferedShopAtHome
+03/19/12 01:46:05 Testing nil == true
+03/19/12 01:46:05 Condition OfferedShopAtHome not satisfied.
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://games-dl2.real.com/gameconsole/realarcadev21/games/dip/azkend2theworldbeneath/azkend2theworldbeneath.rga, display = true cbPayload = nil
+03/19/12 01:46:05 payloads.TotalPayloads: check succeeded, num = 1
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://games-dl2.real.com/gameconsole/realarcadev21/games/am-azkend2theworldbeneath/premium.rga, display = nil cbPayload = nil
+03/19/12 01:46:05 Checking condition, CheckForMortimerPremium
+03/19/12 01:46:05 Testing false == true
+03/19/12 01:46:05 Condition CheckForMortimerPremium not satisfied.
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://games-dl2.real.com/gameconsole/realarcadev21/games/am-azkend2theworldbeneath/premium.rga, display = nil cbPayload = nil
+03/19/12 01:46:05 Checking condition, CheckForJewelQuestPremium
+03/19/12 01:46:05 Testing false == true
+03/19/12 01:46:05 Condition CheckForJewelQuestPremium not satisfied.
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://games-dl2.real.com/gameconsole/realarcadev21/games/dip/azkend2theworldbeneath/azkend2theworldbeneath-custom.rga, display = nil cbPayload = nil
+03/19/12 01:46:05 Checking condition, CheckForCustomRGAForGame
+03/19/12 01:46:05 Testing false == true
+03/19/12 01:46:05 Condition CheckForCustomRGAForGame not satisfied.
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://games-dl2.real.com/gameconsole/realarcadev21/games/am-azkend2theworldbeneath/premium.rga, display = nil cbPayload = nil
+03/19/12 01:46:05 Checking condition, PremiumContentFolder
+03/19/12 01:46:05 Testing false == true
+03/19/12 01:46:05 Condition PremiumContentFolder not satisfied.
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://i.realone.com/assets/rn/img/4/3/9/4/45464934-45464937-thumbnail.jpg, display = nil cbPayload = nil
+03/19/12 01:46:05 Checking condition, CheckForGamesManager
+03/19/12 01:46:05 Testing false == true
+03/19/12 01:46:05 Condition CheckForGamesManager not satisfied.
+03/19/12 01:46:05 Sending: HEAD /gameconsole/realarcadev21/games/dip/azkend2theworldbeneath/azkend2theworldbeneath.rga HTTP/1.0
+Host: games-dl2.real.com
+
+
+03/19/12 01:46:05 payloads.TotalPayloads: counting src = http://games-dl2.real.com/gameconsole/realarcadev21/games/dip/azkend2theworldbeneath/azkend2theworldbeneath.rga file size from HEAD request = 51211370
+
+03/19/12 01:46:05 payloads.TotalPayloads: checking src = http://games-dl2.real.com/gameconsole/realarcadev21/chrome/GH-gameicons.rar, display = false cbPayload = nil
+03/19/12 01:46:05 Checking condition, IsSC3Endless
+03/19/12 01:46:05 Testing false == true
+03/19/12 01:46:05 Condition IsSC3Endless not satisfied.
+
+
+
+03/19/12 01:46:05 ************End Payload Calculation******************
+
+
+
+
+03/19/12 01:46:05 totalBundleSize: 52447221 totalPayloads: 2
+03/19/12 01:46:05 payloads.PreInstall: totalPayloads = 2, totalBundleSize = 52447221
+03/19/12 01:46:05 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:46:05 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = MainApp
+03/19/12 01:46:05 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = SOFTWARE\GameHouse\CurrentVersion, key = 
+03/19/12 01:46:05 Creating nil RegKey: HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\CurrentVersion\ = 2.0
+03/19/12 01:46:05 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = SOFTWARE\GameHouse\2.0\Preferences, key = ArcadeVersion
+03/19/12 01:46:05 Creating nil RegKey: HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences\ArcadeVersion = 2.5.0.58
+03/19/12 01:46:05 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = SOFTWARE\GameHouse\2.0\Preferences, key = HtmlVersion
+03/19/12 01:46:05 Creating nil RegKey: HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences\HtmlVersion = 2.6.0.306
+03/19/12 01:46:05 Checking condition, GoogleTBStatusPing
+03/19/12 01:46:05 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:46:05 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:46:05 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:46:05 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:46:05 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:05 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:05 Creating instance of ErrorHandler
+03/19/12 01:46:05 Creating instance of Win32Interop
+03/19/12 01:46:05 Adding dynamic stamp parameter contentid
+03/19/12 01:46:05 Adding dynamic stamp parameter otp
+03/19/12 01:46:05 Adding dynamic stamp parameter tracking
+03/19/12 01:46:05 Adding dynamic stamp parameter affiliate
+03/19/12 01:46:05 Adding dynamic stamp parameter currency
+03/19/12 01:46:05 Adding dynamic stamp parameter price
+03/19/12 01:46:05 Adding dynamic stamp parameter timestamp
+03/19/12 01:46:05 Absent dynamic stamp parameter language
+03/19/12 01:46:05 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:46:05 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:46:05 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:46:05 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:46:05 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:05 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:05 Creating instance of ErrorHandler
+03/19/12 01:46:05 LastSlide = http://www.gamehouse.com/installer?sld=opencandypromo&tps=gamehouse_&gameid=am-azkend2theworldbeneath&tracking=36373932323339000000000000000000&locale=en-us&curpage=1&maxpage=1&locale=en-us&racversion=2.5.0.58&installerversion=2.6.0.477&htmlversion=2.6.0.306
+03/19/12 01:46:05 checking for URL parameter &lsrc=
+03/19/12 01:46:05 Adding URL Parameter "&lsrc=null"
+03/19/12 01:46:05 checking for URL parameter &contentid=
+03/19/12 01:46:05 URL Parameter contentid already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:05 checking for URL parameter &cpath=
+03/19/12 01:46:05 Adding URL Parameter "&cpath=wrapper"
+03/19/12 01:46:05 checking for URL parameter &sparam=
+03/19/12 01:46:05 Adding URL Parameter "&sparam=null"
+03/19/12 01:46:05 checking for URL parameter &currency=
+03/19/12 01:46:05 URL Parameter currency already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:05 checking for URL parameter &rsrc=
+03/19/12 01:46:05 Adding URL Parameter "&rsrc=null"
+03/19/12 01:46:05 checking for URL parameter &timestamp=
+03/19/12 01:46:05 URL Parameter timestamp already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:05 checking for URL parameter &price=
+03/19/12 01:46:05 URL Parameter price already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:05 checking for URL parameter &affiliate=
+03/19/12 01:46:05 URL Parameter affiliate already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:05 checking for URL parameter &otp=
+03/19/12 01:46:05 URL Parameter otp already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:05 checking for URL parameter &tracking=
+03/19/12 01:46:05 URL Parameter tracking already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:05 LogPing URL = http://logging.gamehouse.com/arcade/sites.html?prod=googleinstapp&payload=am%2dazkend2theworldbeneath&action=statusoffer&value=gtb&li=en%2dus&statuscode=4&contentid=02A2356B5D6FBA64197DB4CD60D57E87&otp=00000000000000000000000000000000&tracking=36373932323339000000000000000000&affiliate=67616D65686F7573655F000000000000&currency=000000000000&price=0000000000&timestamp=0000000000&bytecount=144430&channel=gamehouse_&installerversion=2.6.0.477&gameid=am-azkend2theworldbeneath&machineid=4ED9D0CFD87324BBCA6AB4F8553A7478&li=en-us&storefront=GameHouse&clientversion=2.5.0.58&existingchannel=gamehouse_&clientinstalled=1&htmlversion=2.6.0.306&src=&platform=Windows:6.1.7601&architecture=x86&Processors=2&browsers=firefox%2eexe%7cIE%3a%209%2e0%2e8112%2e16421%7cFirefox%3a%2011%2e0%20%28en%2dUS%29%7cChrome%3a%20&lastslide=http%3a%2f%2fwww%2egamehouse%2ecom%2finstaller%3fsld%3dopencandypromo%26tps%3dgamehouse_%26gameid%3dam%2dazkend2theworldbeneath%26tracking%3d36373932323339000000000000000000%26locale%3den%2dus%26curpage%3d1%26maxpage%3d1%26locale%3den%2dus%26racversion%3d2%2e5%2e0%2e58%26installerversion%3d2%2e6%2e0%2e477%26htmlversion%3d2%2e6%2e0%2e306&lsrc=null&cpath=wrapper&sparam=null&rsrc=null
+03/19/12 01:46:05 Sending: HEAD /arcade/sites.html?prod=googleinstapp&payload=am%2dazkend2theworldbeneath&action=statusoffer&value=gtb&li=en%2dus&statuscode=4&contentid=02A2356B5D6FBA64197DB4CD60D57E87&otp=00000000000000000000000000000000&tracking=36373932323339000000000000000000&affiliate=67616D65686F7573655F000000000000&currency=000000000000&price=0000000000&timestamp=0000000000&bytecount=144430&channel=gamehouse_&installerversion=2.6.0.477&gameid=am-azkend2theworldbeneath&machineid=4ED9D0CFD87324BBCA6AB4F8553A7478&li=en-us&storefront=GameHouse&clientversion=2.5.0.58&existingchannel=gamehouse_&clientinstalled=1&htmlversion=2.6.0.306&src=&platform=Windows:6.1.7601&architecture=x86&Processors=2&browsers=firefox%2eexe%7cIE%3a%209%2e0%2e8112%2e16421%7cFirefox%3a%2011%2e0%20%28en%2dUS%29%7cChrome%3a%20&lastslide=http%3a%2f%2fwww%2egamehouse%2ecom%2finstaller%3fsld%3dopencandypromo%26tps%3dgamehouse_%26gameid%3dam%2dazkend2theworldbeneath%26tracking%3d36373932323339000000000000000000%26locale%3den%2dus%26curpage%3d1%26maxpage%3d1%26locale%3den%2dus%26racversion%3d2%2e5%2e0%2e58%26installerversion%3d2%2e6%2e0%2e477%26htmlversion%3d2%2e6%2e0%2e306&lsrc=null&cpath=wrapper&sparam=null&rsrc=null HTTP/1.0
+Host: logging.gamehouse.com
+
+
+03/19/12 01:46:06 Testing true == true
+03/19/12 01:46:06 Checking condition, ChromeStatusPing
+03/19/12 01:46:06 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:46:06 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:46:06 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:46:06 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:46:06 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:06 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:06 Creating instance of ErrorHandler
+03/19/12 01:46:06 Creating instance of Win32Interop
+03/19/12 01:46:06 Adding dynamic stamp parameter contentid
+03/19/12 01:46:06 Adding dynamic stamp parameter otp
+03/19/12 01:46:06 Adding dynamic stamp parameter tracking
+03/19/12 01:46:06 Adding dynamic stamp parameter affiliate
+03/19/12 01:46:06 Adding dynamic stamp parameter currency
+03/19/12 01:46:06 Adding dynamic stamp parameter price
+03/19/12 01:46:06 Adding dynamic stamp parameter timestamp
+03/19/12 01:46:06 Absent dynamic stamp parameter language
+03/19/12 01:46:06 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:46:06 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:46:06 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:46:06 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:46:06 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:06 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:06 Creating instance of ErrorHandler
+03/19/12 01:46:06 LastSlide = http://www.gamehouse.com/installer?sld=opencandypromo&tps=gamehouse_&gameid=am-azkend2theworldbeneath&tracking=36373932323339000000000000000000&locale=en-us&curpage=1&maxpage=1&locale=en-us&racversion=2.5.0.58&installerversion=2.6.0.477&htmlversion=2.6.0.306
+03/19/12 01:46:06 checking for URL parameter &lsrc=
+03/19/12 01:46:06 Adding URL Parameter "&lsrc=null"
+03/19/12 01:46:06 checking for URL parameter &contentid=
+03/19/12 01:46:06 URL Parameter contentid already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:06 checking for URL parameter &cpath=
+03/19/12 01:46:06 Adding URL Parameter "&cpath=wrapper"
+03/19/12 01:46:06 checking for URL parameter &sparam=
+03/19/12 01:46:06 Adding URL Parameter "&sparam=null"
+03/19/12 01:46:06 checking for URL parameter &currency=
+03/19/12 01:46:06 URL Parameter currency already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:06 checking for URL parameter &rsrc=
+03/19/12 01:46:06 Adding URL Parameter "&rsrc=null"
+03/19/12 01:46:06 checking for URL parameter &timestamp=
+03/19/12 01:46:06 URL Parameter timestamp already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:06 checking for URL parameter &price=
+03/19/12 01:46:06 URL Parameter price already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:06 checking for URL parameter &affiliate=
+03/19/12 01:46:06 URL Parameter affiliate already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:06 checking for URL parameter &otp=
+03/19/12 01:46:06 URL Parameter otp already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:06 checking for URL parameter &tracking=
+03/19/12 01:46:06 URL Parameter tracking already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:06 LogPing URL = http://logging.gamehouse.com/arcade/sites.html?prod=googleinstapp&payload=am%2dazkend2theworldbeneath&action=statusoffer&value=gc&li=en%2dus&statuscode=1&contentid=02A2356B5D6FBA64197DB4CD60D57E87&otp=00000000000000000000000000000000&tracking=36373932323339000000000000000000&affiliate=67616D65686F7573655F000000000000&currency=000000000000&price=0000000000&timestamp=0000000000&bytecount=144430&channel=gamehouse_&installerversion=2.6.0.477&gameid=am-azkend2theworldbeneath&machineid=4ED9D0CFD87324BBCA6AB4F8553A7478&li=en-us&storefront=GameHouse&clientversion=2.5.0.58&existingchannel=gamehouse_&clientinstalled=1&htmlversion=2.6.0.306&src=&platform=Windows:6.1.7601&architecture=x86&Processors=2&browsers=firefox%2eexe%7cIE%3a%209%2e0%2e8112%2e16421%7cFirefox%3a%2011%2e0%20%28en%2dUS%29%7cChrome%3a%20&lastslide=http%3a%2f%2fwww%2egamehouse%2ecom%2finstaller%3fsld%3dopencandypromo%26tps%3dgamehouse_%26gameid%3dam%2dazkend2theworldbeneath%26tracking%3d36373932323339000000000000000000%26locale%3den%2dus%26curpage%3d1%26maxpage%3d1%26locale%3den%2dus%26racversion%3d2%2e5%2e0%2e58%26installerversion%3d2%2e6%2e0%2e477%26htmlversion%3d2%2e6%2e0%2e306&lsrc=null&cpath=wrapper&sparam=null&rsrc=null
+03/19/12 01:46:06 Sending: HEAD /arcade/sites.html?prod=googleinstapp&payload=am%2dazkend2theworldbeneath&action=statusoffer&value=gc&li=en%2dus&statuscode=1&contentid=02A2356B5D6FBA64197DB4CD60D57E87&otp=00000000000000000000000000000000&tracking=36373932323339000000000000000000&affiliate=67616D65686F7573655F000000000000&currency=000000000000&price=0000000000&timestamp=0000000000&bytecount=144430&channel=gamehouse_&installerversion=2.6.0.477&gameid=am-azkend2theworldbeneath&machineid=4ED9D0CFD87324BBCA6AB4F8553A7478&li=en-us&storefront=GameHouse&clientversion=2.5.0.58&existingchannel=gamehouse_&clientinstalled=1&htmlversion=2.6.0.306&src=&platform=Windows:6.1.7601&architecture=x86&Processors=2&browsers=firefox%2eexe%7cIE%3a%209%2e0%2e8112%2e16421%7cFirefox%3a%2011%2e0%20%28en%2dUS%29%7cChrome%3a%20&lastslide=http%3a%2f%2fwww%2egamehouse%2ecom%2finstaller%3fsld%3dopencandypromo%26tps%3dgamehouse_%26gameid%3dam%2dazkend2theworldbeneath%26tracking%3d36373932323339000000000000000000%26locale%3den%2dus%26curpage%3d1%26maxpage%3d1%26locale%3den%2dus%26racversion%3d2%2e5%2e0%2e58%26installerversion%3d2%2e6%2e0%2e477%26htmlversion%3d2%2e6%2e0%2e306&lsrc=null&cpath=wrapper&sparam=null&rsrc=null HTTP/1.0
+Host: logging.gamehouse.com
+
+
+03/19/12 01:46:06 Testing true == true
+03/19/12 01:46:06 Checking condition, OfferedChrome
+03/19/12 01:46:06 Testing nil == true
+03/19/12 01:46:06 Condition OfferedChrome not satisfied.
+Defining env: AcceptedNortonAV -> true
+Defining env: tps -> gamehouse_
+Defining env: channel -> gamehouse_
+Defining env: storefront -> GameHouse
+Defining env: GameId -> am-azkend2theworldbeneath
+Defining env: thumbnail -> http://i.realone.com/assets/rn/img/4/3/9/4/45464934-45464937-thumbnail.jpg
+Defining env: genre -> Match 3 Games
+03/19/12 01:46:06 Checking condition, NortonSecurityScan
+03/19/12 01:46:06 Testing false == never
+03/19/12 01:46:06 Condition NortonSecurityScan not satisfied.
+03/19/12 01:46:06 Checking condition, OfferedChrome
+03/19/12 01:46:06 Testing nil == true
+03/19/12 01:46:06 Condition OfferedChrome not satisfied.
+03/19/12 01:46:06 Checking condition, OfferedChrome
+03/19/12 01:46:06 Testing nil == true
+03/19/12 01:46:06 Condition OfferedChrome not satisfied.
+03/19/12 01:46:06 Checking condition, GetChromePath
+03/19/12 01:46:06 Testing false == true
+03/19/12 01:46:06 Condition GetChromePath not satisfied.
+03/19/12 01:46:06 Checking condition, checkforuibrandcode
+03/19/12 01:46:06 Testing false == false
+Defining g_env: chromebrandcode -> RNAM
+03/19/12 01:46:06 Checking condition, RNBM
+03/19/12 01:46:06 Testing false == true
+03/19/12 01:46:06 Condition RNBM not satisfied.
+03/19/12 01:46:06 Checking condition, RNDM
+03/19/12 01:46:06 Testing false == true
+03/19/12 01:46:06 Condition RNDM not satisfied.
+03/19/12 01:46:06 Checking condition, RNEM
+03/19/12 01:46:06 Testing false == true
+03/19/12 01:46:06 Condition RNEM not satisfied.
+03/19/12 01:46:06 Checking condition, RNGF
+03/19/12 01:46:06 Testing false == true
+03/19/12 01:46:06 Condition RNGF not satisfied.
+03/19/12 01:46:06 Checking condition, RNGG
+03/19/12 01:46:06 Testing false == true
+03/19/12 01:46:06 Condition RNGG not satisfied.
+03/19/12 01:46:06 Checking condition, RNGH
+03/19/12 01:46:06 Testing false == true
+03/19/12 01:46:06 Condition RNGH not satisfied.
+03/19/12 01:46:06 Checking condition, RNGI
+03/19/12 01:46:06 Testing false == true
+03/19/12 01:46:06 Condition RNGI not satisfied.
+Defining g_env: googletbbrandcode -> RNQM
+03/19/12 01:46:06 Checking condition, CheckValidAffiliateRGI
+03/19/12 01:46:06 Testing false == true
+03/19/12 01:46:06 Condition CheckValidAffiliateRGI not satisfied.
+03/19/12 01:46:06 Checking condition, CheckValidTrackingRGI
+03/19/12 01:46:06 Testing false == true
+03/19/12 01:46:06 Condition CheckValidTrackingRGI not satisfied.
+03/19/12 01:46:06 Checking condition, CheckValidCurrencyRGI
+03/19/12 01:46:06 Testing false == true
+03/19/12 01:46:06 Condition CheckValidCurrencyRGI not satisfied.
+03/19/12 01:46:06 Checking condition, CheckValidPriceRGI
+03/19/12 01:46:06 Testing false == true
+03/19/12 01:46:06 Condition CheckValidPriceRGI not satisfied.
+03/19/12 01:46:06 Checking condition, CheckValidTimestampRGI
+03/19/12 01:46:06 Testing false == true
+03/19/12 01:46:06 Condition CheckValidTimestampRGI not satisfied.
+03/19/12 01:46:06 Checking condition, CheckForMergeFilesUpdated
+03/19/12 01:46:06 Testing false == false
+03/19/12 01:46:06 Checking condition, CheckForMergeFiles
+03/19/12 01:46:06 Testing false == true
+03/19/12 01:46:06 Condition CheckForMergeFiles not satisfied.
+03/19/12 01:46:06 Checking condition, CheckForStoreFront
+03/19/12 01:46:06 Checking condition, CheckForGamesRoot
+03/19/12 01:46:06 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = SOFTWARE\GameHouse\2.0\Preferences, key = GamesRoot
+03/19/12 01:46:06 Testing C:\GameHouse Games == nil
+03/19/12 01:46:06 Checking condition, CheckForInstallerDll
+03/19/12 01:46:06  File C:\Program Files\RealArcade\Installer/CheckInst.dll exists.
+03/19/12 01:46:06 Testing true == false
+03/19/12 01:46:06 Testing true == false
+03/19/12 01:46:06 Condition CheckForStoreFront not satisfied.
+03/19/12 01:46:06 Checking condition, CheckForShortcuts
+03/19/12 01:46:06  File C:\ProgramData\Microsoft\Windows\Start Menu\Programs\GameHouse\Visit GameHouse.url exists.
+03/19/12 01:46:06 Testing true == false
+03/19/12 01:46:06 Condition CheckForShortcuts not satisfied.
+03/19/12 01:46:06 Checking condition, CheckForShortcuts
+03/19/12 01:46:06  File C:\ProgramData\Microsoft\Windows\Start Menu\Programs\GameHouse\Visit GameHouse.url exists.
+03/19/12 01:46:06 Testing true == false
+03/19/12 01:46:06 Condition CheckForShortcuts not satisfied.
+03/19/12 01:46:06 Checking condition, IsSpecialGameForGoogleChrome
+03/19/12 01:46:06 Testing false == false
+03/19/12 01:46:06 Checking condition, OfferedChrome
+03/19/12 01:46:06 Testing nil == true
+03/19/12 01:46:06 Condition OfferedChrome not satisfied.
+03/19/12 01:46:06 Checking condition, IsSpecialGameForGoogleChrome
+03/19/12 01:46:06 Testing false == true
+03/19/12 01:46:06 Condition IsSpecialGameForGoogleChrome not satisfied.
+03/19/12 01:46:06 Checking condition, OfferedGoogle
+03/19/12 01:46:06 Testing nil == true
+03/19/12 01:46:06 Condition OfferedGoogle not satisfied.
+03/19/12 01:46:06 Checking condition, OfferedWeatherChannel
+03/19/12 01:46:06 Testing nil == true
+03/19/12 01:46:06 Condition OfferedWeatherChannel not satisfied.
+03/19/12 01:46:06 Checking condition, CheckForCustomRGAForChannel
+03/19/12 01:46:06 Testing true == true
+03/19/12 01:46:06 FolderExists path = C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+03/19/12 01:46:06 FileExists path = C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+03/19/12 01:46:06 Backing up, C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+03/19/12 01:46:06 CreatePath path = C:\Users\Hacker\AppData\Local\Temp\{2229EE32-E8FF-4f67-A132-194F07576117}\custom.rga
+03/19/12 01:46:06 Creating, C:\Users\Hacker\AppData\Local\Temp\{2229EE32-E8FF-4f67-A132-194F07576117}\
+03/19/12 01:46:06 Arrange to delete folder: C:\Users\Hacker\AppData\Local\Temp\{2229EE32-E8FF-4f67-A132-194F07576117}\
+03/19/12 01:46:06 Sending: HEAD /gameconsole/realarcadev21/custom/GameHouse/gamehouse_/custom2.rga HTTP/1.0
+Host: games-dl2.real.com
+
+
+03/19/12 01:46:06 GetFile src = http://games-dl2.real.com/gameconsole/realarcadev21/custom/GameHouse/gamehouse_/custom2.rga dest = C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+03/19/12 01:46:06 Downloading http://games-dl2.real.com/gameconsole/realarcadev21/custom/GameHouse/gamehouse_/custom2.rga TO C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+03/19/12 01:46:06 CreatePath path = C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+03/19/12 01:46:07 Checking condition, CheckIsInstallingChrome
+03/19/12 01:46:07 Testing nil == true
+03/19/12 01:46:07 Condition CheckIsInstallingChrome not satisfied.
+03/19/12 01:46:07 ui.Step: ConditionCheck failed.
+03/19/12 01:46:07 Checking condition, IsSC3Endless
+03/19/12 01:46:07 Testing false == false
+03/19/12 01:46:07 Checking condition, CheckIsInstallingChrome
+03/19/12 01:46:07 Testing nil == true
+03/19/12 01:46:07 Condition CheckIsInstallingChrome not satisfied.
+03/19/12 01:46:07 ui.Step: ConditionCheck failed.
+03/19/12 01:46:07 Checking condition, IsSC3Endless
+03/19/12 01:46:07 Testing false == false
+03/19/12 01:46:07 Checking condition, CheckIsInstallingChrome
+03/19/12 01:46:07 Testing nil == true
+03/19/12 01:46:07 Condition CheckIsInstallingChrome not satisfied.
+03/19/12 01:46:07 ui.Step: ConditionCheck failed.
+03/19/12 01:46:07 Checking condition, IsSC3Endless
+03/19/12 01:46:07 Testing false == true
+03/19/12 01:46:07 Condition IsSC3Endless not satisfied.
+03/19/12 01:46:07 ui.Step: ConditionCheck failed.
+03/19/12 01:46:07 Checking condition, IsSC3Endless
+03/19/12 01:46:07 Testing false == true
+03/19/12 01:46:07 Condition IsSC3Endless not satisfied.
+03/19/12 01:46:07 ui.Step: ConditionCheck failed.
+03/19/12 01:46:07 Checking condition, IsSC3Endless
+03/19/12 01:46:07 Testing false == false
+03/19/12 01:46:07 Checking condition, OpenCandyAcceptedPing
+03/19/12 01:46:07 Checking condition, IsOfferedCandy
+03/19/12 01:46:07 Testing true == true
+03/19/12 01:46:07 The OpenCandy offer selection is false
+03/19/12 01:46:07 Testing true == true
+03/19/12 01:46:07 Checking condition, InstallCandyOffer
+03/19/12 01:46:07 Checking condition, IsOfferedCandy
+03/19/12 01:46:07 Testing true == true
+03/19/12 01:46:07 The OpenCandy installing state is true
+03/19/12 01:46:07 Testing true == true
+03/19/12 01:46:07 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:46:07 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = ArcadeVersion
+03/19/12 01:46:07 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:46:07 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = HtmlVersion
+03/19/12 01:46:07 Navigating to http://www.gamehouse.com/installer?sld=installing&tps=gamehouse_&gameid=am-azkend2theworldbeneath&tracking=36373932323339000000000000000000&locale=en-us&curpage=1&maxpage=1&locale=en-us&racversion=2.5.0.58&installerversion=2.6.0.477&htmlversion=2.6.0.306
+Defining g_env: InstallComplete -> inprogress
+03/19/12 01:46:08 Processing JSLoadComplete Event. clock=15.14
+03/19/12 01:46:08 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:46:08 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:46:08 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:46:08 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:46:08 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:08 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:08 Creating instance of ErrorHandler
+03/19/12 01:46:08 Adding dynamic stamp parameter contentid
+03/19/12 01:46:08 Adding dynamic stamp parameter otp
+03/19/12 01:46:08 Adding dynamic stamp parameter tracking
+03/19/12 01:46:08 Adding dynamic stamp parameter affiliate
+03/19/12 01:46:08 Adding dynamic stamp parameter currency
+03/19/12 01:46:08 Adding dynamic stamp parameter price
+03/19/12 01:46:08 Adding dynamic stamp parameter timestamp
+03/19/12 01:46:08 Absent dynamic stamp parameter language
+03/19/12 01:46:08 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:46:08 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:46:08 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:46:08 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:46:08 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:08 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:08 Creating instance of ErrorHandler
+03/19/12 01:46:08 LastSlide = http://www.gamehouse.com/installer?sld=installing&tps=gamehouse_&gameid=am-azkend2theworldbeneath&tracking=36373932323339000000000000000000&locale=en-us&curpage=1&maxpage=1&locale=en-us&racversion=2.5.0.58&installerversion=2.6.0.477&htmlversion=2.6.0.306
+03/19/12 01:46:08 checking for URL parameter &lsrc=
+03/19/12 01:46:08 Adding URL Parameter "&lsrc=null"
+03/19/12 01:46:08 checking for URL parameter &contentid=
+03/19/12 01:46:08 URL Parameter contentid already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:08 checking for URL parameter &cpath=
+03/19/12 01:46:08 Adding URL Parameter "&cpath=wrapper"
+03/19/12 01:46:08 checking for URL parameter &sparam=
+03/19/12 01:46:08 Adding URL Parameter "&sparam=null"
+03/19/12 01:46:08 checking for URL parameter &currency=
+03/19/12 01:46:08 URL Parameter currency already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:08 checking for URL parameter &rsrc=
+03/19/12 01:46:08 Adding URL Parameter "&rsrc=null"
+03/19/12 01:46:08 checking for URL parameter &timestamp=
+03/19/12 01:46:08 URL Parameter timestamp already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:08 checking for URL parameter &price=
+03/19/12 01:46:08 URL Parameter price already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:08 checking for URL parameter &affiliate=
+03/19/12 01:46:08 URL Parameter affiliate already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:08 checking for URL parameter &otp=
+03/19/12 01:46:08 URL Parameter otp already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:08 checking for URL parameter &tracking=
+03/19/12 01:46:08 URL Parameter tracking already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:46:08 LogPing URL = http://logging.gamehouse.com/arcade/sites.html?component=rac_installer&state=fail&error=httpError%3a%20closed%20http%3a%2f%2fgames%2ddl2%2ereal%2ecom%2fgameconsole%2frealarcadev21%2fcustom%2fGameHouse%2fgamehouse_%2fcustom2%2erga&contentid=02A2356B5D6FBA64197DB4CD60D57E87&otp=00000000000000000000000000000000&tracking=36373932323339000000000000000000&affiliate=67616D65686F7573655F000000000000&currency=000000000000&price=0000000000&timestamp=0000000000&bytecount=443438&tps=gamehouse_&installerversion=2.6.0.477&gameid=am-azkend2theworldbeneath&machineid=4ED9D0CFD87324BBCA6AB4F8553A7478&li=en-us&storefront=GameHouse&racversion=2.5.0.58&existingtps=gamehouse_&arcadeinstalled=1&htmlversion=2.6.0.306&src=&platform=Windows:6.1.7601&architecture=x86&Processors=2&browsers=firefox%2eexe%7cIE%3a%209%2e0%2e8112%2e16421%7cFirefox%3a%2011%2e0%20%28en%2dUS%29%7cChrome%3a%20&lastslide=http%3a%2f%2fwww%2egamehouse%2ecom%2finstaller%3fsld%3dinstalling%26tps%3dgamehouse_%26gameid%3dam%2dazkend2theworldbeneath%26tracking%3d36373932323339000000000000000000%26locale%3den%2dus%26curpage%3d1%26maxpage%3d1%26locale%3den%2dus%26racversion%3d2%2e5%2e0%2e58%26installerversion%3d2%2e6%2e0%2e477%26htmlversion%3d2%2e6%2e0%2e306&lsrc=null&cpath=wrapper&sparam=null&rsrc=null
+03/19/12 01:46:09 Sending: HEAD /arcade/sites.html?component=rac_installer&state=fail&error=httpError%3a%20closed%20http%3a%2f%2fgames%2ddl2%2ereal%2ecom%2fgameconsole%2frealarcadev21%2fcustom%2fGameHouse%2fgamehouse_%2fcustom2%2erga&contentid=02A2356B5D6FBA64197DB4CD60D57E87&otp=00000000000000000000000000000000&tracking=36373932323339000000000000000000&affiliate=67616D65686F7573655F000000000000&currency=000000000000&price=0000000000&timestamp=0000000000&bytecount=443438&tps=gamehouse_&installerversion=2.6.0.477&gameid=am-azkend2theworldbeneath&machineid=4ED9D0CFD87324BBCA6AB4F8553A7478&li=en-us&storefront=GameHouse&racversion=2.5.0.58&existingtps=gamehouse_&arcadeinstalled=1&htmlversion=2.6.0.306&src=&platform=Windows:6.1.7601&architecture=x86&Processors=2&browsers=firefox%2eexe%7cIE%3a%209%2e0%2e8112%2e16421%7cFirefox%3a%2011%2e0%20%28en%2dUS%29%7cChrome%3a%20&lastslide=http%3a%2f%2fwww%2egamehouse%2ecom%2finstaller%3fsld%3dinstalling%26tps%3dgamehouse_%26gameid%3dam%2dazkend2theworldbeneath%26tracking%3d36373932323339000000000000000000%26locale%3den%2dus%26curpage%3d1%26maxpage%3d1%26locale%3den%2dus%26racversion%3d2%2e5%2e0%2e58%26installerversion%3d2%2e6%2e0%2e477%26htmlversion%3d2%2e6%2e0%2e306&lsrc=null&cpath=wrapper&sparam=null&rsrc=null HTTP/1.0
+Host: logging.gamehouse.com
+
+closed
+03/19/12 01:46:10 Recovery: http://games-dl2.real.com/gameconsole/realarcadev21/custom/GameHouse/gamehouse_/custom2.rga TO C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+03/19/12 01:46:10 GetFile src = http://games-dl2.real.com/gameconsole/realarcadev21/custom/GameHouse/gamehouse_/custom2.rga dest = C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+03/19/12 01:46:10 Downloading http://games-dl2.real.com/gameconsole/realarcadev21/custom/GameHouse/gamehouse_/custom2.rga TO C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+03/19/12 01:46:10 CreatePath path = C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+03/19/12 01:46:14 Completed download of C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+03/19/12 01:46:14 Processing Game Payload
+03/19/12 01:46:14 Payload Path: C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_
+03/19/12 01:46:14 FolderExists path = C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_
+03/19/12 01:46:14 Backing up, C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_
+03/19/12 01:46:14 CreatePath path = C:\Users\Hacker\AppData\Local\Temp\{2229EE32-E8FF-4f67-A132-194F07576117}\gamehouse_
+03/19/12 01:46:14 Arrange to delete temp: C:\Users\Hacker\AppData\Local\Temp\{2229EE32-E8FF-4f67-A132-194F07576117}\gamehouse_
+03/19/12 01:46:14 UnRar: C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga to C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_
+03/19/12 01:46:14 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:46:14 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:46:14 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:46:14 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:46:14 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:14 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:14 Creating instance of ErrorHandler
+03/19/12 01:46:14 Begining NestedScript: C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\gameinst.xml
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = LicenseRoot
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = InstallPath
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = DatabasePath
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = MainApp
+03/19/12 01:46:14 Checking for V2 installation...
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = ArcadeVersion
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = Tps
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = RacType
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = CatalogVersion
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = HtmlVersion
+03/19/12 01:46:14 RAC Storefront: GameHouse
+03/19/12 01:46:14 RAC Version: 2.5.0.58
+03/19/12 01:46:14 RAC TPS: gamehouse_
+03/19/12 01:46:14 RAC Client Type: 
+03/19/12 01:46:14 V1 location: Not Found
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\RealNetworks\RealArcade\CurrentVersion, key = nil
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\RealNetworks\RealArcade\1.2\Preferences\MainApp, key = nil
+
+03/19/12 01:46:14 *************** Global Metadata Environment ******************
+firefoxVer -> 11.0 (en-US)
+appData -> C:\Users\Hacker\AppData\Roaming
+googletbbrandcode -> RNQM
+curGameName -> Azkend 2 - The World Beneath
+gamesRoot -> C:\GameHouse Games
+IDW_COMPLETED -> 2000
+desktop -> C:\Users\Hacker\Desktop
+statusgoogleping -> done
+system -> C:\Windows\system32
+public -> C:\Users\Public
+commonStartMenu -> C:\ProgramData\Microsoft\Windows\Start Menu
+userFavorites -> C:\Users\Hacker\Favorites
+commonDesktop -> C:\Users\Public\Desktop
+ieVer -> 9.0.8112.16421
+statuschromeping -> done
+tmpDir -> C:\Users\Hacker\AppData\Local\Temp
+InstallComplete -> inprogress
+curTps -> gamehouse_
+dateTime -> 20120319T054553
+favorites -> C:\Users\Hacker\Favorites
+licenseRoot -> 
+itmUrl -> 
+chromebrandcode -> RNAM
+ChromePath -> C:\Program Files\Google\Chrome\Application
+readytocheckgoogleoffer -> 8
+isfirsttimeinstalled -> false
+offeredopencandyping -> true
+racVerInit -> 1.2.0.1256
+programFolder -> Program Files
+sysDrive -> C
+databasePath -> 
+dateTimeTM -> 2012/03/19@01:45:53
+v1baseUrl -> http://switchboard.real.com/arcade/feeds.html?client=web&ractype=oldclient&action=download&gametype=download&dltype=bundle&
+dayWeekOfYear -> 201203191079
+windir -> C:\Windows
+start -> C:\Users\Hacker\AppData\Roaming\Microsoft\Windows\Start Menu
+curGameId -> am-azkend2theworldbeneath
+programFiles -> C:\Program Files
+startPrograms -> C:\Users\Hacker\AppData\Roaming\Microsoft\Windows\Start Menu\Programs
+
+03/19/12 01:46:14 *************** Local Metadata Environment *******************
+installDir -> C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_
+action -> 
+racApp -> 
+bitsBase -> 
+installDrive -> C:
+gameType -> 
+gameBase -> 
+genre -> Match 3 Games
+osVersion -> 6
+tps -> gamehouse_
+thumbnail -> http://i.realone.com/assets/rn/img/4/3/9/4/45464934-45464937-thumbnail.jpg
+gameName -> Azkend 2 - The World Beneath
+AcceptedNortonAV -> true
+gamesRoot -> C:\GameHouse Games
+racInstallerURLBase -> 
+racRoot -> 
+racVersion -> 2.0
+workDir -> C:\Program Files\RealArcade\Installer
+GameId -> am-azkend2theworldbeneath
+storefront -> GameHouse
+urlEncodedGameName -> Azkend%202%20%2d%20The%20World%20Beneath
+licenseRoot -> 
+itmUrl -> 
+v1MainApp -> C:\Program Files\Real\RealArcade\RNArcade.exe
+databasePath -> 
+channel -> gamehouse_
+gameId -> am-azkend2theworldbeneath
+OfferedCandy -> true
+lang -> en
+installerDir -> C:\Program Files\RealArcade\Installer
+xmlNestLevel -> 1
+
+03/19/12 01:46:14 Returning instance of MetadataInterp
+03/19/12 01:46:14 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:46:14 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:46:14 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:46:14 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:46:14 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:14 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:46:14 Creating instance of ErrorHandler
+03/19/12 01:46:14 UNINST: nil  nil
+03/19/12 01:46:14 Warning, NullUnInstaller created. Uninstaller tag or Text attribute missing from xml?
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = LicenseRoot
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = DatabasePath
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = InstallPath
+03/19/12 01:46:14 Checking for migration
+03/19/12 01:46:14 Checking for V2 installation...
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = ArcadeVersion
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = Tps
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = RacType
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = CatalogVersion
+03/19/12 01:46:14 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = HtmlVersion
+03/19/12 01:46:14 RAC Storefront: GameHouse
+03/19/12 01:46:14 RAC Version: 2.5.0.58
+03/19/12 01:46:14 RAC TPS: gamehouse_
+03/19/12 01:46:14 RAC Client Type: 
+03/19/12 01:46:14 V1 location: Not Found
+03/19/12 01:46:14 We are not migrating
+Deleting File: gameinst.xml
+03/19/12 01:46:14 DeleteFile path = gameinst.xml
+03/19/12 01:46:14 Error attempting to delete: gameinst.xml, COM exception:(.\src\library\tLuaCOM.cpp,398):
+03/19/12 01:46:14 UpdateDip No ContentId. Dip not updated
+03/19/12 01:46:14 upgrademode: nil
+03/19/12 01:46:14 Finished NestedScript: C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\gameinst.xml
+03/19/12 01:46:14 Checking condition, OfferedNortonAV
+03/19/12 01:46:14 Testing nil == true
+03/19/12 01:46:14 Condition OfferedNortonAV not satisfied.
+03/19/12 01:46:14 Checking condition, OfferedShopToWin
+03/19/12 01:46:14 Testing nil == true
+03/19/12 01:46:14 Condition OfferedShopToWin not satisfied.
+03/19/12 01:46:14 Checking condition, OfferedRealDownloader
+03/19/12 01:46:14 Testing nil == true
+03/19/12 01:46:14 Condition OfferedRealDownloader not satisfied.
+03/19/12 01:46:14 Checking condition, IsValidW3ISRC
+03/19/12 01:46:14 The src value is null
+03/19/12 01:46:14 Testing false == true
+03/19/12 01:46:14 Condition IsValidW3ISRC not satisfied.
+03/19/12 01:46:14 Checking condition, OfferedShopAtHome
+03/19/12 01:46:14 Testing nil == true
+03/19/12 01:46:14 Condition OfferedShopAtHome not satisfied.
+03/19/12 01:46:14 FolderExists path = C:\GameHouse Games\Azkend 2 - The World Beneath\am-azkend2theworldbeneath.rga
+03/19/12 01:46:14 FileExists path = C:\GameHouse Games\Azkend 2 - The World Beneath\am-azkend2theworldbeneath.rga
+03/19/12 01:46:14 Sending: HEAD /gameconsole/realarcadev21/games/dip/azkend2theworldbeneath/azkend2theworldbeneath.rga HTTP/1.0
+Host: games-dl2.real.com
+
+
+03/19/12 01:46:15 GetFile src = http://games-dl2.real.com/gameconsole/realarcadev21/games/dip/azkend2theworldbeneath/azkend2theworldbeneath.rga dest = C:\GameHouse Games\Azkend 2 - The World Beneath\am-azkend2theworldbeneath.rga
+03/19/12 01:46:15 Downloading http://games-dl2.real.com/gameconsole/realarcadev21/games/dip/azkend2theworldbeneath/azkend2theworldbeneath.rga TO C:\GameHouse Games\Azkend 2 - The World Beneath\am-azkend2theworldbeneath.rga
+03/19/12 01:46:15 CreatePath path = C:\GameHouse Games\Azkend 2 - The World Beneath\am-azkend2theworldbeneath.rga
+03/19/12 01:46:15 Creating, C:\GameHouse Games\Azkend 2 - The World Beneath\
+03/19/12 01:47:33 Completed download of C:\GameHouse Games\Azkend 2 - The World Beneath\am-azkend2theworldbeneath.rga
+03/19/12 01:47:33 Processing Game Payload
+03/19/12 01:47:33 Payload Path: C:\GameHouse Games\Azkend 2 - The World Beneath
+03/19/12 01:47:33 FolderExists path = C:\GameHouse Games\Azkend 2 - The World Beneath
+03/19/12 01:47:33 Backing up, C:\GameHouse Games\Azkend 2 - The World Beneath
+03/19/12 01:47:33 CreatePath path = C:\Users\Hacker\AppData\Local\Temp\{2229EE32-E8FF-4f67-A132-194F07576117}\Azkend 2 - The World Beneath
+03/19/12 01:47:33 Arrange to delete temp: C:\Users\Hacker\AppData\Local\Temp\{2229EE32-E8FF-4f67-A132-194F07576117}\Azkend 2 - The World Beneath
+03/19/12 01:47:33 UnRar: C:\GameHouse Games\Azkend 2 - The World Beneath\am-azkend2theworldbeneath.rga to C:\GameHouse Games\Azkend 2 - The World Beneath
+03/19/12 01:47:34 Begining NestedScript: C:\GameHouse Games\Azkend 2 - The World Beneath\gameinst.xml
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = LicenseRoot
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = InstallPath
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = DatabasePath
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = MainApp
+03/19/12 01:47:34 Checking for V2 installation...
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = ArcadeVersion
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = Tps
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = RacType
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = CatalogVersion
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = HtmlVersion
+03/19/12 01:47:34 RAC Storefront: GameHouse
+03/19/12 01:47:34 RAC Version: 2.5.0.58
+03/19/12 01:47:34 RAC TPS: gamehouse_
+03/19/12 01:47:34 RAC Client Type: 
+03/19/12 01:47:34 V1 location: Not Found
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\RealNetworks\RealArcade\CurrentVersion, key = nil
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\RealNetworks\RealArcade\1.2\Preferences\MainApp, key = nil
+
+03/19/12 01:47:34 *************** Global Metadata Environment ******************
+firefoxVer -> 11.0 (en-US)
+appData -> C:\Users\Hacker\AppData\Roaming
+googletbbrandcode -> RNQM
+curGameName -> Azkend 2 - The World Beneath
+gamesRoot -> C:\GameHouse Games
+IDW_COMPLETED -> 2000
+desktop -> C:\Users\Hacker\Desktop
+statusgoogleping -> done
+system -> C:\Windows\system32
+public -> C:\Users\Public
+commonStartMenu -> C:\ProgramData\Microsoft\Windows\Start Menu
+userFavorites -> C:\Users\Hacker\Favorites
+commonDesktop -> C:\Users\Public\Desktop
+ieVer -> 9.0.8112.16421
+statuschromeping -> done
+tmpDir -> C:\Users\Hacker\AppData\Local\Temp
+InstallComplete -> inprogress
+curTps -> gamehouse_
+dateTime -> 20120319T054553
+favorites -> C:\Users\Hacker\Favorites
+licenseRoot -> 
+itmUrl -> 
+chromebrandcode -> RNAM
+ChromePath -> C:\Program Files\Google\Chrome\Application
+readytocheckgoogleoffer -> 8
+isfirsttimeinstalled -> false
+offeredopencandyping -> true
+racVerInit -> 1.2.0.1256
+programFolder -> Program Files
+sysDrive -> C
+databasePath -> 
+dateTimeTM -> 2012/03/19@01:45:53
+v1baseUrl -> http://switchboard.real.com/arcade/feeds.html?client=web&ractype=oldclient&action=download&gametype=download&dltype=bundle&
+dayWeekOfYear -> 201203191079
+windir -> C:\Windows
+start -> C:\Users\Hacker\AppData\Roaming\Microsoft\Windows\Start Menu
+curGameId -> am-azkend2theworldbeneath
+programFiles -> C:\Program Files
+startPrograms -> C:\Users\Hacker\AppData\Roaming\Microsoft\Windows\Start Menu\Programs
+
+03/19/12 01:47:34 *************** Local Metadata Environment *******************
+installDir -> C:\GameHouse Games\Azkend 2 - The World Beneath
+action -> 
+racApp -> 
+bitsBase -> 
+installDrive -> C:
+gameType -> 
+gameBase -> 
+genre -> Match 3 Games
+osVersion -> 6
+tps -> gamehouse_
+thumbnail -> http://i.realone.com/assets/rn/img/4/3/9/4/45464934-45464937-thumbnail.jpg
+gameName -> Azkend 2 - The World Beneath
+AcceptedNortonAV -> true
+gamesRoot -> C:\GameHouse Games
+racInstallerURLBase -> 
+racRoot -> 
+racVersion -> 2.0
+workDir -> C:\Program Files\RealArcade\Installer
+GameId -> am-azkend2theworldbeneath
+storefront -> GameHouse
+urlEncodedGameName -> Azkend%202%20%2d%20The%20World%20Beneath
+licenseRoot -> 
+itmUrl -> 
+v1MainApp -> C:\Program Files\Real\RealArcade\RNArcade.exe
+databasePath -> 
+channel -> gamehouse_
+gameId -> am-azkend2theworldbeneath
+OfferedCandy -> true
+lang -> en
+installerDir -> C:\Program Files\RealArcade\Installer
+xmlNestLevel -> 1
+
+03/19/12 01:47:34 Returning instance of MetadataInterp
+03/19/12 01:47:34 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:47:34 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:47:34 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:47:34 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:47:34 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:47:34 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:47:34 Creating instance of ErrorHandler
+03/19/12 01:47:34 UNINST: nil  nil
+03/19/12 01:47:34 Warning, NullUnInstaller created. Uninstaller tag or Text attribute missing from xml?
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = LicenseRoot
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = DatabasePath
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = InstallPath
+03/19/12 01:47:34 Checking for migration
+03/19/12 01:47:34 Checking for V2 installation...
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = ArcadeVersion
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = Tps
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = RacType
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = CatalogVersion
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = HtmlVersion
+03/19/12 01:47:34 RAC Storefront: GameHouse
+03/19/12 01:47:34 RAC Version: 2.5.0.58
+03/19/12 01:47:34 RAC TPS: gamehouse_
+03/19/12 01:47:34 RAC Client Type: 
+03/19/12 01:47:34 V1 location: Not Found
+03/19/12 01:47:34 We are not migrating
+Defining g_env: ContentID -> 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 FileExists path = C:\ProgramData\Trymedia\Licenses\02a2356b5d6fba64197db4cd60d57e87.dlcn
+03/19/12 01:47:34 UpdateDip File does not exist C:\ProgramData\Trymedia\Licenses\02a2356b5d6fba64197db4cd60d57e87.dlcn
+03/19/12 01:47:34 upgrademode: nil
+03/19/12 01:47:34 Finished NestedScript: C:\GameHouse Games\Azkend 2 - The World Beneath\gameinst.xml
+03/19/12 01:47:34 DeleteFile path = C:\GameHouse Games\Azkend 2 - The World Beneath\am-azkend2theworldbeneath.rga
+03/19/12 01:47:34 Removing file element: C:\GameHouse Games\Azkend 2 - The World Beneath\am-azkend2theworldbeneath.rga
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == true
+03/19/12 01:47:34 Checking condition, CheckValidAffiliate
+03/19/12 01:47:34 Testing true == true
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87, key = affiliate
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\, key = 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 unInst.RegKey [HKEY_LOCAL_MACHINE][SOFTWARE\Trymedia Systems\ActiveMARK Software\][02a2356b5d6fba64197db4cd60d57e87]
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\, key = 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 unInst.RegKey [HKEY_LOCAL_MACHINE][SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87][affiliate]
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87, key = affiliate
+03/19/12 01:47:34 Creating BINARY RegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87\affiliate = 67616D65686F7573655F000000000000
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == true
+03/19/12 01:47:34 Checking condition, CheckValidAffiliateRGI
+03/19/12 01:47:34 Testing false == true
+03/19/12 01:47:34 Condition CheckValidAffiliateRGI not satisfied.
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == true
+03/19/12 01:47:34 Checking condition, CheckValidTracking
+03/19/12 01:47:34 Testing true == true
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87, key = tracking
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\, key = 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 unInst.RegKey [HKEY_LOCAL_MACHINE][SOFTWARE\Trymedia Systems\ActiveMARK Software\][02a2356b5d6fba64197db4cd60d57e87]
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\, key = 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 unInst.RegKey [HKEY_LOCAL_MACHINE][SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87][tracking]
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87, key = tracking
+03/19/12 01:47:34 Creating BINARY RegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87\tracking = 36373932323339000000000000000000
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == true
+03/19/12 01:47:34 Checking condition, CheckValidTrackingRGI
+03/19/12 01:47:34 Testing false == true
+03/19/12 01:47:34 Condition CheckValidTrackingRGI not satisfied.
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == true
+03/19/12 01:47:34 Checking condition, CheckValidCurrency
+03/19/12 01:47:34 Testing true == true
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87, key = currency
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\, key = 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 unInst.RegKey [HKEY_LOCAL_MACHINE][SOFTWARE\Trymedia Systems\ActiveMARK Software\][02a2356b5d6fba64197db4cd60d57e87]
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\, key = 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 unInst.RegKey [HKEY_LOCAL_MACHINE][SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87][currency]
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87, key = currency
+03/19/12 01:47:34 Creating BINARY RegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87\currency = 000000000000
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == true
+03/19/12 01:47:34 Checking condition, CheckValidCurrencyRGI
+03/19/12 01:47:34 Testing false == true
+03/19/12 01:47:34 Condition CheckValidCurrencyRGI not satisfied.
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == true
+03/19/12 01:47:34 Checking condition, CheckValidPrice
+03/19/12 01:47:34 Testing true == true
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87, key = price
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\, key = 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 unInst.RegKey [HKEY_LOCAL_MACHINE][SOFTWARE\Trymedia Systems\ActiveMARK Software\][02a2356b5d6fba64197db4cd60d57e87]
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\, key = 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 unInst.RegKey [HKEY_LOCAL_MACHINE][SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87][price]
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87, key = price
+03/19/12 01:47:34 Creating BINARY RegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87\price = 0000000000
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == true
+03/19/12 01:47:34 Checking condition, CheckValidPriceRGI
+03/19/12 01:47:34 Testing false == true
+03/19/12 01:47:34 Condition CheckValidPriceRGI not satisfied.
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == true
+03/19/12 01:47:34 Checking condition, CheckValidTimestamp
+03/19/12 01:47:34 Testing true == true
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87, key = timestamp
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\, key = 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 unInst.RegKey [HKEY_LOCAL_MACHINE][SOFTWARE\Trymedia Systems\ActiveMARK Software\][02a2356b5d6fba64197db4cd60d57e87]
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\, key = 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 unInst.RegKey [HKEY_LOCAL_MACHINE][SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87][timestamp]
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87, key = timestamp
+03/19/12 01:47:34 Creating BINARY RegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87\timestamp = 0000000000
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == true
+03/19/12 01:47:34 Checking condition, CheckValidTimestampRGI
+03/19/12 01:47:34 Testing false == true
+03/19/12 01:47:34 Condition CheckValidTimestampRGI not satisfied.
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == true
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87, key = installation_time
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\, key = 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 unInst.RegKey [HKEY_LOCAL_MACHINE][SOFTWARE\Trymedia Systems\ActiveMARK Software\][02a2356b5d6fba64197db4cd60d57e87]
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\, key = 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 unInst.RegKey [HKEY_LOCAL_MACHINE][SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87][installation_time]
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87, key = installation_time
+03/19/12 01:47:34 Creating nil RegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87\installation_time = 2012/03/19@01:45:53
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == true
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87, key = path
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\, key = 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 unInst.RegKey [HKEY_LOCAL_MACHINE][SOFTWARE\Trymedia Systems\ActiveMARK Software\][02a2356b5d6fba64197db4cd60d57e87]
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\, key = 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 unInst.RegKey [HKEY_LOCAL_MACHINE][SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87][path]
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87, key = path
+03/19/12 01:47:34 Creating nil RegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87\path = C:\GameHouse Games\Azkend 2 - The World Beneath\GH-Azkend2.exe
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == true
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87, key = gameid
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\, key = 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 unInst.RegKey [HKEY_LOCAL_MACHINE][SOFTWARE\Trymedia Systems\ActiveMARK Software\][02a2356b5d6fba64197db4cd60d57e87]
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\, key = 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 unInst.RegKey [HKEY_LOCAL_MACHINE][SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87][gameid]
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87, key = gameid
+03/19/12 01:47:34 Creating nil RegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87\gameid = am-azkend2theworldbeneath
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == false
+03/19/12 01:47:34 Condition CheckValidcontentidRGI not satisfied.
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == false
+03/19/12 01:47:34 Condition CheckValidcontentidRGI not satisfied.
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == false
+03/19/12 01:47:34 Condition CheckValidcontentidRGI not satisfied.
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == false
+03/19/12 01:47:34 Condition CheckValidcontentidRGI not satisfied.
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == false
+03/19/12 01:47:34 Condition CheckValidcontentidRGI not satisfied.
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == false
+03/19/12 01:47:34 Condition CheckValidcontentidRGI not satisfied.
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == false
+03/19/12 01:47:34 Condition CheckValidcontentidRGI not satisfied.
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == false
+03/19/12 01:47:34 Condition CheckValidcontentidRGI not satisfied.
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == false
+03/19/12 01:47:34 Condition CheckValidcontentidRGI not satisfied.
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == false
+03/19/12 01:47:34 Condition CheckValidcontentidRGI not satisfied.
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == false
+03/19/12 01:47:34 Condition CheckValidcontentidRGI not satisfied.
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == false
+03/19/12 01:47:34 Condition CheckValidcontentidRGI not satisfied.
+03/19/12 01:47:34 Checking condition, CheckValidcontentidRGI
+03/19/12 01:47:34 The XML Attribute contentid is set to 02a2356b5d6fba64197db4cd60d57e87
+03/19/12 01:47:34 Testing true == false
+03/19/12 01:47:34 Condition CheckValidcontentidRGI not satisfied.
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = SOFTWARE\GameHouse\2.0\Preferences, key = save
+03/19/12 01:47:34 unInst.RegKey [HKEY_CLASSES_ROOT][SOFTWARE\GameHouse\2.0\Preferences][save] NoRemove is not defined...so leave
+03/19/12 01:47:34 Creating nil RegKey: HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences\save = false
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = SOFTWARE\GameHouse\2.0\Preferences, key = save
+03/19/12 01:47:34 unInst.RegKey [HKEY_CLASSES_ROOT][SOFTWARE\GameHouse\2.0\Preferences][save] NoRemove is not defined...so leave
+03/19/12 01:47:34 Creating nil RegKey: HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences\save = true
+03/19/12 01:47:34 Checking condition, CheckSaveStatus
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = SOFTWARE\GameHouse\2.0\Preferences, key = save
+03/19/12 01:47:34 Testing true == false
+03/19/12 01:47:34 Condition CheckSaveStatus not satisfied.
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = SOFTWARE\GameHouse\Games\am-azkend2theworldbeneath\1, key = InstallPath
+03/19/12 01:47:34 unInst.RegKey [HKEY_CLASSES_ROOT][SOFTWARE\GameHouse\Games\am-azkend2theworldbeneath\1][InstallPath] NoRemove is not defined...so leave
+03/19/12 01:47:34 Creating nil RegKey: HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\Games\am-azkend2theworldbeneath\1\InstallPath = C:\GameHouse Games\Azkend 2 - The World Beneath
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = SOFTWARE\GameHouse\Games\am-azkend2theworldbeneath\1, key = GameName
+03/19/12 01:47:34 unInst.RegKey [HKEY_CLASSES_ROOT][SOFTWARE\GameHouse\Games\am-azkend2theworldbeneath\1][GameName] NoRemove is not defined...so leave
+03/19/12 01:47:34 Creating nil RegKey: HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\Games\am-azkend2theworldbeneath\1\GameName = am-azkend2theworldbeneath
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = SOFTWARE\GameHouse\Games\am-azkend2theworldbeneath\1, key = UninstallPath
+03/19/12 01:47:34 unInst.RegKey [HKEY_CLASSES_ROOT][SOFTWARE\GameHouse\Games\am-azkend2theworldbeneath\1][UninstallPath] NoRemove is not defined...so leave
+03/19/12 01:47:34 Creating nil RegKey: HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\Games\am-azkend2theworldbeneath\1\UninstallPath = C:\Program Files\RealArcade\Installer\uninstall\am-azkend2theworldbeneath.rguninst
+03/19/12 01:47:34 Checking condition, GamesShortcutsState
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = SOFTWARE\GameHouse\2.0\Preferences, key = GameDesktopShortcuts
+03/19/12 01:47:34 Testing off == on
+03/19/12 01:47:34 Condition GamesShortcutsState not satisfied.
+03/19/12 01:47:34 Checking condition, GamesShortcutsState
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = SOFTWARE\GameHouse\2.0\Preferences, key = GameDesktopShortcuts
+03/19/12 01:47:34 Testing off == on
+03/19/12 01:47:34 Condition GamesShortcutsState not satisfied.
+03/19/12 01:47:34 Checking condition, ExistingSpecialGamesRoot
+03/19/12 01:47:34 Testing false == false
+03/19/12 01:47:34 Creating shortcut: Link = C:\ProgramData\Microsoft\Windows\Start Menu\Programs\GameHouse\Azkend 2 - The World Beneath.lnk Target = C:\GameHouse Games\Azkend 2 - The World Beneath\GH-Azkend2.exe WorkDir = C:\GameHouse Games\Azkend 2 - The World Beneath Icon =  Arguments = 
+03/19/12 01:47:34 CreatePath path = C:\ProgramData\Microsoft\Windows\Start Menu\Programs\GameHouse\Azkend 2 - The World Beneath.lnk
+03/19/12 01:47:34 Checking condition, ExistingSpecialGamesRoot
+03/19/12 01:47:34 Testing false == true
+03/19/12 01:47:34 Condition ExistingSpecialGamesRoot not satisfied.
+03/19/12 01:47:34 Checking condition, CheckForMortimerPremium
+03/19/12 01:47:34 Testing false == true
+03/19/12 01:47:34 Condition CheckForMortimerPremium not satisfied.
+03/19/12 01:47:34 Checking condition, CheckForMortimerPremium
+03/19/12 01:47:34 Testing false == true
+03/19/12 01:47:34 Condition CheckForMortimerPremium not satisfied.
+03/19/12 01:47:34 Checking condition, CheckForMortimerPremium
+03/19/12 01:47:34 Testing false == true
+03/19/12 01:47:34 Condition CheckForMortimerPremium not satisfied.
+03/19/12 01:47:34 Checking condition, CheckForMortimerPremium
+03/19/12 01:47:34 Testing false == true
+03/19/12 01:47:34 Condition CheckForMortimerPremium not satisfied.
+Defining g_env: myGameExe -> GH-Azkend2.exe
+Defining g_env: myGamesRoot -> C:\GameHouse Games
+Defining g_env: myInstallDrive -> C:
+03/19/12 01:47:34 Checking condition, CheckForMortimerPremium
+03/19/12 01:47:34 Testing false == true
+03/19/12 01:47:34 Condition CheckForMortimerPremium not satisfied.
+03/19/12 01:47:34 Checking condition, CheckForJewelQuestPremium
+03/19/12 01:47:34 Testing false == true
+03/19/12 01:47:34 Condition CheckForJewelQuestPremium not satisfied.
+03/19/12 01:47:34 Checking condition, CheckForCustomRGAForGame
+03/19/12 01:47:34 Testing false == true
+03/19/12 01:47:34 Condition CheckForCustomRGAForGame not satisfied.
+03/19/12 01:47:34 Checking condition, PremiumContentFolder
+03/19/12 01:47:34 Testing false == true
+03/19/12 01:47:34 Condition PremiumContentFolder not satisfied.
+03/19/12 01:47:34 Checking condition, CheckForGamesManager
+03/19/12 01:47:34 Testing false == true
+03/19/12 01:47:34 Condition CheckForGamesManager not satisfied.
+03/19/12 01:47:34 Checking condition, IsSC3Endless
+03/19/12 01:47:34 Testing false == true
+03/19/12 01:47:34 Condition IsSC3Endless not satisfied.
+03/19/12 01:47:34 Creating nil RegKey: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\am-azkend2theworldbeneath\DisplayName = Azkend 2 - The World Beneath
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = Software\Microsoft\Windows\CurrentVersion\Uninstall\am-azkend2theworldbeneath, key = DisplayName
+03/19/12 01:47:34 Creating nil RegKey: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\am-azkend2theworldbeneath\UninstallString = "C:\Program Files\RealArcade\Installer\bin\gameinstaller.exe" "C:\Program Files\RealArcade\Installer\installerMain.clf" "C:\Program Files\RealArcade\Installer\uninstall\am-azkend2theworldbeneath.rguninst" "AddRemove"
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = Software\Microsoft\Windows\CurrentVersion\Uninstall\am-azkend2theworldbeneath, key = UninstallString
+03/19/12 01:47:34 Creating nil RegKey: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\am-azkend2theworldbeneath\DisplayIcon = 
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = Software\Microsoft\Windows\CurrentVersion\Uninstall\am-azkend2theworldbeneath, key = DisplayIcon
+03/19/12 01:47:34 Writing uninstall script for Azkend 2 - The World Beneath
+03/19/12 01:47:34 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse, key = GamesInstalled
+03/19/12 01:47:34 Creating nil RegKey: HKEY_CLASSES_ROOT\Software\GameHouse\GamesInstalled = 3
+03/19/12 01:47:34 FileExists path = C:\ProgramData\Trymedia\Licenses\02a2356b5d6fba64197db4cd60d57e87.dlcn
+03/19/12 01:47:34 UpdateDip File does not exist C:\ProgramData\Trymedia\Licenses\02a2356b5d6fba64197db4cd60d57e87.dlcn
+03/19/12 01:47:34 upgrademode: nil
+03/19/12 01:47:34 Playing sound: ResourceId = 2000
+03/19/12 01:47:35 Checking condition, CheckInstallComplete
+03/19/12 01:47:35 Testing inprogress == inprogress
+03/19/12 01:47:35 Checking condition, CheckLaunchofWrapper
+03/19/12 01:47:35 Checking condition, CheckWrapperInterlock
+03/19/12 01:47:35 Testing nil == nil
+03/19/12 01:47:35 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:47:35 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:47:35 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:47:35 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:47:35 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:47:35 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:47:35 Creating instance of ErrorHandler
+03/19/12 01:47:35 Creating instance of Win32Interop
+03/19/12 01:47:35 Checking condition, ExistingSpecialGamesRoot
+03/19/12 01:47:35 Testing false == false
+03/19/12 01:47:35 Checking condition, CheckLaunchAsUser
+03/19/12 01:47:35 Testing false == true
+03/19/12 01:47:35 Testing true == false
+03/19/12 01:47:35 Condition CheckLaunchofWrapper not satisfied.
+03/19/12 01:47:35 ui.Step: ConditionCheck failed.
+03/19/12 01:47:35 Checking condition, CheckInstallComplete
+03/19/12 01:47:35 Testing true == inprogress
+03/19/12 01:47:35 Condition CheckInstallComplete not satisfied.
+03/19/12 01:47:35 ui.Step: ConditionCheck failed.
+03/19/12 01:47:35 Checking condition, IsFirstTimeInstall
+03/19/12 01:47:35 Testing false == false
+03/19/12 01:47:35 Checking condition, CheckInstallComplete
+03/19/12 01:47:35 Testing true == true
+03/19/12 01:47:35 Checking condition, IsSpecialGameForGoogleChrome
+03/19/12 01:47:35 Testing false == true
+03/19/12 01:47:35 Condition IsSpecialGameForGoogleChrome not satisfied.
+03/19/12 01:47:35 ui.Step: ConditionCheck failed.
+03/19/12 01:47:35 Checking condition, IsFirstTimeInstall
+03/19/12 01:47:35 Testing false == false
+03/19/12 01:47:35 Checking condition, CheckInstallComplete
+03/19/12 01:47:35 Testing true == true
+03/19/12 01:47:35 Checking condition, IsSpecialGameForGoogleChrome
+03/19/12 01:47:35 Testing false == false
+03/19/12 01:47:35 Checking condition, ExecuteGoogleChrome
+03/19/12 01:47:35 Checking condition, CheckIsInstallingChrome
+03/19/12 01:47:35 Testing nil == true
+03/19/12 01:47:35 Testing true == true
+03/19/12 01:47:35 Checking condition, ExecuteW3I
+03/19/12 01:47:35 Checking for w3i eligibility....
+03/19/12 01:47:35 Checking condition, IsValidW3ISRC
+03/19/12 01:47:35 The src value is null
+03/19/12 01:47:35 Testing false == false
+03/19/12 01:47:35 Testing true == true
+03/19/12 01:47:35 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:47:35 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = ArcadeVersion
+03/19/12 01:47:35 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:47:35 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\2.0\Preferences, key = HtmlVersion
+03/19/12 01:47:35 Navigating to http://www.gamehouse.com/installer?sld=installcomplete2&tps=gamehouse_&gameid=am-azkend2theworldbeneath&arcadeinstalled=1&tracking=36373932323339000000000000000000&locale=en-us&curpage=0&maxpage=0&locale=en-us&racversion=2.5.0.58&installerversion=2.6.0.477&htmlversion=2.6.0.306
+03/19/12 01:47:35 Processing JSLoadComplete Event. clock=102.342
+03/19/12 01:47:39 Checking condition, IsFirstTimeInstall
+03/19/12 01:47:39 Testing false == true
+03/19/12 01:47:39 Condition IsFirstTimeInstall not satisfied.
+03/19/12 01:47:39 ui.Step: ConditionCheck failed.
+03/19/12 01:47:39 Checking condition, IsFirstTimeInstall
+03/19/12 01:47:39 Testing false == true
+03/19/12 01:47:39 Condition IsFirstTimeInstall not satisfied.
+03/19/12 01:47:39 ui.Step: ConditionCheck failed.
+03/19/12 01:47:39 Exit Code: 0
+
+
+03/19/12 01:47:39 Script completed successfully!!!
+
+03/19/12 01:47:39 Timestamp: 03/19/12 01:47:39
+
+
+03/19/12 01:47:39 GenericShutdown
+03/19/12 01:47:39 RegQueryMultLineValue root = HKEY_LOCAL_MACHINE, key = SOFTWARE\GameInstaller\Installer, name = Storefronts
+03/19/12 01:47:39 Found GameHouse at entry 1 of 1 entries
+03/19/12 01:47:39 DeleteFile path = C:\GameHouse-Installer_am-azkend2theworldbeneath_gamehouse_.exe
+03/19/12 01:47:39 Removing file element: C:\GameHouse-Installer_am-azkend2theworldbeneath_gamehouse_.exe
+03/19/12 01:47:39 Adding dynamic stamp parameter contentid
+03/19/12 01:47:39 Adding dynamic stamp parameter otp
+03/19/12 01:47:39 Adding dynamic stamp parameter tracking
+03/19/12 01:47:39 Adding dynamic stamp parameter affiliate
+03/19/12 01:47:39 Adding dynamic stamp parameter currency
+03/19/12 01:47:39 Adding dynamic stamp parameter price
+03/19/12 01:47:39 Adding dynamic stamp parameter timestamp
+03/19/12 01:47:39 Absent dynamic stamp parameter language
+03/19/12 01:47:39 GetMatchingURLs parameters: storefront = 'GameHouse' and channel = 'nil'
+03/19/12 01:47:39 Attempting to lookup GameHouse.itmUrl and GameHouse.logUrl from config
+03/19/12 01:47:39 using default ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&
+03/19/12 01:47:39 using default LOG URL = 'http://logging.gamehouse.com/arcade/sites.html?
+03/19/12 01:47:39 GetMatchingURLs returning ITM URL = 'http://switchboard.real.com/arcade/feeds.html?mode=payload&env=production&client=web&action=bundle_install&' and Ping URL = 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:47:39 using logging URL from config file 'http://logging.gamehouse.com/arcade/sites.html?'
+03/19/12 01:47:39 Creating instance of ErrorHandler
+03/19/12 01:47:39 LastSlide = http://www.gamehouse.com/installer?sld=installcomplete2&tps=gamehouse_&gameid=am-azkend2theworldbeneath&arcadeinstalled=1&tracking=36373932323339000000000000000000&locale=en-us&curpage=0&maxpage=0&locale=en-us&racversion=2.5.0.58&installerversion=2.6.0.477&htmlversion=2.6.0.306
+03/19/12 01:47:39 checking for URL parameter &lsrc=
+03/19/12 01:47:39 Adding URL Parameter "&lsrc=null"
+03/19/12 01:47:39 checking for URL parameter &contentid=
+03/19/12 01:47:39 URL Parameter contentid already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:47:39 checking for URL parameter &cpath=
+03/19/12 01:47:39 Adding URL Parameter "&cpath=wrapper"
+03/19/12 01:47:39 checking for URL parameter &sparam=
+03/19/12 01:47:39 Adding URL Parameter "&sparam=null"
+03/19/12 01:47:39 checking for URL parameter &currency=
+03/19/12 01:47:39 URL Parameter currency already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:47:39 checking for URL parameter &rsrc=
+03/19/12 01:47:39 Adding URL Parameter "&rsrc=null"
+03/19/12 01:47:39 checking for URL parameter &timestamp=
+03/19/12 01:47:39 URL Parameter timestamp already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:47:39 checking for URL parameter &price=
+03/19/12 01:47:39 URL Parameter price already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:47:39 checking for URL parameter &affiliate=
+03/19/12 01:47:39 URL Parameter affiliate already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:47:39 checking for URL parameter &otp=
+03/19/12 01:47:39 URL Parameter otp already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:47:39 checking for URL parameter &tracking=
+03/19/12 01:47:39 URL Parameter tracking already in Log Ping URL from dynamic stamp, ignoring
+03/19/12 01:47:39 LogPing URL = http://logging.gamehouse.com/arcade/sites.html?component=rac_installer&state=complete&bundleevent=complete&contentid=02A2356B5D6FBA64197DB4CD60D57E87&otp=00000000000000000000000000000000&tracking=36373932323339000000000000000000&affiliate=67616D65686F7573655F000000000000&currency=000000000000&price=0000000000&timestamp=0000000000&bytecount=52890659&tps=gamehouse_&installerversion=2.6.0.477&gameid=am-azkend2theworldbeneath&machineid=4ED9D0CFD87324BBCA6AB4F8553A7478&li=en-us&storefront=GameHouse&racversion=2.5.0.58&existingtps=gamehouse_&arcadeinstalled=1&htmlversion=2.6.0.306&src=&platform=Windows:6.1.7601&architecture=x86&Processors=2&browsers=firefox%2eexe%7cIE%3a%209%2e0%2e8112%2e16421%7cFirefox%3a%2011%2e0%20%28en%2dUS%29%7cChrome%3a%20&lastslide=http%3a%2f%2fwww%2egamehouse%2ecom%2finstaller%3fsld%3dinstallcomplete2%26tps%3dgamehouse_%26gameid%3dam%2dazkend2theworldbeneath%26arcadeinstalled%3d1%26tracking%3d36373932323339000000000000000000%26locale%3den%2dus%26curpage%3d0%26maxpage%3d0%26locale%3den%2dus%26racversion%3d2%2e5%2e0%2e58%26installerversion%3d2%2e6%2e0%2e477%26htmlversion%3d2%2e6%2e0%2e306&lsrc=null&cpath=wrapper&sparam=null&rsrc=null
+03/19/12 01:47:39 Sending: HEAD /arcade/sites.html?component=rac_installer&state=complete&bundleevent=complete&contentid=02A2356B5D6FBA64197DB4CD60D57E87&otp=00000000000000000000000000000000&tracking=36373932323339000000000000000000&affiliate=67616D65686F7573655F000000000000&currency=000000000000&price=0000000000&timestamp=0000000000&bytecount=52890659&tps=gamehouse_&installerversion=2.6.0.477&gameid=am-azkend2theworldbeneath&machineid=4ED9D0CFD87324BBCA6AB4F8553A7478&li=en-us&storefront=GameHouse&racversion=2.5.0.58&existingtps=gamehouse_&arcadeinstalled=1&htmlversion=2.6.0.306&src=&platform=Windows:6.1.7601&architecture=x86&Processors=2&browsers=firefox%2eexe%7cIE%3a%209%2e0%2e8112%2e16421%7cFirefox%3a%2011%2e0%20%28en%2dUS%29%7cChrome%3a%20&lastslide=http%3a%2f%2fwww%2egamehouse%2ecom%2finstaller%3fsld%3dinstallcomplete2%26tps%3dgamehouse_%26gameid%3dam%2dazkend2theworldbeneath%26arcadeinstalled%3d1%26tracking%3d36373932323339000000000000000000%26locale%3den%2dus%26curpage%3d0%26maxpage%3d0%26locale%3den%2dus%26racversion%3d2%2e5%2e0%2e58%26installerversion%3d2%2e6%2e0%2e477%26htmlversion%3d2%2e6%2e0%2e306&lsrc=null&cpath=wrapper&sparam=null&rsrc=null HTTP/1.0
+Host: logging.gamehouse.com
+
+
+03/19/12 01:47:39 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse, key = ClientInstalls
+03/19/12 01:47:39 Creating nil RegKey: HKEY_CLASSES_ROOT\Software\GameHouse\ClientInstalls = 8
+03/19/12 01:47:39 GetRegKeyValue hive = HKEY_CLASSES_ROOT, path = Software\GameHouse\CurrentVersion, key = nil
+03/19/12 01:47:39 Creating nil RegKey: HKEY_CLASSES_ROOT\Software\GameHouse\2.0\Preferences\InstallerVersion = 2.6.0.477
+03/19/12 01:47:39 Calling the CleanTemps method from GenericShutdown
+03/19/12 01:47:39 In the CleanTemps method
+03/19/12 01:47:39 Cleaning C:\Users\Hacker\AppData\Local\Temp\{2229EE32-E8FF-4f67-A132-194F07576117}\Azkend 2 - The World Beneath
+03/19/12 01:47:39 DeleteFile path = C:\Users\Hacker\AppData\Local\Temp\{2229EE32-E8FF-4f67-A132-194F07576117}\Azkend 2 - The World Beneath
+03/19/12 01:47:39 Removing folder element: C:\Users\Hacker\AppData\Local\Temp\{2229EE32-E8FF-4f67-A132-194F07576117}\Azkend 2 - The World Beneath
+03/19/12 01:47:39 Cleaning C:\Users\Hacker\AppData\Local\Temp\{2229EE32-E8FF-4f67-A132-194F07576117}\gamehouse_
+03/19/12 01:47:39 DeleteFile path = C:\Users\Hacker\AppData\Local\Temp\{2229EE32-E8FF-4f67-A132-194F07576117}\gamehouse_
+03/19/12 01:47:39 Removing folder element: C:\Users\Hacker\AppData\Local\Temp\{2229EE32-E8FF-4f67-A132-194F07576117}\gamehouse_
+03/19/12 01:47:39 Cleaning C:\Users\Hacker\AppData\Local\Temp\{2229EE32-E8FF-4f67-A132-194F07576117}\
+03/19/12 01:47:39 DeleteFile path = C:\Users\Hacker\AppData\Local\Temp\{2229EE32-E8FF-4f67-A132-194F07576117}\
+03/19/12 01:47:39 Removing folder element: C:\Users\Hacker\AppData\Local\Temp\{2229EE32-E8FF-4f67-A132-194F07576117}
+
+03/19/12 01:47:39 End of Cleanup

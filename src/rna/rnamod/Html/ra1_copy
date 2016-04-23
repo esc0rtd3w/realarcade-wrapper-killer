@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cp "ra1_games_demo.htm" "quicklaunch_plus_rawk_ra1_direct_dl.htm"
+cp "ra1_games_demo.htm" "rawk_ra1_direct_dl.htm"
+rm -f "ra1_games_demo.htm"
+rm -f "ra1_games_full.htm"
+rm -f "ra1_games_mez.htm"
+rm -f "ra1_games_rgp.htm"
+rm -f "ra2_games_demo_gh.htm"
+rm -f "ra2_games_demo_ra.htm"
+rm -f "ra3_games_demo.htm"
+rm -f "ra3_games_mac.htm"
+rm -f "ra3_games_unlimited.htm"
+rm -f "ra3_stub_info_web_links.htm"
+rm -f "ra1_games_demo_multilang.htm"

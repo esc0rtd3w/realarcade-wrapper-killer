@@ -1,0 +1,12 @@
+Software  Name                              Module/Label                      State     Comment                                                                                                    
+600013DF                                    game-id-here_radrm.dll            Enabled   
+6000144A                                    game-id-here_radrm.dll            Enabled   
+60001452                                    game-id-here_radrm.dll            Enabled   
+6000146B                                    game-id-here_radrm.dll            Enabled   
+600014A8                                    game-id-here_radrm.dll            Enabled   
+600014BF                                    game-id-here_radrm.dll            Enabled   
+60001887                                    game-id-here_radrm.dll            Enabled   
+600018A9                                    game-id-here_radrm.dll            Enabled   
+600018BD                                    game-id-here_radrm.dll            Enabled   
+600018F1                                    game-id-here_radrm.dll            Enabled   
+60007334                                    game-id-here_radrm.dll            Enabled   

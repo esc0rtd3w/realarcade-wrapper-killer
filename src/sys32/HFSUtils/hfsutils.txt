@@ -1,0 +1,691 @@
+===============================================================================
+== hfsutils for DOS, Windows and OS/2                           Version 3.1a ==
+===============================================================================
+
+Table of Contents
+=================
+
+1     Introduction
+2     Installing hfsutils
+2.1     System requirements
+2.2     Additional software
+2.3     Installation instructions
+3     Using the utilities
+3.1     hmount - introduce a new HFS volume and make it current
+3.2     humount - remove an HFS volume from the list of known volumes
+3.3     hvol - display or change the current HFS volume
+3.4     hls - list files in an HFS directory
+3.5     hdir - display an HFS directory in long format
+3.6     hcopy - copy files from or to an HFS volume
+3.7     hdel - delete both forks of an HFS file
+3.8     hrename - rename or move an HFS file or directory
+3.9     hattrib - change HFS file or directory attributes
+3.10    hcd - change working HFS directory
+3.11    hpwd - print the full path of the current HFS working directory
+3.12    hmkdir - create a new HFS directory
+3.13    hrmdir - remove an empty HFS directory
+3.14    hformat - create a new HFS filesystem and make it current
+4     Usage notes
+4.1     HFS pathnames
+4.2     Wildcard expansion
+4.3     Environment variables
+4.4     Notes for DOS users
+4.5     Notes for Windows95 users
+4.6     Using Macintosh diskettes
+4.7     Known problems
+5     History of changes
+5.1     Changes in version 3.1a
+6     Credits
+7     Contacting the author
+
+
+1 Introduction
+==============
+
+hfsutils is a collection of tools for accessing Macintosh
+HFS-formatted volumes.  HFS is the Hierarchical File System used on
+modern Macintosh computers.
+
+The utilities were originally part of the hfsutils package for UNIX
+systems.  This port uses the emx programming environment.  There are
+binary versions for OS/2 and Windows 95/NT.  Both versions also run
+under DOS.
+
+hfsutils is free software, distributed under the GNU General Public
+License.  Please see the file `COPYING' for details.
+
+
+2 Installing hfsutils
+=====================
+
+
+2.1 System requirements
+-----------------------
+
+hfsutils requires a 386 processor or better.  Supported operating
+systems are DOS version 3 and higher, OS/2 2.0 and higher, and Win32
+(Windows 95/NT).
+
+
+2.2 Additional software
+-----------------------
+
+In order to use hfsutils under Windows 95/NT in native mode, you need
+the RSXNT extender.  This package is available as
+
+    ftp://ftp.uni-bielefeld.de/pub/systems/msdos/misc/rsxnt131.zip
+
+For OS/2, you need the emx runtime environment, available as
+
+    ftp://ftp.leo.org/pub/comp/os/os2/leo/devtools/gnu/emx+gcc/emxrt.zip
+
+Only the OS/2 parts of the runtime need to be installed, as hfsutils
+uses rsx under DOS.
+
+
+2.3 Installation instructions
+-----------------------------
+
+These are the steps for installing hfsutils.
+
+1.  Set the HOME environment variable to point to a directory where
+    hfsutils can store the file `hfs.cfg'.  This can be done by adding
+    a line like
+
+        SET HOME=C:\HFSUTILS
+
+    to the AUTOEXEC.BAT file (DOS and Windows95) or the CONFIG.SYS
+    file (OS/2).  Under Windows NT, environment variables are set in
+    the `System' settings of the Control Panel.  Note that the
+    directory has to be writable.
+
+2.  Add the directory where you put hfsutils to your PATH.  If you
+    want to avoid this, you can set the HFSUTILS variable to point to
+    this directory instead.
+
+
+3 Using the utilities
+=====================
+
+In this section, the term `DOS' refers to the PC environment (as
+opposed to the Macintosh environment).  This includes plain DOS, OS/2
+and Windows 95/NT.
+
+
+3.1 hmount - introduce a new HFS volume and make it current
+-----------------------------------------------------------
+
+    hmount <source-path> [<partition-no>]
+
+hmount is used to introduce a new HFS volume.  A DOS pathname to the
+volume's source must be specified.  The source may be a drive letter
+or a regular file containing an HFS volume image.
+
+If the source medium is partitioned, one partition must be selected to
+be mounted.  If there is only one HFS partition on the medium, it will
+be selected by default.  Otherwise, the desired partition number must
+be specified (as the ordinal nth partition) on the command-line.
+Partition number 0 can be specified to refer to the entire medium,
+ignoring what might otherwise be perceived as a partition map,
+although in practice this is probably only useful if you want this
+command to fail when the medium is partitioned.
+
+The mounted volume becomes "current" so subsequent commands will refer
+to it.  The current working directory for the volume is set to the
+root of the volume.  This information is kept in a file named
+`hfs.cfg' in the home directory.
+
+If the source medium is changed (e.g.  floppy or CD-ROM disc
+exchanged) after hmount has been called, subsequent HFS commands will
+fail until the original medium is replaced or a different volume is
+made current.  To use the same source path with the different medium,
+reissue the hmount command.
+
+Examples:
+
+    hmount A:
+
+If a Macintosh floppy disk is available as A:, this command makes the
+floppy current for other HFS commands such as hls, hcd, hcopy, etc.
+
+    hmount macdisk.bin
+
+Mounts a volume that resides in the file `macdisk.bin'.
+
+
+3.2 humount - remove an HFS volume from the list of known volumes
+-----------------------------------------------------------------
+
+    hmount [<volume-name-or-path>]
+
+humount is used to forget about an HFS volume previously mounted with
+hmount.  Either the volume's name or the path to the volume may be
+used to specify the volume.  If no name or path is given, the current
+volume is assumed.
+
+It is not strictly necessary to use this command.  It does not affect
+any physical volumes; it only updates the file named `hfs.cfg' in the
+home directory used to keep track of the currently known HFS volumes.
+
+
+3.3 hvol - display or change the current HFS volume
+---------------------------------------------------
+
+    hvol [<volume-or-path>]
+
+With no arguments, hvol displays the name and path to the "current"
+HFS volume as well as the names and paths of all previously mounted
+("known") volumes.
+
+With an argument, hvol changes the current volume to be the one
+specified.  Either the name of the volume or the path to its source
+can be specified.  The volume must have been previously mounted using
+hmount.
+
+A separate "current working directory" is maintained for each mounted
+volume.  This information is kept in a file named `hfs.cfg' in the
+home directory.
+
+
+3.4 hls - list files in an HFS directory
+----------------------------------------
+
+    hls [<options>] [<hfs-path> ...]
+
+hls lists files and directories contained in an HFS volume.  If one or
+more arguments are given, each specified file or directory is shown;
+otherwise, the contents of the current working directory are shown.
+
+Options:
+
+-1      Output is formatted such that each entry appears on a single
+        line.  This is the default when the standard output is
+        redirected to a file or pipe.
+
+-a      All files and directories are shown, including "invisible"
+        files, as would be perceived by the Macintosh Finder.
+        Normally invisible files are omitted from directory listings.
+
+-b      Special characters are displayed in an escaped backslash
+        notation.  Normally special or non-printable characters in
+        filenames are replaced by a question mark (?).
+
+-c      Sort and display entries by their creation date, rather than
+        their modification date.
+
+-d      List directory entries themselves rather than their contents.
+        Normally the contents are shown for named directories on the
+        command-line.
+
+-f      Do not sort directory contents; list them in the order they
+        appear in the directory.  This option effectively enables -a
+        and -U and disables -l, -s, and -t.
+
+-i      Show the catalog IDs for each entry.  Every file and directory
+        on an HFS volume has a unique catalog ID.
+
+-l      Display entries in long format.  This format shows the entry
+        type ("d" for directory or "f" for file), flags ("i" for
+        invisible), file type and creator (four-character strings for
+        files only), size (number of directory sub-contents or file
+        resource and data bytes, respectively), date of last
+        modification (or creation, with -c flag), and pathname.
+        Macintosh "locked" files are indicated by "F" in place of "f".
+
+-m      Display entries in a continuous format separated by commas.
+
+-q      Replace special and non-printable characters in displayed
+        filenames with question marks (?).  This is the default when
+        the standard output is connected to a terminal (as opposed to
+        a file or pipe).
+
+-r      Sort entries in reverse order before displaying.
+
+-s      Show the file size for each entry in 1K block units.  The size
+        includes blocks used for both data and resource forks.
+
+-t      Sort and display entries by time.  Normally files will be
+        sorted by name.  This option uses the last modification date
+        to sort unless -c is also specified.
+
+-x      Display entries in column format like -C, but sorted
+        horizontally into rows rather than columns.
+
+-w <width>
+        Format output lines suitable for display in the given <width>.
+        Normally the width will be determined from your terminal, from
+        the environment variable COLUMNS, or from a default value of
+        80.
+
+-C      Display entries in column format with entries sorted
+        vertically.  This is the default output format when standard
+        output is connected to a terminal.
+
+-F      Cause certain output filenames to be followed by a
+        single-character flag indicating the nature of the entry;
+        directories are followed by a colon (:) and executable
+        Macintosh applications are followed by an asterisk (*).
+
+-N      Cause all filenames to be output verbatim without any escaping
+        or question-mark substitution.
+
+-Q      Cause all filenames to be enclosed within double-quotes (")
+        and special/non-printable characters to be properly escaped.
+
+-R      For each directory that is encountered in a listing,
+        recursively descend into and display its contents.
+
+-S      Sort and display entries by size.  For files, the combined
+        resource and data lengths are used to compute a file's size.
+
+-U      Do not sort directory contents; list them in the order they
+        appear in the directory.  On HFS volumes, this is usually an
+        alphabetical case-insensitive ordering, although there are
+        some idiosyncrasies to the Macintosh implementation of
+        ordering.  This option does not affect -a, -l, or -s.
+
+
+3.5 hdir - display an HFS directory in long format
+--------------------------------------------------
+
+    hdir [<options>] [<hfs-path> ...]
+
+hdir is an alternative interface to hls.  It is equivalent to
+supplying hls the -l flag.
+
+
+3.6 hcopy - copy files from or to an HFS volume
+-----------------------------------------------
+
+    hcopy [-m | -b | -t | -r | -a] <source-path> [...] <target-path>
+
+hcopy transfers files from an HFS volume to DOS or vice versa.  The
+named source files are copied to the named destination target, which
+must be a directory if multiple files are to be copied.
+
+Copies are performed using a translation mode, which must be one of:
+
+-m      MacBinary II: A popular format for binary file transfer.  Both
+        forks of the Macintosh file are preserved.  This is the
+        recommended mode for transferring arbitrary Macintosh files.
+
+-b      BinHex: An alternative format for ASCII file transfer.  Both
+        forks of the Macintosh file are preserved.
+
+-t      Text: Performs end-of-line translation.  Only the data fork of
+        the Macintosh file is copied.
+
+-r      Raw Data: Performs no translation.  Only the data fork of the
+        Macintosh file is copied.
+
+-a      Automatic: A mode will be chosen automatically for each file
+        based on a set of predefined heuristics.
+
+If no mode is specified, -a is assumed.
+
+If a DOS source pathname is specified as a single dash (-), hcopy will
+copy from standard input to the HFS destination.  Likewise, a single
+dash used as a DOS destination pathname will cause hcopy to copy the
+HFS source to standard output.
+
+Copied files may have their filenames altered during translation.  For
+example, an appropriate file extension may be added or removed, and
+certain other characters may also be transliterated.
+
+The destination target must not be ambiguous; that is, it must be
+obvious whether the target is on the DOS filesystem or on an HFS
+volume.  As a rule, HFS targets must contain at least one colon (:),
+usually as the beginning of a relative pathname or by itself to
+represent the current working directory.  As a special exception, if
+the target pathname start with a drive letter, it will be assumed to
+be on the DOS filesystem.  To make a DOS target unambiguous, either
+use an absolute pathname or precede a relative pathname with a dot and
+slash (./).
+
+
+3.7 hdel - delete both forks of an HFS file
+-------------------------------------------
+
+    hdel <hfs-path> [...]
+
+hdel deletes files from the current HFS volume.  Both forks (resource
+and data) of each named file are removed, freeing space for other
+files.
+
+
+3.8 hrename - rename or move an HFS file or directory
+-----------------------------------------------------
+
+    hrename <hfs-src-path> [...] <hfs-target-path>
+
+hrename changes the name and/or location of one or more files or
+directories.  If only one source path is specified and the target path
+is in the same directory as the source, only the name is changed.
+Otherwise the source object is moved as well as possibly being
+renamed.
+
+If multiple source paths are specified, the target must be a
+directory, and all of the source objects will be moved into it
+(keeping the same names.)
+
+If the source path refers to the root directory of a volume, the
+volume name will be changed.  The root directory cannot be moved.
+Note that volume names can only have 1-27 characters, while all other
+names may have 1-31 characters.
+
+
+3.9 hattrib - change HFS file or directory attributes
+-----------------------------------------------------
+
+    hattrib [-t TYPE] [-c CREA] [-|+i] [-|+l] <hfs-path> [...]
+
+hattrib permits the alteration of HFS file attributes.  The
+MacOS-defined type and creator attributes can be set using the -t and
+-c flags, respectively.  A file's invisible flag can be set or cleared
+with +i and -i, respectively.  Finally, a file's locked flag can be
+set or cleared with +l and -l.
+
+All files mentioned on the command line will receive the specified
+attributes, regardless of the file's current attributes.  Any
+attribute not mentioned in the command line is left unchanged.
+
+Note that the invisible and locked flags only have meaning to the
+Macintosh Finder.
+
+
+3.10 hcd - change working HFS directory
+---------------------------------------
+
+    hcd [<hfs-path>]
+
+hcd is used to change the notion of the "current working directory"
+for the current HFS volume.  All subsequent HFS commands will
+interpret filenames relative to this directory, unless absolute
+pathnames are used.
+
+If the argument pathname is omitted, hcd will change to the root of
+the current volume.
+
+Note: Although absolute pathnames can be given to hcd, the full
+pathname must match the current volume; it cannot specify a path for a
+different volume.  Use hvol or hmount to change the current volume.
+(Each volume has its own independent current working directory.)
+
+
+3.11 hpwd - print the full path of the current HFS working directory
+--------------------------------------------------------------------
+
+    hpwd
+
+hpwd displays the complete (absolute) HFS pathname to the current
+working directory on the current volume.  The current working
+directory can be changed with the hcd command.
+
+
+3.12 hmkdir - create a new HFS directory
+----------------------------------------
+
+    hmkdir <hfs-path> [...]
+
+hmkdir creates new, empty directories (folders) on the current HFS
+volume.  There must not already be a file or directory with each named
+path.
+
+
+3.13 hrmdir - remove an empty HFS directory
+-------------------------------------------
+
+    hrmdir <hfs-path> [...]
+
+hrmdir deletes directories (folders) from the current HFS volume.
+Each named directory must already be empty.
+
+
+3.14 hformat - create a new HFS filesystem and make it current
+--------------------------------------------------------------
+
+    hformat [-l <label>] <destination-path> [<partition-no>]
+
+hformat is used to write a new HFS filesystem to a volume.  A DOS
+pathname to the volume's destination must be specified.  The
+destination may be either a drive letter or a regular file, but must
+already exist and be writable.  (If a regular file, the size of the
+file determines the maximum size of the resulting volume image.) Note
+that the medium must already be low-level formatted.  To format a new,
+unformatted diskette with hformat, format it with the usual FORMAT
+utility first.
+
+An optional label can be specified to name the volume.  The name must
+be between 1-27 characters and cannot contain a colon (:).  By
+default, the volume will be named Untitled.
+
+If a partition number n is specified, the nth HFS partition in the
+existing medium will receive the filesystem.  By default, and also
+when n is 0, the entire medium will be formatted with the new
+filesystem.  If a partition is specified, it must already exist.
+
+The new volume will be empty, but will also become "current" so
+subsequent commands will refer to it.  The current working directory
+for the volume is set to the root of the volume.
+
+
+4 Usage notes
+=============
+
+
+4.1 HFS pathnames
+-----------------
+
+HFS pathnames consist of colon-separated components.  Unlike DOS
+pathnames, an HFS path which begins with a colon is a relative path,
+and one which does not is an absolute path.  As sole exception to this
+rule, a path not containing any colons is assumed to be relative.
+Thus :Foo:Bar is a relative path, while Foo:Bar is an absolute path.
+
+Absolute pathnames always begin with the name of the volume itself.
+Any occurrence of two or more consecutive colons in a path causes
+resolution of the path to ascend into parent directories.
+
+
+4.2 Wildcard expansion
+----------------------
+
+The utilities allow using the wildcard characters `*' and `?' to
+specify filenames.  However, the meaning of these characters is
+somewhat more complicated than in most DOS programs.  The reason is
+that wildcard expansion is performed twice, for local files and for
+files on the HFS volume.
+
+The first expansion is similar to that used in UNIX systems.  Any
+arguments that contain wildcards will be replaced with a list of the
+matching filenames in the native file system.  If no files match the
+wildcard pattern, the wildcard argument is kept unchanged.  Moreover,
+wildcards within double quotes will not be expanded.
+
+The second expansion is similar, but matches files on the HFS volume.
+It starts with the results of the first wildcard expansion, and
+applies only to arguments that specify HFS files.  Therefore, any
+wildcards for HFS file specifications must be protected from being
+expanded in the first step by double quotes.
+
+In the expansion of HFS filenames, the backslash character may be used
+to quote a single character.  This makes it possible to specify HFS
+filenames that contain special characters such as `*' and `?'.
+
+Some common examples follow.
+
+- To list all filenames on the current HFS volume that begin with
+  `foo':
+
+      hls "foo*"
+
+  Note that the double quotes are necessary to prevent the `*' to be
+  expanded against the DOS files.
+
+- To copy all DOS files whose names end in `.c' to the HFS volume:
+
+      hcopy *.c :
+
+  Here the wildcard is expanded to a list of matching files in the
+  current directory.
+
+- To delete all files in the current directory on the HFS volume:
+
+      hdel "*"
+
+  Alternatively, you can use:
+
+      hdel :*
+
+  This works because the specification begins with a colon and hence
+  does not match any DOS files.  Hence it is not expanded in the first
+  expansion.
+
+- To copy `myfile.txt' to the HFS file `My*File':
+
+      hcopy myfile.txt ":My*File"
+
+  The asterisk needs to be protected from the expansion against DOS
+  files.  Since hcopy does not perform any expansion for target files,
+  the asterisk should not be escaped by a backslash.
+
+- To copy the HFS file `My*File' to the file `myfile' in DOS:
+
+      hcopy ":My\*File" myfile
+
+  The backslash ensures that the asterisk is not expanded in the
+  second expansion.  The `:' is not strictly necessary.
+
+
+4.3 Environment variables
+-------------------------
+
+The utilities use the following environment variables:
+
+HFSUTILS
+        Specifies the directory where the executable `hfsutil.exe' and
+        the extender `rsxhfs.exe' reside.  These files are first
+        looked for in the current directory, then in the directories
+        listed in the PATH variable, and finally in the directories
+        specified in the HFSUTILS variable.
+
+HOME    Specifies the "home directory" where the file `hfs.cfg' will
+        be placed.  This file records the volumes known to hfsutils.
+        If this variable is not set, the current directory will be
+        used.  Since this causes problems when the current directory
+        is changed, it is recommended that this variable be used.
+
+
+4.4 Notes for DOS users
+-----------------------
+
+
+Supported devices
+-----------------
+
+Under DOS, the utilities work with block devices such as floppy disks.
+The device must be known to DOS and have a drive letter.  CD-ROMs can
+not be accessed, because they are not viewed as block devices in DOS.
+
+
+DPMI
+----
+
+hfsutils requires a DPMI server.  A server is included (the program
+`CSXHFS.EXE').  It will be loaded automatically if no other server is
+present, and must be located either in the current directory or in a
+directory listed in the HFSUTILS variable.
+
+
+4.5 Notes for Windows95 users
+-----------------------------
+
+When running as a native Win32 application, hfsutils can only access
+disk drives directly under Windows NT.  For Windows95, you have to use
+the RSX extender and run hfsutils as a DOS application.  This is done
+by running RSXHFS to load the utilities, as in the following example:
+
+    rsxhfs hcopy foo :macfoo
+
+Note that this limits the devices to those that are accessible under
+plain DOS, i.e., diskettes.  CD-ROMs and other devices work only in
+native Win32 mode under Windows NT.
+
+
+4.6 Using Macintosh diskettes
+-----------------------------
+
+The PC hardware cannot handle 800k Macintosh diskettes.  Therefore,
+hfsutils can only access 1.44M HFS-formatted Macintosh diskettes.
+Note that 400k and 800k Macintosh diskettes usually use an older file
+system, MFS, which is not supported by this software either.
+
+
+4.7 Known problems
+------------------
+
+- Some hybrid CD-ROMs have incorrect volume size information, and
+  therefore the HFS part cannot be accessed with the normal method.
+  This problem has been circumvented under OS/2, but still remains in
+  the Win32 version.
+
+- There is currently no way to access devices such as SCSI hard disks,
+  which are not assigned a drive letter.
+
+
+5 History of changes
+====================
+
+
+5.1 Changes in version 3.1a
+---------------------------
+
+- Upgraded to hfsutils 3.1.  The most important changes in this
+  version are:
+
+  - A new block cache that greatly increases performance.
+
+  - hmount and other commands now properly handle relative pathnames,
+    even if the current directory changes.
+
+  - Several bug fixes.
+
+- OS/2 version: Fixed a problem with some hybrid CD-ROMs where the HFS
+  part could not be accessed.  (The problem still remains in the Win32
+  version.)
+
+
+6 Credits
+=========
+
+This port was done by Marcus Better <Marcus.Better@abc.se>, and all
+questions and bug reports should be sent to him.
+
+The original hfsutils for UNIX systems was written by Robert Leslie
+<rob@mars.org>.  That program can be found at
+
+    http://www.mars.org/home/rob/proj/hfs/
+
+This port was developed with OS/2 Warp version 4 using GNU C and the
+emx development system by Eberhard Mattes
+<mattes@azu.informatik.uni-stuttgart.de>.
+
+hfsutils includes a modified version of the RSX extender by Rainer
+Schnitker <rainer@mathematik.uni-bielefeld.de>, who also wrote RSXNT.
+
+The package also includes the DPMI server CWSDPMI by Charles W
+Sandmann <sandmann@clio.rice.edu>.  Source code for CWSDPMI is not
+included, but can be obtained separately.
+
+
+7 Contacting the author
+=======================
+
+This port was done by Marcus Better <Marcus.Better@abc.se>.  Comments,
+suggestions and bug reports should be sent to him.
+
+The latest version of this software can be obtained from
+
+    http://www.student.nada.kth.se/~f96-bet/hfsutils/
+
+--------------------------- END OF HFSUTILS.TXT -----------------------------

@@ -1,0 +1,26 @@
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-3dmahjongdeluxe,DisplayIcon
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-3dmahjongdeluxe,UninstallString
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-3dmahjongdeluxe,DisplayName
+UNINSTSCR,C:\Program Files\RealArcade\Installer\uninstall\am-3dmahjongdeluxe.rguninst
+SHORTCUT,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\GameHouse\3D Mahjong Deluxe.lnk
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\9f3d2e35b85fc0524bfa85fa0a9ac317,gameid
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,9f3d2e35b85fc0524bfa85fa0a9ac317
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\9f3d2e35b85fc0524bfa85fa0a9ac317,path
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,9f3d2e35b85fc0524bfa85fa0a9ac317
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\9f3d2e35b85fc0524bfa85fa0a9ac317,installation_time
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,9f3d2e35b85fc0524bfa85fa0a9ac317
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\9f3d2e35b85fc0524bfa85fa0a9ac317,timestamp
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,9f3d2e35b85fc0524bfa85fa0a9ac317
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\9f3d2e35b85fc0524bfa85fa0a9ac317,price
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,9f3d2e35b85fc0524bfa85fa0a9ac317
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\9f3d2e35b85fc0524bfa85fa0a9ac317,currency
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,9f3d2e35b85fc0524bfa85fa0a9ac317
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\9f3d2e35b85fc0524bfa85fa0a9ac317,tracking
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,9f3d2e35b85fc0524bfa85fa0a9ac317
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\9f3d2e35b85fc0524bfa85fa0a9ac317,affiliate
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,9f3d2e35b85fc0524bfa85fa0a9ac317
+RM,C:\GameHouse Games\3D Mahjong Deluxe
+RM,C:\GameHouse Games\3D Mahjong Deluxe\am-3dmahjongdeluxe.rga
+RM,C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_
+RM,C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+DECGAME,GameHouse

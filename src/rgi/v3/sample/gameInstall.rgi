@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArcadeInstaller Tps="z_syn_gh_g12" Lang="en"
+                 Src="" StoreFront="GameHouse"
+                 GameId="1c61c30e37caf8cf78db2215cb5e46ce" Country="US"
+                 GameName="2Sudoku"
+                 DefaultGamesRoot="c:\GameHouse Games"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                 xsi:noNamespaceSchemaLocation="..\..\schema\ArcadeInstaller.xsd">
+
+    <URLParameters am_contentid="61A6F90D6888FB0BB33EF5D624071A15" offeringid="2sudoku" affiliate="7A5F73796E5F67685F67313200000000" contentid="1C61C30E37CAF8CF78DB2215CB5E46CE"
+                   otp="00000000000000000000000000000000" tracking="8E0408A9E056B3EDB808B81241B86600"
+                   currency="310000000000" price="0000006000"
+                   timestamp="1370650470" />
+
+    <Uninstall Text="2Sudoku" AddRemove="true" IncGame="true" Assoc="false" />
+    <SetEnv Key="tps" Val="z_syn_gh_g12" />
+    <SetEnv Key="GameId" Val="1c61c30e37caf8cf78db2215cb5e46ce" />
+    <SetEnv Key="channel" Val="z_syn_gh_g12"/>
+    <SetEnv Key="storefront" Val="Z_ZYLOM_LWS"/>
+
+    <ConditionDef Id="IsGoogleChromeBrandCodeSet" Type="Environment" Var="GoogleChromeBrandCodeSet" />
+    <ConditionDef Id="IsGoogleChromeBrandCode2Set" Type="Environment" Var="GoogleChromeBrandCode2Set" />
+    <ConditionDef Id="IsGoogleGTBBrandCodeSet" Type="Environment" Var="GoogleGTBBrandCodeSet" />
+    <ConditionDef Id="IsGoogleGTBBrandCode2Set" Type="Environment" Var="GoogleGTBBrandCode2Set" />
+
+    <SetGlobalEnv Key="chromebrandcode" Val="RNVM" >
+        <ConditionCheck Id="IsGoogleChromeBrandCodeSet" Val="nil" />
+    </SetGlobalEnv>
+
+    <SetGlobalEnv Key="chromebrandcode2" Val="RNVN" >
+        <ConditionCheck Id="IsGoogleChromeBrandCode2Set" Val="nil" />
+    </SetGlobalEnv>
+
+    <SetGlobalEnv Key="googletbbrandcode" Val="RNVI" >
+        <ConditionCheck Id="IsGoogleGTBBrandCodeSet" Val="nil" />
+    </SetGlobalEnv>
+
+    <SetGlobalEnv Key="googletbbrandcode2" Val="RNVJ" >
+        <ConditionCheck Id="IsGoogleGTBBrandCode2Set" Val="nil" />
+    </SetGlobalEnv>
+
+    <ConditionDef Id="WillReturnFalse" Type="LuaBlock" Var="return false" />
+    <ConditionDef Id="ShouldOfferCandy" Type="LuaBlock" Var="
+        local errHandler      = ErrorHandler()
+        local win32           = Win32Interop()
+        local offering = '2sudoku'
+        local validlocale = false
+        if offering == 'dip_nt_zy_en' then validlocale = true end
+        if validlocale == false then return false end
+        local nCount = 1
+        local offered = win32.GetRegKeyValue('HKEY_CLASSES_ROOT', g_constants[&quot;basekey&quot;] .. 'GameHouse\\2.0\\Preferences', 'OpenCandyOffered')
+        if offered ~= nil and offered ~= &quot;&quot; then nCount = tonumber(offered) + 1 end
+        if nCount &gt;= 3 then nCount = 1 end
+        win32.CreateRegKey('HKEY_CLASSES_ROOT', g_constants[&quot;basekey&quot;] .. 'GameHouse\\2.0\\Preferences', 'OpenCandyOffered', nCount, keyvaltype)
+        local mainDlg = luacom.CreateObject('InstallerDlg.InstallDlgCtl') 
+        mainDlg:InitializeCandy(g_env.tmpDir .. '\\OCSetupHlp.dll') 
+        if mainDlg:HasCandyOffer() then
+            return true
+        else
+            mainDlg:InstallOffer()
+            return false
+        end 
+    "/>
+    <ConditionDef Id="SetDeleteOCOnReboot" Type="LuaBlock" Var=" 
+        local found = false
+        local folder = g_env.tmpDir
+        local filename = folder .. &quot;\\OCSetupHlp.dll&quot;
+        io.write(&quot;\n&quot;, os.date(&quot;%c &quot;),&quot;SetDeleteOCOnReboot &quot;,filename,&quot; and &quot;,folder)
+        local shellCtl = luacom.CreateObject(&quot;StubbyUtil.ShellCtl&quot;)
+        shellCtl:DeleteOnReboot(filename)
+        shellCtl:DeleteOnReboot(folder)
+        return true
+    "/>
+    <ConditionDef Id="IsOfferedCandy" Type="Environment" Var="OfferedCandy" />
+    <ConditionDef Id="InstallCandyOffer" Type="LuaBlock" Var="
+        if CheckCondition('IsOfferedCandy', 'true') then
+            local mainDlg = luacom.CreateObject('InstallerDlg.InstallDlgCtl') 
+            local offerselection = mainDlg:CandyChosen()
+            local installerstarted = mainDlg:InstallOffer()
+            io.write(&quot;\n&quot;, os.date(&quot;%c &quot;),&quot;The OpenCandy installing state is &quot;, tostring(installerstarted))
+            if offerselection == true and installerstarted == true then
+                local errHandler      = ErrorHandler()
+                local win32           = Win32Interop()
+                local affiliatetag = main_env.affiliate
+                if affiliatetag == &quot;&quot; then affiliatetag = &quot;7A5F73796E5F67685F67313200000000&quot; end
+                local tablePingPairs  = CreatePingPairsTable(&quot;ocinstapp&quot;, &quot;installerstarted&quot;, &quot;oc&quot;, g_strLocale, affiliatetag)
+                errHandler.LogPing(tablePingPairs, true)
+            end
+        end
+        return true 
+    "/>
+    <ConditionDef Id="OpenCandyOfferPing" Type="LuaBlock" Var="
+        if g_env.offeredopencandyping ~= nil then
+            return true
+        else
+            local errHandler      = ErrorHandler()
+            local win32           = Win32Interop()
+            local affiliatetag = main_env.affiliate
+            if affiliatetag == &quot;&quot; then affiliatetag = &quot;7A5F73796E5F67685F67313200000000&quot; end
+            local tablePingPairs  = CreatePingPairsTable(&quot;ocinstapp&quot;, &quot;displayedoffer&quot;, &quot;oc&quot;, g_strLocale, affiliatetag)
+            g_env.offeredopencandyping = 'true'
+            errHandler.LogPing(tablePingPairs, true)
+            return true
+        end
+    "/>
+    <ConditionDef Id="OpenCandyAcceptedPing" Type="LuaBlock" Var="
+        if CheckCondition('IsOfferedCandy', 'true') then
+            local mainDlg = luacom.CreateObject('InstallerDlg.InstallDlgCtl')
+            local offerselection = mainDlg:CandyChosen()
+            io.write(&quot;\n&quot;, os.date(&quot;%c &quot;),&quot;The OpenCandy offer selection is &quot;, tostring(offerselection))
+            if offerselection == true then
+                local errHandler      = ErrorHandler()
+                local win32           = Win32Interop()
+                local affiliatetag = main_env.affiliate
+                if affiliatetag == &quot;&quot; then affiliatetag = &quot;7A5F73796E5F67685F67313200000000&quot; end
+                local tablePingPairs  = CreatePingPairsTable(&quot;ocinstapp&quot;, &quot;acceptedoffer&quot;, &quot;oc&quot;, g_strLocale, affiliatetag)
+                errHandler.LogPing(tablePingPairs, true)
+            end
+        end
+        return true
+    "/>
+    <ConditionDef Id="CheckForInstallerDll" Type="FileExists" Var="[installerDir]/CheckInst.dll" />
+    <ConditionDef Id="CheckForGamesRoot" Type="RegKeyVal" Var="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences\GamesRoot" />
+    <ConditionDef Id="CheckForStoreFront" Type="LuaBlock" Var="
+        if CheckCondition('CheckForGamesRoot', 'nil') then return false end
+        if CheckCondition('CheckForInstallerDll', 'false') then return false end
+        return true
+    "/>
+    <ConditionDef Id="CheckForResources" Type="FileExists" Var="[installerDir]/GameHouse/resource/gh.ico" />
+    <ConditionDef Id="CheckForShortcuts" Type="FileExists" Var="[commonStartMenu]\Programs\GameHouse\Visit GameHouse.url"/>
+    <ConditionDef Id="CheckIfEULASlide" Type="LuaBlock" Var="if g_env.EULAPresented ~= nil and g_env.EULAPresented == 'true' then return true else return false end" />
+    <ConditionDef Id="CanInitGameShortcuts" Type="RegKeyVal" Var ="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences\GameDesktopShortcuts"/>
+    <ConditionDef Id="CheckForClean" Type="RegKeyVal" Var ="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences\Tps"/>
+    <ConditionDef Id="OfferedGoogle" Type="Environment"  Var="OfferedGoogle"/>
+    <ConditionDef Id="ShouldOfferGoogle" Type="LuaBlock" Var="
+        dofile('extensions\\CheckInstallGoogleToolbar.clf')
+        if CheckInstallGoogleToolbar() == true then -- true means not installed and can install
+            return true
+        else
+            return false
+        end
+    "/>
+    <ConditionDef Id="ReadytoCheckGoogleOffer" Type="LuaBlock" Var="
+        if g_env.readytocheckgoogleoffer ~= nil and g_env.readytocheckgoogleoffer ~= 3 then
+            g_env.readytocheckgoogleoffer = g_env.readytocheckgoogleoffer + 1
+            return false
+        else
+            if g_env.readytocheckgoogleoffer == nil then
+                g_env.readytocheckgoogleoffer = 1
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="OfferedChrome" Type="Environment"  Var="OfferedChrome"/>
+    <ConditionDef Id="OfferedChromeGTB" Type="Environment"  Var="OfferedChromeGTB"/>
+    <ConditionDef Id="ChromeNumtries" Type="RegKeyVal" Var="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences\ChromeNumtries"/>
+    <ConditionDef Id="GoogleTBOfferPing" Type="LuaBlock" Var="
+        local errHandler = ErrorHandler()
+        local win32 = Win32Interop()
+        if g_env.offeredgoogleping ~= nil then
+            return true
+        else
+            local affiliatetag = main_env.affiliate
+            if affiliatetag == &quot;&quot; then affiliatetag = &quot;7A5F73796E5F67685F67313200000000&quot; end
+            local tablePingPairs  = CreatePingPairsTable(&quot;googleinstapp&quot;, &quot;displayedoffer&quot;, &quot;gtb&quot;, &quot;en&quot;, affiliatetag)
+            local brandcode = {&quot;brandcode&quot;, &quot;RNVI&quot;}
+            table.insert(tablePingPairs,brandcode)
+            local brandcode2 = {&quot;brandcode2&quot;, &quot;RNVJ&quot;}
+            table.insert(tablePingPairs,brandcode2)
+            g_env.offeredgoogleping = 'true'
+            errHandler.LogPing(tablePingPairs, true)
+            return true
+        end
+    "/>
+    <ConditionDef Id="GoogleTBOfferPingCombined" Type="LuaBlock" Var="
+        local errHandler = ErrorHandler()
+        local win32 = Win32Interop()
+        if g_env.offeredgoogleping ~= nil then
+            return true
+        else
+            local affiliatetag = main_env.affiliate
+            if affiliatetag == &quot;&quot; then affiliatetag = &quot;7A5F73796E5F67685F67313200000000&quot; end
+            local tablePingPairs  = CreatePingPairsTable(&quot;googleinstapp&quot;, &quot;displayedoffer&quot;, &quot;gtb&quot;, &quot;en&quot;, affiliatetag)
+            local brandcode = {&quot;brandcode&quot;, &quot;RNVK&quot;}
+            table.insert(tablePingPairs,brandcode)
+            local brandcode2 = {&quot;brandcode2&quot;, &quot;RNVL&quot;}
+            table.insert(tablePingPairs,brandcode2)
+            g_env.offeredgoogleping = 'true'
+            errHandler.LogPing(tablePingPairs, true)
+            return true
+        end
+    "/>
+    <ConditionDef Id="GoogleTBStatusPing" Type="LuaBlock" Var="
+        if g_env.statusgoogleping == nil then
+            g_env.statusgoogleping = 'true'
+            return true
+        else
+            if g_env.statusgoogleping ~= 'done' then
+                local errHandler = ErrorHandler()
+                local win32 = Win32Interop()
+                local affiliatetag = main_env.affiliate
+                if affiliatetag == &quot;&quot; then affiliatetag = &quot;7A5F73796E5F67685F67313200000000&quot; end
+                local tablePingPairs  = CreatePingPairsTable(&quot;googleinstapp&quot;, &quot;statusoffer&quot;, &quot;gtb&quot;, g_strLocale, affiliatetag)
+                local status = g_checkGoogleToolbarState
+                if status == -1 then status = 100000 end
+                local statuscode = {&quot;statuscode&quot;, tostring(status)}
+                table.insert(tablePingPairs,statuscode)
+                errHandler.LogPing(tablePingPairs, true)
+                g_env.statusgoogleping = 'done'
+            end
+            return true
+         end
+    "/>
+    <ConditionDef Id="ChromeOfferPing" Type="LuaBlock" Var="
+        if g_env.offeredchromeping ~= nil then
+            return true
+        else
+            local errHandler      = ErrorHandler()
+            local win32           = Win32Interop()
+            local affiliatetag = main_env.affiliate
+            if affiliatetag == &quot;&quot; then affiliatetag = &quot;7A5F73796E5F67685F67313200000000&quot; end
+            local nCount          = 1
+            local offered         = win32.GetRegKeyValue('HKEY_CLASSES_ROOT', g_constants[&quot;basekey&quot;] .. 'RealArcade\\2.0\\Preferences', 'GoogleChromeOffered')
+            local tablePingPairs  = CreatePingPairsTable(&quot;googleinstapp&quot;, &quot;displayedoffer&quot;, &quot;gc&quot;, g_strLocale, affiliatetag)
+            local brandcode = {&quot;brandcode&quot;, &quot;RNVM&quot;}
+            table.insert(tablePingPairs,brandcode)
+            local brandcode2 = {&quot;brandcode2&quot;, &quot;RNVN&quot;}
+            table.insert(tablePingPairs,brandcode2)
+            if offered ~= nil and offered ~= &quot;&quot; then nCount = tonumber(offered) + 1 end
+            win32.CreateRegKey('HKEY_CLASSES_ROOT', g_constants[&quot;basekey&quot;] .. 'RealArcade\\2.0\\Preferences', 'GoogleChromeOffered', nCount, keyvaltype)
+            g_env.offeredchromeping = 'true'
+            errHandler.LogPing(tablePingPairs, true)
+            return true
+        end
+    "/>
+    <ConditionDef Id="ChromeOfferPingCombined" Type="LuaBlock" Var="
+        if g_env.offeredchromeping ~= nil then
+            return true
+        else
+            local errHandler      = ErrorHandler()
+            local win32           = Win32Interop()
+            local affiliatetag = main_env.affiliate
+            if affiliatetag == &quot;&quot; then affiliatetag = &quot;7A5F73796E5F67685F67313200000000&quot; end
+            local nCount          = 1
+            local offered         = win32.GetRegKeyValue('HKEY_CLASSES_ROOT', g_constants[&quot;basekey&quot;] .. 'RealArcade\\2.0\\Preferences', 'GoogleChromeOffered')
+            local tablePingPairs  = CreatePingPairsTable(&quot;googleinstapp&quot;, &quot;displayedoffer&quot;, &quot;gc&quot;, g_strLocale, affiliatetag)
+            local brandcode = {&quot;brandcode&quot;, &quot;RNVO&quot;}
+            table.insert(tablePingPairs,brandcode)
+            local brandcode2 = {&quot;brandcode2&quot;, &quot;RNVP&quot;}
+            table.insert(tablePingPairs,brandcode2)
+            if offered ~= nil and offered ~= &quot;&quot; then nCount = tonumber(offered) + 1 end
+            win32.CreateRegKey('HKEY_CLASSES_ROOT', g_constants[&quot;basekey&quot;] .. 'RealArcade\\2.0\\Preferences', 'GoogleChromeOffered', nCount, keyvaltype)
+            g_env.offeredchromeping = 'true'
+            errHandler.LogPing(tablePingPairs, true)
+            return true
+        end
+    "/>
+    <ConditionDef Id="ChromeStatusPing" Type="LuaBlock" Var="
+         if g_env.statuschromeping == nil then
+             g_env.statuschromeping = 'true'
+             return true
+         else
+             if g_env.statuschromeping ~= 'done' then
+                 local errHandler      = ErrorHandler()
+                 local win32           = Win32Interop()
+                 local affiliatetag = main_env.affiliate
+                 if affiliatetag == &quot;&quot; then affiliatetag = &quot;7A5F73796E5F67685F67313200000000&quot; end
+                 local tablePingPairs  = CreatePingPairsTable(&quot;googleinstapp&quot;, &quot;statusoffer&quot;, &quot;gc&quot;, g_strLocale, affiliatetag)
+                 local status = g_checkChromeState
+                 if status == -1 then status = 100000 end
+                 local statuscode = {&quot;statuscode&quot;, tostring(status)}
+                 table.insert(tablePingPairs,statuscode)
+                 errHandler.LogPing(tablePingPairs, true)
+                 g_env.statuschromeping = 'done'
+             end
+             return true
+         end
+    "/>
+    <ConditionDef Id="ShouldOfferChrome" Type="LuaBlock" Var="
+        dofile('extensions\\CheckInstallChrome.clf')
+        if GoogleChromeCompatibilityCheck() == true then
+            return true
+        else 
+            return false
+        end
+    "/>
+    <ConditionDef Id="CheckIsInstallingChrome" Type="Environment" Var="IsInstallingChrome" />
+    <ConditionDef Id="IsSpecialGameForGoogleChrome" Type="LuaBlock" Var="return false"/>
+    <ConditionDef Id="ExecuteGoogleChrome" Type="LuaBlock" Var="
+        if CheckCondition('CheckIsInstallingChrome', 'true') then
+            local errHandler     = ErrorHandler()
+            local win32          = Win32Interop()                  
+            local affiliatetag = main_env.affiliate
+            if affiliatetag == &quot;&quot; then affiliatetag = &quot;7A5F73796E5F67685F67313200000000&quot; end
+            local tablePingPairs = CreatePingPairsTable(&quot;googleinstapp&quot;, &quot;launchedoffer&quot;, &quot;gc&quot;, g_strLocale, affiliatetag)
+            local brandcode = {&quot;brandcode&quot;, g_env.chromebrandcode}
+            table.insert(tablePingPairs,brandcode)
+            local brandcode2 = {&quot;brandcode2&quot;, g_env.chromebrandcode2}
+            table.insert(tablePingPairs,brandcode2)
+            local shortLaunchCommand = g_env.sysDrive .. ':\\' .. g_env.programFolder .. '\\Google\\Chrome\\Application\\chrome.exe'
+            local shortLaunchCommandBase = g_env.sysDrive .. ':\\' .. g_env.programFolder .. '\\Google\\Chrome\\Application'
+            local procMgr        = luacom.CreateObject(&quot;StubbyUtil.ProcessMgr&quot;)
+            procMgr:Exec( shortLaunchCommand, &quot; &quot; ,false, false, shortLaunchCommandBase , &quot;createProc&quot; ) 
+            errHandler.LogPing(tablePingPairs, true)
+         end
+         return true
+    "/>
+    <ConditionDef Id="CheckForPreviousOGM" Type="RegKeyVal" Var="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Online Games Manager\UninstallString" />
+    <ConditionDef Id="CheckOGMInstallInterlock" Type="LuaBlock" Var="return g_env.OGMInstallLaunched" />
+    <ConditionDef Id="ExecuteOGMInstall" Type="LuaBlock" Var="
+        if CheckCondition('CheckOGMInstallInterlock', 'nil') and g_env.InstallComplete == 'inprogress' then
+            g_env.OGMInstallLaunched = 'true'
+            io.write(&quot;\n&quot;, os.date(&quot;%c &quot;),&quot;Checking for executing OGM installation...&quot;)
+            local errHandler = ErrorHandler()
+            local win32 = Win32Interop()
+            local shortLaunchCommandBase = g_env.tmpDir .. &quot;\\GameHouse\\ogmservice&quot;
+            local shortLaunchCommand = shortLaunchCommandBase .. &quot;\\ogmservice-setup.exe&quot;
+            if win32.FileExists( shortLaunchCommand ) then
+                local procMgr = luacom.CreateObject(&quot;StubbyUtil.ProcessMgr&quot;)
+                io.write(&quot;\n&quot;, os.date(&quot;%c &quot;),&quot; In ExecuteOGMInstall: &quot; .. shortLaunchCommand)
+                procMgr:Exec( shortLaunchCommand, &quot; &quot; ,false, false, shortLaunchCommandBase , &quot;createProc&quot; )
+                local affiliatetag = main_env.affiliate
+                if affiliatetag == &quot;&quot; then affiliatetag = &quot;7A5F73796E5F67685F67313200000000&quot; end
+                local tablePingPairs = CreatePingPairsTable(&quot;ogminstapp&quot;, &quot;launchedsetup&quot;, &quot;en&quot;, affiliatetag)
+                errHandler.LogPing(tablePingPairs, true)
+            else
+                io.write(&quot;\n&quot;, os.date(&quot;%c &quot;),&quot; Skip ExecuteOGMInstall: &quot; .. shortLaunchCommand .. &quot; NOT downloaded &quot;)
+            end
+        end
+        return true
+    "/>
+    <ConditionDef Id="CheckInstallComplete" Type="LuaBlock" Var="return g_env.InstallComplete" />
+    <ConditionDef Id="CheckWrapperInterlock" Type="LuaBlock" Var="return g_env.wrapperLaunched" />
+    <ConditionDef Id="CheckLaunchComplete" Type="Environment" Var="launchComplete" />
+    <ConditionDef Id="CheckLaunchAsUser" Type="LuaBlock" Var="if g_env.LaunchAsUser then return 'true' else return 'false' end" />
+    <ConditionDef Id="CheckLaunchofWrapper" Type="LuaBlock" Var="
+        if CheckCondition('CheckWrapperInterlock', 'nil') and g_env.InstallComplete == 'inprogress' then
+            g_env.InstallComplete = 'true'
+            local j = 1
+            local errHandler = ErrorHandler()
+            local win32 = Win32Interop()
+            local procMgr = luacom.CreateObject(&quot;StubbyUtil.ProcessMgr&quot;)
+            local launchCommand = ''
+            local workDir = ''
+            launchCommand = g_env.myGamesRoot .. &quot;\\2Sudoku\\&quot; .. g_env.myGameExe
+            workDir = g_env.myGamesRoot .. &quot;\\2Sudoku&quot;
+            if CheckCondition('CheckLaunchAsUser', 'true') then
+                io.write(&quot;\n&quot;, os.date(&quot;%c &quot;),&quot;Executing CreateLuaProcess...&quot;)
+                procMgr:CreateLUAProcess( launchCommand, &quot;&quot;, false, false, workDir , &quot;createProc&quot; )
+            else
+                procMgr:Exec( launchCommand, &quot;&quot;, false, false, workDir , &quot;createProc&quot; )
+            end
+            g_env.wrapperLaunched = 'true'
+            return true
+        else
+            return false
+        end
+    "/>
+    <ConditionDef Id="CheckSaveStatus" Type="RegKeyVal" Var="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences\save" />
+    <ConditionDef Id="GamesShortcutsState" Type="RegKeyVal"  Var="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences\GameDesktopShortcuts"/>
+    <ConditionDef Id="CheckValidContentID" Type="LuaBlock" Var="
+            if g_env.ContentID == nil then
+                return false
+            else
+                return true
+            end
+    "/>
+    <ConditionDef Id="CheckValidExtraTracking" Type="LuaBlock" Var="
+            if main_env.extratracking == nil then
+                return false
+            else
+                return true
+            end
+    "/>
+    <ConditionDef Id="CheckValidAffiliateRGI" Type="LuaBlock" Var="
+        local parm = '7A5F73796E5F67685F67313200000000'
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.affiliate ~= nil and main_env.affiliate ~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidOTP" Type="LuaBlock" Var="
+        if main_env.otp == &quot;&quot; or string.find( main_env.otp, '00000000000000000000000000000000' ) ~= nil then
+            return false
+        else
+            return true
+        end
+    "/>
+    <ConditionDef Id="CheckValidOTPRGI" Type="LuaBlock" Var="
+        local parm = '00000000000000000000000000000000'
+        if parm == &quot;&quot; or string.find( parm, '00000000000000000000000000000000') ~= nil then
+            return false
+        else
+            if main_env.otp ~= nil and main_env.otp ~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidAffiliate" Type="LuaBlock" Var="
+        if main_env.affiliate ~= nil and main_env.affiliate == &quot;&quot; then
+            return false
+        else
+            return true
+        end
+    "/>
+    <ConditionDef Id="CheckValidTrackingRGI" Type="LuaBlock" Var="
+        local parm = '8E0408A9E056B3EDB808B81241B86600'
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.tracking ~= nil and main_env.tracking ~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidTracking" Type="LuaBlock" Var="
+        if main_env.tracking ~= nil and main_env.tracking == &quot;&quot; then
+            return false
+        else
+            return true
+        end
+    "/>
+    <ConditionDef Id="CheckValidCurrencyRGI" Type="LuaBlock" Var="
+        local parm = '310000000000'
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.currency ~= nil and main_env.currency ~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidCurrencyRGILegacy" Type="LuaBlock" Var="
+        if g_env.currency ~= nil and g_env.currency == 'USD' then
+            return false
+        else
+            return true
+        end
+    "/>
+    <ConditionDef Id="CheckValidCurrency" Type="LuaBlock" Var="
+        if main_env.currency ~= nil and main_env.currency == &quot;&quot; then
+            return false
+        else
+            return true
+        end
+    "/>
+    <ConditionDef Id="CheckValidPriceRGI" Type="LuaBlock" Var="
+        local parm = '0000006000'
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.price ~= nil and main_env.price ~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidPrice" Type="LuaBlock" Var="
+        if main_env.price ~= nil and main_env.price == &quot;&quot; then
+            return false
+        else
+            return true
+        end
+    "/>
+    <ConditionDef Id="CheckValidTimestampRGI" Type="LuaBlock" Var="
+        local parm = '1370650470'
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.timestamp ~= nil and main_env.timestamp ~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidTimestamp" Type="LuaBlock" Var="
+        if main_env.timestamp ~= nil and main_env.timestamp == &quot;&quot; then
+            return false
+        else
+            return true
+        end
+    "/>
+    <ConditionDef Id="CheckValidLanguage" Type="LuaBlock" Var="
+        if main_env.language ~= nil and main_env.language == &quot;&quot; then
+            return false
+        else
+            return true
+        end
+    "/>
+    <ConditionDef Id="CheckValidLanguageRGI" Type="LuaBlock" Var="
+        local parm = 'en-us'
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.language ~= nil and main_env.language ~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidSplash1" Type="LuaBlock" Var="
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_source_1~= nil and main_env.splash_source_1~= &quot;&quot; then
+                return false
+            end
+        end
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_target_1~= nil and main_env.splash_target_1~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidSplash2" Type="LuaBlock" Var="
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_source_2~= nil and main_env.splash_source_2~= &quot;&quot; then
+                return false
+            end
+        end
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_target_2~= nil and main_env.splash_target_2~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidSplash3" Type="LuaBlock" Var="
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_source_3~= nil and main_env.splash_source_3~= &quot;&quot; then
+                return false
+            end
+        end
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_target_3~= nil and main_env.splash_target_3~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidSplash4" Type="LuaBlock" Var="
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_source_4~= nil and main_env.splash_source_4~= &quot;&quot; then
+                return false
+            end
+        end
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_target_4~= nil and main_env.splash_target_4~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidSplash5" Type="LuaBlock" Var="
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_source_5~= nil and main_env.splash_source_5~= &quot;&quot; then
+                return false
+            end
+        end
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_target_5~= nil and main_env.splash_target_5~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidSplash6" Type="LuaBlock" Var="
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_source_6~= nil and main_env.splash_source_6~= &quot;&quot; then
+                return false
+            end
+        end
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_target_6~= nil and main_env.splash_target_6~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidSplash7" Type="LuaBlock" Var="
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_source_7~= nil and main_env.splash_source_7~= &quot;&quot; then
+                return false
+            end
+        end
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_target_7~= nil and main_env.splash_target_7~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidSplash8" Type="LuaBlock" Var="
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_source_8~= nil and main_env.splash_source_8~= &quot;&quot; then
+                return false
+            end
+        end
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_target_8~= nil and main_env.splash_target_8~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidSplash9" Type="LuaBlock" Var="
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_source_9~= nil and main_env.splash_source_9~= &quot;&quot; then
+                return false
+            end
+        end
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_target_9~= nil and main_env.splash_target_9~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidSplash10" Type="LuaBlock" Var="
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_source_10~= nil and main_env.splash_source_10~= &quot;&quot; then
+                return false
+            end
+        end
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.splash_target_10~= nil and main_env.splash_target_10~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+
+    <ConditionDef Id="CheckForCustomRGAForChannel" Type="LuaBlock" Var="
+        local parm = 'yes'
+        if parm == 'yes' then
+            return true
+        else
+            return false
+        end
+    "/>
+    
+    <SetGlobalEnv Key="affiliate" Val="z_syn_gh_g12" >
+        <ConditionCheck Id="CheckValidAffiliateRGI" Val="true" />
+    </SetGlobalEnv>
+    <SetGlobalEnv Key="tracking" Val="8E0408A9E056B3EDB808B81241B86600" >
+        <ConditionCheck Id="CheckValidTrackingRGI" Val="true" />
+    </SetGlobalEnv>
+    <SetGlobalEnv Key="currency" Val="310000000000" >
+        <ConditionCheck Id="CheckValidCurrencyRGI" Val="true" />
+        <ConditionCheck Id="CheckValidCurrencyRGILegacy" Val="true" />
+    </SetGlobalEnv>
+    <SetGlobalEnv Key="price" Val="0000006000" >
+        <ConditionCheck Id="CheckValidPriceRGI" Val="true" />
+    </SetGlobalEnv>
+    <SetGlobalEnv Key="timestamp" Val="1370650470" >
+        <ConditionCheck Id="CheckValidTimestampRGI" Val="true" />
+    </SetGlobalEnv>
+    <SetGlobalEnv Key="otp" Val="00000000000000000000000000000000" >
+        <ConditionCheck Id="CheckValidOTPRGI" Val="true" />
+    </SetGlobalEnv>
+    <SetGlobalEnv Key="language" Val="en-us" >
+        <ConditionCheck Id="CheckValidLangaugeRGI" Val="true" />
+    </SetGlobalEnv>
+
+    <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\CurrentVersion" Subkey="" Val="2.0" NoRemove="true" />
+    <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences" Subkey="ArcadeVersion" Val="2.5.0.58" NoRemove="true"/>
+    <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences" Subkey="HtmlVersion" Val="2.6.0.306" NoRemove="true"/>
+    <Payload Target="[tmpDir]\GameHouse\checkinst.rar" Src="http://cdn.media.zylom.com/images/activemark/installer/z_syn_gh_g12/default/checkinst.rar" Persist="false" NoRemove="true">
+        <ConditionCheck Id="CheckForStoreFront" Val="false" />
+        <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences" Subkey="GameDesktopShortcuts" Val="off" NoRemove="true" NoOverwrite="true">
+            <ConditionCheck Id="CanInitGameShortcuts" Val="nil" />
+        </Regkey>
+        <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences" Subkey="GamesRoot" Val="[gamesRoot]" NoRemove="true"/>
+        <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences" Subkey="InstallDate" Val="[dateTime]" NoRemove="true"/>
+        <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences" Subkey="Tps" Val="z_syn_gh_g12" NoRemove="true" NoOverwrite="true"/>
+        <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences" Subkey="channel" Val="z_syn_gh_g12" NoRemove="true" NoOverwrite="true"/>
+        <Regkey Id="GameDrop" Key="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences" Subkey="GameDesktopShortcuts" Val="on" NoRemove="true" >
+            <ConditionCheck Id="CheckIfEULASlide" Val="true" />
+        </Regkey>
+    </Payload>
+    <Payload Target="[tmpDir]\GameHouse\appresource\appresource.rar" Src="http://cdn.media.zylom.com/images/activemark/installer/z_syn_gh_g12/appresource.rar" Persist="false" NoRemove="true" >
+        <ConditionCheck Id="CheckForShortcuts" Val="false" />
+        <Shortcut Link="[commonStartMenu]\Programs\GameHouse\Visit GameHouse.url" Target="http://www.gamehouse.com" Icon="[installerDir]\GameHouse\resource\gh.ico" NoRemove="true"/>
+        <Shortcut Id="GameDrop" Link="[desktop]\More Games at GameHouse.com.url" Target="http://www.gamehouse.com" Icon="[installerDir]\GameHouse\resource\gh.ico" NoRemove="true"/>
+        <Bookmark Id="BookmarkDrop" Name="More Games at GameHouse.com" Url="http://www.gamehouse.com" NoRemove="true"></Bookmark>
+    </Payload>
+    <Payload FileSize="467456" Id="InstallOgmService" Target="[tmpDir]\GameHouse\ogmservice\ogmservice-setup.exe" Src="http://games-dl.gamehouse.com/zylom/ogmservice/ogmservice-setup.exe" Persist="true" NoRemove="true" >
+        <ConditionCheck Id="CheckForPreviousOGM" Val="nil" />
+    </Payload>
+
+    <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences" Subkey="ChromeNumtries" Val="1" Inc="true">
+        <ConditionCheck Id="GoogleTBStatusPing" Val="true"/>
+        <ConditionCheck Id="ChromeStatusPing" Val="true"/>
+        <ConditionCheck Id="OfferedChrome" Val="true"/>
+    </Regkey>
+
+    <Payload Id="GoogleToolbar" FileSize="257665" Target="GoogleTBGH.rar" Src="http://cdn.media.zylom.com/images/activemark/installer/GoogleTB14GH.rar" Persist="false" DisplayProgress="true">
+        <PostProcess Script="googletb.lua"/>
+        <ConditionCheck Id="OfferedGoogle" Val="true"/>
+        <ConditionCheck Id="ShouldOfferGoogle" Val="true"/>
+    </Payload>
+
+    <SetEnv Id="InstallChrome2" Key="IsDefaultChrome" Val="true" >
+        <ConditionCheck Id="OfferedChrome" Val="true"/>
+    </SetEnv>
+    <Payload FileSize="30687831" Id="InstallChrome" Target="InstallChromeGH.rar" Src="http://cdn.media.zylom.com/images/activemark/installer/z_syn_gh_g12/InstallChromeGH19-0icon.rar" Persist="false" DisplayProgress="true">
+        <ConditionCheck Id="OfferedChrome" Val="true"/>
+        <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\2.0\Preferences" Subkey="ChromeNumtries" Val="3"></Regkey>
+        <SetEnv Key="IsInstallingChrome" Val="true" />
+    </Payload>
+
+    <Payload Target="[installerDir]\commonResources\Z_ZYLOM_LWS\z_syn_gh_g12\custom.rga" Src="http://cdn.media.zylom.com/images/activemark/installer/splash/gamehouse/custom2.rga" Persist="true">
+            <ConditionCheck Id="CheckForCustomRGAForChannel" Val="true"/>
+    </Payload>
+
+    <Payload FileSize="9298438" Target="[gamesRoot]\2Sudoku\2sudoku.rga" Src="http://games-dl.gamehouse.com/zylom/ghmigration/2sudoku/2sudoku.rga" Persist="false" DisplayProgress="true">
+        <SetGlobalEnv Key="myGameExe" Val="[gameExe]" />
+        <SetGlobalEnv Key="myGamesRoot" Val="[gamesRoot]" />
+        <SetGlobalEnv Key="myInstallDrive" Val="[installDrive]" />
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\61A6F90D6888FB0BB33EF5D624071A15" Subkey="affiliate" Type="BINARY" Val="[affiliate]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidAffiliate" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\61A6F90D6888FB0BB33EF5D624071A15" Subkey="affiliate" Type="BINARY" Val="[affiliate]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidAffiliateRGI" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\61A6F90D6888FB0BB33EF5D624071A15" Subkey="tracking" Type="BINARY" Val="[tracking]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidTracking" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\61A6F90D6888FB0BB33EF5D624071A15" Subkey="tracking" Type="BINARY" Val="[tracking]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidTrackingRGI" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\61A6F90D6888FB0BB33EF5D624071A15" Subkey="currency" Type="BINARY" Val="[currency]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidCurrency" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\61A6F90D6888FB0BB33EF5D624071A15" Subkey="currency" Type="BINARY" Val="[currency]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidCurrencyRGI" Val="true"/>
+            <ConditionCheck Id="CheckValidCurrencyRGILegacy" Val="true" />          
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\61A6F90D6888FB0BB33EF5D624071A15" Subkey="price" Type="BINARY" Val="[price]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidPrice" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\61A6F90D6888FB0BB33EF5D624071A15" Subkey="price" Type="BINARY" Val="[price]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidPriceRGI" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\61A6F90D6888FB0BB33EF5D624071A15" Subkey="timestamp" Type="BINARY" Val="[timestamp]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidTimestamp" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\61A6F90D6888FB0BB33EF5D624071A15" Subkey="timestamp" Type="BINARY" Val="[timestamp]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidTimestampRGI" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\61A6F90D6888FB0BB33EF5D624071A15" Subkey="onetimepop" Type="BINARY" Val="[otp]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidOTP" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\61A6F90D6888FB0BB33EF5D624071A15" Subkey="onetimepop" Type="BINARY" Val="[otp]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidOTPRGI" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\61A6F90D6888FB0BB33EF5D624071A15" Subkey="language" Val="[language]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidLanguage" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\61A6F90D6888FB0BB33EF5D624071A15" Subkey="language" Val="[language]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidLanguageRGI" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\61A6F90D6888FB0BB33EF5D624071A15" Subkey="installation_time" Val="[dateTimeTM]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\61A6F90D6888FB0BB33EF5D624071A15" Subkey="path" Val="[gamesRoot]\2Sudoku\[gameExe]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\61A6F90D6888FB0BB33EF5D624071A15" Subkey="gameid" Val="1c61c30e37caf8cf78db2215cb5e46ce" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\61A6F90D6888FB0BB33EF5D624071A15" Subkey="extratracking" Type="BINARY" Val="[extratracking]" >
+            <ConditionCheck Id="CheckValidExtraTracking" Val="true"/>
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\Games\1c61c30e37caf8cf78db2215cb5e46ce\1" Subkey="InstallPath" Val="[gamesRoot]\2Sudoku"></Regkey>
+        <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\Games\1c61c30e37caf8cf78db2215cb5e46ce\1" Subkey="GameName" Val="2Sudoku"></Regkey>
+        <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\GameHouse\Games\1c61c30e37caf8cf78db2215cb5e46ce\1" Subkey="UninstallPath" Val="[installerDir]\uninstall\1c61c30e37caf8cf78db2215cb5e46ce.rguninst"></Regkey>
+        <Shortcut Id="GameDesktopShortcut" Link="[desktop]\2Sudoku.lnk" Target="[gamesRoot]\2Sudoku\[gameExe]" WorkDir="[gamesRoot]\2Sudoku">
+            <ConditionCheck Id="GamesShortcutsState" Val="on"/>
+        </Shortcut>
+        <Shortcut Link="[commonStartMenu]\Programs\GameHouse\2Sudoku.lnk" Target="[gamesRoot]\2Sudoku\[gameExe]" WorkDir="[gamesRoot]\2Sudoku"/>
+    </Payload>
+
+    <Regkey Key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\1c61c30e37caf8cf78db2215cb5e46ce" Subkey="Publisher" Val="GameHouse"></Regkey>
+    <Regkey Key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\1c61c30e37caf8cf78db2215cb5e46ce" Subkey="VersionMajor" Type="DWORD" Val="1"></Regkey>
+    <Regkey Key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\1c61c30e37caf8cf78db2215cb5e46ce" Subkey="VersionMinor" Type="DWORD" Val="0"></Regkey>
+    <Regkey Key="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\1c61c30e37caf8cf78db2215cb5e46ce" Subkey="InstallLocation" Type="REG_EXPAND_SZ" Val="[gamesRoot]\2Sudoku"></Regkey>
+
+    <Payload Src="http://cdn.media.zylom.com/images/activemark/installer/splash/gamehouse/" Target="[gamesRoot]\2Sudoku\">
+       <ConditionCheck Id="CheckValidSplash1" Val="true"/>
+    </Payload>
+
+    <Payload Src="http://cdn.media.zylom.com/images/activemark/installer/splash/gamehouse/" Target="[gamesRoot]\2Sudoku\">
+       <ConditionCheck Id="CheckValidSplash2" Val="true"/>
+    </Payload>
+
+    <Payload Src="http://cdn.media.zylom.com/images/activemark/installer/splash/gamehouse/" Target="[gamesRoot]\2Sudoku\">
+       <ConditionCheck Id="CheckValidSplash3" Val="true"/>
+    </Payload>
+
+    <Payload Src="http://cdn.media.zylom.com/images/activemark/installer/splash/gamehouse/" Target="[gamesRoot]\2Sudoku\">
+       <ConditionCheck Id="CheckValidSplash4" Val="true"/>
+    </Payload>
+
+    <Payload Src="http://cdn.media.zylom.com/images/activemark/installer/splash/gamehouse/" Target="[gamesRoot]\2Sudoku\">
+       <ConditionCheck Id="CheckValidSplash5" Val="true"/>
+    </Payload>
+
+    <Payload Src="http://cdn.media.zylom.com/images/activemark/installer/splash/gamehouse/" Target="[gamesRoot]\2Sudoku\">
+       <ConditionCheck Id="CheckValidSplash6" Val="true"/>
+    </Payload>
+
+    <Payload Src="http://cdn.media.zylom.com/images/activemark/installer/splash/gamehouse/" Target="[gamesRoot]\2Sudoku\">
+       <ConditionCheck Id="CheckValidSplash7" Val="true"/>
+    </Payload>
+
+    <Payload Src="http://cdn.media.zylom.com/images/activemark/installer/splash/gamehouse/" Target="[gamesRoot]\2Sudoku\">
+       <ConditionCheck Id="CheckValidSplash8" Val="true"/>
+    </Payload>
+
+    <Payload Src="http://cdn.media.zylom.com/images/activemark/installer/splash/gamehouse/" Target="[gamesRoot]\2Sudoku\">
+       <ConditionCheck Id="CheckValidSplash9" Val="true"/>
+    </Payload>
+
+    <Payload Src="http://cdn.media.zylom.com/images/activemark/installer/splash/gamehouse/" Target="[gamesRoot]\2Sudoku\">
+       <ConditionCheck Id="CheckValidSplash10" Val="true"/>
+    </Payload>
+    <DialogOptions CloseBtn="true" MinimizeBtn="true" Width="640" Height="480">
+        <Chrome ImagePack="http://cdn.media.zylom.com/images/activemark/installer/z_syn_gh_g12/GHChrome-2.rar"/>
+        <OnBegin>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_syn_gh_g12/eula.html?aff=z_syn_gh_g12&amp;product_name=2Sudoku&amp;contentid=61A6F90D6888FB0BB33EF5D624071A15&amp;offering=2sudoku&amp;lang=en-us&amp;sld=eula&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="block" StepBucket="1">
+                <ConditionCheck Id="CheckForClean" Val="nil"/>
+                <OnNavigate>
+                    <SetGlobalEnv Key="EULAPresented" Val="true" />
+                </OnNavigate>
+            </DialogUrl>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_syn_gh_g12/eula.html?aff=z_syn_gh_g12&amp;product_name=2Sudoku&amp;contentid=61A6F90D6888FB0BB33EF5D624071A15&amp;offering=2sudoku&amp;lang=en-us&amp;sld=eula&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="block" StepBucket="1">
+                <ConditionCheck Id="CheckIfEULASlide" Val="false" />
+                <ConditionCheck Id="ShouldOfferGoogle" Val="true"/>
+                <OnNavigate>
+                    <SetGlobalEnv Key="EULAPresented" Val="true" />
+                </OnNavigate>
+            </DialogUrl>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_syn_gh_g12/eula.html?aff=z_syn_gh_g12&amp;product_name=2Sudoku&amp;contentid=61A6F90D6888FB0BB33EF5D624071A15&amp;offering=2sudoku&amp;lang=en-us&amp;sld=eula&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="block" StepBucket="1">
+                <ConditionCheck Id="CheckIfEULASlide" Val="false" />
+                <ConditionCheck Id="ShouldOfferGoogle" Val="false"/>
+                <ConditionCheck Id="ShouldOfferChrome" Val="true" />
+                <OnNavigate>
+                    <SetGlobalEnv Key="EULAPresented" Val="true" />
+                </OnNavigate>
+            </DialogUrl>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_syn_gh_g12/chromeGTB.html?aff=z_syn_gh_g12&amp;product_name=2Sudoku&amp;contentid=61A6F90D6888FB0BB33EF5D624071A15&amp;offering=2sudoku&amp;lang=en-us&amp;sld=chromeGTBpromo&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="block" StepBucket="1">
+                <ConditionCheck Id="ReadytoCheckGoogleOffer" Val="true" />
+                <ConditionCheck Id="ShouldOfferGoogle" Val="true"/>
+                <ConditionCheck Id="ShouldOfferChrome" Val="true" />
+                <ConditionCheck Id="GoogleTBOfferPingCombined" Val="true"/>
+                <ConditionCheck Id="ChromeOfferPingCombined" Val="true"/>
+                <OnNavigate>
+                    <SetGlobalEnv Key="chromebrandcode" Val="RNVO" />
+                    <SetGlobalEnv Key="chromebrandcode2" Val="RNVP" />
+                    <SetGlobalEnv Key="googletbbrandcode" Val="RNVK" />
+                    <SetGlobalEnv Key="googletbbrandcode2" Val="RNVL" />
+                    <SetEnv Key="GoogleChromeBrandCodeSet" Val="true" />
+                    <SetEnv Key="GoogleChromeBrandCode2Set" Val="true" />
+                    <SetEnv Key="GoogleGTBBrandCodeSet" Val="true" />
+                    <SetEnv Key="GoogleGTBBrandCode2Set" Val="true" />
+                    <SetEnv Key="OfferedGoogle" Val="true"/>
+                    <SetEnv Key="OfferedChrome" Val="true"/>
+                    <SetEnv Key="OfferedChromeGTB" Val="true" />
+                </OnNavigate>
+            </DialogUrl>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_syn_gh_g12/GTB.html?aff=z_syn_gh_g12&amp;product_name=2Sudoku&amp;contentid=61A6F90D6888FB0BB33EF5D624071A15&amp;offering=2sudoku&amp;lang=en-us&amp;sld=googlepromo&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="block" StepBucket="1">
+                <ConditionCheck Id="ReadytoCheckGoogleOffer" Val="true" />
+                <ConditionCheck Id="OfferedChromeGTB" Val="nil"/>
+                <ConditionCheck Id="ShouldOfferGoogle" Val="true"/>
+                <ConditionCheck Id="GoogleTBOfferPing" Val="true"/>
+                <OnNavigate>
+                    <SetEnv Key="OfferedGoogle" Val="true"/>
+                </OnNavigate>
+            </DialogUrl>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_syn_gh_g12/chrome.html?aff=z_syn_gh_g12&amp;product_name=2Sudoku&amp;contentid=61A6F90D6888FB0BB33EF5D624071A15&amp;offering=2sudoku&amp;lang=en-us&amp;sld=chromepromo&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="block" StepBucket="1">
+                <ConditionCheck Id="ReadytoCheckGoogleOffer" Val="true" />
+                <ConditionCheck Id="OfferedChromeGTB" Val="nil"/>
+                <ConditionCheck Id="ShouldOfferGoogle" Val="false"/>
+                <ConditionCheck Id="ShouldOfferChrome" Val="true" />
+                <ConditionCheck Id="ChromeOfferPing" Val="true"/>
+                <OnNavigate>
+                    <SetEnv Key="OfferedChrome" Val="true"/>
+                </OnNavigate>
+            </DialogUrl>        
+        </OnBegin>
+        <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_syn_gh_g12/installing.html?aff=z_syn_gh_g12&amp;product_name=2Sudoku&amp;contentid=61A6F90D6888FB0BB33EF5D624071A15&amp;offering=2sudoku&amp;lang=en-us&amp;sld=installing&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="inf" StepBucket="1" >
+            <OnNavigate>
+                <SetGlobalEnv Key="InstallComplete" Val="inprogress" />
+            </OnNavigate>
+        </DialogUrl>
+        <OnComplete>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_syn_gh_g12/complete.html?aff=z_syn_gh_g12&amp;product_name=2Sudoku&amp;contentid=61A6F90D6888FB0BB33EF5D624071A15&amp;offering=2sudoku&amp;lang=en-us&amp;sld=installcomplete2&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="block" >
+                <ConditionCheck Id="ExecuteOGMInstall" Val="true" />
+                <ConditionCheck Id="CheckInstallComplete" Val="inprogress" />
+                <ConditionCheck Id="CheckLaunchofWrapper" Val="false" />
+                <OnNavigate>
+                    <SetEnv Key="IsInstallingChrome" Val="false" />
+                    <SetGlobalEnv Key="InstallComplete" Val="true" />
+                </OnNavigate>
+            </DialogUrl>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_syn_gh_g12/complete.html?aff=z_syn_gh_g12&amp;product_name=2Sudoku&amp;contentid=61A6F90D6888FB0BB33EF5D624071A15&amp;offering=2sudoku&amp;lang=en-us&amp;sld=installcomplete2&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="block" >
+              <ConditionCheck Id="CheckInstallComplete" Val="inprogress" />
+              <ConditionCheck Id="CheckLaunchofWrapper" Val="false" />
+                <OnNavigate>
+                    <SetEnv Key="IsInstallingChrome" Val="false" />
+                    <SetGlobalEnv Key="InstallComplete" Val="true" />
+                </OnNavigate>
+            </DialogUrl>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_syn_gh_g12/complete.html?aff=z_syn_gh_g12&amp;product_name=2Sudoku&amp;contentid=61A6F90D6888FB0BB33EF5D624071A15&amp;offering=2sudoku&amp;lang=en-us&amp;sld=installcomplete2&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="4" >
+                <ConditionCheck Id="CheckInstallComplete" Val="true" />
+                <ConditionCheck Id="ExecuteGoogleChrome" Val="true" />
+            </DialogUrl>
+            <PlaySound ResourceId="2000"/>
+        </OnComplete>
+        <OnException>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_syn_gh_g12/installcancelled.html?aff=z_syn_gh_g12&amp;product_name=2Sudoku&amp;contentid=61A6F90D6888FB0BB33EF5D624071A15&amp;offering=2sudoku&amp;lang=en-us&amp;sld=installcancelled&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="block" >
+                <ConditionCheck Id="GoogleTBStatusPing" Val="true"/>
+                <ConditionCheck Id="ChromeStatusPing" Val="true"/>
+                <ConditionCheck Id="WillReturnFalse" Val="true" />
+            </DialogUrl>
+        </OnException>
+    </DialogOptions>
+</ArcadeInstaller>

@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+
+;Removing HKCR_block_-14625XXXXX, HKCR_block_34028XXXX
+[-HKEY_CLASSES_ROOT\Software\RealNetworks\Games\]
+
+
+;Removing HKCU_block_-14625XXXXX, HKCU_block_14924XXXXX (Part 1)
+[-HKEY_CURRENT_USER\Software\Classes\Software\RealNetworks\Games\]
+
+
+;Removing HKCU_block_34028XXXX, HKCU_block_14924XXXXX (Part 2)
+[-HKEY_CURRENT_USER\Software\RealNetworks\Games\]

@@ -1,0 +1,129 @@
+#!/bin/bash
+
+
+# Gamehouse HTML dumper and link retrieval
+
+# Part of the RealArcade Wrapper Killer
+
+# cRypTiCwaRe 2013
+
+
+
+
+function getPageLinks
+{
+
+content=$(wget http://www.gamehouse.com/new-games -q -O -)
+
+
+
+stripHTMLTags=$(links -dump -width 512 "http://www.gamehouse.com/new-games" | cut -c 4-)
+
+stripAllExceptLinks=$(lynx -listonly -dump "http://www.gamehouse.com/new-games" | sed '1,3d' | cut -c 7-)
+
+
+
+pageWindows=$(echo $stripAllExceptLinks | grep '/download-games/')
+
+pageMac=$(echo $stripAllExceptLinks | grep '/mac-games/')
+
+
+
+
+
+#echo $content
+
+
+echo $pageWindows
+
+#echo $pageMac
+
+
+
+
+}
+
+
+
+function installerRedirectV3
+{
+
+# Set known variables for URL manipulation
+base='http://itm.zylom.com/itm/installer/installerRedirect/'
+pre='Installer_'
+stubname=''
+post='.exe'
+gameid=''
+channel=''
+otp=''
+tracking=''
+currency=''
+price=''
+installerversion=''
+lang=''
+extratracking=''
+publisher='ghmigration'
+
+
+echo ''
+echo 'Enter the [stubname] and press ENTER:'
+echo ''
+echo 'Example: puzzlerbraingames'
+echo ''
+read -p "" stubname
+echo ''
+
+
+echo ''
+echo 'Enter the [gameid] and press ENTER:'
+echo ''
+echo 'Example: 7b692f35e9469fc1975e110bf4e217a7'
+echo ''
+read -p "" gameid
+echo ''
+
+
+echo ''
+echo 'Enter the [channel] and press ENTER:'
+echo ''
+echo 'Example: z_syn_gh_g12'
+echo ''
+read -p "" channel
+echo ''
+
+
+echo ''
+echo 'Enter the [trackingid] and press ENTER:'
+echo ''
+echo 'Example: affb9e490b52beeaba62073a45686600'
+echo ''
+read -p "" trackingid
+echo ''
+
+
+# Original test link:
+# http://itm.zylom.com/itm/installer/installerRedirect/Installer_puzzlerbraingames.exe?gameid=7b692f35e9469fc1975e110bf4e217a7&channel=z_syn_gh_g12&otp=&tracking=affb9e490b52beeaba62073a45686600&currency=1&price=60.0&installerversion=&lang=&extratracking=&publisher=ghmigration
+
+# Create a new link from all available input
+linkCreate=$(echo "$base$pre$stubname$post?gameid=$gameid&channel=$channel&otp=$opt&tracking=$tracking&currency=$currency&price=$price&lang=$lang&extratracking=$extratracking&publisher=$publisher")
+
+# Send the new URL and retrieve the file
+linkGet=$(wget $linkCreate -O $pre$stubname$post)
+
+
+
+
+}
+
+
+
+installerRedirectV3
+
+
+
+
+
+
+
+
+

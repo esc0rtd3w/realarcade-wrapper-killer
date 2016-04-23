@@ -1,0 +1,38 @@
+
+<PACKAGE>
+    <TITLE></TITLE>
+    <APPLICATION>RealArcade</APPLICATION>
+    <ACTION>download</ACTION>
+    <TARGET>My Games</TARGET>
+    <EXP DATE>06/13/2001 10:51</EXP DATE>
+    <PROVIDER>
+<AUTHOR>Jason 'Crash' Blackthorn</AUTHOR>
+<NAME>RealNetworks</NAME>
+<URL>http://www.real.com/games</URL>
+<COPYRIGHT>CopyRight 2001, RealNetworks, Inc.</COPYRIGHT>
+<CONTACT>jblackthorn@real.com</CONTACT>
+    </PROVIDER>
+    <SERVER>
+        <NAME>RealGames server</NAME>
+        <DESC>RealGames server</DESC>
+        <NETNAME>games-dl.real.com</NETNAME>
+        <LOCATION>/gameconsole/games/demorgis/%f</LOCATION>
+        <KEY>Not used in Beta1</KEY>
+    </SERVER>
+    <GAMELIST>
+        <GAME>
+            <ID></ID>
+            <NAME>Castrol Honda Superbike 2000 Demo</NAME>
+            <GAMEID>54AF10FF-8982-11d4-823D-00D0B74C2C30</GAMEID>
+            <VERSION>Demo RGP</VERSION>
+            <TYPE>Demo</TYPE>
+            <GENRE></GENRE>
+            <FILENAME>CHS2000 Demo_free.rgi</FILENAME>
+            <SIZE>7964170</SIZE>
+            <MEZZANINE>http://games-dl.real.com/gameconsole/games/demo/mezzanines/54AF10FF-8982-11d4-823D-00D0B74C2C30.mez</MEZZANINE>
+            <METADATA>
+            </METADATA>
+        </GAME>
+    </GAMELIST>
+    <SIG>abed56423729dfdf348232833dfdf23323232dded34343232</SIG>
+</PACKAGE>

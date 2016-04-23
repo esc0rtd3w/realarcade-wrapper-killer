@@ -1,0 +1,113 @@
+<html>
+
+<head>
+<style type="text/css">
+body{background:#fff url('waiting_to_install.png') no-repeat;overflow:hidden;font-family:verdana;}
+.msg{position:absolute;height:60px;width:280px;top:110px;left:80px;font-size:18px;text-align:center;}
+.waitingBar{width:220px;height:32px;margin:40px auto 0;background:transparent url(waiting_bar.gif) no-repeat top left;}
+.loc_waiting_for_installer,.loc_preparing_install {display:none;}
+</style>
+</head>
+
+<body id="pageContainer">
+<div class="msg">
+	<span class="loc_preparing_install"></span>
+	<div class="waitingBar"></div>
+</div>
+
+<script type="text/javascript">
+// set RAINSTALLER object for calls from installer frame
+var RAINSTALLER = {};
+RAINSTALLER.install = {};
+RAINSTALLER.install.InitializeProgressInfo = function(str){};
+RAINSTALLER.install.UpdateProgressInfo = function(str){};
+RAINSTALLER.install.IncProgressBar = function(){};
+RAINSTALLER.install.SetProgressGranularity = function(){};
+RAINSTALLER.install.updateProgressMessage = function(){};
+RAINSTALLER.install.ProgressToEnd = function(){};
+
+if ( typeof ASinstaller == 'undefined' ) { var ASinstaller = {}; }
+ASinstaller.init = function() {
+	//initialization of each module in namespace
+	var NS=ASinstaller;for (var i in NS){if (typeof NS[i].init=='function'){NS[i].init();}}
+}
+ASinstaller.getParam=function(n){n=n.replace(/[\[]/,'\\\[').replace(/[\]]/,'\\\]');var r=new RegExp('[\\?&]'+n+'=([^&#]*)');var o=r.exec(window.location.href );if(o==null){return '';}else{return o[1];}}
+ASinstaller.loc = {
+	//localization text
+	en: {
+		loc_preparing_install:'Preparing to install…',
+		loc_waiting_for_installer:'Waiting for other installer to complete…'
+	},
+	de: {
+		loc_preparing_install:'Installation wird vorbereitet ...',
+		loc_waiting_for_installer:'Auf Abschluss anderer Installation warten ...'
+	},
+	es: {
+		loc_preparing_install:'Preparando la instalación...',
+		loc_waiting_for_installer:'Esperando a que finalice el otro instalador...'
+	},
+	fr: {
+		loc_preparing_install:'Préparation de l&#39;installation...',
+		loc_waiting_for_installer:'En attente de l&#39;assistant pour terminer l&#39;installation...'
+	},
+	it: {
+		loc_preparing_install:'Preparazione all&#39;installazione…',
+		loc_waiting_for_installer:'In attesa del completamento del precedente installer…'
+	},
+	se: {
+		loc_preparing_install:'Förbereder installation ...',
+		loc_waiting_for_installer:'Väntar på att en annan installation ska slutföras ...'
+	},
+	nl: {
+		loc_preparing_install:'Installatie voorbereiden...',
+		loc_waiting_for_installer:'Wachten tot andere installatie is voltooid...'
+	},
+	br: {
+		loc_preparing_install:'Preparando para instalar...',
+		loc_waiting_for_installer:'Aguardando a conclusão de outro instalador...'
+	}
+}
+ASinstaller.prop = {
+	affCode: ASinstaller.getParam('aff'),//get affiliate from url
+	availableLang: {en:'en-us',fr:'fr-fr',de:'de-de',it:'it-it',es:'es-es',se:'sv-se',nl:'nl-nl',br:'pt-br'}, //paired with lang code, and locale code
+	lang: 'en'
+}
+ASinstaller.populatePage = {
+	init: function(){
+		this.start();
+	},
+	prop:{
+		partnerName:'zylom'
+	},
+	start: function(){
+		//set lagunage based on oslang(locale) -> installer lang -> en in that order
+		if (ASinstaller.getParam('locale') != ''){
+			var osLang=ASinstaller.getParam('locale');
+			for (lang in ASinstaller.prop.availableLang){
+				if (osLang == ASinstaller.prop.availableLang[lang]){ASinstaller.prop.lang = lang;}
+			}
+		}
+		if (ASinstaller.getParam('lang') != ''){
+			var urlLang=ASinstaller.getParam('lang');
+			for (lang in ASinstaller.prop.availableLang){
+				if (urlLang == lang){ASinstaller.prop.lang = ASinstaller.getParam('lang').toLowerCase(); }
+			}
+		}		
+		//do text replacements
+		try{document.getElementById('pageContainer').className = ASinstaller.prop.lang;}catch(e){}
+		var loc_regex = /^loc_/i;
+		for (var i = 0; (singleSpan = document.getElementsByTagName('span')[i]); i++) {
+				if (singleSpan.className == 'partnerName') {
+					singleSpan.innerHTML=this.prop.partnerName;
+				}
+				//localization replace
+				if (loc_regex.test(singleSpan.className)) {
+					try{singleSpan.innerHTML=(ASinstaller.loc[ASinstaller.prop.lang][singleSpan.className])?ASinstaller.loc[ASinstaller.prop.lang][singleSpan.className]:'';}catch(e){}
+				}
+		}
+	}
+}
+ASinstaller.init();
+</script>
+</body>
+</html>

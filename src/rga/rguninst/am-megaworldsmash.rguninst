@@ -1,0 +1,26 @@
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-megaworldsmash,DisplayIcon
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-megaworldsmash,UninstallString
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-megaworldsmash,DisplayName
+UNINSTSCR,C:\Program Files\RealArcade\Installer\uninstall\am-megaworldsmash.rguninst
+SHORTCUT,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\GameHouse\Mega World Smash.lnk
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\4d86222c1adcf5e28cfe35c033596c77,gameid
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,4d86222c1adcf5e28cfe35c033596c77
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\4d86222c1adcf5e28cfe35c033596c77,path
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,4d86222c1adcf5e28cfe35c033596c77
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\4d86222c1adcf5e28cfe35c033596c77,installation_time
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,4d86222c1adcf5e28cfe35c033596c77
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\4d86222c1adcf5e28cfe35c033596c77,timestamp
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,4d86222c1adcf5e28cfe35c033596c77
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\4d86222c1adcf5e28cfe35c033596c77,price
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,4d86222c1adcf5e28cfe35c033596c77
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\4d86222c1adcf5e28cfe35c033596c77,currency
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,4d86222c1adcf5e28cfe35c033596c77
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\4d86222c1adcf5e28cfe35c033596c77,tracking
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,4d86222c1adcf5e28cfe35c033596c77
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\4d86222c1adcf5e28cfe35c033596c77,affiliate
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,4d86222c1adcf5e28cfe35c033596c77
+RM,C:\GameHouse Games\Mega World Smash
+RM,C:\GameHouse Games\Mega World Smash\am-megaworldsmash.rga
+RM,C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_
+RM,C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+DECGAME,GameHouse

@@ -1,0 +1,28 @@
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-aaroncranepaintingscomealive,DisplayIcon
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-aaroncranepaintingscomealive,UninstallString
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-aaroncranepaintingscomealive,DisplayName
+UNINSTSCR,C:\Program Files\RealArcade\Installer\uninstall\am-aaroncranepaintingscomealive.rguninst
+SHORTCUT,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\GameHouse\Aaron Crane - Paintings Come Alive.lnk
+SHORTCUT,C:\Users\Hacker\Desktop\Aaron Crane - Paintings Come Alive.lnk
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\f8b8b4214749bf1e7f7a709e6849597e,gameid
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,f8b8b4214749bf1e7f7a709e6849597e
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\f8b8b4214749bf1e7f7a709e6849597e,path
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,f8b8b4214749bf1e7f7a709e6849597e
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\f8b8b4214749bf1e7f7a709e6849597e,installation_time
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,f8b8b4214749bf1e7f7a709e6849597e
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\f8b8b4214749bf1e7f7a709e6849597e,timestamp
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,f8b8b4214749bf1e7f7a709e6849597e
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\f8b8b4214749bf1e7f7a709e6849597e,price
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,f8b8b4214749bf1e7f7a709e6849597e
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\f8b8b4214749bf1e7f7a709e6849597e,currency
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,f8b8b4214749bf1e7f7a709e6849597e
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\f8b8b4214749bf1e7f7a709e6849597e,tracking
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,f8b8b4214749bf1e7f7a709e6849597e
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\f8b8b4214749bf1e7f7a709e6849597e,affiliate
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,f8b8b4214749bf1e7f7a709e6849597e
+RM,C:\GameHouse Games\Aaron Crane - Paintings Come Alive
+RM,C:\GameHouse Games\Aaron Crane - Paintings Come Alive\am-aaroncranepaintingscomealive.rga
+RM,C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_
+RM,C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+RM,C:\Users\Hacker\AppData\Local\Temp\GameHouse\checkinst.rar
+DECGAME,GameHouse

@@ -1,0 +1,27 @@
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-azkend2theworldbeneath,DisplayIcon
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-azkend2theworldbeneath,UninstallString
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-azkend2theworldbeneath,DisplayName
+UNINSTSCR,C:\Program Files\RealArcade\Installer\uninstall\am-azkend2theworldbeneath.rguninst
+SHORTCUT,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\GameHouse\Azkend 2 - The World Beneath.lnk
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87,gameid
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,02a2356b5d6fba64197db4cd60d57e87
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87,path
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,02a2356b5d6fba64197db4cd60d57e87
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87,installation_time
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,02a2356b5d6fba64197db4cd60d57e87
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87,timestamp
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,02a2356b5d6fba64197db4cd60d57e87
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87,price
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,02a2356b5d6fba64197db4cd60d57e87
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87,currency
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,02a2356b5d6fba64197db4cd60d57e87
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87,tracking
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,02a2356b5d6fba64197db4cd60d57e87
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\02a2356b5d6fba64197db4cd60d57e87,affiliate
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,02a2356b5d6fba64197db4cd60d57e87
+RM,C:\GameHouse Games\Azkend 2 - The World Beneath
+RM,C:\GameHouse Games\Azkend 2 - The World Beneath\am-azkend2theworldbeneath.rga
+RM,C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_
+RM,C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+RM,C:\Users\Hacker\AppData\Local\Temp\GameHouse\checkinst.rar
+DECGAME,GameHouse

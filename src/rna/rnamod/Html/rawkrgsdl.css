@@ -1,0 +1,326 @@
+/*RealArcade Wrapper Killer Direct RGS File Download Page Stylesheet */
+
+
+/* */
+html {
+	background:#CCC;
+	background:url("rawkdlgradient.png") fixed repeat-x;
+}
+
+/* */
+body {
+	
+}
+
+/* */
+.dltemplate {
+	visibility:hidden;
+}
+
+/* */
+div#unpackinfo {
+	font-size:13px;
+}
+
+/* */
+a {
+	color:#000;
+	font-size:14px;
+	text-decoration:none;
+}
+
+/* */
+a:visited {
+	color:#999;
+}
+
+/* */
+a:hover {
+	color:#FFF;
+}
+
+/* */
+a:active {
+	color:#F00;
+}
+
+/* */
+.info {
+	font-weight:bold;
+}
+
+/* */
+#wrapperinfo {
+	border-top: #000 thin solid;
+	border-bottom: #000 thin solid;
+}
+
+/* */
+#title1{
+	display:none;
+}
+
+/* */
+h3#sort1{
+	display:none;
+}
+
+/* */
+#extract1 {
+	color:#03C;
+	padding-bottom:5px;
+	display:none;
+}
+/* */
+#extract2 {
+	color:#03C;
+	padding-bottom:5px;
+	display:none;
+}
+
+/* */
+#note1 {
+	color:#F00;
+}
+
+h4#methods {
+	color:#000;
+}
+
+/* */
+h3#sortavail{
+	font:bold italic;
+}
+
+/* */
+ul {
+	font-size:12px;
+	list-style:none;
+	text-align:left;
+}
+
+/* */
+li#one {
+	font-size:12px;
+	text-align:center;
+}
+
+/* */
+li#two {
+	font-size:12px;
+	text-align:center;
+}
+
+/* */
+h4#note2 {
+	font-size:12px;
+	text-align:center;
+}
+
+/* */
+.gamedl {
+	font-weight:bold;
+}
+
+/* */
+div#available {
+	/*position:absolute;*/
+	float:left;
+	color:#0C0;
+	font-weight:bold;
+	background:url(rawkdlavailable.png) no-repeat;
+	padding:0;
+	margin:0;
+}
+
+/* */
+div#discontinued {
+	/*position:absolute;*/
+	color:#0CC;
+	font-weight:bold;
+	background:url(rawkdldiscontinued.png) no-repeat;
+	float:left;
+	clear:right;
+	padding-bottom:25px;
+}
+
+/* */
+div#rgaonly {
+	/*position:absolute;*/
+	color:#933;
+	font-weight:bold;
+	background:url(rawkdlrgaonly.png) no-repeat;
+	float:left;
+	padding-bottom:25px;
+	
+}
+
+/* */
+div#raghmerger {
+	/*position:absolute;*/
+	color:#906;
+	font-weight:bold;
+	background:url(rawkdlraghmerger.png) no-repeat;
+	float:left;
+	padding-bottom:25px;
+}
+
+/* */
+div#removedfromservers {
+	/*position:absolute;*/
+	color:#F00;
+	font-weight:bold;
+	background:url(rawkremovedfromservers.png) no-repeat;
+	float:left;
+	padding-bottom:25px;
+}
+
+/* */
+div#available h2 {
+	padding-bottom:5px;
+}
+
+/* */
+div#discontinued h2 {
+	padding-bottom:5px;
+}
+
+/* */
+div#rgaonly h2 {
+	padding-bottom:5px;
+}
+
+/* */
+div#raghmerger h2 {
+	padding-bottom:5px;
+}
+
+/* */
+div#removedfromservers h2 {
+	padding-bottom:5px;
+}
+
+	
+/* */
+.gamedl h2 {
+	text-indent:-9999px;
+}
+
+/* */
+div#available a {
+color:#060;
+}
+
+/* */
+div#discontinued a  {
+	color:#906;
+}
+
+/* */
+div#rgaonly a  {
+	color:#930;
+}
+
+/* */
+div#raghmerger a  {
+	color:#00C;
+}
+
+/* */
+div#removedfromservers a  {
+	color:#F00;
+}
+
+/* */
+div#extracterror a {
+	color:#C60;
+}
+
+/* */
+div#available a:hover {
+color:#FFF;
+}
+
+/* */
+div#discontinued a:hover  {
+color:#FFF;
+}
+
+/* */
+div#rgaonly a:hover  {
+color:#FFF;
+}
+
+/* */
+div#raghmerger a:hover  {
+color:#FFF;
+}
+
+/* */
+div#removedfromservers a:hover  {
+color:#FFF;
+}
+
+/* */
+div#extracterror a:hover {
+color:#FFF;
+}
+
+/* */
+#yahtztext {
+	color:#000;
+	font-size:12px;
+	font-style:italic;
+	padding-left:5px;
+}
+
+/* */
+#typothing {
+	color:#000;
+	font-size:12px;
+	font-style:italic;
+	padding-left:5px;
+}
+
+/* */
+.paracat {
+	
+}
+
+/* */
+#availablepara {
+
+}
+
+/* */
+#discontinuedpara {
+
+}
+
+/* */
+#rgapara {
+
+}
+
+/* */
+#raghpara {
+
+}
+
+/* */
+#removedpara {
+
+}
+
+/* */
+#decompressionpara {
+
+}
+
+	
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+
+----------------------------------------------------------------
+;The comment below contains SFX script commands
+
+Path=C:\Program Files\unRealArcade
+SavePath
+Silent=1
+Overwrite=1
+----------------------------------------------------------------
+
+RGSInst.exe
+
+- patched to look for "_tmp.rgs" and "_unpack.rgs"
+
+
+
+
+004088CC  |.  E8 F3B2FFFF   CALL 00403BC4                            ; \RGSinst.00403BC4
+
+
+
+004041AF  |. /74 09         JE SHORT 004041BA
+004041B1  |. |83BD C4EAFFFF>CMP DWORD PTR SS:[EBP-153C],2
+004041B8  |. |75 3C         JNZ SHORT 004041F6
+004041BA  |> \68 34A64200   PUSH 0042A634                            ; /String = "Copying RngInterstitial.dll
+"
+
+
+
+00404A32  |. /74 11         JE SHORT 00404A45
+
+00404B18  |. /73 54         |JNB SHORT 00404B6E
+
+
+
+
+**CALL TO MOMENT OF EXTRACTION**
+
+00404C2B  |.  E8 E9E6FFFF   CALL 00403319
+
+
+
+0040BCE6  |. /74 17         JE SHORT 0040BCFF
+
+
+**MOMENT OF EXTRACTION**
+0040BD03  |. /75 21         JNZ SHORT 0040BD26
+
+
+
+
+
+
+
+
+
+0040334B  |. /75 07         JNZ SHORT 00403354
+0040334D  |. |32C0          XOR AL,AL
+0040334F  |. |E9 62080000   JMP 00403BB6
+00403354  |> \C785 BCF9FFFF>MOV DWORD PTR SS:[EBP-644],0042A4AC      ;  ASCII "html.xtr"
+0040335E  |.  C785 C0F9FFFF>MOV DWORD PTR SS:[EBP-640],0042A4B8      ;  ASCII "catalog.xtr"
+00403368  |.  C785 C4F9FFFF>MOV DWORD PTR SS:[EBP-63C],0042A4C4      ;  ASCII "png.rgu"
+00403372  |.  C785 8CF4FFFF>MOV DWORD PTR SS:[EBP-B74],0042A4CC      ;  ASCII "Html"
+0040337C  |.  C785 90F4FFFF>MOV DWORD PTR SS:[EBP-B70],0042A4D4      ;  ASCII "Catalog"
+00403386  |.  C785 94F4FFFF>MOV DWORD PTR SS:[EBP-B6C],0042A4DC      ;  ASCII "Img"
+
+
+
+
+
+
+00404978  |. /0F8C 55010000 JL 00404AD3
+
+
+
+00404AD3  |> \E9 09130000   JMP 00405DE1
+00404AD8  |>  C785 8CEAFFFF>MOV DWORD PTR SS:[EBP-1574],0
+00404AE2  |.  C785 7CE8FFFF>MOV DWORD PTR SS:[EBP-1784],0042A758     ;  ASCII "html.xtr"
+00404AEC  |.  C785 80E8FFFF>MOV DWORD PTR SS:[EBP-1780],0042A764     ;  ASCII "catalog.xtr"
+

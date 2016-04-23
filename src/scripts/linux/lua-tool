@@ -1,0 +1,100 @@
+#!/bin/sh
+
+
+# LUA Tool
+
+# Part of the RealArcade Wrapper Killer
+
+# cRypTiCwaRe 2013
+
+
+
+setDefaults(){
+
+in=""
+out=""
+
+}
+
+
+cleanFiles(){
+
+clear
+
+echo "Cleaning Old Dumped Files..."
+echo ""
+echo ""
+
+rm "luac.out"
+
+rm "blob_dump"
+rm "installerMain_dump"
+rm "mrClean_dump"
+
+}
+
+
+cleanFilesTemp(){
+
+clear
+
+echo "Cleaning Temporary Files..."
+echo ""
+echo ""
+
+rm "luac.out"
+
+}
+
+
+dumpFile(){
+
+clear
+
+echo "Dumping Compiled LUA Files to Text Files..."
+echo ""
+echo ""
+
+luac50 -l $in >> $out 2>&1
+}
+
+
+processDumpList(){
+
+in="blob"
+out="blob_dump"
+dumpFile
+
+in="installerMain.clf"
+out="installerMain_dump"
+dumpFile
+
+in="mrClean.clf"
+out="mrClean_dump"
+dumpFile
+
+}
+
+
+exitBanner(){
+
+clear
+
+echo "RealArcade Wrapper Killer / cRypTiCwaRe 2013"
+echo ""
+echo ""
+
+}
+
+
+cleanFiles
+
+setDefaults
+processDumpList
+
+cleanFilesTemp
+
+exitBanner
+
+
+

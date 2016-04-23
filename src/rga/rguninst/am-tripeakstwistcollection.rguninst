@@ -1,0 +1,27 @@
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-tripeakstwistcollection,DisplayIcon
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-tripeakstwistcollection,UninstallString
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-tripeakstwistcollection,DisplayName
+UNINSTSCR,C:\Program Files\RealArcade\Installer\uninstall\am-tripeakstwistcollection.rguninst
+SHORTCUT,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\GameHouse\Tri-Peaks Twist Collection.lnk
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\a42be6f53e900f11b0e2b668ee418397,gameid
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,a42be6f53e900f11b0e2b668ee418397
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\a42be6f53e900f11b0e2b668ee418397,path
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,a42be6f53e900f11b0e2b668ee418397
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\a42be6f53e900f11b0e2b668ee418397,installation_time
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,a42be6f53e900f11b0e2b668ee418397
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\a42be6f53e900f11b0e2b668ee418397,timestamp
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,a42be6f53e900f11b0e2b668ee418397
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\a42be6f53e900f11b0e2b668ee418397,price
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,a42be6f53e900f11b0e2b668ee418397
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\a42be6f53e900f11b0e2b668ee418397,currency
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,a42be6f53e900f11b0e2b668ee418397
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\a42be6f53e900f11b0e2b668ee418397,tracking
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,a42be6f53e900f11b0e2b668ee418397
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\a42be6f53e900f11b0e2b668ee418397,affiliate
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,a42be6f53e900f11b0e2b668ee418397
+RM,C:\GameHouse Games\Tri-Peaks Twist Collection
+RM,C:\GameHouse Games\Tri-Peaks Twist Collection\am-tripeakstwistcollection.rga
+RM,C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_
+RM,C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+RM,C:\Users\Hacker\AppData\Local\Temp\GameHouse\checkinst.rar
+DECGAME,GameHouse

@@ -1,0 +1,28 @@
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-runningsheeptinyworlds,DisplayIcon
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-runningsheeptinyworlds,UninstallString
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-runningsheeptinyworlds,DisplayName
+UNINSTSCR,C:\Program Files\RealArcade\Installer\uninstall\am-runningsheeptinyworlds.rguninst
+SHORTCUT,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\GameHouse\Running Sheep - Tiny Worlds.lnk
+SHORTCUT,C:\Users\Hacker\Desktop\Running Sheep - Tiny Worlds.lnk
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\b8cd9a8dbbafbda6992de60ae045db0d,gameid
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,b8cd9a8dbbafbda6992de60ae045db0d
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\b8cd9a8dbbafbda6992de60ae045db0d,path
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,b8cd9a8dbbafbda6992de60ae045db0d
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\b8cd9a8dbbafbda6992de60ae045db0d,installation_time
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,b8cd9a8dbbafbda6992de60ae045db0d
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\b8cd9a8dbbafbda6992de60ae045db0d,timestamp
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,b8cd9a8dbbafbda6992de60ae045db0d
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\b8cd9a8dbbafbda6992de60ae045db0d,price
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,b8cd9a8dbbafbda6992de60ae045db0d
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\b8cd9a8dbbafbda6992de60ae045db0d,currency
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,b8cd9a8dbbafbda6992de60ae045db0d
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\b8cd9a8dbbafbda6992de60ae045db0d,tracking
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,b8cd9a8dbbafbda6992de60ae045db0d
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\b8cd9a8dbbafbda6992de60ae045db0d,affiliate
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,b8cd9a8dbbafbda6992de60ae045db0d
+RM,C:\GameHouse Games\Running Sheep - Tiny Worlds
+RM,C:\GameHouse Games\Running Sheep - Tiny Worlds\am-runningsheeptinyworlds.rga
+RM,C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_
+RM,C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+RM,C:\Users\Hacker\AppData\Local\Temp\GameHouse\checkinst.rar
+DECGAME

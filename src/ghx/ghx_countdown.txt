@@ -1,0 +1,265 @@
+-----------------------------------------------------
+Info for RGA v2.1 files (the older RGA type) for timer locations.
+
+Default Values Written (All):
+[netsock]
+netapi.dll-ID_HERE=TIME_VALUE_HERE
+
+-----------------------------------------------------
+Default File Paths:
+
+Older??: C:\Windows\win.ini
+ 
+Newer??: %AllUsers%\n7-89-o9-3r-4t-r9\profile.ini
+Newer??: %AllUsers%\92-75-56-55-p5-r9\profile.ini
+-----------------------------------------------------
+
+-----------------------------------------------------
+ID Example: ILSTQHTAN6HPE54-1c3e
+-----------------------------------------------------
+
+-----------------------------------------------------
+TIME_VALUE Examples
+incorrect values will result in "2 Minutes" remaining
+-----------------------------------------------------
+60 minutes: 8848169
+
+Decreases by 65531
+
+59 Minutes: 8782638
+
+Decreases by 65535
+
+58 Minutes: 8717103
+
+Decreases by 65539
+
+57 Minutes: 8651564
+
+Decreases by 65535
+
+56 Minutes: 8586029
+
+Decreases by 65547
+
+55 Minutes: 8520482
+
+Decreases by 65535
+
+54 Minutes: 8454947
+
+Decreases by 65539
+
+53 Minutes: 8389408
+
+Decreases by 65535
+
+52 Minutes: 8323873
+
+Decreases by 65531
+
+51 Minutes: 8258342
+
+Decreases by 65535
+
+50 Minutes: 8192807
+
+Decreases by 65539
+
+49 Minutes: 8127268
+
+Decreases by 65535
+
+48 Minutes: 8061733
+
+Decreases by 65515
+
+47 Minutes: 7996218
+
+Decreases by 65535
+
+46 Minutes: 7930683
+
+Decreases by 65539
+
+45 Minutes: 7865144
+
+Decreases by 65535
+
+44 Minutes: 7799609
+
+Decreases by 65531
+
+43 Minutes: 7734078
+
+Decreases by 65535
+
+42 Minutes: 7668543
+
+Decreases by 65539
+
+41 Minutes: 7603004
+
+Decreases by 65535
+
+40 Minutes: 7537469
+
+Decreases by 65547
+
+39 Minutes: 7471922
+
+Decreases by 65535
+
+38 Minutes: 7406387
+
+Decreases by 65539
+
+37 Minutes: 7340848
+
+Decreases by 65535
+
+36 Minutes: 7275313
+
+Decreases by 65531
+
+35 Minutes: 7209782
+
+Decreases by 65535
+
+34 Minutes: 7144247
+
+Decreases by 65539
+
+33 Minutes: 7078708
+
+Decreases by 65535
+
+32 Minutes: 7013173
+
+Decreases by 65579
+
+31 Minutes: 6947594
+
+Decreases by 65535
+
+30 Minutes: 6882059
+
+Decreases by 65539
+
+29 Minutes: 6816520
+
+Decreases by 65535
+
+28 Minutes: 6750985
+
+Decreases by 65531
+
+27 Minutes: 6685454
+
+Decreases by 65535
+
+26 Minutes: 6619919
+
+Decreases by 65539
+
+25 Minutes: 6554380
+
+Decreases by 65535
+
+24 Minutes: 6488845
+
+Decreases by 65547
+
+23 Minutes: 6423298
+
+Decreases by 65535
+
+22 Minutes: 6357763
+
+Decreases by 65539
+
+21 Minutes: 6292224
+
+Decreases by 65535
+
+20 Minutes: 6226689
+
+Decreases by 65531
+
+19 Minutes: 6161158
+
+Decreases by 65535
+
+18 Minutes: 6095623
+
+Decreases by 65539
+
+17 Minutes: 6030084
+
+Decreases by 65535
+
+16 Minutes: 5964549
+
+Decreases by 65515
+
+15 Minutes: 5899034
+
+Decreases by 65535
+
+14 Minutes: 5833499
+
+Decreases by 65539
+
+13 Minutes: 5767960
+
+Decreases by 65535
+
+12 Minutes: 5702425
+
+Decreases by 65531
+
+11 Minutes: 5636894
+
+Decreases by 65535
+
+10 Minutes: 5571359
+
+Decreases by 65539
+
+9 Minutes: 5505820
+
+Decreases by 65535
+
+8 Minutes: 5440285
+
+Decreases by 65547
+
+7 Minutes: 5374738
+
+Decreases by 65535
+
+6 Minutes: 5309203
+
+Decreases by 65539
+
+5 Minutes: 5243664
+
+Decreases by 65535
+
+4 Minutes: 5178129
+
+Decreases by 65531
+
+3 Minutes: 5112598
+
+Decreases by 65535
+
+2 Minutes: 5047063
+
+Decreases by 65539
+
+1 Minute: 4981524
+
+Decreases by 65535
+
+0 Minutes: There is NO ZERO VALUE (Defaults back to 2 minutes "4915989" after relaunch)

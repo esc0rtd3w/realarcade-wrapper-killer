@@ -1,0 +1,594 @@
+* {
+  font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
+}
+
+html { 
+  overflow: hidden;
+}
+
+body {
+  background: url('../images/slide_background.jpg') no-repeat scroll 0 0 white;
+  width: 620px;
+  height: 470px;
+  margin: 8px;
+}
+
+.slideBody { 
+  position: absolute;
+  width: 620px;
+  height: 470px;
+}
+
+.slideHead { 
+  height: 62px;
+  background-image: none !important;
+}
+
+.slideBorder { 
+  position: relative; 
+  height: 348px;
+}
+
+.slideFooter { 
+  position: absolute;
+  top: 410px;
+  height: 60px;
+  width: 620px;
+  background-image: none !important;
+}
+
+#gameImageOverlay {
+  background-image: url('../images/50x50_border.png');
+  background-repeat: no-repeat;
+  position: relative;
+  float: left;
+  left: 2px;
+  top: -53px;
+  width: 56px;
+  height: 60px;
+}
+
+#smallGameImage {
+  width: 50px;
+  height: 50px;
+  float: right;
+}
+
+#smallGameImageContainer { 
+  width: 55px;
+  height: 50px;
+}
+
+.installStep {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  width: 615px;
+}
+
+.installStepNumbers {
+  display: none;
+  position: relative;
+  top: 8px;
+  left: 520px;
+  width: 90px;
+}
+
+.setupRegion {
+  position: relative;
+  top: 50px;
+  margin: auto;
+  width: 520px;
+  height: 146px;
+}
+
+.setupContent {
+  width: 520px; 
+  height: 146px;
+  padding: 0px !important;
+}
+
+.buttonSpaces {
+  height: 10px;
+  width: 620px;
+}
+
+.slideBorder hr {
+  border-bottom: 1px solid #D4D4D4;
+  border-top: 0 none;
+  border-width: 0 0 1px;
+  color: #D4D4D4;
+  height: 1pt;
+  margin: 17px 0;
+}
+
+form {
+  margin: 0px; /* neutralizes discrepancies between netscape and ie form display */
+}
+
+a {
+  color: #62b0d7;
+}
+
+.cursorHand { cursor: pointer; }
+.border { border: 1px solid black; }
+.bold { font-weight: bold; }
+.px12Bold { font-size: 12px; font-weight: bold; }
+.px20 { font-size: 20px; }
+.px18 { font-size: 18px; }
+.px16 { font-size: 16px; }
+.px14 { font-size: 14px; }
+.px12 { font-size: 12px; }
+.px11 { font-size: 11px; }
+.px10Bold { font-size: 10px; font-weight: bold; }
+.px10 { font-size: 10px; }
+.red { color: red; }
+.floatLeft { float: left;}
+.floatRight { float: right; }
+.hidden { display: none; }
+.opaczero { opacity: .0; filter: alpha(opacity=0); -moz-opacity: 0.0; }
+.lift2 { line-height: 18px; }
+.darkBlue { color: #2C5074; }
+.white { color: #FFFFFF; }
+.darkGrey { color: #333333; }
+
+.link  {
+  text-decoration: none; 
+  font-weight: bold; 
+  color: #62b0d7;
+}
+.link:link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #62b0d7;
+}
+.link:visited {
+  text-decoration: none;
+  font-weight: bold;
+  color: #62b0d7;
+}
+.link:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #62b0d7;
+}
+
+
+/**** installing.html ****/
+.installingPage .setupRegion { 
+  top: 20px; 
+}
+
+.installingPage #installing {
+  display: none;
+}
+
+.progressBarRegion  {
+  position: absolute;
+  top: 0px;
+  left: 6px !important;
+  width: 608px !important;
+  height: 60px;
+}
+
+.progressBar {
+  background-image: url('../images/slide_progress-bar.png');
+  position: relative;
+  top: 16px;
+  height: 15px;
+  width: 608px;
+}
+
+.totalDownload {
+  position: relative;
+  float: right;
+  top: 20px;
+  width: 180px;
+  font-size: 10px;
+  color: white;
+  text-align: right;
+}
+
+.installerMessaging {
+  position: relative;
+  float: left;
+  top: 20px !important;
+  width: 205px;
+  font-size: 10px;
+}
+
+.progressBarImage {
+  width: 10px;
+  height: 15px;
+  float: left;
+  display: none;
+}
+
+#progressBarBodyInstaller.progressBarImage {
+  display: block;
+}
+
+.pb-body-download, .pb-body-install {
+  display: block;
+}
+
+.downloadingText {
+  text-align: center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.extratext {
+  position: absolute;
+  top: 390px;
+  width: 620px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#ad_multiSizeAd {
+  height: 250px;
+  position: relative; 
+  margin: 10px auto 0; 
+  width: 300px; 
+  display: block;
+  top: 10px;
+}
+
+.progressbar-left {
+  background-image: url('../images/installerProgLeft.gif');
+}
+
+.progressbar-center {
+  background-image: url('../images/slide_loader.gif');
+}
+
+.progressbar-right {
+  background-image: url('../images/installerProgRight.gif');
+}
+
+#installerPhasePadding {
+  float: left;
+  padding-right: 0px;
+}
+
+#installerPhase {
+  position: relative;
+  color: white;
+}
+
+
+
+/**** complete.html ****/
+.downloadingCompleteRegion {
+  position: relative;
+  top: 157px !important;
+  left: 163px;
+  width: 220px !important;
+  height: 146px;
+}
+
+.downloadingComplete {
+  position: relative;
+  top: 0px;
+  left: 65px;
+  text-align: left;
+  width: 260px; 
+  line-height: 18px;
+}
+
+.downloadingComplete div {
+  margin-bottom: 5px;
+}
+
+#setupCompleteOptions {
+  background-image: url('../images/complete.png');
+  background-repeat: no-repeat;
+}
+
+
+/**** eula.html ****/
+.eulaPage .setupRegion {
+  height: 176px;
+  margin: auto;
+  position: relative;
+  top: 40px;
+  width: 555px;
+}
+      
+.eulaPage .setupContent {
+  height:183px;
+  padding-left:60px;
+  padding-top:18px;
+  width:555px;
+}
+
+.folderChooser {
+  margin-top: 8px;
+}
+.folderChooserTxt {
+  margin-left: 5px;
+  text-decoration: underline; 
+  font-weight: normal;
+  color: #62B0D7;
+}
+
+.agreementTerms {
+  position: relative;
+  margin: auto;
+  width: 555px;
+  top: 90px;
+}
+
+.installMessage {
+  margin-left: 20px;
+  padding-top: 8px;
+}
+
+.installMessage .darkBlue {
+  color: white;
+}
+
+#installPath {
+  background: none repeat scroll 0 0 white;
+  border: 1px solid #c3c3c3;
+  padding: 5px;
+  width: 440px;
+}
+
+.checkboxContainer div {
+  padding: 3px 0px;
+}
+
+
+/**** Chrome HL page styles ****/
+.chromeCont_slide1 {
+  position: absolute;
+  margin: 0 0 0 0px;
+  height: 470px;
+  width: 620px;
+  background-image:url('../images/chrome-bg_default.jpg');
+  background-repeat: no-repeat;
+  background-position: 65% 0px;
+}
+
+.chromePage .slideBorder {
+  top: 8px;
+}
+
+#chromeLogo { 
+  position: absolute; 
+  width: 49px; 
+  height: 47px; 
+  left: 0px; 
+  top: 6px; 
+  background-image: url('../images/logo_chromeNew.png');
+  background-repeat: no-repeat;
+}
+
+#chromeScreenshot{ 
+  position: absolute; 
+  width: 538px; 
+  height: 252px; 
+  left: 50px; 
+  top: 6px; 
+  display: block; 
+} 
+
+.chromeDesc { 
+  position: absolute;
+  width: 480px;
+  height: 80px;
+  left: 60px;
+  top: 10px;
+  color: #000000;
+  font-size: 15px;
+}
+
+.chromeDesc ul { 
+  margin-top: 7px;
+  padding-left: 13px;
+  font-size: 7px;
+  line-height: 15px; 
+}
+
+.chromeDesc ul li span {
+  font-size: 12px;
+}
+
+.chromeForm {
+  position: absolute;
+  width: 530px;
+  height: 45px;
+  left: 65px;
+  top: 260px;
+  color: #000000;
+  font-size: 13px;
+}
+
+.chromeForm input {
+  vertical-align: -1pt;
+}
+
+.chromeTerms a {
+  text-decoration: underline;
+  color: #4a699e;
+}
+
+.chromeTerms {
+  font-size: 9px;
+  padding-left: 21px;
+  padding-top: 3px;
+  color: #000;
+}
+
+
+
+/**** Chrome Tool Bar Offer page styles ****/
+.chrometoolbarList { 
+  margin-top: 2px; 
+  font-size: 13px; 
+  position: absolute; 
+  top: 192px; 
+  left: 45px; 
+  list-style-position: inside;
+}
+
+#chrometoolbarLogo { 
+  position: absolute; 
+  width: 163px; 
+  height: 68px; 
+  left: 16px; 
+  top: 29px; 
+  background-image: url('../images/googleToolbarLogo.jpg');
+  background-repeat: no-repeat;
+}
+
+#chrometoolbarScreenshot {
+  position: absolute; 
+  width: 592px; 
+  height: 81px; 
+  left: 12px; 
+  top: 105px; 
+  display: block; 
+  background-image: url('../images/googleToolbarScreenshot.jpg');
+  background-repeat: no-repeat;
+} 
+
+.chrometoolbarDesc { 
+  position: absolute; 
+  width: 480px; 
+  height: 80px; 
+  left: 189px; 
+  top: 41px; 
+  color: #000000; 
+  font-size: 19px; 
+}
+
+.chrometoolbarDesc strong { 
+  color: #ff3300; 
+}
+
+.chrometoolbarDesc ul { 
+  margin-top: 2px; 
+  font-size: 12px; 
+}
+
+.chrometoolbarForm { 
+  position: absolute; 
+  width: 585px; 
+  height: 45px; 
+  left: 16px; 
+  top: 280px; 
+  color: #000000; 
+  font-size: 14px; 
+}
+
+.chrometoolbarForm input { 
+  vertical-align: -1pt; 
+}
+
+.chrometoolbarForm label { 
+  font-weight: bold; 
+}
+
+.chrometoolbarForm em { 
+  color: #999; 
+  font-style: normal; 
+  font-size: 12px; 
+  font-weight: normal; 
+}
+
+.chrometoolbarTerms a{ 
+  text-decoration: underline; 
+  color: #4a699e; 
+}
+
+.chrometoolbarTerms { 
+  font-size: 9px; 
+  padding-left: 24px; 
+  color: #000; 
+}
+
+
+/**** OpenCandy SDK ****/
+/*
+.opencandyForm { 
+  position: absolute; 
+  width: 580px; 
+  height: 30px; 
+  left: 20px; 
+  top: 300px; 
+  color: #000000; 
+}
+
+.opencandyEULA { 
+  font-size: 10px; 
+  font-weight: normal; 
+  color: #000000; 
+  text-align:right;
+}
+
+.opencandyEULA a { 
+  text-decoration: underline; 
+  color: #000000;
+}
+*/
+
+
+
+/**** Buttons ****/
+.button_a, .button_b, .button_c {
+  position: absolute;
+  top: 14px;
+}
+
+.button_a {
+  right: 110px;
+}
+
+.button_b {
+  right: 19px;
+}
+
+.buttonsm_right {
+  height: 30px;
+  padding-left: 0px; 
+  background-position: right 0px;
+  background-image: url('../images/buttonsm_right.png');
+  background-repeat: no-repeat;
+}
+
+.buttonsm_left {
+  color: white;
+  font-family: arial;
+  font-size: 16px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 25px;
+  padding: 0px 20px;
+  margin-right: 3px;
+  background-position: left 0px;
+  background-image: url('../images/buttonsm_left.png');
+  background-repeat: no-repeat;
+}
+
+.buttonsm_left:hover {
+  background-position: left -30px;
+}
+
+.buttonsm_right:hover {
+  background-position: right -30px;
+}
+
+.buttonsm_left:active {
+  background-position: left -60px;
+}
+
+.buttonsm_right:active {
+  background-position: right -60px;
+}

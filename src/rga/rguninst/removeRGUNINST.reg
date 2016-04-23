@@ -1,0 +1,22 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\RealArcade.rguninst\shell\open\command]
+
+;[-HKEY_CLASSES_ROOT\RealArcade.rgi\shell\open\command]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.rguninst]
+
+[-HKEY_CLASSES_ROOT\Software\GameHouse\2.0\Preferences]
+
+[HKEY_CLASSES_ROOT\Software\GameHouse]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.rguninst]
+
+
+; Sample Uninstall GameHouse
+;[HKEY_CLASSES_ROOT\Software\GameHouse\Games\am-aaroncranepaintingscomealive\1]
+;"InstallPath"="C:\\GameHouse Games\\Aaron Crane - Paintings Come Alive"
+;"GameName"="am-aaroncranepaintingscomealive"
+;"UninstallPath"="C:\\Program Files\\RealArcade\\Installer\\uninstall\\am-aaroncranepaintingscomealive.rguninst"
+
+

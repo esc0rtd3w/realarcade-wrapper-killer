@@ -1,0 +1,83 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\software\Trymedia Systems\ActiveMARK Software\CONTENT_ID_GOES_HERE]
+
+; Affiliate ID
+; The default value of this translated from hex is simply: _gamehouse
+; This may also be changeable with possibly changing the stub exe to match.
+"affiliate"=hex:67,61,6D,65,68,6F,75,73,65,5F,00,00,00,00,00,00
+
+; Tracking ID
+; It is unique per game and can be found by looking at the stub with a hex editor
+; This has been tested at all 0's successfully on some games.
+; Some games do not have a Content ID, meaning that ID is "00000000000000000000000000000000".
+; The Tracking ID can also be all 0's, such as this in hex: "00000000000000"
+"tracking"=hex:32,34,38,39,33,32,34,00,00,00,00,00,00,00,00,00
+
+; Currency (country specific)
+; Possibilities are holding currency type for different countries for game purchases.
+"currency"=hex:00,00,00,00,00,00
+
+; Amount of Purchase (country specific)
+; Possibilities are holding currency amount for different countries for game purchases.
+"price"=hex:00,00,00,00,00
+
+; Unknown Time Stamp
+; This is a time stamp, at this time its purpose is unknown.
+"timestamp"=hex:00,00,00,00,00
+
+; Installation Time
+; This is when the stub executed and downloaded the RGA file.
+"installation_time"="9999/99/99@00:00:00"
+
+; Install/Run Path
+; This is the default path of the game install.
+; Our new value is modified to force the system variable "CURRENT DIRECTORY".
+; The game will look in its own folder for the game path.
+"path"=".\\.exe"
+
+; Game ID
+; This seems to resemble/duplicate the original download stub file naming scheme.
+; Games will be tested with old and new stub versions to verify if the "am-" prefix is needed on all games.
+"gameid"="am-"
+
+
+;-----------------------------------------------------------------------------------------------------
+; SAMPLES BEGIN
+;-----------------------------------------------------------------------------------------------------
+
+;Example: Original Source: Reaxxion
+;
+;[HKEY_LOCAL_MACHINE\software\Trymedia Systems\ActiveMARK Software\5c6eaea71873ba895931adea5dd9cfa9]
+;"affiliate"=hex:67,61,6D,65,68,6F,75,73,65,5F,00,00,00,00,00,00
+;"tracking"=hex:32,32,30,34,39,32,37,00,00,00,00,00,00,00,00,00
+;"currency"=hex:00,00,00,00,00,00
+;"price"=hex:00,00,00,00,00
+;"timestamp"=hex:00,00,00,00,00
+;"installation_time"="2011/11/09@23:39:44"
+;"path"="C:\\GameHouse Games\\Reaxxion\\GH-Reaxxion.exe"
+;"gameid"="am-reaxxion"
+
+
+;Example: Modified Source: Nick Jr. Bingo (Built from Reaxxion install)
+;
+;[HKEY_LOCAL_MACHINE\software\Trymedia Systems\ActiveMARK Software\07b283414c1c006b1e84d52911a08a40]
+;"affiliate"=hex:67,61,6D,65,68,6F,75,73,65,5F,00,00,00,00,00,00
+;"tracking"=hex:32,34,38,39,33,32,34,00,00,00,00,00,00,00,00,00
+;"currency"=hex:00,00,00,00,00,00
+;"price"=hex:00,00,00,00,00
+;"timestamp"=hex:00,00,00,00,00
+;"installation_time"="2011/11/09@23:39:44"
+;"path"=".\\GH-Bingo.exe"
+;"gameid"="am-nickjrbingo"
+
+
+; Both original and modified methods have been tested working.
+;
+; Method 1 (Original): download stub and installed normally
+; Method 2 (Modified): download rga file, extract and run
+;
+;
+;-----------------------------------------------------------------------------------------------------
+; SAMPLES END
+;-----------------------------------------------------------------------------------------------------

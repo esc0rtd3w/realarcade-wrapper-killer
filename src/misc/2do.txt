@@ -1,0 +1,49 @@
+Main Core
+----------
+
+- when forced manual unpack, the rawk core cleaner does not remove files after unpack
+- better detect when a game has already been unpacked to lower crash rate on such instances
+- make game shortcuts in RA player only if RA software is installed
+- get wrapper version during init
+- get md5 sums during init
+- when game fails and manual mode is enabled, the spoofing gives an error because RNArcade is still running
+- extract only bak file is not renamed back to exe when manual mode is enabled
+- ini file is not created when manual mode is enabled
+- add rnamod to advanced loading options
+
+
+
+RGS Loader
+-----------
+
+- Fix invalid GOTO commands
+- Fix loader not closing after extraction
+- Skip first and last dialog boxes on Loader v1
+- Offer optional Web Downloader option if game fails both methods
+- Fix extra trailing spaces issue with stubname
+- Add RAWK launcher to Loader v1
+
+
+
+RGA Loader
+-----------
+
+- fix "rm" command and replace with "del"....damn u linux!!!!
+- fix am- and amg- games from not getting proper GameName variable
+
+
+Web Downloader
+--------------
+
+- add server switching (origin.gamehouse.com / games-dl2.real.com / etc)
+- Add multi game download by using checkboxes, user input, text file, etc
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-luxorevolved,DisplayIcon
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-luxorevolved,UninstallString
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-luxorevolved,DisplayName
+UNINSTSCR,C:\Program Files\RealArcade\Installer\uninstall\am-luxorevolved.rguninst
+SHORTCUT,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\GameHouse\LUXOR Evolved.lnk
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\cf635aeabe11fe18071a7fbb339f210f,gameid
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,cf635aeabe11fe18071a7fbb339f210f
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\cf635aeabe11fe18071a7fbb339f210f,path
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,cf635aeabe11fe18071a7fbb339f210f
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\cf635aeabe11fe18071a7fbb339f210f,installation_time
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,cf635aeabe11fe18071a7fbb339f210f
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\cf635aeabe11fe18071a7fbb339f210f,timestamp
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,cf635aeabe11fe18071a7fbb339f210f
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\cf635aeabe11fe18071a7fbb339f210f,price
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,cf635aeabe11fe18071a7fbb339f210f
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\cf635aeabe11fe18071a7fbb339f210f,currency
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,cf635aeabe11fe18071a7fbb339f210f
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\cf635aeabe11fe18071a7fbb339f210f,tracking
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,cf635aeabe11fe18071a7fbb339f210f
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\cf635aeabe11fe18071a7fbb339f210f,affiliate
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,cf635aeabe11fe18071a7fbb339f210f
+RM,C:\GameHouse Games\LUXOR Evolved
+RM,C:\GameHouse Games\LUXOR Evolved\am-luxorevolved.rga
+RM,C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_
+RM,C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+DECGAME,GameHouse

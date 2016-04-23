@@ -1,0 +1,227 @@
+---------------------------------------------------------------------------------------------
+URL's from Fiddler on v1.2.0.717 of RealArcade software
+
+
+INSTALLATION
+-------------
+
+http://switchboard.real.com/arcade/download.html?file=online/myacctwait.htm
+http://switchboard.real.com/arcade/download.html?file=online/gameguide_firstrun.gif
+http://games-dl.real.com/gameconsole/online/myacctwait.htm
+
+
+After closing nag window:
+
+http://www.gamehouse.com
+
+/pt/purchase_paths/gaarcpl042502a/racmeminfo.htm
+
+
+
+
+
+RUNNING CLIENT
+---------------
+
+Update Game Guide button:
+
+http://switchboard.real.com
+/arcade/download.html?file=online/gameguide_firstrun.gif
+http://www.gamehouse.com
+
+/pt/purchase_paths/gaarcpl042502a/racmeminfo.htm
+http://games-dl.real.com/gameconsole/online/gameguide_firstrun.gif
+http://www.games-dl.real.com/gameconsole/online/gameguide_firstrun.gif
+---------------------------------------------------------------------------------------------
+
+
+
+
+
+---------------------------------------------------------------------------------------------
+URL's from Fiddler on Gamehouse new RGAv3 (v4 in URA HTML archive) webpage navigation, stub
+building, stub running, game loaded, and game exit states.
+
+
+
+
+DOWNLOADING FROM GAMEHOUSE.COM
+-------------------------------
+
+
+Page loaded, click on Download button:
+
+http://www.gamehouse.com/pc/postdownload/jewel-legends-magical-kingdom
+
+deflate
+Referer: http://www.gamehouse.com/download-games/jewel-legends-magical-kingdom
+
+
+Cookie: cid=222; lid=1; mt.v=2.759949196.1379995673029; __utma=221938446.379787513.1379995677.1382811278.1382854956.7; __utmz=221938446.1379995677.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); gzid="20130924:2d570456b58cf33f092d38b2fa1faca3"; dgks=0-9*6000_88xu.0-9*6000_88xu.4c4v-9*6000_88xu; dsg=0-0.0-0.4c4v-4mo; rks=9*6000; tks=9*6000; gsid=6000; __utmc=221938446; __utmb=221938446.3.10.1382854956; __utmli=dl_now_buttonbutton
+Connection: keep-alive
+
+
+
+
+
+http://www.gamehouse.com/download/pc/jewel-legends-magical-kingdom
+
+http://d.gamehouse.com/d/ghmigration/jewellegendsmagicalkingdom/z_syn_gh_g12/jewellegendsmagicalkingdom.rga?tracking=844f8b8c718b625ea969bcb84d466600&currency=1&price=60.0
+
+http://itm.gamehouse.com/itm/installer/initializeInstaller?gameid=jewellegendsmagicalkingdom&channel=z_syn_gh_g12&otp=&tracking=844f8b8c718b625ea969bcb84d466600&currency=1&price=60.0&installerversion=&lang=&extratracking=&publisher=ghmigration
+
+http://itm.gamehouse.com/itm/installer/installerRedirect/Installer_jewellegendsmagicalkingdom.exe?gameid=520b219bcb1ece3f6a464faa38c610b1&channel=z_syn_gh_g12&otp=&tracking=844f8b8c718b625ea969bcb84d466600&currency=1&price=60.0&installerversion=&lang=&extratracking=&publisher=ghmigration
+
+
+
+
+RUNNING THE STUB
+-----------------
+
+First screen loading :
+
+GET /images/activemark/installer_ui/z_syn_gh/eula.html?aff=z_syn_gh_g12&product_name=Jewel+Legends+-+Magical+Kingdom&contentid=33ED650E2CBFBC5935E97BF77CC224C7&offering=jewellegendsmagicalkingdom&lang=en-us&sld=eula&tracking=89C04534A4B5C5777B48962344406600&extratracking=[extratracking]&version=0020&locale=en-us&curpage=1&maxpage=2&locale=en-us&racversion=&installerversion=3.1.10&htmlversion= HTTP/1.1
+Accept: image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, */*
+Accept-Language: en-US
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)
+Proxy-Connection: Keep-Alive
+Host: cdn.media.zylom.com
+
+
+
+GET /images/activemark/installer_ui/z_syn_gh/ HTTP/1.1
+Accept: */*
+Referer: http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/eula.html?aff=z_syn_gh_g12&product_name=Jewel+Legends+-+Magical+Kingdom&contentid=33ED650E2CBFBC5935E97BF77CC224C7&offering=jewellegendsmagicalkingdom&lang=en-us&sld=eula&tracking=89C04534A4B5C5777B48962344406600&extratracking=[extratracking]&version=0020&locale=en-us&curpage=1&maxpage=2&locale=en-us&racversion=&installerversion=3.1.10&htmlversion=
+Accept-Language: en-US
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)
+Host: cdn.media.zylom.com
+Proxy-Connection: Keep-Alive
+
+
+
+GET /images/activemark/installer_ui/z_syn_gh/_build.js?_=1382857287056 HTTP/1.1
+x-requested-with: XMLHttpRequest
+Accept-Language: en-us
+Referer: http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/eula.html?aff=z_syn_gh_g12&product_name=Jewel+Legends+-+Magical+Kingdom&contentid=33ED650E2CBFBC5935E97BF77CC224C7&offering=jewellegendsmagicalkingdom&lang=en-us&sld=eula&tracking=89C04534A4B5C5777B48962344406600&extratracking=[extratracking]&version=0020&locale=en-us&curpage=1&maxpage=2&locale=en-us&racversion=&installerversion=3.1.10&htmlversion=
+Accept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)
+Host: cdn.media.zylom.com
+Proxy-Connection: Keep-Alive
+
+
+
+GET /ping/installerstart?contentID=33ED650E2CBFBC5935E97BF77CC224C7&lang=en&offering=jewellegendsmagicalkingdom&systemID=2CDA2525A0BD6E9AB5664C373D96D15D&tracking=89C04534A4B5C5777B48962344406600&extratracking=[extratracking] HTTP/1.1
+Accept: */*
+Referer: http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/eula.html?aff=z_syn_gh_g12&product_name=Jewel+Legends+-+Magical+Kingdom&contentid=33ED650E2CBFBC5935E97BF77CC224C7&offering=jewellegendsmagicalkingdom&lang=en-us&sld=eula&tracking=89C04534A4B5C5777B48962344406600&extratracking=[extratracking]&version=0020&locale=en-us&curpage=1&maxpage=2&locale=en-us&racversion=&installerversion=3.1.10&htmlversion=
+Accept-Language: en-US
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)
+Host: activemark.zylom.com
+Proxy-Connection: Keep-Alive
+
+
+
+**************************************
+******FIRST SCREEN IS NOW LOADED******
+**************************************
+
+
+After clicking "I Agree":
+
+GET /images/activemark/installer_ui/z_syn_gh/installing.html?aff=z_syn_gh_g12&product_name=Jewel+Legends+-+Magical+Kingdom&contentid=33ED650E2CBFBC5935E97BF77CC224C7&offering=jewellegendsmagicalkingdom&lang=en-us&sld=installing&tracking=89C04534A4B5C5777B48962344406600&extratracking=[extratracking]&version=0020&locale=en-us&curpage=2&maxpage=2&locale=en-us&racversion=2.5.0.58&installerversion=3.1.10&htmlversion=2.6.0.306 HTTP/1.1
+Accept: image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, */*
+Accept-Language: en-US
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)
+Proxy-Connection: Keep-Alive
+Host: cdn.media.zylom.com
+Cookie: installer_step=0
+
+
+
+GET /images/activemark/installer_ui/z_syn_gh/ HTTP/1.1
+Accept: */*
+Referer: http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/installing.html?aff=z_syn_gh_g12&product_name=Jewel+Legends+-+Magical+Kingdom&contentid=33ED650E2CBFBC5935E97BF77CC224C7&offering=jewellegendsmagicalkingdom&lang=en-us&sld=installing&tracking=89C04534A4B5C5777B48962344406600&extratracking=[extratracking]&version=0020&locale=en-us&curpage=2&maxpage=2&locale=en-us&racversion=2.5.0.58&installerversion=3.1.10&htmlversion=2.6.0.306
+Accept-Language: en-US
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)
+Host: cdn.media.zylom.com
+Proxy-Connection: Keep-Alive
+Cookie: installer_step=0
+
+
+
+GET /ttj?id=1136397&size=300x250&promo_sizes=600x300&promo_alignment=center&env=&page=installingslide&ext_inv_code=rectangle&plc=rectangle&position=above&game=jewellegendsmagicalkingdom&login=&funpass=&funticket=&gamepass=&age=&gender=&cb=&referrer=installer-.gamehouse.com HTTP/1.1
+Accept: */*
+Referer: http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/installing.html?aff=z_syn_gh_g12&product_name=Jewel+Legends+-+Magical+Kingdom&contentid=33ED650E2CBFBC5935E97BF77CC224C7&offering=jewellegendsmagicalkingdom&lang=en-us&sld=installing&tracking=89C04534A4B5C5777B48962344406600&extratracking=[extratracking]&version=0020&locale=en-us&curpage=2&maxpage=2&locale=en-us&racversion=2.5.0.58&installerversion=3.1.10&htmlversion=2.6.0.306
+Accept-Language: en-US
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)
+Host: ib.adnxs.com
+Proxy-Connection: Keep-Alive
+
+
+
+GET /bounce?%2Fttj%3Fid%3D1136397%26size%3D300x250%26promo_sizes%3D600x300%26promo_alignment%3Dcenter%26env%3D%26page%3Dinstallingslide%26ext_inv_code%3Drectangle%26plc%3Drectangle%26position%3Dabove%26game%3Djewellegendsmagicalkingdom%26login%3D%26funpass%3D%26funticket%3D%26gamepass%3D%26age%3D%26gender%3D%26cb%3D%26referrer%3Dinstaller-.gamehouse.com HTTP/1.1
+Accept: */*
+Referer: http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/installing.html?aff=z_syn_gh_g12&product_name=Jewel+Legends+-+Magical+Kingdom&contentid=33ED650E2CBFBC5935E97BF77CC224C7&offering=jewellegendsmagicalkingdom&lang=en-us&sld=installing&tracking=89C04534A4B5C5777B48962344406600&extratracking=[extratracking]&version=0020&locale=en-us&curpage=2&maxpage=2&locale=en-us&racversion=2.5.0.58&installerversion=3.1.10&htmlversion=2.6.0.306
+Accept-Language: en-US
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)
+Host: ib.adnxs.com
+Proxy-Connection: Keep-Alive
+Cookie: sess=1; uuid2=3041579283076125437
+
+
+
+GET /images/activemark/installer_ui/z_syn_gh/_build.js?_=1382857397179 HTTP/1.1
+x-requested-with: XMLHttpRequest
+Accept-Language: en-us
+Referer: http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/installing.html?aff=z_syn_gh_g12&product_name=Jewel+Legends+-+Magical+Kingdom&contentid=33ED650E2CBFBC5935E97BF77CC224C7&offering=jewellegendsmagicalkingdom&lang=en-us&sld=installing&tracking=89C04534A4B5C5777B48962344406600&extratracking=[extratracking]&version=0020&locale=en-us&curpage=2&maxpage=2&locale=en-us&racversion=2.5.0.58&installerversion=3.1.10&htmlversion=2.6.0.306
+Accept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)
+Host: cdn.media.zylom.com
+Proxy-Connection: Keep-Alive
+Cookie: installer_step=0
+
+
+
+GET /ping/downloadstart?contentID=33ED650E2CBFBC5935E97BF77CC224C7&lang=en&offering=jewellegendsmagicalkingdom&systemID=2CDA2525A0BD6E9AB5664C373D96D15D&tracking=89C04534A4B5C5777B48962344406600&extratracking=[extratracking] HTTP/1.1
+Accept: */*
+Referer: http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/installing.html?aff=z_syn_gh_g12&product_name=Jewel+Legends+-+Magical+Kingdom&contentid=33ED650E2CBFBC5935E97BF77CC224C7&offering=jewellegendsmagicalkingdom&lang=en-us&sld=installing&tracking=89C04534A4B5C5777B48962344406600&extratracking=[extratracking]&version=0020&locale=en-us&curpage=2&maxpage=2&locale=en-us&racversion=2.5.0.58&installerversion=3.1.10&htmlversion=2.6.0.306
+Accept-Language: en-US
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)
+Host: activemark.zylom.com
+Proxy-Connection: Keep-Alive
+
+
+
+
+**************************************
+********ASKS ABOUT GOOGLE CRAP********
+**************************************
+
+
+
+
+**************************************
+**********DOWNLOADS RGA FILE**********
+**************************************
+
+
+
+
+---------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+

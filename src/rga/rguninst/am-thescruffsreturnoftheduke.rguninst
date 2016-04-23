@@ -1,0 +1,26 @@
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-thescruffsreturnoftheduke,DisplayIcon
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-thescruffsreturnoftheduke,UninstallString
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\am-thescruffsreturnoftheduke,DisplayName
+UNINSTSCR,C:\Program Files\RealArcade\Installer\uninstall\am-thescruffsreturnoftheduke.rguninst
+SHORTCUT,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\GameHouse\The Scruffs - Return of the Duke.lnk
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\899d6ccb5c6942e26e7acfb6bf28bce9,gameid
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,899d6ccb5c6942e26e7acfb6bf28bce9
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\899d6ccb5c6942e26e7acfb6bf28bce9,path
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,899d6ccb5c6942e26e7acfb6bf28bce9
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\899d6ccb5c6942e26e7acfb6bf28bce9,installation_time
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,899d6ccb5c6942e26e7acfb6bf28bce9
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\899d6ccb5c6942e26e7acfb6bf28bce9,timestamp
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,899d6ccb5c6942e26e7acfb6bf28bce9
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\899d6ccb5c6942e26e7acfb6bf28bce9,price
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,899d6ccb5c6942e26e7acfb6bf28bce9
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\899d6ccb5c6942e26e7acfb6bf28bce9,currency
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,899d6ccb5c6942e26e7acfb6bf28bce9
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\899d6ccb5c6942e26e7acfb6bf28bce9,tracking
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,899d6ccb5c6942e26e7acfb6bf28bce9
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\899d6ccb5c6942e26e7acfb6bf28bce9,affiliate
+REG,HKEY_LOCAL_MACHINE,SOFTWARE\Trymedia Systems\ActiveMARK Software\,899d6ccb5c6942e26e7acfb6bf28bce9
+RM,C:\GameHouse Games\The Scruffs - Return of the Duke
+RM,C:\GameHouse Games\The Scruffs - Return of the Duke\am-thescruffsreturnoftheduke.rga
+RM,C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_
+RM,C:\Program Files\RealArcade\Installer\commonResources\GameHouse\gamehouse_\custom.rga
+DECGAME,GameHouse
