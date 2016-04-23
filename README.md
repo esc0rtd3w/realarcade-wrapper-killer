@@ -4,6 +4,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
 
 
+                 
                    ²²²²²²²                          ²²²²²        ²²²²²
                  ²²²²²² ²²²                     ²²²²²  ²²       ²²²²²²
            ²²²²² ²²²²²²  ²²      ²²   ²²²²²²²² ²²²²² ²²²  ²²²² ²² ²²²²
@@ -19,7 +20,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
                      ²²²                  proudly presents...
 
               
-                        RealArcade Wrapper Killer v5.4.1
+                        RealArcade Wrapper Killer v5.4.2
 
 
                 -[ PWNING RealNetworks/GameHouse Since 2005 ]-  
@@ -34,7 +35,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
       Category .. [ Utility          ]   ²Ý  Protection. [ RGS/RGA Trials   ]°
       Tested by.. [ cRypTiC          ]   ±   Language..  [ English          ]
-   °  Packed by.. [ cRypTiC          ]   °   Filename .  [ c-rawk541.zip    ]°
+   °  Packed by.. [ cRypTiC          ]   °   Filename .  [ c-rawk542.zip    ]°
       Coded by... [ cRypTiC          ]       Disks ....  [ 01 x 12MB        ]±
 
    ±        .  ß            Ü        °   Ü     Ü ß           Ü       ßÛÜ   þÛ Ü
@@ -124,11 +125,10 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
 
 
-        * UPDATED: RAWK Core to v3.0.1
+	* UPDATED: RAWK Core to v3.0.2
 
-                   * Added new licensing module templates for RealArcade,
-                     Gamehouse, Zylom, and Activemark. These are currently
-                     not active and won't be until stable.
+                   * Support for new RGA Acid Offline License files (.offlcn)
+                     for subscription based accounts.
 
 
 
@@ -140,12 +140,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
         * UPDATED: RGA Loader to v1.0.1
 
-                   * Added support for unpacked version of Wrapper Killer
-                     after a successful game installation.
-
-                   * Added default GH icon to display for RGA files.
-
-                   * Fixed version number on title to the correct one ;)
+                   * Nothing new here :(
 
 
 
@@ -200,7 +195,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
                 ***************************************************
 
 
-         * HTML Game Catalogs are current as of 2013-12-01.
+         * HTML Game Catalogs are current as of 2014-08-30.
 
 
          * Tested Compatible with almost the entire library of RGS v1.2 games.
@@ -405,6 +400,9 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
                        bloxxit.rga
 
                      - RGA 3.0 Demo Trial Stub: 
+                       Installer_bloxxit.exe
+
+                     - RGA Acid 1.0 Demo Trial Stub: 
                        Installer_bloxxit.exe
 
                      - MAC OSX Demo Trial Installer:
