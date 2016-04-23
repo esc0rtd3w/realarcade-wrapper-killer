@@ -1,0 +1,16 @@
+
+
+http://www.gamehouse.com/lm/episodic/updateService?gameid=am-deliciousemilyswonderwedding
+
+
+{"max_install_per_session":"1000","available_episodes":[{"url":"http://games-dl2.real.com/gameconsole/realarcadev21/games/am-deliciousemilyswonderwedding/am-deliciousemilyswonderwedding_updpkg_cycle2_v2.rar","md5":"1780d556638a6008be63b0584a553c4d"}],"install_url":null} 
+
+
+
+http://www.gamehouse.com/lm/episodic/getPurchasedEpisodes
+
+
+http://www.gamehouse.com/lm/episodic/getLatestPlayableEpisode
+
+
+
