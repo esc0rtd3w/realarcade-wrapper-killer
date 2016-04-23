@@ -151,7 +151,7 @@ set rawkcore=3.0.3
 ::-----------------------------------------------------------------------------------
 
 set rgs_loader_core=2.1.3
-set rga_loader_core=1.0.1
+set rga_loader_core=1.0.2
 
 ::-----------------------------------------------------------------------------------
 :: URA Downloader Version (used for debug output only)
