@@ -7,6 +7,7 @@
 // @include     http://www.gamehouse.com/top-100-games*
 // @include     http://www.gamehouse.com/platinum-games*
 // @include     http://www.gamehouse.com/free-games*
+// @include     http://www.gamehouse.com/mac-games*
 // @version     0.3.1
 // @grant       none
 // ==/UserScript==
@@ -96,6 +97,7 @@ server.push("http://switchboard.real.com");// Alternate Legacy RealArcade Packag
 server.push("http://downloads.gamehouse.com");// Default Mac Download Server
 server.push("http://m.gamehouse.com");// Default Mobile Download Server
 server.push("http://cdn.ghstatic.com");// Default Content Server
+server.push("http://gameh0use.com");// cRypTiCwaRe GH Spoof Server
 
 // Game Paths On Server
 var path = [];
@@ -107,6 +109,7 @@ path.push("/gameconsole/realarcadev21/games/am-");// Legacy Activemark (Trial Ga
 path.push("/gameconsole/realarcadev21/games/amg-");// Legacy Activemark (Free Game) GameHouse and RealArcade RGA Path
 path.push("/pub/");// Default Mac OSX DMG Path (amac-)
 path.push("/InstallerManager/getinstaller?filename=");// Default EXE Stub Path (2015/2016)
+path.push("/gamehouse/macstatic/"); // New Mac OSX DMG Path (2016)
 
 // Distributor List
 var distributor = [];
@@ -605,9 +608,13 @@ function createLinksRGS() {
 }
 
 function createLinksDMG() {
-	linkDMGLegacy = server[7] + path[6] + gameNamePackage +  "." + ext[3];
+	// Sample URLs
+	// From Webpage: http://installer-manager.gamehouse.com/InstallerManager/getinstaller?filename=amac-fabulousangelasfashionfeverpe.dmg&offering=amac-fabulousangelasfashionfeverpe&channel=z_syn_gh_g12
+	// Direct: http://games-dl.gamehouse.com/gamehouse/macstatic/amac-fabulousangelasfashionfeverpe.dmg
+	linkDMGLegacy = server[10] + path[6] + gameNamePackage +  "." + ext[3];
 	//checkLink(linkDMGLegacy);
-	linkDMGNew = server[7] + path[6] + "amac-" + gameNamePackage +  "." + ext[3];
+	linkDMGNew = server[0] + path[8] + "amac-" + gameNamePackage +  "." + ext[3];
+	//linkDMGNew = "http://installer-manager.gamehouse.com/InstallerManager/getinstaller?filename=" + "amac-" + gameNamePackage +  "." + ext[3] + "&offering=amac-" + gameNamePackage + "&channel=z_syn_gh_g12";
 	//checkLink(linkDMGNew);
 }
 
