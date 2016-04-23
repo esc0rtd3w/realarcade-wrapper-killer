@@ -180,6 +180,14 @@ Source: loaders\loader2.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritere
 ;NEW Loader v3.0 (RGA)
 Source: loaders\loader3.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
 
+; DMG Loader Files
+;NEW Loader v4.0 (DMG)
+Source: loaders\loader4.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
+
+; RFS Loader Files
+;NEW Loader v5.0 (RFS)
+Source: loaders\loader5.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
+
 ;RealArcade Spoofer
 Source: rna\rnaspoof.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
 

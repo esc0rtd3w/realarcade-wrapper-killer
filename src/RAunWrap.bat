@@ -29,6 +29,16 @@ regedit /s "%ProgramFiles%\unRealArcade\loader2\setRGS.reg"
 "%ProgramFiles%\unRealArcade\temp\loader3.exe"
 regedit /s "%ProgramFiles%\unRealArcade\loader3\setRGA.reg"
 
+:: New v4.0 DMG Loader
+::%rgsloader4%
+"%ProgramFiles%\unRealArcade\temp\loader4.exe"
+regedit /s "%ProgramFiles%\unRealArcade\loader3\setDMG.reg"
+
+:: New v5.0 RFS Loader
+::%rgsloader5%
+"%ProgramFiles%\unRealArcade\temp\loader5.exe"
+regedit /s "%ProgramFiles%\unRealArcade\loader3\setRFS.reg"
+
 ::-----------------------------------------------------------------------------------
 :: Using ORIGINAL RealArcade Uninstaller (added 20110221)
 ::--------------------------------------------------------
