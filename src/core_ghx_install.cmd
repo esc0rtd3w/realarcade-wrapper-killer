@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer          (.-+'~^-+ GH Game Installer +-^~`+-.)     [...cRypTiCwaRe 2o13...]
+title RealArcade Wrapper Killer          (.-+'~^-+ GH Game Installer +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 color 0e
 
