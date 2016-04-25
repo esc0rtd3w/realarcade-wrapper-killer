@@ -7,6 +7,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
                  
 
                   
+
                    ²²²²²²²                          ²²²²²        ²²²²²
                  ²²²²²² ²²²                     ²²²²²  ²²       ²²²²²²
            ²²²²² ²²²²²²  ²²      ²²   ²²²²²²²² ²²²²² ²²²  ²²²² ²² ²²²²
@@ -38,7 +39,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
       Category .. [ Utility          ]   ²Ý  Protection. [ RGS/RGA Trials   ]°
       Tested by.. [ cRypTiC          ]   ±   Language..  [ English          ]
    °  Packed by.. [ cRypTiC          ]   °   Filename .  [ c-rawk543.zip    ]°
-      Coded by... [ cRypTiC          ]       Disks ....  [ 01 x 12MB        ]±
+      Coded by... [ cRypTiC          ]       Disks ....  [ 01 x 15MB        ]±
 
    ±        .  ß            Ü        °   Ü     Ü ß           Ü       ßÛÜ   þÛ Ü
  °±²Ü  ÜÛÜ ° ÛÜ ßÛÜÜÜ °°° ÜÛÛ²Ü   ß  ±  ßÛß  Ü²ÛÛÜ °°° ÜÜÜÛß ÜÛ ° ÜÛÜ ßÛ²±° ÞÛ
@@ -140,7 +141,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
 	* UPDATED: RAWK Core to v3.0.3
 
-                   * Nothing new here :(
+                   * Added support for DMG and RFS Loaders
 
 
 
@@ -186,7 +187,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
                    [0 Game Entries Added] [86 Total Game Entries]
 
-                   * Nothing new here :(
+                   * Updated new server paths for "ra3_games_mac.htm"
                      
                    * Just because a game is not in the INI database DOES NOT
                      mean that it will not work. Most games will unpack just
