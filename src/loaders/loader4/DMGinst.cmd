@@ -174,32 +174,40 @@ echo.
 
 if not exist "%root%\_tmp\2.hfs" (
 
-color 4f
+	if not exist "%root%\_tmp\4.hfs" (
+		color 4f
 
-cls
-echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
-echo.
-echo.
-echo.
-echo Corrupted Extraction Folder Detected!
-echo.
-echo.
-echo Force Retry? [Recommended] [Y/N]
-echo.
+		cls
+		echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
+		echo.
+		echo.
+		echo.
+		echo Corrupted Extraction Folder Detected!
+		echo.
+		echo.
+		echo Force Retry? [Recommended] [Y/N]
+		echo.
 
-if %os%==XP choice /c:yn /n
-if %os%==VISTA choice /c yn /n
-if errorlevel 2 exit
+		if %os%==XP choice /c:yn /n
+		if %os%==VISTA choice /c yn /n
+		if errorlevel 2 exit
 
 
-regedit /s "%ProgramFiles%\unRealArcade\loader4\setDMG.reg"
+		regedit /s "%ProgramFiles%\unRealArcade\loader4\setDMG.reg"
 
-exit
-
+		exit
+	)
 )
 
 :: Perform 2nd Extraction (2.hfs)
+if exist "%root%\_tmp\2.hfs" (
 "%root%\7z.exe" x "%root%\_tmp\2.hfs" -o"%root%\_tmp\"
+)
+
+:: Perform 2nd Extraction (4.hfs)
+if exist "%root%\_tmp\4.hfs" (
+"%root%\7z.exe" x "%root%\_tmp\4.hfs" -o"%root%\_tmp\"
+)
 
 wait 3
 
@@ -207,6 +215,14 @@ wait 3
 del /f /s /q "%root%\_tmp\0.ddm"
 del /f /s /q "%root%\_tmp\1.Apple_partition_map"
 del /f /s /q "%root%\_tmp\2.hfs"
+
+del /f /s /q "%gamesroot%\%nameFound%\0.MBR"
+del /f /s /q "%gamesroot%\%nameFound%\1.Primary GPT Header"
+del /f /s /q "%gamesroot%\%nameFound%\2.Primary GPT Table"
+del /f /s /q "%gamesroot%\%nameFound%\3.free"
+del /f /s /q "%gamesroot%\%nameFound%\4.hfs"
+del /f /s /q "%gamesroot%\%nameFound%\5.Backup GPT Table"
+del /f /s /q "%gamesroot%\%nameFound%\6.Backup GPT Header"
 
 goto chkextr
 
@@ -377,14 +393,17 @@ goto end
 :end
 
 :: Clean Junk Mac Files
+del /f /s /q "%gamesroot%\%nameFound%\Applications"
 del /f /s /q "%gamesroot%\%nameFound%\.DS_Store"
 del /f /s /q "%gamesroot%\%nameFound%\.VolumeIcon.icns"
 
 :: Clean Junk Mac Directories
 rd /s /q "%gamesroot%\%nameFound%\.background"
+rd /s /q "%gamesroot%\%nameFound%\.fseventsd"
 rd /s /q "%gamesroot%\%nameFound%\.HFS+ Private Directory Data_"
 rd /s /q "%gamesroot%\%nameFound%\.Trashes"
 rd /s /q "%gamesroot%\%nameFound%\[]"
+
 
 del /f /s /q "%temp%\checkDmgStatus.txt"
 
