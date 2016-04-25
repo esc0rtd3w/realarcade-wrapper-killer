@@ -172,39 +172,47 @@ echo Extracting HFS File To Temp....
 echo.
 echo.
 
-if not exist "%root%\_tmp\2.hfs" (
+if not exist "%root%\_tmp\0.hfs" (
 
-	if not exist "%root%\_tmp\4.hfs" (
-		color 4f
+	if not exist "%root%\_tmp\2.hfs" (
 
-		cls
-		echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
-		echo.
-		echo.
-		echo.
-		echo Corrupted Extraction Folder Detected!
-		echo.
-		echo.
-		echo Force Retry? [Recommended] [Y/N]
-		echo.
+		if not exist "%root%\_tmp\4.hfs" (
+			color 4f
 
-		if %os%==XP choice /c:yn /n
-		if %os%==VISTA choice /c yn /n
-		if errorlevel 2 exit
+			cls
+			echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
+			echo.
+			echo.
+			echo.
+			echo Corrupted Extraction Folder Detected!
+			echo.
+			echo.
+			echo Force Retry? [Recommended] [Y/N]
+			echo.
+
+			if %os%==XP choice /c:yn /n
+			if %os%==VISTA choice /c yn /n
+			if errorlevel 2 exit
 
 
-		regedit /s "%ProgramFiles%\unRealArcade\loader4\setDMG.reg"
+			regedit /s "%ProgramFiles%\unRealArcade\loader4\setDMG.reg"
 
-		exit
+			exit
+		)
 	)
 )
 
-:: Perform 2nd Extraction (2.hfs)
+:: Perform 2nd Extraction (0.hfs) (Legacy Images)
 if exist "%root%\_tmp\2.hfs" (
 "%root%\7z.exe" x "%root%\_tmp\2.hfs" -o"%root%\_tmp\"
 )
 
-:: Perform 2nd Extraction (4.hfs)
+:: Perform 2nd Extraction (2.hfs) (Newer amac Images)
+if exist "%root%\_tmp\2.hfs" (
+"%root%\7z.exe" x "%root%\_tmp\2.hfs" -o"%root%\_tmp\"
+)
+
+:: Perform 2nd Extraction (4.hfs) (Older Images)
 if exist "%root%\_tmp\4.hfs" (
 "%root%\7z.exe" x "%root%\_tmp\4.hfs" -o"%root%\_tmp\"
 )
@@ -212,6 +220,8 @@ if exist "%root%\_tmp\4.hfs" (
 wait 3
 
 :: Cleanup Leftover Files
+del /f /s /q "%root%\_tmp\0.hfs"
+
 del /f /s /q "%root%\_tmp\0.ddm"
 del /f /s /q "%root%\_tmp\1.Apple_partition_map"
 del /f /s /q "%root%\_tmp\2.hfs"
@@ -395,7 +405,11 @@ goto end
 :: Clean Junk Mac Files
 del /f /s /q "%gamesroot%\%nameFound%\Applications"
 del /f /s /q "%gamesroot%\%nameFound%\.DS_Store"
+del /f /s /q "%gamesroot%\%nameFound%\.journal"
+del /f /s /q "%gamesroot%\%nameFound%\.journal_info_block"
 del /f /s /q "%gamesroot%\%nameFound%\.VolumeIcon.icns"
+
+del /f /s /q "%gamesroot%\%nameFound%\version.txt"
 
 :: Clean Junk Mac Directories
 rd /s /q "%gamesroot%\%nameFound%\.background"
