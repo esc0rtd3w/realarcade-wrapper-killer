@@ -22,7 +22,7 @@ if errorlevel 1 set os=XP
 ::Games Installation and Download
 ::-----------------------------------------------------------------------------------
 
-set gamesroot=C:\Gamehouse Games
+set gamesroot=C:\Gamehouse Mac Games\
 set downloadroot=C:\My Download Files
 
 set root=%ProgramFiles%\unRealArcade\loader4
@@ -290,7 +290,7 @@ echo Extracted Game Name: "%nameFound%"
 echo.
 echo.
 echo.
-echo It is located at: "C:\Gamehouse Games\%nameFound%"
+echo It is located at: "%gamesroot%%nameFound%"
 echo.
 echo.
 echo.
@@ -340,11 +340,6 @@ echo Extracted Mac OSX Game!
 echo.
 echo.
 echo Please keep in mind that DMG support is currently VERY LIMITED!
-echo.
-echo.
-echo.
-echo.
-echo.
 echo.
 echo.
 echo.
