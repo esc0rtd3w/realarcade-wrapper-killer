@@ -8,6 +8,7 @@
 // @include     http://www.gamehouse.com/platinum-games*
 // @include     http://www.gamehouse.com/free-games*
 // @include     http://www.gamehouse.com/mac-games*
+// @include     http://www.gamehouse.com/member/*
 // @version     0.3.1
 // @grant       none
 // ==/UserScript==
@@ -763,6 +764,13 @@ function forceStubPage() {
 	window.location = pathX;
 }
 
+function bypassForceMemberPage() {
+	var m = window.location.pathname;
+	mp = m.replace("member/", "new-games/");
+	//alert(mp);
+	window.location = mp;
+}
+
 // Parse Game Page Links on New Games Webpage
 function parseGamePageLinks() {
 	var gamesContainer = document.getElementById("_games_container");
@@ -1042,6 +1050,7 @@ function downloadFile(file, fullPath) {
 
 // START MAIN TOOL --------------------------------------------------------------------/
 
+//bypassForceMemberPage();
 // Hijack Game Page Text On Main Pages
 //hijackNewGamesArea("<h3><b>GameHouse Package Tool Is Currently Active</b></h3><br><i>This special script is running to make your visit a little more enjoyable ;)</i><br><br>", "#000000");
 
@@ -1078,7 +1087,6 @@ hijackBuyText("Report Broken Links To: <br>esc0rtd3w@gmail.com", "#FFFFFF");
 //createTextBox();
 
 // Other Testing Start
-
 //parseGamePageLinks();
 //forceStubPage();// Force Load To /pc/postdownload/ and Retrieve EXE Stub
 //showAllGames();// Can cause LONG LOAD TIMES!!
