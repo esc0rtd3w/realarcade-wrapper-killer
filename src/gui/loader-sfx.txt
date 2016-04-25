@@ -1,0 +1,21 @@
+x86
+
+;The comment below contains SFX script commands
+
+Path="C:\Program Files\unRealArcade"
+SavePath
+Setup="C:\Program Files\unRealArcade\uradl\uradl.lnk"
+Silent=1
+Overwrite=1
+
+
+
+x64
+
+;The comment below contains SFX script commands
+
+Path="C:\Program Files (x86)\unRealArcade"
+SavePath
+Setup="C:\Program Files (x86)\unRealArcade\uradl\uradl.lnk"
+Silent=1
+Overwrite=1
