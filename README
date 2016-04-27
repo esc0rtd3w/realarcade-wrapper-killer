@@ -8,6 +8,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
                   
 
+
                    ²²²²²²²                          ²²²²²        ²²²²²
                  ²²²²²² ²²²                     ²²²²²  ²²       ²²²²²²
            ²²²²² ²²²²²²  ²²      ²²   ²²²²²²²² ²²²²² ²²²  ²²²² ²² ²²²²
@@ -167,11 +168,15 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
 
 
-        * ADDED: DMG Loader v1.0.0
+        * ADDED: DMG Loader v1.0.1
 
                    * This module is not currently active
 
                    * Framework for DMG Image Extraction Setup
+
+                   * Extraction supported for 3 Mac OSX DMG Image Types
+
+                   * Cleanup added. Only saving GameName.app directory
 
 
 
