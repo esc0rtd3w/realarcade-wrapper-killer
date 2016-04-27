@@ -46,7 +46,7 @@ Filename: {app}\RAunWrap.bat; WorkingDir: {app}
 
 
 ; Copy the source EXE to unRealArcade folder (this obsoletes the above EMBED duplication)
-; Using batch files to do this (added 20131030) NOT QUITE WORKING YET!!
+; Using batch files to do this (added 20131030)
 
 
 
