@@ -24,17 +24,17 @@ set rawkver=5.4.3
 "%ProgramFiles%\unRealArcade\temp\loader2.exe"
 regedit /s "%ProgramFiles%\unRealArcade\loader2\setRGS.reg"
 
-:: New v3.0 RGA Loader
+:: New RGA Loader
 ::%rgsloader3%
 "%ProgramFiles%\unRealArcade\temp\loader3.exe"
 regedit /s "%ProgramFiles%\unRealArcade\loader3\setRGA.reg"
 
-:: New v4.0 DMG Loader
+:: New DMG Loader
 ::%rgsloader4%
 "%ProgramFiles%\unRealArcade\temp\loader4.exe"
 regedit /s "%ProgramFiles%\unRealArcade\loader4\setDMG.reg"
 
-:: New v5.0 RFS Loader
+:: New RFS Loader
 ::%rgsloader5%
 "%ProgramFiles%\unRealArcade\temp\loader5.exe"
 regedit /s "%ProgramFiles%\unRealArcade\loader5\setRFS.reg"
