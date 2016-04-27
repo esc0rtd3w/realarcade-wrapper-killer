@@ -30,8 +30,8 @@ VersionInfoCompany=cRypTiCwaRe
 VersionInfoDescription=Unpack ALL RealArcade/Gamehouse RGS/RGA Games
 VersionInfoProductName=RealArcade Wrapper Killer
 VersionInfoProductVersion=5.4.3
-;LicenseFile=C:\URA\rawk\rawk_license.txt
-;InfoBeforeFile=C:\URA\rawk\rawk_license.txt
+;LicenseFile=..\rawk_license.txt
+;InfoBeforeFile=..\rawk_info.txt
 
 
 [Run]
@@ -169,23 +169,19 @@ Source: ..\demoGH.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstal
 Source: ..\demoZY.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\rawkreset.bat; DestDir: {sys}; Flags: overwritereadonly
 
-; RGS Loader Files
-;OLD Loader v1.0 (RGS)
+; RGS Loader v1.0
 Source: ..\loaders\loader.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
 
-;NEW Loader v2.0 (RGS)
+; RGS Loader v2.0
 Source: ..\loaders\loader2.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
 
 ; RGA Loader Files
-;NEW Loader v3.0 (RGA)
 Source: ..\loaders\loader3.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
 
 ; DMG Loader Files
-;NEW Loader v4.0 (DMG)
 Source: ..\loaders\loader4.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
 
 ; RFS Loader Files
-;NEW Loader v5.0 (RFS)
 Source: ..\loaders\loader5.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
 
 ;RealArcade Spoofer
@@ -433,13 +429,15 @@ Name: {pf}\unRealArcade\ghx
 
 
 [Registry]
-;OLD Loader v1.0
+; RGA Loader v1.0 (loader1)
+; This loader has been superceded by the 2.0 loader.
+; The 2.0 loader can load this version from itself if issues arise
 ;Root: HKCR; SubKey: RealArcade.rgs.1; ValueType: string; ValueName: ; ValueData: RealArcade Secured Installer
 ;Root: HKCR; SubKey: RealArcade.rgs.1; ValueType: binary; ValueName: EditFlags; ValueData: 00 00 01 00
 ;Root: HKCR; SubKey: RealArcade.rgs.1\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER\RGSinst.exe,0
 ;Root: HKCR; SubKey: RealArcade.rgs.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER\RGSinst.exe /m application/vnd.rn-rn_secured_installer %1
 
-;NEW Loader v2.0
+; RGS Loader v2.0 (loader2)
 Root: HKCR; SubKey: RealArcade.rgs.1; ValueName: @; ValueData: """RGS Loader Install Package"""; ValueType: string
 Root: HKCR; SubKey: RealArcade.rgs.1; ValueName: EditFlags; ValueData: 00 00 01 00; ValueType: binary
 Root: HKCR; SubKey: RealArcade.rgs.1\DefaultIcon; ValueName: @; ValueData: C:\\PROGRA~1\\UNREAL~1\\LOADER2\\RGSinst.exe,0; ValueType: string
@@ -454,12 +452,12 @@ Root: HKCR; SubKey: .rgp; ValueName: Content Type; ValueData: application/vnd.rn
 Root: HKCR; SubKey: .rgp; ValueName: Content Type; ValueData: application/vnd.rn-rn_game_package; ValueType: string
 Root: HKCR; SubKey: .rgp; ValueName: Content Type; ValueData: application/vnd.rn-rn_game_package; ValueType: string
 
-;NEW RGI Entry added to fix empty error dialog box upon initial run
+; NEW RGI Entry added to fix empty error dialog box upon initial run
 Root: HKCR; SubKey: .rgi; ValueName: @; ValueData: """RealArcade.rgi.1"""; ValueType: string
 Root: HKCR; SubKey: .rgi; ValueName: Content Type; ValueData: """application/vnd.rn-rn_game_installer"""; ValueType: string
 
 
-;NEW Loader v3.0
+; RGA Loader (loader3)
 Root: HKCR; SubKey: RealArcade.RGA.1; ValueType: string; ValueName: ; ValueData: RGA Loader Install Package
 Root: HKCR; SubKey: RealArcade.RGA.1; ValueType: binary; ValueName: EditFlags; ValueData: 00 00 01 00
 Root: HKCR; SubKey: RealArcade.RGA.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER3\RGAinst.cmd %1
@@ -467,7 +465,7 @@ Root: HKCR; SubKey: realarcade\shell\open\command; ValueType: string; ValueName:
 Root: HKCR; SubKey: .RGA; ValueType: string; ValueName: ; ValueData: RealArcade.RGA.1
 Root: HKCR; SubKey: .RGA; ValueType: string; ValueName: Content Type; ValueData: application/vnd.rn-rn_secured_installer
 
-;DMG Loader v4.0
+; DMG Loader (loader4)
 Root: HKCR; SubKey: RealArcade.DMG.1; ValueType: string; ValueName: ; ValueData: GH Activemark MacOSX DMG Image
 Root: HKCR; SubKey: RealArcade.DMG.1; ValueType: binary; ValueName: EditFlags; ValueData: 00 00 01 00
 Root: HKCR; SubKey: RealArcade.DMG.1\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER4\DMGinst.ico
@@ -477,7 +475,7 @@ Root: HKCR; SubKey: realarcade\shell\open\command; ValueType: string; ValueName:
 Root: HKCR; SubKey: .DMG; ValueType: string; ValueName: ; ValueData: RealArcade.DMG.1
 Root: HKCR; SubKey: .DMG; ValueType: string; ValueName: Content Type; ValueData: application/x-apple-diskimage
 
-;RFS Loader v5.0
+; RFS Loader (loader5)
 Root: HKCR; SubKey: RealArcade.RFS.1; ValueType: string; ValueName: ; ValueData: GH Activemark RFS Package
 Root: HKCR; SubKey: RealArcade.RFS.1; ValueType: binary; ValueName: EditFlags; ValueData: 00 00 01 00
 Root: HKCR; SubKey: RealArcade.RFS.1\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER5\RFSinst.ico
