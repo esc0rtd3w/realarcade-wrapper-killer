@@ -68,6 +68,15 @@
 // Stub Installer
 // http://amlocalhost.trymedia.com/offline/00edd86c60350000/_build.js?_=1459237405310
 
+
+// TryMedia Examples
+// http://d.trymedia.com/dd/selectsoft/30m_pkg542/t_14tn/ChampionshipChessSetup.exe
+// http://d.trymedia.com/dd/playfirst/dip_nt_en/t_14tn/AvenueFloTMSpecialDelivery.rga
+// http://d.trymedia.com/dd/nickelodeon/60m_d/t_14tn/CandyLand_Dora.exe
+// http://d.trymedia.com/dd/alawent/dip_60m_en/t_14tn/SmashFrenzy4.rga
+// http://d.trymedia.com/dd/isioux/dip_nt_en/t_14tn/GovernorofPoker2PremiumEd.rga
+// http://d.trymedia.com/dd/rumbic/dip_nt_en/t_14tn/WoodvilleChronicles.rga
+
 // END SAMPLE URLS --------------------------------------------------------------------/
 
 
@@ -81,7 +90,8 @@
 
 
 // Set URL Values For Different Game Types
-// Example URL: $server/$distributor/$developer/$offering
+// Example GameHouse URL: $server/$distributor/$developer/$offering
+// Example Trymedia URL: $server/$distributor/$offering/$channel
 
 // Mobile: http://m.gamehouse.com/games/collapse!-blast
 // Mobile Play: http://cdn.ghstatic.com/mobile-archives/collapse-blast/index.html
@@ -99,6 +109,8 @@ server.push("http://downloads.gamehouse.com");// Default Mac Download Server
 server.push("http://m.gamehouse.com");// Default Mobile Download Server
 server.push("http://cdn.ghstatic.com");// Default Content Server
 server.push("http://gameh0use.com");// cRypTiCwaRe GH Spoof Server
+server.push("http://d.trymedia.com");// TryMedia Download Server
+server.push("http://ftp.gamehouse.com");// GameHouse FTP Server
 
 // Game Paths On Server
 var path = [];
@@ -111,10 +123,17 @@ path.push("/gameconsole/realarcadev21/games/amg-");// Legacy Activemark (Free Ga
 path.push("/pub/");// Default Mac OSX DMG Path (amac-)
 path.push("/InstallerManager/getinstaller?filename=");// Default EXE Stub Path (2015/2016)
 path.push("/gamehouse/macstatic/"); // New Mac OSX DMG Path (2016)
+path.push("/dd/"); // TryMedia Download Server Path
 
 // Distributor List
 var distributor = [];
 distributor.push("zylom");// Default Distributor After Migration
+distributor.push("selectsoft");// TryMedia Related
+distributor.push("playfirst");// TryMedia Related
+distributor.push("nickelodeon");// TryMedia Related
+distributor.push("alawent");// TryMedia Related
+distributor.push("isioux");// TryMedia Related
+distributor.push("rumbic");// TryMedia Related
 
 // Developer List
 var developer = [];
@@ -128,10 +147,14 @@ developer.push("terminalstudio");
 // Offering List
 var offering = [];
 offering.push("dip_nt_zy_en");// Default Offering (RGA Links Only??)
+offering.push("dip_60m_en");// TryMedia Related
+offering.push("30m_pkg542");// TryMedia Related
+offering.push("60m_d");// TryMedia Related
 
 // Channel List
 var channel = [];
 channel.push("z_syn_gh_g12");// Default Zylom/GameHouse Channel
+channel.push("t_14tn");// TryMedia Related
 
 // Language List
 var language = [];
