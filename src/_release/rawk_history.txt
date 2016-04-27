@@ -2412,6 +2412,54 @@ No NFO Data!
 
 
 
+v4.22
+-----
+	* THIS TOOL DOES NOT CHECK "mygamehere_unlock.rgs" FILES. Be Honest ;)
+	
+	* NEED HELP WITH MISSING RGS INSTALLERS!! SEE NOTES AT BOTTOM OF NFO!
+
+	* Minor fixes/edits.
+
+	* Added more games to have auto shortcuts made. Some don't yet work!
+
+	* Updated HTML catalog.
+
+	* Tested on Windows 7 Ultimate RC1 Build 7100.
+
+	Please use ID#, add _RAWKHELP to the end of the filename and use
+	the highest compression possible, although, RGS is very compressed,
+	so this probably won't make much difference.
+
+	Example: Comix Zone = comixzone_free.rgs = id06_RAWKHELP.zip/rar
+
+	id01: asnakeslife_free.rgs
+	id02: axysnake_free.rgs
+	id03: bogglesupreme_free.rgs
+	id04: burgerislandr2themissingingredient_free.rgs << Maybe Unavailable??
+	id05: columnsiii_free.rgs
+	id06: comixzone_free.rgs
+	id07: detectivestorieshollywood_free.rgs
+	id08: dukenukemmanhattanproject_free.rgs
+	id09: drrobotniksmeanbeanmachine_free.rgs
+	id10: eccothedolphin_free.rgs
+	id11: infest_free.rgs
+	id12: janeszoo_free.rgs << Maybe Unavailable??
+	id13: phantasystarii_free.rgs
+	id14: playtoniumjigsawwinterholidays_free.rgs
+	id15: policetacticaltraining_full.rgs << Maybe Unavailable??
+	id16: reinerkniziassamurai_free.rgs
+	id17: seajourney_free.rgs << Maybe Unavailable??
+	id18: shinobiiiireturnofninjamaster_free.rgs
+	id19: snood_free.rgs
+	id20: sonicandknuckles_free.rgs
+	id21: sonicthehedgehog_free.rgs
+	id22: sonicthehedgehog3_free.rgs
+	id23: spacehaste_free.rgs
+	id24: super5lineslots_free.rgs
+	id25: toejamearl_free.rgs
+	id26: vectorman_free.rgs
+
+
 v4.21
 -----
 
@@ -2638,6 +2686,14 @@ v2.1
 ----
 
 -First public release
+
+This tool will allow you to remove the 60 minute demo time trial limits of over 90% of the RealArcade game library. No cracks/serials needed. Some games do check for a "LicenseKey" entry in the registry. This has to be manually added if needed.
+
+FULL INSTRUCTIONS INCLUDED WITH APP.
+
+NO VIRUSES/CRAPWARE INCLUDED!!
+
+-cRypTiC 2007 
 
 
 
