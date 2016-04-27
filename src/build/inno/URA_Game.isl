@@ -28,10 +28,10 @@ LanguageCodePage=0
 [Messages]
 
 ; *** Application titles
-SetupAppTitle=-[ RealArcade Wrapper Killer ]-
-SetupWindowTitle=
-UninstallAppTitle=
-UninstallAppFullTitle=
+SetupAppTitle=unRealArcade Setup
+SetupWindowTitle=unRealArcade - %1
+UninstallAppTitle=Uninstall
+UninstallAppFullTitle=%1 Uninstall
 
 ; *** Misc. common
 InformationTitle=Information
@@ -64,8 +64,8 @@ ErrorCreatingDir=Setup was unable to create the directory "%1"
 ErrorTooManyFilesInDir=Unable to create a file in the directory "%1" because it contains too many files
 
 ; *** Setup common messages
-ExitSetupTitle=Really Close RA Wrapper Killer?
-ExitSetupMessage=If you close this window, your game will still be in DEMO mode!
+ExitSetupTitle=Exit Setup
+ExitSetupMessage=Setup is not complete. If you exit now, the game will not be installed.%n%nYou may run Setup again at another time to complete the installation.%n%nExit Setup?
 AboutSetupMenuItem=&About Setup...
 AboutSetupTitle=About Setup
 AboutSetupMessage=%1 version %2%n%3%n%n%1 home page:%n%4
@@ -73,34 +73,34 @@ AboutSetupNote=
 TranslatorNote=
 
 ; *** Buttons
-ButtonBack=[ < < < ]
-ButtonNext=[ > > > ]
-ButtonInstall=[ -Install- ]
-ButtonOK=PICK THIS GAME
-ButtonCancel=[ -X- ]
-ButtonYes=[ -Y- ]
-ButtonYesToAll=[ -Y 2 ALL- ]
-ButtonNo=[ -N- ]
-ButtonNoToAll=[ -N 2 ALL- ]
+ButtonBack=< &Back
+ButtonNext=&Install
+ButtonInstall=&Install
+ButtonOK=OK
+ButtonCancel=Quit
+ButtonYes=&Yes
+ButtonYesToAll=Yes to &All
+ButtonNo=&No
+ButtonNoToAll=N&o to All
 ButtonFinish=&Finish
-ButtonBrowse=[ FIND GAME HERE ]
-ButtonWizardBrowse=[ FIND GAME HERE ]
-ButtonNewFolder=&
+ButtonBrowse=&Browse...
+ButtonWizardBrowse=B&rowse...
+ButtonNewFolder=&Make New Folder
 
 ; *** "Select Language" dialog messages
 SelectLanguageTitle=Select Setup Language
 SelectLanguageLabel=Select the language to use during the installation:
 
 ; *** Common wizard text
-ClickNext=Click [ > > > ] to proceed or [ -X- ] to leave!
-BeveledLabel=RealArcade Wrapper Killer v5.4.3                   unWrap The Fun!                    cRypTiCwaRe 2o16
-BrowseDialogTitle=DOUBLE CLICK THE MY GAMES FOLDER AND SELECT GAME
-BrowseDialogLabel=DOUBLE CLICK THE MY GAMES FOLDER AND SELECT GAME
-NewFolderName=
+ClickNext=Click Next to continue, or Cancel to exit Setup.
+BeveledLabel=
+BrowseDialogTitle=Browse For Folder
+BrowseDialogLabel=Select a folder in the list below, then click OK.
+NewFolderName=New Folder
 
 ; *** "Welcome" wizard page
-WelcomeLabel1=Supports XP, Vista, 7, 8, 8.1, 10
-WelcomeLabel2=This will remove the demo protection on any RealArcade / Gamehouse v1.2 (RGS) game (*_free.rgs).%n%nThese games can be downloaded using the older v1.2 player, or by using the included "ra1_games.htm" file.%n%nThis tool will also handle Gamehouse and Zylom game variants!%n%nCurrently the Gamehouse and Zylom RGA archives can only be extracted, but most newer games will still be in trial mode.%n%nPlease click > > > and then click [ FIND GAME HERE ] on the next page to select your game's folder [Default C:\My Games\GameName\]%n%nThe entire process takes about 30 seconds or less.
+WelcomeLabel1=
+WelcomeLabel2=This will install [name/ver] on your computer.%n%nIt is recommended that you close all other applications before continuing.
 
 ; *** "Password" wizard page
 WizardPassword=Password
@@ -110,16 +110,16 @@ PasswordEditLabel=&Password:
 IncorrectPassword=The password you entered is not correct. Please try again.
 
 ; *** "License Agreement" wizard page
-WizardLicense=Anti-Piracy Agreement
-LicenseLabel=Please help support our software developers.
-LicenseLabel3=By proceeding, you MUST agree to the following terms:
-LicenseAccepted=I Agree To These Terms
-LicenseNotAccepted=Aye, me ship be sailin' t' other way!
+WizardLicense=License Agreement
+LicenseLabel=Please read the following important information before continuing.
+LicenseLabel3=Please read the following License Agreement. You must accept the terms of this agreement before continuing with the installation.
+LicenseAccepted=I &accept the agreement
+LicenseNotAccepted=I &do not accept the agreement
 
 ; *** "Information" wizard pages
-WizardInfoBefore=Legal Mumble Jumble
-InfoBeforeLabel=By continuing, you are accepting the below terms!
-InfoBeforeClickLabel=
+WizardInfoBefore=Information
+InfoBeforeLabel=Please read the following important information before continuing.
+InfoBeforeClickLabel=When you are ready to continue with Setup, click Next.
 WizardInfoAfter=Information
 InfoAfterLabel=Please read the following important information before continuing.
 InfoAfterClickLabel=When you are ready to continue with Setup, click Next.
@@ -133,28 +133,21 @@ UserInfoSerial=&Serial Number:
 UserInfoNameRequired=You must enter a name.
 
 ; *** "Select Destination Location" wizard page
-WizardSelectDir=RealNetworks RGS Game Unpacking Script Ready...
-;Use spaces for non (x.x.x) releases like this (x.x  )
-
-; 103 characters for one line
-SelectDirDesc=rls: 5.4.3   coreMain: 3.0.3   db: 1.3.0   raMod: 1.9.3   rgsLoader: 2.1.3                coreGH: 1.0.0   dbGH: 1.0.0   coreZY: 1.0.0   dbZY: 1.0.0   rgaLoader: 1.0.2
-
-SelectDirLabel3=YOU MUST SELECT YOUR GAMES FOLDER BEFORE CONTINUING!!!
-SelectDirBrowseLabel=Enter The Path of The Target Game Here:
-DiskSpaceMBLabel=*DEVELOPER MODE IS ACTIVATED*
-;DiskSpaceMBLabel=*DEBUG MODE IS ACTIVATED*
-;DiskSpaceMBLabel=*USER MODE IS ACTIVATED*
-;DiskSpaceMBLabel=PRIVATE USE ONLY! DO NOT USE THIS TO OVER-EXTEND YOUR TRIAL TIME!
-ToUNCPathname=
-InvalidPath=
-InvalidDrive=
+WizardSelectDir=Select Destination Location
+SelectDirDesc=Where should [name] be installed?
+SelectDirLabel3=Setup will install [name] into the following folder.
+SelectDirBrowseLabel=To continue, click Next. If you would like to select a different folder, click Browse.
+DiskSpaceMBLabel=At least [mb] MB of free disk space is required.
+ToUNCPathname=Setup cannot install to a UNC pathname. If you are trying to install to a network, you will need to map a network drive.
+InvalidPath=You must enter a full path with drive letter; for example:%n%nC:\APP%n%nor a UNC path in the form:%n%n\\server\share
+InvalidDrive=The drive or UNC share you selected does not exist or is not accessible. Please select another.
 DiskSpaceWarningTitle=Not Enough Disk Space
 DiskSpaceWarning=Setup requires at least %1 KB of free space to install, but the selected drive only has %2 KB available.%n%nDo you want to continue anyway?
 DirNameTooLong=The folder name or path is too long.
 InvalidDirName=The folder name is not valid.
 BadDirName32=Folder names cannot include any of the following characters:%n%n%1
-DirExistsTitle=LICENSE CHECK / PROPER FOLDER SELECTION VERIFY
-DirExists=***************************************************************************%nBy clicking the "YES" button, you are verifying that you have purchased an unlock file from RealNetworks/Gamehouse for the selected game.%n***************************************************************************%n%nIf you are currently downloading a game with the RA Player please wait until it is finished, as this will kill the RA Player window while it is running.%n%nPlease make sure that you have selected the game you want to unpack already by pressing the [ FIND GAME HERE ] button and selecting the folder under C:\MY GAMES\.%n%nTHIS IS THE ONLY REQUIRED ACTION ON YOUR PART TO FULLY UNPACK THIS GAME!%n%n***************************************************************************%nBy clicking the "YES" button, you are verifying that you have purchased an unlock file from RealNetworks/Gamehouse for the selected game.%n***************************************************************************%n%n%nClick "Yes" to continue, or "No" to change a setting or exit!
+DirExistsTitle=Folder Exists
+DirExists=The folder:%n%n%1%n%nalready exists. Would you like to install to that folder anyway?
 DirDoesntExistTitle=Folder Does Not Exist
 DirDoesntExist=The folder:%n%n%1%n%ndoes not exist. Would you like the folder to be created?
 
@@ -201,14 +194,14 @@ ReadyMemoGroup=Start Menu folder:
 ReadyMemoTasks=Additional tasks:
 
 ; *** "Preparing to Install" wizard page
-WizardPreparing=Preparing RealArcade Wrapper Killer files....
-PreparingDesc=This should only take a few seconds
-PreviousInstallNotCompleted=An unknown error has occurred. Please restart your computer and try again!
-CannotContinue=Unable to continue. Please click [ -X- ] to exit.
+WizardPreparing=Preparing to Install
+PreparingDesc=Setup is preparing to install [name] on your computer.
+PreviousInstallNotCompleted=The installation/removal of a previous program was not completed. You will need to restart your computer to complete that installation.%n%nAfter restarting your computer, run Setup again to complete the installation of [name].
+CannotContinue=Setup cannot continue. Please click Cancel to exit.
 
 ; *** "Installing" wizard page
-WizardInstalling=In Progress...
-InstallingLabel=
+WizardInstalling=Installing
+InstallingLabel=Please wait while Setup installs [name] on your computer.
 
 ; *** "Setup Completed" wizard page
 FinishedHeadingLabel=Completing the [name] Setup Wizard
@@ -244,7 +237,7 @@ StatusCreateIniEntries=Creating INI entries...
 StatusCreateRegistryEntries=Creating registry entries...
 StatusRegisterFiles=Registering files...
 StatusSavingUninstall=Saving uninstall information...
-StatusRunProgram=DO NOT CLOSE THIS WINDOW!
+StatusRunProgram=Finishing installation...
 StatusRollback=Rolling back changes...
 
 ; *** Misc. errors
