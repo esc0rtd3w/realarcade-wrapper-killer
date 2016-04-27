@@ -2687,7 +2687,11 @@ v2.1
 
 -First public release
 
-This tool will allow you to remove the 60 minute demo time trial limits of over 90% of the RealArcade game library. No cracks/serials needed. Some games do check for a "LicenseKey" entry in the registry. This has to be manually added if needed.
+This tool will allow you to remove the 60 minute demo time trial limits of over 90% of the RealArcade game library.
+
+No cracks/serials needed.
+
+Some games do check for a "LicenseKey" entry in the registry. This has to be manually added if needed.
 
 FULL INSTRUCTIONS INCLUDED WITH APP.
 
