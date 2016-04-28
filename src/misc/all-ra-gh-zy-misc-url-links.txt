@@ -53,6 +53,7 @@ http://cache-download.real.com
 http://cdn.rpa.real.com
 http://cloud.real.com
 http://customers.real.com
+http://dl.real.com
 http://forgot.real.com
 http://gamebundles.real.com
 http://games.real.com
