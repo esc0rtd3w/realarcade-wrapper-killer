@@ -2414,6 +2414,7 @@ No NFO Data!
 
 v4.22
 -----
+
 	* THIS TOOL DOES NOT CHECK "mygamehere_unlock.rgs" FILES. Be Honest ;)
 	
 	* NEED HELP WITH MISSING RGS INSTALLERS!! SEE NOTES AT BOTTOM OF NFO!
@@ -2458,6 +2459,7 @@ v4.22
 	id24: super5lineslots_free.rgs
 	id25: toejamearl_free.rgs
 	id26: vectorman_free.rgs
+
 
 
 v4.21
