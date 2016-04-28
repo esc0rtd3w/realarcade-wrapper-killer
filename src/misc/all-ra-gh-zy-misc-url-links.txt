@@ -67,6 +67,7 @@ http://news.gamehouse.com
 http://partners.gamehouse.com
 http://playmore.gamehouse.com
 http://support.gamehouse.com
+http://cdn.ghstatic.com
 
 
 MISC SUBDOMAINS ZYLOM:
@@ -76,10 +77,16 @@ http://demo.zylom.com
 http://game.zylom.com
 http://m.zylom.com
 http://main.zylom.com
+http://main.zylomtest.com
+http://media.zylom.com
 http://origin.zylom.com
 http://partner.zylom.com
 http://partnerprogram.zylom.com
 http://secure2.zylom.com
+http://www.zylom.com
+http://www.en.zylom.com
+http://www.us.zylom.com
+http://www.zylomgames.com
 
 
 COUNTRIES:
