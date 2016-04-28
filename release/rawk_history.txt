@@ -2519,7 +2519,9 @@ No NFO Data!
 v4.1
 ----
 
-No NFO Data!
+	* Text-To-Speech is used in this version to assist with interaction.
+
+	* Manual Shortcut Maker included in this version.
 
 
 
@@ -2545,11 +2547,12 @@ v3.1
 ----
 
 -Added a separate patch (RAFix.exe) that disables the second demo window from 
- popping up after the game is closed for Demo Type 2 games. It will be bundled 
- with this tool and will make one less window to close during the process. 
- The patch only needs to be ran once.
+popping up after the game is closed for Demo Type 2 games. It will be bundled 
+with this tool and will make one less window to close during the process. The
+patch only needs to be ran once.
 
 -Updated compatibility for Action-Adventure games.
+
 -Updated compatibility for Board games.
 
 
