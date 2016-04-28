@@ -63,6 +63,7 @@ http://support.real.com
 
 MISC SUBDOMAINS GAMEHOUSE:
 http://gpn.gamehouse.com
+http://gpn-api.gamehouse.com
 http://itm.gamehouse.com
 http://logging.gamehouse.com
 http://m.gamehouse.com
