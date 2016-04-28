@@ -2498,7 +2498,8 @@ v4.20 FiNAL
 v4.20 Beta 3
 -----------
 
-No NFO Data!
+	* Accidentally left old code pointing to the wrong place, so most
+          demos probably didn't unpack in BETA 2. THIS IS FIXED NOW!
 
 
 
@@ -2512,7 +2513,21 @@ No NFO Data!
 v4.20 Beta 1
 -----------
 
-No NFO Data!
+	* Demo types 3,4,5 & 6 (pre 2007) are now fully supported, these
+          are the games where you have to click the "Play Now" button inside
+          the main RealArcade window, and then a second "Play Demo" button on
+          the next demo window popup. These are handled automatically now,
+          including desktop shortcuts being created pointing to the freshly
+          unpacked exe.
+
+        * Started adding full automation support for all Demo 1 type games
+          that use HTML Demo launch windows, also including desktop shortcuts
+          being created pointing to the freshly unpacked exe.
+
+        * Updated code to handle ALL Demo Window Types Automatically Now.
+
+        * Added Change Resolution option for games that screw up the resolution
+          settings after getting forced out of full screen.
 
 
 
@@ -2522,6 +2537,18 @@ v4.1
 	* Text-To-Speech is used in this version to assist with interaction.
 
 	* Manual Shortcut Maker included in this version.
+
+	* Now launches from demo windows on games that use them. The PLAY
+          DEMO NOW buttons are pressed automatically!
+
+        * Everything is pretty much automatically done now, even though
+          "Manual Mode" still exists, after you press "M", everything else
+          is handled automatically.
+
+        * Some very old releases (internally known as demo types 3,4,5,6)
+          are compatible, but not fully automatic.
+
+        * Expect a Fully Automatic release soon :)
 
 
 
