@@ -406,8 +406,9 @@ Source: ..\fixes\all\cliptemp.txt; DestDir: {app}; Flags: deleteafterinstall ove
 Source: ..\fixes\v1\fix1.tmp; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 Source: ..\fixes\v1\fix2.tmp; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 Source: ..\fixes\v1\fix3.tmp; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\rga\rgastub.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
-;Source: ..\rga\rgastub.bin; DestDir: {pf}\unRealArcade\rga; Flags: overwritereadonly
+Source: ..\rga\stub.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
+;Source: ..\rga\rfsstub.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
+;Source: ..\rga\rgastub.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
 Source: ..\rgi\v1\template\gameInitializer.rgi; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
 Source: ..\rgi\v3\template\gameInstall.rgi; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
 
