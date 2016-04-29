@@ -190,6 +190,7 @@ Source: ..\rna\rnaspoof.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritere
 
 ;RealArcade Mods
 Source: ..\rna\rnamod.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
+Source: ..\rna\rnamod-x64.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
 
 ;RealArcade Restore RA Player
 Source: ..\rna\rnarestore.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
