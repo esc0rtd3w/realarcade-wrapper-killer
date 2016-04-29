@@ -24,7 +24,7 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headerRFS.h">
+    <ClInclude Include="rfs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
