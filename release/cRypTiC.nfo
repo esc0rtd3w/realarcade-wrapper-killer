@@ -136,6 +136,9 @@
 
                    * Updated new server paths for "ra3_games_mac.htm"
 
+                   * Added "rfs_stub_info" to core files. It currently
+                     reads Installation ID and outputs to a text file
+
 
 
         * UPDATED: RGS Loader to v2.1.3
