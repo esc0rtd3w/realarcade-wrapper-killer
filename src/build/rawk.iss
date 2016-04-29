@@ -194,6 +194,7 @@ Source: ..\rna\rnamod-x64.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwrite
 
 ;RealArcade Restore RA Player
 Source: ..\rna\rnarestore.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
+Source: ..\rna\rnarestore-x64.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
 
 ;RealArcade Uninstaller
 Source: ..\rna\rnuninst.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
