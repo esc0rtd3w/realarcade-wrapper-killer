@@ -9,6 +9,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
                   
 
 
+ 
                    ²²²²²²²                          ²²²²²        ²²²²²
                  ²²²²²² ²²²                     ²²²²²  ²²       ²²²²²²
            ²²²²² ²²²²²²  ²²      ²²   ²²²²²²²² ²²²²² ²²²  ²²²² ²² ²²²²
@@ -24,7 +25,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
                      ²²²                  proudly presents...
 
               
-                        RealArcade Wrapper Killer v5.4.3
+                        RealArcade Wrapper Killer v5.4.4
 
 
                 -[ PWNING RealNetworks/GameHouse Since 2005 ]-  
@@ -39,7 +40,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
       Category .. [ Utility          ]   ²Ý  Protection. [ RGS/RGA Trials   ]°
       Tested by.. [ cRypTiC          ]   ±   Language..  [ English          ]
-   °  Packed by.. [ cRypTiC          ]   °   Filename .  [ c-rawk543.zip    ]°
+   °  Packed by.. [ cRypTiC          ]   °   Filename .  [ c-rawk544.zip    ]°
       Coded by... [ cRypTiC          ]       Disks ....  [ 01 x 15MB        ]±
 
    ±        .  ß            Ü        °   Ü     Ü ß           Ü       ßÛÜ   þÛ Ü
@@ -140,9 +141,9 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
 
 
-	* UPDATED: RAWK Core to v3.0.3
+	* UPDATED: RAWK Core to v3.0.4
 
-                   * Added support for DMG and RFS Loaders
+                   * Nothing new here :(
 
 
 
@@ -154,29 +155,19 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
         * UPDATED: RGA Loader to v1.0.2
 
-                   * Fixed errors from a mis-typed "rm" command
-
-                   * Fixed extraction and cleanup
+                   * Nothing new here :(
 
 
 
         * ADDED: RFS Loader v1.0.0
 
-                   * This module is not currently active
-
-                   * Framework for 2015/2016 RFS Activemark v7 Packages
+                   * Nothing new here :(
 
 
 
         * ADDED: DMG Loader v1.0.1
 
-                   * This module is not currently active
-
-                   * Framework for DMG Image Extraction Setup
-
-                   * Extraction supported for 3 Mac OSX DMG Image Types
-
-                   * Cleanup added. Only saving GameName.app directory
+                   * Nothing new here :(
 
 
 
@@ -188,11 +179,9 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
                      
 
 
-        * UPDATED: RAWK Game INI Database to v1.3.0
+        * UPDATED: RAWK Game INI Database to v1.3.1
 
                    [0 Game Entries Added] [86 Total Game Entries]
-
-                   * Updated new server paths for "ra3_games_mac.htm"
                      
                    * Just because a game is not in the INI database DOES NOT
                      mean that it will not work. Most games will unpack just
@@ -230,7 +219,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
                 ***************************************************
 
 
-         * HTML Game Catalogs are current as of 2014-08-30.
+         * HTML Game Catalogs are current as of 2016-04-29.
 
 
          * Tested Compatible with almost the entire library of RGS v1.2 games.
@@ -346,6 +335,8 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
         - RGA (v3.0) New format discovered on 20130606. The file naming scheme
           seems to be very different, and relies on partner names and channel
           names to gather game info. More info soon to come.
+
+        - RFS (v1.2) New ActiveMark ACID format discovered in 2016. More info soon!
           
                    --------------------------------------------------
                         SOME EXTRA STUFF YOU MIGHT WANT TO KNOW
@@ -440,8 +431,14 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
                      - RGA Acid 1.0 Demo Trial Stub: 
                        Installer_bloxxit.exe
 
-                     - MAC OSX Demo Trial Installer:
+                     - RFS Acid 1.2 Demo Trial Stub: 
+                       Installer_bloxxit.exe
+
+                     - MAC OSX Demo Trial Installer (Legacy):
                        bloxxit.dmg
+
+                     - MAC OSX Demo Trial Installer (ActiveMark):
+                       amac-bloxxit.dmg
 
                    --------------------------------------------------
 
