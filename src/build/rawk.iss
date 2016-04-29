@@ -418,8 +418,8 @@ Source: ..\stub\stub-chunk6.bin; DestDir: {app}; Flags: deleteafterinstall overw
 
 ;Source: ..\rga\rfsstub.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
 ;Source: ..\rga\rgastub.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
-Source: ..\rgi\v1\template\gameInitializer.rgi; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
-Source: ..\rgi\v3\template\gameInstall.rgi; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
+;Source: ..\rgi\v1\template\gameInitializer.rgi; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
+;Source: ..\rgi\v3\template\gameInstall.rgi; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
 
 ; RGA Specific
 
