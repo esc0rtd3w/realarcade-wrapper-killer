@@ -1,0 +1,1 @@
+[#gamemode: "alley1", #music: "on", #effects: "on", #voices: "on", #crowd: "on", #control: "mouse", #players: "1", #fullscreen: "on", #characters: "on", #particles: "on", #reflections: "on", #weather: "on", #window: [800, 600], #alocks: [0, 0], #commentator: #maria, #commentator2: #jensen, #renderer: #directX7_0, #gametype: #singleplayer]

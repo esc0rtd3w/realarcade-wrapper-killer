@@ -194,6 +194,16 @@ del "*_r1a.exe"
 cls
 del *.ura >nul
 
+:: Remove stub folder if exists (20160429)
+if exist "stub" rd /s /q "stub"
+
+:: IDK where the hell these came from....lol (20160429)
+::del /f /s /q "%windir%\unRealArcade.INI"
+::del /f /s /q "%windir%\unRealArcade_original.INI"
+::del /f /s /q "%windir%\unRealArcade2.INI"
+::del /f /s /q "%windir%\unRealArcade3.INI"
+
+cls
 
 
 :end
