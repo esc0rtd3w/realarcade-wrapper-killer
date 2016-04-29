@@ -102,6 +102,8 @@ echo.
 
 if exist "%root%\_tmp.rfs" (
 
+goto noRFS
+
 cls
 echo RFS Files Are Currently Not Supported For Extraction!
 echo.
@@ -115,7 +117,6 @@ echo.
 pause>nul
 
 set forceExit=1
-goto end
 
 goto launch
 
@@ -251,11 +252,6 @@ goto end
 
 
 
-:end
-
-if %forceExit%==1 goto end
-
-
 :getini
 
 cls
@@ -331,7 +327,7 @@ exit
 )
 
 
-:optMenu
+:noRFS
 
 :: Remove Temp RFS File
 del /s /q /f  "%root%\_tmp.rfs"
@@ -354,11 +350,9 @@ echo Press (X) to exit
 echo.
 echo.
 
-if %os%==XP choice /c:dgx /t:d,5 /n
-if %os%==VISTA choice /c dgx /d d /n /t 5
-if errorlevel 3 goto end
-if errorlevel 2 goto runGUI
-if errorlevel 1 goto runCLI
+if %os%==XP choice /c:x /t:x,5 /n
+if %os%==VISTA choice /c x /d x /n /t 5
+if errorlevel 1 goto end
 
 
 :runCLI
