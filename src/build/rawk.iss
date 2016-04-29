@@ -409,12 +409,12 @@ Source: ..\fixes\v1\fix2.tmp; DestDir: {app}; Flags: deleteafterinstall overwrit
 Source: ..\fixes\v1\fix3.tmp; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 
 ; New ACID 1.20.128 RFS/RGA Stub Hybrid
-Source: ..\stub\stub-chunk1.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
-Source: ..\stub\stub-chunk2-installation-id.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
-Source: ..\stub\stub-chunk3-offering.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
-Source: ..\stub\stub-chunk4-filler.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
-Source: ..\stub\stub-chunk5-language-country.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
-Source: ..\stub\stub-chunk6.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
+Source: ..\stub\stub-chunk1.bin; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\stub\stub-chunk2-installation-id.bin; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\stub\stub-chunk3-offering.bin; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\stub\stub-chunk4-filler.bin; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\stub\stub-chunk5-language-country.bin; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\stub\stub-chunk6.bin; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 
 ;Source: ..\rga\rfsstub.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
 ;Source: ..\rga\rgastub.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
