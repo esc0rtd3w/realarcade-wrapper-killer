@@ -6,6 +6,54 @@ RealArcade Wrapper Killer Version History From NFO Files
 
 
 
+v5.4.3
+----------
+
+	* UPDATED: RAWK Core to v3.0.3
+
+                   * Added support for DMG and RFS Loaders
+
+                   * Updated new server paths for "ra3_games_mac.htm"
+
+                   * Added "rfs_stub_info" to core files. It currently
+                     reads Installation ID and outputs to a text file
+
+
+
+        * UPDATED: RGA Loader to v1.0.2
+
+                   * Fixed errors from a mis-typed "rm" command
+
+                   * Fixed extraction and cleanup
+
+
+
+        * ADDED: RFS Loader v1.0.0
+
+                   * This module is not currently active
+
+                   * Framework for 2015/2016 RFS Activemark v7 Packages
+
+
+
+        * ADDED: DMG Loader v1.0.1
+
+                   * This module is not currently active
+
+                   * Framework for DMG Image Extraction Setup
+
+                   * Extraction supported for 3 Mac OSX DMG Image Types
+
+                   * Cleanup added. Only saving GameName.app directory
+                     
+
+
+        * UPDATED: RAWK Game INI Database to v1.3.1
+
+                   [0 Game Entries Added] [86 Total Game Entries]
+
+
+
 v5.4.2
 ----------
 
