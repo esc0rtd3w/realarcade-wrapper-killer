@@ -21,7 +21,7 @@ set iid=0
 set inputStub=%1
 set outputText="%temp%\ura-install-id-temp.txt"
 
-set readID="%~dp0bin\sfk.exe" hexdump -quiet -pure -offlen 0x949CE 16
+set readID="%~dp0sys32\sfk.exe" hexdump -quiet -pure -offlen 0x949CE 16
 
 set gameName=0
 
@@ -82,7 +82,7 @@ goto %return%
 :outText
 set return=outText
 
-echo %gameName%>%~dp0%gameName%-%iid%.txt
+echo %gameName%>%cd%\%gameName%-%iid%.txt
 
 if %dragged%==0 goto reset
 
