@@ -99,7 +99,7 @@ goto end
 :stubCreator
 cls
 
-call "core_rga_stub_creator.bat"
+call "core_stub_creator.bat"
 
 goto end
 
