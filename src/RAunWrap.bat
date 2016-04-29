@@ -198,6 +198,14 @@ cls
 cls
 )
 
+if exist "%ProgramFiles(x86)%\Real\RealArcade\RNArcade.exe" (
+cls
+%kill% "RNArcade.exe"
+cls
+"C:\Program Files\unRealArcade\temp\rnamod-x64.exe"
+cls
+)
+
 ::-----------------------------------------------------------------------------------
 :: BEGIN Setting Other Version Numbers
 ::-----------------------------------------------------------------------------------
