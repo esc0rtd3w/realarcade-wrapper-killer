@@ -11,6 +11,7 @@ set gamesroot=C:\My Games
 
 rd /s /q "%gamesroot%\%GameName%\cheats"
 rd /s /q "%gamesroot%\%GameName%\patches"
+rd /s /q "%gamesroot%\%GameName%\stub"
 
 del /s /q /f "%gamesroot%\%GameName%\cliptemp.txt"
 del /s /q /f "%gamesroot%\%GameName%\core_advanced_load_options.bat"
