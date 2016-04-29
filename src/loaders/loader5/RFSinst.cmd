@@ -101,6 +101,20 @@ echo.
 
 if exist "%root%\_tmp.rfs" (
 
+cls
+echo RFS Files Are Currently Not Supported FOr Extraction!
+echo.
+echo.
+echo.
+echo.
+echo Press ENTER To Exit....
+echo.
+echo.
+
+pause>nul
+
+goto end
+
 goto launch
 
 )
@@ -182,7 +196,7 @@ if %os%==VISTA choice /c yn /n
 if errorlevel 2 exit
 
 
-regedit /s "%ProgramFiles%\unRealArcade\loader3\setRFS.reg"
+regedit /s "%ProgramFiles%\unRealArcade\loader5\setRFS.reg"
 
 exit
 
