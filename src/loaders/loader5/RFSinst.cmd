@@ -4,6 +4,7 @@ title RealArcade Wrapper Killer    (.-+'~^-+ RFS Loader v1.0.0 +-^~`+-.)     [..
 
 color 1f
 
+set forceExit=0
 
 ::-----------------------------------------------------------------------------------
 :: Set Windows OS Version
@@ -102,7 +103,7 @@ echo.
 if exist "%root%\_tmp.rfs" (
 
 cls
-echo RFS Files Are Currently Not Supported FOr Extraction!
+echo RFS Files Are Currently Not Supported For Extraction!
 echo.
 echo.
 echo.
@@ -113,6 +114,7 @@ echo.
 
 pause>nul
 
+set forceExit=1
 goto end
 
 goto launch
@@ -250,6 +252,8 @@ goto end
 
 
 :end
+
+if %forceExit%==1 goto end
 
 
 :getini
