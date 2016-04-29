@@ -323,9 +323,11 @@
 
         - RGA (v3.0) New format discovered on 20130606. The file naming scheme
           seems to be very different, and relies on partner names and channel
-          names to gather game info. More info soon to come.
+          names to gather game info.
 
-        - RFS (v1.2) New ActiveMark ACID format discovered in 2016. More info soon!
+        - RGA (ACID v1.0) Legacy ActiveMark ACID format discovered in 2014.
+
+        - RFS (v1.2) New ActiveMark ACID format discovered in 2016.
           
                    --------------------------------------------------
                         SOME EXTRA STUFF YOU MIGHT WANT TO KNOW
@@ -369,6 +371,17 @@
                   am-gamename_updpkg_cycle5.rar
 
                    --------------------------------------------------
+          
+          RFS File Types: 
+
+          RFS game installers use Content ID and Game Name to build stub names:
+
+                  73945a4139e30f41362098ed1e6b19ec                 <-- Content ID
+                  berichest                                        <-- Game Name
+                  rfs                                              <-- File Ext
+                  73945a4139e30f41362098ed1e6b19ec-berichest.rfs   <-- Combined
+
+                   --------------------------------------------------
 
           Stub Naming Scheme: 
 
@@ -376,13 +389,13 @@
 
 
                      - RGI File (RGS XML game info):
-                       bloxxit.rgi
+                       bloxxit_free.rgi
 
                      - RGP File (RGS XML structured install info):
-                       bloxxit.rgp
+                       bloxxit_free.rgp
 
                      - MEZ File (RGS XZip 2.0 header stub??):
-                       bloxxit.mez
+                       bloxxit_free.mez
 
                      - RGS 1.2/1.4 Demo Installer:
                        bloxxit_free.rgs
@@ -420,14 +433,14 @@
                      - RGA Acid 1.0 Demo Trial Stub: 
                        Installer_bloxxit.exe
 
-                     - RFS Acid 1.2 Demo Trial Stub: 
-                       Installer_bloxxit.exe
-
                      - MAC OSX Demo Trial Installer (Legacy):
                        bloxxit.dmg
 
                      - MAC OSX Demo Trial Installer (ActiveMark):
                        amac-bloxxit.dmg
+
+                     - RFS Acid 1.2 Demo Trial Stub: 
+                       Installer_bloxxit.exe
 
                    --------------------------------------------------
 
