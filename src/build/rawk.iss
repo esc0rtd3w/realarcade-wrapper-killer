@@ -119,11 +119,12 @@ Source: ..\core_rawk_unpack.bat; DestDir: {app}; Attribs: hidden; Flags: deletea
 Source: ..\core_reg_check.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_reg_set.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_restore.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_rfs_stub_info.bat; DestDir: {app}; Attribs: Hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_rfs_stub_info.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_rga_download.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_rga_stub_creator.bat; DestDir: {app}; Attribs: Hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_stub_creator.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+;Source: ..\core_rga_stub_creator.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 ;Source: ..\core_rga_stub_creator.bat; DestDir: {pf}\unRealArcade\rga\; Flags: overwritereadonly
-Source: ..\core_rga_stub_info.bat; DestDir: {app}; Attribs: Hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_rga_stub_info.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 ;Source: ..\core_rga_stub_info.bat; DestDir: {pf}\unRealArcade\rga\; Flags: overwritereadonly
 
 ; Mac OSX DMG Support
@@ -406,7 +407,15 @@ Source: ..\fixes\all\cliptemp.txt; DestDir: {app}; Flags: deleteafterinstall ove
 Source: ..\fixes\v1\fix1.tmp; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 Source: ..\fixes\v1\fix2.tmp; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 Source: ..\fixes\v1\fix3.tmp; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\rga\stub.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
+
+; New ACID 1.20.128 RFS/RGA Stub Hybrid
+Source: ..\stub\stub-chunk1.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
+Source: ..\stub\stub-chunk2-installation-id.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
+Source: ..\stub\stub-chunk3-offering.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
+Source: ..\stub\stub-chunk4-filler.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
+Source: ..\stub\stub-chunk5-language-country.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
+Source: ..\stub\stub-chunk6.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
+
 ;Source: ..\rga\rfsstub.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
 ;Source: ..\rga\rgastub.bin; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
 Source: ..\rgi\v1\template\gameInitializer.rgi; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
