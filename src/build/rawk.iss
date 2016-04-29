@@ -119,6 +119,7 @@ Source: ..\core_rawk_unpack.bat; DestDir: {app}; Attribs: hidden; Flags: deletea
 Source: ..\core_reg_check.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_reg_set.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_restore.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_rfs_stub_info.bat; DestDir: {app}; Attribs: Hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_rga_download.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_rga_stub_creator.bat; DestDir: {app}; Attribs: Hidden; Flags: deleteafterinstall overwritereadonly
 ;Source: ..\core_rga_stub_creator.bat; DestDir: {pf}\unRealArcade\rga\; Flags: overwritereadonly
