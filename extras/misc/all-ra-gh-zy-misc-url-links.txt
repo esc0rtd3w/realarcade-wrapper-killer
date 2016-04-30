@@ -28,6 +28,8 @@ http://installer-manager.gamehouse.com/InstallerManager/getinstaller.php
 http://sw-real.jp.real.com/free/windows/installer/stubinst/stub/rp14/R61JADR/RealPlayer_ja.exe
 http://switchboard.real.com/arcade/download.html?file=online/dailyanswer.gif
 
+http://jira.gamehouse.com/secure/Dashboard.jspa
+
 
 LEAKED INTERNAL PATHS:
 /bin/bash /home/gamesync/.ssh/known_hosts /root/.bashrc
@@ -65,27 +67,41 @@ http://support.real.com
 MISC SUBDOMAINS GAMEHOUSE:
 http://ads.gamehouse.com
 http://b.gamehouse.com
+http://confluence.gamehouse.com
 http://d.gamehouse.com
+http://delicious.gamehouse.com
 http://downloads.gamehouse.com
 http://email.gamehouse.com
 http://gpn.gamehouse.com
+http://game.gamehouse.com
+http://game1.gamehouse.com
 http://games.gamehouse.com
+http://gifts.gamehouse.com
 http://gpn-api.gamehouse.com
 http://itm.gamehouse.com
+http://jira.gamehouse.com
 http://jobs.gamehouse.com
 http://logging.gamehouse.com
 http://m.gamehouse.com
 http://main.gamehouse.com
 http://media.gamehouse.com
 http://mobile.gamehouse.com
+http://nagios.gamehouse.com
 http://news.gamehouse.com
+http://origin.gamehouse.com
 http://p.gamehouse.com
 http://partners.gamehouse.com
 http://playmore.gamehouse.com
 http://radio.gamehouse.com
+http://report.gamehouse.com
+http://reviews.gamehouse.com
+http://rewards.gamehouse.com
 http://search.gamehouse.com
 http://support.gamehouse.com
+http://talent.gamehouse.com
+http://wikitest.gamehouse.com
 http://www.gamehouse.com
+http://www.stage.gamehouse.com
 
 http://cdn.ghstatic.com
 
