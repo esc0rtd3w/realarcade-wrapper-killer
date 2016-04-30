@@ -82,6 +82,7 @@ http://developer.real.com
 http://dk.real.com
 http://dl.real.com
 http://docs.real.com
+http://entertainment.real.com
 http://es.real.com
 http://eu.real.com
 http://events.real.com
@@ -267,6 +268,9 @@ http://www.nl.be.zylom.com
 http://www.us.zylom.com
 http://www.zylomgames.com
 
+http://zylom.net
+http://img.zylom.net
+
 
 MISC SUBDOMAINS TRYMEDIA:
 http://fe.trymedia.com
@@ -276,18 +280,3 @@ http://itm.trymedia.com
 MISC OTHER:
 http://74.217.73.229/t=1232420799/h=54b9d14fcca0f5aee3944c8bada768c5/r/release/actcorp/static/CallofDuty4MWData.003
 
-
-COUNTRIES:
-http://asia.real.com
-http://br.real.com
-http://cn.real.com
-http://eu.real.com
-http://de.real.com
-http://es.real.com
-http://fr.real.com
-http://it.real.com
-http://jp.real.com
-http://kr.real.com
-http://mx.real.com
-http://tw.real.com
-http://uk.real.com
