@@ -54,7 +54,9 @@ http://account.real.com
 http://advertising.real.com
 http://aolbbstats.real.com
 http://ar.real.com
+http://asia.real.com
 http://au.real.com
+http://australia.real.com
 http://beta.real.com
 http://bg.real.com
 http://biscotti-4.real.com
@@ -71,6 +73,7 @@ http://cl.real.com
 http://cloud.real.com
 http://co.real.com
 http://content.real.com
+http://coupon.real.com
 http://cs.real.com
 http://customers.real.com
 http://cz.real.com
@@ -85,6 +88,7 @@ http://docs.real.com
 http://entertainment.real.com
 http://es.real.com
 http://eu.real.com
+http://europe.real.com
 http://events.real.com
 http://features.real.com
 http://feed.real.com
@@ -93,11 +97,15 @@ http://film.real.com
 http://find.real.com
 http://for.real.com
 http://forgot.real.com
+http://forms.real.com
 http://fr.real.com
 http://france.real.com
 http://free.real.com
 http://gamebundles.real.com
 http://games.real.com
+http://games-dl.real.com
+http://games-dl2.real.com
+http://germany.real.com
 http://get.real.com
 http://gr.real.com
 http://guide.real.com
@@ -111,6 +119,7 @@ http://install.real.com
 http://ip.real.com
 http://ir.real.com
 http://it.real.com
+http://italy.real.com
 http://hk.real.com
 http://ja.real.com
 http://japan.real.com
@@ -118,6 +127,7 @@ http://jp.real.com
 http://ko.real.com
 http://kr.real.com
 http://labs.real.com
+http://linux.real.com
 http://logo.real.com
 http://ma.real.com
 http://mail.real.com
@@ -145,13 +155,17 @@ http://ph.real.com
 http://pl.real.com
 http://play.real.com
 http://post.real.com
+http://proforma.real.com
 http://promotions.real.com
 http://r.real.com
 http://radio.real.com
+http://realarcadebundles.real.com
 http://realcom-sister.real.com
+http://realguide.real.com
 http://realstore1.real.com
 http://registration.real.com
 http://review.real.com
+http://rnrr1.real.com
 http://ro.real.com
 http://ru.real.com
 http://s.real.com
@@ -167,6 +181,7 @@ http://sg.real.com
 http://share.real.com
 http://signup.real.com
 http://social.real.com
+http://spain.real.com
 http://spam.real.com
 http://sports.real.com
 http://stage.real.com
@@ -175,6 +190,7 @@ http://store.real.com
 http://support.real.com
 http://switchboard.real.com
 http://switchboardrr1.real.com
+http://t.real.com
 http://th.real.com
 http://tickets.real.com
 http://tr.real.com
@@ -188,10 +204,15 @@ http://upgrade.real.com
 http://users.real.com
 http://video.real.com
 http://videos.real.com
+http://watch.real.com
 http://www.real.com
+http://za.real.com
+
+http://i.realone.com
 
 
 MISC SUBDOMAINS GAMEHOUSE:
+http://activemark.gamehouse.com
 http://ads.gamehouse.com
 http://b.gamehouse.com
 http://confluence.gamehouse.com
@@ -218,6 +239,7 @@ http://media.gamehouse.com
 http://mobile.gamehouse.com
 http://nagios.gamehouse.com
 http://news.gamehouse.com
+http://ogh-www.gamehouse.com
 http://origin.gamehouse.com
 http://p.gamehouse.com
 http://partners.gamehouse.com
@@ -269,7 +291,10 @@ http://www.us.zylom.com
 http://www.zylomgames.com
 
 http://zylom.net
+http://games.zylom.net
 http://img.zylom.net
+http://mailer.zylom.net
+http://www.zylom.net
 
 
 MISC SUBDOMAINS TRYMEDIA:
