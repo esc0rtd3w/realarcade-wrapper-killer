@@ -9,7 +9,7 @@
 // @include     http://www.gamehouse.com/free-games*
 // @include     http://www.gamehouse.com/mac-games*
 // @include     http://www.gamehouse.com/member/*
-// @version     0.3.1
+// @version     0.3.2
 // @grant       none
 // ==/UserScript==
 
@@ -42,6 +42,10 @@
 // EXE Stub (RGA No Lang)
 // http://installer-manager.gamehouse.com/InstallerManager/getinstaller?filename=MONOPOLY.rga&offering=dip_nt_zy_en&channel=z_syn_gh_g12
 
+// Alternate Stub Servers
+// http://b.gamehouse.com/b/ghmigration/jewellegendsmagicalkingdom/z_syn_gh_g12/jewellegendsmagicalkingdom.rga
+// http://d.gamehouse.com/d/ghmigration/jewellegendsmagicalkingdom/z_syn_gh_g12/jewellegendsmagicalkingdom.rga
+// http://p.gamehouse.com/p/ghmigration/jewellegendsmagicalkingdom/z_syn_gh_g12/jewellegendsmagicalkingdom.rga
 
 // RFS
 // http://games-dl.gamehouse.com/zylom/ghmigration/supergloveshero/f86bc49a788ace0058a420899e086139-supergloveshero.rfs
@@ -76,6 +80,33 @@
 // http://d.trymedia.com/dd/alawent/dip_60m_en/t_14tn/SmashFrenzy4.rga
 // http://d.trymedia.com/dd/isioux/dip_nt_en/t_14tn/GovernorofPoker2PremiumEd.rga
 // http://d.trymedia.com/dd/rumbic/dip_nt_en/t_14tn/WoodvilleChronicles.rga
+// http://d.trymedia.com/dd/vivendi/static/trygames/Scarface.001
+
+// http://itm.trymedia.com/itm/installer/initializeInstaller?gameid=b6d996de41893bf1f3034c877caeda12&channel=t_01xi&otp=&tracking=21e50a6c54efb11b1a6aa3778f734414&currency=USD&price=6.99&installerversion=&lang=
+// http://itm.trymedia.com/itm/installer/initializeInstaller?gameid=009e2c8c79895d1d1c49917701c0d293&channel=t_12em&otp=&tracking=22c13f9fb243908541200d4ef5d2493c&currency=USD&price=6.99&installerversion=&lang=
+
+// Zylom Examples
+
+// Stub Initialize (Redirects To installer-manager.gamehouse.com)
+// A value of 0 for "g" or "s" variables will trigger a "HTTP Status 500 - java.lang.NullPointerException"
+// Changing the "g" variable value does not seem to affect current stub downloaded
+// The "s" variable controls the actual game stub to be downloaded
+// The value "s=1" and "g=91" is the lowest both can go before triggering an error
+// Example URL (Lowest Values): http://main.zylom.com/servlet/DownloadDownloadable?g=1&s=91
+// The first game triggered is "alchemy" and there are multiple languages of the same name from different numbers
+// alchemy is again the stub for "134", italian.
+// Example URL (Highest?): http://main.zylom.com/servlet/DownloadDownloadable?g=1&s=14797
+// Languages seem to be this order: en, nl, de, fr
+
+//http://main.zylom.com/servlet/DownloadDownloadable?g=44&s=20847
+
+
+//http://media.zylom.com/gamebits/gamehouse/macstatic/
+
+
+// ActiveMark Licensing
+// Example URL With Minimum Parameters Required:
+// http://activemark.gamehouse.com/autounlock/gettoken?gamesetid=6000&contentid=448b83ca6a792ea2be05fcbe301d5976&licensetype=2&callback=
 
 // END SAMPLE URLS --------------------------------------------------------------------/
 
@@ -111,6 +142,11 @@ server.push("http://cdn.ghstatic.com");// Default Content Server
 server.push("http://gameh0use.com");// cRypTiCwaRe GH Spoof Server
 server.push("http://d.trymedia.com");// TryMedia Download Server
 server.push("http://ftp.gamehouse.com");// GameHouse FTP Server
+server.push("http://media.zylom.com");// Zylom Download Server
+server.push("http://b.gamehouse.com");// GameHouse Download Server
+server.push("http://d.gamehouse.com");// GameHouse Download Server
+server.push("http://p.gamehouse.com");// GameHouse Download Server
+server.push("http://activemark.gamehouse.com");// GameHouse ActiveMark Server
 
 // Game Paths On Server
 var path = [];
@@ -124,6 +160,9 @@ path.push("/pub/");// Default Mac OSX DMG Path (amac-)
 path.push("/InstallerManager/getinstaller?filename=");// Default EXE Stub Path (2015/2016)
 path.push("/gamehouse/macstatic/"); // New Mac OSX DMG Path (2016)
 path.push("/dd/"); // TryMedia Download Server Path
+path.push("/gamebits/gamehouse/"); // Zylom Download Server Path
+path.push("/gamebits/gamehouse/macstatic"); // Zylom Mac OSX DMG Download Server Path
+path.push("/autounlock/gettoken?gamesetid=6000&contentid="); // GameHouse ActiveMark Licensing
 
 // Distributor List
 var distributor = [];
@@ -134,6 +173,15 @@ distributor.push("nickelodeon");// TryMedia Related
 distributor.push("alawent");// TryMedia Related
 distributor.push("isioux");// TryMedia Related
 distributor.push("rumbic");// TryMedia Related
+distributor.push("valusoft");// TryMedia Related
+distributor.push("iplay");// TryMedia Related
+distributor.push("2kgame");// TryMedia Related
+distributor.push("vivendi");// TryMedia Related
+distributor.push("ubisoft");// TryMedia Related
+distributor.push("thq");// TryMedia Related
+distributor.push("sg");// TryMedia Related
+distributor.push("segaus");// TryMedia Related
+distributor.push("sarbakan_inc");// TryMedia Related
 
 // Developer List
 var developer = [];
@@ -148,13 +196,26 @@ developer.push("terminalstudio");
 var offering = [];
 offering.push("dip_nt_zy_en");// Default Offering (RGA Links Only??)
 offering.push("dip_60m_en");// TryMedia Related
+offering.push("30m_pkg");// TryMedia Related
 offering.push("30m_pkg542");// TryMedia Related
+offering.push("60m_c");// TryMedia Related
+offering.push("60m_c3");// TryMedia Related
+offering.push("60m_c3_v101");// TryMedia Related
+offering.push("60m_c_1");// TryMedia Related
+offering.push("60m_c_v11");// TryMedia Related
 offering.push("60m_d");// TryMedia Related
+offering.push("60m_i_1f");// TryMedia Related
+offering.push("60m_d_am542");// TryMedia Related
+offering.push("static");// TryMedia Related
 
 // Channel List
 var channel = [];
 channel.push("z_syn_gh_g12");// Default Zylom/GameHouse Channel
+channel.push("t_19cs");// TryMedia Related
 channel.push("t_14tn");// TryMedia Related
+channel.push("trygames");// TryMedia Related
+channel.push("t_07da_bgd");// TryMedia Related
+channel.push("t_07of");// TryMedia Related
 
 // Language List
 var language = [];
@@ -192,6 +253,8 @@ var gameNamePackage = "gamenamehere";
 var cid = "00000000000000000000000000000000";// Content ID
 var iid = "00000000000000000000000000000000";// Installation ID
 
+var licenseType = 2; // ActiveMark License Type (Accepted Values are 1 or 2)
+
 var gameTitle = "";
 var gameInfo = "";
 
@@ -199,6 +262,7 @@ var advancedOptions = 0;
 
 // Set Default Link Variables
 var linkHijack = "";
+var linkLicense = "";
 var linkAcid = "";
 var linkAdvanced = "";
 var linkEXE = "";
@@ -230,6 +294,7 @@ var btnDiscontinued = "discontinued";
 
 // Default Hijacked/Cloned Button Elements
 var btnHijack = "dl_now_button_hijack";
+var btnHijackLicense = "dl_now_button_license";
 var btnHijackAcid = "dl_now_button_acid";
 var btnHijackAdvanced = "dl_now_button_advanced";
 var btnHijackEXE = "dl_now_button_exe";
@@ -248,6 +313,7 @@ var btnHijackDMGNew = "dl_now_button_dmg_new";
 // Link Statuses
 var linkCheckRequest;
 var linkStatusAcid;
+var linkStatusLicense;
 var linkStatusAdvanced;
 var linkStatusEXE;
 var linkStatusRFS;
@@ -278,6 +344,13 @@ var isDiscontinued = 0;
 var isMembersOnly = 0;
 var isLoggedIn = 0;
 var isFavHeart = 0;
+
+
+// ActiveMark Licensing Info
+// Usage: amUnlockBase + + cid + amUnlockType + licenseType + amUnlockPost
+var amUnlockBase = server[17] + path[12];// First part before Content ID
+var amUnlockType = "&licensetype=";// License Type
+var amUnlockPost = "&callback=";// Last part after Content ID
 
 // END DEFAULTS -----------------------------------------------------------------------/
 
@@ -572,6 +645,7 @@ function buildNewLinks(){
 	createLinksRGS();
 	createLinksDMG();
 	createLinksAcid();
+	createLinksLicense();
 }
 
 // Create Acid Links
@@ -640,6 +714,12 @@ function createLinksDMG() {
 	linkDMGNew = server[0] + path[8] + "amac-" + gameNamePackage +  "." + ext[3];
 	//linkDMGNew = "http://installer-manager.gamehouse.com/InstallerManager/getinstaller?filename=" + "amac-" + gameNamePackage +  "." + ext[3] + "&offering=amac-" + gameNamePackage + "&channel=z_syn_gh_g12";
 	//checkLink(linkDMGNew);
+}
+
+function createLinksLicense() {
+	linkLicense = amUnlockBase + cid + amUnlockType + licenseType + amUnlockPost;
+	//alert(linkLicense);
+	//checkLink(linkLicense);
 }
 
 function checkLink(linkToCheck){
@@ -891,6 +971,7 @@ function buildNewButtons() {
 	cloneElement(btnHijack, btnHijackRGSFree);// Create an RGS Free File Button From Hijack Clone
 	cloneElement(btnHijack, btnHijackRGSFull);// Create an RGS Full File Button From Hijack Clone
 	//cloneElement(btnHijack, btnHijackAdvanced);// Create an Advanced Settings Button From Hijack Clone
+	cloneElement(btnHijack, btnHijackLicense);// Create a Button For License From Hijack Clone
 	
 	if (iid != "00000000000000000000000000000000") {
 		cloneElement(btnHijack, btnHijackAcid);// Create an Acid Config File Button From Hijack Clone
@@ -1142,7 +1223,8 @@ setButtonProperties(btnHijackRGAUnlimited, linkRGAUnlimited, "RGA File", "AM v2.
 setButtonProperties(btnHijackRGSFree, linkRGSFree, "RGS File", "RealArcade Free", "#9900FF", "#FFFFFF");
 setButtonProperties(btnHijackRGSFull, linkRGSFull, "RGS File", "RealArcade Full", "#9900FF", "#FFFFFF");
 //setButtonProperties(btnHijackAdvanced, linkAdvanced, "RGS File", "RealArcade Full", "#9900FF", "#FFFFFF");
-setButtonProperties(btnHijackAcid, linkAcid, "Acid File", "Configuration File", "#99ffFF", "#FFFFFF");
+//setButtonProperties(btnHijackAcid, linkAcid, "Acid File", "Configuration File", "#99ffFF", "#FFFFFF");
+setButtonProperties(btnHijackLicense, linkLicense, "License&nbsp&nbsp", "Get New AM Token", "#99ffFF", "#FFFFFF");
 //setButtonProperties(btnHijackOriginVuln, linkOriginVuln, "Surprise!", "GH Origin Server", "#22BB77", "#FFFFFF");
 
 // Custom Advanced Button
