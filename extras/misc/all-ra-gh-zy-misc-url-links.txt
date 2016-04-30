@@ -36,6 +36,7 @@ LEAKED INTERNAL PATHS:
 /home/rawww/html/gameconsole/updatesgold/deltacats/
 /home/rawww/html/gameconsole/updatesgold/deltahtmls/dailyhtml.xtr
 /home/gamesync/dist/games.rsync.sh
+L:\rawbits\packaging_sources\super_gamehouse_solitaire\gamehouse\Game
 
 
 OTHER SPIDERED AND LEAKED URLS:
