@@ -1,0 +1,11 @@
+wow64win.dll+0x3fe3a
+wow64win.dll+0x1aea8
+wow64.dll!Wow64SystemServiceEx+0xd7
+wow64cpu.dll!TurboDispatchJumpAddressEnd+0x2d
+wow64.dll!Wow64SystemServiceEx+0x1ce
+wow64.dll!Wow64LdrpInitialize+0x42b
+ntdll.dll!RtlUniform+0x6e6
+ntdll.dll!RtlCreateTagHeap+0xa7
+ntdll.dll!LdrInitializeThunk+0xe
+user32.dll!DispatchMessageW+0x5c
+Solitaire.exe!?CheckTrial@@YAXXZ+0xd4365
