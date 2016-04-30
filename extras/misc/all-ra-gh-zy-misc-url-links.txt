@@ -32,7 +32,6 @@ http://jira.gamehouse.com/secure/Dashboard.jspa
 
 
 LEAKED INTERNAL PATHS:
-/bin/bash /home/gamesync/.ssh/known_hosts /root/.bashrc
 /home/rawww/html/gameconsole/betatest/push-gameconsolebetatest-all.log
 /home/rawww/html/gameconsole/updatesgold/deltacats/
 /home/rawww/html/gameconsole/updatesgold/deltahtmls/dailyhtml.xtr

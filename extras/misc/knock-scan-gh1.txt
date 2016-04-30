@@ -1,0 +1,38 @@
+    www.gamehouse.com          149.13.34.195       195.34.13.149.zylom.net
+     m.gamehouse.com           149.13.34.195       195.34.13.149.zylom.net
+   media.gamehouse.com          64.74.126.9        cdce.acs006.internap.com
+   search.gamehouse.com        66.235.137.137         commerce.atomz.com
+    ads.gamehouse.com          149.13.34.195       195.34.13.149.zylom.net
+   email.gamehouse.com         12.130.135.112        email.gamehouse.com
+   radio.gamehouse.com         149.13.34.195       195.34.13.149.zylom.net
+   nagios.gamehouse.com        149.13.34.145       145.34.13.149.zylom.net
+   games.gamehouse.com         149.13.34.195       195.34.13.149.zylom.net
+    jobs.gamehouse.com         149.13.34.151       151.34.13.149.zylom.net
+    game.gamehouse.com         149.13.34.170       170.34.13.149.zylom.net
+ downloads.gamehouse.com       149.13.34.195       195.34.13.149.zylom.net
+    jira.gamehouse.com         149.13.34.189       189.34.13.149.zylom.net
+  partners.gamehouse.com       198.100.47.204     198.100.47.204.static.a2webhos
+ting.com
+    main.gamehouse.com         149.13.34.157       157.34.13.149.zylom.net
+   origin.gamehouse.com        54.68.227.189      ec2-54-68-227-189.us-west-2.co
+mpute.amazonaws.com
+     b.gamehouse.com           149.13.34.215       215.34.13.149.zylom.net
+   report.gamehouse.com        52.18.180.252      ec2-52-18-180-252.eu-west-1.co
+mpute.amazonaws.com
+     p.gamehouse.com           149.13.34.215       215.34.13.149.zylom.net
+     d.gamehouse.com           149.13.34.215       215.34.13.149.zylom.net
+ confluence.gamehouse.com      149.13.34.189       189.34.13.149.zylom.net
+    WWW.gamehouse.com          149.13.34.195       195.34.13.149.zylom.net
+  reviews.gamehouse.com        184.51.150.97      a184-51-150-97.deploy.static.a
+kamaitechnologies.com
+ www.stage.gamehouse.com       207.188.5.205       www.stage.gamehouse.com
+   gifts.gamehouse.com        216.210.233.168      216-210-233-168.atgi.net
+   talent.gamehouse.com        149.13.34.151       151.34.13.149.zylom.net
+  wikitest.gamehouse.com       54.148.87.251      ec2-54-148-87-251.us-west-2.co
+mpute.amazonaws.com
+   game1.gamehouse.com         149.13.34.195       195.34.13.149.zylom.net
+  rewards.gamehouse.com         157.22.33.65         www.savingswatch.com
+ delicious.gamehouse.com       94.23.144.145          srvgh.twentic.com
+  logging.gamehouse.com         52.48.160.27      ec2-52-48-160-27.eu-west-1.com
+pute.amazonaws.com
+
