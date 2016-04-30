@@ -1,3 +1,8 @@
+[+] Scanning for subdomain on gamehouse.com
+        Estimated time about 4176.79 seconds
+
+        Subdomain                Ip address              Name server
+
     www.gamehouse.com          149.13.34.195       195.34.13.149.zylom.net
      m.gamehouse.com           149.13.34.195       195.34.13.149.zylom.net
    media.gamehouse.com          64.74.126.9        cdce.acs006.internap.com
@@ -35,4 +40,14 @@ mpute.amazonaws.com
  delicious.gamehouse.com       94.23.144.145          srvgh.twentic.com
   logging.gamehouse.com         52.48.160.27      ec2-52-48-160-27.eu-west-1.com
 pute.amazonaws.com
+ redirector.gamehouse.com      149.13.34.195       195.34.13.149.zylom.net
+    july.gamehouse.com         209.157.66.139        host139.sj.best.com
+  jiratest.gamehouse.com       54.148.87.251      ec2-54-148-87-251.us-west-2.co
+mpute.amazonaws.com
+     B.gamehouse.com           149.13.34.215       215.34.13.149.zylom.net
+     D.gamehouse.com           149.13.34.215       215.34.13.149.zylom.net
+   super4.gamehouse.com        66.107.33.197      ip66-107-33-197.z33-107-66.cus
+tomer.algx.net
+   MEDIA.gamehouse.com          64.74.126.6        cdce.acs006.internap.com
 
+Found 38 subdomain(s) in 38 host(s) in 11142.56 second(s)

@@ -79,7 +79,9 @@ http://gifts.gamehouse.com
 http://gpn-api.gamehouse.com
 http://itm.gamehouse.com
 http://jira.gamehouse.com
+http://jiratest.gamehouse.com
 http://jobs.gamehouse.com
+http://july.gamehouse.com
 http://logging.gamehouse.com
 http://m.gamehouse.com
 http://main.gamehouse.com
@@ -92,10 +94,12 @@ http://p.gamehouse.com
 http://partners.gamehouse.com
 http://playmore.gamehouse.com
 http://radio.gamehouse.com
+http://redirector.gamehouse.com
 http://report.gamehouse.com
 http://reviews.gamehouse.com
 http://rewards.gamehouse.com
 http://search.gamehouse.com
+http://super4.gamehouse.com
 http://support.gamehouse.com
 http://talent.gamehouse.com
 http://wikitest.gamehouse.com
