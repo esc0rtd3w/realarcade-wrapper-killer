@@ -1,0 +1,4 @@
+Super GameHouse Solitaire
+AM VERSION 7.31
+DIP 1.1 - L:\rawbits\packaging_sources\super_gamehouse_solitaire\gamehouse\Game
+07:39:15 08/06/2015 UTC

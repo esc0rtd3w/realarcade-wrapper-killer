@@ -1,0 +1,56 @@
+[000003[00000d40] 04/30/2016@05:45:22  --------------- ActiveMARK Installer v1.20.128 [Acid R1.20] ---------------
+[00000d40] 04/30/2016@05:45:22  Command Line = "C:\ura\stubs\Installer_supergamehousesolitaire.exe" 
+[00000d40] 04/30/2016@05:45:22  Stamped Data = installationid:e104c0ab26b944fabc49d08422eea198, affiliate:z_syn_gh_g12, language:en-us
+[00000d40] 04/30/2016@05:45:22  URL: http://installer-manager.gamehouse.com/offline/startup.html (v1.20.128 [Acid R1.20])
+[00000d40] 04/30/2016@05:45:22  Getting config from: http://installer-manager.gamehouse.com/InstallerManager/getinstallersettings?installationid=e104c0ab26b944fabc49d08422eea198&component=acid&version=1.20&userid=f5c914209c13e2a3e77fcd594de2dbce512471a5&execid=10b27e8eabc48763&os=w7&arch=x86_64&browserversion=8.0.7601.17514&language=en-us&affiliate=z_syn_gh_g12&_=1462009522410
+[00000d40] 04/30/2016@05:45:23  Acid.Uninstall.previous (ccab9fcc68df330144e6ba9881c9c4b6) ->true
+[00000d40] 04/30/2016@05:45:24  URL: http://cdn.media.zylom.com/images/activemark/acid/1.20/ui/eula.html (v1.20.128 [Acid R1.20])
+[00000d40] 04/30/2016@05:45:33  License agreement: accepted
+[00000d40] 04/30/2016@05:45:33  URL: http://cdn.media.zylom.com/images/activemark/acid/1.20/ui/install.html (v1.20.128 [Acid R1.20])
+[00000d40] 04/30/2016@05:45:33  Acid.Advertisement - init: http://activemark.gamehouse.com/installer/advertisement?contentid=ccab9fcc68df330144e6ba9881c9c4b6&offering=supergamehousesolitaire&affiliate=z_syn_gh_g12&tracking=00000000000000000000000000000000&price=undefined&currency=&extratracking=4e1dbadbac52700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+[00000d40] 04/30/2016@05:45:33  Acid.PostActions.init (ogm, http://cdn.media.zylom.com/images/activemark/acid/1.20/postactions/installogm.rar)
+[00000d40] 04/30/2016@05:45:33  Acid.Download (http://cdn.media.zylom.com/images/activemark/acid/1.20/postactions/installogm.rar): 0
+[00000d40] 04/30/2016@05:45:33  Downloading RGA files ...
+[00000d40] 04/30/2016@05:45:33  Acid.Download (http://games-dl.gamehouse.com/zylom/ghmigration/supergamehousesolitaire/ccab9fcc68df330144e6ba9881c9c4b6-supergamehousesolitaire.rfs): 1
+[00000d40] 04/30/2016@05:45:34  Acid.Download: http://cdn.media.zylom.com/images/activemark/acid/1.20/postactions/installogm.rar -> ok
+[00000d40] 04/30/2016@05:45:34  Acid.PostActions.init: http://cdn.media.zylom.com/images/activemark/acid/1.20/postactions/installogm.rar -> download ok (C:\Users\hacker\AppData\Local\Temp\amtemp-0d4000007eb2\installogm.rar)
+[00000d40] 04/30/2016@05:45:37  Acid.Advertisement - loaded
+[00000d40] 04/30/2016@05:45:37  Acid.Download: http://games-dl.gamehouse.com/zylom/ghmigration/supergamehousesolitaire/ccab9fcc68df330144e6ba9881c9c4b6-supergamehousesolitaire.rfs -> ok
+[00000d40] 04/30/2016@05:45:37  Downloading DLPR files ...
+[00000d40] 04/30/2016@05:45:37  Installing RGA files ...
+[00000d40] 04/30/2016@05:45:37  Acid.Install (C:\GameHouse Games\Super GameHouse Solitaire, C:\GameHouse Games, Super GameHouse Solitaire, Super GameHouse Solitaire, GameHouse) -> 0
+[00000d40] 04/30/2016@05:45:37  Acid.Install: C:\GameHouse Games\Super GameHouse Solitaire -> ok ({
+  "actions" : {
+    "postinstall" : {
+      "registry" : [
+        {
+          "hkey" : "HKCU",
+          "name" : "Software\\Gamehouse\\solitaire\\FULLSCREEN",
+          "type" : "DWORD",
+          "value" : "1"
+        }
+      ]
+    }
+  },
+  "executable" : "Solitaire.exe",
+  "result" : true,
+  "shortcut" : "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\GameHouse\\Super GameHouse Solitaire.lnk"
+})
+[00000d40] 04/30/2016@05:45:37  Enforcing In-RGA post install actions ...
+[00000d40] 04/30/2016@05:45:37  Acid.Actions.Registry (HKCU, DWORD, Software\Gamehouse\solitaire\FULLSCREEN, 1 -> true
+[00000d40] 04/30/2016@05:45:37  Installing DLPR files ...
+[00000d40] 04/30/2016@05:45:37  Finishing installation ...
+[00000d40] 04/30/2016@05:45:37  Acid.CreateShortcut ({"source":"http://www.zylom.com","target":"[\"<DESKTOP>\\\\Zylom\", \"<COMMON_PROGRAMS>\\\\Zylom\\\\Visit Zylom\"]","description":"Zylom","icon":"http://cdn.zylom.com/acid/1.20/store.ico","uninstallable":true})
+[00000d40] 04/30/2016@05:45:37  Acid.Download (http://cdn.zylom.com/acid/1.20/store.ico): 2
+[00000d40] 04/30/2016@05:45:37  Acid.CreateShortcut ({"source":"C:\\GameHouse Games\\Super GameHouse Solitaire\\Solitaire.exe","target":"C:\\Users\\hacker\\Desktop\\Super GameHouse Solitaire","description":"Super GameHouse Solitaire","icon":"C:\\GameHouse Games\\Super GameHouse Solitaire\\Solitaire.exe","uninstallable":true})
+[00000d40] 04/30/2016@05:45:37  Acid.CreateShortcut (C:\GameHouse Games\Super GameHouse Solitaire\Solitaire.exe, C:\Users\hacker\Desktop\Super GameHouse Solitaire, Super GameHouse Solitaire, C:\GameHouse Games\Super GameHouse Solitaire\Solitaire.exe, C:\GameHouse Games\Super GameHouse Solitaire\) -> true
+[00000d40] 04/30/2016@05:45:37  Acid.PostAction.execute (ogm, C:\Users\hacker\AppData\Local\Temp\amtemp-0d4000007eb2\installogm.rar)
+[00000d40] 04/30/2016@05:45:37  Acid.Pack (C:\Users\hacker\AppData\Local\Temp\amtemp-0d4000007eb2\installogm.rar, null) -> 1
+[00000d40] 04/30/2016@05:45:38  Acid.Download: http://cdn.zylom.com/acid/1.20/store.ico -> error (258)
+[00000d40] 04/30/2016@05:45:41  Acid.Pack: C:\Users\hacker\AppData\Local\Temp\amtemp-0d4000007eb2\installogm.rar -> ok ({
+  "result" : true
+})
+[00000d40] 04/30/2016@05:45:41  Acid.PostActions.execute: C:\Users\hacker\AppData\Local\Temp\amtemp-0d4000007eb2\installogm.rar -> ok ({"result":true})
+[00000d40] 04/30/2016@05:45:51  Acid.Advertisement - timeout: 13987
+[00000d40] 04/30/2016@05:45:51  Acid.Uninstall.save -> true
+[00000d40] 04/30/2016@05:45:51  Launch game: Solitaire.exe -> 1

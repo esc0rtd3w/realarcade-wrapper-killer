@@ -1,0 +1,15 @@
+{
+  "actions": {
+    "postinstall": {
+      "registry": [
+        {
+          "hkey": "HKCU", 
+          "name": "Software\\Gamehouse\\solitaire\\FULLSCREEN", 
+          "type": "DWORD", 
+          "value": "1"
+        }
+      ]
+    }
+  }, 
+  "executable": "Solitaire.exe"
+}

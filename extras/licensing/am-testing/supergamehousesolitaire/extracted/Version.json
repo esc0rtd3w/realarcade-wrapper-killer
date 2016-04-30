@@ -1,0 +1,11 @@
+{
+    "title": "Super GameHouse Solitaire",
+    "am_version": "7.31",
+    "packaging_date": "07:39:15 08/06/2015 UTC",
+    "packaging_time": 1433749155,
+    "html_pages": "dip",
+    "html_pages_version": "1.40.6",
+    "game_version": "1.1",
+    "game_sources": "L:/rawbits/packaging_sources/super_gamehouse_solitaire/gamehouse/Game",
+    "storefront": "gamehouse"
+}

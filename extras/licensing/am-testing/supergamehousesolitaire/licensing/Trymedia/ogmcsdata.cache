@@ -1,0 +1,301 @@
+[
+  {
+    "affiliate" : "z_syn_gh_g12",
+    "cid" : "ccab9fcc68df330144e6ba9881c9c4b6",
+    "custom" : {},
+    "game_id" : "2e00983dcc1cde9cf97066698f15ae1e",
+    "installed" : true,
+    "license_type" : "default",
+    "name_guess" : "Super GameHouse Solitaire",
+    "offering" : "",
+    "private" : {
+      "currency" : "",
+      "domain_custom_data" : {},
+      "exe_path" : "C:\\GameHouse Games\\Super GameHouse Solitaire\\Solitaire.exe",
+      "install_path" : "C:\\GameHouse Games\\Super GameHouse Solitaire\\",
+      "price" : "",
+      "uninstall_app" : "",
+      "uninstall_args" : "",
+      "uninstall_info_file" : ""
+    },
+    "publisher" : "",
+    "stats" : {
+      "has_amiga" : "no",
+      "installation_time" : 1462027537,
+      "last_page" : "noaccess",
+      "last_played" : 1462009539
+    },
+    "tracking" : "",
+    "trial" : {
+      "max_time" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "max_uses" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "per_usage" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "status" : "trial"
+    },
+    "uninstallable" : false,
+    "version" : "",
+    "version_txt" : [
+      "Super GameHouse Solitaire",
+      "AM VERSION 7.31",
+      "DIP 1.1 - L:\\rawbits\\packaging_sources\\super_gamehouse_solitaire\\gamehouse\\Game",
+      "07:39:15 08/06/2015 UTC"
+    ]
+  },
+  {
+    "affiliate" : "",
+    "cid" : "71ce502f4cfc99841fd6b25fa52327e5",
+    "custom" : {},
+    "game_id" : "",
+    "installed" : false,
+    "license_type" : "dynamic",
+    "name_guess" : "",
+    "offering" : "",
+    "private" : {
+      "currency" : "",
+      "domain_custom_data" : {},
+      "exe_path" : "",
+      "install_path" : "",
+      "price" : "",
+      "uninstall_app" : "",
+      "uninstall_args" : "",
+      "uninstall_info_file" : ""
+    },
+    "publisher" : "",
+    "stats" : {
+      "has_amiga" : "no",
+      "installation_time" : 0,
+      "last_page" : "open",
+      "last_played" : 1459467962
+    },
+    "tracking" : "",
+    "trial" : {
+      "max_time" : {
+        "consumed" : 7,
+        "left" : 3593,
+        "total" : 3600
+      },
+      "max_uses" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "per_usage" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "status" : "trial"
+    },
+    "uninstallable" : false,
+    "version" : "",
+    "version_txt" : []
+  },
+  {
+    "affiliate" : "",
+    "cid" : "d54a9d12fc0ce2d4b40152265be41c74",
+    "custom" : {},
+    "game_id" : "",
+    "installed" : false,
+    "license_type" : "dynamic",
+    "name_guess" : "",
+    "offering" : "",
+    "private" : {
+      "currency" : "",
+      "domain_custom_data" : {},
+      "exe_path" : "",
+      "install_path" : "",
+      "price" : "",
+      "uninstall_app" : "",
+      "uninstall_args" : "",
+      "uninstall_info_file" : ""
+    },
+    "publisher" : "",
+    "stats" : {
+      "has_amiga" : "no",
+      "installation_time" : 0,
+      "last_page" : "open",
+      "last_played" : 1459238474
+    },
+    "tracking" : "",
+    "trial" : {
+      "max_time" : {
+        "consumed" : 0,
+        "left" : 3600,
+        "total" : 3600
+      },
+      "max_uses" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "per_usage" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "status" : "trial"
+    },
+    "uninstallable" : false,
+    "version" : "",
+    "version_txt" : []
+  },
+  {
+    "affiliate" : "",
+    "cid" : "168ec70c8387578ff218daa8230e586e",
+    "custom" : {},
+    "game_id" : "",
+    "installed" : false,
+    "license_type" : "default",
+    "name_guess" : "",
+    "offering" : "",
+    "private" : {
+      "currency" : "",
+      "domain_custom_data" : {},
+      "exe_path" : "",
+      "install_path" : "",
+      "price" : "",
+      "uninstall_app" : "",
+      "uninstall_args" : "",
+      "uninstall_info_file" : ""
+    },
+    "publisher" : "",
+    "stats" : {
+      "has_amiga" : "no",
+      "installation_time" : 0,
+      "last_page" : "noaccess",
+      "last_played" : 1459465861
+    },
+    "tracking" : "",
+    "trial" : {
+      "max_time" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "max_uses" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "per_usage" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "status" : "trial"
+    },
+    "uninstallable" : false,
+    "version" : "",
+    "version_txt" : []
+  },
+  {
+    "affiliate" : "",
+    "cid" : "390d4a4f698e83178653f959d80f7d70",
+    "custom" : {},
+    "game_id" : "",
+    "installed" : false,
+    "license_type" : "default",
+    "name_guess" : "",
+    "offering" : "",
+    "private" : {
+      "currency" : "",
+      "domain_custom_data" : {},
+      "exe_path" : "",
+      "install_path" : "",
+      "price" : "",
+      "uninstall_app" : "",
+      "uninstall_args" : "",
+      "uninstall_info_file" : ""
+    },
+    "publisher" : "",
+    "stats" : {
+      "has_amiga" : "no",
+      "installation_time" : 0,
+      "last_page" : "noaccess",
+      "last_played" : 1459471752
+    },
+    "tracking" : "",
+    "trial" : {
+      "max_time" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "max_uses" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "per_usage" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "status" : "trial"
+    },
+    "uninstallable" : false,
+    "version" : "",
+    "version_txt" : []
+  },
+  {
+    "affiliate" : "",
+    "cid" : "fd17d0d4f7659ba662e65688e278438e",
+    "custom" : {},
+    "game_id" : "",
+    "installed" : false,
+    "license_type" : "default",
+    "name_guess" : "",
+    "offering" : "",
+    "private" : {
+      "currency" : "",
+      "domain_custom_data" : {},
+      "exe_path" : "",
+      "install_path" : "",
+      "price" : "",
+      "uninstall_app" : "",
+      "uninstall_args" : "",
+      "uninstall_info_file" : ""
+    },
+    "publisher" : "",
+    "stats" : {
+      "has_amiga" : "no",
+      "installation_time" : 0,
+      "last_page" : "",
+      "last_played" : 1459480356
+    },
+    "tracking" : "",
+    "trial" : {
+      "max_time" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "max_uses" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "per_usage" : {
+        "consumed" : 0,
+        "left" : 0,
+        "total" : 0
+      },
+      "status" : "trial"
+    },
+    "uninstallable" : false,
+    "version" : "",
+    "version_txt" : []
+  }
+]
