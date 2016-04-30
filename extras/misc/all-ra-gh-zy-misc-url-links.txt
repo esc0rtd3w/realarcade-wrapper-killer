@@ -52,14 +52,17 @@ http://realplay.com
 MISC SUBDOMAINS REAL:
 http://account.real.com
 http://advertising.real.com
+http://aolbbstats.real.com
 http://ar.real.com
 http://au.real.com
 http://beta.real.com
 http://bg.real.com
+http://biscotti-4.real.com
 http://blog.real.com
 http://br.real.com
 http://cache-download.real.com
 http://cdn.rpa.real.com
+http://chanrr1.real.com
 http://channel.real.com
 http://channels.real.com
 http://chat.real.com
@@ -109,6 +112,7 @@ http://ir.real.com
 http://it.real.com
 http://hk.real.com
 http://ja.real.com
+http://japan.real.com
 http://jp.real.com
 http://ko.real.com
 http://kr.real.com
@@ -116,8 +120,11 @@ http://labs.real.com
 http://logo.real.com
 http://ma.real.com
 http://mail.real.com
+http://mail2.real.com
 http://mailer.real.com
+http://mastercard.real.com
 http://media.real.com
+http://message.real.com
 http://ml.real.com
 http://mobile.real.com
 http://movies.real.com
@@ -140,6 +147,8 @@ http://post.real.com
 http://promotions.real.com
 http://r.real.com
 http://radio.real.com
+http://realcom-sister.real.com
+http://realstore1.real.com
 http://registration.real.com
 http://review.real.com
 http://ro.real.com
@@ -149,6 +158,7 @@ http://sa.real.com
 http://sales.real.com
 http://sd.real.com
 http://search.real.com
+http://sedemos.real.com
 http://service.real.com
 http://service.jp.real.com
 http://services.real.com
@@ -162,6 +172,8 @@ http://stage.real.com
 http://start.real.com
 http://store.real.com
 http://support.real.com
+http://switchboard.real.com
+http://switchboardrr1.real.com
 http://th.real.com
 http://tickets.real.com
 http://tr.real.com
