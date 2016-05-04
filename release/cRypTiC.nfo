@@ -148,9 +148,11 @@
 
 
 
-        * UPDATED: RFS Loader v1.0.0
+        * UPDATED: RFS Loader v1.0.1
 
-                   * Nothing new here :(
+                   * Added a default unsupported message
+
+                   * Fixed crashing from trying to launch CLI to unpack
 
 
 

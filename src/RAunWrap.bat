@@ -163,7 +163,7 @@ set rawkcore=3.0.4
 set rgs_loader_core=2.1.3
 set rga_loader_core=1.0.2
 set dmg_loader_core=1.0.1
-set rfs_loader_core=1.0.0
+set rfs_loader_core=1.0.1
 
 ::-----------------------------------------------------------------------------------
 :: URA Downloader Version (used for debug output only)
