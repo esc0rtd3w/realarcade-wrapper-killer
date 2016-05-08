@@ -1,0 +1,68 @@
+[
+  {
+    "content_id" : "0e8b9cbf213b605f5beef2d4a851b831",
+    "disk_size" : 243093768,
+    "download_url" : "http://games-dl.gamehouse.com/gamehouse/pc/h/hoyle-official-card-games-collection/hoyle-official-card-games-collection.rfs",
+    "enable_profile" : false,
+    "exe_path" : "C:\\ProgramData\\activeMARK\\instant\\apps\\hoyle-official-c0e8b9cbf213b605f\\ClassicGamePack.exe",
+    "format_version" : "8.42",
+    "install_path" : "C:\\ProgramData\\activeMARK\\instant\\apps\\hoyle-official-c0e8b9cbf213b605f",
+    "name_guess" : "Hoyle Official Card Games Collection",
+    "play_likelihood" : 100,
+    "stats" : {
+      "accum_preload_time" : 133135,
+      "end_install_time" : 1462693005,
+      "end_preload_time" : 1462692806,
+      "last_play_time" : 1462693034,
+      "total_execution_time" : 27,
+      "total_execution_trial_time" : 27,
+      "total_executions" : 1
+    },
+    "status" : "gameinstalled",
+    "tracking" : "-1_72620eca-41a7-42fa-9288-887b84c1d2c3"
+  },
+  {
+    "content_id" : "aed95cdbf863967c3979027216bd7373",
+    "disk_size" : 491269991,
+    "download_url" : "http://games-dl.gamehouse.com/gamehouse/pc/j/jet-set-go/jet-set-go.rfs",
+    "enable_profile" : false,
+    "exe_path" : "",
+    "format_version" : "8.42",
+    "install_path" : "C:\\ProgramData\\activeMARK\\instant\\apps\\jet-set-goaed95cdbf863967c",
+    "name_guess" : "Jet Set Go",
+    "play_likelihood" : 30,
+    "stats" : {
+      "accum_preload_time" : 0,
+      "end_install_time" : 0,
+      "end_preload_time" : 0,
+      "last_play_time" : 0,
+      "total_execution_time" : 0,
+      "total_execution_trial_time" : 0,
+      "total_executions" : 0
+    },
+    "status" : "gamepartiallypreloaded",
+    "tracking" : "205658_16488ab9-c76d-489a-86b8-ac2c73a4b95f"
+  },
+  {
+    "content_id" : "4e06a0df0ff7e0c387b9357654f7707d",
+    "disk_size" : 353827651,
+    "download_url" : "http://games-dl.gamehouse.com/gamehouse/pc/s/sweetest-thing/sweetest-thing.rfs",
+    "enable_profile" : false,
+    "exe_path" : "",
+    "format_version" : "8.42",
+    "install_path" : "C:\\ProgramData\\activeMARK\\instant\\apps\\sweetest-thing4e06a0df0ff7e0c3",
+    "name_guess" : "Sweetest Thing",
+    "play_likelihood" : 0,
+    "stats" : {
+      "accum_preload_time" : 0,
+      "end_install_time" : 0,
+      "end_preload_time" : 0,
+      "last_play_time" : 0,
+      "total_execution_time" : 0,
+      "total_execution_trial_time" : 0,
+      "total_executions" : 0
+    },
+    "status" : "gamepartiallypreloaded",
+    "tracking" : "205658_57c95317-fbee-4434-bd49-2c3b2502188b"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "actions": {
+    "postinstall": {
+      "execute": [
+        {
+          "args": "serialexec.json", 
+          "file": "support\\serialexec.exe", 
+          "flags": 1, 
+          "wait": true
+        }
+      ]
+    }
+  }, 
+  "executable": "ClassicGamePack.exe"
+}

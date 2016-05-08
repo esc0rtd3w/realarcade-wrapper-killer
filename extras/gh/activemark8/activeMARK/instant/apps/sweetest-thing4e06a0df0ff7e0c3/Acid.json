@@ -1,0 +1,6 @@
+{
+  "actions": {
+    "postinstall": {}
+  }, 
+  "executable": "SweetestThing.exe"
+}

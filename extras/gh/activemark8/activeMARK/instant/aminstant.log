@@ -1,0 +1,86 @@
+[00000c0c] 05/08/2016@03:31:10  Starting AmInstantService v8.42.30 ActiveMARK[R] R8.42
+[00000c48] 05/08/2016@03:31:11  GamesController::prioritize() -> 1
+[000013f0] 05/08/2016@03:31:11  AmInstant::Play (cid=0e8b9cbf213b605f5beef2d4a851b831, atoken=a684dd572b1887661782981659331eed) -> 0
+[00000c48] 05/08/2016@03:31:12  GamesController::prioritize() -> 1
+[00000afc] 05/08/2016@03:31:12  AmInstant::install (url=http://games-dl.gamehouse.com/gamehouse/pc/h/hoyle-official-card-games-collection/hoyle-official-card-games-collection.rfs, cid=0e8b9cbf213b605f5beef2d4a851b831, title=Hoyle Official Card Games Collection, tracking=-1_72620eca-41a7-42fa-9288-887b84c1d2c3) -> 1
+[00000c34] 05/08/2016@03:31:12  AmInstantDownload -> http://profiler-cdn.am.gamehouse.com/gamehouse/pc/h/hoyle-official-card-games-collection/hoyle-official-card-games-collection.rfs.0.rfsindex downloaded correctly (cid=0e8b9cbf213b605f5beef2d4a851b831)
+[00000c34] 05/08/2016@03:31:13  AmInstantDownload -> histogram created (cid=0e8b9cbf213b605f5beef2d4a851b831, starttime=0 seconds, bandwidth=0 b/s)
+[00000c48] 05/08/2016@03:31:13  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:31:13  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:31:13  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:31:13  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:31:28  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:31:28  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:31:43  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:31:43  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:31:58  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:31:58  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:32:13  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:32:13  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:32:28  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:32:28  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:32:43  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:32:43  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:32:58  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:32:58  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:33:13  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:33:13  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:33:29  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:33:29  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:33:44  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:33:44  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:33:59  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:34:00  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:34:15  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:34:15  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:34:30  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:34:30  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:34:45  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:34:45  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:35:00  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:35:00  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:35:15  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:35:15  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:35:30  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:35:30  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:35:45  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:35:45  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:36:00  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:36:00  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:36:16  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:36:16  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:36:31  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:36:31  GamesController::prioritize() -> 1
+[00001268] 05/08/2016@03:36:45  AmInstant::installationCompleted (cid=0e8b9cbf213b605f5beef2d4a851b831, duration=133135, speed=1728824, preloadBytes=230588427, totalBytes=230588427)
+[00000c48] 05/08/2016@03:36:45  Download::resume (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:36:45  GamesController::prioritize() -> 1
+[00001308] 05/08/2016@03:36:46  AmInstant::Play (cid=0e8b9cbf213b605f5beef2d4a851b831, atoken=461463bbe1a3cf4393a35a02fbc5b345) -> 1
+[0000117c] 05/08/2016@03:36:46  AmGamesController::_checkDynamicProfileStateThread (url=http://games-dl.gamehouse.com/gamehouse/pc/h/hoyle-official-card-games-collection/hoyle-official-card-games-collection.rfs)
+[0000117c] 05/08/2016@03:36:46  AmGamesController::_checkDynamicProfileStateThread () -> enable=false
+[0000126c] 05/08/2016@03:36:47  AmInstant::install (url=http://games-dl.gamehouse.com/gamehouse/pc/j/jet-set-go/jet-set-go.rfs, cid=aed95cdbf863967c3979027216bd7373, title=Jet Set Go, tracking=205658_16488ab9-c76d-489a-86b8-ac2c73a4b95f, likelihood=30) -> 1
+[000000f8] 05/08/2016@03:36:47  AmInstant::install (url=http://games-dl.gamehouse.com/gamehouse/pc/s/sweetest-thing/sweetest-thing.rfs, cid=4e06a0df0ff7e0c387b9357654f7707d, title=Sweetest Thing, tracking=205658_57c95317-fbee-4434-bd49-2c3b2502188b, likelihood=30) -> 1
+[00001298] 05/08/2016@03:36:47  AmInstantDownload -> http://profiler-cdn.am.gamehouse.com/gamehouse/pc/j/jet-set-go/jet-set-go.rfs.0.rfsindex downloaded correctly (cid=aed95cdbf863967c3979027216bd7373)
+[00001158] 05/08/2016@03:36:47  AmInstantDownload -> http://profiler-cdn.am.gamehouse.com/gamehouse/pc/s/sweetest-thing/sweetest-thing.rfs.0.rfsindex downloaded correctly (cid=4e06a0df0ff7e0c387b9357654f7707d)
+[00000c48] 05/08/2016@03:36:47  Download::pause (cid=0e8b9cbf213b605f5beef2d4a851b831) -> 1
+[00000c48] 05/08/2016@03:36:48  Download::resume (cid=4e06a0df0ff7e0c387b9357654f7707d) -> 1
+[00001158] 05/08/2016@03:36:48  AmInstantDownload -> histogram created (cid=4e06a0df0ff7e0c387b9357654f7707d, starttime=0 seconds, bandwidth=1728824 b/s)
+[00000c48] 05/08/2016@03:36:48  Download::resume (cid=aed95cdbf863967c3979027216bd7373) -> 1
+[00001298] 05/08/2016@03:36:48  AmInstantDownload -> histogram created (cid=aed95cdbf863967c3979027216bd7373, starttime=0 seconds, bandwidth=1728824 b/s)
+[00000c48] 05/08/2016@03:36:48  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:36:48  Download::resume (cid=4e06a0df0ff7e0c387b9357654f7707d) -> 1
+[00000c48] 05/08/2016@03:36:48  Download::resume (cid=aed95cdbf863967c3979027216bd7373) -> 1
+[00000c48] 05/08/2016@03:36:48  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:37:03  Download::resume (cid=4e06a0df0ff7e0c387b9357654f7707d) -> 1
+[00000c48] 05/08/2016@03:37:03  Download::resume (cid=aed95cdbf863967c3979027216bd7373) -> 1
+[00000c48] 05/08/2016@03:37:03  GamesController::prioritize() -> 1
+[000013f0] 05/08/2016@03:37:14  GamesController::gamePlayFinished (cid=0e8b9cbf213b605f5beef2d4a851b831, duration=27 seconds) -> 1
+[00000418] 05/08/2016@03:37:14  AmInstant::installationStopped (cid=4e06a0df0ff7e0c387b9357654f7707d)
+[00000418] 05/08/2016@03:37:14  AmInstant::install (url=http://www.gamehouse.com, cid=4e06a0df0ff7e0c387b9357654f7707d, title=, tracking=, likelihood=0) -> 1
+[00001248] 05/08/2016@03:37:15  AmInstant::installationStopped (cid=aed95cdbf863967c3979027216bd7373)
+[00000c48] 05/08/2016@03:37:15  Download::pause (cid=4e06a0df0ff7e0c387b9357654f7707d) -> 1
+[00001248] 05/08/2016@03:37:15  AmInstant::install (url=http://www.gamehouse.com, cid=aed95cdbf863967c3979027216bd7373, title=, tracking=, likelihood=0) -> 1
+[00000c48] 05/08/2016@03:37:16  Download::resume (cid=aed95cdbf863967c3979027216bd7373) -> 1
+[00000c48] 05/08/2016@03:37:16  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:37:17  Download::pause (cid=aed95cdbf863967c3979027216bd7373) -> 1
+[00000c48] 05/08/2016@03:37:17  GamesController::prioritize() -> 1
+[00000c48] 05/08/2016@03:37:32  GamesController::prioritize() -> 1
