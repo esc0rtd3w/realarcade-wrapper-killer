@@ -108,6 +108,32 @@
 // Example URL With Minimum Parameters Required:
 // http://activemark.gamehouse.com/autounlock/gettoken?gamesetid=6000&contentid=448b83ca6a792ea2be05fcbe301d5976&licensetype=2&callback=
 
+
+// New AM Instant Links (05/2016)
+
+// Install
+// http://games-dl.gamehouse.com/gamehouse/pc/j/jet-set-go/jet-set-go.rfs
+// http://games-dl.gamehouse.com/gamehouse/pc/s/sweetest-thing/sweetest-thing.rfs
+// http://games-dl.gamehouse.com/gamehouse/pc/h/hoyle-official-card-games-collection/hoyle-official-card-games-collection.rfs
+// http://games-dl.gamehouse.com/gamehouse/pc/g/gutterball-2/gutterball-2.rfs
+
+// Download
+// http://profiler-cdn.am.gamehouse.com/gamehouse/pc/j/jet-set-go/jet-set-go.rfs.0.rfsindex
+// http://profiler-cdn.am.gamehouse.com/gamehouse/pc/s/sweetest-thing/sweetest-thing.rfs.0.rfsindex
+
+// Stub: http://games-dl.gamehouse.com/gamehouse/activemark/aminstantservice/GameHouse_GamePlayer.exe
+// JSON: http://www.gamehouse.com/member/api/games/downloaddetails.json?amcontentid=e945fbad3cb2cd9c2531b4c9794bb81d
+// http://www.gamehouse.com/gathering/insertwrd
+
+
+// Other Misc
+
+// Game List Builder?? (Show response in BurpSuite)
+// http://www.gamehouse.com/member/api/games/new-select.json?start=0&count=2895
+
+// http://www.gamehouse.com/member/api/games/downloaddetails.json?amcontentid=e945fbad3cb2cd9c2531b4c9794bb81d
+// http://www.gamehouse.com/member/api/categories/all.json?type=categorybox
+
 // END SAMPLE URLS --------------------------------------------------------------------/
 
 
@@ -139,7 +165,7 @@ server.push("http://switchboard.real.com");// Alternate Legacy RealArcade Packag
 server.push("http://downloads.gamehouse.com");// Default Mac Download Server
 server.push("http://m.gamehouse.com");// Default Mobile Download Server
 server.push("http://cdn.ghstatic.com");// Default Content Server
-server.push("http://gameh0use.com");// cRypTiCwaRe GH Spoof Server
+server.push("http://gameh0use.com");// cRypTiCwaRe GH Spoof Server (SERVER 10)
 server.push("http://d.trymedia.com");// TryMedia Download Server
 server.push("http://ftp.gamehouse.com");// GameHouse FTP Server
 server.push("http://media.zylom.com");// Zylom Download Server
@@ -147,6 +173,7 @@ server.push("http://b.gamehouse.com");// GameHouse Download Server
 server.push("http://d.gamehouse.com");// GameHouse Download Server
 server.push("http://p.gamehouse.com");// GameHouse Download Server
 server.push("http://activemark.gamehouse.com");// GameHouse ActiveMark Server
+server.push("http://profiler-cdn.am.gamehouse.com");// New 2016 AM PC Server
 
 // Game Paths On Server
 var path = [];
@@ -163,6 +190,8 @@ path.push("/dd/"); // TryMedia Download Server Path
 path.push("/gamebits/gamehouse/"); // Zylom Download Server Path
 path.push("/gamebits/gamehouse/macstatic"); // Zylom Mac OSX DMG Download Server Path
 path.push("/autounlock/gettoken?gamesetid=6000&contentid="); // GameHouse ActiveMark Licensing
+path.push("/gamehouse/activemark/");// New 2016 Gamehouse ActiveMark Path (using http://games-dl.gamehouse.com)
+path.push("/gamehouse/pc/");// New 2016 Gamehouse PC Path (using http://games-dl.gamehouse.com)
 
 // Distributor List
 var distributor = [];
@@ -234,6 +263,7 @@ ext.push("rgs");// Legacy RealArcade RGS Game Installer (XZIP 2.0)
 ext.push("rgi");// Legacy RealArcade RGS XML Game Info
 ext.push("rgp");// Legacy RealArcade RGS XML Structured Install Info
 ext.push("mez");// Legacy RealArcade RGS XZip 2.0 Header Stub??
+ext.push("rfs.0.rfsindex");// New GH AM Instant RFS Index Files
 
 // Bases URL (EXE Stub)
 var baseExeStub = server[2] + "/InstallerManager/getinstaller?filename=";
@@ -250,8 +280,13 @@ var base = server[0] + "/" + distributor[0] + "/" + developer[0] + "/";
 var gameNameTitle = "Game Name Title Here";
 var gameNameWebpage = "game-name-here";
 var gameNamePackage = "gamenamehere";
+var firstLetter = "";// Used for AM Instant Links (/pc/s/sample-game/sample-game.rfs)
 var cid = "00000000000000000000000000000000";// Content ID
+//var cid = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF";// Content ID
+
+// Installation ID is also known as "gameid"
 var iid = "00000000000000000000000000000000";// Installation ID
+//var iid = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF";// Installation ID
 
 var licenseType = 2; // ActiveMark License Type (Accepted Values are 1 or 2)
 
@@ -274,6 +309,8 @@ var linkRGAUnlimited = "";
 var linkRGSFree = "";
 var linkRGSFull = "";
 var linkRFS = "";
+var linkRFSIndex = "";
+var linkRFSAmInstant = "";
 var linkDMGLegacy = "";
 var linkDMGNew = "";
 var linkOriginVuln = "http://origin.gamehouse.com/gameconsole/";
@@ -299,6 +336,8 @@ var btnHijackAcid = "dl_now_button_acid";
 var btnHijackAdvanced = "dl_now_button_advanced";
 var btnHijackEXE = "dl_now_button_exe";
 var btnHijackRFS = "dl_now_button_rfs";
+var btnHijackRFSIndex = "dl_now_button_rfs_index";
+var btnHijackRFSAmInstant = "dl_now_button_rfs_am_instant";
 var btnHijackRGALang = "dl_now_button_rga_lang";
 var btnHijackRGANoLang = "dl_now_button_rga_no_lang";
 var btnHijackRGALegacy = "dl_now_button_rga_legacy";
@@ -317,6 +356,8 @@ var linkStatusLicense;
 var linkStatusAdvanced;
 var linkStatusEXE;
 var linkStatusRFS;
+var linkStatusRFSIndex;
+var linkStatusRFSAmInstant;
 var linkStatusRGALang;
 var linkStatusRGANoLang;
 var linkStatusRGALegacy;
@@ -413,6 +454,9 @@ function getGameName(){
 	gameNamePackage = gameNamePackage.replace("#", "");
 	gameNamePackage = gameNamePackage.replace("!", "");
 	gameNamePackage = gameNamePackage.replace("&", "");
+	
+	// Get First Letter of Game Name
+	firstLetter = gameNameWebpage.charAt(0);
 }
 
 // Get Installation ID From Stub
@@ -449,6 +493,9 @@ function checkPlatinum(){
 	
 	// Game Links Tested OK (1st Letter Only)
 	// 12-labours-of-hercules-iv-mother-nature-platinum-edition >> 12laboursofherculesivmnpe
+	
+	// 2Check
+	// http://games-dl.gamehouse.com/zylom/ghmigration/redemptioncemeterysotlpe/1ed705a76fd6c4c49bf1cdff78d61649-redemptioncemeterysotlpe.rfs
 	
 	if (gameNameTitle.search("platinumedition") != "platinumedition") {
 	   isPlatinum = 1;
@@ -676,6 +723,13 @@ function createLinksRFS() {
 	// Samples
 	// igtslotsendoftherainbowcollection >> igtslotsendoftherainbowcollect
 	linkRFS = server[0] + "/" + distributor[0] + "/" + developer[0] + "/" + gameNamePackage + "/" + cid + "-" + gameNamePackage + "." + ext[2];
+	
+	// AM Instant
+	linkRFSAmInstant = server[0] + path[14] + firstLetter + "/" + gameNameWebpage + "/" + gameNameWebpage + "." + ext[2];
+	
+	// AM Instant RFS Index Files
+	linkRFSIndex = server[18] + path[14] + firstLetter + "/" + gameNameWebpage + "/" + gameNameWebpage + "." + ext[8];
+	
 	//checkLink(linkRFS);
 }
 
@@ -961,6 +1015,8 @@ function buildNewButtons() {
 	// Create New Buttons From Hijack Clone
 	cloneElement(btnHijack, btnHijackEXE);// Create an EXE File Button From Hijack Clone
 	cloneElement(btnHijack, btnHijackRFS);// Create an RFS File Button From Hijack Clone
+	cloneElement(btnHijack, btnHijackRFSIndex);// Create an RFS Index File Button From Hijack Clone
+	cloneElement(btnHijack, btnHijackRFSAmInstant);// Create an AM Instant RFS File Button From Hijack Clone
 	cloneElement(btnHijack, btnHijackDMGLegacy);// Create an DMG Legacy File Button From Hijack Clone
 	cloneElement(btnHijack, btnHijackDMGNew);// Create an DMG AMAC File Button From Hijack Clone
 	cloneElement(btnHijack, btnHijackRGANoLang);// Create an RGA v4.x Without Language File Button From Hijack Clone
@@ -972,10 +1028,12 @@ function buildNewButtons() {
 	cloneElement(btnHijack, btnHijackRGSFull);// Create an RGS Full File Button From Hijack Clone
 	//cloneElement(btnHijack, btnHijackAdvanced);// Create an Advanced Settings Button From Hijack Clone
 	cloneElement(btnHijack, btnHijackLicense);// Create a Button For License From Hijack Clone
+	cloneElement(btnHijack, btnHijackAcid);// Create an Acid Config File Button From Hijack Clone
+	//cloneElement(btnHijack, btnHijackOriginVuln);// Create a Button That redirects to a vulnerable GH server From Hijack Clone
 	
-	if (iid != "00000000000000000000000000000000") {
-		cloneElement(btnHijack, btnHijackAcid);// Create an Acid Config File Button From Hijack Clone
-	}
+	//if (iid != "00000000000000000000000000000000") {
+	//	cloneElement(btnHijack, btnHijackAcid);// Create an Acid Config File Button From Hijack Clone
+	//}
 	//cloneElement(btnHijack, btnHijackOriginVuln);// Create a Button That redirects to a vulnerable GH server From Hijack Clone
 	
 	if(advancedOptions == 1) {
@@ -1212,7 +1270,9 @@ buildNewButtons();
 
 // Set Button Properties
 setButtonProperties(btnHijackEXE, linkEXE, "EXE File", "Default Stub Installer", "#00ccFF", "#FFFFFF");
-setButtonProperties(btnHijackRFS, linkRFS, "RFS File", "New AM Package", "#FF4433", "#FFFFFF");
+setButtonProperties(btnHijackRFS, linkRFS, "RFS File", "GH AM Package", "#FF4433", "#FFFFFF");
+setButtonProperties(btnHijackRFSAmInstant, linkRFSAmInstant, "RFS File", "AM Instant PKG", "#CC4433", "#FFFFFF");
+setButtonProperties(btnHijackRFSIndex, linkRFSIndex, "RFS Index", "RFS Index", "#CC4433", "#FFFFFF");
 setButtonProperties(btnHijackDMGLegacy, linkDMGLegacy, "DMG File", "Mac Legacy", "#FFFF00", "#FFFFFF");
 setButtonProperties(btnHijackDMGNew, linkDMGNew, "DMG File", "Mac ActiveMark", "#FFFF00", "#FFFFFF");
 setButtonProperties(btnHijackRGALang, linkRGALang, "RGA File", "AM v4.x + Language", "#FF88AA", "#FFFFFF");
@@ -1223,7 +1283,7 @@ setButtonProperties(btnHijackRGAUnlimited, linkRGAUnlimited, "RGA File", "AM v2.
 setButtonProperties(btnHijackRGSFree, linkRGSFree, "RGS File", "RealArcade Free", "#9900FF", "#FFFFFF");
 setButtonProperties(btnHijackRGSFull, linkRGSFull, "RGS File", "RealArcade Full", "#9900FF", "#FFFFFF");
 //setButtonProperties(btnHijackAdvanced, linkAdvanced, "RGS File", "RealArcade Full", "#9900FF", "#FFFFFF");
-//setButtonProperties(btnHijackAcid, linkAcid, "Acid File", "Configuration File", "#99ffFF", "#FFFFFF");
+setButtonProperties(btnHijackAcid, linkAcid, "Acid File", "Configuration File", "#99ffFF", "#FFFFFF");
 setButtonProperties(btnHijackLicense, linkLicense, "License&nbsp&nbsp", "Get New AM Token", "#99ffFF", "#FFFFFF");
 //setButtonProperties(btnHijackOriginVuln, linkOriginVuln, "Surprise!", "GH Origin Server", "#22BB77", "#FFFFFF");
 
