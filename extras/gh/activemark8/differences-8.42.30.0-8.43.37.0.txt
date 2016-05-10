@@ -1,0 +1,60 @@
+
+------------------------------------------------------------------------------------------
+Changed OLD
+00C796D9  push aminstantservice.DDC554                                      "http://logging.gamehouse.com/arcade/sites.html?"
+00C9D7AA  push aminstantservice.DDE3C4                                      "ActiveMARK[R] v8.42.30 [ActiveMARK[R] R8.42]"
+00CAAEED  push aminstantservice.DDED58                                      "ActiveMARK[R] v8.42.30 [ActiveMARK[R] R8.42]"
+00CE5BDD  mov eax,dword ptr ds:[<&TlsFree>]                                 "g5lv"
+
+------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------
+Changed NEW
+00F99499  push aminstantservice-8.43.37.0.10FC554                           "http://www.gamehouse.com/gathering/insertwrd"
+00FBD3EA  push aminstantservice-8.43.37.0.10FE3C4                           "ActiveMARK[R] v8.43.37 [ActiveMARK[R] R8.43]"
+00FCABAD  push aminstantservice-8.43.37.0.10FED58                           "ActiveMARK[R] v8.43.37 [ActiveMARK[R] R8.43]"
+010061ED  mov eax,dword ptr ds:[<&TlsFree>]                                 "g5?u"
+
+------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------
+Moved OLD
+
+00C72357  push aminstantservice.DDBEC4                                      "invalid map/set<T> iterator"
+00C862CE  push aminstantservice.DDBEC4                                      "invalid map/set<T> iterator"
+00CB1E92  push aminstantservice.DDF3E4                                      "AMRFSIDX"
+00CB2457  push aminstantservice.DDBEC4                                      "invalid map/set<T> iterator"
+00CB34C7  push aminstantservice.DDBEB0                                      "map/set<T> too long"
+00CB871E  push aminstantservice.DDBEC4                                      "invalid map/set<T> iterator"
+00CD3E00  push aminstantservice.DDB608                                      "vector<T> too long"
+00CD3E8B  push aminstantservice.DDB608                                      "vector<T> too long"
+00CE8EAC  mov dword ptr ss:[ebp-8],F0000                                    L"rige)"
+------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------
+Moved NEW
+
+00F94AF2  push B0000                                                        L"rige)"
+00F95E5E  push aminstantservice-8.43.37.0.10FBEC4                           "invalid map/set<T> iterator"
+00FBAEC0  push aminstantservice-8.43.37.0.10FB608                           "vector<T> too long"
+00FBB1FB  push aminstantservice-8.43.37.0.10FB608                           "vector<T> too long"
+00FBE0A2  push aminstantservice-8.43.37.0.10FBEC4                           "invalid map/set<T> iterator"
+00FC4C77  push aminstantservice-8.43.37.0.10FBEB0                           "map/set<T> too long"
+00FD1253  push aminstantservice-8.43.37.0.10FF3D8                           "AMRFSIDX"
+00FF9377  push aminstantservice-8.43.37.0.10FBEC4                           "invalid map/set<T> iterator"
+00FFCD1E  push aminstantservice-8.43.37.0.10FBEC4                           "invalid map/set<T> iterator"
+------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------
+Added NEW
+
++00FDDF31  push aminstantservice-8.43.37.0.10FFA48                           "logname"
++00FDDFA2  push aminstantservice-8.43.37.0.10FFA50                           "component"
++00FDE012  push aminstantservice-8.43.37.0.10FFA64                           "component"
++00FDE01C  push aminstantservice-8.43.37.0.10FFA5C                           "logname"
++00FDE05A  push aminstantservice-8.43.37.0.10FFA70                           "am-%s"
++00FDE0AD  push aminstantservice-8.43.37.0.10FFA78                           "logname"
++00FDE0B7  push aminstantservice-8.43.37.0.10FFA80                           "am-generic"
++00FDE220  push aminstantservice-8.43.37.0.10FFA8C                           "application/json"
++00FDE236  push aminstantservice-8.43.37.0.10FFAA0                           "Content-Type"
+------------------------------------------------------------------------------------------
