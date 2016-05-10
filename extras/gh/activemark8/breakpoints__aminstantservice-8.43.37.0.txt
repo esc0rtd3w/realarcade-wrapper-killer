@@ -1,0 +1,25 @@
+Software  Name                              Module/Label                      State     Comment                                                                                                    
+003A93E3                                    aminstantservice.exe              Enabled   Pre Pinging???
+003A947A                                    aminstantservice.exe              Enabled   Main Server Check At Startup??
+003ACC2D                                    aminstantservice.exe              Enabled   
+003B1C84                                    aminstantservice.exe              Enabled   
+003B6A9C                                    aminstantservice.exe              Enabled   
+003B6AAD                                    aminstantservice.exe              Enabled   
+003B6AC1                                    aminstantservice.exe              Enabled   
+003B7D9A                                    aminstantservice.exe              Enabled   
+003B7DA1                                    aminstantservice.exe              Enabled   
+003B9FA8                                    aminstantservice.exe              Enabled   Start Server?? Breaks when link is clicked on GH website
+003B9FC8                                    aminstantservice.exe              Enabled   
+003BA006                                    aminstantservice.exe              Enabled   
+003BA019                                    aminstantservice.exe              Enabled   
+003BA056                                    aminstantservice.exe              Enabled   
+003BA18D                                    aminstantservice.exe              Enabled   Start Server ??
+003BA20B                                    aminstantservice.exe              Enabled   Start Server ??
+003BA2AB                                    aminstantservice.exe              Enabled   Start Server ??
+003C2604                                    aminstantservice.exe              Enabled   
+003C271B                                    aminstantservice.exe              Enabled   Game Finished???
+003C2792                                    aminstantservice.exe              Enabled   
+003C2794                                    aminstantservice.exe              Enabled   
+003CA2EC                                    aminstantservice.exe              Enabled   
+003CA2FA                                    aminstantservice.exe              Enabled   
+003CD318                                    aminstantservice.exe              Enabled   Call To AM Server??
