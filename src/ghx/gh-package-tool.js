@@ -9,7 +9,7 @@
 // @include     http://www.gamehouse.com/free-games*
 // @include     http://www.gamehouse.com/mac-games*
 // @include     http://www.gamehouse.com/member/*
-// @version     0.3.2
+// @version     0.3.3
 // @grant       none
 // ==/UserScript==
 
@@ -134,6 +134,27 @@
 // http://www.gamehouse.com/member/api/games/downloaddetails.json?amcontentid=e945fbad3cb2cd9c2531b4c9794bb81d
 // http://www.gamehouse.com/member/api/categories/all.json?type=categorybox
 
+// AM Instant JSON Files (Points To RFSINDEX Files, Basically Useless)
+// http://profiler-cdn.am.gamehouse.com/gamehouse/pc/a/alchemy/alchemy_v2.rfs.json
+
+// Check AM Instant Version
+// http://games-dl.gamehouse.com/gamehouse/activemark/aminstantservice/versions.json
+
+// Get Session ID
+// http://www.gamehouse.com/member/api/player/getsessionid.json
+
+
+// Pulled From AM Instant EXE
+// http://gamehousebeta.com
+
+
+// AM Licensing
+// Returns weird error page with STATUS=405
+// http://gamehouse.com/amlicense
+
+// Same as above but returns STATUS=999
+// http://gamehouse.com/amlicense/error
+
 // END SAMPLE URLS --------------------------------------------------------------------/
 
 
@@ -174,6 +195,7 @@ server.push("http://d.gamehouse.com");// GameHouse Download Server
 server.push("http://p.gamehouse.com");// GameHouse Download Server
 server.push("http://activemark.gamehouse.com");// GameHouse ActiveMark Server
 server.push("http://profiler-cdn.am.gamehouse.com");// New 2016 AM PC Server
+server.push("http://gamehousebeta.com");// GameHouse Beta Server??
 
 // Game Paths On Server
 var path = [];
@@ -187,11 +209,12 @@ path.push("/pub/");// Default Mac OSX DMG Path (amac-)
 path.push("/InstallerManager/getinstaller?filename=");// Default EXE Stub Path (2015/2016)
 path.push("/gamehouse/macstatic/"); // New Mac OSX DMG Path (2016)
 path.push("/dd/"); // TryMedia Download Server Path
-path.push("/gamebits/gamehouse/"); // Zylom Download Server Path
+path.push("/gamebits/gamehouse/"); // Zylom Download Server Path (SERVER 10)
 path.push("/gamebits/gamehouse/macstatic"); // Zylom Mac OSX DMG Download Server Path
 path.push("/autounlock/gettoken?gamesetid=6000&contentid="); // GameHouse ActiveMark Licensing
 path.push("/gamehouse/activemark/");// New 2016 Gamehouse ActiveMark Path (using http://games-dl.gamehouse.com)
 path.push("/gamehouse/pc/");// New 2016 Gamehouse PC Path (using http://games-dl.gamehouse.com)
+path.push("/gameconsole/games/full/");// Legacy RealArcade Full RGS Game Path
 
 // Distributor List
 var distributor = [];
@@ -264,6 +287,7 @@ ext.push("rgi");// Legacy RealArcade RGS XML Game Info
 ext.push("rgp");// Legacy RealArcade RGS XML Structured Install Info
 ext.push("mez");// Legacy RealArcade RGS XZip 2.0 Header Stub??
 ext.push("rfs.0.rfsindex");// New GH AM Instant RFS Index Files
+ext.push("json");// JSON Files used for lots of stuff
 
 // Bases URL (EXE Stub)
 var baseExeStub = server[2] + "/InstallerManager/getinstaller?filename=";
@@ -454,6 +478,10 @@ function getGameName(){
 	gameNamePackage = gameNamePackage.replace("#", "");
 	gameNamePackage = gameNamePackage.replace("!", "");
 	gameNamePackage = gameNamePackage.replace("&", "");
+	
+	gameNameWebpage = gameNamePackage.replace("#", "");
+	gameNameWebpage = gameNamePackage.replace("!", "");
+	gameNameWebpage = gameNamePackage.replace("&", "");
 	
 	// Get First Letter of Game Name
 	firstLetter = gameNameWebpage.charAt(0);
@@ -755,7 +783,7 @@ function createLinksRGA() {
 function createLinksRGS() {
 	linkRGSFree = server[1] + path[1] + gameNamePackage +  "_free." + ext[4];
 	//checkLink(linkRGSFree);
-	linkRGSFull = server[1] + path[1] + gameNamePackage +  "_full." + ext[4];
+	linkRGSFull = server[1] + path[15] + gameNamePackage +  "_full." + ext[4];
 	//checkLink(linkRGSFull);
 }
 
@@ -921,6 +949,8 @@ function forceStubPage() {
 	window.location = pathX;
 }
 
+// Force bypass of member page (not logged in)
+// Setting a cookie with "gamehouseuser=true" may work alone
 function bypassForceMemberPage() {
 	var m = window.location.pathname;
 	mp = m.replace("member/", "new-games/");
@@ -1272,7 +1302,7 @@ buildNewButtons();
 setButtonProperties(btnHijackEXE, linkEXE, "EXE File", "Default Stub Installer", "#00ccFF", "#FFFFFF");
 setButtonProperties(btnHijackRFS, linkRFS, "RFS File", "GH AM Package", "#FF4433", "#FFFFFF");
 setButtonProperties(btnHijackRFSAmInstant, linkRFSAmInstant, "RFS File", "AM Instant PKG", "#CC4433", "#FFFFFF");
-setButtonProperties(btnHijackRFSIndex, linkRFSIndex, "RFS Index", "RFS Index", "#CC4433", "#FFFFFF");
+setButtonProperties(btnHijackRFSIndex, linkRFSIndex, "RFS File", "RFS Index File", "#CC4433", "#FFFFFF");
 setButtonProperties(btnHijackDMGLegacy, linkDMGLegacy, "DMG File", "Mac Legacy", "#FFFF00", "#FFFFFF");
 setButtonProperties(btnHijackDMGNew, linkDMGNew, "DMG File", "Mac ActiveMark", "#FFFF00", "#FFFFFF");
 setButtonProperties(btnHijackRGALang, linkRGALang, "RGA File", "AM v4.x + Language", "#FF88AA", "#FFFFFF");
