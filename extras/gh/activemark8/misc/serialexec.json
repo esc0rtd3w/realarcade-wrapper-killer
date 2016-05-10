@@ -1,0 +1,4 @@
+[
+  ["oalinst.exe", "/silent"],
+  ["vcredist_x86.exe", "/quiet", "/norestart"]
+]
