@@ -1,4 +1,5 @@
 Software  Name                              Module/Label                      State     Comment                                                                                                    
+7535C41F                                    kernelbase.dll                    Enabled   Finished Downloading???
 003A93E3                                    aminstantservice.exe              Enabled   Pre Pinging???
 003A947A                                    aminstantservice.exe              Enabled   Main Server Check At Startup??
 003A94DF                                    aminstantservice.exe              Enabled   
@@ -23,10 +24,14 @@ Software  Name                              Module/Label                      St
 003C2794                                    aminstantservice.exe              Enabled   
 003CA2EC                                    aminstantservice.exe              Enabled   
 003CA2FA                                    aminstantservice.exe              Enabled   
+003CC171                                    aminstantservice.exe              Enabled   
+003CC17F                                    aminstantservice.exe              Enabled   
 003CC1BB                                    aminstantservice.exe              Enabled   Reading RFSINDEX on Server??
-003CC1C2                                    aminstantservice.exe              Enabled   Currently Downloading
+003CC1C2                                    aminstantservice.exe              Enabled   Currently Downloading / File Downloaded if No Jump???
+003CC1ED                                    aminstantservice.exe              Enabled   
 003CD318                                    aminstantservice.exe              Enabled   Call To AM Server??
 003F0001                                    aminstantservice.exe              Enabled   
 003F0030                                    aminstantservice.exe              Enabled   
 003F0046                                    aminstantservice.exe              Enabled   Member Redirect???
 003F0C1A                                    aminstantservice.exe              Enabled   
+003FB1EB                                    aminstantservice.exe              Disabled  unknown???
