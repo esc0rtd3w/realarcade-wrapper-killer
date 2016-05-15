@@ -12,7 +12,7 @@ cls
 echo Select an option from below
 echo.
 echo.
-echo 1) Execute Normally
+echo 1) Execute Normally (Must Close EXE Manually)
 echo.
 echo 2) Execute Normally Quiet (--quiet)
 echo.
