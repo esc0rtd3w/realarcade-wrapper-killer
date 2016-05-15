@@ -4,6 +4,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 
 :reset
 
+%kill% aminstantservice.exe
 
 
 :amiMenu
@@ -52,12 +53,16 @@ if errorlevel 1 goto norm
 
 %runShellWaitTerminate% %amInstantServer%
 
+%kill% aminstantservice.exe
+
 goto amiMenu
 
 
 :quiet
 
 %runShellWaitTerminate% %amInstantServerQuiet%
+
+%kill% aminstantservice.exe
 
 goto amiMenu
 
@@ -66,12 +71,16 @@ goto amiMenu
 
 %runShellWaitTerminate% %amInstantServerConsole%
 
+%kill% aminstantservice.exe
+
 goto amiMenu
 
 
 :svcrun
 
 %runShellWaitTerminate% %amInstantServerServiceRun%
+
+%kill% aminstantservice.exe
 
 goto amiMenu
 
@@ -80,12 +89,16 @@ goto amiMenu
 
 %runShellWaitTerminate% %amInstantServerWaitAmEnd%
 
+%kill% aminstantservice.exe
+
 goto amiMenu
 
 
 :upgrade
 
 %runShellWaitTerminate% %amInstantServerUpgrade%
+
+%kill% aminstantservice.exe
 
 goto amiMenu
 
@@ -94,12 +107,16 @@ goto amiMenu
 
 %runShellWaitTerminate% %amInstantServerUpgradeQuiet%
 
+%kill% aminstantservice.exe
+
 goto amiMenu
 
 
 :btt
 
 %runShellWaitTerminate% %amInstantServerBringToTop%
+
+%kill% aminstantservice.exe
 
 goto amiMenu
 
@@ -108,12 +125,16 @@ goto amiMenu
 
 %runShellWaitTerminate% %amInstantServerVersion%
 
+%kill% aminstantservice.exe
+
 goto amiMenu
 
 
 :help
 
 %runShellWaitTerminate% %amInstantServerHelp%
+
+%kill% aminstantservice.exe
 
 goto amiMenu
 
