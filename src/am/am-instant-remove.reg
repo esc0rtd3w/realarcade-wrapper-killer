@@ -1,0 +1,9 @@
+Windows Registry Editor 5.0
+
+[-HKEY_LOCAL_MACHINE\software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games]
+
+[-HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService]
+
+[-HKEY_CURRENT_USER\current\software\activeMARK\data\{2BFC4133-1C61-A3B6-3D41-EF8697FEDCDC}]
+
+[-HKEY_CURRENT_USER\current\software\ActiveMARK Software]
