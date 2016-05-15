@@ -40,7 +40,9 @@ echo.
 echo.
 echo PRESS ENTER TO EXIT THIS WINDOW.....
 echo.
-echo [W] Web Downloader  [A] Advanced Options  [S] Stub Creator  [O] Run OGM Service
+echo [A] Advanced Options   [W] Web Downloader   [S] Stub Creator
+echo.
+echo [O] Run OGM Service   [M] Run AM Instant Service
 echo.
 echo.
 
@@ -51,6 +53,8 @@ echo.
 
 set /p launchwebdl=
 
+if %launchwebdl%==M goto amiService
+if %launchwebdl%==m goto amiService
 if %launchwebdl%==w goto uradl
 if %launchwebdl%==W goto uradl
 if %launchwebdl%==a goto advOptions
@@ -108,6 +112,14 @@ goto end
 cls
 
 call "core_ogm_service.bat"
+
+goto end
+
+
+:amiService
+cls
+
+call "core_am_instant_server.bat"
 
 goto end
 
