@@ -34,8 +34,8 @@ echo 9) Version (--version)
 echo.
 echo.
 
-if %os%==XP choice /c:123456789 /d 3 /n
-if %os%==VISTA choice /c 123456789 /d 3 /n
+if %os%==XP choice /c:123456789 /n
+if %os%==VISTA choice /c 123456789 /n
 if errorlevel 9 goto version
 if errorlevel 8 goto btt
 if errorlevel 7 goto upgradeq
