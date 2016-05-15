@@ -53,9 +53,9 @@ set cid=0000000000000000000000000000000000000000
 
 :: New Menu with working options only (20160515)
 
-set baseReq=wget -S --user-agent="AmHttpGet 1.0" --header="Host: 127.0.0.1:12072" --header="Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" --header="Accept-Language: en-US,en;q=0.5" --header="Accept-Encoding: gzip, deflate" --header="Connection: keep-alive" --referer=http://www.gamehouse.com/member/ -O "%temp%\ami-request.txt" "
+set baseReq=wget -d --header="Host: localhost:12072" --header="User-Agent: AmHttpGet 1.0" --header="Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" --header="Accept-Language: en-US,en;q=0.5" --header="Accept-Encoding: gzip, deflate" --header="Referer: http://www.gamehouse.com/member/" --header="Connection: keep-alive" -O "%temp%\ami-request.txt" "
 set launch1=http://localhost:12072/v1/play.json?content_id=
-set launch2=&auth_token=0000000000000000000000000000000000000000"
+set launch2=^&auth_token=0000000000000000000000000000000000000000"
 
 set download1=http://www.gamehouse.com/member/api/games/downloaddetails.json?amcontentid=
 
