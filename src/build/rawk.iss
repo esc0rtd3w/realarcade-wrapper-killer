@@ -210,6 +210,8 @@ Source: ..\gui\uradl-x64.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwriter
 
 ;AM Instant Server
 Source: ..\am\aminstantservice.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
+Source: ..\am\am-instant-run.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\am\am-instant-remove.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 
 
 ; External System Files (Local)
