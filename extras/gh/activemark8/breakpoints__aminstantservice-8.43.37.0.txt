@@ -1,37 +1,56 @@
 Software  Name                              Module/Label                      State     Comment                                                                                                    
-7535C41F                                    kernelbase.dll                    Enabled   Finished Downloading???
-003A93E3                                    aminstantservice.exe              Enabled   Pre Pinging???
-003A947A                                    aminstantservice.exe              Enabled   Main Server Check At Startup??
-003A94DF                                    aminstantservice.exe              Enabled   
-003ACC2D                                    aminstantservice.exe              Enabled   
-003B1C84                                    aminstantservice.exe              Enabled   
-003B6A9C                                    aminstantservice.exe              Enabled   
-003B6AAD                                    aminstantservice.exe              Enabled   
-003B6AC1                                    aminstantservice.exe              Enabled   
-003B7D9A                                    aminstantservice.exe              Enabled   
-003B7DA1                                    aminstantservice.exe              Enabled   
-003B9FA8                                    aminstantservice.exe              Enabled   Start Server?? Breaks when link is clicked on GH website
-003B9FC8                                    aminstantservice.exe              Enabled   
-003BA006                                    aminstantservice.exe              Enabled   
-003BA019                                    aminstantservice.exe              Enabled   
-003BA056                                    aminstantservice.exe              Enabled   
-003BA18D                                    aminstantservice.exe              Disabled  Start Server ??
-003BA20B                                    aminstantservice.exe              Disabled  Start Server ??
-003BA2AB                                    aminstantservice.exe              Disabled  Start Server ??
-003C2604                                    aminstantservice.exe              Enabled   
-003C271B                                    aminstantservice.exe              Enabled   Game Finished???
-003C2792                                    aminstantservice.exe              Enabled   
-003C2794                                    aminstantservice.exe              Enabled   
-003CA2EC                                    aminstantservice.exe              Enabled   
-003CA2FA                                    aminstantservice.exe              Enabled   
-003CC171                                    aminstantservice.exe              Enabled   
-003CC17F                                    aminstantservice.exe              Enabled   
-003CC1BB                                    aminstantservice.exe              Enabled   Reading RFSINDEX on Server??
-003CC1C2                                    aminstantservice.exe              Enabled   Currently Downloading / File Downloaded if No Jump???
-003CC1ED                                    aminstantservice.exe              Enabled   
-003CD318                                    aminstantservice.exe              Enabled   Call To AM Server??
-003F0001                                    aminstantservice.exe              Enabled   
-003F0030                                    aminstantservice.exe              Enabled   
-003F0046                                    aminstantservice.exe              Enabled   Member Redirect???
-003F0C1A                                    aminstantservice.exe              Enabled   
-003FB1EB                                    aminstantservice.exe              Disabled  unknown???
+7556C41F                                    kernelbase.dll                    Disabled  Finished Downloading???
+01003DF6                                    aminstantservice.exe              Disabled  
+01008913                                    aminstantservice.exe              Disabled  
+010093E3                                    aminstantservice.exe              Disabled  Pre Pinging???
+0100947A                                    aminstantservice.exe              Disabled  Main Server Check At Startup??
+010094DF                                    aminstantservice.exe              Disabled  
+0100CC2D                                    aminstantservice.exe              Disabled  
+01011C84                                    aminstantservice.exe              Disabled  
+01012B90                                    aminstantservice.exe              Disabled  
+01016A9C                                    aminstantservice.exe              Disabled  
+01016AAD                                    aminstantservice.exe              Disabled  
+01016AC1                                    aminstantservice.exe              Disabled  
+01017299                                    aminstantservice.exe              Disabled  ????
+010177C0                                    aminstantservice.exe              Disabled  
+010177D6                                    aminstantservice.exe              Disabled  
+0101781A                                    aminstantservice.exe              Disabled  
+01017864                                    aminstantservice.exe              Disabled  
+01017AD5                                    aminstantservice.exe              Disabled  
+01017B24                                    aminstantservice.exe              Disabled  
+01017B53                                    aminstantservice.exe              Disabled  
+01017B86                                    aminstantservice.exe              Disabled  
+01017B92                                    aminstantservice.exe              Disabled  
+01017B99                                    aminstantservice.exe              Disabled  
+01017BDD                                    aminstantservice.exe              Disabled  
+01017C35                                    aminstantservice.exe              Disabled  
+01017C6A                                    aminstantservice.exe              Disabled  
+01017C90                                    aminstantservice.exe              Disabled  
+01017D9A                                    aminstantservice.exe              Disabled  
+01017DA1                                    aminstantservice.exe              Disabled  
+01019FA8                                    aminstantservice.exe              Disabled  Start Server?? Breaks when link is clicked on GH website
+01019FC8                                    aminstantservice.exe              Disabled  
+0101A006                                    aminstantservice.exe              Disabled  
+0101A019                                    aminstantservice.exe              Disabled  
+0101A056                                    aminstantservice.exe              Disabled  
+0101A18D                                    aminstantservice.exe              Disabled  Start Server ??
+0101A20B                                    aminstantservice.exe              Disabled  Start Server ??
+0101A238                                    aminstantservice.exe              Disabled  
+0101A2AB                                    aminstantservice.exe              Disabled  Start Server ??
+01022604                                    aminstantservice.exe              Disabled  
+0102271B                                    aminstantservice.exe              Disabled  Game Finished???
+01022792                                    aminstantservice.exe              Disabled  
+01022794                                    aminstantservice.exe              Disabled  
+0102A2EC                                    aminstantservice.exe              Disabled  
+0102A2FA                                    aminstantservice.exe              Disabled  
+0102C171                                    aminstantservice.exe              Disabled  
+0102C17F                                    aminstantservice.exe              Disabled  
+0102C1BB                                    aminstantservice.exe              Disabled  Reading RFSINDEX on Server??
+0102C1C2                                    aminstantservice.exe              Disabled  Currently Downloading / File Downloaded if No Jump???
+0102C1ED                                    aminstantservice.exe              Disabled  
+0102D318                                    aminstantservice.exe              Disabled  Call To AM Server??
+01050001                                    aminstantservice.exe              Disabled  
+01050030                                    aminstantservice.exe              Disabled  
+01050046                                    aminstantservice.exe              Disabled  Member Redirect???
+01050C1A                                    aminstantservice.exe              Disabled  
+0105B1EB                                    aminstantservice.exe              Disabled  unknown???
