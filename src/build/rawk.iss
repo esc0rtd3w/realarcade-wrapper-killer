@@ -53,6 +53,7 @@ Filename: {app}\RAunWrap.bat; WorkingDir: {app}
 ; Core Wrapper Killer Files
 Source: ..\RAunWrap.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 Source: ..\core_advanced_load_options.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_am_instant_server.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_autolaunch.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_backup.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_check_exit_status.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
@@ -205,6 +206,10 @@ Source: ..\gui\uradl.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereado
 
 ;RealArcade Downloader (64-bit)
 Source: ..\gui\uradl-x64.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
+
+
+;AM Instant Server
+Source: ..\am\aminstantservice.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
 
 
 ; External System Files (Local)
