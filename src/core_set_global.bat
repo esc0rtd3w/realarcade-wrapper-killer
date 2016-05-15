@@ -357,11 +357,16 @@ set amInstantServerQuiet="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe"
 set amInstantServerConsole="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --console
 set amInstantServerServiceRun="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --service-run
 set amInstantServerWaitAmEnd="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --wait-am-end
+set amInstantServerAutoUpgrade="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --autoupgrade
 set amInstantServerUpgrade="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --upgrade
 set amInstantServerUpgradeQuiet="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --upgrade --quiet
 set amInstantServerBringToTop="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --bring-to-top
 set amInstantServerVersion="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --version
 set amInstantServerHelp="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --help
+set amInstantServerServiceInstall="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --service-install
+set amInstantServerServiceUninstall="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --service-uninstall
+set amInstantServerServiceInstallAndStart="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --service-install-and-start
+set amInstantServerUninstall="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --uninstall
 
 
 :end
