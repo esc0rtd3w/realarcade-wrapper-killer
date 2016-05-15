@@ -42,7 +42,7 @@ echo PRESS ENTER TO EXIT THIS WINDOW.....
 echo.
 echo [A] Advanced Options   [W] Web Downloader   [S] Stub Creator
 echo.
-echo [O] Run OGM Service   [M] Run AM Instant Service
+echo [O] Run OGM Service    [M] Run AM Instant Service
 echo.
 echo.
 
