@@ -72,6 +72,9 @@ set rawkRoot=%programfiles%\unRealArcade\rawk
 set rgsinst= /m application/vnd.rn-rn_secured_installer
 set rgsloader="%ProgramFiles%\unRealArcade\temp\loader.exe"
 set rgsloader2="%ProgramFiles%\unRealArcade\temp\loader2.exe"
+set rgsloader3="%ProgramFiles%\unRealArcade\temp\loader3.exe"
+set rgsloader4="%ProgramFiles%\unRealArcade\temp\loader4.exe"
+set rgsloader5="%ProgramFiles%\unRealArcade\temp\loader5.exe"
 set rnaspoof="%ProgramFiles%\unRealArcade\temp\rnaspoof.exe"
 ::set rnaspoof=start "" /d "C:\Program Files\unRealArcade\temp" "rnaspoof.exe"
 set rnamod="%ProgramFiles%\unRealArcade\temp\rnamod.exe"
@@ -338,6 +341,27 @@ set rauninstalled=0
 :: For invalid folder selected
 set invalidFolder=0
 
+
+:: External CMD Options
+set runShellNoTerminateAndWait=cmd /k
+set runShellNoTerminate=start cmd /k
+set runShellWaitNoTerminate=start /wait cmd /k
+set runShellTerminateAndWait=cmd /c
+set runShellTerminate=start cmd /c
+set runShellWaitTerminate=start /wait cmd /c
+
+
+:: AM Instant Server
+set amInstantServer="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe"
+set amInstantServerQuiet="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --quiet
+set amInstantServerConsole="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --console
+set amInstantServerServiceRun="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --service-run
+set amInstantServerWaitAmEnd="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --wait-am-end
+set amInstantServerUpgrade="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --upgrade
+set amInstantServerUpgradeQuiet="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --upgrade --quiet
+set amInstantServerBringToTop="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --bring-to-top
+set amInstantServerVersion="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --version
+set amInstantServerHelp="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --help
 
 
 :end
