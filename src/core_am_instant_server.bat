@@ -59,17 +59,20 @@ set launch2=^&auth_token=0000000000000000000000000000000000000000"
 
 set download1=http://www.gamehouse.com/member/api/games/downloaddetails.json?amcontentid=
 
+set sessionID=http://www.gamehouse.com/member/api/player/getsessionid.json
+
 cls
 echo Current CID: %cid%
+echo.
 echo.
 echo Select an option from below
 echo.
 echo.
-echo 1) Execute Normally (Must Close EXE Manually)
+echo 1) Launch AM Micro Server
 echo.
-echo 2) Execute In Console Mode (--console)
+echo 2) Stop AM Micro Server
 echo.
-echo 3) Get Game Info
+echo 3) Get New Session ID
 echo.
 echo 4) Trigger Game Download
 echo.
@@ -80,22 +83,19 @@ echo.
 echo.
 echo C) Enter Content ID To Use
 echo.
-echo B) Go Back To Previous Menu
-echo.
 echo X) Exit
 echo.
 
-if %os%==XP choice /c:123456cbx /n
-if %os%==VISTA choice /c 123456cbx /n
+if %os%==XP choice /c:123456cx /n
+if %os%==VISTA choice /c 123456cx /n
 if errorlevel 8 goto forceExit
-if errorlevel 8 goto end
 if errorlevel 7 goto cidNew
 if errorlevel 6 goto timer
 if errorlevel 5 goto launch
 if errorlevel 4 goto download
-if errorlevel 3 goto info
-if errorlevel 2 goto console
-if errorlevel 1 goto norm
+if errorlevel 3 goto session
+if errorlevel 2 goto stop
+if errorlevel 1 goto console
 
 
 :cidNew
@@ -129,9 +129,11 @@ goto amiMenu
 goto amiMenu
 
 
-:info
+:session
 
-::%kill% aminstantservice.exe
+%baseReq%%sessionID%
+
+%runShellTerminate% "notepad.exe %temp%\ami-request.txt"
 
 goto amiMenu
 
@@ -157,6 +159,15 @@ goto amiMenu
 :timer
 
 ::%kill% aminstantservice.exe
+
+goto amiMenu
+
+
+:stop
+
+%kill% aminstantservice.exe
+%kill% aminstantservice.exe
+%kill% aminstantservice.exe
 
 goto amiMenu
 
