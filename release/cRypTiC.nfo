@@ -14,7 +14,7 @@
                      ≤≤≤                  proudly presents...
 
               
-                        RealArcade Wrapper Killer v5.4.4
+                        RealArcade Wrapper Killer v5.5
 
 
                 -[ PWNING RealNetworks/GameHouse Since 2005 ]-  
@@ -29,8 +29,8 @@
 
       Category .. [ Utility          ]   ≤›  Protection. [ RGS/RGA Trials   ]∞
       Tested by.. [ cRypTiC          ]   ±   Language..  [ English          ]
-   ∞  Packed by.. [ cRypTiC          ]   ∞   Filename .  [ c-rawk544.zip    ]∞
-      Coded by... [ cRypTiC          ]       Disks ....  [ 01 x 16MB        ]±
+   ∞  Packed by.. [ cRypTiC          ]   ∞   Filename .  [ c-rawk55.zip     ]∞
+      Coded by... [ cRypTiC          ]       Disks ....  [ 01 x 17MB        ]±
 
    ±        .  ﬂ            ‹        ∞   ‹     ‹ ﬂ           ‹       ﬂ€‹   ˛€ ‹
  ∞±≤‹  ‹€‹ ∞ €‹ ﬂ€‹‹‹ ∞∞∞ ‹€€≤‹   ﬂ  ±  ﬂ€ﬂ  ‹≤€€‹ ∞∞∞ ‹‹‹€ﬂ ‹€ ∞ ‹€‹ ﬂ€≤±∞ ﬁ€
@@ -163,29 +163,9 @@
 
 
 
-	* UPDATED: RAWK Core to v3.0.4
+	* UPDATED: RAWK Core to v3.0.5
 
-                   * Added support for AM Instant Service
-
-                   * Added "Run AM Service" To Invalid Folder Menu
-
-                   * Added The Following To AM Instant Server Options
-
-                     - Launch AM Micro Server
-
-                     - Stop AM Micro Server
-
-                     - Get New Session ID
-
-                     - Trigger Game Download
-
-                     - Remote RFS Extract
-
-                     - Launch Game
-
-                     - Change Active Content ID
-
-                   * Added 64 Bit Support For RA Player Restore
+                   * Nothing new here :(
 
 
 
@@ -203,9 +183,7 @@
 
         * UPDATED: RFS Loader v1.0.1
 
-                   * Added a default unsupported message
-
-                   * Fixed crashing from trying to launch CLI to unpack
+                   * Nothing new here :(
 
 
 
@@ -217,7 +195,7 @@
 
         * UPDATED: RA Player Mod to v1.9.4
 
-                   * Added support for 64 Bit Windows Versions
+                   * Nothing new here :(
 
                    * HTML Game Catalogs (2,283 Individual Games)
                      
@@ -427,7 +405,7 @@
 
                    --------------------------------------------------
           
-          RFS File Types: 
+          RFS v1 File Types: 
 
           RFS game installers use Content ID and Game Name to build stub names:
 
@@ -435,6 +413,21 @@
                   berichest                                        <-- Game Name
                   rfs                                              <-- File Ext
                   73945a4139e30f41362098ed1e6b19ec-berichest.rfs   <-- Combined
+
+                   --------------------------------------------------
+
+                   --------------------------------------------------
+          
+          RFS v2 AM Instant File Types: 
+
+          These are different sizes from RFSv1 and have dashes between words:
+
+                  be-richest                                       <-- Game Name
+                  rfs                                              <-- File Ext
+                  be-richest.rfs                                   <-- Combined
+
+                  be-richest.rfs.0.rfsindex                        <-- RFS Index
+                  be-richest.rfs.json                              <-- JSON File
 
                    --------------------------------------------------
 
