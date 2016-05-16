@@ -350,6 +350,9 @@ set runShellTerminateAndWait=cmd /c
 set runShellTerminate=start cmd /c
 set runShellWaitTerminate=start /wait cmd /c
 
+set runTerminate=start ""
+set runWaitTerminate=start "" /wait
+
 
 :: AM Instant Server
 set amInstantServer="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe"

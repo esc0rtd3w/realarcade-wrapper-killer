@@ -6,7 +6,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 
 %kill% aminstantservice.exe
 
-set cid=0000000000000000000000000000000000000000
+set cid=00000000000000000000000000000000
 
 
 :amiMenu
@@ -160,16 +160,13 @@ goto amiMenu
 
 %runShellTerminate% %amInstantServer%
 
-::%kill% aminstantservice.exe
-
 goto amiMenu
 
 
 :console
 
-%runShellTerminate% %amInstantServerConsole%
-
-::%kill% aminstantservice.exe
+::%runShellTerminate% %amInstantServerConsole%
+%runTerminate% %amInstantServerConsole%
 
 goto amiMenu
 
@@ -178,7 +175,7 @@ goto amiMenu
 
 %baseReq%%sessionID%
 
-%runShellTerminate% "notepad.exe %temp%\ami-request.txt"
+%runTerminate% "notepad.exe %temp%\ami-request.txt"
 
 goto amiMenu
 
@@ -187,16 +184,12 @@ goto amiMenu
 
 %runShellWaitTerminate% %baseReq%%download1%%cid%
 
-::%kill% aminstantservice.exe
-
 goto amiMenu
 
 
 :launch
 
 %runShellWaitTerminate% %baseReq%%launch1%%cid%%launch2%
-
-::%kill% aminstantservice.exe
 
 goto amiMenu
 
