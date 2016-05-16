@@ -151,17 +151,16 @@ set rawkRoot=C:\Program Files\unRealArcade\rawk
 ::-----------------------------------------------------------------------------------
 
 ::C:\\PROGRA~1\\Real\\REALAR~2\\RNArcade.exe /m application/vnd.rn-rn_secured_installer %1
-::C:\\PROGRA~1\\UNREAL~1\\LOADER\\RGSinst.exe /m application/vnd.rn-rn_secured_installer %1
 
 set rgsinst= /m application/vnd.rn-rn_secured_installer
-set rgsloader="C:\Program Files\unRealArcade\temp\loaderRGSv1.exe"
-set rgsloader2="C:\Program Files\unRealArcade\temp\loaderRGSv2.exe"
-set rgsloader3="C:\Program Files\unRealArcade\temp\loaderRGA.exe"
-set rgsloader4="C:\Program Files\unRealArcade\temp\loaderDMG.exe"
-set rgsloader5="C:\Program Files\unRealArcade\temp\loaderRFS.exe"
-set rnaspoof="C:\Program Files\unRealArcade\temp\rnaspoof.exe"
+set rgsloader="%uraRoot%\temp\loaderRGSv1.exe"
+set rgsloader2="%uraRoot%\temp\loaderRGSv2.exe"
+set rgsloader3="%uraRoot%\temp\loaderRGA.exe"
+set rgsloader4="%uraRoot%\temp\loaderDMG.exe"
+set rgsloader5="%uraRoot%\temp\loaderRFS.exe"
+set rnaspoof="%uraRoot%\temp\rnaspoof.exe"
 ::set rnaspoof=start "" /d "C:\Program Files\unRealArcade\temp" "rnaspoof.exe"
-set rnamod="C:\Program Files\unRealArcade\temp\rnamod.exe"
+set rnamod="%uraRoot%\temp\rnamod.exe"
 
 
 ::-----------------------------------------------------------------------------------
