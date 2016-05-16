@@ -6,6 +6,51 @@ RealArcade Wrapper Killer Version History From NFO Files
 
 
 
+v5.4.4
+----------
+
+        * UPDATED: RAWK Core to v3.0.4
+
+                   * Added support for AM Instant Service
+
+                   * Added "Run AM Service" To Invalid Folder Menu
+
+                   * Added The Following To AM Instant Server Options
+
+                     - Launch AM Micro Server
+
+                     - Stop AM Micro Server
+
+                     - Get New Session ID
+
+                     - Trigger Game Download
+
+                     - Remote RFS Extract
+
+                     - Launch Game
+
+                     - Change Active Content ID
+
+                   * Added 64 Bit Support For RA Player Restore
+
+
+
+        * UPDATED: RFS Loader v1.0.1
+
+                   * Added a default unsupported message
+
+                   * Fixed crashing from trying to launch CLI to unpack
+
+
+
+        * UPDATED: RA Player Mod to v1.9.4
+
+                   * Added support for 64 Bit Windows Versions
+
+                   * HTML Game Catalogs (2,283 Individual Games)
+
+
+
 v5.4.3
 ----------
 
