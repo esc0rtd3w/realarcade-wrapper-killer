@@ -11,7 +11,7 @@ set rawkver=5.5
 
 
 ::-----------------------------------------------------------------------------------
-:: This is the MAIN CUSTOM RGS LOADER silent installer (added 20110106)
+:: This is the MAIN CUSTOM LOADER SECTION silent installer (added 20110106)
 ::-----------------------------------------------------------------------------------
 
 :: Old v1.0 RGS Loader
