@@ -219,6 +219,7 @@ Source: ..\loaders\loaderRFS\am\am-instant-remove.reg; DestDir: {app}; Attribs: 
 ;Source: ..\sys32\choice.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 ;Source: ..\sys32\color.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 ;Source: ..\sys32\cocolor.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
+;Source: ..\sys32\ctext.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 ;Source: ..\sys32\filver32.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 ;Source: ..\sys32\wait.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 ;Source: ..\sys32\gpatch.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
@@ -232,6 +233,7 @@ Source: ..\loaders\loaderRFS\am\am-instant-remove.reg; DestDir: {app}; Attribs: 
 ;Source: ..\sys32\XZipSfx.dll; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 ;Source: ..\sys32\subfile.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 ;Source: ..\sys32\inject.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
+;Source: ..\sys32\nop.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 ;Source: ..\sys32\now.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 ;Source: ..\sys32\dummy.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 ;Source: ..\sys32\setlevel.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
@@ -252,6 +254,7 @@ Source: ..\loaders\loaderRFS\am\am-instant-remove.reg; DestDir: {app}; Attribs: 
 Source: ..\sys32\choice.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
 Source: ..\sys32\color.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
 Source: ..\sys32\cocolor.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
+Source: ..\sys32\ctext.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
 Source: ..\sys32\filver32.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
 Source: ..\sys32\wait.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
 Source: ..\sys32\gpatch.exe; DestDir: {sys}; Flags: overwritereadonly
@@ -265,6 +268,7 @@ Source: ..\sys32\GPInstaller.dll; DestDir: {sys}; Flags: overwritereadonly
 Source: ..\sys32\XZipSfx.dll; DestDir: {sys}; Flags: overwritereadonly
 Source: ..\sys32\subfile.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 Source: ..\sys32\inject.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\nop.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 Source: ..\sys32\now.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 Source: ..\sys32\dummy.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 Source: ..\sys32\setlevel.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
