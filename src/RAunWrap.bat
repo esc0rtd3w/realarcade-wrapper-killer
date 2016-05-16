@@ -16,33 +16,33 @@ set rawkver=5.5
 
 :: Old v1.0 RGS Loader
 ::%rgsloader%
-"%ProgramFiles%\unRealArcade\temp\loader.exe"
-::regedit /s "%ProgramFiles%\unRealArcade\loader\setRGS.reg"
+"C:\Program Files\unRealArcade\temp\loader.exe"
+::regedit /s "C:\Program Files\unRealArcade\loader\setRGS.reg"
 
 :: New v2.0 RGS Loader
 ::%rgsloader2%
-"%ProgramFiles%\unRealArcade\temp\loader2.exe"
-regedit /s "%ProgramFiles%\unRealArcade\loader2\setRGS.reg"
+"C:\Program Files\unRealArcade\temp\loader2.exe"
+regedit /s "C:\Program Files\unRealArcade\loader2\setRGS.reg"
 
 :: New RGA Loader
 ::%rgsloader3%
-"%ProgramFiles%\unRealArcade\temp\loader3.exe"
-regedit /s "%ProgramFiles%\unRealArcade\loader3\setRGA.reg"
+"C:\Program Files\unRealArcade\temp\loader3.exe"
+regedit /s "C:\Program Files\unRealArcade\loader3\setRGA.reg"
 
 :: New DMG Loader
 ::%rgsloader4%
-"%ProgramFiles%\unRealArcade\temp\loader4.exe"
-regedit /s "%ProgramFiles%\unRealArcade\loader4\setDMG.reg"
+"C:\Program Files\unRealArcade\temp\loader4.exe"
+regedit /s "C:\Program Files\unRealArcade\loader4\setDMG.reg"
 
 :: New RFS Loader
 ::%rgsloader5%
-"%ProgramFiles%\unRealArcade\temp\loader5.exe"
-regedit /s "%ProgramFiles%\unRealArcade\loader5\setRFS.reg"
+"C:\Program Files\unRealArcade\temp\loader5.exe"
+regedit /s "C:\Program Files\unRealArcade\loader5\setRFS.reg"
 
 ::-----------------------------------------------------------------------------------
 :: Using ORIGINAL RealArcade Uninstaller (added 20110221)
 ::--------------------------------------------------------
-"%ProgramFiles%\unRealArcade\temp\rnuninst.exe"
+"C:\Program Files\unRealArcade\temp\rnuninst.exe"
 
 
 :: RA uninstall set to "0" before restart0 
@@ -190,7 +190,7 @@ call "core_set_global.bat"
 :: Comment to disable.....obviously ;) 
 ::-----------------------------------------------------------------------------------
 
-if exist "%ProgramFiles%\Real\RealArcade\RNArcade.exe" (
+if exist "C:\Program Files\Real\RealArcade\RNArcade.exe" (
 cls
 %kill% "RNArcade.exe"
 cls

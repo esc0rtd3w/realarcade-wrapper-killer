@@ -12,20 +12,104 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Setting Global Variables
 ::-----------------------------------------------------------------------------------
 
 ::-----------------------------------------------------------------------------------
+::System Paths
+::-----------------------------------------------------------------------------------
+
+:: Common OS Paths
+set pf=%systemdrive%\Program Files
+set cf=%systemdrive%\Program Files\Common Files
+set pf64=%systemdrive%\Program Files (x86)
+set cf64=%systemdrive%\Program Files (x86)\Common Files
+set pd=%ProgramData%
+set pdxp=%UserProfile%\Application Data\
+set adl=%LocalAppData%
+set adll=%SystemDrive%%HomePath%\AppData\LocalLow
+set adr=%AppData%
+set au=%SystemDrive%\All Users
+set auxp=%systemdrive%\Documents and Settings\All Users
+set cu=%UserProfile%
+set cuxp=%userprofile%\Application Data
+set win=%windir%
+set sys32=%windir%\system32
+set sysprofile=%windir%\system32\config\systemprofile
+set userdir=%userprofile%
+set cookies=%AppData%\Microsoft\Windows\Cookies
+
+:: Temp Paths
+set temp1=%tempGlobal%
+set temp2=%systemdrive%\Temp
+set temp3=%windir%\Temp
+set temp4=%windir%\system32\config\systemprofile\AppData\Local\Temp
+set tempInit=%tempGlobal%
+set tempDirectory=%tempInit%
+set tempSys=%windir%\TEMP
+
+:: Desktop Paths
+set deskau=%public%\Desktop
+set deskcu=%SystemDrive%%HomePath%\Desktop
+
+:: Start Menu Paths
+set startau=%systemdrive%\Users\All Users\Microsoft\Windows\Start Menu\Programs
+set startcu=%AppData%\Microsoft\Windows\Start Menu\Programs
+
+:: Documents Paths
+set docsau=%Public%\Documents
+set docscu=%UserProfile%\Documents
+
+:: Misc paths used in backup routine (may be unreferenced)
+set user=%UserProfile%
+set appdata2=%user%\AppData
+
+:: Default Common User Paths
+set contacts=%UserProfile%\Contacts
+set desktop=%UserProfile%\Desktop
+set mydownloads=%UserProfile%\Downloads
+set favorites=%UserProfile%\Favorites
+set links=%UserProfile%\Links
+set mydocuments=%UserProfile%\My Documents
+set mymusic=%UserProfile%\My Music
+set mypictures=%UserProfile%\My Pictures
+set myvideos=%UserProfile%\My Videos
+set savedgames=%UserProfile%\Saved Games
+set searches=%UserProfile%\Searches
+
+:: Alternate Default Common User Paths
+set documents=%UserProfile%\Documents
+set downloads=%UserProfile%\Downloads
+set pictures=%UserProfile%\Pictures
+set music=%UserProfile%\Music
+set videos=%UserProfile%\Videos
+
+:: System User Paths
+set sysUserRoot=%windir%\system32\config\systemprofile
+set sysUserAppData=%windir%\system32\config\systemprofile\AppData
+set sysUserAppDataLocal=%windir%\system32\config\systemprofile\AppData\Local
+set sysUserAppDataLocalLow=%windir%\system32\config\systemprofile\AppData\LocalLow
+set sysUserAppDataRoaming=%windir%\system32\config\systemprofile\AppData\Roaming
+set sysUserDesktop=%windir%\system32\config\systemprofile\Desktop
+set sysUserDocuments=%windir%\system32\config\systemprofile\Documents
+set sysUserDownloads=%windir%\system32\config\systemprofile\Downloads
+set sysUserFavorites=%windir%\system32\config\systemprofile\Favorites
+set sysUserMusic=%windir%\system32\config\systemprofile\Music
+set sysUserPictures=%windir%\system32\config\systemprofile\Pictures
+set sysUserVideos=%windir%\system32\config\systemprofile\Videos
+
+
+::-----------------------------------------------------------------------------------
 ::RA Player Folder
 ::-----------------------------------------------------------------------------------
 
-set raroot=%programfiles%\Real\RealArcade
-set catroot=%programfiles%\Real\RealArcade\catalog
-set dbroot=%programfiles%\Real\RealArcade\db
-set htmlroot=%programfiles%\Real\RealArcade\Html
-set rashort=%programfiles%\Real\RealArcade\rawk_unwrapped
-set raexec="%programfiles%\Real\RealArcade\RNArcade.exe"
+set raroot=C:\Program Files\Real\RealArcade
+set catroot=C:\Program Files\Real\RealArcade\catalog
+set dbroot=C:\Program Files\Real\RealArcade\db
+set htmlroot=C:\Program Files\Real\RealArcade\Html
+set rashort=C:\Program Files\Real\RealArcade\rawk_unwrapped
+set raexec="C:\Program Files\Real\RealArcade\RNArcade.exe"
 set raexec2=RNArcade.exe
-::set rauninst="%programfiles%\Real\RealArcade\Update\rnuninst.exe" "RealNetworks|RealArcade|1.2"
-::set rauninst="%programfiles%\unRealArcade\rnuninst\rnuninst.exe" "RealNetworks|RealArcade|1.2"
-set rauninst="%programfiles%\unRealArcade\rnuninst\dokill.lnk"
-set rasetup="%programfiles%\Real\RealArcade\Setup\setup_rac.exe"
+::set rauninst="C:\Program Files\Real\RealArcade\Update\rnuninst.exe" "RealNetworks|RealArcade|1.2"
+::set rauninst="C:\Program Files\unRealArcade\rnuninst\rnuninst.exe" "RealNetworks|RealArcade|1.2"
+set rauninst="C:\Program Files\unRealArcade\rnuninst\dokill.lnk"
+set rasetup="C:\Program Files\Real\RealArcade\Setup\setup_rac.exe"
 
 ::-----------------------------------------------------------------------------------
 ::Catalog Specific 
@@ -58,9 +142,9 @@ set rgsroot=http://games-dl2.real.com/gameconsole/games/demorgses
 ::URA and RAWK Custom
 ::-----------------------------------------------------------------------------------
 
-set uraRoot=%programfiles%\unRealArcade
-set uraStubRoot=%programfiles%\unRealArcade\stubs
-set rawkRoot=%programfiles%\unRealArcade\rawk
+set uraRoot=C:\Program Files\unRealArcade
+set uraStubRoot=C:\Program Files\unRealArcade\stubs
+set rawkRoot=C:\Program Files\unRealArcade\rawk
 
 ::-----------------------------------------------------------------------------------
 ::Portable RGS Loader Specific
@@ -70,14 +154,14 @@ set rawkRoot=%programfiles%\unRealArcade\rawk
 ::C:\\PROGRA~1\\UNREAL~1\\LOADER\\RGSinst.exe /m application/vnd.rn-rn_secured_installer %1
 
 set rgsinst= /m application/vnd.rn-rn_secured_installer
-set rgsloader="%ProgramFiles%\unRealArcade\temp\loader.exe"
-set rgsloader2="%ProgramFiles%\unRealArcade\temp\loader2.exe"
-set rgsloader3="%ProgramFiles%\unRealArcade\temp\loader3.exe"
-set rgsloader4="%ProgramFiles%\unRealArcade\temp\loader4.exe"
-set rgsloader5="%ProgramFiles%\unRealArcade\temp\loader5.exe"
-set rnaspoof="%ProgramFiles%\unRealArcade\temp\rnaspoof.exe"
+set rgsloader="C:\Program Files\unRealArcade\temp\loader.exe"
+set rgsloader2="C:\Program Files\unRealArcade\temp\loader2.exe"
+set rgsloader3="C:\Program Files\unRealArcade\temp\loader3.exe"
+set rgsloader4="C:\Program Files\unRealArcade\temp\loader4.exe"
+set rgsloader5="C:\Program Files\unRealArcade\temp\loader5.exe"
+set rnaspoof="C:\Program Files\unRealArcade\temp\rnaspoof.exe"
 ::set rnaspoof=start "" /d "C:\Program Files\unRealArcade\temp" "rnaspoof.exe"
-set rnamod="%ProgramFiles%\unRealArcade\temp\rnamod.exe"
+set rnamod="C:\Program Files\unRealArcade\temp\rnamod.exe"
 
 
 ::-----------------------------------------------------------------------------------
@@ -94,10 +178,10 @@ set rauninstall=0
 set launchwebdl=0
 
 :: Link to loader with autolaunch
-set webdlpath="%ProgramFiles%\unRealArcade\temp\uradl.exe"
+set webdlpath="C:\Program Files\unRealArcade\temp\uradl.exe"
 
 :: Link to actual web downloader exe
-set webdlpath_loader="%ProgramFiles%\unRealArcade\uradl\uradl.exe"
+set webdlpath_loader="C:\Program Files\unRealArcade\uradl\uradl.exe"
 
 
 ::-----------------------------------------------------------------------------------
@@ -147,12 +231,57 @@ set msgcfg=Please wait while the RealArcade software is configured...
 ::Commonly used folder paths
 ::-----------------------------------------------------------------------------------
 
-set savepathad=%appdata%
-set savepathpd=%programdata%
+set savepathad=%adr%
+set savepathpd=%pd%
 
 ::-----------------------------------------------------------------------------------
 ::Set Windows OS Version
 ::-----------------------------------------------------------------------------------
+
+:: Check Architecture Bits
+set bits=x86
+if not exist "C:\Program Files (x86)" set bits=x86
+if exist "C:\Program Files (x86)" set bits=x64
+if not exist "%windir%\SysWOW64" set bits=x86
+if "%PROCESSOR_ARCHITECTURE%"=="AMD64" set bits=x64
+
+:: Check common OS versions
+ver | find "5.1"
+if %errorlevel%==0 set os=xp
+ver | find "6.0"
+if %errorlevel%==0 set os=vista
+ver | find "6.1"
+if %errorlevel%==0 set os=win7
+ver | find "6.2"
+if %errorlevel%==0 set os=win8
+ver | find "6.3"
+if %errorlevel%==0 set os=win81
+ver | find "6.4"
+if %errorlevel%==0 set os=win10
+
+:: This is the new versioning for Windows 10 (Started sometime in 2015/2016)
+ver | find "10."
+if %errorlevel%==0 set os=win10
+ver | find "10.0"
+if %errorlevel%==0 set os=win10
+ver | find "10.1"
+if %errorlevel%==0 set os=win10
+ver | find "10.2"
+if %errorlevel%==0 set os=win10
+ver | find "10.3"
+if %errorlevel%==0 set os=win10
+ver | find "10.4"
+if %errorlevel%==0 set os=win10
+ver | find "10.5"
+if %errorlevel%==0 set os=win10
+ver | find "10.6"
+if %errorlevel%==0 set os=win10
+ver | find "10.7"
+if %errorlevel%==0 set os=win10
+ver | find "10.8"
+if %errorlevel%==0 set os=win10
+ver | find "10.9"
+if %errorlevel%==0 set os=win10
 
 ver | find "Version 5.1" >nul
 if errorlevel 0 set os=XP
@@ -268,7 +397,7 @@ set custom_patches=0
 :: Set local Wrapper Killer variables (added 20131019)
 ::-----------------------------------------------------------------------------------
 
-::set rawkLaunch="%ProgramFiles%\unRealArcade\rawk.exe"
+::set rawkLaunch="C:\Program Files\unRealArcade\rawk.exe"
 set rawkLaunch="C:\Program Files\unRealArcade\rawk.exe"
 set rawkDump="C:\Program Files\unRealArcade\rawk\dump"
 set rawkLaunchCLI="C:\Program Files\unRealArcade\rawk\dump\{app}\*"
@@ -355,24 +484,24 @@ set runWaitTerminate=start "" /wait
 
 
 :: AM Instant Server
-set amInstantServer="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe"
-set amInstantServerQuiet="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --quiet
-set amInstantServerConsole="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --console
-set amInstantServerServiceRun="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --service-run
-set amInstantServerWaitAmEnd="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --wait-am-end
-set amInstantServerAutoUpgrade="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --autoupgrade
-set amInstantServerUpgrade="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --upgrade
-set amInstantServerUpgradeQuiet="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --upgrade --quiet
-set amInstantServerBringToTop="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --bring-to-top
-set amInstantServerVersion="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --version
-set amInstantServerHelp="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --help
-set amInstantServerServiceInstall="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --service-install
-set amInstantServerServiceUninstall="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --service-uninstall
-set amInstantServerServiceInstallAndStart="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --service-install-and-start
-set amInstantServerUninstall="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --uninstall
+set amInstantServer="C:\Program Files\unRealArcade\temp\aminstantservice.exe"
+set amInstantServerQuiet="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --quiet
+set amInstantServerConsole="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --console
+set amInstantServerServiceRun="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --service-run
+set amInstantServerWaitAmEnd="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --wait-am-end
+set amInstantServerAutoUpgrade="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --autoupgrade
+set amInstantServerUpgrade="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --upgrade
+set amInstantServerUpgradeQuiet="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --upgrade --quiet
+set amInstantServerBringToTop="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --bring-to-top
+set amInstantServerVersion="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --version
+set amInstantServerHelp="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --help
+set amInstantServerServiceInstall="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --service-install
+set amInstantServerServiceUninstall="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --service-uninstall
+set amInstantServerServiceInstallAndStart="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --service-install-and-start
+set amInstantServerUninstall="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --uninstall
 
 :: ActiveMark Paths
-set amInstantAppPath=%ProgramData%\activeMARK\instant\apps
+set amInstantAppPath=%pd%\activeMARK\instant\apps
 
 :: Remote GameHouse Player
 set amInstantRemotePlayer=http://games-dl.gamehouse.com/gamehouse/activemark/aminstantservice/GameHouse_GamePlayer.exe

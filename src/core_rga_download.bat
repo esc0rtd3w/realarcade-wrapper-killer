@@ -6,7 +6,7 @@ color 0e
 
 set ie="C:\Program Files\Internet Explorer\iexplore.exe"
 set firefox="C:\Program Files\Mozilla Firefox\firefox.exe"
-set chrome="%userprofile%\AppData\Local\Google\Chrome\Application\chrome.exe"
+set chrome="%adl%\Google\Chrome\Application\chrome.exe"
 set ghsearch=http://www.gamehouse.com/search-results?q=
 
 

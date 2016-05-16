@@ -5,7 +5,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Custom RFS Loader +-^~`+
 ::This is the MAIN CUSTOM RFS LOADER silent installer
 ::-----------------------------------------------------------------------------------
 
-"%ProgramFiles%\unRealArcade\temp\loader4.exe"
+"C:\Program Files\unRealArcade\temp\loader4.exe"
 
 ::-----------------------------------------------------------------------------------
 ::This is the MAIN CUSTOM RGS LOADER MENU

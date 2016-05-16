@@ -10,7 +10,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Configuring RA Player +-
 :: Temporarily bypassing check of RNArcade.exe (added 20130611)
 
 ::if exist %raexec% goto killra
-if exist "%programfiles%\Real\RealArcade\RNArcade.exe" goto killra
+if exist "C:\Program Files\Real\RealArcade\RNArcade.exe" goto killra
 
 ::if not exist %raexec% echo The RealArcade software is NOT installed!
 goto norna
@@ -18,9 +18,9 @@ goto norna
 
 :killra
 cls
-if exist "%programfiles%\Real\RealArcade\RNArcade.exe" echo The Wrapper Killer has detected an installation of the RealArcade software!
+if exist "C:\Program Files\Real\RealArcade\RNArcade.exe" echo The Wrapper Killer has detected an installation of the RealArcade software!
 
-if not exist "%programfiles%\Real\RealArcade\RNArcade.exe" echo.
+if not exist "C:\Program Files\Real\RealArcade\RNArcade.exe" echo.
 
 echo.
 echo Press (U) to UNINSTALL the RealArcade software
@@ -85,8 +85,8 @@ echo.
 set rip=1
 
 ::%rauninst%
-::"%programfiles%\Real\RealArcade\Update\rnuninst.exe" "RealNetworks|RealArcade|1.2"
-"%programfiles%\unRealArcade\rnuninst\dokill.lnk"
+::"C:\Program Files\Real\RealArcade\Update\rnuninst.exe" "RealNetworks|RealArcade|1.2"
+"C:\Program Files\unRealArcade\rnuninst\dokill.lnk"
 
 
 :: Auto click through below
@@ -106,7 +106,7 @@ goto end
 
 :restoreRNA
 
-"%ProgramFiles%\unRealArcade\temp\rnarestore.exe"
+"C:\Program Files\unRealArcade\temp\rnarestore.exe"
 
 goto end
 
@@ -114,7 +114,7 @@ goto end
 
 :modRNA
 
-"%ProgramFiles%\unRealArcade\temp\rnamod.exe"
+"C:\Program Files\unRealArcade\temp\rnamod.exe"
 
 goto end
 

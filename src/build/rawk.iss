@@ -42,7 +42,7 @@ Filename: {app}\RAunWrap.bat; WorkingDir: {app}
 
 ; Embed the Wrapper Killer itself (this is so it can be launched after game extraction locally)
 ; This must be built without embed and then place that built file in \embed\ and rebuild with embed on
-;Source: ..\_release\embed\rawk.exe; DestDir: {pf}\unRealArcade; Flags: overwritereadonly
+;Source: ..\_release\embed\rawk.exe; DestDir: "C:\Program Files\unRealArcade"; Flags: overwritereadonly
 
 
 ; Copy the source EXE to unRealArcade folder (this obsoletes the above EMBED duplication)
@@ -62,7 +62,7 @@ Source: ..\core_check_local_rawk.bat; DestDir: {app}; Attribs: hidden; Flags: de
 Source: ..\core_check_non_rgs.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_clear_cache.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 Source: ..\core_config_ra_player.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_delete_backups.bat; DestDir: {app}; Attribs: Hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_delete_backups.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_patch_demo1.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_patch_demo3.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_patch_demo3a.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
@@ -75,7 +75,7 @@ Source: ..\core_demo_type_override.bat; DestDir: {app}; Attribs: hidden; Flags: 
 Source: ..\core_disable_old_reg_hacks.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_dlc.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_dupe_check.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_errorhandling.bat; DestDir: {app}; Attribs: Hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_errorhandling.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_cheats.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 Source: ..\core_check_exit_status.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_clean_exe.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
@@ -99,13 +99,13 @@ Source: ..\core_handler.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafter
 Source: ..\core_hotkey.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_ini_output.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_invalid_folder.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_invalid_folder_gh.bat; DestDir: {app}; Attribs: Hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_invalid_folder_zylom.bat; DestDir: {app}; Attribs: Hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_licensing_activemark.bat; DestDir: {app}; Attribs: Hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_licensing_gamehouse.bat; DestDir: {app}; Attribs: Hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_licensing_main.bat; DestDir: {app}; Attribs: Hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_licensing_realarcade.bat; DestDir: {app}; Attribs: Hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_licensing_zylom.bat; DestDir: {app}; Attribs: Hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_invalid_folder_gh.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_invalid_folder_zylom.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_licensing_activemark.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_licensing_gamehouse.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_licensing_main.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_licensing_realarcade.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_licensing_zylom.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_mods.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 Source: ..\core_multicmp.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_multiple_exe_check.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
@@ -124,9 +124,9 @@ Source: ..\core_rfs_stub_info.bat; DestDir: {app}; Attribs: hidden; Flags: delet
 Source: ..\core_rga_download.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_stub_creator.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 ;Source: ..\core_rga_stub_creator.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-;Source: ..\core_rga_stub_creator.bat; DestDir: {pf}\unRealArcade\rga\; Flags: overwritereadonly
+;Source: ..\core_rga_stub_creator.bat; DestDir: "C:\Program Files\unRealArcade\rga\"; Flags: overwritereadonly
 Source: ..\core_rga_stub_info.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-;Source: ..\core_rga_stub_info.bat; DestDir: {pf}\unRealArcade\rga\; Flags: overwritereadonly
+;Source: ..\core_rga_stub_info.bat; DestDir: "C:\Program Files\unRealArcade\rga\"; Flags: overwritereadonly
 
 ; Mac OSX DMG Support
 Source: ..\core_dmg_loader.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
@@ -173,43 +173,43 @@ Source: ..\demoZY.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstal
 Source: ..\rawkreset.bat; DestDir: {sys}; Flags: overwritereadonly
 
 ; RGS Loader v1.0
-Source: ..\loaders\loader.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
+Source: ..\loaders\loader.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
 ; RGS Loader v2.0
-Source: ..\loaders\loader2.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
+Source: ..\loaders\loader2.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
 ; RGA Loader Files
-Source: ..\loaders\loader3.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
+Source: ..\loaders\loader3.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
 ; DMG Loader Files
-Source: ..\loaders\loader4.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
+Source: ..\loaders\loader4.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
 ; RFS Loader Files
-Source: ..\loaders\loader5.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
+Source: ..\loaders\loader5.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
 ;RealArcade Spoofer
-Source: ..\rna\rnaspoof.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
+Source: ..\rna\rnaspoof.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
 ;RealArcade Mods
-Source: ..\rna\rnamod.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
-Source: ..\rna\rnamod-x64.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
+Source: ..\rna\rnamod.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\rna\rnamod-x64.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
 ;RealArcade Restore RA Player
-Source: ..\rna\rnarestore.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
-Source: ..\rna\rnarestore-x64.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
+Source: ..\rna\rnarestore.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\rna\rnarestore-x64.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
 ;RealArcade Uninstaller
-Source: ..\rna\rnuninst.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
+Source: ..\rna\rnuninst.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
 ;RealArcade Downloader
-Source: ..\gui\uradl.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
+Source: ..\gui\uradl.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
 ;RealArcade Downloader (64-bit)
-Source: ..\gui\uradl-x64.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
+Source: ..\gui\uradl-x64.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
 
 ;AM Instant Server
-Source: ..\am\aminstantservice.exe; DestDir: {pf}\unRealArcade\temp; Flags: overwritereadonly
+Source: ..\am\aminstantservice.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 Source: ..\am\am-instant-run.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\am\am-instant-remove.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 
@@ -324,40 +324,40 @@ Source: ..\sys32\fcmd\QtGui4.dll; DestDir: {sys}; Attribs: System; Flags: onlyif
 
 
 ; RealArcade Root Folder Overwrite (BLANK DATABASE)
-;Source: ..\%RAroot%\db\GAMEFIND.DBF.1; DestDir: {pf}\Real\RealArcade\db; Flags: deleteafterinstall overwritereadonly
-;Source: ..\%RAroot%\db\GAMEFIND.DBF.2; DestDir: {pf}\Real\RealArcade\db; Flags: deleteafterinstall overwritereadonly
-;Source: ..\%RAroot%\db\GAMEFIND.DBF.3; DestDir: {pf}\Real\RealArcade\db; Flags: deleteafterinstall overwritereadonly
+;Source: ..\%RAroot%\db\GAMEFIND.DBF.1; DestDir: "C:\Program Files\Real\RealArcade\db"; Flags: deleteafterinstall overwritereadonly
+;Source: ..\%RAroot%\db\GAMEFIND.DBF.2; DestDir: "C:\Program Files\Real\RealArcade\db"; Flags: deleteafterinstall overwritereadonly
+;Source: ..\%RAroot%\db\GAMEFIND.DBF.3; DestDir: "C:\Program Files\Real\RealArcade\db"; Flags: deleteafterinstall overwritereadonly
 
 ; RealArcade Root Folder Overwrite (CONFIG AND CATALOG GUI)
-;Source: ..\%RAroot%\myaccount.ini; DestDir: {pf}\Real\RealArcade; Flags: overwritereadonly
-;Source: ..\%RAroot%\myaccount.ini.ORIG; DestDir: {pf}\Real\RealArcade; Flags: onlyifdoesntexist
-;Source: ..\%RAroot%\catalog\arcade.cfg; DestDir: {pf}\Real\RealArcade\catalog; Flags: overwritereadonly
-;Source: ..\%RAroot%\catalog\arcade.cfg.ORIG; DestDir: {pf}\Real\RealArcade\catalog; Flags: onlyifdoesntexist
-;Source: ..\%RAroot%\catalog\coreinfo.cfg; DestDir: {pf}\Real\RealArcade\catalog; Flags: overwritereadonly
-;Source: ..\%RAroot%\catalog\coreinfo.cfg.ORIG; DestDir: {pf}\Real\RealArcade\catalog; Flags: onlyifdoesntexist
+;Source: ..\%RAroot%\myaccount.ini; DestDir: "C:\Program Files\Real\RealArcade"; Flags: overwritereadonly
+;Source: ..\%RAroot%\myaccount.ini.ORIG; DestDir: "C:\Program Files\Real\RealArcade"; Flags: onlyifdoesntexist
+;Source: ..\%RAroot%\catalog\arcade.cfg; DestDir: "C:\Program Files\Real\RealArcade\catalog"; Flags: overwritereadonly
+;Source: ..\%RAroot%\catalog\arcade.cfg.ORIG; DestDir: "C:\Program Files\Real\RealArcade\catalog"; Flags: onlyifdoesntexist
+;Source: ..\%RAroot%\catalog\coreinfo.cfg; DestDir: "C:\Program Files\Real\RealArcade\catalog"; Flags: overwritereadonly
+;Source: ..\%RAroot%\catalog\coreinfo.cfg.ORIG; DestDir: "C:\Program Files\Real\RealArcade\catalog"; Flags: onlyifdoesntexist
 
 ; RealArcade Root Folder Overwrite (HTML FILES GUI)
-;Source: ..\%RAroot%\Html\rawk_ra1_direct_dl.htm; DestDir: {pf}\Real\RealArcade\Html; Attribs: readonly; Flags: overwritereadonly
-;Source: ..\%RAroot%\Html\rawk_unwrapped_games.htm; DestDir: {pf}\Real\RealArcade\Html; Attribs: readonly; Flags: overwritereadonly
-;Source: ..\%RAroot%\Html\rawk_launch.htm; DestDir: {pf}\Real\RealArcade\Html; Attribs: readonly; Flags: overwritereadonly
-;Source: ..\%RAroot%\Html\quicklaunch_plus_rawk_ra1_direct_dl.htm; DestDir: {pf}\Real\RealArcade\Html; Attribs: readonly; Flags: overwritereadonly
-;Source: ..\%RAroot%\Html\quicklaunch_plus_rawk_unwrapped_games.htm; DestDir: {pf}\Real\RealArcade\Html; Attribs: readonly; Flags: overwritereadonly
-;Source: ..\%RAroot%\Html\quicklaunch_plus_rawk_launch.htm; DestDir: {pf}\Real\RealArcade\Html; Attribs: readonly; Flags: overwritereadonly
-;Source: ..\%RAroot%\Html\rawkrgsdl.css; DestDir: {pf}\Real\RealArcade\Html; Flags: overwritereadonly
-;Source: ..\%RAroot%\Html\rawkdlgradient.png; DestDir: {pf}\Real\RealArcade\Html; Flags: overwritereadonly
-;Source: ..\%RAroot%\Html\rawkextracterror.png; DestDir: {pf}\Real\RealArcade\Html; Flags: overwritereadonly
-;Source: ..\%RAroot%\Html\rawkremovedfromservers.png; DestDir: {pf}\Real\RealArcade\Html; Flags: overwritereadonly
-;Source: ..\%RAroot%\Html\rawkdlavailable.png; DestDir: {pf}\Real\RealArcade\Html; Flags: overwritereadonly
-;Source: ..\%RAroot%\Html\rawkdldiscontinued.png; DestDir: {pf}\Real\RealArcade\Html; Flags: overwritereadonly
-;Source: ..\%RAroot%\Html\rawkdlgradient.png; DestDir: {pf}\Real\RealArcade\Html; Flags: overwritereadonly
-;Source: ..\%RAroot%\Html\rawkdlraghmerger.png; DestDir: {pf}\Real\RealArcade\Html; Flags: overwritereadonly
-;Source: ..\%RAroot%\Html\rawkdlrgaonly.png; DestDir: {pf}\Real\RealArcade\Html; Flags: overwritereadonly
-;Source: ..\%RAroot%\Html\rawk_launch.js; DestDir: {pf}\Real\RealArcade\Html; Flags: overwritereadonly; Attribs: readonly
-;Source: ..\%RAroot%\Html\rawk_logo.png; DestDir: {pf}\Real\RealArcade\Html; Flags: overwritereadonly
+;Source: ..\%RAroot%\Html\rawk_ra1_direct_dl.htm; DestDir: "C:\Program Files\Real\RealArcade\Html; Attribs: readonly"; Flags: overwritereadonly
+;Source: ..\%RAroot%\Html\rawk_unwrapped_games.htm; DestDir: "C:\Program Files\Real\RealArcade\Html; Attribs: readonly"; Flags: overwritereadonly
+;Source: ..\%RAroot%\Html\rawk_launch.htm; DestDir: "C:\Program Files\Real\RealArcade\Html; Attribs: readonly"; Flags: overwritereadonly
+;Source: ..\%RAroot%\Html\quicklaunch_plus_rawk_ra1_direct_dl.htm; DestDir: "C:\Program Files\Real\RealArcade\Html; Attribs: readonly"; Flags: overwritereadonly
+;Source: ..\%RAroot%\Html\quicklaunch_plus_rawk_unwrapped_games.htm; DestDir: "C:\Program Files\Real\RealArcade\Html; Attribs: readonly"; Flags: overwritereadonly
+;Source: ..\%RAroot%\Html\quicklaunch_plus_rawk_launch.htm; DestDir: "C:\Program Files\Real\RealArcade\Html; Attribs: readonly"; Flags: overwritereadonly
+;Source: ..\%RAroot%\Html\rawkrgsdl.css; DestDir: "C:\Program Files\Real\RealArcade\Html"; Flags: overwritereadonly
+;Source: ..\%RAroot%\Html\rawkdlgradient.png; DestDir: "C:\Program Files\Real\RealArcade\Html"; Flags: overwritereadonly
+;Source: ..\%RAroot%\Html\rawkextracterror.png; DestDir: "C:\Program Files\Real\RealArcade\Html"; Flags: overwritereadonly
+;Source: ..\%RAroot%\Html\rawkremovedfromservers.png; DestDir: "C:\Program Files\Real\RealArcade\Html"; Flags: overwritereadonly
+;Source: ..\%RAroot%\Html\rawkdlavailable.png; DestDir: "C:\Program Files\Real\RealArcade\Html"; Flags: overwritereadonly
+;Source: ..\%RAroot%\Html\rawkdldiscontinued.png; DestDir: "C:\Program Files\Real\RealArcade\Html"; Flags: overwritereadonly
+;Source: ..\%RAroot%\Html\rawkdlgradient.png; DestDir: "C:\Program Files\Real\RealArcade\Html"; Flags: overwritereadonly
+;Source: ..\%RAroot%\Html\rawkdlraghmerger.png; DestDir: "C:\Program Files\Real\RealArcade\Html"; Flags: overwritereadonly
+;Source: ..\%RAroot%\Html\rawkdlrgaonly.png; DestDir: "C:\Program Files\Real\RealArcade\Html"; Flags: overwritereadonly
+;Source: ..\%RAroot%\Html\rawk_launch.js; DestDir: "C:\Program Files\Real\RealArcade\Html"; Flags: overwritereadonly; Attribs: readonly
+;Source: ..\%RAroot%\Html\rawk_logo.png; DestDir: "C:\Program Files\Real\RealArcade\Html"; Flags: overwritereadonly
 
 ; RealArcade Root Folder Overwrite (GUI IMAGES)
-;Source: ..\%RAroot%\img\137.png; DestDir: {pf}\Real\RealArcade\img; Flags: overwritereadonly
-;Source: ..\%RAroot%\img\137.png.ORIG; DestDir: {pf}\Real\RealArcade\img; Flags: onlyifdoesntexist
+;Source: ..\%RAroot%\img\137.png; DestDir: "C:\Program Files\Real\RealArcade\img"; Flags: overwritereadonly
+;Source: ..\%RAroot%\img\137.png.ORIG; DestDir: "C:\Program Files\Real\RealArcade\img"; Flags: onlyifdoesntexist
 
 ; Registry Access
 Source: ..\registry\rawk_licensekeys.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
@@ -369,14 +369,14 @@ Source: ..\registry\rgs_open_default.reg; DestDir: {app}; Attribs: hidden; Flags
 
 ; Config Files
 Source: ..\config\launch.ini; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
-Source: ..\config\rawkdb.ini; DestDir: {pf}\unRealArcade\rawk\temp; Flags: overwritereadonly deleteafterinstall
-Source: ..\config\dlc.ini; DestDir: {pf}\unRealArcade\rawk\temp; Flags: overwritereadonly deleteafterinstall
-Source: ..\config\patch.ini; DestDir: {pf}\unRealArcade\rawk\temp; Flags: overwritereadonly deleteafterinstall
-Source: ..\config\rnarcade.ini; DestDir: {pf}\unRealArcade\rawk\temp; Flags: overwritereadonly deleteafterinstall
-Source: ..\config\servers.ini; DestDir: {pf}\unRealArcade\rawk\temp; Flags: overwritereadonly deleteafterinstall
-Source: ..\config\stub.ini; DestDir: {pf}\unRealArcade\rawk\temp; Flags: overwritereadonly deleteafterinstall
-Source: ..\config\ghdb.ini; DestDir: {pf}\unRealArcade\rawk\temp; Flags: overwritereadonly deleteafterinstall
-Source: ..\config\zydb.ini; DestDir: {pf}\unRealArcade\rawk\temp; Flags: overwritereadonly deleteafterinstall
+Source: ..\config\rawkdb.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
+Source: ..\config\dlc.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
+Source: ..\config\patch.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
+Source: ..\config\rnarcade.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
+Source: ..\config\servers.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
+Source: ..\config\stub.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
+Source: ..\config\ghdb.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
+Source: ..\config\zydb.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
 
 ; External VBS Scripts
 Source: ..\scripts\filesize.vbs; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
@@ -403,13 +403,13 @@ Source: ..\ghx\n7-89-o9-3r-4t-r9\profile.ini; DestDir: {commonappdata}\n7-89-o9-
 Source: ..\ghx\92-75-56-55-p5-r9\profile.ini; DestDir: {commonappdata}\92-75-56-55-p5-r9; Flags: overwritereadonly
 ;Source: ..\ghx\ghx_reset.cmd; DestDir: {commonappdata}\n7-89-o9-3r-4t-r9\; Flags: overwritereadonly
 ;Source: ..\ghx\ghx_reset.cmd; DestDir: {commonappdata}\92-75-56-55-p5-r9\; Flags: overwritereadonly
-Source: ..\ghx\ghx_reset.cmd; DestDir: {pf}\unRealArcade\ghx\; Flags: overwritereadonly
-Source: ..\ghx\ghx_reset_dev.cmd; DestDir: {pf}\unRealArcade\ghx\; Flags: overwritereadonly
-Source: ..\ghx\ghx_install.cmd; DestDir: {pf}\unRealArcade\ghx\; Flags: overwritereadonly
+Source: ..\ghx\ghx_reset.cmd; DestDir: "C:\Program Files\unRealArcade\ghx\"; Flags: overwritereadonly
+Source: ..\ghx\ghx_reset_dev.cmd; DestDir: "C:\Program Files\unRealArcade\ghx\"; Flags: overwritereadonly
+Source: ..\ghx\ghx_install.cmd; DestDir: "C:\Program Files\unRealArcade\ghx\"; Flags: overwritereadonly
 Source: ..\ghx\WINDOWS\win.ini; DestDir: {win}; Flags: overwritereadonly
-Source: ..\ghx\ghx_countdown.txt; DestDir: {pf}\unRealArcade\ghx\; Flags: overwritereadonly
-Source: ..\ghx\ghx_countdown_minutes_values.txt; DestDir: {pf}\unRealArcade\ghx\; Flags: overwritereadonly
-Source: ..\ghx\ghx_countdown_values_only.txt; DestDir: {pf}\unRealArcade\ghx\; Flags: overwritereadonly
+Source: ..\ghx\ghx_countdown.txt; DestDir: "C:\Program Files\unRealArcade\ghx\"; Flags: overwritereadonly
+Source: ..\ghx\ghx_countdown_minutes_values.txt; DestDir: "C:\Program Files\unRealArcade\ghx\"; Flags: overwritereadonly
+Source: ..\ghx\ghx_countdown_values_only.txt; DestDir: "C:\Program Files\unRealArcade\ghx\"; Flags: overwritereadonly
 
 ; Misc Files
 Source: ..\fixes\all\cliptemp.txt; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
@@ -441,13 +441,13 @@ Source: ..\ogm\rgaQuery.json; DestDir: {app}; Flags: deleteafterinstall overwrit
 
 
 [Dirs]
-Name: {app}\cheats; attribs: hidden; Flags: deleteafterinstall
-Name: {app}\patches; attribs: hidden; Flags: deleteafterinstall
+Name: {app}\cheats; Attribs: hidden; Flags: deleteafterinstall
+Name: {app}\patches; Attribs: hidden; Flags: deleteafterinstall
 Name: {commonappdata}\n7-89-o9-3r-4t-r9
 Name: {commonappdata}\92-75-56-55-p5-r9
-Name: {pf}\unRealArcade\ghx
-;Name: {pf}\unRealArcade\ghx\timer
-;Name: {pf}\unRealArcade\rga
+;Name: {pf32}\unRealArcade\ghx
+;Name: {pf32}\unRealArcade\ghx\timer
+;Name: {pf32}\unRealArcade\rga
 
 
 [Registry]
