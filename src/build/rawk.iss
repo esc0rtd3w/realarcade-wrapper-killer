@@ -35,7 +35,7 @@ VersionInfoProductVersion=5.5.0
 
 
 [Run]
-Filename: {app}\RAunWrap.bat; WorkingDir: {app}
+Filename: {app}\RAunWrap.cmd; WorkingDir: {app}
 
 
 [Files]
@@ -51,126 +51,126 @@ Filename: {app}\RAunWrap.bat; WorkingDir: {app}
 
 
 ; Core Wrapper Killer Files
-Source: ..\RAunWrap.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\core_advanced_load_options.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_am_instant_server.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_autolaunch.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_backup.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_check_exit_status.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_check_ini_ver.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_check_local_rawk.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_check_non_rgs.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_clear_cache.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\core_config_ra_player.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_delete_backups.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_patch_demo1.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_patch_demo3.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_patch_demo3a.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_patch_demo4.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_patch_demo4a.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_patch_demoGH.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_patch_demoZY.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_demo_type_check.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_demo_type_override.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_disable_old_reg_hacks.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_dlc.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_dupe_check.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_errorhandling.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_cheats.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\core_check_exit_status.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_clean_exe.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_clean_gh.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_clean_zy.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_clean_ini.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_clean_main.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\core_clean_pre.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_debug.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\core_file_rename.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_game_patch.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_gamehouse_hotkey.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_gamehouse_main.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_gamehouse_override.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_game_unpacked_ok.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_get_demo_type.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_get_stats.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\RAunWrap.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_advanced_load_options.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_am_instant_server.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_autolaunch.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_backup.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_check_exit_status.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_check_ini_ver.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_check_local_rawk.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_check_non_rgs.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_clear_cache.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_config_ra_player.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_delete_backups.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_patch_demo1.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_patch_demo3.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_patch_demo3a.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_patch_demo4.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_patch_demo4a.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_patch_demoGH.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_patch_demoZY.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_demo_type_check.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_demo_type_override.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_disable_old_reg_hacks.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_dlc.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_dupe_check.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_errorhandling.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_cheats.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_check_exit_status.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_clean_exe.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_clean_gh.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_clean_zy.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_clean_ini.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_clean_main.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_clean_pre.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_debug.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_file_rename.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_game_patch.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_gamehouse_hotkey.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_gamehouse_main.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_gamehouse_override.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_game_unpacked_ok.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_get_demo_type.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_get_stats.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_ghx_install.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_ghx_reset.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_handler.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_hotkey.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_ini_output.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_invalid_folder.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_invalid_folder_gh.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_invalid_folder_zylom.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_licensing_activemark.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_licensing_gamehouse.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_licensing_main.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_licensing_realarcade.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_licensing_zylom.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_mods.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\core_multicmp.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_multiple_exe_check.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_no_game_found.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_no_var_fix.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_override.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_patch_ra_db.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_pdf_fix.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_rawk_cleanup_loader.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_rawk_cleanup_root.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_rawk_unpack.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_reg_check.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_reg_set.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_restore.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_rfs_stub_info.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_rga_download.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_stub_creator.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-;Source: ..\core_rga_stub_creator.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-;Source: ..\core_rga_stub_creator.bat; DestDir: "C:\Program Files\unRealArcade\rga\"; Flags: overwritereadonly
-Source: ..\core_rga_stub_info.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-;Source: ..\core_rga_stub_info.bat; DestDir: "C:\Program Files\unRealArcade\rga\"; Flags: overwritereadonly
+Source: ..\core_handler.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_hotkey.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_ini_output.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_invalid_folder.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_invalid_folder_gh.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_invalid_folder_zylom.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_licensing_activemark.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_licensing_gamehouse.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_licensing_main.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_licensing_realarcade.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_licensing_zylom.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_mods.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_multicmp.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_multiple_exe_check.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_no_game_found.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_no_var_fix.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_override.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_patch_ra_db.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_pdf_fix.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_rawk_cleanup_loader.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_rawk_cleanup_root.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_rawk_unpack.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_reg_check.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_reg_set.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_restore.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_rfs_stub_info.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_rga_download.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_stub_creator.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+;Source: ..\core_rga_stub_creator.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+;Source: ..\core_rga_stub_creator.cmd; DestDir: "C:\Program Files\unRealArcade\rga\"; Flags: overwritereadonly
+Source: ..\core_rga_stub_info.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+;Source: ..\core_rga_stub_info.cmd; DestDir: "C:\Program Files\unRealArcade\rga\"; Flags: overwritereadonly
 
 ; Mac OSX DMG Support
-Source: ..\core_dmg_loader.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_dmg_loader.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 
 ; Newer 2015/2016 RFS Activemark Support
-Source: ..\core_rfs_loader.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_rfs_loader.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 
-Source: ..\core_rgs_loader.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_rgs_pre_release.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_rgs_unlock_license.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_rnarcade_spoofer.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_set_breakpoint.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_set_def_ini.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_set_global.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_shortcut_demo1.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\core_shortcut_demo1a.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_shortcut_demo2.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\core_shortcut_demo3.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\core_shortcut_demo4.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\core_shortcut_demo5.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\core_shortcut_demo6.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\core_shortcut_manual.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\core_shortcut_demoGH.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\core_shortcut_demoZY.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\core_show_stats.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_sonic_multi_fix.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_unsupported.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_update.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_zylom_hotkey.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_zylom_main.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\core_zylom_override.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\demo1.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\demo1a.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\demo2.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\demo3.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\demo3a.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\demo4.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\demo4a.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\demo5.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\demo6.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\demoM.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\demoGH.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\demoZY.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\rawkreset.bat; DestDir: {sys}; Flags: overwritereadonly
+Source: ..\core_rgs_loader.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_rgs_pre_release.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_rgs_unlock_license.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_rnarcade_spoofer.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_set_breakpoint.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_set_def_ini.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_set_global.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_shortcut_demo1.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_shortcut_demo1a.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_shortcut_demo2.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_shortcut_demo3.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_shortcut_demo4.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_shortcut_demo5.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_shortcut_demo6.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_shortcut_manual.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_shortcut_demoGH.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_shortcut_demoZY.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_show_stats.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_sonic_multi_fix.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_unsupported.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_update.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_zylom_hotkey.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_zylom_main.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_zylom_override.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\demo1.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\demo1a.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\demo2.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\demo3.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\demo3a.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\demo4.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\demo4a.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\demo5.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\demo6.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\demoM.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\demoGH.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\demoZY.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\rawkreset.cmd; DestDir: {sys}; Flags: overwritereadonly
 
 ; RGS Loader v1.0
 Source: ..\loaders\loaderRGSv1.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
@@ -434,7 +434,7 @@ Source: ..\stub\stub-chunk6.bin; DestDir: {app}; Attribs: hidden; Flags: deletea
 
 ; OGM Service
 Source: ..\ogm\ogmservice.exe; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\core_ogm_service.bat; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_ogm_service.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 ;Source: ..\rga\ogm\ogmservice-run.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
 Source: ..\ogm\rgaQuery.url; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
 Source: ..\ogm\rgaQuery.json; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
