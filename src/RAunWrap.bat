@@ -16,28 +16,28 @@ set rawkver=5.5
 
 :: Old v1.0 RGS Loader
 ::%rgsloader%
-"C:\Program Files\unRealArcade\temp\loader.exe"
-::regedit /s "C:\Program Files\unRealArcade\loader\setRGS.reg"
+"C:\Program Files\unRealArcade\temp\loaderRGSv1.exe"
+::regedit /s "C:\Program Files\unRealArcade\loaderRGSv1\setRGS.reg"
 
 :: New v2.0 RGS Loader
 ::%rgsloader2%
-"C:\Program Files\unRealArcade\temp\loader2.exe"
-regedit /s "C:\Program Files\unRealArcade\loader2\setRGS.reg"
+"C:\Program Files\unRealArcade\temp\loaderRGSv2.exe"
+regedit /s "C:\Program Files\unRealArcade\loaderRGSv2\setRGS.reg"
 
 :: New RGA Loader
 ::%rgsloader3%
-"C:\Program Files\unRealArcade\temp\loader3.exe"
-regedit /s "C:\Program Files\unRealArcade\loader3\setRGA.reg"
+"C:\Program Files\unRealArcade\temp\loaderRGA.exe"
+regedit /s "C:\Program Files\unRealArcade\loaderRGA\setRGA.reg"
 
 :: New DMG Loader
 ::%rgsloader4%
-"C:\Program Files\unRealArcade\temp\loader4.exe"
-regedit /s "C:\Program Files\unRealArcade\loader4\setDMG.reg"
+"C:\Program Files\unRealArcade\temp\loaderDMG.exe"
+regedit /s "C:\Program Files\unRealArcade\loaderDMG\setDMG.reg"
 
 :: New RFS Loader
 ::%rgsloader5%
-"C:\Program Files\unRealArcade\temp\loader5.exe"
-regedit /s "C:\Program Files\unRealArcade\loader5\setRFS.reg"
+"C:\Program Files\unRealArcade\temp\loaderRFS.exe"
+regedit /s "C:\Program Files\unRealArcade\loaderRFS\setRFS.reg"
 
 ::-----------------------------------------------------------------------------------
 :: Using ORIGINAL RealArcade Uninstaller (added 20110221)

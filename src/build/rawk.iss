@@ -173,19 +173,19 @@ Source: ..\demoZY.bat; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstal
 Source: ..\rawkreset.bat; DestDir: {sys}; Flags: overwritereadonly
 
 ; RGS Loader v1.0
-Source: ..\loaders\loader.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\loaders\loaderRGSv1.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
 ; RGS Loader v2.0
-Source: ..\loaders\loader2.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\loaders\loaderRGSv2.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
 ; RGA Loader Files
-Source: ..\loaders\loader3.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\loaders\loaderRGA.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
 ; DMG Loader Files
-Source: ..\loaders\loader4.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\loaders\loaderDMG.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
 ; RFS Loader Files
-Source: ..\loaders\loader5.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\loaders\loaderRFS.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
 ;RealArcade Spoofer
 Source: ..\rna\rnaspoof.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
@@ -209,9 +209,9 @@ Source: ..\gui\uradl-x64.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Fla
 
 
 ;AM Instant Server
-Source: ..\loaders\loader5\am\aminstantservice.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
-Source: ..\loaders\loader5\am\am-instant-run.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\loaders\loader5\am\am-instant-remove.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\loaders\loaderRFS\am\aminstantservice.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\loaders\loaderRFS\am\am-instant-run.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\loaders\loaderRFS\am\am-instant-remove.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 
 
 ; External System Files (Local)
@@ -451,21 +451,21 @@ Name: {commonappdata}\92-75-56-55-p5-r9
 
 
 [Registry]
-; RGA Loader v1.0 (loader1)
+; RGA Loader v1.0
 ; This loader has been superceded by the 2.0 loader.
 ; The 2.0 loader can load this version from itself if issues arise
 ;Root: HKCR; SubKey: RealArcade.rgs.1; ValueType: string; ValueName: ; ValueData: RealArcade Secured Installer
 ;Root: HKCR; SubKey: RealArcade.rgs.1; ValueType: binary; ValueName: EditFlags; ValueData: 00 00 01 00
-;Root: HKCR; SubKey: RealArcade.rgs.1\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER\RGSinst.exe,0
-;Root: HKCR; SubKey: RealArcade.rgs.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER\RGSinst.exe /m application/vnd.rn-rn_secured_installer %1
+;Root: HKCR; SubKey: RealArcade.rgs.1\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER~4\RGSinst.exe,0
+;Root: HKCR; SubKey: RealArcade.rgs.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER~4\RGSinst.exe /m application/vnd.rn-rn_secured_installer %1
 
-; RGS Loader v2.0 (loader2)
+; RGS Loader v2.0
 Root: HKCR; SubKey: RealArcade.rgs.1; ValueName: @; ValueData: """RGS Loader Install Package"""; ValueType: string
 Root: HKCR; SubKey: RealArcade.rgs.1; ValueName: EditFlags; ValueData: 00 00 01 00; ValueType: binary
-Root: HKCR; SubKey: RealArcade.rgs.1\DefaultIcon; ValueName: @; ValueData: C:\\PROGRA~1\\UNREAL~1\\LOADER2\\RGSinst.exe,0; ValueType: string
-Root: HKCR; SubKey: RealArcade.rgs.1\shell\open\command; ValueName: @; ValueData: """C:\\PROGRA~1\\UNREAL~1\\LOADER2\\RGSinst.cmd %1"""; ValueType: string
-Root: HKCR; SubKey: realarcade\DefaultIcon; ValueName: @; ValueData: C:\\PROGRA~1\\UNREAL~1\\LOADER2\\RGSinst.exe,0; ValueType: string
-Root: HKCR; SubKey: realarcade\shell\open\command; ValueName: @; ValueData: """C:\\PROGRA~1\\UNREAL~1\\LOADER2\\RGSinst.cmd %1"""; ValueType: string
+Root: HKCR; SubKey: RealArcade.rgs.1\DefaultIcon; ValueName: @; ValueData: C:\\PROGRA~1\\UNREAL~1\\LOADER~2\\RGSinst.exe,0; ValueType: string
+Root: HKCR; SubKey: RealArcade.rgs.1\shell\open\command; ValueName: @; ValueData: """C:\\PROGRA~1\\UNREAL~1\\LOADER~2\\RGSinst.cmd %1"""; ValueType: string
+Root: HKCR; SubKey: realarcade\DefaultIcon; ValueName: @; ValueData: C:\\PROGRA~1\\UNREAL~1\\LOADER~2\\RGSinst.exe,0; ValueType: string
+Root: HKCR; SubKey: realarcade\shell\open\command; ValueName: @; ValueData: """C:\\PROGRA~1\\UNREAL~1\\LOADER~2\\RGSinst.cmd %1"""; ValueType: string
 Root: HKCR; SubKey: .rgs; ValueName: Content Type; ValueData: application/vnd.rn-rn_secured_installer; ValueType: string
 Root: HKCR; SubKey: .rgs; ValueName: Content Type; ValueData: application/vnd.rn-rn_secured_installer; ValueType: string
 Root: HKCR; SubKey: .mez; ValueName: Content Type; ValueData: application/vnd.rn-rn_game_info; ValueType: string
@@ -479,30 +479,30 @@ Root: HKCR; SubKey: .rgi; ValueName: @; ValueData: """RealArcade.rgi.1"""; Value
 Root: HKCR; SubKey: .rgi; ValueName: Content Type; ValueData: """application/vnd.rn-rn_game_installer"""; ValueType: string
 
 
-; RGA Loader (loader3)
+; RGA Loader
 Root: HKCR; SubKey: RealArcade.RGA.1; ValueType: string; ValueName: ; ValueData: RGA Loader Install Package
 Root: HKCR; SubKey: RealArcade.RGA.1; ValueType: binary; ValueName: EditFlags; ValueData: 00 00 01 00
-Root: HKCR; SubKey: RealArcade.RGA.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER3\RGAinst.cmd %1
-Root: HKCR; SubKey: realarcade\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER3\RGAinst.cmd %1
+Root: HKCR; SubKey: RealArcade.RGA.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER~3\RGAinst.cmd %1
+Root: HKCR; SubKey: realarcade\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER~3\RGAinst.cmd %1
 Root: HKCR; SubKey: .RGA; ValueType: string; ValueName: ; ValueData: RealArcade.RGA.1
 Root: HKCR; SubKey: .RGA; ValueType: string; ValueName: Content Type; ValueData: application/vnd.rn-rn_secured_installer
 
-; DMG Loader (loader4)
+; DMG Loader
 Root: HKCR; SubKey: RealArcade.DMG.1; ValueType: string; ValueName: ; ValueData: GH Activemark MacOSX DMG Image
 Root: HKCR; SubKey: RealArcade.DMG.1; ValueType: binary; ValueName: EditFlags; ValueData: 00 00 01 00
-Root: HKCR; SubKey: RealArcade.DMG.1\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER4\DMGinst.ico
-Root: HKCR; SubKey: RealArcade.DMG.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER4\DMGinst.cmd %1
-Root: HKCR; SubKey: realarcade\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER4\DMGinst.ico
-Root: HKCR; SubKey: realarcade\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER4\DMGinst.cmd %1
+Root: HKCR; SubKey: RealArcade.DMG.1\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER~4\DMGinst.ico
+Root: HKCR; SubKey: RealArcade.DMG.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER~4\DMGinst.cmd %1
+Root: HKCR; SubKey: realarcade\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER~4\DMGinst.ico
+Root: HKCR; SubKey: realarcade\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER~4\DMGinst.cmd %1
 Root: HKCR; SubKey: .DMG; ValueType: string; ValueName: ; ValueData: RealArcade.DMG.1
 Root: HKCR; SubKey: .DMG; ValueType: string; ValueName: Content Type; ValueData: application/x-apple-diskimage
 
-; RFS Loader (loader5)
+; RFS Loader
 Root: HKCR; SubKey: RealArcade.RFS.1; ValueType: string; ValueName: ; ValueData: GH Activemark RFS Package
 Root: HKCR; SubKey: RealArcade.RFS.1; ValueType: binary; ValueName: EditFlags; ValueData: 00 00 01 00
-Root: HKCR; SubKey: RealArcade.RFS.1\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER5\RFSinst.ico
-Root: HKCR; SubKey: RealArcade.RFS.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER5\RFSinst.cmd %1
-Root: HKCR; SubKey: realarcade\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER5\RFSinst.ico
-Root: HKCR; SubKey: realarcade\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER5\RFSinst.cmd %1
+Root: HKCR; SubKey: RealArcade.RFS.1\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOA6C0~1\RFSinst.ico
+Root: HKCR; SubKey: RealArcade.RFS.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOA6C0~1\RFSinst.cmd %1
+Root: HKCR; SubKey: realarcade\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOA6C0~1\RFSinst.ico
+Root: HKCR; SubKey: realarcade\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOA6C0~1\RFSinst.cmd %1
 Root: HKCR; SubKey: .RFS; ValueType: string; ValueName: ; ValueData: RealArcade.RFS.1
 Root: HKCR; SubKey: .RFS; ValueType: string; ValueName: Content Type; ValueData: application/amrfspkg
