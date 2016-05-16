@@ -86,7 +86,7 @@ if not exist "c:\temp" md "c:\temp"
 
 set forceExit=0
 
-set gh_core_ver=1.0.0
+set gh_core_ver=1.0.1
 set zy_core_ver=1.0.0
 
 set ghFlag=0
