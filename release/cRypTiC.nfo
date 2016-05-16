@@ -81,6 +81,39 @@
           have been multiple iterations of RGA formats that now have
           partial support. This includes both stubs and RAR archives.
 
+        * A new service dubbed "AM Instant Service" has been found. I have
+		  been testing some things and here is what I have so far:
+		  
+		    - You must trigger game launch using the GameHouse website.
+		  
+		    - Launching the EXE directly will result in the error webpage
+			  that is embedded into the EXE, similar to the older RGA type.
+		  
+		    - There are no stubs used for these games.
+		  
+		    - A file named "GameHouse_GamePlayer.exe" is now downloaded
+			  from the GH Download Server. This file is an installer that
+			  silently installs to "Program Files" directory. The only file
+			  that is extracted is "aminstantservice.exe". The uninstaller
+			  is also present, but obviously not needed for the AM Server
+			  to work properly. This is actually a small server that runs
+			  at IP address 127.0.0.1 on port 12072. There is no protection
+			  on this file (nice one GH devs ;)), and therefore it is fairly
+			  easy to manipulate the entire game process, from query info to
+			  downloading, launching, timer control, basically all aspects.
+			  
+			- There are several EXE options that seem to not work, possibly
+			  from missing arguments or proper formatting during my testing.
+			  
+			- The default testing argument is "--console". This spawns a new
+			  CMD window with the message "Started!" displayed. This allows
+			  for launching without installing as a service or to the system.
+			  
+			- By sending special "GET" requests to the AM Micro Server, you
+			  are able to do things such as download RFS files, extract RFS
+			  files directly from GameHouse server, check installed games,
+			  uninstall games, launch games, and more.
+
         * The newest file format is RFS. Very little is known about this
           format currently. What is known, is that it is made by Activemark,
           the stubs are labeled as "ACID", and the most current version is
