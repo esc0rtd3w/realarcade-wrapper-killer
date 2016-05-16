@@ -134,6 +134,24 @@
 
                    * Added support for AM Instant Service
 
+                   * Added "Run AM Service" To Invalid Folder Menu
+
+                   * Added The Following To AM Instant Server Options
+
+                     - Launch AM Micro Server
+
+                     - Stop AM Micro Server
+
+                     - Get New Session ID
+
+                     - Trigger Game Download
+
+                     - Remote RFS Extract
+
+                     - Launch Game
+
+                     - Change Active COntent ID
+
                    * Added 64 Bit Support For RA Player Restore
 
 
