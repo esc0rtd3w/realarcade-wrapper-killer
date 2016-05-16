@@ -53,13 +53,15 @@ set cid=0000000000000000000000000000000000000000
 
 :: New Menu with working options only (20160515)
 
-set baseReq=wget -d --header="Host: localhost:12072" --header="User-Agent: AmHttpGet 1.0" --header="Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" --header="Accept-Language: en-US,en;q=0.5" --header="Accept-Encoding: gzip, deflate" --header="Referer: http://www.gamehouse.com/member/" --header="Connection: keep-alive" -O "%temp%\ami-request.txt" "
+set baseReq=wget -d --header="Host: localhost:12072" --header="User-Agent: AmHttpClient 1.0" --header="Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" --header="Accept-Language: en-US,en;q=0.5" --header="Accept-Encoding: gzip, deflate" --header="Referer: http://www.gamehouse.com/member/" --header="Origin: http://www.gamehouse.com" --header="Connection: keep-alive" -O "%temp%\ami-request.txt" "
 set launch1=http://localhost:12072/v1/play.json?content_id=
 set launch2=^&auth_token=0000000000000000000000000000000000000000"
 
 set download1=http://www.gamehouse.com/member/api/games/downloaddetails.json?amcontentid=
 
 set sessionID=http://www.gamehouse.com/member/api/player/getsessionid.json
+
+set remoteRFS=http://games-dl.gamehouse.com/gamehouse/pc/h/hoyle-official-card-games-collection/hoyle-official-card-games-collection.rfs
 
 cls
 echo Current CID: %cid%
@@ -76,9 +78,9 @@ echo 3) Get New Session ID
 echo.
 echo 4) Trigger Game Download
 echo.
-echo 5) Launch Game
+echo 5) Remote RFS Extract
 echo.
-echo 6) Reset Game Timer
+echo 6) Launch Game
 echo.
 echo.
 echo C) Enter Content ID To Use
@@ -90,8 +92,8 @@ if %os%==XP choice /c:123456cx /n
 if %os%==VISTA choice /c 123456cx /n
 if errorlevel 8 goto forceExit
 if errorlevel 7 goto cidNew
-if errorlevel 6 goto timer
-if errorlevel 5 goto launch
+if errorlevel 6 goto launch
+if errorlevel 5 goto remote
 if errorlevel 4 goto download
 if errorlevel 3 goto session
 if errorlevel 2 goto stop
@@ -156,9 +158,9 @@ goto amiMenu
 goto amiMenu
 
 
-:timer
+:remote
 
-::%kill% aminstantservice.exe
+%runShellWaitTerminate% %baseReq%%remoteRFS%
 
 goto amiMenu
 
