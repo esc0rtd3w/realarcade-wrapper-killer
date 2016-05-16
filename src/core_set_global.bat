@@ -368,5 +368,8 @@ set amInstantServerServiceUninstall="%ProgramFiles%\unRealArcade\temp\aminstants
 set amInstantServerServiceInstallAndStart="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --service-install-and-start
 set amInstantServerUninstall="%ProgramFiles%\unRealArcade\temp\aminstantservice.exe" --uninstall
 
+:: ActiveMark Paths
+set amInstantAppPath=%ProgramData%\activeMARK\instant\apps
+
 
 :end

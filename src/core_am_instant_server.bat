@@ -71,16 +71,15 @@ echo Select an option from below
 echo.
 echo.
 echo 1) Launch AM Micro Server
-echo.
 echo 2) Stop AM Micro Server
 echo.
 echo 3) Get New Session ID
 echo.
 echo 4) Trigger Game Download
-echo.
 echo 5) Remote RFS Extract
-echo.
 echo 6) Launch Game
+echo.
+echo 7) More Options
 echo.
 echo.
 echo C) Enter Content ID To Use
@@ -88,16 +87,60 @@ echo.
 echo X) Exit
 echo.
 
-if %os%==XP choice /c:123456cx /n
-if %os%==VISTA choice /c 123456cx /n
-if errorlevel 8 goto forceExit
-if errorlevel 7 goto cidNew
+if %os%==XP choice /c:1234567cx /n
+if %os%==VISTA choice /c 1234567cx /n
+if errorlevel 9 goto forceExit
+if errorlevel 8 goto cidNew
+if errorlevel 7 goto amiMenu2
 if errorlevel 6 goto launch
 if errorlevel 5 goto remote
 if errorlevel 4 goto download
 if errorlevel 3 goto session
 if errorlevel 2 goto stop
 if errorlevel 1 goto console
+
+goto end
+
+
+:amiMenu2
+
+cls
+echo Current CID: %cid%
+echo.
+echo.
+echo Select an option from below
+echo.
+echo.
+echo 1) 
+echo.
+echo 2) 
+echo.
+echo 3) 
+echo.
+echo 4) 
+echo.
+echo 5) 
+echo.
+echo 6) 
+echo.
+echo.
+echo B) Go Back
+echo.
+echo X) Exit
+echo.
+
+if %os%==XP choice /c:123456bx /n
+if %os%==VISTA choice /c 123456bx /n
+if errorlevel 8 goto forceExit
+if errorlevel 7 goto amiMenu
+if errorlevel 6 goto amiMenu2
+if errorlevel 5 goto amiMenu2
+if errorlevel 4 goto amiMenu2
+if errorlevel 3 goto amiMenu2
+if errorlevel 2 goto amiMenu2
+if errorlevel 1 goto amiMenu2
+
+goto end
 
 
 :cidNew
