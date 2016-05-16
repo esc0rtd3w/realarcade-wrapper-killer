@@ -445,9 +445,9 @@ Name: {app}\cheats; Attribs: hidden; Flags: deleteafterinstall
 Name: {app}\patches; Attribs: hidden; Flags: deleteafterinstall
 Name: {commonappdata}\n7-89-o9-3r-4t-r9
 Name: {commonappdata}\92-75-56-55-p5-r9
-;Name: {pf32}\unRealArcade\ghx
-;Name: {pf32}\unRealArcade\ghx\timer
-;Name: {pf32}\unRealArcade\rga
+;Name: "C:\Program Files\unRealArcade\ghx"
+;Name: "C:\Program Files\unRealArcade\ghx\timer"
+;Name: "C:\Program Files\unRealArcade\rga"
 
 
 [Registry]
