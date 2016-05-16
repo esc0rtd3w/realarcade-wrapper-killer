@@ -134,6 +134,7 @@ Source: ..\core_dmg_loader.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteaf
 ; Newer 2015/2016 RFS Activemark Support
 Source: ..\core_rfs_loader.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 
+Source: ..\core_rgs_game_patcher.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_rgs_loader.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_rgs_pre_release.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_rgs_unlock_license.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
