@@ -8,6 +8,9 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 
 set cid=00000000000000000000000000000000
 
+set gameNameDashes=GAMENAME
+set gameNameFirstLetter=
+
 
 :amiMenu
 
@@ -61,7 +64,8 @@ set download1=http://www.gamehouse.com/member/api/games/downloaddetails.json?amc
 
 set sessionID=http://www.gamehouse.com/member/api/player/getsessionid.json
 
-set remoteRFS=http://games-dl.gamehouse.com/gamehouse/pc/h/hoyle-official-card-games-collection/hoyle-official-card-games-collection.rfs
+:: http://games-dl.gamehouse.com/gamehouse/pc/h/hoyle-official-card-games-collection/hoyle-official-card-games-collection.rfs
+set remoteRfsBase=http://games-dl.gamehouse.com/gamehouse/pc
 
 cls
 echo Current CID: %cid%
@@ -105,17 +109,17 @@ goto end
 :amiMenu2
 
 cls
-echo Current CID: %cid%
+echo Current Game Name: %gameNameDashes%
 echo.
 echo.
 echo Select an option from below
 echo.
 echo.
-echo 1) 
+echo 1) Check Remote Version
 echo.
-echo 2) 
+echo 2) Open Default Apps Directory
 echo.
-echo 3) 
+echo 3) Set New Game Name
 echo.
 echo 4) 
 echo.
@@ -136,15 +140,14 @@ if errorlevel 7 goto amiMenu
 if errorlevel 6 goto amiMenu2
 if errorlevel 5 goto amiMenu2
 if errorlevel 4 goto amiMenu2
-if errorlevel 3 goto amiMenu2
-if errorlevel 2 goto amiMenu2
-if errorlevel 1 goto amiMenu2
+if errorlevel 3 goto setName
+if errorlevel 2 goto openApps
+if errorlevel 1 goto chkRemote
 
 goto end
 
 
 :cidNew
-
 
 cls
 echo Enter New CID and press ENTER:
@@ -175,7 +178,7 @@ goto amiMenu
 
 %baseReq%%sessionID%
 
-%runTerminate% "notepad.exe %temp%\ami-request.txt"
+%runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
 
 goto amiMenu
 
@@ -196,6 +199,7 @@ goto amiMenu
 
 :remote
 
+:: %remoteRfsBase%\%gameNameFirstLetter%\%gameNameDashes%\%gameNameDashes%.rfs
 %runShellWaitTerminate% %baseReq%%remoteRFS%
 
 goto amiMenu
@@ -208,6 +212,34 @@ goto amiMenu
 %kill% aminstantservice.exe
 
 goto amiMenu
+
+
+:setName
+
+cls
+echo Enter New Game Name and press ENTER:
+echo.
+echo.
+
+set /p gameNameDashes=
+
+goto amiMenu2
+
+
+:openApps
+
+%runShellTerminate% explorer.exe "%amInstantAppPath%"
+
+goto amiMenu2
+
+
+:chkRemote
+
+%runShellWaitTerminate% wget -O "%temp%\GameHouse_GamePlayer.exe" %amInstantRemotePlayer%
+filver32.exe "%temp%\GameHouse_GamePlayer.exe">"%temp%\amiVersion.txt"
+%runShellWaitTerminate% "notepad.exe "%temp%\amiVersion.txt"
+
+goto amiMenu2
 
 
 :forceExit

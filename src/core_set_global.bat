@@ -374,5 +374,8 @@ set amInstantServerUninstall="%ProgramFiles%\unRealArcade\temp\aminstantservice.
 :: ActiveMark Paths
 set amInstantAppPath=%ProgramData%\activeMARK\instant\apps
 
+:: Remote GameHouse Player
+set amInstantRemotePlayer=http://games-dl.gamehouse.com/gamehouse/activemark/aminstantservice/GameHouse_GamePlayer.exe
+
 
 :end
