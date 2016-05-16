@@ -69,10 +69,10 @@ set remoteRfsBase=http://games-dl.gamehouse.com/gamehouse/pc
 
 cls
 echo Current CID: %cid%
+echo Current Game Name: %gameNameDashes%
 echo.
 echo.
 echo Select an option from below
-echo.
 echo.
 echo 1) Launch AM Micro Server
 echo 2) Stop AM Micro Server
@@ -86,7 +86,7 @@ echo.
 echo 7) More Options
 echo.
 echo.
-echo C) Enter Content ID To Use
+echo C) Enter New Game Credentials
 echo.
 echo X) Exit
 echo.
@@ -94,7 +94,7 @@ echo.
 if %os%==XP choice /c:1234567cx /n
 if %os%==VISTA choice /c 1234567cx /n
 if errorlevel 9 goto forceExit
-if errorlevel 8 goto cidNew
+if errorlevel 8 goto newCreds
 if errorlevel 7 goto amiMenu2
 if errorlevel 6 goto launch
 if errorlevel 5 goto remote
@@ -109,17 +109,17 @@ goto end
 :amiMenu2
 
 cls
+echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
 echo.
 echo.
 echo Select an option from below
 echo.
-echo.
 echo 1) Check Remote Version
 echo.
 echo 2) Open Default Apps Directory
 echo.
-echo 3) Set New Game Name
+echo 3) 
 echo.
 echo 4) 
 echo.
@@ -140,21 +140,43 @@ if errorlevel 7 goto amiMenu
 if errorlevel 6 goto amiMenu2
 if errorlevel 5 goto amiMenu2
 if errorlevel 4 goto amiMenu2
-if errorlevel 3 goto setName
+if errorlevel 3 goto amiMenu2
 if errorlevel 2 goto openApps
 if errorlevel 1 goto chkRemote
 
 goto end
 
 
-:cidNew
+:newCreds
 
 cls
+echo Current CID: %cid%
+echo Current Game Name: %gameNameDashes%
+echo.
+echo.
 echo Enter New CID and press ENTER:
+echo.
+echo.
+echo *** TO KEEP EXISTING VALUE, JUST PRESS ENTER ***
 echo.
 echo.
 
 set /p cid=
+
+
+cls
+echo Current CID: %cid%
+echo Current Game Name: %gameNameDashes%
+echo.
+echo.
+echo Enter New Game Name and press ENTER:
+echo.
+echo.
+echo *** TO KEEP EXISTING VALUE, JUST PRESS ENTER ***
+echo.
+echo.
+
+set /p gameNameDashes=
 
 goto amiMenu
 
@@ -185,6 +207,14 @@ goto amiMenu
 
 :download
 
+if %cid%==00000000000000000000000000000000 (
+cls
+echo No Valid Content ID Has Been Set!
+echo.
+echo.
+pause
+goto amiMenu
+)
 %runShellWaitTerminate% %baseReq%%download1%%cid%
 
 goto amiMenu
@@ -192,12 +222,39 @@ goto amiMenu
 
 :launch
 
+if %cid%==00000000000000000000000000000000 (
+cls
+echo No Valid Content ID Has Been Set!
+echo.
+echo.
+pause
+goto amiMenu
+)
+
 %runShellWaitTerminate% %baseReq%%launch1%%cid%%launch2%
 
 goto amiMenu
 
 
 :remote
+
+if %cid%==00000000000000000000000000000000 (
+cls
+echo No Valid Content ID Has Been Set!
+echo.
+echo.
+pause
+goto amiMenu
+)
+
+if %gameNameDashes%==GAMENAME (
+cls
+echo No Valid Game Name Has Been Set!
+echo.
+echo.
+pause
+goto amiMenu
+)
 
 :: %remoteRfsBase%\%gameNameFirstLetter%\%gameNameDashes%\%gameNameDashes%.rfs
 %runShellWaitTerminate% %baseReq%%remoteRFS%
@@ -212,18 +269,6 @@ goto amiMenu
 %kill% aminstantservice.exe
 
 goto amiMenu
-
-
-:setName
-
-cls
-echo Enter New Game Name and press ENTER:
-echo.
-echo.
-
-set /p gameNameDashes=
-
-goto amiMenu2
 
 
 :openApps
