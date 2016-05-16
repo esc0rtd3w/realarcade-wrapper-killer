@@ -1,4 +1,5 @@
 @echo off
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RGS Game Patcher +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 
 
