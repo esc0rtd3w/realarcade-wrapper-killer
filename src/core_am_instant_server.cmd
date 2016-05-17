@@ -63,7 +63,8 @@ set gameNameFirstLetter=
 set outFileTemp=-O "%temp%\ami-request.txt"
 
 :: This must be rebuilt each time the game is changed
-set reqGet=/v1/install.json?result=success^&installation_title=%gameNameTitle%^&content_id=%cid%^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1
+set reqGet=0
+::set reqGet=/v1/install.json?result=success^&installation_title=%gameNameTitle%^&content_id=%cid%^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1
 
 set reqHost=--header="Host: localhost:12072"
 set reqUserAgent=--header="User-Agent: AmHttpClient 1.0"
@@ -76,7 +77,8 @@ set reqConnection=--header="Connection: keep-alive"
 
 :: Single DOUBLE QUOTE here on purpose
 set baseReq=wget -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
-set baseReq2=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set baseReq2=0
+::set baseReq2=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
 set launch1=http://localhost:12072/v1/play.json?content_id=
 set launch2=^&auth_token=0000000000000000000000000000000000000000"
@@ -87,7 +89,8 @@ set getSessionID=http://www.gamehouse.com/member/api/player/getsessionid.json
 
 :: http://games-dl.gamehouse.com/gamehouse/pc/h/hoyle-official-card-games-collection/hoyle-official-card-games-collection.rfs
 set remoteRfsBase=http://games-dl.gamehouse.com/gamehouse/pc
-set remoteRfsBase1=127.0.0.1:12072/v1/install.json?result=success&installation_title=
+
+set remoteRfsBase1=127.0.0.1:12072/v1/install.json?result=success^&installation_title=
 set remoteRfsBase2=^&content_id=
 set remoteRfsBase3=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc
 
@@ -192,9 +195,14 @@ goto end
 
 cls
 echo Rebuilding Custom GET Requests Using New Game Info....
-%waitfor% 3
-set reqGet=/v1/install.json?result=success^&installation_title=%gameNameTitle%^&content_id=%cid%^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1
-set baseReq=wget -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+::s%waitfor% 3
+set reqGet1=--header="/v1/install.json?result=success
+set reqGet2=^&installation_title=%gameNameTitle%
+set reqGet3=^&content_id=%cid%
+set reqGet4=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1"
+
+set reqGet=%reqGet1%%reqGet2%%reqGet3%%reqGet4%
+
 set baseReq2=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
 echo.
