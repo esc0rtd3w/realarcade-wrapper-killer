@@ -8,7 +8,8 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 
 set cid=00000000000000000000000000000000
 
-set gameNameDashes=GAMENAME
+set gameNameDashes=GAMENAMEHERE
+set gameNameDashes=Game Name Here
 set gameNameFirstLetter=
 
 
@@ -66,10 +67,29 @@ set sessionID=http://www.gamehouse.com/member/api/player/getsessionid.json
 
 :: http://games-dl.gamehouse.com/gamehouse/pc/h/hoyle-official-card-games-collection/hoyle-official-card-games-collection.rfs
 set remoteRfsBase=http://games-dl.gamehouse.com/gamehouse/pc
+set remoteRfsBase1=127.0.0.1:12072/v1/install.json?result=success&installation_title=
+set remoteRfsBase2=^&content_id=
+set remoteRfsBase3=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc
+
+
+:: Successful Download Request
+:: http://localhost:12072/v1/install.json?result=success&installation_title=Strike%20Solitaire&content_id=9f6a8eae6c2af6791074094b9bd8f181&rfs=http%3A%2F%2Fgames-dl.gamehouse.com%2Fgamehouse%2Fpc%2Fs%2Fstrike-solitaire%2Fstrike-solitaire.rfs
+
+:: /v1/install.json?result=success&installation_title=Strike%20Solitaire&content_id=9f6a8eae6c2af6791074094b9bd8f181&rfs=http%3A%2F%2Fgames-dl.gamehouse.com%2Fgamehouse%2Fpc%2Fs%2Fstrike-solitaire%2Fstrike-solitaire.rfs HTTP/1.1
+:: Host: localhost:12072
+:: User-Agent: AmHttpClient 1.0
+:: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+:: Accept-Language: en-US,en;q=0.5
+:: Accept-Encoding: gzip, deflate
+:: Referer: http://www.gamehouse.com/member/
+:: Origin: http://www.gamehouse.com
+:: Connection: keep-alive
+
 
 cls
 echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
+echo Current Game Title: %gameNameTitle%
 echo.
 echo.
 echo Select an option from below
@@ -83,8 +103,8 @@ echo 4) Trigger Game Download
 echo 5) Remote RFS Extract
 echo 6) Launch Game
 echo.
-echo 7) More Options
 echo.
+echo 7) More Options
 echo.
 echo C) Enter New Game Credentials
 echo.
@@ -111,6 +131,7 @@ goto end
 cls
 echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
+echo Current Game Title: %gameNameTitle%
 echo.
 echo.
 echo Select an option from below
@@ -118,14 +139,14 @@ echo.
 echo 1) Check Remote Version
 echo.
 echo 2) Open Default Apps Directory
-echo.
-echo 3) 
-echo.
-echo 4) 
-echo.
-echo 5) 
-echo.
-echo 6) 
+::echo.
+::echo 3) 
+::echo.
+::echo 4) 
+::echo.
+::echo 5) 
+::echo.
+::echo 6) 
 echo.
 echo.
 echo B) Go Back
@@ -152,6 +173,7 @@ goto end
 cls
 echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
+echo Current Game Title: %gameNameTitle%
 echo.
 echo.
 echo Enter New CID and press ENTER:
@@ -167,6 +189,7 @@ set /p cid=
 cls
 echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
+echo Current Game Title: %gameNameTitle%
 echo.
 echo.
 echo Enter New Game Name and press ENTER:
@@ -185,6 +208,21 @@ set gameNameFirstLetter=%gameNameFirstLetterTemp:~0,1%
 ::echo.
 ::echo Letter: %gameNameFirstLetter%
 ::pause
+
+cls
+echo Current CID: %cid%
+echo Current Game Name: %gameNameDashes%
+echo Current Game Title: %gameNameTitle%
+echo.
+echo.
+echo Enter New Game Name Title and press ENTER:
+echo.
+echo.
+echo *** TO KEEP EXISTING VALUE, JUST PRESS ENTER ***
+echo.
+echo.
+
+set /p cid=
 
 goto amiMenu
 
@@ -223,8 +261,23 @@ echo.
 pause
 goto amiMenu
 )
+
+if %gameNameDashes%==GAMENAMEHERE (
+cls
+echo No Valid Game Name Has Been Set!
+echo.
+echo.
+pause
+goto amiMenu
+)
+
 :: Single DOUBLE QUOTE here on purpose
-%runShellWaitTerminate% %baseReq%%download1%%cid%"
+::%runShellWaitTerminate% %baseReq%%download1%%cid%"
+
+::echo %runShellWaitTerminate% %baseReq%%remoteRfsBase1%%gameNameTitle%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
+::pause
+
+%runShellWaitTerminate% %baseReq%%remoteRfsBase1%%gameNameTitle%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
 
 goto amiMenu
 
