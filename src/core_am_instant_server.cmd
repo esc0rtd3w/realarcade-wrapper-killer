@@ -6,6 +6,8 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 
 %kill% aminstantservice.exe
 
+set amiVersion=0.00.00
+
 :: Sets default returnTo variable for cases where you must use 2 gotos in sequence
 set returnTo=amiMenu
 
@@ -178,7 +180,7 @@ echo.
 echo.
 echo Select an option from below
 echo.
-echo 1) Check Remote Version
+echo 1) Check Remote Version [%amiVersion%]
 echo.
 echo 2) Open Default Apps Directory
 echo.
@@ -427,8 +429,13 @@ goto amiMenu2
 :chkRemote
 
 %runShellWaitTerminate% wget -O "%temp%\GameHouse_GamePlayer.exe" %amInstantRemotePlayer%
-filver32.exe "%temp%\GameHouse_GamePlayer.exe">"%temp%\amiVersion.txt"
-%runShellWaitTerminate% "notepad.exe "%temp%\amiVersion.txt"
+::filver32.exe "%temp%\GameHouse_GamePlayer.exe">"%temp%\amiVersion.txt"
+::%runShellWaitTerminate% "notepad.exe "%temp%\amiVersion.txt"
+filver32.exe "%temp%\GameHouse_GamePlayer.exe">"%temp%\amiVersion.cmd"
+call "%temp%\amiVersion.cmd"
+set amiVersion=%F$V%
+::echo %F$V%
+::pause
 
 goto amiMenu2
 
