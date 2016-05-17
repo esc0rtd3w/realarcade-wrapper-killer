@@ -99,7 +99,7 @@ echo 2) Stop AM Micro Server
 echo.
 echo 3) Get New Session ID
 echo.
-echo 4) Trigger Game Download
+echo 4) Get Game Info
 echo 5) Remote RFS Extract
 echo 6) Launch Game
 echo.
@@ -118,7 +118,7 @@ if errorlevel 8 goto newCreds
 if errorlevel 7 goto amiMenu2
 if errorlevel 6 goto launch
 if errorlevel 5 goto remote
-if errorlevel 4 goto download
+if errorlevel 4 goto info
 if errorlevel 3 goto session
 if errorlevel 2 goto stop
 if errorlevel 1 goto console
@@ -215,7 +215,7 @@ echo Current Game Name: %gameNameDashes%
 echo Current Game Title: %gameNameTitle%
 echo.
 echo.
-echo Enter New Game Name Title and press ENTER:
+echo Enter New Game Title and press ENTER:
 echo.
 echo.
 echo *** TO KEEP EXISTING VALUE, JUST PRESS ENTER ***
@@ -251,7 +251,7 @@ goto amiMenu
 goto amiMenu
 
 
-:download
+:info
 
 if %cid%==00000000000000000000000000000000 (
 cls
@@ -262,22 +262,10 @@ pause
 goto amiMenu
 )
 
-if %gameNameDashes%==game-name-here (
-cls
-echo No Valid Game Name Has Been Set!
-echo.
-echo.
-pause
-goto amiMenu
-)
-
 :: Single DOUBLE QUOTE here on purpose
-::%runShellWaitTerminate% %baseReq%%download1%%cid%"
+%runShellWaitTerminate% %baseReq%%download1%%cid%"
 
-::echo %runShellWaitTerminate% %baseReq%%remoteRfsBase1%%gameNameTitle%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
-::pause
-
-%runShellWaitTerminate% %baseReq%%remoteRfsBase1%%gameNameTitle%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
+%runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
 
 goto amiMenu
 
@@ -318,8 +306,18 @@ pause
 goto amiMenu
 )
 
+if "%gameNameDashes%"=="Game Name Here" (
+cls
+echo No Valid Game Title Has Been Set!
+echo.
+echo.
+pause
+goto amiMenu
+)
+
 :: Single DOUBLE QUOTE here on purpose
-%runShellWaitTerminate% %baseReq%%remoteRfsBase%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
+::%runShellWaitTerminate% %baseReq%%remoteRfsBase%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
+%runShellWaitTerminate% %baseReq%%remoteRfsBase1%%gameNameTitle%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
 
 goto amiMenu
 
