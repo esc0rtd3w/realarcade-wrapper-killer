@@ -9,7 +9,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 set cid=00000000000000000000000000000000
 
 set gameNameDashes=GAMENAMEHERE
-set gameNameDashes=Game Name Here
+set gameNameTitle=Game Name Here
 set gameNameFirstLetter=
 
 
