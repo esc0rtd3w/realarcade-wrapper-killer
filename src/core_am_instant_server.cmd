@@ -6,6 +6,9 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 
 %kill% aminstantservice.exe
 
+:: Sets default returnTo variable for cases where you must use 2 gotos in sequence
+set returnTo=amiMenu
+
 set cid=00000000000000000000000000000000
 
 set gameNameDashes=game-name-here
@@ -60,7 +63,7 @@ set gameNameFirstLetter=
 set outFileTemp=-O "%temp%\ami-request.txt"
 
 :: This must be rebuilt each time the game is changed
-set reqGet=/v1/install.json?result=success&installation_title=%gameNameTitle%^&content_id=%cid%^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1
+set reqGet=/v1/install.json?result=success^&installation_title=%gameNameTitle%^&content_id=%cid%^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1
 
 set reqHost=--header="Host: localhost:12072"
 set reqUserAgent=--header="User-Agent: AmHttpClient 1.0"
@@ -178,7 +181,7 @@ if errorlevel 7 goto amiMenu
 if errorlevel 6 goto amiMenu2
 if errorlevel 5 goto amiMenu2
 if errorlevel 4 goto amiMenu2
-if errorlevel 3 goto rebuildReq
+if errorlevel 3 set returnTo=amiMenu2&&goto rebuildReq
 if errorlevel 2 goto openApps
 if errorlevel 1 goto chkRemote
 
@@ -190,11 +193,24 @@ goto end
 cls
 echo Rebuilding Custom GET Requests Using New Game Info....
 %waitfor% 3
-set reqGet=/v1/install.json?result=success&installation_title=%gameNameTitle%^&content_id=%cid%^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1
+set reqGet=/v1/install.json?result=success^&installation_title=%gameNameTitle%^&content_id=%cid%^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1
 set baseReq=wget -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 set baseReq2=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
-goto amiMenu2
+echo.
+echo.
+echo.
+echo reqGet: %reqGet%
+echo.
+echo.
+echo.
+echo baseReq: %baseReq%
+echo.
+echo.
+echo.
+echo baseReq2: %baseReq2%
+pause
+goto %returnTo%
 
 
 :newCreds
@@ -253,7 +269,11 @@ echo.
 
 set /p gameNameTitle=
 
-goto amiMenu
+set returnTo=amiMenu
+
+goto rebuildReq
+
+::goto amiMenu
 
 
 :norm
@@ -346,7 +366,7 @@ goto amiMenu
 
 :: Single DOUBLE QUOTE here on purpose
 ::%runShellWaitTerminate% %baseReq%%remoteRfsBase%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
-%runShellWaitTerminate% %baseReq%%remoteRfsBase1%%gameNameTitle%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
+%runShellWaitTerminate% %baseReq2%%remoteRfsBase1%%gameNameTitle%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
 
 goto amiMenu
 
