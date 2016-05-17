@@ -178,6 +178,14 @@ echo.
 
 set /p gameNameDashes=
 
+:: Set first letter of game name for valid download link
+set gameNameFirstLetterTemp=%gameNameDashes%
+set gameNameFirstLetter=%gameNameFirstLetterTemp:~-1%
+echo.
+echo.
+echo Letter: %gameNameFirstLetter%
+pause
+
 goto amiMenu
 
 
@@ -215,7 +223,8 @@ echo.
 pause
 goto amiMenu
 )
-%runShellWaitTerminate% %baseReq%%download1%%cid%
+:: Single DOUBLE QUOTE here on purpose
+%runShellWaitTerminate% %baseReq%%download1%%cid%"
 
 goto amiMenu
 
@@ -256,8 +265,8 @@ pause
 goto amiMenu
 )
 
-:: %remoteRfsBase%\%gameNameFirstLetter%\%gameNameDashes%\%gameNameDashes%.rfs
-%runShellWaitTerminate% %baseReq%%remoteRFS%
+:: Single DOUBLE QUOTE here on purpose
+%runShellWaitTerminate% %baseReq%%remoteRfsBase%\%gameNameFirstLetter%\%gameNameDashes%\%gameNameDashes%.rfs"
 
 goto amiMenu
 
