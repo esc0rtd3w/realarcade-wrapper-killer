@@ -15,6 +15,15 @@ set gameNameDashes=game-name-here
 set gameNameTitle=Game Name Here
 set gameNameFirstLetter=g
 
+set appDirName=UNDEFINED
+
+:: Builds app folder name by taking the first 16 chars from name and cid and combining them
+
+:: gameNameDashes: jewel-quest-solitaire
+:: cid: 3675cb0b1a06f37e8c45f0fd3eab3393
+
+:: appDirName=jewel-quest-soli3675cb0b1a06f37e
+
 
 :amiMenu
 
@@ -234,6 +243,8 @@ echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
 echo Current Game Title: %gameNameTitle%
 echo.
+echo Current App Directory Name: %appDirName%
+echo.
 echo.
 echo Enter New CID and press ENTER:
 echo.
@@ -244,11 +255,17 @@ echo.
 
 set /p cid=
 
+:: Get first 16 chars for app directory name
+set cidHalfTemp=%cid%
+set cidHalf=%cidHalfTemp:~0,16%
+
 
 cls
 echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
 echo Current Game Title: %gameNameTitle%
+echo.
+echo Current App Directory Name: %appDirName%
 echo.
 echo.
 echo Enter New Game Name and press ENTER:
@@ -263,15 +280,17 @@ set /p gameNameDashes=
 :: Set first letter of game name for valid download link
 set gameNameFirstLetterTemp=%gameNameDashes%
 set gameNameFirstLetter=%gameNameFirstLetterTemp:~0,1%
-::echo.
-::echo.
-::echo Letter: %gameNameFirstLetter%
-::pause
+
+:: Get first 16 chars for app directory name
+set gameNameDashesHalfTemp=%gameNameDashes%
+set gameNameDashesHalf=%gameNameDashesHalfTemp:~0,16%
 
 cls
 echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
 echo Current Game Title: %gameNameTitle%
+echo.
+echo Current App Directory Name: %appDirName%
 echo.
 echo.
 echo Enter New Game Title and press ENTER:
@@ -282,6 +301,9 @@ echo.
 echo.
 
 set /p gameNameTitle=
+
+:: Set new AM Directory Name
+set appDirName=%gameNameDashesHalf%%cidHalf%
 
 set returnTo=amiMenu
 
