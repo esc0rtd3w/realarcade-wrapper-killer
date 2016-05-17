@@ -128,6 +128,7 @@ cls
 echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
 echo Current Game Title: %gameNameTitle%
+echo Current App Directory Name: %appDirName%
 echo.
 echo.
 echo Select an option from below
@@ -140,7 +141,6 @@ echo.
 echo 4) Get Game Info
 echo 5) Download Game (Remote RFS Extract)
 echo 6) Launch Game
-echo.
 echo.
 echo 7) More Options
 echo.
@@ -170,6 +170,7 @@ cls
 echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
 echo Current Game Title: %gameNameTitle%
+echo Current App Directory Name: %appDirName%
 echo.
 echo.
 echo Select an option from below
@@ -243,7 +244,6 @@ echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
 echo Current Game Title: %gameNameTitle%
 echo.
-echo Current App Directory Name: %appDirName%
 echo.
 echo.
 echo Enter New CID and press ENTER:
@@ -264,8 +264,6 @@ cls
 echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
 echo Current Game Title: %gameNameTitle%
-echo.
-echo Current App Directory Name: %appDirName%
 echo.
 echo.
 echo Enter New Game Name and press ENTER:
@@ -289,8 +287,6 @@ cls
 echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
 echo Current Game Title: %gameNameTitle%
-echo.
-echo Current App Directory Name: %appDirName%
 echo.
 echo.
 echo Enter New Game Title and press ENTER:
