@@ -8,7 +8,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 
 set cid=00000000000000000000000000000000
 
-set gameNameDashes=GAMENAMEHERE
+set gameNameDashes=game-name-here
 set gameNameTitle=Game Name Here
 set gameNameFirstLetter=
 
@@ -262,7 +262,7 @@ pause
 goto amiMenu
 )
 
-if %gameNameDashes%==GAMENAMEHERE (
+if %gameNameDashes%==game-name-here (
 cls
 echo No Valid Game Name Has Been Set!
 echo.
@@ -309,7 +309,7 @@ pause
 goto amiMenu
 )
 
-if %gameNameDashes%==GAMENAME (
+if %gameNameDashes%==game-name-here (
 cls
 echo No Valid Game Name Has Been Set!
 echo.
