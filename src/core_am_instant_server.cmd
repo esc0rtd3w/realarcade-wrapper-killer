@@ -269,6 +269,7 @@ echo Current Game Name: %gameNameDashes%
 echo Current Game Title: %gameNameTitle%
 echo.
 echo.
+echo.
 echo Enter New Game Name and press ENTER:
 echo.
 echo.
@@ -290,6 +291,7 @@ cls
 echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
 echo Current Game Title: %gameNameTitle%
+echo.
 echo.
 echo.
 echo Enter New Game Title and press ENTER:
