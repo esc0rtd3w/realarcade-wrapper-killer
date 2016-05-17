@@ -78,8 +78,11 @@ set reqGet1=--header="/v1/install.json?result=success
 set reqGet2=^&installation_title=%gameNameTitle%
 set reqGet3=^&content_id=%cid%
 set reqGet4=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1"
-
 set reqGet=%reqGet1%%reqGet2%%reqGet3%%reqGet4%
+
+set reqGetListGames1=/v1/listGames.json?include_uninstalled=false
+set reqGetListGames2=^&query_id=1463457306950
+set reqGetListGames=%reqGetListGames1%%reqGetListGames2%
 
 set reqHost=--header="Host: localhost:12072"
 set reqUserAgent=--header="User-Agent: AmHttpClient 1.0"
@@ -92,8 +95,8 @@ set reqConnection=--header="Connection: keep-alive"
 
 :: Single DOUBLE QUOTE here on purpose
 set baseReq=wget -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
-set baseReq2=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
-::set baseReq2=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set baseReqListGames=wget -d %reqGetListGames% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "http://localhost:12072%reqGetListGames%"
 
 set launch1=http://localhost:12072/v1/play.json?content_id=
 set launch2=^&auth_token=0000000000000000000000000000000000000000"
@@ -180,8 +183,8 @@ echo.
 echo 2) Open Default Apps Directory
 echo.
 echo 3) Rebuild GET Request
-::echo.
-::echo 4) 
+echo.
+echo 4) List Installed Games
 ::echo.
 ::echo 5) 
 ::echo.
@@ -199,7 +202,7 @@ if errorlevel 8 goto forceExit
 if errorlevel 7 goto amiMenu
 if errorlevel 6 goto amiMenu2
 if errorlevel 5 goto amiMenu2
-if errorlevel 4 goto amiMenu2
+if errorlevel 4 goto listGames
 if errorlevel 3 set returnTo=amiMenu2&&goto rebuildReq
 if errorlevel 2 goto openApps
 if errorlevel 1 goto chkRemote
@@ -219,7 +222,7 @@ set reqGet4=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLette
 
 set reqGet=%reqGet1%%reqGet2%%reqGet3%%reqGet4%
 
-set baseReq2=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
 echo.
 echo.
@@ -232,7 +235,7 @@ echo baseReq: %baseReq%
 echo.
 echo.
 echo.
-echo baseReq2: %baseReq2%
+echo baseReqExtractRFS: %baseReqExtractRFS%
 ::pause
 goto %returnTo%
 
@@ -398,7 +401,7 @@ goto amiMenu
 
 :: Single DOUBLE QUOTE here on purpose
 ::%runShellWaitTerminate% %baseReq%%remoteRfsBase%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
-%runShellWaitTerminate% %baseReq2%%remoteRfsBase1%%gameNameTitle%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
+%runShellWaitTerminate% %baseReqExtractRFS%%remoteRfsBase1%%gameNameTitle%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
 
 goto amiMenu
 
@@ -424,6 +427,15 @@ goto amiMenu2
 %runShellWaitTerminate% wget -O "%temp%\GameHouse_GamePlayer.exe" %amInstantRemotePlayer%
 filver32.exe "%temp%\GameHouse_GamePlayer.exe">"%temp%\amiVersion.txt"
 %runShellWaitTerminate% "notepad.exe "%temp%\amiVersion.txt"
+
+goto amiMenu2
+
+
+:listGames
+
+%baseReqListGames%
+
+%runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
 
 goto amiMenu2
 
