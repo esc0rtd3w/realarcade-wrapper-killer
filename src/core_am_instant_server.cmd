@@ -73,6 +73,7 @@ set reqConnection=--header="Connection: keep-alive"
 
 :: Single DOUBLE QUOTE here on purpose
 set baseReq=wget -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set baseReq2=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
 set launch1=http://localhost:12072/v1/play.json?content_id=
 set launch2=^&auth_token=0000000000000000000000000000000000000000"
@@ -155,8 +156,8 @@ echo.
 echo 1) Check Remote Version
 echo.
 echo 2) Open Default Apps Directory
-::echo.
-::echo 3) 
+echo.
+echo 3) Rebuild GET Request
 ::echo.
 ::echo 4) 
 ::echo.
@@ -177,11 +178,23 @@ if errorlevel 7 goto amiMenu
 if errorlevel 6 goto amiMenu2
 if errorlevel 5 goto amiMenu2
 if errorlevel 4 goto amiMenu2
-if errorlevel 3 goto amiMenu2
+if errorlevel 3 goto rebuildReq
 if errorlevel 2 goto openApps
 if errorlevel 1 goto chkRemote
 
 goto end
+
+
+:rebuildReq
+
+cls
+echo Rebuilding Custom GET Requests Using New Game Info....
+%waitfor% 3
+set reqGet=/v1/install.json?result=success&installation_title=%gameNameTitle%^&content_id=%cid%^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1
+set baseReq=wget -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set baseReq2=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+
+goto amiMenu2
 
 
 :newCreds
