@@ -57,13 +57,29 @@ set gameNameFirstLetter=
 
 :: New Menu with working options only (20160515)
 
-set baseReq=wget -d --header="Host: localhost:12072" --header="User-Agent: AmHttpClient 1.0" --header="Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" --header="Accept-Language: en-US,en;q=0.5" --header="Accept-Encoding: gzip, deflate" --header="Referer: http://www.gamehouse.com/member/" --header="Origin: http://www.gamehouse.com" --header="Connection: keep-alive" -O "%temp%\ami-request.txt" "
+set outFileTemp=-O "%temp%\ami-request.txt"
+
+:: This must be rebuilt each time the game is changed
+set reqGet=/v1/install.json?result=success&installation_title=%gameNameTitle%^&content_id=%cid%^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1
+
+set reqHost=--header="Host: localhost:12072"
+set reqUserAgent=--header="User-Agent: AmHttpClient 1.0"
+set reqAccept=--header="Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+set reqAcceptLanguage=--header="Accept-Language: en-US,en;q=0.5"
+set reqAcceptEncoding=--header="Accept-Encoding: gzip, deflate"
+set reqReferer=--header="Referer: http://www.gamehouse.com/member/"
+set reqOrigin=--header="Origin: http://www.gamehouse.com"
+set reqConnection=--header="Connection: keep-alive"
+
+:: Single DOUBLE QUOTE here on purpose
+set baseReq=wget -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+
 set launch1=http://localhost:12072/v1/play.json?content_id=
 set launch2=^&auth_token=0000000000000000000000000000000000000000"
 
 set download1=http://www.gamehouse.com/member/api/games/downloaddetails.json?amcontentid=
 
-set sessionID=http://www.gamehouse.com/member/api/player/getsessionid.json
+set getSessionID=http://www.gamehouse.com/member/api/player/getsessionid.json
 
 :: http://games-dl.gamehouse.com/gamehouse/pc/h/hoyle-official-card-games-collection/hoyle-official-card-games-collection.rfs
 set remoteRfsBase=http://games-dl.gamehouse.com/gamehouse/pc
@@ -100,7 +116,7 @@ echo.
 echo 3) Get New Session ID
 echo.
 echo 4) Get Game Info
-echo 5) Remote RFS Extract
+echo 5) Download Game (Remote RFS Extract)
 echo 6) Launch Game
 echo.
 echo.
@@ -117,7 +133,7 @@ if errorlevel 9 goto forceExit
 if errorlevel 8 goto newCreds
 if errorlevel 7 goto amiMenu2
 if errorlevel 6 goto launch
-if errorlevel 5 goto remote
+if errorlevel 5 goto download
 if errorlevel 4 goto info
 if errorlevel 3 goto session
 if errorlevel 2 goto stop
@@ -244,7 +260,7 @@ goto amiMenu
 
 :session
 
-%baseReq%%sessionID%
+%baseReq%%getSessionID%
 
 %runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
 
@@ -286,7 +302,7 @@ goto amiMenu
 goto amiMenu
 
 
-:remote
+:download
 
 if %cid%==00000000000000000000000000000000 (
 cls
