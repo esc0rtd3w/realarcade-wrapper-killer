@@ -222,7 +222,7 @@ echo *** TO KEEP EXISTING VALUE, JUST PRESS ENTER ***
 echo.
 echo.
 
-set /p cid=
+set /p gameNameTitle=
 
 goto amiMenu
 
