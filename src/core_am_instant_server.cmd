@@ -306,7 +306,7 @@ pause
 goto amiMenu
 )
 
-if "%gameNameDashes%"=="Game Name Here" (
+if "%gameNameTitle%"=="Game Name Here" (
 cls
 echo No Valid Game Title Has Been Set!
 echo.
