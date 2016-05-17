@@ -96,3 +96,32 @@ Software  Name                              Module/Label                      St
 00EF0046                                    aminstantservice.exe              Disabled  Member Redirect???
 00EF0C1A                                    aminstantservice.exe              Disabled  
 00EFB1EB                                    aminstantservice.exe              Disabled  unknown???
+
+
+
+
+
+
+
+Software  Name                              Module/Label                      State     Comment                                                                                                    
+00D2C0A0                                    aminstantservice-8.43.37.0.exe    Enabled   
+00D30E09                                    aminstantservice-8.43.37.0.exe    Enabled   
+00D31C84                                    aminstantservice-8.43.37.0.exe    Enabled   
+00D31CC0                                    aminstantservice-8.43.37.0.exe    Enabled   
+00D39E9E                                    aminstantservice-8.43.37.0.exe    Enabled   String Too Long 1
+00D39F47                                    aminstantservice-8.43.37.0.exe    Enabled   E8BE88:"string too long"
+00D4DDB5                                    aminstantservice-8.43.37.0.exe    Enabled   
+00D4DDC7                                    aminstantservice-8.43.37.0.exe    Enabled   Closes Server
+00D5B690                                    aminstantservice-8.43.37.0.exe    Enabled   
+00D5BA1A                                    aminstantservice-8.43.37.0.exe    Enabled   
+00D5C0D4                                    aminstantservice-8.43.37.0.exe    Enabled   Installation Already Running
+00D5C1A8                                    aminstantservice-8.43.37.0.exe    Enabled   Game Already Installed
+00D5DA9B                                    aminstantservice-8.43.37.0.exe    Enabled   
+00D607E0                                    aminstantservice-8.43.37.0.exe    Enabled   E8F464:"AmRfsIndex"
+00D61199                                    aminstantservice-8.43.37.0.exe    Enabled   RFSINDEX
+00D61D13                                    aminstantservice-8.43.37.0.exe    Enabled   
+00D62FE3                                    aminstantservice-8.43.37.0.exe    Enabled   
+00D63C7D                                    aminstantservice-8.43.37.0.exe    Enabled   AMRSFPKG
+00D676B9                                    aminstantservice-8.43.37.0.exe    Enabled   AMRSFPKG
+00D6C782                                    aminstantservice-8.43.37.0.exe    Enabled   AMRSFPKG
+
