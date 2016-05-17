@@ -13,7 +13,7 @@ set cid=00000000000000000000000000000000
 
 set gameNameDashes=game-name-here
 set gameNameTitle=Game Name Here
-set gameNameFirstLetter=
+set gameNameFirstLetter=g
 
 
 :amiMenu
@@ -63,8 +63,14 @@ set gameNameFirstLetter=
 set outFileTemp=-O "%temp%\ami-request.txt"
 
 :: This must be rebuilt each time the game is changed
-set reqGet=0
+::set reqGet=0
 ::set reqGet=/v1/install.json?result=success^&installation_title=%gameNameTitle%^&content_id=%cid%^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1
+set reqGet1=--header="/v1/install.json?result=success
+set reqGet2=^&installation_title=%gameNameTitle%
+set reqGet3=^&content_id=%cid%
+set reqGet4=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1"
+
+set reqGet=%reqGet1%%reqGet2%%reqGet3%%reqGet4%
 
 set reqHost=--header="Host: localhost:12072"
 set reqUserAgent=--header="User-Agent: AmHttpClient 1.0"
@@ -77,7 +83,7 @@ set reqConnection=--header="Connection: keep-alive"
 
 :: Single DOUBLE QUOTE here on purpose
 set baseReq=wget -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
-set baseReq2=0
+set baseReq2=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 ::set baseReq2=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
 set launch1=http://localhost:12072/v1/play.json?content_id=
@@ -217,7 +223,7 @@ echo.
 echo.
 echo.
 echo baseReq2: %baseReq2%
-pause
+::pause
 goto %returnTo%
 
 
