@@ -1,0 +1,534 @@
+#!/bin/sh
+
+# ActiveMark Instant Server Manipulator
+
+# esc0rtd3w 2o16 / github.com/esc0rtd3w
+
+
+
+initMain(){
+
+setTerminal
+resizeWindow
+setWindowTitle
+setTerminalColors
+setTerminalTextEffects
+setPermissions
+setDependencies
+checkDependencies
+setDefaults
+
+amiMenu
+
+}
+
+
+setPermissions(){
+
+blank=""
+
+}
+
+
+setDependencies(){
+
+pathDependencyFile1="/usr/bin/DependencyFile1"
+
+}
+
+
+checkDependencies(){
+
+if [ -f $pathDependencyFile1 ];
+then
+   statusDependencyFile1="OK"
+else
+   statusDependencyFile1="NA"
+fi
+
+}
+
+
+downloadDependencies(){
+
+blank=""
+
+}
+
+
+showDependencies(){
+
+banner
+#navBar
+
+echo ""
+echo "List of File Dependencies Needed"
+echo ""
+echo "$pathDependencyFile1 - Status: $statusDependencyFile1"
+echo ""
+echo ""
+
+echo "Press ENTER to continue...."
+
+read pause
+
+}
+
+
+setDefaults(){
+
+baseVersion="0.1"
+tempDirectory=""
+runDirectory="$PWD"
+
+count="0"
+padding=""
+
+amiVersion=0.00.00
+
+# Sets default returnTo variable for cases where you must use 2 gotos in sequence
+returnTo="amiMenu"
+
+cid="00000000000000000000000000000000"
+
+gameNameDashes="game-name-here"
+gameNameTitle="Game Name Here"
+gameNameFirstLetter="g"
+
+appDirName="UNDEFINED"
+
+# Builds app folder name by taking the first 16 chars from name and cid and combining them
+
+# gameNameDashes: jewel-quest-solitaire
+# cid: 3675cb0b1a06f37e8c45f0fd3eab3393
+
+# appDirName=jewel-quest-soli3675cb0b1a06f37e
+
+
+outFileTemp="-O $temp\ami-request.txt"
+
+# This must be rebuilt each time the game is changed
+#reqGet=0
+#reqGet=/v1/install.json?result=success&installation_title=%gameNameTitle%&content_id=$cid&rfs=http://games-dl.gamehouse.com/gamehouse/pc/$gameNameFirstLetter/$gameNameDashes/$gameNameDashes.rfs HTTP/1.1"
+reqGet1="--header=\"/v1/install.json?result=success\""
+reqGet2="&installation_title=$gameNameTitle"
+reqGet3="&content_id=$cid"
+reqGet4="&rfs=http://games-dl.gamehouse.com/gamehouse/pc/$gameNameFirstLetter/$gameNameDashes/$gameNameDashes.rfs HTTP/1.1"
+reqGet=$reqGet1$reqGet2$reqGet3$reqGet4
+
+reqGetListGames1="/v1/listGames.json?include_uninstalled=false"
+reqGetListGames2="&query_id=1463457306950"
+reqGetListGames="$reqGetListGames1$reqGetListGames2"
+
+reqHost="--header=\"Host: localhost:12072\""
+reqUserAgent="--header=\"User-Agent: AmHttpClient 1.0\""
+reqAccept="--header=\"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\""
+reqAcceptLanguage="--header=\"Accept-Language: en-US,en;q=0.5\""
+reqAcceptEncoding="--header=\"Accept-Encoding: gzip, deflate\""
+reqReferer="--header=\"Referer: http://www.gamehouse.com/member/\""
+reqOrigin="--header=\"Origin: http://www.gamehouse.com\""
+reqConnection="--header=\"Connection: keep-alive\""
+
+# Single DOUBLE QUOTE here on purpose
+baseReq="wget -d $reqHost $reqUserAgent $reqAccept $reqAcceptLanguage $reqAcceptEncoding $reqReferer $reqOrigin $reqConnection $outFileTemp \""
+baseReqExtractRFS="wget -d $reqGet $reqHost $reqUserAgent $reqAccept $reqAcceptLanguage $reqAcceptEncoding $reqReferer $reqOrigin $reqConnection $outFileTemp \""
+baseReqListGames="wget -d $reqGetListGames $reqHost $reqUserAgent $reqAccept $reqAcceptLanguage $reqAcceptEncoding $reqReferer $reqOrigin $reqConnection $outFileTemp \"http://localhost:12072$reqGetListGames\""
+
+launch1="http://localhost:12072/v1/play.json?content_id="
+launch2="&auth_token=0000000000000000000000000000000000000000\""
+
+download1="http://www.gamehouse.com/member/api/games/downloaddetails.json?amcontentid="
+
+getSessionID="http://www.gamehouse.com/member/api/player/getsessionid.json"
+
+# http://games-dl.gamehouse.com/gamehouse/pc/h/hoyle-official-card-games-collection/hoyle-official-card-games-collection.rfs
+remoteRfsBase="http://games-dl.gamehouse.com/gamehouse/pc"
+
+remoteRfsBase1="127.0.0.1:12072/v1/install.json?result=success&installation_title="
+remoteRfsBase2="&content_id="
+remoteRfsBase3="&rfs=http://games-dl.gamehouse.com/gamehouse/pc"
+
+
+# Successful Download Request
+# http://localhost:12072/v1/install.json?result=success&installation_title=Strike%20Solitaire&content_id=9f6a8eae6c2af6791074094b9bd8f181&rfs=http%3A%2F%2Fgames-dl.gamehouse.com%2Fgamehouse%2Fpc%2Fs%2Fstrike-solitaire%2Fstrike-solitaire.rfs
+
+
+# /v1/install.json?result=success&installation_title=Strike%20Solitaire&content_id=9f6a8eae6c2af6791074094b9bd8f181&rfs=http%3A%2F%2Fgames-dl.gamehouse.com%2Fgamehouse%2Fpc%2Fs%2Fstrike-solitaire%2Fstrike-solitaire.rfs HTTP/1.1
+# Host: localhost:12072
+# User-Agent: AmHttpClient 1.0
+# Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+# Accept-Language: en-US,en;q=0.5
+# Accept-Encoding: gzip, deflate
+# Referer: http://www.gamehouse.com/member/
+# Origin: http://www.gamehouse.com
+# Connection: keep-alive
+
+}
+
+
+setTerminalColors(){
+
+	currentTask="setTerminalColors"
+
+	# Foreground Colors
+	defaultFG=$(echo 'printf' '\033[39m')
+	
+	black=$(echo 'printf' '\033[30m')
+	blue=$(echo 'printf' '\033[34m')
+	cyan=$(echo 'printf' '\033[36m')
+	darkGrey=$(echo 'printf' '\033[90m')
+	green=$(echo 'printf' '\033[32m')
+	lightBlue=$(echo 'printf' '\033[94m')
+	lightCyan=$(echo 'printf' '\033[96m')
+	lightGreen=$(echo 'printf' '\033[92m')
+	lightGrey=$(echo 'printf' '\033[37m')
+	lightMagenta=$(echo 'printf' '\033[95m')
+	lightRed=$(echo 'printf' '\033[91m')
+	lightYellow=$(echo 'printf' '\033[93m')
+	magenta=$(echo 'printf' '\033[35m')
+	red=$(echo 'printf' '\033[31m')
+	white=$(echo 'printf' '\033[0m')
+	whiteAlt=$(echo 'printf' '\033[97m')
+	yellow=$(echo 'printf' '\033[33m')
+	
+	# Background Colors
+	defaultBG=$(echo 'printf' '\033[49m')
+	
+	blackBG=$(echo 'printf' '\033[40m')
+	blueBG=$(echo 'printf' '\033[44m')
+	cyanBG=$(echo 'printf' '\033[46m')
+	darkGreyBG=$(echo 'printf' '\033[100m')
+	greenBG=$(echo 'printf' '\033[42m')
+	lightBlueBG=$(echo 'printf' '\033[104m')
+	lightCyanBG=$(echo 'printf' '\033[106m')
+	lightGreenBG=$(echo 'printf' '\033[102m')
+	lightGreyBG=$(echo 'printf' '\033[47m')
+	lightMagentaBG=$(echo 'printf' '\033[105m')
+	lightRedBG=$(echo 'printf' '\033[101m')
+	lightYellowBG=$(echo 'printf' '\033[103m')
+	magentaBG=$(echo 'printf' '\033[45m')
+	redBG=$(echo 'printf' '\033[41m')
+	whiteBG=$(echo 'printf' '\033[107m')
+	yellowBG=$(echo 'printf' '\033[43m')
+
+}
+
+
+setTerminalTextEffects(){
+
+	currentTask="setTerminalTextEffects"
+
+	textBlink=$(echo -e "\e[5m")
+	textBold=$(echo -e "\e[1m")
+	textDim=$(echo -e "\e[2m")
+	textHidden=$(echo -e "\e[8m")
+	textInverted=$(echo -e "\e[7m")
+	textUnderline=$(echo -e "\e[4m")
+
+}
+
+
+resizeWindow(){
+
+# From sample: printf '\033[8;32;114t'
+# Change WIDTH (W) ([8;WW)
+# Change HEIGHT (H) (;HHHt')
+
+printf '\033[8;32;114t'
+
+}
+
+
+setWindowTitle(){
+
+title='echo -ne "\033]0;RealArcade Wrapper Killer [AM Instant Server]     [...cRypTiCwaRe 2o16...]\007"'
+
+$title
+
+}
+
+
+setTerminal(){
+
+terminal="gnome-terminal -x"
+#terminal="konsole -e"
+#terminal="xterm -e"
+
+}
+
+banner(){
+
+clear
+echo "ActiveMark Instant Server Manipulator v$baseVersion"
+echo ""
+
+}
+
+
+navBar(){
+
+echo "------------------------------------------------------------------------------------------------------------------"
+echo "[M] Menu   [1] Option 1   [2] Option 2   [3] Option 3   [4] Option 4   [5] Option 5   [6] Option 6   [X] Exit"
+echo "------------------------------------------------------------------------------------------------------------------"
+echo ""
+
+}
+
+
+bannerExit(){
+
+clear
+echo "Part of The RealArcade Wrapper Killer"
+echo ""
+echo "esc0rtd3w 2o16 / github.com/esc0rtd3w"
+echo ""
+echo ""
+
+}
+
+
+tempFolderCreate(){
+
+#mkdir "$tempDirectory"
+#mkdir "$runDirectory"
+blank=""
+
+}
+
+
+tempFolderDestroy(){
+
+#rm "$tempDirectory"
+#rm "$runDirectory"
+blank=""
+
+}
+
+
+addPadding(){
+
+if (($count > 9999)); then
+
+padding=""
+
+fi
+
+if (($count > 999)); then
+
+padding=""
+
+fi
+
+if (($count > 99)); then
+
+padding="0"
+
+fi
+
+if (($count < 10)); then
+
+padding="000"
+
+fi
+
+if (($count > 9)); then
+
+padding="00"
+
+fi
+
+if (($count > 99)); then
+
+padding="0"
+
+fi
+
+if (($count > 999)); then
+
+padding=""
+
+fi
+
+if (($count > 9999)); then
+
+padding=""
+
+fi
+
+}
+
+
+amiMenu(){
+
+banner
+#navBar
+
+#cls
+#echo Select an option from below
+#echo.
+#echo.
+#echo 1) Execute Normally (Must Close EXE Manually)
+#echo.
+#echo 2) Execute Normally Quiet (--quiet)
+#echo.
+#echo 3) Console Mode (--console)
+#echo.
+#echo 4) Service Run (--service-run)
+#echo.
+#echo 5) Wait AM End (--wait-am-end)
+#echo.
+#echo 6) Upgrade (--upgrade)
+#echo.
+#echo 7) Upgrade Quiet (--upgrade --quiet)
+#echo.
+#echo 8) Bring To Top (--bring-to-top)
+#echo.
+#echo 9) Version (--version)
+#echo.
+#echo A) Help (--help)
+#echo.
+#echo.
+
+#if %os%==XP choice /c:123456789 /n
+#if %os%==VISTA choice /c 123456789 /n
+#if errorlevel 9 goto version
+#if errorlevel 8 goto btt
+#if errorlevel 7 goto upgradeq
+#if errorlevel 6 goto upgrade
+#if errorlevel 5 goto wae
+#if errorlevel 4 goto svcrun
+#if errorlevel 3 goto console
+#if errorlevel 2 goto quiet
+#if errorlevel 1 goto norm
+
+$cyan
+echo "Current CID: $cid"
+echo "Current Game Name: $gameNameDashes"
+echo "Current Game Title: $gameNameTitle"
+echo "Current App Directory Name: $appDirName"
+echo ""
+echo ""
+$white
+echo "Select an option from below"
+echo ""
+echo ""
+$green
+echo "1) Launch AM Micro Server"
+$red
+echo "2) Stop AM Micro Server"
+echo ""
+$white
+echo "3) Get New Session ID"
+echo "4) Enter New Game Credentials"
+echo ""
+echo "5) Get Game Info"
+echo "6) Download Game (Remote RFS Extract)"
+echo "7) Launch Game"
+echo ""
+echo "8) Check Remote Version [$amiVersion]"
+echo "9) Open Default Apps Directory"
+echo "10) Rebuild GET Request"
+echo "11) List Installed Games"
+echo ""
+echo "X) Exit"
+echo ""
+
+
+read getVariable
+
+case "$getVariable" in
+
+"")
+amiMenu
+;;
+
+"M" | "m")
+amiMenu
+;;
+
+"X" | "x")
+bannerExit
+exit
+;;
+
+"1")
+echo "Option 1"
+echo ""
+echo "Press ENTER to continue..."
+echo ""
+echo ""
+read pause
+# DO STUFF HERE
+menuMamiMenuain
+;;
+
+"2")
+echo "Option 2"
+echo ""
+echo "Press ENTER to continue..."
+echo ""
+echo ""
+read pause
+# DO STUFF HERE
+amiMenu
+;;
+
+"3")
+echo "Option 3"
+echo ""
+echo "Press ENTER to continue..."
+echo ""
+echo ""
+read pause
+# DO STUFF HERE
+amiMenu
+;;
+
+"4")
+echo "Option 4"
+echo ""
+echo "Press ENTER to continue..."
+echo ""
+echo ""
+read pause
+# DO STUFF HERE
+amiMenu
+;;
+
+"5")
+echo "Option 5"
+echo ""
+echo "Press ENTER to continue..."
+echo ""
+echo ""
+read pause
+# DO STUFF HERE
+amiMenu
+;;
+
+"6")
+echo "Option 6"
+echo ""
+echo "Press ENTER to continue..."
+echo ""
+echo ""
+read pause
+# DO STUFF HERE
+amiMenu
+;;
+
+*)
+amiMenu
+;;
+
+esac
+
+amiMenu
+
+}
+
+
+
+initMain
+
+
