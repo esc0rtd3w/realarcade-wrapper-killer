@@ -20,9 +20,17 @@ set gameNameFirstLetter=g
 set appDirName=UNDEFINED
 
 
+set outFileTemp=-O "%temp%\ami-request.txt"
+
+
 set amLog=%desktop%\amiSvc.log
 
 set memberCookie=--header="Cookie: gamehouseuser=true"
+
+set pageNewGames=http://www.gamehouse.com/new-games
+set pageNewGames=http://www.gamehouse.com/new-games
+
+set dumpPage=wget -d %memberCookie% -O %outFileTemp% %pageNewGames%
 
 :: Builds app folder name by taking the first 16 chars from name and cid and combining them
 
@@ -39,8 +47,8 @@ set memberCookie=--header="Cookie: gamehouseuser=true"
 ::echo.
 ::echo.
 ::echo 1) Execute Normally (Must Close EXE Manually)
-::echo.
 ::echo 2) Execute Normally Quiet (--quiet)
+::echo.
 ::echo.
 ::echo 3) Console Mode (--console)
 ::echo.
@@ -76,7 +84,6 @@ set memberCookie=--header="Cookie: gamehouseuser=true"
 
 :: New Menu with working options only (20160515)
 
-set outFileTemp=-O "%temp%\ami-request.txt"
 
 :: This must be rebuilt each time the game is changed
 ::set reqGet=0
