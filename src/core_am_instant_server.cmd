@@ -19,6 +19,9 @@ set gameNameFirstLetter=g
 
 set appDirName=UNDEFINED
 
+
+set amLog=%desktop%\amiSvc.log
+
 :: Builds app folder name by taking the first 16 chars from name and cid and combining them
 
 :: gameNameDashes: jewel-quest-solitaire
@@ -307,6 +310,18 @@ set /p gameNameTitle=
 
 :: Set new AM Directory Name
 set appDirName=%gameNameDashesHalf%%cidHalf%
+
+:: Logging
+echo.>>%amLog%
+echo ---------------------------------------------------------------->>%amLog%
+echo Created By The RealArcade Wrapper Killer v%rawkver% [%date%]>>%amLog%
+echo.>>%amLog%
+echo %cid%>>%amLog%
+echo %gameNameDashes%>>%amLog%
+echo %gameNameTitle%>>%amLog%
+echo %appDirName%>>%amLog%
+echo ---------------------------------------------------------------->>%amLog%
+echo.>>%amLog%
 
 set returnTo=amiMenu
 
