@@ -1,0 +1,13 @@
+http://www.gamehouse.com/member/api/player/getsessionid.json
+http://www.gamehouse.com/member/api/player/whoami.json
+http://www.gamehouse.com/member/api/categories/all.json?type=categorybox
+http://www.gamehouse.com/member/api/games/recommendation-select.json?amount=8
+http://www.gamehouse.com/member/api/games/recommendation-because-select.json?amount=7
+http://www.gamehouse.com/member/api/games/recentlyplayed-select.json?amount=3
+http://www.gamehouse.com/member/api/games/new-select.json?start=0&count=4
+http://www.gamehouse.com/member/api/games/toprated-select.json?start=0&count=4
+http://hn.inspectlet.com/ginit/318565576
+http://www.gamehouse.com/member/api/player/whatdoihave.json
+http://www.gamehouse.com/member/api/games/category-select.json?categoryname=action&start=0&count=4&sortby=launchdate
+http://www.gamehouse.com/member/api/games/category-select.json?categoryname=card&start=0&count=4&sortby=launchdate
+http://www.gamehouse.com/member/api/games/category-select.json?categoryname=hidden-object&start=0&count=4&sortby=launchdate
