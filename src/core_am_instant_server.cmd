@@ -22,6 +22,8 @@ set appDirName=UNDEFINED
 
 set amLog=%desktop%\amiSvc.log
 
+set memberCookie=--header="Cookie: gamehouseuser=true"
+
 :: Builds app folder name by taking the first 16 chars from name and cid and combining them
 
 :: gameNameDashes: jewel-quest-solitaire
