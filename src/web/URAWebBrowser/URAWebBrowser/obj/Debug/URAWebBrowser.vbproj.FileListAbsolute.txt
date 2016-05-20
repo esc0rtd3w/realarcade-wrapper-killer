@@ -1,0 +1,11 @@
+c:\users\hacker\documents\visual studio 2015\Projects\URAWebBrowser\URAWebBrowser\bin\Debug\URAWebBrowser.exe.config
+c:\users\hacker\documents\visual studio 2015\Projects\URAWebBrowser\URAWebBrowser\obj\Debug\URAWebBrowser.vbprojResolveAssemblyReference.cache
+c:\users\hacker\documents\visual studio 2015\Projects\URAWebBrowser\URAWebBrowser\obj\Debug\URAWebBrowser.BrowserMain.resources
+c:\users\hacker\documents\visual studio 2015\Projects\URAWebBrowser\URAWebBrowser\obj\Debug\URAWebBrowser.Resources.resources
+c:\users\hacker\documents\visual studio 2015\Projects\URAWebBrowser\URAWebBrowser\obj\Debug\URAWebBrowser.vbproj.GenerateResource.Cache
+c:\users\hacker\documents\visual studio 2015\Projects\URAWebBrowser\URAWebBrowser\obj\Debug\URAWebBrowser.xml
+c:\users\hacker\documents\visual studio 2015\Projects\URAWebBrowser\URAWebBrowser\bin\Debug\URAWebBrowser.exe
+c:\users\hacker\documents\visual studio 2015\Projects\URAWebBrowser\URAWebBrowser\bin\Debug\URAWebBrowser.pdb
+c:\users\hacker\documents\visual studio 2015\Projects\URAWebBrowser\URAWebBrowser\bin\Debug\URAWebBrowser.xml
+c:\users\hacker\documents\visual studio 2015\Projects\URAWebBrowser\URAWebBrowser\obj\Debug\URAWebBrowser.exe
+c:\users\hacker\documents\visual studio 2015\Projects\URAWebBrowser\URAWebBrowser\obj\Debug\URAWebBrowser.pdb
