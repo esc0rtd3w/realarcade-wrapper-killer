@@ -14,6 +14,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
 
 
+
                    ²²²²²²²                          ²²²²²        ²²²²²
                  ²²²²²² ²²²                     ²²²²²  ²²       ²²²²²²
            ²²²²² ²²²²²²  ²²      ²²   ²²²²²²²² ²²²²² ²²²  ²²²² ²² ²²²²
@@ -180,6 +181,8 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
 	* UPDATED: RAWK Core to v3.0.5
 
+                   * Updated GameHouse Core and Config Database To v1.0.1
+
                    * Renamed All Loaders To More Descriptive Names.
 
                    * Merged AM Instant Server Into RFS Loader.
@@ -190,6 +193,9 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
                      causing some issues. So now both 32 and 64 bit systems
                      should use the same path.
 
+                   * Fixed Title Error In Am Instant Server Script. It is now
+                     replacing "SPACES" with "%20" to properly parse.
+
                    * Added The Following To AM Instant Server Options
 
                      - Check Remote Version
@@ -197,6 +203,8 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
                      - Open Default Apps Directory
 
                      - Set New Game Name
+
+                     - List Installed Games
 
 
 
