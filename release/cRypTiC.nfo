@@ -14,7 +14,7 @@
                      ²²²                  proudly presents...
 
               
-                        RealArcade Wrapper Killer v5.5
+                        RealArcade Wrapper Killer v5.5.1
 
 
                 -[ PWNING RealNetworks/GameHouse Since 2005 ]-  
@@ -29,7 +29,7 @@
 
       Category .. [ Utility          ]   ²Ý  Protection. [ RGS/RGA Trials   ]°
       Tested by.. [ cRypTiC          ]   ±   Language..  [ English          ]
-   °  Packed by.. [ cRypTiC          ]   °   Filename .  [ c-rawk55.zip     ]°
+   °  Packed by.. [ cRypTiC          ]   °   Filename .  [ c-rawk551.zip    ]°
       Coded by... [ cRypTiC          ]       Disks ....  [ 01 x 17MB        ]±
 
    ±        .  ß            Ü        °   Ü     Ü ß           Ü       ßÛÜ   þÛ Ü
@@ -163,32 +163,9 @@
 
 
 
-	* UPDATED: RAWK Core to v3.0.5
+	* UPDATED: RAWK Core to v3.0.6
 
-                   * Updated GameHouse Core and Config Database To v1.0.1
-
-                   * Renamed All Loaders To More Descriptive Names.
-
-                   * Merged AM Instant Server Into RFS Loader.
-
-                   * Now forcing the "C:\Program Files" path for the default
-                     unRealArcade directory. There were some instances where
-                     the "C:\Program Files (x86)" directory was being used and
-                     causing some issues. So now both 32 and 64 bit systems
-                     should use the same path.
-
-                   * Fixed Title Error In Am Instant Server Script. It is now
-                     replacing "SPACES" with "%20" to properly parse.
-
-                   * Added The Following To AM Instant Server Options
-
-                     - Check Remote Version
-
-                     - Open Default Apps Directory
-
-                     - Set New Game Name
-
-                     - List Installed Games
+                   * Nothing new here :(
 
 
 
@@ -206,7 +183,7 @@
 
         * UPDATED: RFS Loader v1.0.2
 
-                   * Added Support For AM Instant Server.
+                   * Nothing new here :(
 
 
 

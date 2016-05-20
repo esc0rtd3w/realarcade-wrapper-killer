@@ -6,6 +6,44 @@ RealArcade Wrapper Killer Version History From NFO Files
 
 
 
+v5.5
+----------
+
+	* UPDATED: RAWK Core to v3.0.5
+
+                   * Updated GameHouse Core and Config Database To v1.0.1
+
+                   * Renamed All Loaders To More Descriptive Names.
+
+                   * Merged AM Instant Server Into RFS Loader.
+
+                   * Now forcing the "C:\Program Files" path for the default
+                     unRealArcade directory. There were some instances where
+                     the "C:\Program Files (x86)" directory was being used and
+                     causing some issues. So now both 32 and 64 bit systems
+                     should use the same path.
+
+                   * Fixed Title Error In AM Instant Server Script. It is now
+                     replacing "SPACES" with "%20" to properly parse.
+
+                   * Added The Following To AM Instant Server Options
+
+                     - Check Remote Version
+
+                     - Open Default Apps Directory
+
+                     - Set New Game Name
+
+                     - List Installed Games
+
+
+
+        * UPDATED: RFS Loader v1.0.2
+
+                   * Added Support For AM Instant Server.
+
+
+
 v5.4.4
 ----------
 
@@ -48,6 +86,10 @@ v5.4.4
                    * Added support for 64 Bit Windows Versions
 
                    * HTML Game Catalogs (2,283 Individual Games)
+
+
+
+***VERSIONS BELOW 5.4.4 DO NOT SUPPORT AM INSTANT SERVER***
 
 
 
@@ -96,6 +138,10 @@ v5.4.3
         * UPDATED: RAWK Game INI Database to v1.3.1
 
                    [0 Game Entries Added] [86 Total Game Entries]
+
+
+
+***VERSIONS BELOW 5.4.3 DO NOT SUPPORT DMG OR RFS FILES***
 
 
 
