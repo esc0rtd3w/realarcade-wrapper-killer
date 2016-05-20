@@ -177,6 +177,9 @@
                      causing some issues. So now both 32 and 64 bit systems
                      should use the same path.
 
+                   * Fixed Title Error In Am Instant Server Script. It is now
+                     replacing "SPACES" with "%20" to properly parse.
+
                    * Added The Following To AM Instant Server Options
 
                      - Check Remote Version
