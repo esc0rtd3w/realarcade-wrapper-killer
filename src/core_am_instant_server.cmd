@@ -8,6 +8,8 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 
 set amiVersion=0.00.00
 
+set serverStatus=0
+
 :: Sets default returnTo variable for cases where you must use 2 gotos in sequence
 set returnTo=amiMenu
 
@@ -142,17 +144,22 @@ set remoteRfsBase3=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc
 
 
 cls
+%laqua%
 echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
 echo Current Game Title: %gameNameTitle%
 echo Current App Directory Name: %appDirName%
 echo.
 echo.
+%lyellow%
 echo Select an option from below
 echo.
-echo 1) Launch AM Micro Server
+%lgreen%
+echo 1) Start AM Micro Server
+%lred%
 echo 2) Stop AM Micro Server
 echo.
+%lyellow%
 echo 3) Get New Session ID
 echo.
 echo 4) Get Game Info
@@ -317,6 +324,16 @@ echo.
 
 set /p gameNameTitle=
 
+
+:: Convert "SPACES" to "%20" before passing as string
+setlocal enabledelayedexpansion
+set space=%%20
+set gameNameTitle=%gameNameTitle: =!space!%
+echo %gameNameTitle%>"%temp%\tmp.tmp"
+endlocal
+
+set /p gameNameTitle=<"%temp%\tmp.tmp"
+
 :: Set new AM Directory Name
 set appDirName=%gameNameDashesHalf%%cidHalf%
 
@@ -341,15 +358,36 @@ goto rebuildReq
 
 :norm
 
+if %serverStatus%==1 (
+	cls
+	echo AM Server Already Running!
+	echo.
+	echo.
+	pause
+	goto amiMenu
+)
+
 %runShellTerminate% %amInstantServer%
+::%gohide% %amInstantServer%
+set serverStatus=1
 
 goto amiMenu
 
 
 :console
 
-::%runShellTerminate% %amInstantServerConsole%
+if %serverStatus%==1 (
+	cls
+	echo AM Server Already Running!
+	echo.
+	echo.
+	pause
+	goto amiMenu
+)
+
 %runTerminate% %amInstantServerConsole%
+::%gohide% %amInstantServerConsole%
+set serverStatus=1
 
 goto amiMenu
 
@@ -376,6 +414,7 @@ goto amiMenu
 
 :: Single DOUBLE QUOTE here on purpose
 %runShellWaitTerminate% %baseReq%%download1%%cid%"
+set serverStatus=1
 
 %runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
 
@@ -394,11 +433,21 @@ goto amiMenu
 )
 
 %runShellWaitTerminate% %baseReq%%launch1%%cid%%launch2%
+set serverStatus=1
 
 goto amiMenu
 
 
 :download
+
+if %serverStatus%==0 (
+	cls
+	echo AM Server Not Running!
+	echo.
+	echo.
+	pause
+	goto amiMenu
+)
 
 if %cid%==00000000000000000000000000000000 (
 cls
@@ -430,15 +479,29 @@ goto amiMenu
 :: Single DOUBLE QUOTE here on purpose
 ::%runShellWaitTerminate% %baseReq%%remoteRfsBase%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
 %runShellWaitTerminate% %baseReqExtractRFS%%remoteRfsBase1%%gameNameTitle%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
+set serverStatus=1
 
 goto amiMenu
 
 
 :stop
 
+if %serverStatus%==0 (
+	cls
+	echo AM Server Not Running!
+	echo.
+	echo.
+	pause
+	goto amiMenu
+)
+
 %kill% aminstantservice.exe
 %kill% aminstantservice.exe
 %kill% aminstantservice.exe
+%kill% aminstantservice.exe
+%kill% aminstantservice.exe
+
+set serverStatus=0
 
 goto amiMenu
 
@@ -469,6 +532,7 @@ goto amiMenu2
 %baseReqListGames%
 
 %runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
+set serverStatus=1
 
 goto amiMenu2
 
@@ -477,6 +541,8 @@ goto amiMenu2
 
 %kill% aminstantservice.exe
 %kill% aminstantservice.exe
+
+del /f /q "%temp%\tmp.tmp"
 
 exit
 

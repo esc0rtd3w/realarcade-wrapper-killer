@@ -15,6 +15,11 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Setting Global Variables
 ::System Paths
 ::-----------------------------------------------------------------------------------
 
+
+::-----------------------------------------------------------------------------------
+::System Paths
+::-----------------------------------------------------------------------------------
+
 :: Common OS Paths
 set pf=%systemdrive%\Program Files
 set cf=%systemdrive%\Program Files\Common Files
