@@ -416,7 +416,7 @@ goto amiMenu
 
 :: Single DOUBLE QUOTE here on purpose
 %runShellWaitTerminate% %baseReq%%download1%%cid%"
-set serverStatus=1
+::set serverStatus=1
 
 %runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
 
@@ -435,7 +435,7 @@ goto amiMenu
 )
 
 %runShellWaitTerminate% %baseReq%%launch1%%cid%%launch2%
-set serverStatus=1
+::set serverStatus=1
 
 goto amiMenu
 
@@ -481,7 +481,7 @@ goto amiMenu
 :: Single DOUBLE QUOTE here on purpose
 ::%runShellWaitTerminate% %baseReq%%remoteRfsBase%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
 %runShellWaitTerminate% %baseReqExtractRFS%%remoteRfsBase1%%gameNameTitle%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
-set serverStatus=1
+::set serverStatus=1
 
 goto amiMenu
 
@@ -534,7 +534,7 @@ goto amiMenu2
 %baseReqListGames%
 
 %runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
-set serverStatus=1
+::set serverStatus=1
 
 goto amiMenu2
 
