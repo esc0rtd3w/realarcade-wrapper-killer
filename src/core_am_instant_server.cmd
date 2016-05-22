@@ -191,12 +191,14 @@ goto end
 :amiMenu2
 
 cls
+%laqua%
 echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
 echo Current Game Title: %gameNameTitle%
 echo Current App Directory Name: %appDirName%
 echo.
 echo.
+%lyellow%
 echo Select an option from below
 echo.
 echo 1) Check Remote Version [%amiVersion%]
