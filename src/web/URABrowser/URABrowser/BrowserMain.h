@@ -34,7 +34,9 @@ namespace URABrowser {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::MenuStrip^  menuStrip1;
+	private: System::Windows::Forms::MenuStrip^  mnuMain;
+	protected:
+
 	private: System::Windows::Forms::ToolStripMenuItem^  mnuFile;
 	private: System::Windows::Forms::ToolStripMenuItem^  mnuFileExit;
 	private: System::Windows::Forms::ToolStripMenuItem^  mnuHelp;
@@ -42,6 +44,7 @@ namespace URABrowser {
 	private: System::Windows::Forms::ToolStripMenuItem^  mnuUserAgent;
 	private: System::Windows::Forms::ToolStripMenuItem^  mnuUserAgentAmHttpClient;
 	private: System::Windows::Forms::ToolStripMenuItem^  mnuUserAgentAmHttpGet;
+	private: System::Windows::Forms::WebBrowser^  webViewMain;
 
 	protected:
 
@@ -59,28 +62,29 @@ namespace URABrowser {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
+			this->mnuMain = (gcnew System::Windows::Forms::MenuStrip());
 			this->mnuFile = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->mnuFileExit = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->mnuHelp = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->mnuHelpAbout = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->mnuUserAgent = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->mnuUserAgentAmHttpClient = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->mnuUserAgentAmHttpGet = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->menuStrip1->SuspendLayout();
+			this->mnuHelp = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->mnuHelpAbout = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->webViewMain = (gcnew System::Windows::Forms::WebBrowser());
+			this->mnuMain->SuspendLayout();
 			this->SuspendLayout();
 			// 
-			// menuStrip1
+			// mnuMain
 			// 
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+			this->mnuMain->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
 				this->mnuFile, this->mnuUserAgent,
 					this->mnuHelp
 			});
-			this->menuStrip1->Location = System::Drawing::Point(0, 0);
-			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(896, 24);
-			this->menuStrip1->TabIndex = 0;
-			this->menuStrip1->Text = L"menuStrip1";
+			this->mnuMain->Location = System::Drawing::Point(0, 0);
+			this->mnuMain->Name = L"mnuMain";
+			this->mnuMain->Size = System::Drawing::Size(1152, 24);
+			this->mnuMain->TabIndex = 0;
+			this->mnuMain->Text = L"menuStrip1";
 			// 
 			// mnuFile
 			// 
@@ -92,21 +96,8 @@ namespace URABrowser {
 			// mnuFileExit
 			// 
 			this->mnuFileExit->Name = L"mnuFileExit";
-			this->mnuFileExit->Size = System::Drawing::Size(152, 22);
+			this->mnuFileExit->Size = System::Drawing::Size(92, 22);
 			this->mnuFileExit->Text = L"Exit";
-			// 
-			// mnuHelp
-			// 
-			this->mnuHelp->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->mnuHelpAbout });
-			this->mnuHelp->Name = L"mnuHelp";
-			this->mnuHelp->Size = System::Drawing::Size(44, 20);
-			this->mnuHelp->Text = L"Help";
-			// 
-			// mnuHelpAbout
-			// 
-			this->mnuHelpAbout->Name = L"mnuHelpAbout";
-			this->mnuHelpAbout->Size = System::Drawing::Size(152, 22);
-			this->mnuHelpAbout->Text = L"About";
 			// 
 			// mnuUserAgent
 			// 
@@ -130,18 +121,42 @@ namespace URABrowser {
 			this->mnuUserAgentAmHttpGet->Size = System::Drawing::Size(172, 22);
 			this->mnuUserAgentAmHttpGet->Text = L"AmHttpGet 1.0";
 			// 
+			// mnuHelp
+			// 
+			this->mnuHelp->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->mnuHelpAbout });
+			this->mnuHelp->Name = L"mnuHelp";
+			this->mnuHelp->Size = System::Drawing::Size(44, 20);
+			this->mnuHelp->Text = L"Help";
+			// 
+			// mnuHelpAbout
+			// 
+			this->mnuHelpAbout->Name = L"mnuHelpAbout";
+			this->mnuHelpAbout->Size = System::Drawing::Size(107, 22);
+			this->mnuHelpAbout->Text = L"About";
+			// 
+			// webViewMain
+			// 
+			this->webViewMain->Location = System::Drawing::Point(12, 66);
+			this->webViewMain->MinimumSize = System::Drawing::Size(20, 20);
+			this->webViewMain->Name = L"webViewMain";
+			this->webViewMain->ScriptErrorsSuppressed = true;
+			this->webViewMain->Size = System::Drawing::Size(807, 447);
+			this->webViewMain->TabIndex = 1;
+			this->webViewMain->Url = (gcnew System::Uri(L"http://www.gamehouse.com", System::UriKind::Absolute));
+			// 
 			// BrowserMain
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(896, 371);
-			this->Controls->Add(this->menuStrip1);
-			this->MainMenuStrip = this->menuStrip1;
+			this->ClientSize = System::Drawing::Size(1152, 605);
+			this->Controls->Add(this->webViewMain);
+			this->Controls->Add(this->mnuMain);
+			this->MainMenuStrip = this->mnuMain;
 			this->Name = L"BrowserMain";
 			this->Text = L"unRealArcade Web Browser";
 			this->Load += gcnew System::EventHandler(this, &BrowserMain::BrowserMain_Load);
-			this->menuStrip1->ResumeLayout(false);
-			this->menuStrip1->PerformLayout();
+			this->mnuMain->ResumeLayout(false);
+			this->mnuMain->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 

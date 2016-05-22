@@ -12,4 +12,16 @@ void Main(array<String^>^ args)
 
 	URABrowser::BrowserMain form;
 	Application::Run(%form);
+
+
+	
+
+
 }
+
+/*
+int main(int argc, char **argv)
+{
+
+}
+*/
