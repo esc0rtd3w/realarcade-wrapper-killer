@@ -784,6 +784,12 @@ del /f /q %amiRequestTempFinal1%
 del /f /q %amiRequestTempFinal2%
 del /f /q %amiRequestTempFinal3%
 
+del /f /q %amiRequestSessionID%
+del /f /q "%temp%\ami-json-parse.txt"
+del /f /q "%temp%\amiVersion.cmd"
+
+del /f /q "%temp%\GameHouse_GamePlayer.exe"
+
 exit
 
 goto end
