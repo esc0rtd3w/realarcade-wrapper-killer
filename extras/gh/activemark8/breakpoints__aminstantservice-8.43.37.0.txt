@@ -129,17 +129,6 @@ Software  Name                              Module/Label                      St
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 Software  Name                              Module/Label                      State     Comment                                                                                                                                     
 7638C41F                                    kernelbase.dll                    Disabled  Finished Downloading???
 0113177E                                    aminstantservice.exe              Enabled   
@@ -158,15 +147,27 @@ Software  Name                              Module/Label                      St
 011385E3                                    aminstantservice.exe              Disabled  129C708:"wx"
 011385FA                                    aminstantservice.exe              Disabled  129C700:"unknown"
 01138913                                    aminstantservice.exe              Disabled  
+01139020                                    aminstantservice.exe              Enabled   Critical Decision???
+0113911A                                    aminstantservice.exe              Enabled   
+01139184                                    aminstantservice.exe              Enabled   
+01139193                                    aminstantservice.exe              Enabled   
+01139254                                    aminstantservice.exe              Enabled   
+01139287                                    aminstantservice.exe              Enabled   
+011392BA                                    aminstantservice.exe              Enabled   Building Request Header
+011392C0                                    aminstantservice.exe              Enabled   
+01139337                                    aminstantservice.exe              Enabled   
+011393A6                                    aminstantservice.exe              Enabled   
 011393E3                                    aminstantservice.exe              Disabled  Pre Pinging???
 0113947A                                    aminstantservice.exe              Disabled  Main Server Check At Startup??
 011394DF                                    aminstantservice.exe              Disabled  
 0113A126                                    aminstantservice.exe              Disabled  OS Check
 0113CBEF                                    aminstantservice.exe              Enabled   Critical Decision???
 0113CC2B                                    aminstantservice.exe              Enabled   
-0113CC2D                                    aminstantservice.exe              Disabled  
-0113CC62                                    aminstantservice.exe              Enabled   
+0113CC2D                                    aminstantservice.exe              Enabled   
+0113CC62                                    aminstantservice.exe              Enabled   ebx:"text/html"
 0113CC7C                                    aminstantservice.exe              Enabled   Critical Decision???
+0113CC7E                                    aminstantservice.exe              Enabled   
+0113CC83                                    aminstantservice.exe              Enabled   
 011405B8                                    aminstantservice.exe              Enabled   
 011405BA                                    aminstantservice.exe              Disabled  
 01140846                                    aminstantservice.exe              Enabled   
@@ -178,7 +179,7 @@ Software  Name                              Module/Label                      St
 01141C84                                    aminstantservice.exe              Disabled  Pre-Play Stuff???
 01141E2C                                    aminstantservice.exe              Enabled   129C8E8:"authtoken"
 01141EAF                                    aminstantservice.exe              Enabled   
-01141F19                                    aminstantservice.exe              Enabled   atoken in EAX??
+01141F19                                    aminstantservice.exe              Enabled   atoken in EAX
 01141F1B                                    aminstantservice.exe              Enabled   
 01141F38                                    aminstantservice.exe              Enabled   
 01141F45                                    aminstantservice.exe              Enabled   
@@ -239,6 +240,8 @@ Software  Name                              Module/Label                      St
 01168D9A                                    aminstantservice.exe              Enabled   
 01168DB0                                    aminstantservice.exe              Enabled   
 0116A688                                    aminstantservice.exe              Enabled   
+0116A705                                    aminstantservice.exe              Enabled   
+0116A72D                                    aminstantservice.exe              Enabled   
 0116B8DF                                    aminstantservice.exe              Enabled   Checking Values
 0116B8E8                                    aminstantservice.exe              Enabled   
 0116B8FF                                    aminstantservice.exe              Enabled   
@@ -263,12 +266,18 @@ Software  Name                              Module/Label                      St
 0116C814                                    aminstantservice.exe              Enabled   
 0116CB5B                                    aminstantservice.exe              Enabled   
 0116CBE9                                    aminstantservice.exe              Enabled   
-0116DA9B                                    aminstantservice.exe              Enabled   
+0116DA9B                                    aminstantservice.exe              Enabled   Launch Game Triggered
+0116DAEC                                    aminstantservice.exe              Enabled   
 0116DAFD                                    aminstantservice.exe              Enabled   RFS File Stuff???
 01180001                                    aminstantservice.exe              Disabled  
 01180030                                    aminstantservice.exe              Disabled  
 01180046                                    aminstantservice.exe              Disabled  Member Redirect???
+011806C3                                    aminstantservice.exe              Enabled   
+011806D9                                    aminstantservice.exe              Enabled   Timer Check????
+011806EE                                    aminstantservice.exe              Enabled   Writing JSON File???
 01180C1A                                    aminstantservice.exe              Disabled  
+011817DD                                    aminstantservice.exe              Disabled  
+011818D6                                    aminstantservice.exe              Disabled  
+01181EF7                                    aminstantservice.exe              Enabled   
+01181F18                                    aminstantservice.exe              Enabled   
 0118B1EB                                    aminstantservice.exe              Disabled  unknown???
-
-
