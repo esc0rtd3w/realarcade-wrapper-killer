@@ -740,6 +740,15 @@ goto amiMenu2
 
 :listGames
 
+if %serverStatus%==0 (
+	cls
+	echo AM Server Not Running!
+	echo.
+	echo.
+	pause
+	goto amiMenu2
+)
+
 %baseReqListGames%
 
 %runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
