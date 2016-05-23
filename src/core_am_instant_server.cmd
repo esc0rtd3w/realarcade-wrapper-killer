@@ -7,6 +7,9 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 %kill% aminstantservice.exe
 
 set amiRequest="%temp%\ami-request.txt"
+set amiRequestSessionID="%temp%\amiSessionID.txt"
+
+set sessionID=0
 
 set amiVersion=0.00.00
 
@@ -149,10 +152,11 @@ set remoteRfsBase3=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc
 
 cls
 %laqua%
-echo Current CID: %cid%
-echo Current Game Name: %gameNameDashes%
-echo Current Game Title: %gameNameTitle%
-echo Current App Directory Name: %appDirName%
+echo Content ID: %cid%
+echo Game Name: %gameNameDashes%
+echo Game Title: %gameNameTitle%
+echo App Directory Name: %appDirName%
+echo Session ID: %sessionID%
 echo.
 echo.
 %lyellow%
@@ -164,28 +168,25 @@ echo 1) Start AM Micro Server
 echo 2) Stop AM Micro Server
 echo.
 %lyellow%
-echo 3) Get New Session ID
+echo 3) Get Game Info
+echo 4) Download Game (Remote RFS Extract)
+echo 5) Launch Game
 echo.
-echo 4) Get Game Info
-echo 5) Download Game (Remote RFS Extract)
-echo 6) Launch Game
-echo.
-echo 7) More Options
+echo 6) More Options
 echo.
 echo C) Enter New Game Credentials
 echo.
 echo X) Exit
 echo.
 
-if %os%==XP choice /c:1234567cx /n
-if %os%==VISTA choice /c 1234567cx /n
-if errorlevel 9 goto forceExit
-if errorlevel 8 goto newCreds
-if errorlevel 7 goto amiMenu2
-if errorlevel 6 goto launch
-if errorlevel 5 goto download
-if errorlevel 4 goto info
-if errorlevel 3 goto session
+if %os%==XP choice /c:123456cx /n
+if %os%==VISTA choice /c 123456cx /n
+if errorlevel 8 goto forceExit
+if errorlevel 7 goto newCreds
+if errorlevel 6 goto amiMenu2
+if errorlevel 5 goto launch
+if errorlevel 4 goto download
+if errorlevel 3 goto info
 if errorlevel 2 goto stop
 if errorlevel 1 goto console
 
@@ -200,6 +201,7 @@ echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
 echo Current Game Title: %gameNameTitle%
 echo Current App Directory Name: %appDirName%
+echo Session ID: %sessionID%
 echo.
 echo.
 %lyellow%
@@ -441,6 +443,15 @@ pause
 goto amiMenu
 )
 
+
+:: Get session ID
+%baseReq%%getSessionID%
+copy /y %amiRequest% %amiRequestSessionID%
+
+set /p sessionID=<%amiRequestSessionID%
+
+
+:: Request JSON Config File
 :: Single DOUBLE QUOTE here on purpose
 %runShellWaitTerminate% %baseReq%%download1%%cid%"
 ::set serverStatus=1
@@ -535,6 +546,7 @@ set /p jsonTracking=<%amiRequestTempFinal3%
 :: Match to global variables
 set cid=%jsonContentId%
 set gameNameTitle=%jsonInstallationTitle%
+
 
 ::echo jsonContentId: %jsonContentId%
 ::echo gameNameDashes: %gameNameDashes%
