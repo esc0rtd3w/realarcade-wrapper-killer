@@ -197,10 +197,10 @@ goto end
 
 cls
 %laqua%
-echo Current CID: %cid%
-echo Current Game Name: %gameNameDashes%
-echo Current Game Title: %gameNameTitle%
-echo Current App Directory Name: %appDirName%
+echo CID: %cid%
+echo Game Name: %gameNameDashes%
+echo Game Title: %gameNameTitle%
+echo App Directory Name: %appDirName%
 echo Session ID: %sessionID%
 echo.
 echo.
