@@ -585,6 +585,15 @@ pause
 goto amiMenu
 )
 
+if %serverStatus%==0 (
+	cls
+	echo AM Server Not Running!
+	echo.
+	echo.
+	pause
+	goto amiMenu
+)
+
 %runShellWaitTerminate% %baseReq%%launch1%%cid%%launch2%
 ::set serverStatus=1
 
