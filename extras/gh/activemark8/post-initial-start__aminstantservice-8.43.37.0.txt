@@ -1,0 +1,18 @@
+POST /gathering/insertwrd HTTP/1.1
+component=aminstant
+deviceid=670a4b659a2de7d70d0c891382c65fdd55df7676
+evt=servicestart
+logtime=1464036111772
+os=w7
+subcomponent=internal
+version=8.43.37
+
+
+
+
+
+
+
+content-disposition
+imCW
+
