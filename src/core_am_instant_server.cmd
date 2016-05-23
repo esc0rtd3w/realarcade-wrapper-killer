@@ -197,7 +197,7 @@ goto end
 
 cls
 %laqua%
-echo CID: %cid%
+echo Content ID: %cid%
 echo Game Name: %gameNameDashes%
 echo Game Title: %gameNameTitle%
 echo App Directory Name: %appDirName%
