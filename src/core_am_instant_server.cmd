@@ -30,6 +30,7 @@ set jsonRfsUrl=0
 
 
 set outFileTemp=-O "%temp%\ami-request.txt"
+set outFileRFS=-O "%desktop%\am-rfs-downloads\%gameNameDashes%.rfs"
 
 
 set amLog=%desktop%\amiSvc.log
@@ -119,6 +120,7 @@ set reqConnection=--header="Connection: keep-alive"
 :: Single DOUBLE QUOTE here on purpose
 set baseReq=wget -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set baseReqDownloadRFS=wget %outFileRFS%  "%jsonRfsUrl%
 set baseReqListGames=wget -d %reqGetListGames% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "http://localhost:12072%reqGetListGames%"
 
 set launch1=http://localhost:12072/v1/play.json?content_id=
@@ -171,11 +173,10 @@ echo.
 %lyellow%
 echo 3) Get Game Info
 echo 4) Download Game (Remote RFS Extract)
-echo 5) Launch Game
+echo 5) Download Game (Compressed RFS File)
+echo 6) Launch Game
 echo.
-echo 6) More Options
-echo.
-echo C) Enter New Game Credentials
+echo 7) More Options
 echo.
 echo X) Exit
 echo.
@@ -183,9 +184,9 @@ echo.
 if %os%==XP choice /c:123456cx /n
 if %os%==VISTA choice /c 123456cx /n
 if errorlevel 8 goto forceExit
-if errorlevel 7 goto newCreds
-if errorlevel 6 goto amiMenu2
-if errorlevel 5 goto launch
+if errorlevel 7 goto amiMenu2
+if errorlevel 6 goto launch
+if errorlevel 5 goto download2
 if errorlevel 4 goto download
 if errorlevel 3 goto info
 if errorlevel 2 goto stop
@@ -213,28 +214,24 @@ echo 1) Check Remote Version [%amiVersion%]
 echo.
 echo 2) Open Default Apps Directory
 echo.
-echo 3) Rebuild GET Request
+echo 3) Enter New Game Credentials
 echo.
-echo 4) List Installed Games
-::echo.
-::echo 5) 
+echo 4) Rebuild GET Request
+echo.
+echo 5) List Installed Games 
 ::echo.
 ::echo 6) 
 echo.
 echo.
 echo B) Go Back
 echo.
-echo X) Exit
-echo.
 
-if %os%==XP choice /c:123456bx /n
-if %os%==VISTA choice /c 123456bx /n
-if errorlevel 8 goto forceExit
-if errorlevel 7 goto amiMenu
-if errorlevel 6 goto amiMenu2
-if errorlevel 5 goto amiMenu2
-if errorlevel 4 goto listGames
-if errorlevel 3 set returnTo=amiMenu2&&goto rebuildReq
+if %os%==XP choice /c:12345b /n
+if %os%==VISTA choice /c 12345b /n
+if errorlevel 6 goto amiMenu
+if errorlevel 5 goto listGames
+if errorlevel 4 set returnTo=amiMenu2&&goto rebuildReq
+if errorlevel 3 goto newCreds
 if errorlevel 2 goto openApps
 if errorlevel 1 goto chkRemote
 
@@ -285,6 +282,12 @@ set reqGet=%reqGet1%%reqGet2%%reqGet3%%reqGet4%
 
 set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
+if not exist "%desktop%\am-rfs-downloads" md "%desktop%\am-rfs-downloads"
+set outFileRFS=-O "%desktop%\am-rfs-downloads\%gameNameDashes%.rfs"
+set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
+
+::echo %baseReqDownloadRFS%
+::pause
 ::echo.
 ::echo.
 ::echo.
@@ -653,6 +656,41 @@ echo.
 echo.
 pause
 )
+
+goto amiMenu
+
+
+:download2
+
+if %cid%==00000000000000000000000000000000 (
+cls
+echo No Valid Content ID Has Been Set!
+echo.
+echo.
+pause
+goto amiMenu
+)
+
+if %gameNameDashes%==game-name-here (
+cls
+echo No Valid Game Name Has Been Set!
+echo.
+echo.
+pause
+goto amiMenu
+)
+
+if "%gameNameTitle%"=="Game Name Here" (
+cls
+echo No Valid Game Title Has Been Set!
+echo.
+echo.
+pause
+goto amiMenu
+)
+
+%runShellWaitTerminate% %baseReqDownloadRFS%
+
 
 goto amiMenu
 
