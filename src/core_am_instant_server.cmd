@@ -241,7 +241,37 @@ goto end
 
 cls
 echo Rebuilding Custom GET Requests Using New Game Info....
-::s%waitfor% 3
+
+:: Get first 16 chars for app directory name
+set cidHalfTemp=%cid%
+set cidHalf=%cidHalfTemp:~0,16%
+
+
+:: Set first letter of game name for valid download link
+set gameNameFirstLetterTemp=%gameNameDashes%
+set gameNameFirstLetter=%gameNameFirstLetterTemp:~0,1%
+
+
+:: Get first 16 chars for app directory name
+set gameNameDashesHalfTemp=%gameNameDashes%
+set gameNameDashesHalf=%gameNameDashesHalfTemp:~0,16%
+
+
+:: Convert "SPACES" to "%20" before passing as string
+setlocal enabledelayedexpansion
+set space=%%20
+set gameNameTitle=%gameNameTitle: =!space!%
+echo %gameNameTitle%>"%temp%\tmp.tmp"
+endlocal
+
+set /p gameNameTitle=<"%temp%\tmp.tmp"
+
+
+:: Set new AM Directory Name
+set appDirName=%gameNameDashesHalf%%cidHalf%
+
+
+:: Rebuild Headers
 set reqGet1=--header="/v1/install.json?result=success
 set reqGet2=^&installation_title=%gameNameTitle%
 set reqGet3=^&content_id=%cid%
@@ -251,20 +281,36 @@ set reqGet=%reqGet1%%reqGet2%%reqGet3%%reqGet4%
 
 set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
-echo.
-echo.
-echo.
-echo reqGet: %reqGet%
-echo.
-echo.
-echo.
-echo baseReq: %baseReq%
-echo.
-echo.
-echo.
-echo baseReqExtractRFS: %baseReqExtractRFS%
+::echo.
+::echo.
+::echo.
+::echo reqGet: %reqGet%
+::echo.
+::echo.
+::echo.
+::echo baseReq: %baseReq%
+::echo.
+::echo.
+::echo.
+::echo baseReqExtractRFS: %baseReqExtractRFS%
 ::pause
+
+
+:: Logging
+echo.>>%amLog%
+echo ---------------------------------------------------------------->>%amLog%
+echo Created By The RealArcade Wrapper Killer v%rawkver% [%date%]>>%amLog%
+echo.>>%amLog%
+echo %cid%>>%amLog%
+echo %gameNameDashes%>>%amLog%
+echo %gameNameTitle%>>%amLog%
+echo %appDirName%>>%amLog%
+echo ---------------------------------------------------------------->>%amLog%
+echo.>>%amLog%
+
+
 goto %returnTo%
+
 
 
 :newCreds
@@ -285,10 +331,6 @@ echo.
 
 set /p cid=
 
-:: Get first 16 chars for app directory name
-set cidHalfTemp=%cid%
-set cidHalf=%cidHalfTemp:~0,16%
-
 
 cls
 echo Current CID: %cid%
@@ -306,14 +348,6 @@ echo.
 
 set /p gameNameDashes=
 
-:: Set first letter of game name for valid download link
-set gameNameFirstLetterTemp=%gameNameDashes%
-set gameNameFirstLetter=%gameNameFirstLetterTemp:~0,1%
-
-:: Get first 16 chars for app directory name
-set gameNameDashesHalfTemp=%gameNameDashes%
-set gameNameDashesHalf=%gameNameDashesHalfTemp:~0,16%
-
 cls
 echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
@@ -330,30 +364,6 @@ echo.
 
 set /p gameNameTitle=
 
-
-:: Convert "SPACES" to "%20" before passing as string
-setlocal enabledelayedexpansion
-set space=%%20
-set gameNameTitle=%gameNameTitle: =!space!%
-echo %gameNameTitle%>"%temp%\tmp.tmp"
-endlocal
-
-set /p gameNameTitle=<"%temp%\tmp.tmp"
-
-:: Set new AM Directory Name
-set appDirName=%gameNameDashesHalf%%cidHalf%
-
-:: Logging
-echo.>>%amLog%
-echo ---------------------------------------------------------------->>%amLog%
-echo Created By The RealArcade Wrapper Killer v%rawkver% [%date%]>>%amLog%
-echo.>>%amLog%
-echo %cid%>>%amLog%
-echo %gameNameDashes%>>%amLog%
-echo %gameNameTitle%>>%amLog%
-echo %appDirName%>>%amLog%
-echo ---------------------------------------------------------------->>%amLog%
-echo.>>%amLog%
 
 set returnTo=amiMenu
 
@@ -409,6 +419,19 @@ goto amiMenu
 
 :info
 
+if %cid%==00000000000000000000000000000000 (
+cls
+echo No Valid Content ID Has Been Set!
+echo.
+echo.
+echo Enter New CID and press ENTER:
+echo.
+echo.
+
+set /p cid=
+)
+
+:: If no CID was still set, then return to menu
 if %cid%==00000000000000000000000000000000 (
 cls
 echo No Valid Content ID Has Been Set!
@@ -520,7 +543,7 @@ set gameNameTitle=%jsonInstallationTitle%
 ::echo jsonTracking: %jsonTracking%
 ::pause
 
-%runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
+::%runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
 
 set returnTo=amiMenu
 
