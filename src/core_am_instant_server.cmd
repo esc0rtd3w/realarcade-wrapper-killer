@@ -172,8 +172,10 @@ echo 2) Stop AM Micro Server
 echo.
 %lyellow%
 echo 3) Get Game Info
+echo.
 echo 4) Download Game (Remote RFS Extract)
 echo 5) Download Game (Compressed RFS File)
+echo.
 echo 6) Launch Game
 echo.
 echo 7) More Options
