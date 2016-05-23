@@ -9,7 +9,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 set amiRequest="%temp%\ami-request.txt"
 set amiRequestSessionID="%temp%\amiSessionID.txt"
 
-set sessionID=0
+set sessionID=0000-00-00-00-00-00-000-0000000000000
 
 set amiVersion=0.00.00
 
