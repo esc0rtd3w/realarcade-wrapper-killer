@@ -428,6 +428,9 @@ set amiRequestTemp3="%temp%\ami-json-parse3.txt"
 set amiRequestTemp3a="%temp%\ami-json-parse3a.txt"
 set amiRequestTemp3b="%temp%\ami-json-parse3b.txt"
 set amiRequestTemp4="%temp%\ami-json-parse4.txt"
+set amiRequestTempFinal1="%temp%\ami-json-parse-final1.txt"
+set amiRequestTempFinal2="%temp%\ami-json-parse-final2.txt"
+set amiRequestTempFinal3="%temp%\ami-json-parse-final3.txt"
 
 :: Get "installation_title" Part 1
 for /f "delims=: tokens=3" %%a in ('type %amiRequest%') do (
@@ -460,15 +463,17 @@ for /f "delims=, tokens=1" %%a in ('type %amiRequestTemp3%') do (
 	echo %%a>%amiRequestTemp3a%
 )
 
-:: Get "rfs" Part 3
+:: Get "rfs" Part 3 (set URL to RFS here)
 for /f "delims=, tokens=*" %%a in ('type %amiRequestTemp3a%') do (
 	echo %%a>%amiRequestTemp3b%
 	set jsonRfsUrl=http:%%a
 )
 
-:: Get "rfs" Part 4
+:: Get "rfs" Part 4 (set gameNameDashes here)
 for /f "delims=/ tokens=5" %%a in ('type %amiRequestTemp3b%') do (
 	set gameNameDashes=%%a
+	set gameNameFirstLetterTemp=%gameNameDashes%
+	set gameNameFirstLetter=%gameNameFirstLetterTemp:~0,1%
 )
 
 
@@ -483,16 +488,43 @@ for /f "delims=, tokens=1" %%a in ('type %amiRequestTemp4%') do (
 )
 
 
-echo jsonContentId: %jsonContentId%
-echo gameNameDashes: %gameNameDashes%
-echo jsonInstallationTitle: %jsonInstallationTitle%
-echo jsonRfsUrl: %jsonRfsUrl%
-echo jsonTracking: %jsonTracking%
-pause
+:: Cleanup Variables
+setlocal enabledelayedexpansion
+
+set jsonContentId=!jsonContentId:"=!
+echo !jsonContentId!>%amiRequestTempFinal1%
+
+set jsonInstallationTitle=!jsonInstallationTitle:"=!
+echo !jsonInstallationTitle!>%amiRequestTempFinal2%
+
+set jsonTracking=!jsonTracking:"=!
+echo !jsonTracking!>%amiRequestTempFinal3%
+
+endlocal
+
+
+:: Set new variable without quotes
+set /p jsonContentId=<%amiRequestTempFinal1%
+set /p jsonInstallationTitle=<%amiRequestTempFinal2%
+set /p jsonTracking=<%amiRequestTempFinal3%
+
+
+:: Match to global variables
+set cid=%jsonContentId%
+set gameNameTitle=%jsonInstallationTitle%
+
+::echo jsonContentId: %jsonContentId%
+::echo gameNameDashes: %gameNameDashes%
+::echo jsonInstallationTitle: %jsonInstallationTitle%
+::echo jsonRfsUrl: %jsonRfsUrl%
+::echo jsonTracking: %jsonTracking%
+::pause
 
 %runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
 
-goto amiMenu
+set returnTo=amiMenu
+
+goto rebuildReq
 
 
 :launch
@@ -625,6 +657,9 @@ del /f /q %amiRequestTemp3%
 del /f /q %amiRequestTemp3a%
 del /f /q %amiRequestTemp3b%
 del /f /q %amiRequestTemp4%
+del /f /q %amiRequestTempFinal1%
+del /f /q %amiRequestTempFinal2%
+del /f /q %amiRequestTempFinal3%
 
 exit
 
