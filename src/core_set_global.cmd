@@ -216,6 +216,8 @@ set remove=del /s /q
 
 set popup=nircmd trayballoon "RealArcade Wrapper Killer"
 
+set wait=%sys32%\wait.exe
+
 ::-----------------------------------------------------------------------------------
 ::Displayed Windows
 ::-----------------------------------------------------------------------------------

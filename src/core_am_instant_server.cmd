@@ -151,6 +151,7 @@ set remoteRfsBase3=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc
 
 
 cls
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %laqua%
 echo Content ID: %cid%
 echo Game Name: %gameNameDashes%
@@ -196,6 +197,7 @@ goto end
 :amiMenu2
 
 cls
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %laqua%
 echo Content ID: %cid%
 echo Game Name: %gameNameDashes%
@@ -367,9 +369,9 @@ echo.
 set /p gameNameTitle=
 
 
-set returnTo=amiMenu
+::set returnTo=amiMenu
 
-goto rebuildReq
+goto info
 
 ::goto amiMenu
 
@@ -421,20 +423,27 @@ goto amiMenu
 
 :info
 
+cls
+echo Enter New Content ID and press ENTER:
+echo.
+echo.
+echo Example: %cid%
+echo.
+echo.
+
+set /p cid=
+
+
 if %cid%==00000000000000000000000000000000 (
 cls
 echo No Valid Content ID Has Been Set!
 echo.
 echo.
-echo Enter New CID and press ENTER:
-echo.
-echo.
-
-set /p cid=
+pause
+goto amiMenu
 )
 
-:: If no CID was still set, then return to menu
-if %cid%==00000000000000000000000000000000 (
+if %cid%==null (
 cls
 echo No Valid Content ID Has Been Set!
 echo.
@@ -621,6 +630,29 @@ goto amiMenu
 ::%runShellWaitTerminate% %baseReq%%remoteRfsBase%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
 %runShellWaitTerminate% %baseReqExtractRFS%%remoteRfsBase1%%gameNameTitle%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
 ::set serverStatus=1
+
+cls
+echo Checking For Download Path....
+echo.
+echo.
+%wait% 5
+
+if not exist %amInstantAppPath% (
+cls
+echo No Valid Download Path Has Been Detected!
+echo.
+echo This usually means there is a problem with one of the required variables.
+echo.
+echo.
+echo jsonContentId: %jsonContentId%
+echo gameNameDashes: %gameNameDashes%
+echo jsonInstallationTitle: %jsonInstallationTitle%
+echo.
+echo amInstantAppPath: "%amInstantAppPath%"
+echo.
+echo.
+pause
+)
 
 goto amiMenu
 
