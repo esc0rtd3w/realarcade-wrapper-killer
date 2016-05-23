@@ -6,6 +6,8 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 
 %kill% aminstantservice.exe
 
+set amiRequest="%temp%\ami-request.txt"
+
 set amiVersion=0.00.00
 
 set serverStatus=0
@@ -20,6 +22,8 @@ set gameNameTitle=Game Name Here
 set gameNameFirstLetter=g
 
 set appDirName=UNDEFINED
+
+set jsonRfsUrl=0
 
 
 set outFileTemp=-O "%temp%\ami-request.txt"
@@ -418,6 +422,74 @@ goto amiMenu
 %runShellWaitTerminate% %baseReq%%download1%%cid%"
 ::set serverStatus=1
 
+set amiRequestTemp1="%temp%\ami-json-parse1.txt"
+set amiRequestTemp2="%temp%\ami-json-parse2.txt"
+set amiRequestTemp3="%temp%\ami-json-parse3.txt"
+set amiRequestTemp3a="%temp%\ami-json-parse3a.txt"
+set amiRequestTemp3b="%temp%\ami-json-parse3b.txt"
+set amiRequestTemp4="%temp%\ami-json-parse4.txt"
+
+:: Get "installation_title" Part 1
+for /f "delims=: tokens=3" %%a in ('type %amiRequest%') do (
+	echo %%a>%amiRequestTemp1%
+)
+
+:: Get "installation_title" Part 2
+for /f "delims=, tokens=1" %%a in ('type %amiRequestTemp1%') do (
+	set jsonInstallationTitle=%%a
+)
+
+:: Get "content_id" Part 1
+for /f "delims=: tokens=4" %%a in ('type %amiRequest%') do (
+	echo %%a>%amiRequestTemp2%
+)
+
+:: Get "content_id" Part 2
+for /f "delims=, tokens=1" %%a in ('type %amiRequestTemp2%') do (
+	set jsonContentId=%%a
+)
+
+
+:: Get "rfs" Part 1
+for /f "delims=: tokens=6" %%a in ('type %amiRequest%') do (
+	echo %%a>%amiRequestTemp3%
+)
+
+:: Get "rfs" Part 2
+for /f "delims=, tokens=1" %%a in ('type %amiRequestTemp3%') do (
+	echo %%a>%amiRequestTemp3a%
+)
+
+:: Get "rfs" Part 3
+for /f "delims=, tokens=*" %%a in ('type %amiRequestTemp3a%') do (
+	echo %%a>%amiRequestTemp3b%
+	set jsonRfsUrl=http:%%a
+)
+
+:: Get "rfs" Part 4
+for /f "delims=/ tokens=5" %%a in ('type %amiRequestTemp3b%') do (
+	set gameNameDashes=%%a
+)
+
+
+:: Get "tracking" Part 1
+for /f "delims=: tokens=7" %%a in ('type %amiRequest%') do (
+	echo %%a>%amiRequestTemp4%
+)
+
+:: Get "tracking" Part 2
+for /f "delims=, tokens=1" %%a in ('type %amiRequestTemp4%') do (
+	set jsonTracking=%%a
+)
+
+
+echo jsonContentId: %jsonContentId%
+echo gameNameDashes: %gameNameDashes%
+echo jsonInstallationTitle: %jsonInstallationTitle%
+echo jsonRfsUrl: %jsonRfsUrl%
+echo jsonTracking: %jsonTracking%
+pause
+
 %runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
 
 goto amiMenu
@@ -545,6 +617,14 @@ goto amiMenu2
 %kill% aminstantservice.exe
 
 del /f /q "%temp%\tmp.tmp"
+
+del /f /q %amiRequest%
+del /f /q %amiRequestTemp1%
+del /f /q %amiRequestTemp2%
+del /f /q %amiRequestTemp3%
+del /f /q %amiRequestTemp3a%
+del /f /q %amiRequestTemp3b%
+del /f /q %amiRequestTemp4%
 
 exit
 
