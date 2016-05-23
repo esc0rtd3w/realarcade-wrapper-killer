@@ -16,6 +16,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
 
 
+
                    ²²²²²²²                          ²²²²²        ²²²²²
                  ²²²²²² ²²²                     ²²²²²  ²²       ²²²²²²
            ²²²²² ²²²²²²  ²²      ²²   ²²²²²²²² ²²²²² ²²²  ²²²² ²² ²²²²
@@ -182,7 +183,9 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
 	* UPDATED: RAWK Core to v3.0.6
 
-                   * Nothing new here :(
+                   * AMI Server Now Auto-Parses JSON File From Content ID.
+
+                   * Added "Download RFS File" To AMI Server Menu.
 
 
 
