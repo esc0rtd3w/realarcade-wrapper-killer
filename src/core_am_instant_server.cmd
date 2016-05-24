@@ -9,6 +9,8 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 set amiRequest="%temp%\ami-request.txt"
 
 set amiRequestInstallationTitle="%temp%\amiRequestInstallationTitle.txt"
+set amiRequestInstallationTitleClean1="%temp%\amiRequestInstallationTitleClean1.txt"
+set amiRequestInstallationTitleClean2="%temp%\amiRequestInstallationTitleClean2.txt"
 set amiRequestContentId="%temp%\amiRequestContentId.txt"
 set amiRequestRFS="%temp%\amiRequestRFS.txt"
 set amiRequestTracking="%temp%\amiRequestTracking.txt"
@@ -582,6 +584,12 @@ echo !jsonContentId!>%amiRequestContentId%
 set jsonInstallationTitle=!jsonInstallationTitle:"=!
 echo !jsonInstallationTitle!>%amiRequestInstallationTitle%
 
+set jsonInstallationTitleClean1=!jsonInstallationTitle:'=!
+echo !jsonInstallationTitleClean1!>%amiRequestInstallationTitleClean1%
+
+set jsonInstallationTitleClean2=!jsonInstallationTitleClean1: -=!
+echo !jsonInstallationTitleClean2!>%amiRequestInstallationTitleClean2%
+
 set jsonRfsUrl=!jsonRfsUrl:"=!
 echo !jsonRfsUrl!>%jsonRfsUrl%
 
@@ -599,6 +607,8 @@ endlocal
 :: Set new variable without quotes
 set /p jsonContentId=<%amiRequestContentId%
 set /p jsonInstallationTitle=<%amiRequestInstallationTitle%
+set /p jsonInstallationTitleClean1=<%amiRequestInstallationTitleClean1%
+set /p jsonInstallationTitleClean2=<%amiRequestInstallationTitleClean2%
 set /p jsonRfsUrl=<%jsonRfsUrl%
 set /p jsonTracking=<%amiRequestTracking%
 set /p jsonDeviceID=<%amiRequestDeviceID%
@@ -608,14 +618,6 @@ set /p jsonDeviceID=<%amiRequestDeviceID%
 set cid=%jsonContentId%
 set gameNameTitleHTML=%jsonInstallationTitle%
 set deviceID=%jsonDeviceID%
-
-
-::echo jsonContentId: %jsonContentId%
-::echo gameNameDashes: %gameNameDashes%
-::echo jsonInstallationTitle: %jsonInstallationTitle%
-::echo jsonRfsUrl: %jsonRfsUrl%
-::echo jsonTracking: %jsonTracking%
-::pause
 
 ::%runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
 
@@ -843,15 +845,18 @@ echo Content ID: %cid%
 echo.
 %lgreen%
 echo Name (AMI RFS Format): %gameNameDashes%
-echo Name (Title HTML): %gameNameTitleHTML%
-echo Name (Title Normal): %jsonInstallationTitle%
 echo Name (First Letter For AMI RFS Link): %gameNameFirstLetter%
+echo Title HTML: %gameNameTitleHTML%
+echo Title Normal: %jsonInstallationTitle%
+echo Title Clean Lite: %jsonInstallationTitleClean1%
+echo Title Clean Full: %jsonInstallationTitleClean2%
 echo.
 %lyellow%
 echo Session ID: %sessionID%
 echo Device ID: %deviceID%
 echo.
 echo AMI Apps Directory: "%amInstantAppPath%"
+echo.
 echo.
 %white%
 
@@ -869,6 +874,8 @@ del /f /q "%temp%\tmp.tmp"
 
 del /f /q %amiRequest%
 del /f /q %amiRequestInstallationTitle%
+del /f /q %amiRequestInstallationTitleClean1%
+del /f /q %amiRequestInstallationTitleClean2%
 del /f /q %amiRequestContentId%
 del /f /q %amiRequestRFS%
 del /f /q %amiRequestTracking%
