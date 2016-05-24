@@ -496,6 +496,7 @@ for /f "delims=, tokens=1" %%a in ('type %amiRequestInstallationTitle%') do (
 	set jsonInstallationTitle=%%a
 )
 
+
 :: Get "content_id" Part 1
 for /f "delims=: tokens=4" %%a in ('type %amiRequest%') do (
 	echo %%a>%amiRequestContentId%
@@ -507,8 +508,6 @@ for /f "delims=, tokens=1" %%a in ('type %amiRequestContentId%') do (
 	set jsonContentId=%%a
 )
 
-	echo %jsonContentId%
-	pause
 
 :: Get "rfs" Part 1
 for /f "delims=: tokens=6" %%a in ('type %amiRequest%') do (
@@ -571,7 +570,7 @@ for /f "delims=: tokens=2" %%a in ('type %amiRequestDeviceId%') do (
 setlocal enabledelayedexpansion
 
 set jsonContentId=!jsonContentId:"=!
-echo !jsonContentId!>%jsonContentId%
+echo !jsonContentId!>%amiRequestContentId%
 
 set jsonInstallationTitle=!jsonInstallationTitle:"=!
 echo !jsonInstallationTitle!>%amiRequestInstallationTitle%
