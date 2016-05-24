@@ -450,6 +450,15 @@ goto amiMenu
 
 :info
 
+if %serverStatus%==0 (
+	cls
+	echo AM Server Not Running!
+	echo.
+	echo.
+	pause
+	goto amiMenu
+)
+
 cls
 echo Enter New Content ID and press ENTER:
 echo.
