@@ -165,7 +165,9 @@
 
 	* UPDATED: RAWK Core to v3.0.6
 
-                   * AMI Server Now Auto-Parses JSON File From Content ID.
+                   * Updated All AMI Menu Options.
+
+                   * AMI Server Now Auto-Parses JSON Files From Content ID.
 
                    * Added "Download RFS File" To AMI Server Menu.
 
