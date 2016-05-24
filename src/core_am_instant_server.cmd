@@ -296,6 +296,7 @@ endlocal
 set /p gameNameTitleHTML=<"%temp%\tmp.tmp"
 
 
+:: Directories with a single quote in them will make a directory like this: "game-s-directory" instead of "game's-directory"
 :: Set new AM Directory Name
 set appDirName=%gameNameDashesHalf%%cidHalf%
 
