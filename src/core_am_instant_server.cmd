@@ -11,7 +11,7 @@ set amiRequestSessionID="%temp%\amiSessionID.txt"
 ::set amiRequestDeviceID="%temp%\amiDeviceID.txt"
 
 set sessionID=0000-00-00-00-00-00-000-0000000000000
-set deviceID=0000000000000
+set deviceID=0000000000000000000000000000000000000000
 
 set amiVersion=0.00.00
 
@@ -169,7 +169,7 @@ echo Game Name: %gameNameDashes%
 echo Game Title: %gameNameTitle%
 echo App Directory Name: %appDirName%
 echo Device ID: %deviceID%
-::echo Session ID: %sessionID%
+echo Session ID: %sessionID%
 echo.
 echo.
 %lyellow%
@@ -182,10 +182,8 @@ echo 2) Stop AM Micro Server
 echo.
 %lyellow%
 echo 3) Get Game Info
-echo.
 echo 4) Download Game (Remote RFS Extract)
-echo 5) Download Game (Compressed RFS File)
-echo.
+echo 5) Download Game Alternate (Compressed RFS File)
 echo 6) Launch Game
 echo.
 echo 7) More Options
@@ -217,7 +215,7 @@ echo Game Name: %gameNameDashes%
 echo Game Title: %gameNameTitle%
 echo App Directory Name: %appDirName%
 echo Device ID: %deviceID%
-::echo Session ID: %sessionID%
+echo Session ID: %sessionID%
 echo.
 echo.
 %lyellow%
@@ -232,8 +230,6 @@ echo.
 echo 4) Rebuild GET Request
 echo.
 echo 5) List Installed Games 
-::echo.
-::echo 6) 
 echo.
 echo.
 echo B) Go Back
