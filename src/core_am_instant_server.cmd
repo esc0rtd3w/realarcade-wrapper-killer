@@ -125,7 +125,7 @@ set reqConnection=--header="Connection: keep-alive"
 :: Single DOUBLE QUOTE here on purpose
 set baseReq=wget -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
-set baseReqDownloadRFS=wget %outFileRFS%  "%jsonRfsUrl%
+set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
 set baseReqListGames=wget -d %reqGetListGames% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "http://localhost:12072%reqGetListGames%"
 
 
