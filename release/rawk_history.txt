@@ -6,6 +6,19 @@ RealArcade Wrapper Killer Version History From NFO Files
 
 
 
+v5.5.1
+----------
+
+	* UPDATED: RAWK Core to v3.0.6
+
+                   * Updated All AMI Menu Options.
+
+                   * AMI Server Now Auto-Parses JSON Files From Content ID.
+
+                   * Added "Download RFS File" To AMI Server Menu.
+
+
+
 v5.5
 ----------
 
