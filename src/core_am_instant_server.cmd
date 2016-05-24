@@ -7,8 +7,13 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 %kill% aminstantservice.exe
 
 set amiRequest="%temp%\ami-request.txt"
-set amiRequestSessionID="%temp%\amiSessionID.txt"
-::set amiRequestDeviceID="%temp%\amiDeviceID.txt"
+
+set amiRequestInstallationTitle="%temp%\amiRequestInstallationTitle.txt"
+set amiRequestContentId="%temp%\amiRequestContentId.txt"
+set amiRequestRFS="%temp%\amiRequestRFS.txt"
+set amiRequestTracking="%temp%\amiRequestTracking.txt"
+set amiRequestDeviceId="%temp%\amiRequestDeviceID.txt"
+set amiRequestSessionID="%temp%\amiRequestSessionID.txt"
 
 set sessionID=0000-00-00-00-00-00-000-0000000000000
 set deviceID=0000000000000000000000000000000000000000
@@ -480,60 +485,49 @@ set /p sessionID=<%amiRequestSessionID%
 :: Single DOUBLE QUOTE here on purpose
 ::%runShellWaitTerminate% %baseReq%%download1%%cid%"
 %baseReq%%download1%%cid%"
-::set serverStatus=1
-
-set amiRequestTemp1="%temp%\ami-json-parse1.txt"
-set amiRequestTemp2="%temp%\ami-json-parse2.txt"
-set amiRequestTemp3="%temp%\ami-json-parse3.txt"
-set amiRequestTemp3a="%temp%\ami-json-parse3a.txt"
-set amiRequestTemp3b="%temp%\ami-json-parse3b.txt"
-set amiRequestTemp4="%temp%\ami-json-parse4.txt"
-set amiRequestTemp5="%temp%\ami-json-parse5.txt"
-::set amiRequestTemp5a="%temp%\ami-json-parse5a.txt"
-set amiRequestTempFinal1="%temp%\ami-json-parse-final1.txt"
-set amiRequestTempFinal2="%temp%\ami-json-parse-final2.txt"
-set amiRequestTempFinal3="%temp%\ami-json-parse-final3.txt"
-set amiRequestTempFinal4="%temp%\ami-json-parse-final4.txt"
 
 :: Get "installation_title" Part 1
 for /f "delims=: tokens=3" %%a in ('type %amiRequest%') do (
-	echo %%a>%amiRequestTemp1%
+	echo %%a>%amiRequestInstallationTitle%
 )
 
 :: Get "installation_title" Part 2
-for /f "delims=, tokens=1" %%a in ('type %amiRequestTemp1%') do (
+for /f "delims=, tokens=1" %%a in ('type %amiRequestInstallationTitle%') do (
 	set jsonInstallationTitle=%%a
 )
 
 :: Get "content_id" Part 1
 for /f "delims=: tokens=4" %%a in ('type %amiRequest%') do (
-	echo %%a>%amiRequestTemp2%
+	echo %%a>%amiRequestContentId%
 )
 
 :: Get "content_id" Part 2
-for /f "delims=, tokens=1" %%a in ('type %amiRequestTemp2%') do (
+for /f "delims=, tokens=1" %%a in ('type %amiRequestContentId%') do (
+	echo %%a>%amiRequestContentId%
 	set jsonContentId=%%a
 )
 
+	echo %jsonContentId%
+	pause
 
 :: Get "rfs" Part 1
 for /f "delims=: tokens=6" %%a in ('type %amiRequest%') do (
-	echo %%a>%amiRequestTemp3%
+	echo %%a>%amiRequestRFS%
 )
 
 :: Get "rfs" Part 2
-for /f "delims=, tokens=1" %%a in ('type %amiRequestTemp3%') do (
-	echo %%a>%amiRequestTemp3a%
+for /f "delims=, tokens=1" %%a in ('type %amiRequestRFS%') do (
+	echo %%a>%amiRequestRFS%
 )
 
 :: Get "rfs" Part 3 (set URL to RFS here)
-for /f "delims=, tokens=*" %%a in ('type %amiRequestTemp3a%') do (
-	echo %%a>%amiRequestTemp3b%
+for /f "delims=, tokens=*" %%a in ('type %amiRequestRFS%') do (
+	echo %%a>%amiRequestRFS%
 	set jsonRfsUrl=http:%%a
 )
 
 :: Get "rfs" Part 4 (set gameNameDashes here)
-for /f "delims=/ tokens=5" %%a in ('type %amiRequestTemp3b%') do (
+for /f "delims=/ tokens=5" %%a in ('type %amiRequestRFS%') do (
 	set gameNameDashes=%%a
 	set gameNameFirstLetterTemp=%gameNameDashes%
 	set gameNameFirstLetter=%gameNameFirstLetterTemp:~0,1%
@@ -542,11 +536,11 @@ for /f "delims=/ tokens=5" %%a in ('type %amiRequestTemp3b%') do (
 
 :: Get "tracking" Part 1
 for /f "delims=: tokens=7" %%a in ('type %amiRequest%') do (
-	echo %%a>%amiRequestTemp4%
+	echo %%a>%amiRequestTracking%
 )
 
 :: Get "tracking" Part 2
-for /f "delims=, tokens=1" %%a in ('type %amiRequestTemp4%') do (
+for /f "delims=, tokens=1" %%a in ('type %amiRequestTracking%') do (
 	set jsonTracking=%%a
 )
 
@@ -562,12 +556,12 @@ setlocal enabledelayedexpansion
 for /f "tokens=*" %%a in ('type %amiRequest%') do (
     set /a amiRequest=!amiRequest! + 1
     set var!amiRequest!=%%a
-	if !amiRequest!==4 echo %%a>>%amiRequestTemp5%
+	if !amiRequest!==4 echo %%a>%amiRequestDeviceID%
 )
 endlocal
 
 :: Get "device_id" Part 2
-for /f "delims=: tokens=2" %%a in ('type %amiRequestTemp5%') do (
+for /f "delims=: tokens=2" %%a in ('type %amiRequestDeviceId%') do (
 	set jsonDeviceID=%%a
 )
 
@@ -577,27 +571,31 @@ for /f "delims=: tokens=2" %%a in ('type %amiRequestTemp5%') do (
 setlocal enabledelayedexpansion
 
 set jsonContentId=!jsonContentId:"=!
-echo !jsonContentId!>%amiRequestTempFinal1%
+echo !jsonContentId!>%jsonContentId%
 
 set jsonInstallationTitle=!jsonInstallationTitle:"=!
-echo !jsonInstallationTitle!>%amiRequestTempFinal2%
+echo !jsonInstallationTitle!>%amiRequestInstallationTitle%
+
+set jsonRfsUrl=!jsonRfsUrl:"=!
+echo !jsonRfsUrl!>%jsonRfsUrl%
 
 set jsonTracking=!jsonTracking:"=!
-echo !jsonTracking!>%amiRequestTempFinal3%
+echo !jsonTracking!>%amiRequestTracking%
 
 set jsonDeviceID=!jsonDeviceID:"=!
 set jsonDeviceID=!jsonDeviceID: =!
 set jsonDeviceID=!jsonDeviceID:,=!
-echo !jsonDeviceID!>%amiRequestTempFinal4%
+echo !jsonDeviceID!>%amiRequestDeviceID%
 
 endlocal
 
 
 :: Set new variable without quotes
-set /p jsonContentId=<%amiRequestTempFinal1%
-set /p jsonInstallationTitle=<%amiRequestTempFinal2%
-set /p jsonTracking=<%amiRequestTempFinal3%
-set /p jsonDeviceID=<%amiRequestTempFinal4%
+set /p jsonContentId=<%amiRequestContentId%
+set /p jsonInstallationTitle=<%amiRequestInstallationTitle%
+set /p jsonRfsUrl=<%jsonRfsUrl%
+set /p jsonTracking=<%amiRequestTracking%
+set /p jsonDeviceID=<%amiRequestDeviceID%
 
 
 :: Match to global variables
@@ -705,6 +703,9 @@ echo.
 echo jsonContentId: %jsonContentId%
 echo gameNameDashes: %gameNameDashes%
 echo jsonInstallationTitle: %jsonInstallationTitle%
+echo.
+echo sessionID: %sessionID%
+echo deviceID: %deviceID%
 echo.
 echo amInstantAppPath: "%amInstantAppPath%"
 echo.
@@ -822,23 +823,15 @@ goto amiMenu2
 del /f /q "%temp%\tmp.tmp"
 
 del /f /q %amiRequest%
-del /f /q %amiRequestTemp1%
-del /f /q %amiRequestTemp2%
-del /f /q %amiRequestTemp3%
-del /f /q %amiRequestTemp3a%
-del /f /q %amiRequestTemp3b%
-del /f /q %amiRequestTemp4%
-del /f /q %amiRequestTemp5%
-::del /f /q %amiRequestTemp5a%
-del /f /q %amiRequestTempFinal1%
-del /f /q %amiRequestTempFinal2%
-del /f /q %amiRequestTempFinal3%
-del /f /q %amiRequestTempFinal4%
+del /f /q %amiRequestInstallationTitle%
+del /f /q %amiRequestContentId%
+del /f /q %amiRequestRFS%
+del /f /q %amiRequestTracking%
+del /f /q %amiRequestDeviceId%
 
 del /f /q %amiRequestSessionID%
 del /f /q "%temp%\ami-json-parse.txt"
 del /f /q "%temp%\amiVersion.cmd"
-del /f /q "%temp%\amiDeviceID.txt"
 
 del /f /q "%temp%\GameHouse_GamePlayer.exe"
 
