@@ -870,7 +870,9 @@ echo.
 echo Session ID: %sessionID%
 echo Device ID: %deviceID%
 echo.
-echo AMI Apps Directory: "%amInstantAppPath%"
+%lpurple%
+echo Directory:
+echo "%amInstantAppPath%\%appDirName%"
 echo.
 echo.
 %white%
