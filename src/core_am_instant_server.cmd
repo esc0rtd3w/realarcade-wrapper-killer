@@ -499,7 +499,7 @@ set amiRequestTemp3a="%temp%\ami-json-parse3a.txt"
 set amiRequestTemp3b="%temp%\ami-json-parse3b.txt"
 set amiRequestTemp4="%temp%\ami-json-parse4.txt"
 set amiRequestTemp5="%temp%\ami-json-parse5.txt"
-set amiRequestTemp5a="%temp%\ami-json-parse5a.txt"
+::set amiRequestTemp5a="%temp%\ami-json-parse5a.txt"
 set amiRequestTempFinal1="%temp%\ami-json-parse-final1.txt"
 set amiRequestTempFinal2="%temp%\ami-json-parse-final2.txt"
 set amiRequestTempFinal3="%temp%\ami-json-parse-final3.txt"
@@ -575,17 +575,10 @@ for /f "tokens=*" %%a in ('type %amiRequest%') do (
 )
 endlocal
 
-setlocal enabledelayedexpansion
 :: Get "device_id" Part 2
-for /f "delims=, tokens=1" %%a in ('type %amiRequestTemp5%') do (
-	set jsonDeviceIDTemp=!jsonDeviceIDTemp:,=!
-	echo !jsonDeviceIDTemp!>%amiRequestTemp5a%
+for /f "delims=: tokens=2" %%a in ('type %amiRequestTemp5%') do (
+	set jsonDeviceID=%%a
 )
-endlocal
-
-
-:: Set new "device_id" variable without quotes
-set /p jsonContentId=<%amiRequestTemp5a%
 
 
 
@@ -843,7 +836,7 @@ del /f /q %amiRequestTemp3a%
 del /f /q %amiRequestTemp3b%
 del /f /q %amiRequestTemp4%
 del /f /q %amiRequestTemp5%
-del /f /q %amiRequestTemp5a%
+::del /f /q %amiRequestTemp5a%
 del /f /q %amiRequestTempFinal1%
 del /f /q %amiRequestTempFinal2%
 del /f /q %amiRequestTempFinal3%
