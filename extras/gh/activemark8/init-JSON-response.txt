@@ -1,0 +1,25 @@
+{
+  "api_port" : "12072",
+  "api_version" : "v1",
+  "device_id" : "670a4b659a2de7d70d0c891382c65fdd55df7676",
+  "error" : null,
+  "query_id" : "0000000000000",
+  "service_version" : "ActiveMARK[R] v8.43.37 [ActiveMARK[R] R8.43]",
+  "supported_api" : [
+    "init",
+    "play",
+    "listGames",
+    "install",
+    "uninstall",
+    "listInstallations",
+    "preload",
+    "setSettings",
+    "getInfo",
+    "sendPing"
+  ],
+  "supported_formats" : [
+    "js",
+    "json"
+  ],
+  "uptime" : "11"
+}

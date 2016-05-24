@@ -8,8 +8,10 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 
 set amiRequest="%temp%\ami-request.txt"
 set amiRequestSessionID="%temp%\amiSessionID.txt"
+set amiRequestDeviceID="%temp%\amiDeviceID.txt"
 
 set sessionID=0000-00-00-00-00-00-000-0000000000000
+set deviceID=0000000000000
 
 set amiVersion=0.00.00
 
@@ -35,9 +37,8 @@ set outFileRFS=-O "%desktop%\am-rfs-downloads\%gameNameDashes%.rfs"
 
 set amLog=%desktop%\amiSvc.log
 
-set memberCookie=--header="Cookie: gamehouseuser=true"
+set memberCookie=--header="Set-Cookie: gamehouseuser=true"
 
-set pageNewGames=http://www.gamehouse.com/new-games
 set pageNewGames=http://www.gamehouse.com/new-games
 
 set dumpPage=wget -d %memberCookie% -O %outFileTemp% %pageNewGames%
@@ -94,6 +95,9 @@ set dumpPage=wget -d %memberCookie% -O %outFileTemp% %pageNewGames%
 
 :: New Menu with working options only (20160515)
 
+set reqDeviceID=http://localhost:12072/v1/init.json?query_id=0000000000000
+set reqDeviceIDHeader=/v1/init.json?query_id=0000000000000
+
 
 :: This must be rebuilt each time the game is changed
 ::set reqGet=0
@@ -109,8 +113,8 @@ set reqGetListGames2=^&query_id=1463457306950
 set reqGetListGames=%reqGetListGames1%%reqGetListGames2%
 
 set reqHost=--header="Host: localhost:12072"
-set reqUserAgent=--header="User-Agent: AmHttpClient v1.0"
-::set reqUserAgent=--header="User-Agent: AmHttpGet 1.0"
+::set reqUserAgent=--header="User-Agent: AmHttpClient v1.0"
+set reqUserAgent=--header="User-Agent: AmHttpGet 1.0"
 set reqAccept=--header="Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
 set reqAcceptLanguage=--header="Accept-Language: en-US,en;q=0.5"
 set reqAcceptEncoding=--header="Accept-Encoding: gzip, deflate"
@@ -123,6 +127,10 @@ set baseReq=wget -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %re
 set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 set baseReqDownloadRFS=wget %outFileRFS%  "%jsonRfsUrl%
 set baseReqListGames=wget -d %reqGetListGames% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "http://localhost:12072%reqGetListGames%"
+
+
+:: Device ID Request
+set reqGetDeviceId=wget -d %reqDeviceIDHeader% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
 set launch1=http://localhost:12072/v1/play.json?content_id=
 set launch2=^&auth_token=0000000000000000000000000000000000000000"
@@ -160,7 +168,8 @@ echo Content ID: %cid%
 echo Game Name: %gameNameDashes%
 echo Game Title: %gameNameTitle%
 echo App Directory Name: %appDirName%
-echo Session ID: %sessionID%
+echo Device ID: %deviceID%
+::echo Session ID: %sessionID%
 echo.
 echo.
 %lyellow%
@@ -207,7 +216,8 @@ echo Content ID: %cid%
 echo Game Name: %gameNameDashes%
 echo Game Title: %gameNameTitle%
 echo App Directory Name: %appDirName%
-echo Session ID: %sessionID%
+echo Device ID: %deviceID%
+::echo Session ID: %sessionID%
 echo.
 echo.
 %lyellow%
@@ -282,6 +292,8 @@ set reqGet3=^&content_id=%cid%
 set reqGet4=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1"
 
 set reqGet=%reqGet1%%reqGet2%%reqGet3%%reqGet4%
+
+set reqGetDeviceId=wget -d %reqDeviceIDHeader% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
 set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
@@ -427,6 +439,15 @@ goto amiMenu
 goto amiMenu
 
 
+:device
+
+%reqGetDeviceId%%reqDeviceID%
+
+%runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
+
+goto amiMenu
+
+
 :info
 
 cls
@@ -537,6 +558,28 @@ for /f "delims=, tokens=1" %%a in ('type %amiRequestTemp4%') do (
 )
 
 
+:: Request JSON Init File
+::%wait% 3
+set amiRequestTemp5="%temp%\ami-json-parse5.txt"
+set amiRequestTempFinal4="%temp%\ami-json-parse-final4.txt"
+
+:: Get Device ID (from init.json)
+%reqGetDeviceId%%reqDeviceID%"
+::copy /y %amiRequest% %amiRequestDeviceID%
+::set /p deviceID=<%amiRequestDeviceID%
+
+
+:: Get "device_id" Part 1
+for /f "delims=: tokens=3" %%d in ('type %amiRequest%') do (
+	echo %%d>%amiRequestTemp5%
+)
+pause
+:: Get "device_id" Part 2
+for /f "delims=, tokens=1" %%d in ('type %amiRequestTemp5%') do (
+	set jsonDeviceID=%%d
+)
+pause
+
 :: Cleanup Variables
 setlocal enabledelayedexpansion
 
@@ -549,6 +592,9 @@ echo !jsonInstallationTitle!>%amiRequestTempFinal2%
 set jsonTracking=!jsonTracking:"=!
 echo !jsonTracking!>%amiRequestTempFinal3%
 
+set jsonDeviceID=!jsonDeviceID:"=!
+echo !jsonDeviceID!>%amiRequestTempFinal4%
+
 endlocal
 
 
@@ -556,11 +602,13 @@ endlocal
 set /p jsonContentId=<%amiRequestTempFinal1%
 set /p jsonInstallationTitle=<%amiRequestTempFinal2%
 set /p jsonTracking=<%amiRequestTempFinal3%
+set /p jsonDeviceID=<%amiRequestTempFinal4%
 
 
 :: Match to global variables
 set cid=%jsonContentId%
 set gameNameTitle=%jsonInstallationTitle%
+set deviceID=%jsonDeviceID%
 
 
 ::echo jsonContentId: %jsonContentId%
@@ -785,13 +833,16 @@ del /f /q %amiRequestTemp3%
 del /f /q %amiRequestTemp3a%
 del /f /q %amiRequestTemp3b%
 del /f /q %amiRequestTemp4%
+del /f /q %amiRequestTemp5%
 del /f /q %amiRequestTempFinal1%
 del /f /q %amiRequestTempFinal2%
 del /f /q %amiRequestTempFinal3%
+del /f /q %amiRequestTempFinal4%
 
 del /f /q %amiRequestSessionID%
 del /f /q "%temp%\ami-json-parse.txt"
 del /f /q "%temp%\amiVersion.cmd"
+del /f /q "%temp%\amiDeviceID.txt"
 
 del /f /q "%temp%\GameHouse_GamePlayer.exe"
 

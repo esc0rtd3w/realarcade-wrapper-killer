@@ -24,3 +24,4 @@ http://games-dl.gamehouse.com/gamehouse/activemark//aminstantservice/versions.js
 
 
 
+00BEDD8E | 8B 16                    | mov edx,dword ptr ds:[esi]              | ;edx:"aminstantservice_play"
