@@ -297,22 +297,6 @@ if not exist "%desktop%\am-rfs-downloads" md "%desktop%\am-rfs-downloads"
 set outFileRFS=-O "%desktop%\am-rfs-downloads\%gameNameDashes%.rfs"
 set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
 
-::echo %baseReqDownloadRFS%
-::pause
-::echo.
-::echo.
-::echo.
-::echo reqGet: %reqGet%
-::echo.
-::echo.
-::echo.
-::echo baseReq: %baseReq%
-::echo.
-::echo.
-::echo.
-::echo baseReqExtractRFS: %baseReqExtractRFS%
-::pause
-
 
 :: Logging
 echo.>>%amLog%
@@ -494,7 +478,8 @@ set /p sessionID=<%amiRequestSessionID%
 
 :: Request JSON Config File
 :: Single DOUBLE QUOTE here on purpose
-%runShellWaitTerminate% %baseReq%%download1%%cid%"
+::%runShellWaitTerminate% %baseReq%%download1%%cid%"
+%baseReq%%download1%%cid%"
 ::set serverStatus=1
 
 set amiRequestTemp1="%temp%\ami-json-parse1.txt"
@@ -569,7 +554,8 @@ for /f "delims=, tokens=1" %%a in ('type %amiRequestTemp4%') do (
 :: Request JSON Init File
 
 :: Get Device ID (from init.json)
-%runShellWaitTerminate% %reqGetDeviceId%%reqDeviceID%"
+::%runShellWaitTerminate% %reqGetDeviceId%%reqDeviceID%"
+%reqGetDeviceId%%reqDeviceID%"
 
 :: Get "device_id" Part 1 (only write 4th line with device_id. kinda clunky!!)
 setlocal enabledelayedexpansion
