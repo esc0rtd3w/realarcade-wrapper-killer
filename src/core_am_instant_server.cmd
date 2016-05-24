@@ -8,7 +8,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 
 set amiRequest="%temp%\ami-request.txt"
 set amiRequestSessionID="%temp%\amiSessionID.txt"
-set amiRequestDeviceID="%temp%\amiDeviceID.txt"
+::set amiRequestDeviceID="%temp%\amiDeviceID.txt"
 
 set sessionID=0000-00-00-00-00-00-000-0000000000000
 set deviceID=0000000000000
@@ -498,9 +498,12 @@ set amiRequestTemp3="%temp%\ami-json-parse3.txt"
 set amiRequestTemp3a="%temp%\ami-json-parse3a.txt"
 set amiRequestTemp3b="%temp%\ami-json-parse3b.txt"
 set amiRequestTemp4="%temp%\ami-json-parse4.txt"
+set amiRequestTemp5="%temp%\ami-json-parse5.txt"
+set amiRequestTemp5a="%temp%\ami-json-parse5a.txt"
 set amiRequestTempFinal1="%temp%\ami-json-parse-final1.txt"
 set amiRequestTempFinal2="%temp%\ami-json-parse-final2.txt"
 set amiRequestTempFinal3="%temp%\ami-json-parse-final3.txt"
+set amiRequestTempFinal4="%temp%\ami-json-parse-final4.txt"
 
 :: Get "installation_title" Part 1
 for /f "delims=: tokens=3" %%a in ('type %amiRequest%') do (
@@ -559,26 +562,32 @@ for /f "delims=, tokens=1" %%a in ('type %amiRequestTemp4%') do (
 
 
 :: Request JSON Init File
-::%wait% 3
-set amiRequestTemp5="%temp%\ami-json-parse5.txt"
-set amiRequestTempFinal4="%temp%\ami-json-parse-final4.txt"
 
 :: Get Device ID (from init.json)
-%reqGetDeviceId%%reqDeviceID%"
-::copy /y %amiRequest% %amiRequestDeviceID%
-::set /p deviceID=<%amiRequestDeviceID%
+%runShellWaitTerminate% %reqGetDeviceId%%reqDeviceID%"
 
-
-:: Get "device_id" Part 1
-for /f "delims=: tokens=3" %%d in ('type %amiRequest%') do (
-	echo %%d>%amiRequestTemp5%
+:: Get "device_id" Part 1 (only write 4th line with device_id. kinda clunky!!)
+setlocal enabledelayedexpansion
+for /f "tokens=*" %%a in ('type %amiRequest%') do (
+    set /a amiRequest=!amiRequest! + 1
+    set var!amiRequest!=%%a
+	if !amiRequest!==4 echo %%a>>%amiRequestTemp5%
 )
-pause
+endlocal
+
+setlocal enabledelayedexpansion
 :: Get "device_id" Part 2
-for /f "delims=, tokens=1" %%d in ('type %amiRequestTemp5%') do (
-	set jsonDeviceID=%%d
+for /f "delims=, tokens=1" %%a in ('type %amiRequestTemp5%') do (
+	set jsonDeviceIDTemp=!jsonDeviceIDTemp:,=!
+	echo !jsonDeviceIDTemp!>%amiRequestTemp5a%
 )
-pause
+endlocal
+
+
+:: Set new "device_id" variable without quotes
+set /p jsonContentId=<%amiRequestTemp5a%
+
+
 
 :: Cleanup Variables
 setlocal enabledelayedexpansion
@@ -834,6 +843,7 @@ del /f /q %amiRequestTemp3a%
 del /f /q %amiRequestTemp3b%
 del /f /q %amiRequestTemp4%
 del /f /q %amiRequestTemp5%
+del /f /q %amiRequestTemp5a%
 del /f /q %amiRequestTempFinal1%
 del /f /q %amiRequestTempFinal2%
 del /f /q %amiRequestTempFinal3%
