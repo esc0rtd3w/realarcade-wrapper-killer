@@ -236,14 +236,13 @@ echo Select an option from below
 echo.
 echo 1) Check Remote Version [%amiVersion%]
 echo.
-echo 2) Open Default Apps Directory
+echo 2) Show Extended Game Info
 echo.
-echo 3) Enter New Game Credentials
-echo 4) Rebuild GET Request
+echo 3) Open Default Apps Directory
+echo 4) List Installed Games
 echo.
-echo 5) List Installed Games 
-echo.
-echo 6) Show Extended Game Info
+echo 5) Enter New Game Credentials
+echo 6) Rebuild GET Request
 echo.
 echo.
 echo B) Go Back
@@ -252,11 +251,11 @@ echo.
 if %os%==XP choice /c:123456b /n
 if %os%==VISTA choice /c 123456b /n
 if errorlevel 7 goto amiMenu
-if errorlevel 6 goto extGame
-if errorlevel 5 goto listGames
-if errorlevel 4 set returnTo=amiMenu2&&goto rebuildReq
-if errorlevel 3 goto newCreds
-if errorlevel 2 goto openApps
+if errorlevel 6 set returnTo=amiMenu2&&goto rebuildReq
+if errorlevel 5 goto newCreds
+if errorlevel 4 goto listGames
+if errorlevel 3 goto openApps
+if errorlevel 2 goto extGame
 if errorlevel 1 goto chkRemote
 
 goto end
