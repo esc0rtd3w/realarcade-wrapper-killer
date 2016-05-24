@@ -77,9 +77,38 @@
 ‹  ﬂﬂﬂ                      ﬂ€€≤ €€€ NEWS €€€ ≤€€ﬂ    €                  ﬂﬂﬂ ‹
       
 
+        * Now fully supporting ActiveMark Instant Server (AMIS). There are
+          available options for parsing JSON files, using custom GET commands
+          to download extracted RFS files, launching game, checking installed
+          games, and more. The scripting also supports many other options.
+
+
+                               [ SUPER OLD NEWS ]
+
+
+        * Beginning November 2009, RealArcade and GameHouse merged. You can 
+          still use the old style RA v1.2 player to download new games.
+
+        * Some pre-merge GameHouse games WILL NOT be available in RGS format.
+
+
+
+                                 [ OLD NEWS ]
+
         * I have missed a lot of news over the past couple years. There
           have been multiple iterations of RGA formats that now have
           partial support. This includes both stubs and RAR archives.
+
+        * The newest file format is RFS. Very little is known about this
+          format currently. What is known, is that it is made by Activemark,
+          the stubs are labeled as "ACID", and the most current version is
+          v1.20.128.0. The stubs act similar to their RGA cousins, except
+          a new RFS file is now downloaded which has 112 bytes of specific
+          data at the beginning of each file. More information is available
+          at https://github.com/esc0rtd3w/realarcade-wrapper-killer under
+          /src/rfs/rfs-chunks. The RFS data files are NOT standard RAR,
+          ZIP, or similar formats. They can be extracted by invoking the
+          stub normally. The EXE files are still protected by Activemark.
 
         * A new service dubbed "AM Instant Service" has been found. I have
           been testing some things and here is what I have so far:
@@ -114,26 +143,6 @@
 	    files directly from GameHouse server, check installed games,
 	    uninstall games, launch games, and more.
 
-        * The newest file format is RFS. Very little is known about this
-          format currently. What is known, is that it is made by Activemark,
-          the stubs are labeled as "ACID", and the most current version is
-          v1.20.128.0. The stubs act similar to their RGA cousins, except
-          a new RFS file is now downloaded which has 112 bytes of specific
-          data at the beginning of each file. More information is available
-          at https://github.com/esc0rtd3w/realarcade-wrapper-killer under
-          /src/rfs/rfs-chunks. The RFS data files are NOT standard RAR,
-          ZIP, or similar formats. They can be extracted by invoking the
-          stub normally. The EXE files are still protected by Activemark.
-
-
-                                 [ OLD NEWS ]
-
-
-        * Beginning November 2009, RealArcade and GameHouse merged. You can 
-          still use the old style RA v1.2 player to download new games.
-
-        * Some pre-merge GameHouse games WILL NOT be available in RGS format.
-
         * NOTICE: The domain "crypticware.com" is not affiliated with us!
 
 ‹  ﬂﬂﬂ                         ﬂ€€≤€€€€€€€€€≤€€ﬂ      €                   ﬂﬂﬂ ‹
@@ -163,13 +172,9 @@
 
 
 
-	* UPDATED: RAWK Core to v3.0.6
+	* UPDATED: RAWK Core to v3.0.7
 
-                   * Updated All AMI Menu Options.
-
-                   * AMI Server Now Auto-Parses JSON Files From Content ID.
-
-                   * Added "Download RFS File" To AMI Server Menu.
+                   * Nothing new here :(
 
 
 
