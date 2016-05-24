@@ -109,7 +109,8 @@ set reqGetListGames2=^&query_id=1463457306950
 set reqGetListGames=%reqGetListGames1%%reqGetListGames2%
 
 set reqHost=--header="Host: localhost:12072"
-set reqUserAgent=--header="User-Agent: AmHttpClient 1.0"
+set reqUserAgent=--header="User-Agent: AmHttpClient v1.0"
+::set reqUserAgent=--header="User-Agent: AmHttpGet 1.0"
 set reqAccept=--header="Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
 set reqAcceptLanguage=--header="Accept-Language: en-US,en;q=0.5"
 set reqAcceptEncoding=--header="Accept-Encoding: gzip, deflate"
@@ -745,6 +746,8 @@ call "%temp%\amiVersion.cmd"
 set amiVersion=%F$V%
 ::echo %F$V%
 ::pause
+
+::http://games-dl.gamehouse.com/gamehouse/activemark/aminstantservice/versions.json
 
 goto amiMenu2
 

@@ -3,3 +3,24 @@ http://games-dl.gamehouse.com/gamehouse/activemark//aminstantservice/versions.js
 
 
 1464039252.dop008.dc1.t,1464039251.cds067.dc1.c
+
+
+003892F5 | 8B 17                    | mov edx,dword ptr ds:[edi]              | ;[edi]:http://games-dl.gamehouse.com/gamehouse/activemark//aminstantservice
+
+
+
+
+
+
+003EC1CB | 8B 55 00                 | mov edx,dword ptr ss:[ebp]              | ;edx:"POST /gathering/insertwrd HTTP/1.1\r\nConnection: Keep-Alive\r\nContent-Length: 431\r\nContent-Type: application/json\r\nHost: www.gamehouse.com\r\nUser-Agent: AmHttpClient v1.0\r\n"
+
+
+
+
+003C3EC8 | 8B 84 24 88 00 00 00     | mov eax,dword ptr ss:[esp+88]           | ;eax:"e3a9", [esp+88]:e3a94d6ce6931ea5e7a6f0f13cdb29a6
+
+
+003C3EF2 | 8B 45 00                 | mov eax,dword ptr ss:[ebp]              | ;eax:"e3a9", [ebp]:11361ddbbf3f5a60d2cdac2f6220cb3c
+
+
+
