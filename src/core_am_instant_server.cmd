@@ -29,6 +29,7 @@ set cid=00000000000000000000000000000000
 
 set gameNameDashes=game-name-here
 set gameNameTitle=Game Name Here
+set gameNameTitleHTML=Game Name Here
 set gameNameFirstLetter=g
 
 set appDirName=UNDEFINED
@@ -106,9 +107,9 @@ set reqDeviceIDHeader=/v1/init.json?query_id=0000000000000
 
 :: This must be rebuilt each time the game is changed
 ::set reqGet=0
-::set reqGet=/v1/install.json?result=success^&installation_title=%gameNameTitle%^&content_id=%cid%^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1
+::set reqGet=/v1/install.json?result=success^&installation_title=%gameNameTitleHTML%^&content_id=%cid%^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1
 set reqGet1=--header="/v1/install.json?result=success
-set reqGet2=^&installation_title=%gameNameTitle%
+set reqGet2=^&installation_title=%gameNameTitleHTML%
 set reqGet3=^&content_id=%cid%
 set reqGet4=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1"
 set reqGet=%reqGet1%%reqGet2%%reqGet3%%reqGet4%
@@ -171,7 +172,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 %laqua%
 echo Content ID: %cid%
 echo Game Name: %gameNameDashes%
-echo Game Title: %gameNameTitle%
+echo Game Title: %gameNameTitleHTML%
 echo App Directory Name: %appDirName%
 echo Device ID: %deviceID%
 echo Session ID: %sessionID%
@@ -217,7 +218,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 %laqua%
 echo Content ID: %cid%
 echo Game Name: %gameNameDashes%
-echo Game Title: %gameNameTitle%
+echo Game Title: %gameNameTitleHTML%
 echo App Directory Name: %appDirName%
 echo Device ID: %deviceID%
 echo Session ID: %sessionID%
@@ -231,18 +232,20 @@ echo.
 echo 2) Open Default Apps Directory
 echo.
 echo 3) Enter New Game Credentials
-echo.
 echo 4) Rebuild GET Request
 echo.
 echo 5) List Installed Games 
+echo.
+echo 6) Show Extended Game Info
 echo.
 echo.
 echo B) Go Back
 echo.
 
-if %os%==XP choice /c:12345b /n
-if %os%==VISTA choice /c 12345b /n
-if errorlevel 6 goto amiMenu
+if %os%==XP choice /c:123456b /n
+if %os%==VISTA choice /c 123456b /n
+if errorlevel 7 goto amiMenu
+if errorlevel 6 goto extGame
 if errorlevel 5 goto listGames
 if errorlevel 4 set returnTo=amiMenu2&&goto rebuildReq
 if errorlevel 3 goto newCreds
@@ -272,14 +275,18 @@ set gameNameDashesHalfTemp=%gameNameDashes%
 set gameNameDashesHalf=%gameNameDashesHalfTemp:~0,16%
 
 
+:: Store Game Name Title Original Format
+set gameNameTitle=%gameNameTitle%
+
+
 :: Convert "SPACES" to "%20" before passing as string
 setlocal enabledelayedexpansion
 set space=%%20
-set gameNameTitle=%gameNameTitle: =!space!%
-echo %gameNameTitle%>"%temp%\tmp.tmp"
+set gameNameTitleHTML=%gameNameTitleHTML: =!space!%
+echo %gameNameTitleHTML%>"%temp%\tmp.tmp"
 endlocal
 
-set /p gameNameTitle=<"%temp%\tmp.tmp"
+set /p gameNameTitleHTML=<"%temp%\tmp.tmp"
 
 
 :: Set new AM Directory Name
@@ -288,7 +295,7 @@ set appDirName=%gameNameDashesHalf%%cidHalf%
 
 :: Rebuild Headers
 set reqGet1=--header="/v1/install.json?result=success
-set reqGet2=^&installation_title=%gameNameTitle%
+set reqGet2=^&installation_title=%gameNameTitleHTML%
 set reqGet3=^&content_id=%cid%
 set reqGet4=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1"
 
@@ -310,7 +317,7 @@ echo Created By The RealArcade Wrapper Killer v%rawkver% [%date%]>>%amLog%
 echo.>>%amLog%
 echo %cid%>>%amLog%
 echo %gameNameDashes%>>%amLog%
-echo %gameNameTitle%>>%amLog%
+echo %gameNameTitleHTML%>>%amLog%
 echo %appDirName%>>%amLog%
 echo ---------------------------------------------------------------->>%amLog%
 echo.>>%amLog%
@@ -325,7 +332,7 @@ goto %returnTo%
 cls
 echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
-echo Current Game Title: %gameNameTitle%
+echo Current Game Title: %gameNameTitleHTML%
 echo.
 echo.
 echo.
@@ -342,7 +349,7 @@ set /p cid=
 cls
 echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
-echo Current Game Title: %gameNameTitle%
+echo Current Game Title: %gameNameTitleHTML%
 echo.
 echo.
 echo.
@@ -358,7 +365,7 @@ set /p gameNameDashes=
 cls
 echo Current CID: %cid%
 echo Current Game Name: %gameNameDashes%
-echo Current Game Title: %gameNameTitle%
+echo Current Game Title: %gameNameTitleHTML%
 echo.
 echo.
 echo.
@@ -369,7 +376,7 @@ echo *** TO KEEP EXISTING VALUE, JUST PRESS ENTER ***
 echo.
 echo.
 
-set /p gameNameTitle=
+set /p gameNameTitleHTML=
 
 
 ::set returnTo=amiMenu
@@ -599,7 +606,7 @@ set /p jsonDeviceID=<%amiRequestDeviceID%
 
 :: Match to global variables
 set cid=%jsonContentId%
-set gameNameTitle=%jsonInstallationTitle%
+set gameNameTitleHTML=%jsonInstallationTitle%
 set deviceID=%jsonDeviceID%
 
 
@@ -672,7 +679,7 @@ pause
 goto amiMenu
 )
 
-if "%gameNameTitle%"=="Game Name Here" (
+if "%gameNameTitleHTML%"=="Game Name Here" (
 cls
 echo No Valid Game Title Has Been Set!
 echo.
@@ -683,7 +690,7 @@ goto amiMenu
 
 :: Single DOUBLE QUOTE here on purpose
 ::%runShellWaitTerminate% %baseReq%%remoteRfsBase%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
-%runShellWaitTerminate% %baseReqExtractRFS%%remoteRfsBase1%%gameNameTitle%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
+%runShellWaitTerminate% %baseReqExtractRFS%%remoteRfsBase1%%gameNameTitleHTML%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
 ::set serverStatus=1
 
 cls
@@ -735,7 +742,7 @@ pause
 goto amiMenu
 )
 
-if "%gameNameTitle%"=="Game Name Here" (
+if "%gameNameTitleHTML%"=="Game Name Here" (
 cls
 echo No Valid Game Title Has Been Set!
 echo.
@@ -810,6 +817,45 @@ if %serverStatus%==0 (
 
 %runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
 ::set serverStatus=1
+
+goto amiMenu2
+
+
+:extGame
+
+if %serverStatus%==0 (
+	cls
+	echo AM Server Not Running!
+	echo.
+	echo.
+	pause
+	goto amiMenu2
+)
+
+cls
+%white%
+if %cid%==00000000000000000000000000000000 echo No Valid Game Selected! Use "Get Game Info" From Main Menu.
+if not %cid%==00000000000000000000000000000000 echo Extended Game Info
+echo.
+echo.
+%laqua%
+echo Content ID: %cid%
+echo.
+%lgreen%
+echo Name (AMI RFS Format): %gameNameDashes%
+echo Name (Title HTML): %gameNameTitleHTML%
+echo Name (Title Normal): %jsonInstallationTitle%
+echo Name (First Letter For AMI RFS Link): %gameNameFirstLetter%
+echo.
+%lyellow%
+echo Session ID: %sessionID%
+echo Device ID: %deviceID%
+echo.
+echo AMI Apps Directory: "%amInstantAppPath%"
+echo.
+%white%
+
+pause
 
 goto amiMenu2
 
