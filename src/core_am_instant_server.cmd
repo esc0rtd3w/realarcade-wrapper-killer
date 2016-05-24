@@ -17,6 +17,8 @@ set amiRequestTracking="%temp%\amiRequestTracking.txt"
 set amiRequestDeviceId="%temp%\amiRequestDeviceID.txt"
 set amiRequestSessionID="%temp%\amiRequestSessionID.txt"
 
+set gameNameNoDashesSet="%temp%\gameNameNoDashesSet.txt"
+
 set sessionID=0000-00-00-00-00-00-000-0000000000000
 set deviceID=0000000000000000000000000000000000000000
 
@@ -30,8 +32,11 @@ set returnTo=amiMenu
 set cid=00000000000000000000000000000000
 
 set gameNameDashes=game-name-here
+set gameNameNoDashes=gamenamehere
 set gameNameTitle=Game Name Here
 set gameNameTitleHTML=Game Name Here
+set gameNameTitleClean1=Game Name Here
+set gameNameTitleClean2=Game Name Here
 set gameNameFirstLetter=g
 
 set appDirName=UNDEFINED
@@ -601,6 +606,9 @@ set jsonDeviceID=!jsonDeviceID: =!
 set jsonDeviceID=!jsonDeviceID:,=!
 echo !jsonDeviceID!>%amiRequestDeviceID%
 
+set gameNameNoDashes=!gameNameDashes:-=!
+echo !gameNameNoDashes!>%gameNameNoDashesSet%
+
 endlocal
 
 
@@ -613,10 +621,14 @@ set /p jsonRfsUrl=<%jsonRfsUrl%
 set /p jsonTracking=<%amiRequestTracking%
 set /p jsonDeviceID=<%amiRequestDeviceID%
 
+set /p gameNameNoDashes=<%gameNameNoDashesSet%
+
 
 :: Match to global variables
 set cid=%jsonContentId%
 set gameNameTitleHTML=%jsonInstallationTitle%
+set gameNameTitleClean1=%jsonInstallationTitleClean1%
+set gameNameTitleClean2=%jsonInstallationTitleClean2%
 set deviceID=%jsonDeviceID%
 
 ::%runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
@@ -845,9 +857,11 @@ echo Content ID: %cid%
 echo.
 %lgreen%
 echo Name (AMI RFS Format): %gameNameDashes%
+echo Name (Web Page Format): %gameNameNoDashes%
 echo Name (First Letter For AMI RFS Link): %gameNameFirstLetter%
-echo Title HTML: %gameNameTitleHTML%
+echo.
 echo Title Normal: %jsonInstallationTitle%
+echo Title HTML: %gameNameTitleHTML%
 echo Title Clean Lite: %jsonInstallationTitleClean1%
 echo Title Clean Full: %jsonInstallationTitleClean2%
 echo.
@@ -880,6 +894,8 @@ del /f /q %amiRequestContentId%
 del /f /q %amiRequestRFS%
 del /f /q %amiRequestTracking%
 del /f /q %amiRequestDeviceId%
+
+del /f /q %gameNameNoDashesSet%
 
 del /f /q %amiRequestSessionID%
 del /f /q "%temp%\ami-json-parse.txt"
