@@ -595,6 +595,8 @@ set jsonTracking=!jsonTracking:"=!
 echo !jsonTracking!>%amiRequestTempFinal3%
 
 set jsonDeviceID=!jsonDeviceID:"=!
+set jsonDeviceID=!jsonDeviceID: =!
+set jsonDeviceID=!jsonDeviceID:,=!
 echo !jsonDeviceID!>%amiRequestTempFinal4%
 
 endlocal
