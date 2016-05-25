@@ -249,6 +249,9 @@ Source: ..\loaders\loaderRFS\am\am-instant-remove.reg; DestDir: {app}; Attribs: 
 ;Source: ..\sys32\lua\luac.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 ;Source: ..\sys32\lua\luadec.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 ;Source: ..\sys32\uniq.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
+;Source: ..\sys32\hidecon.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
+;Source: ..\sys32\hideexec.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
+;Source: ..\sys32\quiet.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 
 ; External System Files (System)
 Source: ..\sys32\choice.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
@@ -285,6 +288,9 @@ Source: ..\sys32\wget.exe; DestDir: {sys}; Attribs: System; Flags: overwriteread
 ;Source: ..\sys32\lua\luac.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 ;Source: ..\sys32\lua\luadec.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 Source: ..\sys32\uniq.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\hidecon.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\hideexec.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\quiet.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 
 ; Tasklist and Taskkill (Local)
 ; Fixes game termination problems for an OS like Windows XP Home Edition
