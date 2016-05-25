@@ -188,13 +188,19 @@ echo.
 %lyellow%
 echo Select an option from below
 echo.
-%lgreen%
-echo 1) Start AM Micro Server
-%lred%
-echo 2) Stop AM Micro Server
+if %serverStatus%==0 (
+	%lred%
+	echo 1^) Toggle AM Micro Server
+)
+
+if %serverStatus%==1 (
+	%lgreen%
+	echo 1^) Toggle AM Micro Server
+)
 echo.
 %lyellow%
-echo 3) Get Game Info
+echo 2) Get Game Info
+echo 3) Show Extended Game Info
 echo 4) Download Game (Remote RFS Extract)
 echo 5) Download Game Alternate (Compressed RFS File)
 echo 6) Launch Game
@@ -211,9 +217,9 @@ if errorlevel 7 goto amiMenu2
 if errorlevel 6 goto launch
 if errorlevel 5 goto download2
 if errorlevel 4 goto download
-if errorlevel 3 goto info
-if errorlevel 2 goto stop
-if errorlevel 1 goto console
+if errorlevel 3 goto extGame
+if errorlevel 2 goto info
+if errorlevel 1 goto toggleSvr
 
 goto end
 
@@ -236,26 +242,24 @@ echo Select an option from below
 echo.
 echo 1) Check Remote Version [%amiVersion%]
 echo.
-echo 2) Show Extended Game Info
+echo 2) Open Default Apps Directory
 echo.
-echo 3) Open Default Apps Directory
-echo 4) List Installed Games
+echo 3) List Installed Games
 echo.
-echo 5) Enter New Game Credentials
-echo 6) Rebuild GET Request
+echo 4) Enter New Game Credentials
+echo 5) Rebuild GET Request
 echo.
 echo.
 echo B) Go Back
 echo.
 
-if %os%==XP choice /c:123456b /n
-if %os%==VISTA choice /c 123456b /n
-if errorlevel 7 goto amiMenu
-if errorlevel 6 set returnTo=amiMenu2&&goto rebuildReq
-if errorlevel 5 goto newCreds
-if errorlevel 4 goto listGames
-if errorlevel 3 goto openApps
-if errorlevel 2 goto extGame
+if %os%==XP choice /c:12345b /n
+if %os%==VISTA choice /c 12345b /n
+if errorlevel 6 goto amiMenu
+if errorlevel 5 set returnTo=amiMenu2&&goto rebuildReq
+if errorlevel 4 goto newCreds
+if errorlevel 3 goto listGames
+if errorlevel 2 goto openApps
 if errorlevel 1 goto chkRemote
 
 goto end
@@ -411,20 +415,21 @@ set serverStatus=1
 goto amiMenu
 
 
-:console
+:toggleSvr
 
-if %serverStatus%==1 (
+if %serverStatus%==0 (
 	cls
-	echo AM Server Already Running!
-	echo.
-	echo.
-	pause
+	%runTerminate% %amInstantServerConsole%
+	set serverStatus=1
 	goto amiMenu
 )
 
-%runTerminate% %amInstantServerConsole%
-::%gohide% %amInstantServerConsole%
-set serverStatus=1
+if %serverStatus%==1 (
+	cls
+	%kill% aminstantservice.exe
+	set serverStatus=0
+	goto amiMenu
+)
 
 goto amiMenu
 
@@ -843,7 +848,7 @@ if %serverStatus%==0 (
 	echo.
 	echo.
 	pause
-	goto amiMenu2
+	goto amiMenu
 )
 
 cls
@@ -878,7 +883,7 @@ echo.
 
 pause
 
-goto amiMenu2
+goto amiMenu
 
 
 :forceExit
