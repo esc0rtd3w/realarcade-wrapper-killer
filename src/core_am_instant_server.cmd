@@ -3,7 +3,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 
 
 :reset
-mode con lines=25
+mode con lines=26
 
 %kill% aminstantservice.exe
 
