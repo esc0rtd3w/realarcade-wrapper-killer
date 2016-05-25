@@ -21,6 +21,9 @@ set launchwebdl=0
 
 set invalidFolder=1
 
+:: Dump current environment out to text
+set>"%temp%\rawkEnvTemp.cmd"
+
 cocolor 0c
 echo Game Loaded: Not Available!
 echo.
@@ -41,10 +44,10 @@ echo.
 echo.
 echo PRESS ENTER TO EXIT THIS WINDOW.....
 echo.
+echo.
 echo [A] Advanced Options   [W] Web Downloader   [S] Stub Creator
 echo.
 echo [O] Run OGM Service    [M] Run AM Instant Service
-echo.
 echo.
 
 
@@ -133,4 +136,8 @@ goto reset
 
 
 :end
+
+::del /f /q "%temp%\rawkEnv.cmd"
+::del /f /q "%temp%\rawkEnvTemp.cmd"
+
 exit

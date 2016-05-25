@@ -5,6 +5,16 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 :reset
 mode con lines=26
 
+:: Get environment from the wrapper killer
+echo.>"%temp%\rawkEnv.cmd"
+for /f "tokens=* delims= " %%a in ('type "%temp%\rawkEnvTemp.cmd"') do (
+echo set %%a>>"%temp%\rawkEnv.cmd"
+)
+call "%temp%\rawkEnv.cmd"
+
+::set
+::pause
+
 %kill% aminstantservice.exe
 
 set amiRequest="%temp%\ami-request.txt"
