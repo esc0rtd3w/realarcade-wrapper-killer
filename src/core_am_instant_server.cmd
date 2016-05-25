@@ -178,8 +178,8 @@ cls
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %laqua%
 echo Content ID: %cid%
-echo Game Name: %gameNameDashes%
-echo Game Title: %gameNameTitleHTML%
+echo Name: %gameNameDashes%
+echo Title: %gameNameTitleHTML%
 echo App Directory Name: %appDirName%
 echo Device ID: %deviceID%
 echo Session ID: %sessionID%
@@ -201,6 +201,7 @@ echo.
 %lyellow%
 echo 2) Get Game Info
 echo 3) Show Extended Game Info
+echo.
 echo 4) Download Game (Remote RFS Extract)
 echo 5) Download Game Alternate (Compressed RFS File)
 echo 6) Launch Game
@@ -230,8 +231,8 @@ cls
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %laqua%
 echo Content ID: %cid%
-echo Game Name: %gameNameDashes%
-echo Game Title: %gameNameTitleHTML%
+echo Name: %gameNameDashes%
+echo Title: %gameNameTitleHTML%
 echo App Directory Name: %appDirName%
 echo Device ID: %deviceID%
 echo Session ID: %sessionID%
@@ -419,7 +420,12 @@ goto amiMenu
 
 if %serverStatus%==0 (
 	cls
+	echo Cleaning Stale Instances....
+	echo.
 	%kill% aminstantservice.exe
+	%kill% aminstantservice.exe
+	%kill% aminstantservice.exe
+	cls
 	%hide5% %amInstantServerConsole%
 	set serverStatus=1
 	goto amiMenu
@@ -427,10 +433,12 @@ if %serverStatus%==0 (
 
 if %serverStatus%==1 (
 	cls
+	echo Cleaning Stale Instances....
+	echo.
 	%kill% aminstantservice.exe
 	%kill% aminstantservice.exe
 	%kill% aminstantservice.exe
-	%kill% aminstantservice.exe
+	cls
 	set serverStatus=0
 	goto amiMenu
 )
@@ -891,7 +899,10 @@ goto amiMenu
 
 
 :forceExit
-
+cls
+echo Cleaning Up Files....
+echo.
+%kill% aminstantservice.exe
 %kill% aminstantservice.exe
 %kill% aminstantservice.exe
 
