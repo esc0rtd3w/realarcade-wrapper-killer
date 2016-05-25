@@ -360,9 +360,8 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
         - RGS (v1.2) games can be extracted using the RealArcade software, 
           or by using the standalone RGS Loader (included).
 
-        - DMG (Mac OSX Only) games can be extracted using Windows tools, but
-          you can't play them on Windows. An easier way would be to just use
-          a Mac and play on that :)
+        - DMG (Mac OSX Only) can be extracted using the DMG Loader, but
+          the games can only be tested using a Virtual Machine or a Mac!
 
         - RGA (v2.1) games can be extracted with WinRAR, but need to be 
           installed with the RealArcade software because of individual
@@ -377,13 +376,26 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
           on what game is loaded, what country, etc. Ultimately, it downloads 
           an RGA file that can be decompressed by WinRAR or another utility.
 
-        - RGA (v3.0) New format discovered on 20130606. The file naming scheme
+        - RGA (v3.x) New format discovered on 20130606. The file naming scheme
           seems to be very different, and relies on partner names and channel
           names to gather game info.
 
-        - RGA (ACID v1.0) Legacy ActiveMark ACID format discovered in 2014.
+        - RGA (v4.x/ACID v1.0) The final RGA format documented, bringing in
+          the first gen ACID format, still using standard RAR files.
 
-        - RFS (v1.2) New ActiveMark ACID format discovered in 2016.
+        - RFS (ACID v1.2) ActiveMark ACID format found in early 2016. This was
+          a bit of a surprise to find a new file extension being used. From my
+          research so far, this is possibly a derivitive of zlib.
+
+        - RFS (AMI v1.0/v1.1) Yet another RFS format found early in 2016. This
+          caught be by total accident after I was testing disabling cookies on
+          the GH server. I was redirected to a "/member/#" URL and was greeted
+          with an EXE installer to download. This turned out to be a small
+          server that by default installs as a service. It interacts with the
+          GH website to download and launch games. The RFS files that are
+          downloaded from this are different than their RFS ACID cousins. They
+          also use ".rfs.0.rfsindex" and ".rfs.json" files during the transfer
+          and are assumed to provide a file index for the extraction.
           
                    --------------------------------------------------
                         SOME EXTRA STUFF YOU MIGHT WANT TO KNOW
@@ -428,7 +440,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
                    --------------------------------------------------
           
-          RFS v1 File Types: 
+          RFS v1 File Types (From GH Members Website): 
 
           RFS game installers use Content ID and Game Name to build stub names:
 
@@ -441,7 +453,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
                    --------------------------------------------------
           
-          RFS v2 AM Instant File Types: 
+          RFS v2 AM Instant File Types (Using AMI Local Server): 
 
           These are different sizes from RFSv1 and have dashes between words:
 
