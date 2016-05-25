@@ -3,6 +3,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 
 
 :reset
+mode con lines=25
 
 %kill% aminstantservice.exe
 
@@ -199,7 +200,7 @@ if %serverStatus%==1 (
 )
 echo.
 %lyellow%
-echo 2) Get Game Info
+echo 2) Get Game Info (MUST Provide Content ID)
 echo 3) Show Extended Game Info
 echo.
 echo 4) Download Game (Remote RFS Extract)
