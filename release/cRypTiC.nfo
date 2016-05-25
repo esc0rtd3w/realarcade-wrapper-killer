@@ -174,7 +174,7 @@
 
 	* UPDATED: RAWK Core to v3.0.7
 
-                   * Updated "start/Stop" AMI Server Commands To Toggle
+                   * Updated "Start/Stop" AMI Server Commands To Toggle
 
 
 
@@ -349,18 +349,18 @@
         - DMG (Mac OSX Only) can be extracted using the DMG Loader, but
           the games can only be tested using a Virtual Machine or a Mac!
 
-        - RGA (v2.1) games can be extracted with WinRAR, but need to be 
-          installed with the RealArcade software because of individual
-          registry entries and other game information required by the
-          wrapped EXE, it still contains a security wrapper to control 
-          demo time limits.
+        - RGA (v2.1) games can be extracted with WinRAR, or by using the
+          default RGA Loader included. The games need to be installed with
+          the RealArcade software because of individual registry entries and
+          other game information required by the wrapped EXE, it still contains
+          a security wrapper to control demo time limits.
 
         - RGA (v2.6) RA/GH merger games are protected by ActiveMark and are
           in exe bootstrapper format when downloading from the stub. The EXE
           will automatically run after download has completed, by default.
           During installation the installer downloads various files depending
           on what game is loaded, what country, etc. Ultimately, it downloads 
-          an RGA file that can be decompressed by WinRAR or another utility.
+          an RGA file that can be decompressed by WinRAR or the RGA Loader.
 
         - RGA (v3.x) New format discovered on 20130606. The file naming scheme
           seems to be very different, and relies on partner names and channel
@@ -374,14 +374,14 @@
           research so far, this is possibly a derivitive of zlib.
 
         - RFS (AMI v1.0/v1.1) Yet another RFS format found early in 2016. This
-          caught be by total accident after I was testing disabling cookies on
+          caught me by total accident after I was testing disabling cookies on
           the GH server. I was redirected to a "/member/#" URL and was greeted
           with an EXE installer to download. This turned out to be a small
           server that by default installs as a service. It interacts with the
           GH website to download and launch games. The RFS files that are
           downloaded from this are different than their RFS ACID cousins. They
           also use ".rfs.0.rfsindex" and ".rfs.json" files during the transfer
-          and are assumed to provide a file index for the extraction.
+          and are assumed to provide a file index for the extraction
           
                    --------------------------------------------------
                         SOME EXTRA STUFF YOU MIGHT WANT TO KNOW
