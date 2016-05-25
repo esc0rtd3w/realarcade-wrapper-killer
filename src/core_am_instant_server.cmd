@@ -419,13 +419,17 @@ goto amiMenu
 
 if %serverStatus%==0 (
 	cls
-	%runTerminate% %amInstantServerConsole%
+	%kill% aminstantservice.exe
+	%hide5% %amInstantServerConsole%
 	set serverStatus=1
 	goto amiMenu
 )
 
 if %serverStatus%==1 (
 	cls
+	%kill% aminstantservice.exe
+	%kill% aminstantservice.exe
+	%kill% aminstantservice.exe
 	%kill% aminstantservice.exe
 	set serverStatus=0
 	goto amiMenu
