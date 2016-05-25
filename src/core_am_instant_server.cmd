@@ -179,7 +179,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 %laqua%
 echo Content ID: %cid%
 echo Name: %gameNameDashes%
-echo Title: %gameNameTitleHTML%
+echo Title: %gameNameTitle%
 echo App Directory Name: %appDirName%
 echo Device ID: %deviceID%
 echo Session ID: %sessionID%
@@ -232,7 +232,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 %laqua%
 echo Content ID: %cid%
 echo Name: %gameNameDashes%
-echo Title: %gameNameTitleHTML%
+echo Title: %gameNameTitle%
 echo App Directory Name: %appDirName%
 echo Device ID: %deviceID%
 echo Session ID: %sessionID%
@@ -285,9 +285,6 @@ set gameNameFirstLetter=%gameNameFirstLetterTemp:~0,1%
 set gameNameDashesHalfTemp=%gameNameDashes%
 set gameNameDashesHalf=%gameNameDashesHalfTemp:~0,16%
 
-
-:: Store Game Name Title Original Format
-set gameNameTitle=%gameNameTitle%
 
 
 :: Convert "SPACES" to "%20" before passing as string
@@ -639,6 +636,9 @@ set /p jsonTracking=<%amiRequestTracking%
 set /p jsonDeviceID=<%amiRequestDeviceID%
 
 set /p gameNameNoDashes=<%gameNameNoDashesSet%
+
+:: Store Game Name Title Original Format
+set gameNameTitle=%jsonInstallationTitle%
 
 
 :: Match to global variables
