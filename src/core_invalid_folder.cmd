@@ -3,6 +3,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ INVALID FOLDER +-^~`+-.)
 
 color 0e
 
+:reset
 
 del "rawk.id"
 del ".ini"
@@ -103,25 +104,31 @@ goto end
 :stubCreator
 cls
 
-call "core_stub_creator.cmd"
+::call "core_stub_creator.cmd"
+%runShellTerminate% call "core_stub_creator.cmd"
 
-goto end
+goto reset
+::goto end
 
 
 :ogmService
 cls
 
-call "core_ogm_service.cmd"
+::call "core_ogm_service.cmd"
+%runShellTerminate% call "core_ogm_service.cmd"
 
-goto end
+goto reset
+::goto end
 
 
 :amiService
 cls
 
-call "core_am_instant_server.cmd"
+::call "core_am_instant_server.cmd"
+%runShellTerminate% "core_am_instant_server.cmd"
 
-goto end
+goto reset
+::goto end
 
 
 
