@@ -148,12 +148,80 @@
 // http://gamehousebeta.com
 
 
+// http://games-dl.gamehouse.com/gamehouse/activemark/aminstantservice/GameHouse_GamePlayer.exe
+
+/*
+Sample From AM Instant "member" page using aminstantservice.exe
+
+<div data-ng-show="gameManager.sessionGamesInfo[game.contentId]['showLoader']" class="loader ng-hide"></div>
+<span data-ng-hide="gameManager.sessionGamesInfo[game.contentId]['showLoader'] || gameManager.sessionGamesInfo[game.contentId]['gameLoading']">PLAY</span>
+<div data-ng-show="gameManager.sessionGamesInfo[game.contentId]['gameLoading']" class="percentage ng-binding ng-hide">%</div>
+<div style="width: 100%; position: relative; padding-bottom: 100%;" data-ng-show="gameManager.sessionGamesInfo[game.contentId]['gameLoading']" max="100" current="gameManager.sessionGamesInfo[game.contentId]['installProgress']" color="#54c8e3" bgcolor="#eaeaea" radius="100" stroke="20" semi="false" rounded="false" clockwise="true" responsive="true" duration="400" animation="easeInOutQuart" class="round-progress-wrapper ng-isolate-scope ng-hide">
+<svg viewBox="0 0 200 200" style="top: 0px; left: 0px; position: absolute; width: 100%; height: 100%; overflow: hidden;" class="round-progress" xmlns="http://www.w3.org/2000/svg">
+<circle style="stroke: rgb(234, 234, 234); stroke-width: 20px;" r="90" cy="100" cx="100" fill="none"></circle>
+<path d="M 100 10 A 90 90 0 0 0 100 10" transform="" style="stroke: rgb(84, 200, 227); stroke-width: 20px; stroke-linecap: butt;" fill="none"></path>
+<g ng-transclude="">
+</g>
+</svg>
+</div>
+
+*/
+
+// AM Server Requests From localhost
+// http://localhost:12072/v1/install.json?result=success&installation_title=Metris%20Blocks&content_id=e945fbad3cb2cd9c2531b4c9794bb81d&rfs=http%3A%2F%2Fgames-dl.gamehouse.com%2Fgamehouse%2Fpc%2Fm%2Fmetris-blocks%2Fmetris-blocks.rfs&tracking=-1_079b8082-6f68-4b7a-b9ee-18728e2e22a0&publisher=Gamehouse&query_id=1463297714473
+// http://www.gamehouse.com/member/api/games/downloaddetails.json?amcontentid=e945fbad3cb2cd9c2531b4c9794bb81d
+// http://localhost:12072/v1/listGames.json?include_uninstalled=true&query_id=1463297610930
+// http://www.gamehouse.com/member/api/games/downloaddetails.json?amcontentid=83e49dc08c18ebc8cf311a9345404be2
+// http://www.gamehouse.com/member/api/player/getsessionid.json
+// http://localhost:12072/v1/play.json?content_id=e945fbad3cb2cd9c2531b4c9794bb81d&auth_token=670a4b659a2de7d70d0c891382c65fdd55df7676&player_id=233455&game_id=1672&is_trial=true&query_id=1463297651235
+
+// Download Game
+// http://localhost:12072/v1/install.json?result=success&installation_title=Solitaire%20Club&content_id=11361ddbbf3f5a60d2cdac2f6220cb3c&rfs=http%3A%2F%2Fgames-dl.gamehouse.com%2Fgamehouse%2Fpc%2Fs%2Fsolitaire-club%2Fsolitaire-club.rfs&tracking=233455_b2932fce-f25e-4c82-a711-fb69d9cbe98b&publisher=Gamehouse&query_id=1463322383298
+
+// Remote RFS Extract Only
+// http://localhost:12072/v1/install.json?rfs=http%3A%2F%2Fgames-dl.gamehouse.com%2Fgamehouse%2Fpc%2Fs%2Fsolitaire-club%2Fsolitaire-club.rfs
+
+// Launch Game 
+
+// http://localhost:12072/v1/play.json?content_id=11361ddbbf3f5a60d2cdac2f6220cb3c&auth_token=670a4b659a2de7d70d0c891382c65fdd55df7676&player_id=233455&game_id=1478&is_trial=true&query_id=1463308591685
+// Only content_id and auth_token required to launch
+// auth_token can be all 0s (0000000000000000000000000000000000000000)
+// http://localhost:12072/v1/play.json?content_id=11361ddbbf3f5a60d2cdac2f6220cb3c&auth_token=0000000000000000000000000000000000000000
+
+
+//GET /v1/play.json?content_id=11361ddbbf3f5a60d2cdac2f6220cb3c&auth_token=0000000000000000000000000000000000000000 HTTP/1.1
+//Host: localhost:12072
+//User-Agent: AmHttpGet 1.0
+//Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+//Accept-Language: en-US,en;q=0.5
+//Accept-Encoding: gzip, deflate
+//Referer: http://www.gamehouse.com/member/
+//Origin: http://www.gamehouse.com
+//Connection: keep-alive
+
+
+// MINIMAL
+//GET /v1/play.json?content_id=11361ddbbf3f5a60d2cdac2f6220cb3c&auth_token=0000000000000000000000000000000000000000 HTTP/1.1
+//Host: localhost:12072
+//User-Agent: AmHttpGet 1.0
+//Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+//Accept-Language: en-US,en;q=0.5
+//Accept-Encoding: gzip, deflate
+//Referer: http://www.gamehouse.com/member/
+//Connection: keep-alive
+
+
+
+
 // AM Licensing
 // Returns weird error page with STATUS=405
 // http://gamehouse.com/amlicense
 
 // Same as above but returns STATUS=999
 // http://gamehouse.com/amlicense/error
+
+
+// http://main.zylom.com/js/deluxedownload.js
 
 // END SAMPLE URLS --------------------------------------------------------------------/
 
@@ -479,9 +547,9 @@ function getGameName(){
 	gameNamePackage = gameNamePackage.replace("!", "");
 	gameNamePackage = gameNamePackage.replace("&", "");
 	
-	gameNameWebpage = gameNamePackage.replace("#", "");
-	gameNameWebpage = gameNamePackage.replace("!", "");
-	gameNameWebpage = gameNamePackage.replace("&", "");
+	//gameNameWebpage = gameNamePackage.replace("#", "");
+	//gameNameWebpage = gameNamePackage.replace("!", "");
+	//gameNameWebpage = gameNamePackage.replace("&", "");
 	
 	// Get First Letter of Game Name
 	firstLetter = gameNameWebpage.charAt(0);
