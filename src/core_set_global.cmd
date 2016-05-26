@@ -515,5 +515,8 @@ set amInstantAppPath=%pd%\activeMARK\instant\apps
 :: Remote GameHouse Player
 set amInstantRemotePlayer=http://games-dl.gamehouse.com/gamehouse/activemark/aminstantservice/GameHouse_GamePlayer.exe
 
+:: GH Web Scraper
+set ghWebScraper="C:\Program Files\unRealArcade\temp\GHWebScraper.exe"
+
 
 :end

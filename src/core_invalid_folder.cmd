@@ -47,7 +47,7 @@ echo.
 echo.
 echo [A] Advanced Options   [W] Web Downloader   [S] Stub Creator
 echo.
-echo [O] Run OGM Service    [M] Run AM Instant Service
+echo [O] Run OGM Service    [M] Run AM Instant Service    [G] GH Web Scraper
 echo.
 
 
@@ -57,6 +57,8 @@ echo.
 
 set /p launchwebdl=
 
+if %launchwebdl%==G goto ghScraper
+if %launchwebdl%==g goto ghScraper
 if %launchwebdl%==M goto amiService
 if %launchwebdl%==m goto amiService
 if %launchwebdl%==w goto uradl
@@ -129,6 +131,16 @@ cls
 
 ::call "core_am_instant_server.cmd"
 %runShellTerminate% "core_am_instant_server.cmd"
+
+goto reset
+::goto end
+
+
+:ghScraper
+cls
+
+::call "core_gh_web_scraper.cmd"
+%runShellTerminate% "core_gh_web_scraper.cmd"
 
 goto reset
 ::goto end

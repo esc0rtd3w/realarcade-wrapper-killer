@@ -75,6 +75,10 @@ set rarexists=0
 
 :restart0
 
+:: Check For Needed Dependencies (Added 20160526)
+call "core_check_dependencies.cmd"
+
+:: Make Temp Folder if One Does Not Exist
 if not exist "c:\temp" md "c:\temp"
 
 ::-----------------------------------------------------------------------------------

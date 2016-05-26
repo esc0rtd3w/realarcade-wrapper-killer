@@ -56,6 +56,7 @@ Source: ..\core_advanced_load_options.cmd; DestDir: {app}; Attribs: hidden; Flag
 Source: ..\core_am_instant_server.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_autolaunch.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_backup.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_check_dependencies.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_check_exit_status.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_check_ini_ver.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_check_local_rawk.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
@@ -77,7 +78,6 @@ Source: ..\core_dlc.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinst
 Source: ..\core_dupe_check.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_errorhandling.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_cheats.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\core_check_exit_status.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_clean_exe.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_clean_gh.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_clean_zy.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
@@ -93,6 +93,7 @@ Source: ..\core_gamehouse_override.cmd; DestDir: {app}; Attribs: hidden; Flags: 
 Source: ..\core_game_unpacked_ok.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_get_demo_type.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_get_stats.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_gh_web_scraper.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_ghx_install.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_ghx_reset.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_handler.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
@@ -171,7 +172,7 @@ Source: ..\demo6.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonl
 Source: ..\demoM.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\demoGH.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\demoZY.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\rawkreset.cmd; DestDir: {sys}; Flags: overwritereadonly
+
 
 ; RGS Loader v1.0
 Source: ..\loaders\loaderRGSv1.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
@@ -213,6 +214,9 @@ Source: ..\gui\uradl-x64.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Fla
 Source: ..\loaders\loaderRFS\am\aminstantservice.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 Source: ..\loaders\loaderRFS\am\am-instant-run.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\loaders\loaderRFS\am\am-instant-remove.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+
+; GH Web Scraper
+Source: ..\web\GHWebScraper\bin\Release\GHWebScraper.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
 
 ; External System Files (Local)
@@ -291,6 +295,7 @@ Source: ..\sys32\uniq.exe; DestDir: {sys}; Attribs: System; Flags: overwriteread
 ;Source: ..\sys32\hidecon.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 ;Source: ..\sys32\hideexec.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 Source: ..\sys32\quiet.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
+Source: ..\rawkreset.cmd; DestDir: {sys}; Flags: overwritereadonly
 
 ; Tasklist and Taskkill (Local)
 ; Fixes game termination problems for an OS like Windows XP Home Edition

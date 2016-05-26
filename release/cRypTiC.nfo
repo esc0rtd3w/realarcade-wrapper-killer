@@ -174,7 +174,23 @@
 
 	* UPDATED: RAWK Core to v3.0.7
 
+                   * Updated All ActiveMark Instant Server Scripting
+
+                   * Added GH Web Scraper To Menu Options on Invalid Folder
+
+                   * Added "core_gh_web_scraper" Script To Main Source
+
+                   * Added "core_check_dependencies" Script To Main Source
+
+                   * Added Linux Script To Dump Game Info From GH Website
+
+                   * Updated JSON Parsing
+
+                   * Added "Unavailable Game" Detection To AMI Server
+
                    * Updated "Start/Stop" AMI Server Commands To Toggle
+
+                   * Updated OGM, AMI, and Stub To External Windows
 
 
 
