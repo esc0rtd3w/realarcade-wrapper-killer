@@ -61,7 +61,7 @@ set outFileRFS=-O "%desktop%\am-rfs-downloads\%gameNameDashes%.rfs"
 
 set amLog=%desktop%\amiSvc.log
 
-set memberCookie=--header="Set-Cookie: gamehouseuser=true"
+set memberCookie=--header="Cookie: gamehouseuser=true"
 
 set pageNewGames=http://www.gamehouse.com/new-games
 
