@@ -23,7 +23,11 @@ namespace GameHouseWebScraper
             {
                 Console.Title = "GameHouse Site Scraper v0.1                                              esc0rtd3w 2016";
 
-                //string url = @"http://www.gamehouse.com/new-games?platform=pc-games#gametype=download&genre=all&sorting=name&count=3000&filterType=new-games&listView=true&start=0";
+                // Parse All Games
+                // http://www.gamehouse.com/games.json?gametype=download&genre=all&sorting=name&count=3000&filterType=null
+
+                //http://www.gamehouse.com/search?queryText=
+                string urlGHAllGames = @"http://www.gamehouse.com/new-games?platform=pc-games#gametype=download&genre=all&sorting=name&count=3000&filterType=new-games&listView=true&start=0";
                 string urlGH = @"http://www.gamehouse.com/";
                 string strResult = "";
                 string dashLine = "-----------------------------------";
