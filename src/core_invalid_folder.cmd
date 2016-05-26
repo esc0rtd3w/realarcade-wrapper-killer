@@ -95,7 +95,8 @@ echo.
 echo.
 %webdlpath%
 
-goto end
+goto reset
+::goto end
 
 
 :advOptions
