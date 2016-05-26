@@ -7,7 +7,8 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ GH Web Scraper +-^~`+-.)
 color 0e
 
 
-%runShellWaitTerminate% %ghWebScraper%
+::%runShellWaitTerminate% %ghWebScraper%
+%runShellTerminate% %ghWebScraper%
 
 
 goto end
