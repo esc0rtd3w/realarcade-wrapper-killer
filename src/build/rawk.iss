@@ -203,11 +203,11 @@ Source: ..\rna\rnarestore-x64.exe; DestDir: "C:\Program Files\unRealArcade\temp"
 ;RealArcade Uninstaller
 Source: ..\rna\rnuninst.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
-;RealArcade Downloader
+;RealArcade Downloader (Default) (Will Load on Both x86 and x64 Platforms)
 Source: ..\gui\uradl.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
-;RealArcade Downloader (64-bit)
-Source: ..\gui\uradl-x64.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+;RealArcade Downloader (64-bit) (Obsoleted 20160526)
+;Source: ..\gui\uradl-x64.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
 
 ;AM Instant Server
