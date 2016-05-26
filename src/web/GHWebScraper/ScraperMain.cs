@@ -26,6 +26,12 @@ namespace GameHouseWebScraper
                 // Parse All Games
                 // http://www.gamehouse.com/games.json?gametype=download&genre=all&sorting=name&count=3000&filterType=null
 
+                // Produces More Results
+                // http://www.gamehouse.com/games.json?gametype=null&genre=all&sorting=name&count=3000&filterType=null
+
+                // Minimal
+                // http://www.gamehouse.com/games.json?gametype=null&genre=all&sorting=name&count=null&filterType=null
+
                 //http://www.gamehouse.com/search?queryText=
                 string urlGHAllGames = @"http://www.gamehouse.com/new-games?platform=pc-games#gametype=download&genre=all&sorting=name&count=3000&filterType=new-games&listView=true&start=0";
                 string urlGH = @"http://www.gamehouse.com/";
@@ -44,6 +50,7 @@ namespace GameHouseWebScraper
                     Environment.Exit(0);
                 }
                 
+                // Must set "Cookie: gamehouseuser=true" to view game pages that are not AM Instant
 
 
                 Console.WriteLine("\n\nExtracting Links....\n\n");
