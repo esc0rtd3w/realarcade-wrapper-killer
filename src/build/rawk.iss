@@ -462,7 +462,7 @@ Name: {commonappdata}\92-75-56-55-p5-r9
 
 
 [Registry]
-; RGA Loader v1.0
+; RGS Loader v1.0
 ; This loader has been superceded by the 2.0 loader.
 ; The 2.0 loader can load this version from itself if issues arise
 ;Root: HKCR; SubKey: RealArcade.rgs.1; ValueType: string; ValueName: ; ValueData: RealArcade Secured Installer
