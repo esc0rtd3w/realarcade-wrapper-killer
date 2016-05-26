@@ -176,6 +176,10 @@
 
                    * Updated All ActiveMark Instant Server Scripting
 
+                   * Removed 64-Bit URA Downloader From Build
+
+                   * Fixed Web Downloader Launch Error
+
                    * Added GH Web Scraper To Menu Options on Invalid Folder
 
                    * Added "core_gh_web_scraper" Script To Main Source
