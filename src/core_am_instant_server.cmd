@@ -37,6 +37,8 @@ set amiVersion=0.00.00
 
 set serverStatus=0
 
+set unavailable=0
+
 :: Sets default returnTo variable for cases where you must use 2 gotos in sequence
 set returnTo=amiMenu
 
@@ -281,6 +283,47 @@ goto end
 
 cls
 echo Rebuilding Custom GET Requests Using New Game Info....
+echo.
+echo.
+
+
+:: If null value then game is not available for AM Instant
+if %cid%==null (
+
+	set unavailable=1
+
+	cls
+	echo Game Not Available For AM Instant
+	echo.
+	echo.
+	pause
+	
+	set cid=00000000000000000000000000000000
+
+	set gameNameDashes=game-name-here
+	set gameNameNoDashes=gamenamehere
+	set gameNameTitle=Game Name Here
+	set gameNameTitleHTML=Game Name Here
+	set gameNameTitleClean1=Game Name Here
+	set gameNameTitleClean2=Game Name Here
+	set gameNameFirstLetter=g
+	
+	echo.>>%amLog%
+	echo ------------------------------------------------------------------------------>>%amLog%
+	echo %cidTest% Is Unavailable For AM Instant>>%amLog%
+	echo ------------------------------------------------------------------------------>>%amLog%
+	echo.>>%amLog%
+	
+	set returnTo=amiMenu
+	goto %returnTo%
+)
+
+
+:: This part doesnt work and not needed??
+::if %unavailable%==1 (
+::	set unavailable=0
+::	goto amiMenu
+::)
 
 :: Get first 16 chars for app directory name
 set cidHalfTemp=%cid%
@@ -331,15 +374,21 @@ set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
 
 
 :: Logging
+
+::time>"%temp%\time.txt"
+::for /f "delims=  tokens=1" %%a in ('type "%temp%\time.txt"') do (
+::	set /p timeDisplay=%%a>"%temp%\time.txt"
+::)
+	
 echo.>>%amLog%
-echo ---------------------------------------------------------------->>%amLog%
-echo Created By The RealArcade Wrapper Killer v%rawkver% [%date%]>>%amLog%
-echo.>>%amLog%
+echo ------------------------------------------------------------------------------>>%amLog%
+::echo Created By The RealArcade Wrapper Killer v%rawkver% [%date% / %time%]>>%amLog%
+::echo.>>%amLog%
 echo %cid%>>%amLog%
 echo %gameNameDashes%>>%amLog%
 echo %gameNameTitleHTML%>>%amLog%
 echo %appDirName%>>%amLog%
-echo ---------------------------------------------------------------->>%amLog%
+echo ------------------------------------------------------------------------------>>%amLog%
 echo.>>%amLog%
 
 
@@ -364,6 +413,7 @@ echo.
 echo.
 
 set /p cid=
+set cidTest=%cid%
 
 
 cls
@@ -474,6 +524,8 @@ goto amiMenu
 
 :info
 
+::set returnTo=info
+
 if %serverStatus%==0 (
 	cls
 	echo AM Server Not Running!
@@ -482,6 +534,7 @@ if %serverStatus%==0 (
 	pause
 	goto amiMenu
 )
+
 
 cls
 echo Enter New Content ID and press ENTER:
@@ -492,6 +545,7 @@ echo.
 echo.
 
 set /p cid=
+set cidTest=%cid%
 
 
 if %cid%==00000000000000000000000000000000 (
@@ -503,13 +557,35 @@ pause
 goto amiMenu
 )
 
+:: If null value then game is not available for AM Instant
 if %cid%==null (
-cls
-echo No Valid Content ID Has Been Set!
-echo.
-echo.
-pause
-goto amiMenu
+
+	set unavailable=1
+
+	cls
+	echo Game Not Available For AM Instant
+	echo.
+	echo.
+	pause
+	
+	set cid=00000000000000000000000000000000
+
+	set gameNameDashes=game-name-here
+	set gameNameNoDashes=gamenamehere
+	set gameNameTitle=Game Name Here
+	set gameNameTitleHTML=Game Name Here
+	set gameNameTitleClean1=Game Name Here
+	set gameNameTitleClean2=Game Name Here
+	set gameNameFirstLetter=g
+	
+	echo.>>%amLog%
+	echo ------------------------------------------------------------------------------>>%amLog%
+	echo %cidTest% Is Unavailable For AM Instant>>%amLog%
+	echo ------------------------------------------------------------------------------>>%amLog%
+	echo.>>%amLog%
+	
+	set returnTo=amiMenu
+	goto %returnTo%
 )
 
 
@@ -654,6 +730,7 @@ set gameNameTitle=%jsonInstallationTitle%
 
 :: Match to global variables
 set cid=%jsonContentId%
+::set cidTest=%jsonContentId%
 set gameNameTitleHTML=%jsonInstallationTitle%
 set gameNameTitleClean1=%jsonInstallationTitleClean1%
 set gameNameTitleClean2=%jsonInstallationTitleClean2%
@@ -661,7 +738,6 @@ set deviceID=%jsonDeviceID%
 
 ::%runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
 
-set returnTo=amiMenu
 
 goto rebuildReq
 
