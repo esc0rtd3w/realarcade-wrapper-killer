@@ -1,0 +1,10 @@
+C:\Users\hacker\Downloads\GHWebScraper\bin\Debug\GHWebScraper.exe
+C:\Users\hacker\Downloads\GHWebScraper\bin\Debug\GHWebScraper.pdb
+C:\Users\hacker\Downloads\GHWebScraper\obj\x86\Debug\GHWebScraper.csprojResolveAssemblyReference.cache
+C:\Users\hacker\Downloads\GHWebScraper\obj\x86\Debug\GHWebScraper.exe
+C:\Users\hacker\Downloads\GHWebScraper\obj\x86\Debug\GHWebScraper.pdb
+C:\ura\web\GHWebScraper\obj\x86\Debug\GHWebScraper.exe
+C:\ura\web\GHWebScraper\obj\x86\Debug\GHWebScraper.pdb
+C:\ura\web\GHWebScraper\bin\Debug\GHWebScraper.exe
+C:\ura\web\GHWebScraper\bin\Debug\GHWebScraper.pdb
+C:\ura\web\GHWebScraper\obj\x86\Debug\GHWebScraper.csprojResolveAssemblyReference.cache

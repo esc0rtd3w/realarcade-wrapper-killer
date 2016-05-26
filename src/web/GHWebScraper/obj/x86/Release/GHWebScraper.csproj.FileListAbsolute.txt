@@ -1,0 +1,4 @@
+C:\ura\web\GHWebScraper\bin\Release\GHWebScraper.exe
+C:\ura\web\GHWebScraper\bin\Release\GHWebScraper.pdb
+C:\ura\web\GHWebScraper\obj\x86\Release\GHWebScraper.exe
+C:\ura\web\GHWebScraper\obj\x86\Release\GHWebScraper.pdb
