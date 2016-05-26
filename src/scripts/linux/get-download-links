@@ -1,0 +1,100 @@
+#!/bin/sh
+
+
+# GH Game Link Dumper v0.1
+
+# Part of the RealArcade Wrapper Killer
+
+# esc0rtd3w 2016
+
+
+baseURL="http://www.gamehouse.com"
+
+inputJSON="games-windows.json"
+outputTEXT="games-windows-links.txt"
+outputHTML="games-windows-links.html"
+outputTMP="dump.tmp"
+outputTMP2="dump2.tmp"
+
+dumpText="games-windows-dump-list.txt"
+
+
+dumpGamesToList(){
+	
+	clear
+	echo "Building List From \"$inputJSON\""
+	echo ""
+	echo ""
+	grep -Po '"url":.*?[^\\]"' "$inputJSON" | cut -f2 -d":" | cut -c2- | sed 's/"$//'>"$outputTMP"
+
+	rm "$outputTEXT"
+	rm "$outputHTML"
+
+	# Create Files With Links
+	while read -r line
+	do
+
+		# Output Text File
+		echo "$baseURL$line">>"$outputTEXT"
+
+		# Output HTML File
+		echo "<a href=\"$baseURL$line\" target=\"__blank\">$baseURL$line\</a><br>">>"$outputHTML"
+
+	done < "$outputTMP"
+
+	rm "$outputTMP"
+}
+
+
+dumpPages(){
+
+	
+	rm "$dumpText"
+
+	gameCounter=0
+
+	# Follow Links and Dump Pages
+	while read -r line
+	do
+		
+		wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.5.2" -O "$outputTMP" "$line"
+
+		# Get Some Info From Web Page
+		contentID=$(grep "contentid=" "$outputTMP" | cut -f3 -d"=" | cut -f1 -d"&")
+		nameTitle=$(grep "game_name" "$outputTMP" | cut -f2 -d":" | cut -c2- | sed 's/,$//' | sed -e 's|["'\'']||g')
+		nameDashes=$(grep "review-content-grp').load('/reviews/all/game/" "$outputTMP" | cut -f5 -d"/")
+		nameNoDashes=$(grep "review-content-grp').load('/reviews/all/game/" "$outputTMP" | cut -f5 -d"/" | sed -e 's|["'-']||g')
+
+		gameCounter=$(($gameCounter + 1))
+
+		echo ""	
+		echo ""	
+		echo "Game Entry #$gameCounter:"		
+		echo ""		
+		echo "contentID: $contentID"
+		echo "nameTitle: $nameTitle"
+		echo "nameDashes: $nameDashes"
+		echo "nameNoDashes: $nameNoDashes"
+		echo ""	
+
+		# Write To File
+		echo "">>"$dumpText"		
+		echo "Game Entry #$gameCounter:">>"$dumpText"			
+		echo "">>"$dumpText"			
+		echo "contentID: $contentID">>"$dumpText"	
+		echo "nameTitle: $nameTitle">>"$dumpText"	
+		echo "nameDashes: $nameDashes">>"$dumpText"	
+		echo "nameNoDashes: $nameNoDashes">>"$dumpText"	
+		echo ""		
+
+	done < "$outputTEXT"
+	
+	rm "$outputTMP"
+}
+
+
+dumpGamesToList
+dumpPages
+
+
+
