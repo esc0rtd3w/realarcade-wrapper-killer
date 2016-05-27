@@ -120,8 +120,26 @@ int main()
 
 	privileges();  //don't mind of the result, because maybe it fails because you already have that privilege
 
-	//string process = "notepad.exe"; // Test EXE
-	string process = "aminstantservice.exe"; // AM Instant Server EXE
+	// Process List
+	string processList [] = {
+
+		"notepad.exe", // Test EXE
+		"aminstantservice.exe" // AM Instant Server EXE
+	};
+
+	// AMI Server Versions
+	string versionList [] = {
+
+		"0.00.00.0",
+		"8.42.30.0",
+		"8.43.37.0"
+	};
+
+
+	// Set Defaults From Arrays
+	string process = processList[1];
+	string version = versionList[2];
+
 
 	//cout << "Enter process name:\n\n";
 	//cin >> process;
@@ -148,6 +166,8 @@ int main()
 		return 1; //error
 
 	}
+
+
 
 	char* txtInject = "Test Injection Text";
 	char* txtCaption = "Injection Results";
