@@ -127,6 +127,18 @@ int main()
 		"aminstantservice.exe" // AM Instant Server EXE
 	};
 
+	// DLL List
+	LPCSTR dllList[] = {
+
+		"User32.dll"
+	};
+
+	// Module List
+	LPCSTR importList[] = {
+
+		"MessageBoxA"
+	};
+
 	// AMI Server Versions
 	string versionList [] = {
 
@@ -139,6 +151,9 @@ int main()
 	// Set Defaults From Arrays
 	string process = processList[1];
 	string version = versionList[2];
+
+	LPCSTR dll = "";
+	LPCSTR import = "";
 
 
 	//cout << "Enter process name:\n\n";
@@ -174,7 +189,7 @@ int main()
 
 	PARAMETERS data;	  //let's fill in a PARAMETERS struct
 
-	data.MessageBoxInj = (DWORD)GetProcAddress(GetModuleHandleA("User32.dll"), "MessageBoxA");
+	data.MessageBoxInj = (DWORD)GetProcAddress(GetModuleHandleA(dll), import);
 	strcpy_s(data.text, txtInject);
 	strcpy_s(data.caption, txtCaption);
 	data.buttons = MB_OKCANCEL | MB_ICONQUESTION;
@@ -190,14 +205,77 @@ int main()
 
 	void * injectMsgBoxAddress = VirtualAllocEx(p, NULL, size_injectMsgBox, MEM_RESERVE | MEM_COMMIT, PAGE_EXECUTE_READWRITE);
 
+	cout << "----------------------------------" << endl;
+	cout << "DEBUG" << endl;
+	cout << "----------------------------------\n" << endl;
+	cout << "----------------------------------" << endl;
+	cout << "process: " << process << endl;
+	cout << "pid: " << pid << endl;
+	cout << "----------------------------------" << endl;
+	cout << "injectMsgBoxAddress: " << injectMsgBoxAddress << endl;
+	cout << "size_injectMsgBox: " << size_injectMsgBox << endl;
+	cout << "----------------------------------" << endl;
+	cout << "data.buttons: " << data.buttons << endl;
+	cout << "data.caption: " << data.caption << endl;
+	cout << "data.MessageBoxInj: " << data.MessageBoxInj << endl;
+	cout << "data.text: " << data.text << endl;
+	cout << "----------------------------------\n" << endl;
+
+	system("PAUSE");
+
 	WriteProcessMemory(p, injectMsgBoxAddress, (void*)injectMsgBox, size_injectMsgBox, NULL);
+
 
 
 	void * DataAddress = VirtualAllocEx(p, NULL, sizeof(PARAMETERS), MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE);
 
+	cout << "----------------------------------" << endl;
+	cout << "DEBUG" << endl;
+	cout << "----------------------------------\n" << endl;
+	cout << "----------------------------------" << endl;
+	cout << "process: " << process << endl;
+	cout << "pid: " << pid << endl;
+	cout << "----------------------------------" << endl;
+	cout << "DataAddress: " << DataAddress << endl;
+	cout << "injectMsgBoxAddress: " << injectMsgBoxAddress << endl;
+	cout << "size_injectMsgBox: " << size_injectMsgBox << endl;
+	cout << "----------------------------------" << endl;
+	cout << "data.buttons: " << data.buttons << endl;
+	cout << "data.caption: " << data.caption << endl;
+	cout << "data.MessageBoxInj: " << data.MessageBoxInj << endl;
+	cout << "data.text: " << data.text << endl;
+	cout << "----------------------------------\n" << endl;
+
+	system("PAUSE");
+
 	WriteProcessMemory(p, DataAddress, &data, sizeof(PARAMETERS), NULL);
 
+
+
 	HANDLE thread = CreateRemoteThread(p, NULL, 0, (LPTHREAD_START_ROUTINE)injectMsgBoxAddress, DataAddress, 0, NULL);
+
+	cout << "----------------------------------" << endl;
+	cout << "Error!" << endl;
+	cout << "----------------------------------\n" << endl;
+	cout << "----------------------------------" << endl;
+	cout << "process: " << process << endl;
+	cout << "pid: " << pid << endl;
+	cout << "thread: " << thread << endl;
+	cout << "----------------------------------" << endl;
+	cout << "DataAddress: " << DataAddress << endl;
+	cout << "injectMsgBoxAddress: " << injectMsgBoxAddress << endl;
+	cout << "size_injectMsgBox: " << size_injectMsgBox << endl;
+	cout << "----------------------------------" << endl;
+	cout << "data.buttons: " << data.buttons << endl;
+	cout << "data.caption: " << data.caption << endl;
+	cout << "data.MessageBoxInj: " << data.MessageBoxInj << endl;
+	cout << "data.text: " << data.text << endl;
+	cout << "----------------------------------\n" << endl;
+
+	system("PAUSE");
+
+
+
 
 	// Injection Complete
 	if (thread != 0) {
