@@ -45,11 +45,11 @@ namespace GameHouseWebScraper
                 {
                     url = urlGH;
                 }
-                else if(url == "x" || url == "X")
+                else if (url == "x" || url == "X")
                 {
                     Environment.Exit(0);
                 }
-                
+
                 // Must set "Cookie: gamehouseuser=true" to view game pages that are not AM Instant
 
 
