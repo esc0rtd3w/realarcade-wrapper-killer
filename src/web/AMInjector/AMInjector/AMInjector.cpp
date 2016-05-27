@@ -1,5 +1,5 @@
 
-// Cave Code Tool / esc0rtd3w 2016
+// AMInjector (ActiveMark Instant Server Injection Tool) / esc0rtd3w 2016
 
 // Original Source: http://www.rohitab.com/discuss/topic/39357-code-cave-injection-tutorial-c/
 
@@ -18,6 +18,8 @@
 typedef BOOL(WINAPI *fnBeep)(DWORD, DWORD);
 typedef int (WINAPI* MsgBoxParam)(HWND, LPCSTR, LPCSTR, UINT);
 
+int injectStatus;
+
 using namespace std;
 
 struct PARAMETERS {
@@ -33,21 +35,6 @@ int privileges();
 DWORD injectMsgBox(PARAMETERS * injectParams);
 DWORD Useless();
 
-//NTSTATUS NTAPI RtlAdjustPrivilege(ULONG, BOOLEAN, BOOLEAN, PBOOLEAN);  //This is the prototype of the RtlAdjustPrivilege function.
-//RtlAdjustPrivilege(20, TRUE, FALSE, &bl);  /*20 is the value of SeDebugPrivilege. The last parameter must point to a valid variable. It can't be NULL, or an access violation will occur and crash the calling process.*/
-
-/*
-HWND window;
-AllocConsole();
-window = FindWindowA("ConsoleWindowClass", NULL);
-ShowWindow(window, 0);
-privileges();
-DWORD pid = 0;
-do {
-pid = getPid("notepad.exe");
-if (pid != 0) break;
-} while (1);
-*/
 
 DWORD getPid(string procName) {
 	HANDLE hsnap;
@@ -90,7 +77,11 @@ DWORD Useless() {
 //this function is needed to get some extra privileges so your code will be able to work without conflicts with the system
 int privileges() {
 	HANDLE Token;
-	TOKEN_PRIVILEGES tp;
+	TOKEN_PRIVILEGES tp; 
+	
+	//NTSTATUS NTAPI RtlAdjustPrivilege(ULONG, BOOLEAN, BOOLEAN, PBOOLEAN);  //This is the prototype of the RtlAdjustPrivilege function.
+	//RtlAdjustPrivilege(20, TRUE, FALSE, &bl);  /*20 is the value of SeDebugPrivilege. The last parameter must point to a valid variable. It can't be NULL, or an access violation will occur and crash the calling process.*/
+
 	if (OpenProcessToken(GetCurrentProcess(), TOKEN_ADJUST_PRIVILEGES | TOKEN_QUERY, &Token))
 	{
 		LookupPrivilegeValue(NULL, SE_DEBUG_NAME, &tp.Privileges[0].Luid);
@@ -107,6 +98,23 @@ int privileges() {
 }
 
 
+HWND findWindow(string procName) {
+
+	HWND window;
+	AllocConsole();
+	window = FindWindowA("ConsoleWindowClass", NULL);
+	ShowWindow(window, 0);
+	privileges();
+	DWORD pid = 0;
+	do {
+		pid = getPid(procName);
+		if (pid != 0) break;
+	} while (1);
+
+	return(0);
+}
+
+
 int main()
 {
 
@@ -118,6 +126,8 @@ int main()
 	//cout << "Enter process name:\n\n";
 	//cin >> process;
 
+	//findWindow(process);
+	
 	DWORD pid = getPid(process);
 	if (pid == 0) {
 
@@ -153,6 +163,8 @@ int main()
 	DWORD size_injectMsgBox = (PBYTE)Useless - (PBYTE)injectMsgBox;  //this gets injectMsgBox's size
 
 
+
+
 																	 //--------now we are ready to inject
 
 
@@ -166,10 +178,13 @@ int main()
 	WriteProcessMemory(p, DataAddress, &data, sizeof(PARAMETERS), NULL);
 
 	HANDLE thread = CreateRemoteThread(p, NULL, 0, (LPTHREAD_START_ROUTINE)injectMsgBoxAddress, DataAddress, 0, NULL);
+
+	// Injection Complete
 	if (thread != 0) {
 
-		//injection completed
-		WaitForSingleObject(thread, INFINITE);   //this waits untill thread thread has finished
+		injectStatus = 1;
+
+		WaitForSingleObject(thread, INFINITE);   //this waits until thread thread has finished
 		VirtualFree(injectMsgBoxAddress, 0, MEM_RELEASE); //free injectMsgBox memory
 		VirtualFree(DataAddress, 0, MEM_RELEASE); //free data memory
 		CloseHandle(thread);
@@ -178,6 +193,8 @@ int main()
 		system("PAUSE");
 	}
 	else {
+
+		injectStatus = 0;
 
 		cout << "----------------------------------" << endl;
 		cout << "Error!" << endl;
@@ -196,10 +213,11 @@ int main()
 		cout << "data.MessageBoxInj: " << data.MessageBoxInj << endl;
 		cout << "data.text: " << data.text << endl;
 		cout << "----------------------------------\n" << endl;
+
+		system("PAUSE");
 	}
 
 
-	system("PAUSE");
 	return EXIT_SUCCESS;
 
 
