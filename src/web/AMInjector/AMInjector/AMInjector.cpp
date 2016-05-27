@@ -142,15 +142,14 @@ int main()
 	// AMI Server Versions
 	string versionList [] = {
 
-		"0.00.00.0",
 		"8.42.30.0",
-		"8.43.37.0"
+		"8.43.37.0",
 	};
 
 
 	// Set Defaults From Arrays
 	string process = processList[1];
-	string version = versionList[2];
+	string version = versionList[1];
 
 	LPCSTR dll = "";
 	LPCSTR import = "";
@@ -199,82 +198,16 @@ int main()
 
 
 
-
 																	 //--------now we are ready to inject
 
 
 	void * injectMsgBoxAddress = VirtualAllocEx(p, NULL, size_injectMsgBox, MEM_RESERVE | MEM_COMMIT, PAGE_EXECUTE_READWRITE);
-
-	cout << "----------------------------------" << endl;
-	cout << "DEBUG" << endl;
-	cout << "----------------------------------\n" << endl;
-	cout << "----------------------------------" << endl;
-	cout << "process: " << process << endl;
-	cout << "pid: " << pid << endl;
-	cout << "----------------------------------" << endl;
-	cout << "injectMsgBoxAddress: " << injectMsgBoxAddress << endl;
-	cout << "size_injectMsgBox: " << size_injectMsgBox << endl;
-	cout << "----------------------------------" << endl;
-	cout << "data.buttons: " << data.buttons << endl;
-	cout << "data.caption: " << data.caption << endl;
-	cout << "data.MessageBoxInj: " << data.MessageBoxInj << endl;
-	cout << "data.text: " << data.text << endl;
-	cout << "----------------------------------\n" << endl;
-
-	system("PAUSE");
-
 	WriteProcessMemory(p, injectMsgBoxAddress, (void*)injectMsgBox, size_injectMsgBox, NULL);
 
-
-
 	void * DataAddress = VirtualAllocEx(p, NULL, sizeof(PARAMETERS), MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE);
-
-	cout << "----------------------------------" << endl;
-	cout << "DEBUG" << endl;
-	cout << "----------------------------------\n" << endl;
-	cout << "----------------------------------" << endl;
-	cout << "process: " << process << endl;
-	cout << "pid: " << pid << endl;
-	cout << "----------------------------------" << endl;
-	cout << "DataAddress: " << DataAddress << endl;
-	cout << "injectMsgBoxAddress: " << injectMsgBoxAddress << endl;
-	cout << "size_injectMsgBox: " << size_injectMsgBox << endl;
-	cout << "----------------------------------" << endl;
-	cout << "data.buttons: " << data.buttons << endl;
-	cout << "data.caption: " << data.caption << endl;
-	cout << "data.MessageBoxInj: " << data.MessageBoxInj << endl;
-	cout << "data.text: " << data.text << endl;
-	cout << "----------------------------------\n" << endl;
-
-	system("PAUSE");
-
 	WriteProcessMemory(p, DataAddress, &data, sizeof(PARAMETERS), NULL);
 
-
-
 	HANDLE thread = CreateRemoteThread(p, NULL, 0, (LPTHREAD_START_ROUTINE)injectMsgBoxAddress, DataAddress, 0, NULL);
-
-	cout << "----------------------------------" << endl;
-	cout << "Error!" << endl;
-	cout << "----------------------------------\n" << endl;
-	cout << "----------------------------------" << endl;
-	cout << "process: " << process << endl;
-	cout << "pid: " << pid << endl;
-	cout << "thread: " << thread << endl;
-	cout << "----------------------------------" << endl;
-	cout << "DataAddress: " << DataAddress << endl;
-	cout << "injectMsgBoxAddress: " << injectMsgBoxAddress << endl;
-	cout << "size_injectMsgBox: " << size_injectMsgBox << endl;
-	cout << "----------------------------------" << endl;
-	cout << "data.buttons: " << data.buttons << endl;
-	cout << "data.caption: " << data.caption << endl;
-	cout << "data.MessageBoxInj: " << data.MessageBoxInj << endl;
-	cout << "data.text: " << data.text << endl;
-	cout << "----------------------------------\n" << endl;
-
-	system("PAUSE");
-
-
 
 
 	// Injection Complete
@@ -287,13 +220,32 @@ int main()
 		VirtualFree(DataAddress, 0, MEM_RELEASE); //free data memory
 		CloseHandle(thread);
 		CloseHandle(p);  //don't wait for the thread to finish, just close the handle to the process
-		cout << "Injection completed!" << endl;
+		
+		system("CLS");
+		cout << "----------------------------------" << endl;
+		cout << "Injection Complete!" << endl;
+		cout << "----------------------------------\n" << endl;
+		cout << "----------------------------------" << endl;
+		cout << "process: " << process << endl;
+		cout << "pid: " << pid << endl;
+		cout << "thread: " << thread << endl;
+		cout << "----------------------------------" << endl;
+		cout << "DataAddress: " << DataAddress << endl;
+		cout << "injectMsgBoxAddress: " << injectMsgBoxAddress << endl;
+		cout << "size_injectMsgBox: " << size_injectMsgBox << endl;
+		cout << "----------------------------------" << endl;
+		cout << "data.buttons: " << data.buttons << endl;
+		cout << "data.caption: " << data.caption << endl;
+		cout << "data.MessageBoxInj: " << data.MessageBoxInj << endl;
+		cout << "data.text: " << data.text << endl;
+		cout << "----------------------------------\n" << endl;
 		system("PAUSE");
 	}
 	else {
 
 		injectStatus = 0;
 
+		system("CLS");
 		cout << "----------------------------------" << endl;
 		cout << "Error!" << endl;
 		cout << "----------------------------------\n" << endl;
