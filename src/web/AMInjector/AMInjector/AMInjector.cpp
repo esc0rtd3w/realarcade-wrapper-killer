@@ -115,6 +115,15 @@ HWND findWindow(string procName) {
 }
 
 
+/*
+void newProcessSelect(string process) {
+	
+	//
+
+}
+*/
+
+
 int main()
 {
 
@@ -140,10 +149,23 @@ int main()
 	};
 
 	// AMI Server Versions
-	string versionList [] = {
+	string versionList[] = {
 
 		"8.42.30.0",
-		"8.43.37.0",
+		"8.43.37.0"
+	};
+
+	// Code Caves (Start Locations 2 Bytes From Initial NOP)
+	// AMI Server Uses ASLR For Addresses
+	string CodeCave[] = {
+		
+		"00EBCD5E", // 34 Bytes
+		"00EBEA65", // 27 Bytes
+		"00EC0DE5", // 27 Bytes
+		"00EC64D9", // 39 Bytes
+		"00EC7BE5", // 27 Bytes
+		"00EC7DE5", // 27 Bytes
+		"00EE40D7" // Small Cave (9 Bytes)
 	};
 
 
@@ -159,6 +181,8 @@ int main()
 	//cin >> process;
 
 	//findWindow(process);
+
+	//int processNew;
 	
 	DWORD pid = getPid(process);
 	if (pid == 0) {
@@ -180,7 +204,6 @@ int main()
 		return 1; //error
 
 	}
-
 
 
 	char* txtInject = "Test Injection Text";
