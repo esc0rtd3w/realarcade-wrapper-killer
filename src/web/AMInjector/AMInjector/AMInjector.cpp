@@ -139,10 +139,19 @@ int main()
 	// DLL List
 	LPCSTR dllList[] = {
 
-		"User32.dll"
+		"advapi32.dll",
+		"crypt32.dll",
+		"kernel32.dll",
+		"netapi.dll",
+		"shell32.dll",
+		"user32.dll",
+		"wininet.dll",
+		"wintrust.dll",
+		"ws2_32.dll",
+		"wsock32.dll"
 	};
 
-	// Module List
+	// Import List
 	LPCSTR importList[] = {
 
 		"MessageBoxA"
@@ -173,8 +182,8 @@ int main()
 	string process = processList[1];
 	string version = versionList[1];
 
-	LPCSTR dll = "";
-	LPCSTR import = "";
+	LPCSTR dll = dllList[5];
+	LPCSTR import = importList[0];
 
 
 	//cout << "Enter process name:\n\n";
@@ -209,12 +218,12 @@ int main()
 	char* txtInject = "Test Injection Text";
 	char* txtCaption = "Injection Results";
 
-	PARAMETERS data;	  //let's fill in a PARAMETERS struct
+	PARAMETERS msgboxParams;	  //let's fill in a PARAMETERS struct
 
-	data.MessageBoxInj = (DWORD)GetProcAddress(GetModuleHandleA(dll), import);
-	strcpy_s(data.text, txtInject);
-	strcpy_s(data.caption, txtCaption);
-	data.buttons = MB_OKCANCEL | MB_ICONQUESTION;
+	msgboxParams.MessageBoxInj = (DWORD)GetProcAddress(GetModuleHandleA(dll), import);
+	strcpy_s(msgboxParams.text, txtInject);
+	strcpy_s(msgboxParams.caption, txtCaption);
+	msgboxParams.buttons = MB_OKCANCEL | MB_ICONQUESTION;
 
 
 	DWORD size_injectMsgBox = (PBYTE)Useless - (PBYTE)injectMsgBox;  //this gets injectMsgBox's size
@@ -228,7 +237,7 @@ int main()
 	WriteProcessMemory(p, injectMsgBoxAddress, (void*)injectMsgBox, size_injectMsgBox, NULL);
 
 	void * DataAddress = VirtualAllocEx(p, NULL, sizeof(PARAMETERS), MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE);
-	WriteProcessMemory(p, DataAddress, &data, sizeof(PARAMETERS), NULL);
+	WriteProcessMemory(p, DataAddress, &msgboxParams, sizeof(PARAMETERS), NULL);
 
 	HANDLE thread = CreateRemoteThread(p, NULL, 0, (LPTHREAD_START_ROUTINE)injectMsgBoxAddress, DataAddress, 0, NULL);
 
@@ -257,10 +266,10 @@ int main()
 		cout << "injectMsgBoxAddress: " << injectMsgBoxAddress << endl;
 		cout << "size_injectMsgBox: " << size_injectMsgBox << endl;
 		cout << "----------------------------------" << endl;
-		cout << "data.buttons: " << data.buttons << endl;
-		cout << "data.caption: " << data.caption << endl;
-		cout << "data.MessageBoxInj: " << data.MessageBoxInj << endl;
-		cout << "data.text: " << data.text << endl;
+		cout << "data.buttons: " << msgboxParams.buttons << endl;
+		cout << "data.caption: " << msgboxParams.caption << endl;
+		cout << "data.MessageBoxInj: " << msgboxParams.MessageBoxInj << endl;
+		cout << "data.text: " << msgboxParams.text << endl;
 		cout << "----------------------------------\n" << endl;
 		system("PAUSE");
 	}
@@ -281,10 +290,10 @@ int main()
 		cout << "injectMsgBoxAddress: " << injectMsgBoxAddress << endl;
 		cout << "size_injectMsgBox: " << size_injectMsgBox << endl;
 		cout << "----------------------------------" << endl;
-		cout << "data.buttons: " << data.buttons << endl;
-		cout << "data.caption: " << data.caption << endl;
-		cout << "data.MessageBoxInj: " << data.MessageBoxInj << endl;
-		cout << "data.text: " << data.text << endl;
+		cout << "data.buttons: " << msgboxParams.buttons << endl;
+		cout << "data.caption: " << msgboxParams.caption << endl;
+		cout << "data.MessageBoxInj: " << msgboxParams.MessageBoxInj << endl;
+		cout << "data.text: " << msgboxParams.text << endl;
 		cout << "----------------------------------\n" << endl;
 
 		system("PAUSE");
