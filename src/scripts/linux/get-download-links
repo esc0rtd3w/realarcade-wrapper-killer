@@ -11,12 +11,36 @@
 baseURL="http://www.gamehouse.com"
 
 inputJSON="games-windows.json"
-outputTEXT="games-windows-links.txt"
+
+outputText="games-windows-links.txt"
+outputTextCID="games-windows-cid.txt"
+
 outputHTML="games-windows-links.html"
+
 outputTMP="dump.tmp"
 outputTMP2="dump2.tmp"
 
 dumpText="games-windows-dump-list.txt"
+dumpTextCID="games-windows-cid-dump-list.txt"
+
+jsonWindows="games-windows.json"
+jsonOnline="games-online.json"
+jsonAll="games-full.json"
+
+
+# Data Gathering URL
+# http://www.gamehouse.com/datagathering/actiontracking?actiontrackingkindid=225&actiontrackingsourceid=4458
+
+
+dumpWebToJSON(){
+
+	wget -d --header="Cookie: gamehouseuser=true"  -O "$jsonWindows" "http://www.gamehouse.com/games.json?gametype=download&genre=all&sorting=name&count=4000&filterType=null"
+
+	#wget -d --header="Cookie: gamehouseuser=true" -O "$jsonOnline" "http://www.gamehouse.com/games.json?gametype=online&genre=all&sorting=name&count=4000&filterType=null"
+
+	#wget -d --header="Cookie: gamehouseuser=true" -O "$jsonAll" "http://www.gamehouse.com/games.json?gametype=null&genre=all&sorting=name&count=4000&filterType=null"
+
+}
 
 
 dumpGamesToList(){
@@ -27,7 +51,7 @@ dumpGamesToList(){
 	echo ""
 	grep -Po '"url":.*?[^\\]"' "$inputJSON" | cut -f2 -d":" | cut -c2- | sed 's/"$//'>"$outputTMP"
 
-	rm "$outputTEXT"
+	rm "$outputText"
 	rm "$outputHTML"
 
 	# Create Files With Links
@@ -35,7 +59,7 @@ dumpGamesToList(){
 	do
 
 		# Output Text File
-		echo "$baseURL$line">>"$outputTEXT"
+		echo "$baseURL$line">>"$outputText"
 
 		# Output HTML File
 		echo "<a href=\"$baseURL$line\" target=\"__blank\">$baseURL$line\</a><br>">>"$outputHTML"
@@ -87,14 +111,47 @@ dumpPages(){
 		echo "nameNoDashes: $nameNoDashes">>"$dumpText"	
 		echo ""		
 
-	done < "$outputTEXT"
+	done < "$outputText"
 	
 	rm "$outputTMP"
 }
 
 
+dumpPagesCidOnly(){
+
+	
+	rm "$dumpTextCID"
+
+	gameCounter=0
+
+	# Follow Links and Dump Pages
+	while read -r line
+	do
+		
+		wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.5.2" -O "$outputTMP" "$line"
+
+		contentID=$(grep "contentid=" "$outputTMP" | cut -f3 -d"=" | cut -f1 -d"&")
+
+		gameCounter=$(($gameCounter + 1))
+
+		echo ""		
+		echo "contentID: $contentID"
+		echo ""	
+
+		# Write To File	
+		echo "$contentID">>"$dumpTextCID"
+
+	done < "$outputText"
+	
+	rm "$outputTMP"
+	rm "$outputText"
+	rm "$outputHTML"
+}
+
+dumpWebToJSON
 dumpGamesToList
 dumpPages
+#dumpPagesCidOnly
 
 
 
