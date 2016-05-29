@@ -509,12 +509,15 @@ set amInstantServerServiceUninstall="C:\Program Files\unRealArcade\temp\aminstan
 set amInstantServerServiceInstallAndStart="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --service-install-and-start
 set amInstantServerUninstall="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --uninstall
 
-:: ActiveMark Paths
+:: AMI Paths
 set amPath=%pd%\activeMARK
 set amInstantPath=%pd%\activeMARK\instant
 set amInstantAppPath=%pd%\activeMARK\instant\apps
 
-:: ActiveMark Log
+:: AMI Game List
+set amiGameList="C:\Program Files\unRealArcade\temp\am-instant-game-list.txt"
+
+:: AMI Log
 set amInstantLog="%amInstantPath%\aminstant.log"
 
 :: Remote GameHouse Player
