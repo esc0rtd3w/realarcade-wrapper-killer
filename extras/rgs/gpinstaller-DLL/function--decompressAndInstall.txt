@@ -1,0 +1,104 @@
+; Exported entry   1. decompressAndInstall
+
+
+
+; int __stdcall decompressAndInstall(int, int, int, int, HKEY lpData, LPCSTR lpLibFileName, int)
+public decompressAndInstall
+decompressAndInstall proc near
+
+Text= byte ptr -30Ch
+var_30B= byte ptr -30Bh
+Caption= byte ptr -208h
+var_207= byte ptr -207h
+var_104= dword ptr -104h
+arg_0= dword ptr  4
+arg_4= dword ptr  8
+arg_8= dword ptr  0Ch
+arg_C= dword ptr  10h
+lpData= dword ptr  14h
+lpLibFileName= dword ptr  18h
+arg_18= dword ptr  1Ch
+
+sub     esp, 30Ch
+push    esi
+push    edi
+push    offset CriticalSection ; lpCriticalSection
+call    ds:EnterCriticalSection
+mov     ecx, 40h
+xor     eax, eax
+lea     edi, [esp+314h+var_104+1]
+mov     byte ptr [esp+314h+var_104], 0
+rep stosd
+mov     ecx, [esp+314h+arg_18]
+mov     edx, [esp+314h+lpLibFileName]
+stosw
+stosb
+lea     eax, [esp+314h+var_104]
+push    0               ; int
+push    eax             ; int
+mov     eax, [esp+31Ch+lpData]
+push    ecx             ; int
+mov     ecx, [esp+320h+arg_C]
+push    edx             ; lpLibFileName
+mov     edx, [esp+324h+arg_8]
+push    eax             ; lpData
+mov     eax, [esp+328h+arg_4]
+push    ecx             ; int
+mov     ecx, [esp+32Ch+arg_0]
+push    edx             ; int
+push    eax             ; int
+push    ecx             ; int
+call    sub_100027F0
+mov     esi, eax
+add     esp, 24h
+test    esi, esi
+jz      short loc_10002C09
+
+
+
+
+
+
+
+
+
+
+
+
+loc_10002C09:
+mov     ecx, 40h
+xor     eax, eax
+lea     edi, [esp+314h+var_207]
+mov     [esp+314h+Caption], 0
+rep stosd
+stosw
+stosb
+mov     ecx, 40h
+xor     eax, eax
+lea     edi, [esp+314h+var_30B]
+mov     [esp+314h+Text], 0
+rep stosd
+stosw
+lea     edx, [esp+314h+Caption]
+push    104h            ; cchBufferMax
+stosb
+mov     eax, hInstance
+mov     edi, ds:LoadStringA
+push    edx             ; lpBuffer
+push    1               ; uID
+push    eax             ; hInstance
+call    edi ; LoadStringA
+mov     edx, hInstance
+lea     ecx, [esp+314h+Text]
+push    104h            ; cchBufferMax
+push    ecx             ; lpBuffer
+push    0C33h           ; uID
+push    edx             ; hInstance
+call    edi ; LoadStringA
+lea     eax, [esp+314h+Caption]
+push    0               ; uType
+lea     ecx, [esp+318h+Text]
+push    eax             ; lpCaption
+push    ecx             ; lpText
+push    0               ; hWnd
+call    ds:MessageBoxA
