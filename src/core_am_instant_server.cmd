@@ -78,6 +78,7 @@ set dumpPage=wget -d %memberCookie% -O %outFileTemp% %pageNewGames%
 
 
 :amiMenu
+set returnTo=amiMenu
 
 ::cls
 ::echo Select an option from below
@@ -215,22 +216,20 @@ echo.
 echo 2) Get Game Info (MUST Provide Content ID)
 echo 3) Show Extended Game Info
 echo.
-echo 4) Download Game (Remote RFS Extract)
-echo 5) Download Game Alternate (Compressed RFS File)
-echo 6) Launch Game
+echo 4) Download Game
+echo 5) Launch Game
 echo.
-echo 7) More Options
+echo 6) More Options
 echo.
 echo X) Exit
 echo.
 
-if %os%==XP choice /c:1234567x /n
-if %os%==VISTA choice /c 1234567x /n
-if errorlevel 8 goto forceExit
-if errorlevel 7 goto amiMenu2
-if errorlevel 6 goto launch
-if errorlevel 5 goto download2
-if errorlevel 4 goto download
+if %os%==XP choice /c:123456x /n
+if %os%==VISTA choice /c 123456x /n
+if errorlevel 7 goto forceExit
+if errorlevel 6 goto amiMenu2
+if errorlevel 5 goto launch
+if errorlevel 4 goto menuGameSelect
 if errorlevel 3 goto extGame
 if errorlevel 2 goto info
 if errorlevel 1 goto toggleSvr
@@ -239,6 +238,7 @@ goto end
 
 
 :amiMenu2
+set returnTo=amiMenu2
 
 cls
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
@@ -278,6 +278,75 @@ if errorlevel 2 goto openApps
 if errorlevel 1 goto chkRemote
 
 goto end
+
+
+:menuGameSelect
+
+if %cid%==00000000000000000000000000000000 (
+cls
+echo No Valid Content ID Has Been Set!
+echo.
+echo.
+pause
+goto %returnTo%
+)
+
+if %gameNameDashes%==game-name-here (
+cls
+echo No Valid Game Name Has Been Set!
+echo.
+echo.
+pause
+goto %returnTo%
+)
+
+if "%gameNameTitleHTML%"=="Game Name Here" (
+cls
+echo No Valid Game Title Has Been Set!
+echo.
+echo.
+pause
+goto %returnTo%
+)
+
+
+set returnTo=menuGameSelect
+
+cls
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%laqua%
+echo Content ID: %cid%
+echo Name: %gameNameDashes%
+echo Title: %gameNameTitle%
+echo App Directory Name: %appDirName%
+echo Device ID: %deviceID%
+echo Session ID: %sessionID%
+echo.
+echo.
+%lyellow%
+echo Select an option from below
+echo.
+echo 1) Extract Remote RFS File
+echo.
+echo 2) Download RFS File
+echo.
+echo 3) Multi Extract Remote RFS Files
+echo.
+echo 4) Multi Download RFS Files
+echo.
+echo.
+echo B) Go Back
+echo.
+
+if %os%==XP choice /c:1234b /n
+if %os%==VISTA choice /c 1234b /n
+if errorlevel 5 goto amiMenu
+if errorlevel 4 goto downloadMulti2
+if errorlevel 3 goto downloadMulti
+if errorlevel 2 goto download2
+if errorlevel 1 goto download
+
+goto %returnTo%
 
 
 :rebuildReq
@@ -771,42 +840,6 @@ goto amiMenu
 
 :download
 
-if %serverStatus%==0 (
-	cls
-	echo AM Server Not Running!
-	echo.
-	echo.
-	pause
-	goto amiMenu
-)
-
-if %cid%==00000000000000000000000000000000 (
-cls
-echo No Valid Content ID Has Been Set!
-echo.
-echo.
-pause
-goto amiMenu
-)
-
-if %gameNameDashes%==game-name-here (
-cls
-echo No Valid Game Name Has Been Set!
-echo.
-echo.
-pause
-goto amiMenu
-)
-
-if "%gameNameTitleHTML%"=="Game Name Here" (
-cls
-echo No Valid Game Title Has Been Set!
-echo.
-echo.
-pause
-goto amiMenu
-)
-
 :: Single DOUBLE QUOTE here on purpose
 ::%runShellWaitTerminate% %baseReq%%remoteRfsBase%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
 %runShellWaitTerminate% %baseReqExtractRFS%%remoteRfsBase1%%gameNameTitleHTML%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
@@ -838,42 +871,41 @@ echo.
 pause
 )
 
-goto amiMenu
+goto %returnTo%
 
 
 :download2
 
-if %cid%==00000000000000000000000000000000 (
-cls
-echo No Valid Content ID Has Been Set!
-echo.
-echo.
-pause
-goto amiMenu
-)
-
-if %gameNameDashes%==game-name-here (
-cls
-echo No Valid Game Name Has Been Set!
-echo.
-echo.
-pause
-goto amiMenu
-)
-
-if "%gameNameTitleHTML%"=="Game Name Here" (
-cls
-echo No Valid Game Title Has Been Set!
-echo.
-echo.
-pause
-goto amiMenu
-)
-
 %runShellWaitTerminate% %baseReqDownloadRFS%
 
 
-goto amiMenu
+goto %returnTo%
+
+
+:downloadMulti
+
+cls
+echo Not Implemented Yet!
+echo.
+echo.
+pause
+::%runShellWaitTerminate% %baseReqDownloadRFS%
+
+
+goto %returnTo%
+
+
+:downloadMulti2
+
+cls
+echo Not Implemented Yet!
+echo.
+echo.
+pause
+::%runShellWaitTerminate% %baseReqDownloadRFS%
+
+
+goto %returnTo%
 
 
 :stop
@@ -947,6 +979,7 @@ if %serverStatus%==0 (
 goto amiMenu2
 
 
+
 :extGame
 
 if %serverStatus%==0 (
@@ -991,6 +1024,32 @@ echo.
 pause
 
 goto amiMenu
+
+
+
+:buildMenu
+
+setlocal enabledelayedexpansion
+
+set count=0
+
+for /f %%x in ('dir /s /b *.sln') do (
+    set /a count=count+1
+    set choice[!count!]=%%x
+    for %%y in (!count!) do set "choice[%%y]=!choice[%%y]:%cd%\=!"
+)
+
+for /l %%x in (1,1,!count!) do (
+     echo  %%x] !choice[%%x]!
+)
+
+set /p select=?
+
+echo You chose !choice[%select%]!
+
+pause
+
+goto %returnTo%
 
 
 :forceExit
