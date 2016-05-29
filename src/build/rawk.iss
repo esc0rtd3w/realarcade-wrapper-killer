@@ -224,6 +224,9 @@ Source: ..\web\URABrowser\Debug\URABrowser.exe; DestDir: "C:\Program Files\unRea
 ; AM Instant Injector
 Source: ..\web\AMInjector\Debug\AMInjector.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
+; Game Lists
+Source: ..\gamelist\am-instant-game-list.txt; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+
 
 ; External System Files (Local)
 ;Source: ..\sys32\choice.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
