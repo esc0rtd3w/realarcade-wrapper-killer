@@ -991,10 +991,20 @@ if %serverStatus%==0 (
 	goto amiMenu
 )
 
+if %cid%==00000000000000000000000000000000 (
+cls
+echo No Valid Content ID Has Been Set!
+echo.
+echo.
+pause
+goto amiMenu
+)
+
 cls
 %white%
-if %cid%==00000000000000000000000000000000 echo No Valid Game Selected! Use "Get Game Info" From Main Menu.
-if not %cid%==00000000000000000000000000000000 echo Extended Game Info
+::if %cid%==00000000000000000000000000000000 echo No Valid Game Selected! Use "Get Game Info" From Main Menu.
+::if not %cid%==00000000000000000000000000000000 echo Extended Game Info
+echo Extended Game Info
 echo.
 echo.
 %laqua%
