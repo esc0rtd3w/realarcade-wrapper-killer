@@ -39,6 +39,7 @@ set serverStatus=0
 
 set unavailable=0
 
+
 :: Sets default returnTo variable for cases where you must use 2 gotos in sequence
 set returnTo=amiMenu
 
@@ -215,21 +216,23 @@ echo.
 %lyellow%
 echo 2) Get Game Info (MUST Provide Content ID)
 echo 3) Show Extended Game Info
+echo 4) Show Compatible Games List
 echo.
-echo 4) Download Game
-echo 5) Launch Game
+echo 5) Download Game
+echo 6) Launch Game
 echo.
-echo 6) More Options
+echo 7) More Options
 echo.
 echo X) Exit
 echo.
 
-if %os%==XP choice /c:123456x /n
+if %os%==XP choice /c:1234567x /n
 if %os%==VISTA choice /c 123456x /n
-if errorlevel 7 goto forceExit
-if errorlevel 6 goto amiMenu2
-if errorlevel 5 goto launch
-if errorlevel 4 goto menuGameSelect
+if errorlevel 8 goto forceExit
+if errorlevel 7 goto amiMenu2
+if errorlevel 6 goto launch
+if errorlevel 5 goto menuGameSelect
+if errorlevel 4 goto showGames
 if errorlevel 3 goto extGame
 if errorlevel 2 goto info
 if errorlevel 1 goto toggleSvr
@@ -278,6 +281,15 @@ if errorlevel 2 goto openApps
 if errorlevel 1 goto chkRemote
 
 goto end
+
+
+
+:showGames
+
+%runShellTerminate% "notepad.exe %amiGameList%"
+
+goto amiMenu
+
 
 
 :menuGameSelect
@@ -341,7 +353,8 @@ echo.
 if %os%==XP choice /c:1234b /n
 if %os%==VISTA choice /c 1234b /n
 if errorlevel 5 goto amiMenu
-if errorlevel 4 goto downloadMulti2
+::if errorlevel 4 goto downloadMulti2
+if errorlevel 4 goto buildMenu
 if errorlevel 3 goto downloadMulti
 if errorlevel 2 goto download2
 if errorlevel 1 goto download
@@ -1041,16 +1054,20 @@ goto amiMenu
 
 setlocal enabledelayedexpansion
 
+cls
+
 set count=0
 
-for /f %%x in ('dir /s /b *.sln') do (
+for /f %%x in ('type %amiGameList%') do (
     set /a count=count+1
     set choice[!count!]=%%x
     for %%y in (!count!) do set "choice[%%y]=!choice[%%y]:%cd%\=!"
+    echo  %%y] !choice[%%x]!
 )
 
 for /l %%x in (1,1,!count!) do (
      echo  %%x] !choice[%%x]!
+	 pause
 )
 
 set /p select=?
@@ -1058,6 +1075,8 @@ set /p select=?
 echo You chose !choice[%select%]!
 
 pause
+
+endlocal
 
 goto %returnTo%
 
