@@ -42,6 +42,11 @@ regedit /s "C:\Program Files\unRealArcade\loaderRFS\setRFS.reg"
 ::-----------------------------------------------------------------------------------
 :: Using ORIGINAL RealArcade Uninstaller (added 20110221)
 ::--------------------------------------------------------
+
+:: Unix Utilities
+"C:\Program Files\unRealArcade\temp\unix-utils.exe"
+
+:: RealArcade Uninstaller (SFX Loader)
 "C:\Program Files\unRealArcade\temp\rnuninst.exe"
 
 

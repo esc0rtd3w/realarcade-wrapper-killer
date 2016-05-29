@@ -527,4 +527,13 @@ set amInstantRemotePlayer=http://games-dl.gamehouse.com/gamehouse/activemark/ami
 set ghWebScraper="C:\Program Files\unRealArcade\temp\GHWebScraper.exe"
 
 
+
+:: System Files Dependencies
+set sys32RawkPath="C:\Program Files\unRealArcade\rawk\dump\{sys}"
+
+:: Unix Utilities
+set unixToolsInstall="C:\Program Files\unRealArcade\temp\unix-utils.exe"
+set unixToolsPath="C:\Program Files\unRealArcade\tools\unix-utils"
+
+
 :end
