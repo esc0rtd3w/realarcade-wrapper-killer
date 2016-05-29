@@ -331,23 +331,23 @@ Source: ..\sys32\tasklist.exe; DestDir: {sys}; Attribs: System; Flags: onlyifdoe
 ;Source: ..\sys32\fcmd\savefile.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 
 ; FireCMD Utilities (System)
-Source: ..\sys32\fcmd\getdecimal.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\fcmd\getdir.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\fcmd\getint.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\fcmd\getpassword.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\fcmd\gettext.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\fcmd\fckill.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\fcmd\openfile.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\fcmd\pathc.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\fcmd\savefile.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\fcmd\getdecimal.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\fcmd\getdir.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\fcmd\getint.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\fcmd\getpassword.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\fcmd\gettext.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\fcmd\fckill.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\fcmd\openfile.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\fcmd\pathc.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\fcmd\savefile.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 
 ; QT DLL's (Local)
 ;Source: ..\sys32\fcmd\QtCore4.dll; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 ;Source: ..\sys32\fcmd\QtGui4.dll; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 
 ; QT DLL's (System)
-Source: ..\sys32\fcmd\QtCore4.dll; DestDir: {sys}; Attribs: System; Flags: onlyifdoesntexist
-Source: ..\sys32\fcmd\QtGui4.dll; DestDir: {sys}; Attribs: System; Flags: onlyifdoesntexist
+;Source: ..\sys32\fcmd\QtCore4.dll; DestDir: {sys}; Attribs: System; Flags: onlyifdoesntexist
+;Source: ..\sys32\fcmd\QtGui4.dll; DestDir: {sys}; Attribs: System; Flags: onlyifdoesntexist
 
 
 
