@@ -515,7 +515,7 @@ set amInstantPath=%pd%\activeMARK\instant
 set amInstantAppPath=%pd%\activeMARK\instant\apps
 
 :: AMI Game List
-set amiGameList="C:\Program Files\unRealArcade\temp\am-instant-game-list.txt"
+set amiGameList="C:\Program Files\unRealArcade\gamelist\am-instant.txt"
 
 :: AMI Log
 set amInstantLog="%amInstantPath%\aminstant.log"
