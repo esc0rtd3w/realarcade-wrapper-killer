@@ -259,17 +259,18 @@ echo.
 echo 2) Open Default Apps Directory
 echo.
 echo 3) List Installed Games
-echo.
 echo 4) Enter New Game Credentials
 echo 5) Rebuild GET Request
+echo 6) Watch AM Instant Log
 echo.
 echo.
 echo B) Go Back
 echo.
 
-if %os%==XP choice /c:12345b /n
-if %os%==VISTA choice /c 12345b /n
-if errorlevel 6 goto amiMenu
+if %os%==XP choice /c:123456b /n
+if %os%==VISTA choice /c 123456b /n
+if errorlevel 7 goto amiMenu
+if errorlevel 6 goto watchLog
 if errorlevel 5 set returnTo=amiMenu2&&goto rebuildReq
 if errorlevel 4 goto newCreds
 if errorlevel 3 goto listGames
@@ -900,6 +901,13 @@ goto amiMenu
 :openApps
 
 %runShellTerminate% explorer.exe "%amInstantAppPath%"
+
+goto amiMenu2
+
+
+:watchLog
+
+%runShellTerminate% tail.exe -f %amInstantLog%
 
 goto amiMenu2
 
