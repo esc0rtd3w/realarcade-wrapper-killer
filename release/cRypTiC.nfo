@@ -30,7 +30,7 @@
       Category .. [ Utility           ] ∞ Protection. [ RGS/RGA/RFS Trial ]∞
       Tested by.. [ esc0rtd3w         ] ∞ Language..  [ EN/DE/FR/ES/NL/JP ]
    ∞  Packed by.. [ cRypTiC/esc0rtd3w ] ∞ Filename .  [ c-rawk560.zip     ]∞
-      Coded by... [ cRypTiC/esc0rtd3w ] ∞ Disks ....  [ 01 x 18MB         ]±
+      Coded by... [ cRypTiC/esc0rtd3w ] ∞ Disks ....  [ 01 x 17MB         ]±
 
    ±        .  ﬂ            ‹        ∞   ‹     ‹ ﬂ           ‹       ﬂ€‹   ˛€ ‹
  ∞±≤‹  ‹€‹ ∞ €‹ ﬂ€‹‹‹ ∞∞∞ ‹€€≤‹   ﬂ  ±  ﬂ€ﬂ  ‹≤€€‹ ∞∞∞ ‹‹‹€ﬂ ‹€ ∞ ‹€‹ ﬂ€≤±∞ ﬁ€
@@ -173,6 +173,8 @@
 
 
 	* UPDATED: RAWK Core to v3.0.8
+
+                   * Removed several unused dependencies
 
                    * Added Compatible Games List To AM Server Menu
 
