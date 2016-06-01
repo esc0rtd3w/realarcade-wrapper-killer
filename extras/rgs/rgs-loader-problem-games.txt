@@ -1,0 +1,15 @@
+5spotsii_free.rgs
+5spots_free.rgs
+bots_free.rgs
+flux_free.rgs
+hoyleboardgames_free.rgs
+hoylecardgames_free.rgs
+jackpotpinball_free.rgs
+kayakextreme_free.rgs
+kayakextreme_free2.rgs
+passage3_free.rgs
+pgsq_free.rgs
+prettygoodsolitairequestedition_free.rgs
+raindrops_free.rgs
+smallballbaseball_free.rgs
+squarelogic_free.rgs
