@@ -1,0 +1,76 @@
+<PACKAGE>
+  <TITLE></TITLE>
+  <APPLICATION>RealArcade</APPLICATION>
+  <ACTION>download</ACTION>
+  <TARGET>My Games</TARGET>
+  <EXP_DATE>06/13/2001 10:51</EXP_DATE>
+  <PROVIDER>
+      <AUTHOR>RealArcade</AUTHOR>
+      <NAME>RealNetworks</NAME>
+      <URL>http://www.real.com</URL>
+      <COPYRIGHT>Copyright 2001, RealNetworks</COPYRIGHT>
+      <CONTACT>RealArcade@real.com</CONTACT>
+  </PROVIDER>
+  <SERVER>
+   <NAME>RealGames Server </NAME>
+   <DESC>RealGames Server</DESC>
+   <NETNAME>download.real.com</NETNAME>
+   <LOCATION>/product_downloadH59H901162005/powerchips_full.rgs</LOCATION> <!-- %f = filename, %fid=Track  id, %lid = TrackList ID, %pid= package id -->
+   <KEY>Not used in Beta1</KEY>
+  </SERVER>
+  <GAMELIST>
+    <GAME>
+    <ID></ID>
+    <NAME>Power Chips</NAME>
+    <GAMEID>6DA83806-1E82-11B2-8DD9-00D0B7142009</GAMEID>
+    <VERSION>1.FL.R.1</VERSION>
+    <TYPE>full</TYPE>
+    <GENRE>Puzzle & Board</GENRE>
+    <FILENAME>powerchips_full.rgs</FILENAME>
+    <SIZE>3632669</SIZE>
+    <MEZZANINE>http://games-dl.real.com/gameconsole/games/full/mezzanines/powerchips_full.mez</MEZZANINE>
+    <ADURL>http://games-dl.real.com/gameconsole/games/full/text/powerchips.txt</ADURL>
+    <ADNAME>powerchips.txt</ADNAME>
+    <METADATA>
+    <PROP name="GameID" type="text" value="6DA83806-1E82-11B2-8DD9-00D0B7142009" />
+    <PROP name="Version" type="text" value="1.FL.R.1" />
+    <PROP name="GameName" type="text" value="Power Chips" />
+    <PROP name="GameType" type="text" value="full" />
+    <PROP name="MultiID" type="text" value="blank" />
+    <PROP name="Caption" type="text" value="This action puzzler has all the glitz and glamour of Las Vegas. Eliminate groups of 3 or more matching chips from the game board to increase your score." />
+    <PROP name="PublisherID" type="number" value="242" />
+    <PROP name="DeveloperID" type="number" value="242" />
+    <PROP name="MezzanineURL" type="url" value="http://games-dl.real.com/gameconsole/games/full/mezzanines/powerchips_full.mez" />
+    <PROP name="RealAPISupport" type="flag" value="0" />
+    <PROP name="LaunchINIGameName" type="text" value="Power Chips" />
+    <PROP name="FindInRegistry" type="number" value="1" />
+    <PROP name="Multiplayer" type="flag" value="0" />
+    <PROP name="FindKeys" type="group">
+      <PROP name="KeyCount" type="number" value="2" />
+      <PROP name="Key1" type="text" value="Registry;HKEY_CLASSES_ROOT\SOFTWARE\RealNetworks\Games\powerchips\1;InstallPath" />
+      <PROP name="Key2" type="text" value="Registry;HKEY_CLASSES_ROOT\SOFTWARE\RealNetworks\Games\powerchips\1;Executable" />
+      <PROP name="LaunchCommand" type="text" value="${Key1}${Key2}" />
+      <PROP name="LaunchPath" type="text" value="${Key1}" />
+      <PROP name="UninstallCommand" type="text" value="&lt;?XZIP?&gt;&lt;/?XZIP?&gt;" />
+      <PROP name="RegMustExist" type="text" value="Registry;HKEY_CLASSES_ROOT\SOFTWARE\RealNetworks\Games\powerchips\1;LicenseKey" />
+    </PROP>
+    <PROP name="DiskSearchInfo" type="group">
+      <PROP name="FileName" type="text" value="powerchips.exe" />
+      <PROP name="FileSize" type="number" value="196608" />
+    </PROP>
+    <PROP name="SystemRequirements" type="group">
+      <PROP name="OperatingSystem" type="text" value="Windows98, WindowsME, Windows2000, WindowsXP" />
+      <PROP name="MinProcessorType" type="text" value="P-400" />
+      <PROP name="MinDiskSpaceRun" type="number" value="5452595.2" />
+      <PROP name="MinDiskSpaceInstall" type="number" value="16373760" />
+      <PROP name="MinMemory" type="number" value="67108864" />
+      <PROP name="Requires3DHardware" type="flag" value="0" />
+      <PROP name="MinDirectXVersion" type="number" value="7" />
+      <PROP name="MinDirectXVersion2" type="number" value="0X070000" />
+    </PROP>
+  </PROP>
+    </METADATA>
+  </GAME>
+  </GAMELIST>
+  <SIG>14d0a01a97ad213c514f3fa86c34c159</SIG>
+</PACKAGE>

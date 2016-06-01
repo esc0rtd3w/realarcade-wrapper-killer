@@ -1,0 +1,59 @@
+<PACKAGE>
+	<TITLE></TITLE>
+    	<APPLICATION>RealArcade</APPLICATION>
+	<ACTION>download</ACTION>
+	<TARGET>My Games</TARGET>
+	<EXP_DATE>06/13/2001 10:51</EXP_DATE>
+	<PROVIDER>
+		<AUTHOR>RealArcade</AUTHOR>
+		<NAME>RealNetworks</NAME>
+		<URL>http://www.real.com</URL>
+		<COPYRIGHT>Copyright 2001, RealNetworks</COPYRIGHT>
+		<CONTACT>RealArcade@real.com</CONTACT>
+	</PROVIDER>	
+	<SERVER>		
+                <!---
+		    =================================================== 
+
+		    =================================================== 
+                -->
+		<NAME>Ecom Dev Server </NAME>
+		<DESC>Ecom Dev Server</DESC>
+		<NETNAME>ecomm-dl.real.com</NETNAME>
+		<LOCATION>/product_downloadEPNYF02022003/demonstar_full.rgs</LOCATION> <!-- %f = filename, %fid=Track  id, %lid = TrackList ID, %pid= package id -->
+		<KEY>Not used in Beta1</KEY>
+	</SERVER>
+	<GAMELIST>
+		<GAME>
+			<ID></ID>
+			<!-- THIS IS THE TITLE OF THE GAME THAT SHOWS UP DURING THE DOWNLOAD OF THE GAME-->
+			<NAME>DemonStar</NAME>
+			<!-- 
+			    =================================================== 
+			    THE GAME ID FOR THIS GAME
+			    ===================================================
+			-->
+			<GAMEID>54AF10B5-8982-11d4-823D-00D0B74C2C30</GAMEID>
+			<VERSION>Full RGP</VERSION>
+			<TYPE>full</TYPE>
+			<GENRE>Action</GENRE>
+			<FILENAME>demonstar_full.rgs</FILENAME>
+			<SIZE>5456230</SIZE>
+			<!-- 
+			    =================================================== 
+			    THIS IS THE LOCATION TO DOWNLOAD THE MEZZANINE FROM 
+			    ===================================================
+			-->
+			<MEZZANINE>http://games-dl.real.com/gameconsole/games/full/mezzanines/demonstar_full.mez</MEZZANINE>
+			<!--
+			    =================================================== 
+			    THIS IS THE GAME FIND DATA FOR THE GAME THAT YOU ARE DOWNLOADING
+			    IT SHOULD HAVE ALL THE INFO NEEDED TO FIND THE GAME AFTER INSTALL.
+			    =================================================== 
+			-->
+			<METADATA>
+			</METADATA>
+		</GAME>
+	</GAMELIST>
+	<SIG>14d0a01a97ad213c514f3fa86c34c159</SIG>
+</PACKAGE>

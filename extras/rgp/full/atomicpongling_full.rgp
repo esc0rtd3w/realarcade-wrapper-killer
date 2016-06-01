@@ -1,0 +1,76 @@
+<PACKAGE>
+  <TITLE></TITLE>
+  <APPLICATION>RealArcade</APPLICATION>
+  <ACTION>download</ACTION>
+  <TARGET>My Games</TARGET>
+  <EXP_DATE>06/13/2001 10:51</EXP_DATE>
+  <PROVIDER>
+      <AUTHOR>RealArcade</AUTHOR>
+      <NAME>RealNetworks</NAME>
+      <URL>http://www.real.com</URL>
+      <COPYRIGHT>Copyright 2001, RealNetworks</COPYRIGHT>
+      <CONTACT>RealArcade@real.com</CONTACT>
+  </PROVIDER>
+  <SERVER>
+   <NAME>RealGames Server </NAME>
+   <DESC>RealGames Server</DESC>
+   <NETNAME>download.real.com</NETNAME>
+   <LOCATION>/product_download4VMPD01282004/atomicpongling_full.rgs</LOCATION> <!-- %f = filename, %fid=Track  id, %lid = TrackList ID, %pid= package id -->
+   <KEY>Not used in Beta1</KEY>
+  </SERVER>
+  <GAMELIST>
+    <GAME>
+    <ID></ID>
+    <NAME>Atomic Pongling</NAME>
+    <GAMEID>FB363F52-1DD2-11B2-8DF7-00D0B7142009</GAMEID>
+    <VERSION>1.FL.R.1</VERSION>
+    <TYPE>full</TYPE>
+    <GENRE>Action & Adventure</GENRE>
+    <FILENAME>atomicpongling_full.rgs</FILENAME>
+    <SIZE>4769548</SIZE>
+    <MEZZANINE>http://games-dl.real.com/gameconsole/games/full/mezzanines/atomicpongling_full.mez</MEZZANINE>
+    <ADURL>http://games-dl.real.com/gameconsole/games/full/text/atomicpongling.txt</ADURL>
+    <ADNAME>atomicpongling.txt</ADNAME>
+    <METADATA>
+    <PROP name="GameID" type="text" value="FB363F52-1DD2-11B2-8DF7-00D0B7142009" />
+    <PROP name="Version" type="text" value="1.FL.R.1" />
+    <PROP name="GameName" type="text" value="Atomic Pongling" />
+    <PROP name="GameType" type="text" value="full" />
+    <PROP name="MultiID" type="text" value="blank" />
+    <PROP name="AUComponent" type="text" value="RAFFB363F521DD211B28DF700D0B7142009" />
+    <PROP name="Caption" type="text" value="After intense observation and experimentation, intergalactic scientists have created the perfect game: Pongling.  A brilliant blend of the ancient earth game Bowling and the arcade classic Pong." />
+    <PROP name="PublisherID" type="number" value="211" />
+    <PROP name="DeveloperID" type="number" value="211" />
+    <PROP name="MezzanineURL" type="url" value="http://games-dl.real.com/gameconsole/games/full/mezzanines/atomicpongling_full.mez" />
+    <PROP name="RealAPISupport" type="flag" value="0" />
+    <PROP name="LaunchINIGameName" type="text" value="Atomic Pongling" />
+    <PROP name="WindowTitle" type="text" value="Atomic Pongling" />
+    <PROP name="FindInRegistry" type="number" value="1" />
+    <PROP name="Multiplayer" type="flag" value="0" />
+    <PROP name="FindKeys" type="group">
+      <PROP name="KeyCount" type="number" value="2" />
+      <PROP name="Key1" type="text" value="Registry;HKEY_CLASSES_ROOT\SOFTWARE\RealNetworks\Games\atomicpongling\1;InstallPath" />
+      <PROP name="Key2" type="text" value="Registry;HKEY_CLASSES_ROOT\SOFTWARE\RealNetworks\Games\atomicpongling\1;Executable" />
+      <PROP name="LaunchCommand" type="text" value="${Key1}${Key2}" />
+      <PROP name="LaunchPath" type="text" value="${Key1}" />
+      <PROP name="UninstallCommand" type="text" value="&lt;?XZIP?&gt;&lt;/?XZIP?&gt;" />
+      <PROP name="RegMustExist" type="text" value="Registry;HKEY_CLASSES_ROOT\SOFTWARE\RealNetworks\Games\atomicpongling\1;LicenseKey" />
+    </PROP>
+    <PROP name="DiskSearchInfo" type="group">
+      <PROP name="FileName" type="text" value="AtomicPongling.exe" />
+      <PROP name="FileSize" type="number" value="4583424" />
+    </PROP>
+    <PROP name="SystemRequirements" type="group">
+      <PROP name="OperatingSystem" type="text" value="Windows98, WindowsME, Windows2000, WindowsXP" />
+      <PROP name="MinProcessorType" type="text" value="P-350" />
+      <PROP name="MinDiskSpaceRun" type="number" value="12582912" />
+      <PROP name="MinDiskSpaceInstall" type="number" value="16260096" />
+      <PROP name="MinMemory" type="number" value="33554432" />
+      <PROP name="Requires3DHardware" type="flag" value="0" />
+    </PROP>
+  </PROP>
+    </METADATA>
+  </GAME>
+  </GAMELIST>
+  <SIG>14d0a01a97ad213c514f3fa86c34c159</SIG>
+</PACKAGE>

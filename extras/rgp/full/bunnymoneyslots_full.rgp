@@ -1,0 +1,109 @@
+<PACKAGE>
+	<TITLE></TITLE>
+    	<APPLICATION>RealArcade</APPLICATION>
+	<ACTION>download</ACTION>
+	<TARGET>My Games</TARGET>
+	<EXP_DATE>06/13/2001 10:51</EXP_DATE>
+	<PROVIDER>
+		<AUTHOR>RealArcade</AUTHOR>
+		<NAME>RealNetworks</NAME>
+		<URL>http://www.real.com</URL>
+		<COPYRIGHT>Copyright 2001, RealNetworks</COPYRIGHT>
+		<CONTACT>RealArcade@real.com</CONTACT>
+	</PROVIDER>	
+	<SERVER>		
+                <!---
+		    =================================================== 
+
+		    =================================================== 
+                -->
+		<NAME>Ecom Dev Server</NAME>
+		<DESC>Ecom Dev Server</DESC>
+		<NETNAME>download.real.com</NETNAME>
+		<LOCATION>/product_download49QME07222006/bunnymoneyslots_full.rgs</LOCATION> <!-- %f = filename, %fid=Track  id, %lid = TrackList ID, %pid= package id -->
+		<KEY>Not used in Beta1</KEY>
+	</SERVER>
+	<GAMELIST>
+		<GAME>
+			<ID></ID>
+			<!-- THIS IS THE TITLE OF THE GAME THAT SHOWS UP DURING THE DOWNLOAD OF THE GAME-->
+			<NAME>Bunny Money Slots</NAME>
+			<!-- 
+			    =================================================== 
+			    THE GAME ID FOR THIS GAME
+			    ===================================================
+			-->
+			<GAMEID>F8ACF641-17B2-11D5-8827-0002B3108D7C</GAMEID>
+			<VERSION>1.0 Full RGI</VERSION>
+			<TYPE>full</TYPE>
+			<GENRE>Card and Casino</GENRE>
+			<FILENAME>bunnymoneyslots_full.rgs</FILENAME>
+			<SIZE>2404395</SIZE>
+			<!-- 
+			    =================================================== 
+			    THIS IS THE LOCATION TO DOWNLOAD THE MEZZANINE FROM 
+			    ===================================================
+			-->
+			<MEZZANINE>http://games-dl.real.com/gameconsole/games/full/mezzanines/bunnymoney_full.mez</MEZZANINE>
+
+			<!--
+			    =================================================== 
+			    THIS IS THE GAME FIND DATA FOR THE GAME THAT YOU ARE DOWNLOADING
+			    IT SHOULD HAVE ALL THE INFO NEEDED TO FIND THE GAME AFTER INSTALL.
+			    =================================================== 
+			-->
+		<METADATA>
+
+<PROP name = "GameID" type = "text" value = "F8ACF641-17B2-11D5-8827-0002B3108D7C" />
+    <PROP name = "Version" type = "text" value = "1.0 Full RGI" />
+    <PROP name = "GameName" type = "text" value = "Bunny Money Slots" />
+    <PROP name = "GameType" type = "text" value = "Full" />
+    <PROP name = "MultiID" type = "text" value = "blank" />
+    <PROP name = "Data" type = "group">
+        <PROP name = "AUComponent" type = "text" value = "e8ce7df8" />
+        <PROP name = "Caption" type = "text" value = "Put your money on the bunny!  Classic five wheel action, with up to 5 paylines and over 20 winning combinations.  Each winning spin gives you more credits and much much more!" />
+        <PROP name = "PublisherID" type = "number" value = "94" />
+        <PROP name = "DeveloperID" type = "number" value = "94" />
+        <PROP name = "MezzanineURL" type = "url" value = "http://games-dl.real.com/gameconsole/games/full/mezzanines/bunnymoney_full.mez" />
+        <PROP name = "RealAPISupport" type = "flag" value = "0" />
+        <PROP name = "StartOptions" type = "text" value = "" />
+        <PROP name = "LaunchINIGameName" type = "text" value = "Bunny Money Slots" />
+        <PROP name = "FindInRegistry" type = "number" value = "1" />
+        <PROP name = "FindKeys" type = "group">
+            <PROP name = "KeyCount" type = "number" value = "2" />
+            <PROP name = "Key1" type = "text" value = "Registry;HKEY_CLASSES_ROOT\SOFTWARE\RealNetworks\Games\Bunny Money Slots.e8ce7df8\1.0;InstallPath" />
+            <PROP name = "Key2" type = "text" value = "Registry;HKEY_CLASSES_ROOT\SOFTWARE\RealNetworks\Games\Bunny Money Slots.e8ce7df8\1.0;Executable" />
+            <PROP name = "LaunchCommand" type = "text" value = "${Key1}${Key2}" />
+            <PROP name = "LaunchPath" type = "text" value = "${Key1}" />
+            <PROP name = "UninstallCommand" type = "text" value = "<?XZIP?></?XZIP?>" />
+            <PROP name = "RegMustExist" type = "text" value = "HKEY_CLASSES_ROOT\SOFTWARE\RealNetworks\Games\Bunny Money Slots.e8ce7df8\1.0;LicenseKey" />
+        </PROP>
+        <PROP name = "Multiplayer" type = "flag" value = "0" />
+        <PROP name = "DiskSearchInfo" type = "group">
+            <PROP name = "FileName" type = "text" value = "bunny money.exe" />
+            <PROP name = "FileVersion" type = "text" value = "0" />
+            <PROP name = "FileSize" type = "number" value = "188416" />
+        </PROP>
+        <PROP name = "SystemRequirements" type = "group">
+            <PROP name = "OperatingSystem" type = "text" value = "Windows95, Windows98, WindowsME, Windows2000" />
+            <PROP name = "MinProcessorType" type = "text" value = "P-200" />
+            <PROP name = "MinDiskSpaceRun" type = "number" value = "3145728" />
+            <PROP name = "MinDiskSpaceInstall" type = "number" value = "10485760" />
+            <PROP name = "MinMemory" type = "number" value = "33554432" />
+            <PROP name = "Requires3DHardware" type = "flag" value = "0" />
+            <PROP name = "MinDirectXVersion" type = "number" value = "8.0a" />
+            <PROP name = "SinglePlayerMinimumConnectionSpeed" type = "number" value = "0" />
+            <PROP name = "MultiPlayerMinimumConnectionSpeed" type = "number" value = "0" />
+        </PROP>
+    </PROP>
+
+
+		</METADATA>
+
+		</GAME>
+	</GAMELIST>
+
+	<SIG>14d0a01a97ad213c514f3fa86c34c159</SIG>
+</PACKAGE>
+
+
