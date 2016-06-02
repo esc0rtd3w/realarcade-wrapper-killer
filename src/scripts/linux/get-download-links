@@ -23,10 +23,14 @@ outputTMP2="dump2.tmp"
 dumpText="games-windows-dump-list.txt"
 dumpTextCID="games-windows-cid-dump-list.txt"
 
+dumpIni="games-windows-dump-list.ini"
+
 jsonWindows="games-windows.json"
 jsonOnline="games-online.json"
 jsonAll="games-full.json"
 
+
+na="NO_DATA"
 
 # Data Gathering URL
 # http://www.gamehouse.com/datagathering/actiontracking?actiontrackingkindid=225&actiontrackingsourceid=4458
@@ -77,6 +81,13 @@ dumpPages(){
 
 	gameCounter=0
 
+
+	# Write INI Header (Done Once Before Loop)
+	echo "; Game List Dumped By The RealArcade Wrapper Killer">"$dumpIni"
+	echo "">>"$dumpIni"
+	echo "">>"$dumpIni"
+
+
 	# Follow Links and Dump Pages
 	while read -r line
 	do
@@ -110,6 +121,9 @@ dumpPages(){
 		echo "nameDashes: $nameDashes">>"$dumpText"	
 		echo "nameNoDashes: $nameNoDashes">>"$dumpText"	
 		echo ""		
+
+		# Write INI File
+		writeIni
 
 	done < "$outputText"
 	
@@ -146,6 +160,30 @@ dumpPagesCidOnly(){
 	rm "$outputTMP"
 	rm "$outputText"
 	rm "$outputHTML"
+}
+
+
+writeIni(){
+
+	echo "[$contentID]">>"$dumpIni"		
+	echo "name_title=$nameTitle">>"$dumpIni"	
+	echo "name_stub=$nameNoDashes">>"$dumpIni"	
+	echo "name_web=$nameDashes">>"$dumpIni"	
+	echo "installation_id=$na">>"$dumpIni"	
+	echo "atoken=$na">>"$dumpIni"
+	echo "dmg_legacy=$na">>"$dumpIni"
+	echo "dmg_gh=$na">>"$dumpIni"
+	echo "dmg_amac=$na">>"$dumpIni"
+	echo "rga_legacy=$na">>"$dumpIni"
+	echo "rga_gh=$na">>"$dumpIni"
+	echo "rga_am=$na">>"$dumpIni"
+	echo "rga_amg=$na">>"$dumpIni"
+	echo "rgs_free=$na">>"$dumpIni"
+	echo "rgs_full=$na">>"$dumpIni"
+	echo "rfs=$na">>"$dumpIni"
+	echo "rfs_index=$na">>"$dumpIni"
+	echo "">>"$dumpIni"
+
 }
 
 dumpWebToJSON
