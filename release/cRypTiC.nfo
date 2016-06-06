@@ -174,6 +174,8 @@
 
 	* UPDATED: RAWK Core to v3.0.8
 
+                   * Updated AMI Server To v8.45.43.0
+
                    * Removed several unused dependencies
 
                    * Added Compatible Games List To AM Server Menu
