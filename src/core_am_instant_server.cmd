@@ -12,11 +12,6 @@ echo set %%a>>"%temp%\rawkEnv.cmd"
 )
 call "%temp%\rawkEnv.cmd"
 
-::set
-::pause
-
-%kill% aminstantservice.exe
-
 
 set bits=32
 
@@ -104,9 +99,16 @@ set reqGet3=^&content_id=%cid%
 set reqGet4=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1"
 set reqGet=%reqGet1%%reqGet2%%reqGet3%%reqGet4%
 
-set reqGetListGames1=/v1/listGames.json?include_uninstalled=false
-set reqGetListGames2=^&query_id=1463457306950
-set reqGetListGames=%reqGetListGames1%%reqGetListGames2%
+
+:: Get Games List (BROKEN AS OF 20160615)
+::set reqGetListGames1=/v1/listGames.json?include_uninstalled=false
+::set reqGetListGames2=^&query_id=1463457306950
+::set reqGetListGames=%reqGetListGames1%^%reqGetListGames2%
+::echo %reqGetListGames1%
+::echo %reqGetListGames2%
+::echo %reqGetListGames%
+::pause
+
 
 set reqHost=--header="Host: localhost:%port%"
 ::set reqUserAgent=--header="User-Agent: AmHttpClient v1.0"
@@ -122,7 +124,7 @@ set reqConnection=--header="Connection: keep-alive"
 set baseReq=wget -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
-set baseReqListGames=wget -d %reqGetListGames% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "http://localhost:%port%%reqGetListGames%"
+::set baseReqListGames=wget -d %reqGetListGames% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "http://localhost:%port%%reqGetListGames%"
 
 
 :: Device ID Request
@@ -184,6 +186,17 @@ set serviceRegAdd=regedit /s "ami-launch-fix-%bits%.reg"
 set serviceRegRemove=regedit /s "ami-launch-fix-remove.reg"
 
 set serviceQuery="%SystemRoot%\system32\sc.exe" queryex "%serviceName%"
+
+
+:: Force Remove AMI Service Upon Exit
+%serviceQuery%
+if %errorlevel% equ 0 (
+	%serviceStop%
+	%serviceDelete%
+	%serviceRegRemove%
+	)
+
+%kill% aminstantservice.exe
 
 set amiServiceInstalled=0
 
@@ -569,27 +582,45 @@ goto amiMenu
 
 :toggleSvr
 
-if %serverStatus%==0 (
+%serviceQuery%
+if %errorlevel% equ 1060 (
+	set amiServiceInstalled=0
+	) else if %errorlevel% equ 0 (
+	set amiServiceInstalled=1
+	)
+
+if %amiServiceInstalled%==0 (
 	cls
 	echo Cleaning Stale Instances....
 	echo.
 	%kill% aminstantservice.exe
 	%kill% aminstantservice.exe
 	%kill% aminstantservice.exe
+	
 	cls
-	%hide5% %amInstantServerConsole%
+	%serviceCreate%
+	%serviceCreateAddDescription%
+	%serviceRegAdd%
+	%serviceStart%
+	
 	set serverStatus=1
 	goto amiMenu
 )
 
-if %serverStatus%==1 (
+if %amiServiceInstalled%==1 (
+	
+	cls
+	%serviceStop%
+	%serviceDelete%
+	%serviceRegRemove%
+	
 	cls
 	echo Cleaning Stale Instances....
 	echo.
 	%kill% aminstantservice.exe
 	%kill% aminstantservice.exe
 	%kill% aminstantservice.exe
-	cls
+	
 	set serverStatus=0
 	goto amiMenu
 )
@@ -994,7 +1025,7 @@ if %serverStatus%==0 (
 	goto amiMenu2
 )
 
-%baseReqListGames%
+::%baseReqListGames%
 
 %runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
 ::set serverStatus=1
@@ -1142,8 +1173,17 @@ if %errorlevel% equ 1060 (
 	set amiServiceInstalled=1
 	)
 
-::echo Installed: %amiServiceInstalled%
-::pause
+goto svcOptions
+
+
+:svcQueryAlt
+%serviceQuery%
+if %errorlevel% equ 1060 (
+	set amiServiceInstalled=0
+	) else if %errorlevel% equ 0 (
+	set amiServiceInstalled=1
+	)
+
 goto svcOptions
 
 
@@ -1194,7 +1234,13 @@ del /f /q "%temp%\amiVersion.cmd"
 
 del /f /q "%temp%\GameHouse_GamePlayer.exe"
 
-exit
+:: Force Remove AMI Service Upon Exit
+%serviceQuery%
+if %errorlevel% equ 0 (
+	%serviceStop%
+	%serviceDelete%
+	%serviceRegRemove%
+	)
 
 goto end
 
@@ -1202,6 +1248,7 @@ goto end
 
 :end
 
+exit
 
 :: OLD AMI MENU
 
