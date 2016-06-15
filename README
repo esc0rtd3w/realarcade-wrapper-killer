@@ -14,6 +14,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
 
 
+
                    ²²²²²²²                          ²²²²²        ²²²²²
                  ²²²²²² ²²²                     ²²²²²  ²²       ²²²²²²
            ²²²²² ²²²²²²  ²²      ²²   ²²²²²²²² ²²²²² ²²²  ²²²² ²² ²²²²
@@ -464,6 +465,11 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
                   be-richest.rfs.0.rfsindex                        <-- RFS Index
                   be-richest.rfs.json                              <-- JSON File
+
+          These 2 files are generated after game exit and sent to GH server:
+
+                  %cid%-am-instant-%4digits%-%4digits%.prof        <-- PROF File
+                  %cid%-am-instant-%4digits%-%4digits%.json        <-- JSON File
 
                    --------------------------------------------------
 
