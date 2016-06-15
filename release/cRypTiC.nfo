@@ -174,15 +174,19 @@
 
 	* UPDATED: RAWK Core to v3.0.8
 
+                   * Fixed Launching Issues With New AMI Games
+
+                   * AMI Server Now Runs As A Toggleable Service
+
                    * Updated AMI Server To v8.45.43.0
 
+                   * Added Compatible Games List To AMI Server Menu
+
+                   * Added "Service Options" To AMI Server Menu
+
+                   * Added "Watch AMI Log" To AMI Server Menu
+
                    * Removed several unused dependencies
-
-                   * Added Compatible Games List To AM Server Menu
-
-                   * Added "Service Options" To AM Server Menu
-
-                   * Added "Watch AMI Log" To AM Server Menu
 
 
 
