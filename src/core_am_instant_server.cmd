@@ -121,7 +121,8 @@ set returnTo=amiMenu
 
 
 :: Set localhost port
-set port=27021
+::set port=27021
+set port=12072
 
 :: New Menu with working options only (20160515)
 
