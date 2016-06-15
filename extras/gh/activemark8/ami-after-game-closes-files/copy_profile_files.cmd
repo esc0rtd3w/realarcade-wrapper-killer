@@ -1,5 +1,7 @@
 @echo off
 
+title RealArcade Wrapper Killer [AM Instant Server Profile Copy Looper]     [...cRypTiCwaRe 2o16...]
+
 
 :loop
 
