@@ -144,7 +144,12 @@ del /s /q /f "zydb_core_available_ver.cmd"
 del /s /q /f "ghdb_core_running_ver.cmd"
 del /s /q /f "zydb_core_running_ver.cmd"
 
+:: Removing more leftover files (20160615)
+del /s /f /q "ogmservice.exe"
+del /s /f /q "stub-chunk1.bin"
+
 del /s /q /f "core_rawk_cleanup_loader.cmd"
 del /s /q /f "core_rawk_cleanup_root.cmd"
+
 
 :end

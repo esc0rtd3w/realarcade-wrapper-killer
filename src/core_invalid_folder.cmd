@@ -150,6 +150,12 @@ goto reset
 
 :end
 
+:: Removing more leftover files (20160615)
+del /s /f /q "ogmservice.exe"
+del /s /f /q "stub-chunk1.bin"
+
+call "core_rawk_cleanup_root.cmd"
+
 ::del /f /q "%temp%\rawkEnv.cmd"
 ::del /f /q "%temp%\rawkEnvTemp.cmd"
 

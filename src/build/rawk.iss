@@ -212,8 +212,6 @@ Source: ..\gui\uradl.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: 
 
 ; AM Instant Server
 Source: ..\loaders\loaderRFS\am\aminstantservice.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
-;Source: ..\loaders\loaderRFS\am\am-instant-run.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-;Source: ..\loaders\loaderRFS\am\am-instant-remove.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 
 ; GH Web Scraper
 Source: ..\web\GHWebScraper\bin\Release\GHWebScraper.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
@@ -399,6 +397,8 @@ Source: ..\registry\rgs_open_default.reg; DestDir: {app}; Attribs: hidden; Flags
 Source: ..\registry\ami-launch-fix-32.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\registry\ami-launch-fix-64.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\registry\ami-launch-fix-remove.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\registry\ami-remove-all.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\registry\ami-remove-licensing.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 
 ; Config Files
 Source: ..\config\launch.ini; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
@@ -469,8 +469,8 @@ Source: ..\stub\stub-chunk6.bin; DestDir: {app}; Attribs: hidden; Flags: deletea
 Source: ..\ogm\ogmservice.exe; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 Source: ..\core_ogm_service.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 ;Source: ..\rga\ogm\ogmservice-run.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
-Source: ..\ogm\rgaQuery.url; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
-Source: ..\ogm\rgaQuery.json; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
+Source: ..\ogm\rgaQuery.url; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\ogm\rgaQuery.json; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 
 
 [Dirs]
