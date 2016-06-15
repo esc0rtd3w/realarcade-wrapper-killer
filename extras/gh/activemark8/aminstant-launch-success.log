@@ -1,0 +1,412 @@
+[0000096c] 06/14/2016@20:50:35  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[00000f3c] 06/14/2016@20:50:35  GamesController::prioritize() -> 1
+[00000f3c] 06/14/2016@20:50:50  GamesController::prioritize() -> 1
+[000014d8] 06/14/2016@21:06:46  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[00000a9c] 06/14/2016@21:06:46  GamesController::prioritize() -> 1
+[00000a9c] 06/14/2016@21:07:01  GamesController::prioritize() -> 1
+[00000b94] 06/14/2016@21:08:04  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[00001728] 06/14/2016@21:08:05  GamesController::prioritize() -> 1
+[00000744] 06/14/2016@21:14:58  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[000003a4] 06/14/2016@21:14:58  GamesController::prioritize() -> 1
+[000003a4] 06/14/2016@21:15:13  GamesController::prioritize() -> 1
+[000003a4] 06/14/2016@21:15:28  GamesController::prioritize() -> 1
+[000003a4] 06/14/2016@21:15:44  GamesController::prioritize() -> 1
+[000003a4] 06/14/2016@21:15:59  GamesController::prioritize() -> 1
+[00000cd8] 06/14/2016@21:16:07  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[00000fc0] 06/14/2016@21:16:07  GamesController::prioritize() -> 1
+[00000c34] 06/14/2016@21:16:07  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[00000738] 06/14/2016@21:16:08  GamesController::prioritize() -> 1
+[000007b0] 06/14/2016@21:16:08  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[00000abc] 06/14/2016@21:16:09  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:16:24  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:16:39  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:16:54  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:17:09  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:17:24  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:17:39  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:17:54  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:18:09  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:18:24  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:18:39  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:18:54  GamesController::prioritize() -> 1
+[00000530] 06/14/2016@21:19:05  AmInstant::Play (cid=fe0adbd02c8fc0f2944f44566b438687, atoken=e66e4e4aac7e7d9b40990b5491674b61) -> 0
+[00000abc] 06/14/2016@21:19:05  GamesController::prioritize() -> 1
+[00000c18] 06/14/2016@21:19:05  AmInstant::install (url=http://games-dl.gamehouse.com/gamehouse/pc/c/clearit/clearit_v2.rfs, cid=fe0adbd02c8fc0f2944f44566b438687, title=ClearIt, tracking=-1_27553ce6-58b8-4c4c-8cc7-be9fe204c25e) -> 1
+[00000fe8] 06/14/2016@21:19:05  AmInstantDownload -> http://profiler-cdn.am.gamehouse.com/gamehouse/pc/c/clearit/clearit_v2.rfs.168.rfsindex downloaded correctly (cid=fe0adbd02c8fc0f2944f44566b438687)
+[00000abc] 06/14/2016@21:19:06  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[00000fe8] 06/14/2016@21:19:06  AmInstantDownload -> histogram created (cid=fe0adbd02c8fc0f2944f44566b438687, starttime=0 seconds, bandwidth=1721587 b/s)
+[00000abc] 06/14/2016@21:19:06  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:19:06  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[00000abc] 06/14/2016@21:19:06  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:19:21  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[00000abc] 06/14/2016@21:19:21  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:19:36  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[00000abc] 06/14/2016@21:19:37  GamesController::prioritize() -> 1
+[0000091c] 06/14/2016@21:19:47  AmInstant::installationCompleted (cid=fe0adbd02c8fc0f2944f44566b438687, duration=41249, speed=1875411, preloadBytes=86276325, totalBytes=86276325)
+[00000abc] 06/14/2016@21:19:47  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[00000abc] 06/14/2016@21:19:47  GamesController::prioritize() -> 1
+[00000780] 06/14/2016@21:19:48  AmGamesController::_checkDynamicProfileStateThread (url=http://games-dl.gamehouse.com/gamehouse/pc/c/clearit/clearit_v2.rfs)
+[000006b8] 06/14/2016@21:19:48  AmInstant::Play (cid=fe0adbd02c8fc0f2944f44566b438687, atoken=e66e4e4aac7e7d9b40990b5491674b61) -> 1
+[00000780] 06/14/2016@21:19:48  AmGamesController::_checkDynamicProfileStateThread () -> enable=true
+[00000710] 06/14/2016@21:19:49  AmInstant::install (url=http://games-dl.gamehouse.com/gamehouse/pc/n/new-yankee-in-santas-service/new-yankee-in-santas-service.rfs, cid=68b9be0560c257854e6e297d483fb89c, title=New Yankee in Santa's Service, tracking=-1_be36c792-7f67-4d57-8cfc-b488561f5afb, likelihood=30) -> 1
+[00000f64] 06/14/2016@21:19:49  AmInstantDownload -> http://profiler-cdn.am.gamehouse.com/gamehouse/pc/n/new-yankee-in-santas-service/new-yankee-in-santas-service.rfs.0.rfsindex downloaded correctly (cid=68b9be0560c257854e6e297d483fb89c)
+[0000070c] 06/14/2016@21:19:49  AmInstantDownload -> http://profiler-cdn.am.gamehouse.com/gamehouse/pc/p/plantasia/plantasia.rfs.0.rfsindex downloaded correctly (cid=4fc9bfd30bf3bf6484af1135aa69e031)
+[00000abc] 06/14/2016@21:19:49  Download::pause (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[00000130] 06/14/2016@21:19:49  AmInstant::install (url=http://games-dl.gamehouse.com/gamehouse/pc/p/plantasia/plantasia.rfs, cid=4fc9bfd30bf3bf6484af1135aa69e031, title=Plantasia, tracking=-1_9d220883-7caa-49e9-8d05-1abc648c7dfa, likelihood=30) -> 1
+[00000abc] 06/14/2016@21:19:49  Download::resume (cid=4fc9bfd30bf3bf6484af1135aa69e031) -> 1
+[0000070c] 06/14/2016@21:19:50  AmInstantDownload -> histogram created (cid=4fc9bfd30bf3bf6484af1135aa69e031, starttime=0 seconds, bandwidth=1875411 b/s)
+[00000abc] 06/14/2016@21:19:50  Download::resume (cid=68b9be0560c257854e6e297d483fb89c) -> 1
+[00000f64] 06/14/2016@21:19:50  AmInstantDownload -> histogram created (cid=68b9be0560c257854e6e297d483fb89c, starttime=0 seconds, bandwidth=1875411 b/s)
+[00000abc] 06/14/2016@21:19:50  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:19:50  Download::resume (cid=4fc9bfd30bf3bf6484af1135aa69e031) -> 1
+[00000abc] 06/14/2016@21:19:50  Download::resume (cid=68b9be0560c257854e6e297d483fb89c) -> 1
+[00000abc] 06/14/2016@21:19:50  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:19:59  Download::resume (cid=4fc9bfd30bf3bf6484af1135aa69e031) -> 1
+[00000abc] 06/14/2016@21:19:59  Download::resume (cid=68b9be0560c257854e6e297d483fb89c) -> 1
+[00000abc] 06/14/2016@21:19:59  GamesController::prioritize() -> 1
+[00000750] 06/14/2016@21:20:09  GamesController::gamePlayFinished (cid=fe0adbd02c8fc0f2944f44566b438687, duration=20 seconds) -> 1
+[00000fc4] 06/14/2016@21:20:10  Profile 'C:\ProgramData\activeMARK\streaming\fe0adbd02c8fc0f2944f44566b438687-am-instant-4903-1788.prof' sent correctly
+[00001178] 06/14/2016@21:20:10  AmInstant::installationStopped (cid=68b9be0560c257854e6e297d483fb89c)
+[00001178] 06/14/2016@21:20:11  AmInstant::install (url=http://www.gamehouse.com, cid=68b9be0560c257854e6e297d483fb89c, title=, tracking=, likelihood=0) -> 1
+[00000abc] 06/14/2016@21:20:11  Download::pause (cid=4fc9bfd30bf3bf6484af1135aa69e031) -> 1
+[00000abc] 06/14/2016@21:20:11  Download::pause (cid=68b9be0560c257854e6e297d483fb89c) -> 1
+[00000abc] 06/14/2016@21:20:11  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:20:11  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:20:26  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:20:41  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:20:56  GamesController::prioritize() -> 1
+[00001308] 06/14/2016@21:21:02  AmInstant::Play (cid=fe0adbd02c8fc0f2944f44566b438687, atoken=e66e4e4aac7e7d9b40990b5491674b61) -> 1
+[00000780] 06/14/2016@21:21:02  AmGamesController::_checkDynamicProfileStateThread (url=http://games-dl.gamehouse.com/gamehouse/pc/c/clearit/clearit_v2.rfs)
+[00000780] 06/14/2016@21:21:02  AmGamesController::_checkDynamicProfileStateThread () -> enable=true
+[00001334] 06/14/2016@21:21:03  AmInstant::install (url=http://games-dl.gamehouse.com/gamehouse/pc/n/new-yankee-in-santas-service/new-yankee-in-santas-service.rfs, cid=68b9be0560c257854e6e297d483fb89c, title=New Yankee in Santa's Service, tracking=-1_19158728-027b-489b-9c32-0f704ea07f0e, likelihood=30) -> 1
+[00000f64] 06/14/2016@21:21:03  AmInstantDownload -> http://profiler-cdn.am.gamehouse.com/gamehouse/pc/n/new-yankee-in-santas-service/new-yankee-in-santas-service.rfs.0.rfsindex downloaded correctly (cid=68b9be0560c257854e6e297d483fb89c)
+[00000abc] 06/14/2016@21:21:03  Download::resume (cid=68b9be0560c257854e6e297d483fb89c) -> 1
+[00000f64] 06/14/2016@21:21:03  AmInstantDownload -> histogram created (cid=68b9be0560c257854e6e297d483fb89c, starttime=0 seconds, bandwidth=1875411 b/s)
+[0000070c] 06/14/2016@21:21:03  AmInstantDownload -> http://profiler-cdn.am.gamehouse.com/gamehouse/pc/p/plantasia/plantasia.rfs.0.rfsindex downloaded correctly (cid=4fc9bfd30bf3bf6484af1135aa69e031)
+[00000abc] 06/14/2016@21:21:03  GamesController::prioritize() -> 1
+[0000133c] 06/14/2016@21:21:04  AmInstant::install (url=http://games-dl.gamehouse.com/gamehouse/pc/p/plantasia/plantasia.rfs, cid=4fc9bfd30bf3bf6484af1135aa69e031, title=Plantasia, tracking=-1_9c971caf-e670-4a9a-a05a-88adf50507e1, likelihood=30) -> 1
+[0000070c] 06/14/2016@21:21:04  AmInstantDownload -> histogram created (cid=4fc9bfd30bf3bf6484af1135aa69e031, starttime=0 seconds, bandwidth=1875411 b/s)
+[00000abc] 06/14/2016@21:21:04  Download::resume (cid=4fc9bfd30bf3bf6484af1135aa69e031) -> 1
+[00000abc] 06/14/2016@21:21:04  Download::resume (cid=68b9be0560c257854e6e297d483fb89c) -> 1
+[00000abc] 06/14/2016@21:21:04  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:21:04  Download::pause (cid=68b9be0560c257854e6e297d483fb89c) -> 1
+[00000abc] 06/14/2016@21:21:04  Download::resume (cid=4fc9bfd30bf3bf6484af1135aa69e031) -> 1
+[00000abc] 06/14/2016@21:21:04  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:21:19  Download::pause (cid=4fc9bfd30bf3bf6484af1135aa69e031) -> 1
+[00000abc] 06/14/2016@21:21:20  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:21:35  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:21:50  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:22:05  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:22:20  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:22:35  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:22:50  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:23:05  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:23:20  GamesController::prioritize() -> 1
+[00001320] 06/14/2016@21:23:22  GamesController::gamePlayFinished (cid=fe0adbd02c8fc0f2944f44566b438687, duration=140 seconds) -> 1
+[00000fc4] 06/14/2016@21:23:23  Profile 'C:\ProgramData\activeMARK\streaming\fe0adbd02c8fc0f2944f44566b438687-am-instant-4903-4876.prof' sent correctly
+[00000abc] 06/14/2016@21:23:35  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:23:50  GamesController::prioritize() -> 1
+[00000ea0] 06/14/2016@21:23:59  AmInstant::Play (cid=fe0adbd02c8fc0f2944f44566b438687, atoken=e66e4e4aac7e7d9b40990b5491674b61) -> 1
+[00000780] 06/14/2016@21:23:59  AmGamesController::_checkDynamicProfileStateThread (url=http://games-dl.gamehouse.com/gamehouse/pc/c/clearit/clearit_v2.rfs)
+[00000780] 06/14/2016@21:23:59  AmGamesController::_checkDynamicProfileStateThread () -> enable=true
+[00000f64] 06/14/2016@21:24:00  AmInstantDownload -> http://profiler-cdn.am.gamehouse.com/gamehouse/pc/n/new-yankee-in-santas-service/new-yankee-in-santas-service.rfs.0.rfsindex downloaded correctly (cid=68b9be0560c257854e6e297d483fb89c)
+[000008dc] 06/14/2016@21:24:00  AmInstant::install (url=http://games-dl.gamehouse.com/gamehouse/pc/n/new-yankee-in-santas-service/new-yankee-in-santas-service.rfs, cid=68b9be0560c257854e6e297d483fb89c, title=New Yankee in Santa's Service, tracking=-1_a2a776d4-8366-4d35-81ff-701dce47d00e, likelihood=30) -> 1
+[00000abc] 06/14/2016@21:24:00  Download::resume (cid=68b9be0560c257854e6e297d483fb89c) -> 1
+[00000f64] 06/14/2016@21:24:00  AmInstantDownload -> histogram created (cid=68b9be0560c257854e6e297d483fb89c, starttime=0 seconds, bandwidth=1875411 b/s)
+[00000abc] 06/14/2016@21:24:01  GamesController::prioritize() -> 1
+[0000070c] 06/14/2016@21:24:01  AmInstantDownload -> http://profiler-cdn.am.gamehouse.com/gamehouse/pc/p/plantasia/plantasia.rfs.0.rfsindex downloaded correctly (cid=4fc9bfd30bf3bf6484af1135aa69e031)
+[00001390] 06/14/2016@21:24:01  AmInstant::install (url=http://games-dl.gamehouse.com/gamehouse/pc/p/plantasia/plantasia.rfs, cid=4fc9bfd30bf3bf6484af1135aa69e031, title=Plantasia, tracking=-1_7305fc70-dbf9-46ef-ba6d-383205a47375, likelihood=30) -> 1
+[00000abc] 06/14/2016@21:24:01  Download::resume (cid=4fc9bfd30bf3bf6484af1135aa69e031) -> 1
+[0000070c] 06/14/2016@21:24:01  AmInstantDownload -> histogram created (cid=4fc9bfd30bf3bf6484af1135aa69e031, starttime=0 seconds, bandwidth=1875411 b/s)
+[00000abc] 06/14/2016@21:24:01  Download::resume (cid=68b9be0560c257854e6e297d483fb89c) -> 1
+[00000abc] 06/14/2016@21:24:01  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:24:01  Download::resume (cid=4fc9bfd30bf3bf6484af1135aa69e031) -> 1
+[00000abc] 06/14/2016@21:24:01  GamesController::prioritize() -> 1
+[00000710] 06/14/2016@21:24:12  GamesController::gamePlayFinished (cid=fe0adbd02c8fc0f2944f44566b438687, duration=13 seconds) -> 1
+[00000fc4] 06/14/2016@21:24:13  Profile 'C:\ProgramData\activeMARK\streaming\fe0adbd02c8fc0f2944f44566b438687-am-instant-4903-2008.prof' sent correctly
+[00000abc] 06/14/2016@21:24:16  Download::pause (cid=4fc9bfd30bf3bf6484af1135aa69e031) -> 1
+[00000abc] 06/14/2016@21:24:16  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:24:31  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:24:46  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:25:02  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:25:17  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:25:32  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:25:47  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:26:02  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:26:17  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:26:32  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:26:48  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:27:03  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:27:18  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:27:33  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:27:48  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:27:55  AmInstant::Play (cid=fe0adbd02c8fc0f2944f44566b438687, atoken=e66e4e4aac7e7d9b40990b5491674b61) -> 1
+[00000780] 06/14/2016@21:27:55  AmGamesController::_checkDynamicProfileStateThread (url=http://games-dl.gamehouse.com/gamehouse/pc/c/clearit/clearit_v2.rfs)
+[00000780] 06/14/2016@21:27:55  AmGamesController::_checkDynamicProfileStateThread () -> enable=true
+[00000abc] 06/14/2016@21:28:03  GamesController::prioritize() -> 1
+[00000cec] 06/14/2016@21:28:08  GamesController::gamePlayFinished (cid=fe0adbd02c8fc0f2944f44566b438687, duration=13 seconds) -> 1
+[00000fc4] 06/14/2016@21:28:09  Profile 'C:\ProgramData\activeMARK\streaming\fe0adbd02c8fc0f2944f44566b438687-am-instant-4903-4612.prof' sent correctly
+[00000abc] 06/14/2016@21:28:18  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:28:33  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:28:48  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:29:03  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:29:18  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:29:34  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:29:49  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:30:04  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:30:19  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:30:34  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:30:49  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:31:04  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:31:19  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:31:34  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:31:49  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:32:04  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:32:19  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:32:34  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:32:49  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:33:04  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:33:19  GamesController::prioritize() -> 1
+[00000abc] 06/14/2016@21:33:34  GamesController::prioritize() -> 1
+[000006e4] 06/14/2016@21:33:38  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[00000830] 06/14/2016@21:33:39  GamesController::prioritize() -> 1
+[000005d4] 06/14/2016@21:33:39  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[00000934] 06/14/2016@21:33:40  GamesController::prioritize() -> 1
+[00000b94] 06/14/2016@21:33:40  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[00001014] 06/14/2016@21:33:41  GamesController::prioritize() -> 1
+[00000934] 06/14/2016@21:33:55  GamesController::prioritize() -> 1
+[00001014] 06/14/2016@21:33:56  GamesController::prioritize() -> 1
+[00000e2c] 06/14/2016@21:34:06  AmGamesController::_checkDynamicProfileStateThread (url=http://games-dl.gamehouse.com/gamehouse/pc/c/clearit/clearit_v2.rfs)
+[0000107c] 06/14/2016@21:34:06  AmInstant::Play (cid=fe0adbd02c8fc0f2944f44566b438687, atoken=780ca685003cec1d617beaa6f346e1be) -> 1
+[00000e2c] 06/14/2016@21:34:06  AmGamesController::_checkDynamicProfileStateThread () -> enable=true
+[00001014] 06/14/2016@21:34:11  GamesController::prioritize() -> 1
+[00001014] 06/14/2016@21:34:26  GamesController::prioritize() -> 1
+[000010d0] 06/14/2016@21:34:28  GamesController::gamePlayFinished (cid=fe0adbd02c8fc0f2944f44566b438687, duration=21 seconds) -> 1
+[0000029c] 06/14/2016@21:34:28  Profile 'C:\ProgramData\activeMARK\streaming\fe0adbd02c8fc0f2944f44566b438687-am-instant-4903-2492.prof' sent correctly
+[00001014] 06/14/2016@21:34:41  GamesController::prioritize() -> 1
+[00000b94] 06/14/2016@21:34:50  Download::pauseAll()
+[00000b94] 06/14/2016@21:34:50  Stopping service
+[00000d38] 06/14/2016@21:34:52  GamesController::prioritize() -> 1
+[000009fc] 06/14/2016@21:34:52  Download::discard (cid=fe0adbd02c8fc0f2944f44566b438687) -> 0
+[000009fc] 06/14/2016@21:34:52  Download::discard (cid=68b9be0560c257854e6e297d483fb89c) -> 0
+[000009fc] 06/14/2016@21:34:52  Download::discard (cid=4fc9bfd30bf3bf6484af1135aa69e031) -> 0
+[000009fc] 06/14/2016@21:34:53  AmInstant::uninstallAllGames() -> 0
+[00000abc] 06/14/2016@21:35:56  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[000009ec] 06/14/2016@21:35:56  GamesController::prioritize() -> 1
+[000009ec] 06/14/2016@21:36:11  GamesController::prioritize() -> 1
+[00000378] 06/14/2016@21:36:35  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[00000ec8] 06/14/2016@21:36:35  GamesController::prioritize() -> 1
+[00000ec8] 06/14/2016@21:36:50  GamesController::prioritize() -> 1
+[0000104c] 06/14/2016@21:41:03  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[00000e9c] 06/14/2016@21:41:03  GamesController::prioritize() -> 1
+[00000e9c] 06/14/2016@21:41:19  GamesController::prioritize() -> 1
+[00000e9c] 06/14/2016@21:41:34  GamesController::prioritize() -> 1
+[00000e9c] 06/14/2016@21:41:49  GamesController::prioritize() -> 1
+[00000e9c] 06/14/2016@21:42:04  GamesController::prioritize() -> 1
+[00000e9c] 06/14/2016@21:42:19  GamesController::prioritize() -> 1
+[00000e9c] 06/14/2016@21:42:34  GamesController::prioritize() -> 1
+[00000e9c] 06/14/2016@21:42:49  GamesController::prioritize() -> 1
+[00000e9c] 06/14/2016@21:43:04  GamesController::prioritize() -> 1
+[00000e9c] 06/14/2016@21:43:19  GamesController::prioritize() -> 1
+[00000e9c] 06/14/2016@21:43:34  GamesController::prioritize() -> 1
+[00000c04] 06/14/2016@21:44:37  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[00000bf4] 06/14/2016@21:44:37  GamesController::prioritize() -> 1
+[00000bf4] 06/14/2016@21:44:52  GamesController::prioritize() -> 1
+[00000bf4] 06/14/2016@21:45:07  GamesController::prioritize() -> 1
+[00000bf4] 06/14/2016@21:45:23  GamesController::prioritize() -> 1
+[00000bf4] 06/14/2016@21:45:38  GamesController::prioritize() -> 1
+[00000418] 06/14/2016@21:45:38  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[000013cc] 06/14/2016@21:45:39  GamesController::prioritize() -> 1
+[00000bf4] 06/14/2016@21:45:53  GamesController::prioritize() -> 1
+[000013cc] 06/14/2016@21:45:54  GamesController::prioritize() -> 1
+[0000103c] 06/14/2016@21:46:02  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[00000434] 06/14/2016@21:46:02  GamesController::prioritize() -> 1
+[00000434] 06/14/2016@21:46:17  GamesController::prioritize() -> 1
+[00000434] 06/14/2016@21:46:32  GamesController::prioritize() -> 1
+[00000434] 06/14/2016@21:46:48  GamesController::prioritize() -> 1
+[00001074] 06/14/2016@21:47:03  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[00000370] 06/14/2016@21:47:03  GamesController::prioritize() -> 1
+[00000370] 06/14/2016@21:47:18  GamesController::prioritize() -> 1
+[00000370] 06/14/2016@21:47:33  GamesController::prioritize() -> 1
+[00001074] 06/14/2016@21:47:47  Download::pauseAll()
+[00001074] 06/14/2016@21:47:47  Stopping service
+[00000a0c] 06/14/2016@21:47:53  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[0000110c] 06/14/2016@21:47:53  GamesController::prioritize() -> 1
+[0000110c] 06/14/2016@21:48:08  GamesController::prioritize() -> 1
+[00001334] 06/14/2016@21:51:31  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[0000129c] 06/14/2016@21:51:31  GamesController::prioritize() -> 1
+[0000129c] 06/14/2016@21:51:46  GamesController::prioritize() -> 1
+[0000129c] 06/14/2016@21:52:01  GamesController::prioritize() -> 1
+[0000129c] 06/14/2016@21:52:16  GamesController::prioritize() -> 1
+[0000129c] 06/14/2016@21:52:31  GamesController::prioritize() -> 1
+[0000129c] 06/14/2016@21:52:46  GamesController::prioritize() -> 1
+[0000129c] 06/14/2016@21:53:01  GamesController::prioritize() -> 1
+[0000129c] 06/14/2016@21:53:16  GamesController::prioritize() -> 1
+[00000e08] 06/14/2016@21:53:20  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[00000db4] 06/14/2016@21:53:20  GamesController::prioritize() -> 1
+[00000cf8] 06/14/2016@21:53:31  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[00000a60] 06/14/2016@21:53:31  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:53:46  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:54:01  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:54:17  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:54:32  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:54:47  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:55:02  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:55:17  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:55:32  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:55:47  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:56:02  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:56:17  GamesController::prioritize() -> 1
+[00001210] 06/14/2016@21:56:25  AmInstant::Play (cid=fe0adbd02c8fc0f2944f44566b438687, atoken=e66e4e4aac7e7d9b40990b5491674b61) -> 0
+[00000ad4] 06/14/2016@21:56:26  AmInstant::install (url=http://games-dl.gamehouse.com/gamehouse/pc/c/clearit/clearit_v2.rfs, cid=fe0adbd02c8fc0f2944f44566b438687, title=ClearIt, tracking=-1_7e765a49-9976-4b0d-bd66-c0cb78fbe1a4) -> 1
+[00000a60] 06/14/2016@21:56:26  GamesController::prioritize() -> 1
+[000013e4] 06/14/2016@21:56:26  AmInstantDownload -> http://profiler-cdn.am.gamehouse.com/gamehouse/pc/c/clearit/clearit_v2.rfs.168.rfsindex downloaded correctly (cid=fe0adbd02c8fc0f2944f44566b438687)
+[00000a60] 06/14/2016@21:56:26  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[00000a60] 06/14/2016@21:56:26  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:56:26  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[00000a60] 06/14/2016@21:56:26  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:56:41  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[00000a60] 06/14/2016@21:56:42  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:56:57  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[00000a60] 06/14/2016@21:56:57  GamesController::prioritize() -> 1
+[00000904] 06/14/2016@21:57:01  AmInstant::installationCompleted (cid=fe0adbd02c8fc0f2944f44566b438687, duration=34486, speed=2257859, preloadBytes=86276325, totalBytes=86276325)
+[00000a60] 06/14/2016@21:57:01  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[00000a60] 06/14/2016@21:57:01  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:57:16  Download::pause (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[00000a60] 06/14/2016@21:57:16  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:57:31  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:57:46  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:58:01  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:58:16  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:58:31  GamesController::prioritize() -> 1
+[000008cc] 06/14/2016@21:58:45  AmInstant::Play (cid=fe0adbd02c8fc0f2944f44566b438687, atoken=e66e4e4aac7e7d9b40990b5491674b61) -> 0
+[00000a60] 06/14/2016@21:58:46  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:59:01  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:59:17  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:59:32  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@21:59:47  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@22:00:02  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@22:00:17  GamesController::prioritize() -> 1
+[00000ed0] 06/14/2016@22:00:31  AmInstant::Play (cid=fe0adbd02c8fc0f2944f44566b438687, atoken=e66e4e4aac7e7d9b40990b5491674b61) -> 0
+[000009d0] 06/14/2016@22:00:31  AmInstant::install (url=http://games-dl.gamehouse.com/gamehouse/pc/c/clearit/clearit_v2.rfs, cid=fe0adbd02c8fc0f2944f44566b438687, title=ClearIt, tracking=-1_1efd3801-8197-4d8e-abba-478b5ce81450) -> 1
+[00000a60] 06/14/2016@22:00:31  GamesController::prioritize() -> 1
+[00000cdc] 06/14/2016@22:00:31  AmInstantDownload -> http://profiler-cdn.am.gamehouse.com/gamehouse/pc/c/clearit/clearit_v2.rfs.168.rfsindex downloaded correctly (cid=fe0adbd02c8fc0f2944f44566b438687)
+[00000a60] 06/14/2016@22:00:32  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[00000a60] 06/14/2016@22:00:32  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@22:00:32  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[00000a60] 06/14/2016@22:00:32  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@22:00:47  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[00000a60] 06/14/2016@22:00:47  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@22:01:02  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[00000a60] 06/14/2016@22:01:02  GamesController::prioritize() -> 1
+[00000904] 06/14/2016@22:01:04  AmInstant::installationCompleted (cid=fe0adbd02c8fc0f2944f44566b438687, duration=34486, speed=2425550, preloadBytes=86276325, totalBytes=86276325)
+[00000a60] 06/14/2016@22:01:04  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[00000a60] 06/14/2016@22:01:04  GamesController::prioritize() -> 1
+[000010e4] 06/14/2016@22:01:05  AmGamesController::_checkDynamicProfileStateThread (url=http://games-dl.gamehouse.com/gamehouse/pc/c/clearit/clearit_v2.rfs)
+[00000c68] 06/14/2016@22:01:05  AmInstant::Play (cid=fe0adbd02c8fc0f2944f44566b438687, atoken=e66e4e4aac7e7d9b40990b5491674b61) -> 1
+[000010e4] 06/14/2016@22:01:06  AmGamesController::_checkDynamicProfileStateThread () -> enable=true
+[000012a4] 06/14/2016@22:01:06  AmInstant::install (url=http://games-dl.gamehouse.com/gamehouse/pc/p/plantasia/plantasia.rfs, cid=4fc9bfd30bf3bf6484af1135aa69e031, title=Plantasia, tracking=-1_f9ced634-41cc-45f8-9ed1-1da3efe0cad3, likelihood=30) -> 1
+[00000978] 06/14/2016@22:01:07  AmInstantDownload -> http://profiler-cdn.am.gamehouse.com/gamehouse/pc/n/new-yankee-in-santas-service/new-yankee-in-santas-service.rfs.0.rfsindex downloaded correctly (cid=68b9be0560c257854e6e297d483fb89c)
+[000003cc] 06/14/2016@22:01:07  AmInstantDownload -> http://profiler-cdn.am.gamehouse.com/gamehouse/pc/p/plantasia/plantasia.rfs.0.rfsindex downloaded correctly (cid=4fc9bfd30bf3bf6484af1135aa69e031)
+[00001024] 06/14/2016@22:01:07  AmInstant::install (url=http://games-dl.gamehouse.com/gamehouse/pc/n/new-yankee-in-santas-service/new-yankee-in-santas-service.rfs, cid=68b9be0560c257854e6e297d483fb89c, title=New Yankee in Santa's Service, tracking=-1_4d25ab4b-84e9-45bf-bfc8-d98c194a6478, likelihood=30) -> 1
+[00000a60] 06/14/2016@22:01:07  Download::pause (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[00000a60] 06/14/2016@22:01:07  Download::resume (cid=68b9be0560c257854e6e297d483fb89c) -> 1
+[00000978] 06/14/2016@22:01:07  AmInstantDownload -> histogram created (cid=68b9be0560c257854e6e297d483fb89c, starttime=0 seconds, bandwidth=2425550 b/s)
+[00000a60] 06/14/2016@22:01:07  Download::resume (cid=4fc9bfd30bf3bf6484af1135aa69e031) -> 1
+[000003cc] 06/14/2016@22:01:07  AmInstantDownload -> histogram created (cid=4fc9bfd30bf3bf6484af1135aa69e031, starttime=0 seconds, bandwidth=2425550 b/s)
+[00000a60] 06/14/2016@22:01:07  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@22:01:07  Download::resume (cid=68b9be0560c257854e6e297d483fb89c) -> 1
+[00000a60] 06/14/2016@22:01:07  Download::resume (cid=4fc9bfd30bf3bf6484af1135aa69e031) -> 1
+[00000a60] 06/14/2016@22:01:07  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@22:01:15  Download::resume (cid=68b9be0560c257854e6e297d483fb89c) -> 1
+[00000a60] 06/14/2016@22:01:15  Download::resume (cid=4fc9bfd30bf3bf6484af1135aa69e031) -> 1
+[00000a60] 06/14/2016@22:01:15  GamesController::prioritize() -> 1
+[00000c98] 06/14/2016@22:01:21  GamesController::gamePlayFinished (cid=fe0adbd02c8fc0f2944f44566b438687, duration=15 seconds) -> 1
+[00000148] 06/14/2016@22:01:21  Profile 'C:\ProgramData\activeMARK\streaming\fe0adbd02c8fc0f2944f44566b438687-am-instant-4903-4800.prof' sent correctly
+[000012b4] 06/14/2016@22:01:22  AmInstant::installationStopped (cid=68b9be0560c257854e6e297d483fb89c)
+[00000a60] 06/14/2016@22:01:22  Download::pause (cid=4fc9bfd30bf3bf6484af1135aa69e031) -> 1
+[000012b4] 06/14/2016@22:01:23  AmInstant::install (url=http://www.gamehouse.com, cid=68b9be0560c257854e6e297d483fb89c, title=, tracking=, likelihood=0) -> 1
+[00000a60] 06/14/2016@22:01:23  Download::pause (cid=68b9be0560c257854e6e297d483fb89c) -> 1
+[00000a60] 06/14/2016@22:01:23  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@22:01:38  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@22:01:53  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@22:02:08  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@22:02:23  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@22:02:38  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@22:02:53  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@22:03:08  GamesController::prioritize() -> 1
+[00000a60] 06/14/2016@22:03:23  GamesController::prioritize() -> 1
+[00000b54] 06/14/2016@22:03:34  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[000010e8] 06/14/2016@22:03:35  GamesController::prioritize() -> 1
+[000010e8] 06/14/2016@22:03:50  GamesController::prioritize() -> 1
+[000010e8] 06/14/2016@22:04:05  GamesController::prioritize() -> 1
+[00000d48] 06/14/2016@22:04:07  AmInstant::install (url=http://games-dl.gamehouse.com/gamehouse/pc/c/clearit/clearit.rfs, cid=fe0adbd02c8fc0f2944f44566b438687, title=ClearIt, tracking=) -> 1
+[00000d78] 06/14/2016@22:04:07  AmInstantDownload -> http://profiler-cdn.am.gamehouse.com/gamehouse/pc/c/clearit/clearit.rfs.2.rfsindex downloaded correctly (cid=fe0adbd02c8fc0f2944f44566b438687)
+[000010e8] 06/14/2016@22:04:08  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[000010e8] 06/14/2016@22:04:08  GamesController::prioritize() -> 1
+[000010e8] 06/14/2016@22:04:08  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[000010e8] 06/14/2016@22:04:08  GamesController::prioritize() -> 1
+[000010e8] 06/14/2016@22:04:23  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[000010e8] 06/14/2016@22:04:23  GamesController::prioritize() -> 1
+[000010e8] 06/14/2016@22:04:38  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[000010e8] 06/14/2016@22:04:38  GamesController::prioritize() -> 1
+[00000ff8] 06/14/2016@22:04:45  AmInstant::installationCompleted (cid=fe0adbd02c8fc0f2944f44566b438687, duration=37598, speed=2265588, preloadBytes=86277146, totalBytes=86277146)
+[000010e8] 06/14/2016@22:04:45  Download::resume (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[000010e8] 06/14/2016@22:04:45  GamesController::prioritize() -> 1
+[000009e4] 06/14/2016@22:04:56  AmInstant::Play (cid=fe0adbd02c8fc0f2944f44566b438687, atoken=780ca685003cec1d617beaa6f346e1be) -> 0
+[00000e38] 06/14/2016@22:04:56  AmGamesController::_checkDynamicProfileStateThread (url=http://games-dl.gamehouse.com/gamehouse/pc/c/clearit/clearit.rfs)
+[00000e38] 06/14/2016@22:04:56  AmGamesController::_checkDynamicProfileStateThread () -> enable=true
+[000010e8] 06/14/2016@22:05:00  Download::pause (cid=fe0adbd02c8fc0f2944f44566b438687) -> 1
+[000010e8] 06/14/2016@22:05:01  GamesController::prioritize() -> 1
+[000010e8] 06/14/2016@22:05:16  GamesController::prioritize() -> 1
+[000010e8] 06/14/2016@22:05:31  GamesController::prioritize() -> 1
+[00000b1c] 06/14/2016@22:05:40  AmInstant::Play (cid=fe0adbd02c8fc0f2944f44566b438687, atoken=e66e4e4aac7e7d9b40990b5491674b61) -> 0
+[00000e38] 06/14/2016@22:05:40  AmGamesController::_checkDynamicProfileStateThread (url=http://games-dl.gamehouse.com/gamehouse/pc/c/clearit/clearit.rfs)
+[00000e38] 06/14/2016@22:05:40  AmGamesController::_checkDynamicProfileStateThread () -> enable=true
+[000010e8] 06/14/2016@22:05:46  GamesController::prioritize() -> 1
+[00000be0] 06/14/2016@22:05:56  AmInstant::install (url=http://games-dl.gamehouse.com/gamehouse/pc/c/clearit/clearit_v2.rfs, cid=fe0adbd02c8fc0f2944f44566b438687, title=ClearIt, tracking=-1_5fee5dc0-f747-4224-b921-c2f556615020) -> 3
+[000010e8] 06/14/2016@22:06:01  GamesController::prioritize() -> 1
+[000010e8] 06/14/2016@22:06:16  GamesController::prioritize() -> 1
+[000005c0] 06/14/2016@22:06:19  AmInstant::Play (cid=fe0adbd02c8fc0f2944f44566b438687, atoken=780ca685003cec1d617beaa6f346e1be) -> 0
+[00000e38] 06/14/2016@22:06:19  AmGamesController::_checkDynamicProfileStateThread (url=http://games-dl.gamehouse.com/gamehouse/pc/c/clearit/clearit.rfs)
+[00000e38] 06/14/2016@22:06:19  AmGamesController::_checkDynamicProfileStateThread () -> enable=true
+[000010e8] 06/14/2016@22:06:31  GamesController::prioritize() -> 1
+[000010e8] 06/14/2016@22:06:46  GamesController::prioritize() -> 1
+[000010e8] 06/14/2016@22:07:01  GamesController::prioritize() -> 1
+[000010e8] 06/14/2016@22:07:16  GamesController::prioritize() -> 1
+[000010e8] 06/14/2016@22:07:31  GamesController::prioritize() -> 1
+[000010e8] 06/14/2016@22:07:46  GamesController::prioritize() -> 1
+[000010e8] 06/14/2016@22:08:01  GamesController::prioritize() -> 1
+[000010e8] 06/14/2016@22:08:16  GamesController::prioritize() -> 1
+[000010e8] 06/14/2016@22:08:31  GamesController::prioritize() -> 1
+[000005f0] 06/14/2016@22:08:36  Starting AmInstantService v8.45.43 ActiveMARK[R] R8.45
+[00000700] 06/14/2016@22:08:36  GamesController::prioritize() -> 1
+[00000e9c] 06/14/2016@22:08:42  AmGamesController::_checkDynamicProfileStateThread (url=http://games-dl.gamehouse.com/gamehouse/pc/c/clearit/clearit.rfs)
+[000006e4] 06/14/2016@22:08:42  AmInstant::Play (cid=fe0adbd02c8fc0f2944f44566b438687, atoken=780ca685003cec1d617beaa6f346e1be) -> 1
+[00000e9c] 06/14/2016@22:08:42  AmGamesController::_checkDynamicProfileStateThread () -> enable=true
+[00000700] 06/14/2016@22:08:51  GamesController::prioritize() -> 1
+[00000700] 06/14/2016@22:09:06  GamesController::prioritize() -> 1
+[00000e08] 06/14/2016@22:09:09  GamesController::gamePlayFinished (cid=fe0adbd02c8fc0f2944f44566b438687, duration=27 seconds) -> 1
+[00001264] 06/14/2016@22:09:09  Profile 'C:\ProgramData\activeMARK\streaming\fe0adbd02c8fc0f2944f44566b438687-am-instant-4903-1400.prof' sent correctly
+[00000700] 06/14/2016@22:09:21  GamesController::prioritize() -> 1
+[00000700] 06/14/2016@22:09:36  GamesController::prioritize() -> 1
+[00000aa4] 06/14/2016@22:09:41  AmInstant::Play (cid=fe0adbd02c8fc0f2944f44566b438687, atoken=780ca685003cec1d617beaa6f346e1be) -> 1
+[00000e9c] 06/14/2016@22:09:41  AmGamesController::_checkDynamicProfileStateThread (url=http://games-dl.gamehouse.com/gamehouse/pc/c/clearit/clearit.rfs)
+[00000e9c] 06/14/2016@22:09:41  AmGamesController::_checkDynamicProfileStateThread () -> enable=true
+[00000700] 06/14/2016@22:09:51  GamesController::prioritize() -> 1
+[00000700] 06/14/2016@22:10:07  GamesController::prioritize() -> 1
+[00000700] 06/14/2016@22:10:22  GamesController::prioritize() -> 1
+[00000700] 06/14/2016@22:10:37  GamesController::prioritize() -> 1
+[00001004] 06/14/2016@22:10:51  GamesController::gamePlayFinished (cid=fe0adbd02c8fc0f2944f44566b438687, duration=69 seconds) -> 1
+[00001264] 06/14/2016@22:10:51  Profile 'C:\ProgramData\activeMARK\streaming\fe0adbd02c8fc0f2944f44566b438687-am-instant-4903-2572.prof' sent correctly
+[00000700] 06/14/2016@22:10:52  GamesController::prioritize() -> 1
+[00000700] 06/14/2016@22:11:07  GamesController::prioritize() -> 1
+[00000700] 06/14/2016@22:11:22  GamesController::prioritize() -> 1
+[00000700] 06/14/2016@22:11:37  GamesController::prioritize() -> 1
+[00000700] 06/14/2016@22:11:52  GamesController::prioritize() -> 1
+[00000700] 06/14/2016@22:12:07  GamesController::prioritize() -> 1
+[00000700] 06/14/2016@22:12:22  GamesController::prioritize() -> 1
+[00000700] 06/14/2016@22:12:37  GamesController::prioritize() -> 1
+[00000700] 06/14/2016@22:12:52  GamesController::prioritize() -> 1
+[00000700] 06/14/2016@22:13:07  GamesController::prioritize() -> 1
+[00000700] 06/14/2016@22:13:22  GamesController::prioritize() -> 1
