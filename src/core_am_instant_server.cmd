@@ -126,7 +126,7 @@ set port=12072
 
 :: New Menu with working options only (20160515)
 
-set reqDeviceID=http://localhost:12072/v1/init.json?query_id=0000000000000
+set reqDeviceID=http://localhost:%port%/v1/init.json?query_id=0000000000000
 set reqDeviceIDHeader=/v1/init.json?query_id=0000000000000
 
 
