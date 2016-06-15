@@ -183,6 +183,10 @@ set serviceStop=net stop "%serviceName%"
 set serviceRegAdd=regedit /s "ami-launch-fix-%bits%.reg"
 set serviceRegRemove=regedit /s "ami-launch-fix-remove.reg"
 
+set serviceQuery="%SystemRoot%\system32\sc.exe" queryex "%serviceName%"
+
+set amiServiceInstalled=0
+
 
 goto amiMenu
 
@@ -1104,26 +1108,42 @@ echo.
 %lyellow%
 echo Select an option from below
 echo.
-echo 1) Create AMI Service
+echo 1) Check For AMI Service
 echo.
-echo 2) Delete AMI Service
+echo 2) Create AMI Service
 echo.
-echo 3) Start AMI Service
+echo 3) Delete AMI Service
 echo.
-echo 4) Stop AMI Service
+echo 4) Start AMI Service
+echo.
+echo 5) Stop AMI Service
 echo.
 echo.
 echo B) Go Back
 echo.
 
-if %os%==XP choice /c:1234b /n
-if %os%==VISTA choice /c 123456b /n
-if errorlevel 5 goto amiMenu2
-if errorlevel 4 goto svcStop
-if errorlevel 3 goto svcStart
-if errorlevel 2 goto svcDelete
-if errorlevel 1 goto svcCreate
+if %os%==XP choice /c:12345b /n
+if %os%==VISTA choice /c 12345b /n
+if errorlevel 6 goto amiMenu2
+if errorlevel 5 goto svcStop
+if errorlevel 4 goto svcStart
+if errorlevel 3 goto svcDelete
+if errorlevel 2 goto svcCreate
+if errorlevel 1 goto svcQuery
 
+goto svcOptions
+
+
+:svcQuery
+%serviceQuery%
+if %errorlevel% equ 1060 (
+	set amiServiceInstalled=0
+	) else if %errorlevel% neq 1060 (
+	set amiServiceInstalled=1
+	)
+
+::echo Installed: %amiServiceInstalled%
+::pause
 goto svcOptions
 
 
