@@ -395,6 +395,11 @@ Source: ..\registry\rga_stub_bypass.reg; DestDir: {app}; Attribs: hidden; Flags:
 Source: ..\registry\rga_stub_remove.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\registry\rgs_open_default.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 
+; AMI Service Registry
+Source: ..\registry\ami-launch-fix-32.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\registry\ami-launch-fix-64.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\registry\ami-launch-fix-remove.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+
 ; Config Files
 Source: ..\config\launch.ini; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
 Source: ..\config\rawkdb.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall

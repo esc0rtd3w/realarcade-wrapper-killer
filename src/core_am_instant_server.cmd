@@ -17,6 +17,14 @@ call "%temp%\rawkEnv.cmd"
 
 %kill% aminstantservice.exe
 
+
+set bits=32
+
+if not exist "C:\Program Files (x86)" set bits=32
+if exist "C:\Program Files (x86)" set bits=64
+if "%PROCESSOR_ARCHITECTURE%"=="AMD64" set bits=64
+
+
 set amiRequest="%temp%\ami-request.txt"
 
 set amiRequestInstallationTitle="%temp%\amiRequestInstallationTitle.txt"
@@ -78,53 +86,10 @@ set dumpPage=wget -d %memberCookie% -O %outFileTemp% %pageNewGames%
 :: appDirName=jewel-quest-soli3675cb0b1a06f37e
 
 
-:amiMenu
-set returnTo=amiMenu
-
-::cls
-::echo Select an option from below
-::echo.
-::echo.
-::echo 1) Execute Normally (Must Close EXE Manually)
-::echo 2) Execute Normally Quiet (--quiet)
-::echo.
-::echo.
-::echo 3) Console Mode (--console)
-::echo.
-::echo 4) Service Run (--service-run)
-::echo.
-::echo 5) Wait AM End (--wait-am-end)
-::echo.
-::echo 6) Upgrade (--upgrade)
-::echo.
-::echo 7) Upgrade Quiet (--upgrade --quiet)
-::echo.
-::echo 8) Bring To Top (--bring-to-top)
-::echo.
-::echo 9) Version (--version)
-::echo.
-::echo A) Help (--help)
-::echo.
-::echo.
-
-::if %os%==XP choice /c:123456789 /n
-::if %os%==VISTA choice /c 123456789 /n
-::if errorlevel 9 goto version
-::if errorlevel 8 goto btt
-::if errorlevel 7 goto upgradeq
-::if errorlevel 6 goto upgrade
-::if errorlevel 5 goto wae
-::if errorlevel 4 goto svcrun
-::if errorlevel 3 goto console
-::if errorlevel 2 goto quiet
-::if errorlevel 1 goto norm
-
-
 :: Set localhost port
 ::set port=27021
 set port=12072
 
-:: New Menu with working options only (20160515)
 
 set reqDeviceID=http://localhost:%port%/v1/init.json?query_id=0000000000000
 set reqDeviceIDHeader=/v1/init.json?query_id=0000000000000
@@ -192,6 +157,39 @@ set remoteRfsBase3=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc
 :: Connection: keep-alive
 
 
+:: AMI Service Stuff
+set serviceBin=aminstantservice.exe
+::set args=--console
+set serviceArgs=--service-run
+set serviceName=AMInstantService
+set serviceDisplayName=activeMARK Instant Service
+set serviceDescription=activeMARK Instant Service
+set serviceStartupType=demand
+::set startupType=auto
+set errorType=ignore
+
+set description=Enhances gaming experience from the web browsers
+
+set servicePath=%SystemDrive%\Program Files\unRealArcade\temp
+
+set serviceCreate="%SystemRoot%\system32\sc.exe" create %serviceName% binPath= "\"%servicePath%\%serviceBin%\" %serviceArgs%" displayname= "%serviceDisplayName%" start= %serviceStartupType%
+set serviceCreateAddDescription="%SystemRoot%\system32\sc.exe" description %serviceName% "%serviceDescription%"
+
+set serviceStart=net start "%serviceName%"
+set serviceStop=net stop "%serviceName%"
+
+set serviceRegAdd=regedit /s "ami-launch-fix-%bits%.reg"
+set serviceRegRemove=regedit /s "ami-launch-fix-remove.reg"
+
+
+goto amiMenu
+
+
+
+:amiMenu
+set returnTo=amiMenu
+
+:: New Menu with working options only (20160515)
 cls
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %laqua%
@@ -1118,3 +1116,44 @@ goto end
 
 
 :end
+
+
+:: OLD AMI MENU
+
+::cls
+::echo Select an option from below
+::echo.
+::echo.
+::echo 1) Execute Normally (Must Close EXE Manually)
+::echo 2) Execute Normally Quiet (--quiet)
+::echo.
+::echo.
+::echo 3) Console Mode (--console)
+::echo.
+::echo 4) Service Run (--service-run)
+::echo.
+::echo 5) Wait AM End (--wait-am-end)
+::echo.
+::echo 6) Upgrade (--upgrade)
+::echo.
+::echo 7) Upgrade Quiet (--upgrade --quiet)
+::echo.
+::echo 8) Bring To Top (--bring-to-top)
+::echo.
+::echo 9) Version (--version)
+::echo.
+::echo A) Help (--help)
+::echo.
+::echo.
+
+::if %os%==XP choice /c:123456789 /n
+::if %os%==VISTA choice /c 123456789 /n
+::if errorlevel 9 goto version
+::if errorlevel 8 goto btt
+::if errorlevel 7 goto upgradeq
+::if errorlevel 6 goto upgrade
+::if errorlevel 5 goto wae
+::if errorlevel 4 goto svcrun
+::if errorlevel 3 goto console
+::if errorlevel 2 goto quiet
+::if errorlevel 1 goto norm
