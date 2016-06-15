@@ -120,6 +120,8 @@ set returnTo=amiMenu
 ::if errorlevel 1 goto norm
 
 
+:: Set localhost port
+set port=27021
 
 :: New Menu with working options only (20160515)
 
@@ -140,7 +142,7 @@ set reqGetListGames1=/v1/listGames.json?include_uninstalled=false
 set reqGetListGames2=^&query_id=1463457306950
 set reqGetListGames=%reqGetListGames1%%reqGetListGames2%
 
-set reqHost=--header="Host: localhost:12072"
+set reqHost=--header="Host: localhost:%port%"
 ::set reqUserAgent=--header="User-Agent: AmHttpClient v1.0"
 set reqUserAgent=--header="User-Agent: AmHttpGet 1.0"
 set reqAccept=--header="Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
@@ -154,13 +156,13 @@ set reqConnection=--header="Connection: keep-alive"
 set baseReq=wget -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
-set baseReqListGames=wget -d %reqGetListGames% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "http://localhost:12072%reqGetListGames%"
+set baseReqListGames=wget -d %reqGetListGames% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "http://localhost:%port%%reqGetListGames%"
 
 
 :: Device ID Request
 set reqGetDeviceId=wget -d %reqDeviceIDHeader% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
-set launch1=http://localhost:12072/v1/play.json?content_id=
+set launch1=http://localhost:%port%/v1/play.json?content_id=
 set launch2=^&auth_token=0000000000000000000000000000000000000000"
 
 set download1=http://www.gamehouse.com/member/api/games/downloaddetails.json?amcontentid=
@@ -170,16 +172,16 @@ set getSessionID=http://www.gamehouse.com/member/api/player/getsessionid.json
 :: http://games-dl.gamehouse.com/gamehouse/pc/h/hoyle-official-card-games-collection/hoyle-official-card-games-collection.rfs
 set remoteRfsBase=http://games-dl.gamehouse.com/gamehouse/pc
 
-set remoteRfsBase1=127.0.0.1:12072/v1/install.json?result=success^&installation_title=
+set remoteRfsBase1=127.0.0.1:%port%/v1/install.json?result=success^&installation_title=
 set remoteRfsBase2=^&content_id=
 set remoteRfsBase3=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc
 
 
 :: Successful Download Request
-:: http://localhost:12072/v1/install.json?result=success&installation_title=Strike%20Solitaire&content_id=9f6a8eae6c2af6791074094b9bd8f181&rfs=http%3A%2F%2Fgames-dl.gamehouse.com%2Fgamehouse%2Fpc%2Fs%2Fstrike-solitaire%2Fstrike-solitaire.rfs
+:: http://localhost:%port%/v1/install.json?result=success&installation_title=Strike%20Solitaire&content_id=9f6a8eae6c2af6791074094b9bd8f181&rfs=http%3A%2F%2Fgames-dl.gamehouse.com%2Fgamehouse%2Fpc%2Fs%2Fstrike-solitaire%2Fstrike-solitaire.rfs
 
 :: /v1/install.json?result=success&installation_title=Strike%20Solitaire&content_id=9f6a8eae6c2af6791074094b9bd8f181&rfs=http%3A%2F%2Fgames-dl.gamehouse.com%2Fgamehouse%2Fpc%2Fs%2Fstrike-solitaire%2Fstrike-solitaire.rfs HTTP/1.1
-:: Host: localhost:12072
+:: Host: localhost:%port%
 :: User-Agent: AmHttpClient 1.0
 :: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 :: Accept-Language: en-US,en;q=0.5
