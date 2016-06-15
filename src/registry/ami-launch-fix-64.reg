@@ -1,0 +1,28 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games]
+;"DisplayIcon"="C:\\Program Files (x86)\\GameHouse Games\\aminstantservice.exe"
+"DisplayIcon"="C:\\Program Files\\unRealArcade\\temp\\aminstantservice.exe"
+"DisplayVersion"="8.45.43"
+"DisplayName"="GameHouse Games"
+;"InstallDir"="C:\\Program Files (x86)\\GameHouse Games\\"
+"InstallDir"="C:\\Program Files\\unRealArcade\\temp\\"
+;"InstallLocation"="C:\\Program Files (x86)\\GameHouse Games\\"
+"InstallLocation"="C:\\Program Files\\unRealArcade\\temp\\"
+;"ServicePath"="C:\\Program Files (x86)\\GameHouse Games\\aminstantservice.exe"
+"ServicePath"="C:\\Program Files\\unRealArcade\\temp\\aminstantservice.exe"
+;"UninstallString"="C:\\Program Files (x86)\\GameHouse Games\\uninst.exe"
+"UninstallString"="C:\\Program Files\\unRealArcade\\temp\\uninst.exe"
+"Publisher"="GameHouse"
+"VersionMajor"="8"
+"VersionMinor"="45"
+
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService]
+"Type"=dword:00000010
+;"Start"=dword:00000002
+"Start"=dword:00000003
+"ErrorControl"=dword:00000001
+"DisplayName"="activeMARK Instant Service"
+;"ImagePath"="\"C:\\Program Files (x86)\\GameHouse Games\\aminstantservice.exe\" --service-run"
+"ImagePath"="\"C:\\Program Files (x86)\\GameHouse Games\\aminstantservice.exe\" --console"
