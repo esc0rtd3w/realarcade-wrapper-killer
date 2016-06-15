@@ -25,4 +25,4 @@ Windows Registry Editor Version 5.00
 "ErrorControl"=dword:00000001
 "DisplayName"="activeMARK Instant Service"
 ;"ImagePath"="\"C:\\Program Files (x86)\\GameHouse Games\\aminstantservice.exe\" --service-run"
-"ImagePath"="\"C:\\Program Files (x86)\\GameHouse Games\\aminstantservice.exe\" --console"
+"ImagePath"="\"C:\\Program Files\\unRealArcade\\temp\\aminstantservice.exe\" --console"
