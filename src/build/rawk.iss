@@ -212,8 +212,8 @@ Source: ..\gui\uradl.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: 
 
 ; AM Instant Server
 Source: ..\loaders\loaderRFS\am\aminstantservice.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
-Source: ..\loaders\loaderRFS\am\am-instant-run.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\loaders\loaderRFS\am\am-instant-remove.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+;Source: ..\loaders\loaderRFS\am\am-instant-run.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+;Source: ..\loaders\loaderRFS\am\am-instant-remove.reg; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 
 ; GH Web Scraper
 Source: ..\web\GHWebScraper\bin\Release\GHWebScraper.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
