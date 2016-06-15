@@ -175,6 +175,8 @@ set servicePath=%SystemDrive%\Program Files\unRealArcade\temp
 set serviceCreate="%SystemRoot%\system32\sc.exe" create %serviceName% binPath= "\"%servicePath%\%serviceBin%\" %serviceArgs%" displayname= "%serviceDisplayName%" start= %serviceStartupType%
 set serviceCreateAddDescription="%SystemRoot%\system32\sc.exe" description %serviceName% "%serviceDescription%"
 
+set serviceDelete="%SystemRoot%\system32\sc.exe" delete "%serviceName%"
+
 set serviceStart=net start "%serviceName%"
 set serviceStop=net stop "%serviceName%"
 
@@ -262,22 +264,25 @@ echo 1) Check Remote Version [%amiVersion%]
 echo.
 echo 2) Open Default Apps Directory
 echo.
-echo 3) List Installed Games
-echo 4) Enter New Game Credentials
-echo 5) Rebuild GET Request
-echo 6) Watch AM Instant Log
+echo 3) Service Options
+echo.
+echo 4) List Installed Games
+echo 5) Enter New Game Credentials
+echo 6) Rebuild GET Request
+echo 7) Watch AM Instant Log
 echo.
 echo.
 echo B) Go Back
 echo.
 
-if %os%==XP choice /c:123456b /n
+if %os%==XP choice /c:1234567b /n
 if %os%==VISTA choice /c 123456b /n
-if errorlevel 7 goto amiMenu
-if errorlevel 6 goto watchLog
-if errorlevel 5 set returnTo=amiMenu2&&goto rebuildReq
-if errorlevel 4 goto newCreds
-if errorlevel 3 goto listGames
+if errorlevel 8 goto amiMenu
+if errorlevel 7 goto watchLog
+if errorlevel 6 set returnTo=amiMenu2&&goto rebuildReq
+if errorlevel 5 goto newCreds
+if errorlevel 4 goto listGames
+if errorlevel 3 goto svcOptions
 if errorlevel 2 goto openApps
 if errorlevel 1 goto chkRemote
 
@@ -1080,6 +1085,66 @@ pause
 endlocal
 
 goto %returnTo%
+
+
+
+:svcOptions
+
+cls
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%laqua%
+echo Content ID: %cid%
+echo Name: %gameNameDashes%
+echo Title: %gameNameTitle%
+echo App Directory Name: %appDirName%
+echo Device ID: %deviceID%
+echo Session ID: %sessionID%
+echo.
+echo.
+%lyellow%
+echo Select an option from below
+echo.
+echo 1) Create AMI Service
+echo.
+echo 2) Delete AMI Service
+echo.
+echo 3) Start AMI Service
+echo.
+echo 4) Stop AMI Service
+echo.
+echo.
+echo B) Go Back
+echo.
+
+if %os%==XP choice /c:1234b /n
+if %os%==VISTA choice /c 123456b /n
+if errorlevel 5 goto amiMenu2
+if errorlevel 4 goto svcStop
+if errorlevel 3 goto svcStart
+if errorlevel 2 goto svcDelete
+if errorlevel 1 goto svcCreate
+
+goto svcOptions
+
+
+:svcCreate
+%serviceCreate%
+%serviceCreateAddDescription%
+%serviceRegAdd%
+goto svcOptions
+
+:svcDelete
+%serviceDelete%
+%serviceRegRemove%
+goto svcOptions
+
+:svcStart
+%serviceStart%
+goto svcOptions
+
+:svcStop
+%serviceStop%
+goto svcOptions
 
 
 :forceExit
