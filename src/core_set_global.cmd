@@ -148,7 +148,10 @@ set rgsroot=http://games-dl2.real.com/gameconsole/games/demorgses
 ::-----------------------------------------------------------------------------------
 
 set uraRoot=C:\Program Files\unRealArcade
+set uraToolsRoot=C:\Program Files\unRealArcade\tools
+set uraServicesRoot=C:\Program Files\unRealArcade\services
 set uraStubRoot=C:\Program Files\unRealArcade\stubs
+set uraTempRoot=C:\Program Files\unRealArcade\temp
 set rawkRoot=C:\Program Files\unRealArcade\rawk
 
 ::-----------------------------------------------------------------------------------
@@ -493,21 +496,21 @@ set runWaitTerminate=start "" /wait
 
 
 :: AM Instant Server
-set amInstantServer="C:\Program Files\unRealArcade\temp\aminstantservice.exe"
-set amInstantServerQuiet="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --quiet
-set amInstantServerConsole="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --console
-set amInstantServerServiceRun="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --service-run
-set amInstantServerWaitAmEnd="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --wait-am-end
-set amInstantServerAutoUpgrade="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --autoupgrade
-set amInstantServerUpgrade="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --upgrade
-set amInstantServerUpgradeQuiet="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --upgrade --quiet
-set amInstantServerBringToTop="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --bring-to-top
-set amInstantServerVersion="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --version
-set amInstantServerHelp="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --help
-set amInstantServerServiceInstall="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --service-install
-set amInstantServerServiceUninstall="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --service-uninstall
-set amInstantServerServiceInstallAndStart="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --service-install-and-start
-set amInstantServerUninstall="C:\Program Files\unRealArcade\temp\aminstantservice.exe" --uninstall
+set amInstantServer="%uraServicesRoot%\ami\aminstantservice.exe"
+set amInstantServerQuiet="%uraServicesRoot%\ami\aminstantservice.exe" --quiet
+set amInstantServerConsole="%uraServicesRoot%\ami\aminstantservice.exe" --console
+set amInstantServerServiceRun="%uraServicesRoot%\ami\aminstantservice.exe" --service-run
+set amInstantServerWaitAmEnd="%uraServicesRoot%\ami\aminstantservice.exe" --wait-am-end
+set amInstantServerAutoUpgrade="%uraServicesRoot%\ami\aminstantservice.exe" --autoupgrade
+set amInstantServerUpgrade="%uraServicesRoot%\ami\aminstantservice.exe" --upgrade
+set amInstantServerUpgradeQuiet="%uraServicesRoot%\ami\aminstantservice.exe" --upgrade --quiet
+set amInstantServerBringToTop="%uraServicesRoot%\ami\aminstantservice.exe" --bring-to-top
+set amInstantServerVersion="%uraServicesRoot%\ami\aminstantservice.exe" --version
+set amInstantServerHelp="%uraServicesRoot%\ami\aminstantservice.exe" --help
+set amInstantServerServiceInstall="%uraServicesRoot%\ami\aminstantservice.exe" --service-install
+set amInstantServerServiceUninstall="%uraServicesRoot%\ami\aminstantservice.exe" --service-uninstall
+set amInstantServerServiceInstallAndStart="%uraServicesRoot%\ami\aminstantservice.exe" --service-install-and-start
+set amInstantServerUninstall="%uraServicesRoot%\ami\aminstantservice.exe" --uninstall
 
 :: AMI Paths
 set amPath=%pd%\activeMARK
@@ -524,7 +527,7 @@ set amInstantLog="%amInstantPath%\aminstant.log"
 set amInstantRemotePlayer=http://games-dl.gamehouse.com/gamehouse/activemark/aminstantservice/GameHouse_GamePlayer.exe
 
 :: GH Web Scraper
-set ghWebScraper="C:\Program Files\unRealArcade\temp\GHWebScraper.exe"
+set ghWebScraper="C:\Program Files\unRealArcade\tools\GHWebScraper.exe"
 
 
 

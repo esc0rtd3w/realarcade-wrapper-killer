@@ -212,16 +212,16 @@ Source: ..\gui\uradl.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: 
 
 
 ; AM Instant Server
-Source: ..\loaders\loaderRFS\am\aminstantservice.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\services\ami\aminstantservice.exe; DestDir: "C:\Program Files\unRealArcade\services\ami"; Flags: overwritereadonly
 
 ; GH Web Scraper
-Source: ..\web\GHWebScraper\bin\Release\GHWebScraper.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\web\GHWebScraper\bin\Release\GHWebScraper.exe; DestDir: "C:\Program Files\unRealArcade\tools"; Flags: overwritereadonly
 
 ; URA Web Browser
-Source: ..\web\URABrowser\Debug\URABrowser.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\web\URABrowser\Debug\URABrowser.exe; DestDir: "C:\Program Files\unRealArcade\tools"; Flags: overwritereadonly
 
 ; AM Instant Injector
-Source: ..\web\AMInjector\Debug\AMInjector.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\web\AMInjector\Debug\AMInjector.exe; DestDir: "C:\Program Files\unRealArcade\tools"; Flags: overwritereadonly
 
 ; Game Lists
 Source: ..\gamelist\am-instant.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
@@ -467,11 +467,10 @@ Source: ..\stub\stub-chunk6.bin; DestDir: {app}; Attribs: hidden; Flags: deletea
 ; RGA Specific
 
 ; OGM Service
-Source: ..\ogm\ogmservice.exe; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\core_ogm_service.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-;Source: ..\rga\ogm\ogmservice-run.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
-Source: ..\ogm\rgaQuery.url; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
-Source: ..\ogm\rgaQuery.json; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_ogm_service.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\services\ogm\ogmservice.exe; DestDir: "C:\Program Files\unRealArcade\services\ogm"; Flags: overwritereadonly
+Source: ..\services\ogm\rgaQuery.url; DestDir: "C:\Program Files\unRealArcade\services\ogm"; Flags: overwritereadonly
+Source: ..\services\ogm\rgaQuery.json; DestDir: "C:\Program Files\unRealArcade\services\ogm"; Flags: overwritereadonly
 
 
 [Dirs]

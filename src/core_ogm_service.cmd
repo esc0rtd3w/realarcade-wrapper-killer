@@ -1,6 +1,6 @@
 @echo off
 
-set runDirectory=%cd%
+set runDirectory=%uraServicesRoot%\ogm
 
 set appBin=ogmservice.exe
 set appArgs=--service-run
