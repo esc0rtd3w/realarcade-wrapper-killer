@@ -212,7 +212,7 @@ set amiServiceInstalledCheck=2
 
 
 set remoteDownloadFinished=0
-set remoteDownloadCheck=type "%amRoot%\instant\games.json" | findstr "gameinstalled"
+set remoteDownloadCheck=type "%amPath%\instant\games.json" | findstr "gameinstalled"
 
 
 goto amiMenu
@@ -389,6 +389,11 @@ if %remoteDownloadFinished%==1 (
 :: In Progress
 if %remoteDownloadFinished%==2 (
 	%laqua%
+)
+
+:: Failed
+if %remoteDownloadFinished%==3 (
+	%lred%
 )
 
 echo 1) Extract Remote RFS File
@@ -972,6 +977,8 @@ echo amInstantAppPath: "%amInstantAppPath%"
 echo.
 echo.
 pause
+set remoteDownloadFinished=3
+goto %returnTo%
 )
 ::set remoteDownloadFinished=1
 
@@ -992,41 +999,47 @@ goto inProgress
 
 :inProgress
 
-%wait% 5
+cls
+echo Downloading In Progress....
+
+%wait% 1
 
 %remoteDownloadCheck%
-
+::echo %errorlevel%
+::pause
 if %errorlevel% neq 0 (
 	cls
 	echo Downloading In Progress....
-	echo..
-	echo..
+	echo.
+	echo.
 	set remoteDownloadFinished=2
 	goto inProgress
 )
 
-%wait% 5
+%wait% 1
 
 %remoteDownloadCheck%
 
 if %errorlevel% equ 0 (
 	cls
+	%lgreen%
 	echo Download Finished
-	echo..
-	echo..
+	echo.
+	echo.
 	pause
 	set remoteDownloadFinished=1
 )
 
-%wait% 5
+%wait% 1
 
 %remoteDownloadCheck%
 
 if %errorlevel% neq 0 (
 	cls
+	%laqua%
 	echo Downloading In Progress....
-	echo..
-	echo..
+	echo.
+	echo.
 	set remoteDownloadFinished=2
 	goto inProgress
 )
