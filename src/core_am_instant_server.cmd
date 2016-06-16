@@ -179,7 +179,7 @@ set errorType=ignore
 
 set description=Enhances gaming experience from the web browsers
 
-set servicePath=%SystemDrive%\Program Files\unRealArcade\temp
+set servicePath=%SystemDrive%\Program Files\unRealArcade\services\ami
 
 set serviceCreate="%SystemRoot%\system32\sc.exe" create %serviceName% binPath= "\"%servicePath%\%serviceBin%\" %serviceArgs%" displayname= "%serviceDisplayName%" start= %serviceStartupType%
 set serviceCreateAddDescription="%SystemRoot%\system32\sc.exe" description %serviceName% "%serviceDescription%"
