@@ -212,7 +212,9 @@ set amiServiceInstalledCheck=2
 
 
 set remoteDownloadFinished=0
-set remoteDownloadCheck=type "%amPath%\instant\games.json" | findstr "gameinstalled"
+set gamesJsonFile="%amPath%\instant\games.json"
+set remoteDownloadPartialCheck=type "%amPath%\instant\games.json" | findstr "gamepartiallypreloaded"
+set remoteDownloadInstalledCheck=type "%amPath%\instant\games.json" | findstr "gameinstalled"
 
 
 goto amiMenu
@@ -1004,10 +1006,17 @@ echo Downloading In Progress....
 
 %wait% 10
 
-%remoteDownloadCheck%
-::echo %errorlevel%
-::pause
-if %errorlevel% neq 0 (
+if not exist %gamesJsonFile% (
+	cls
+	echo Downloading Is Starting....
+	echo.
+	echo.
+	set remoteDownloadFinished=2
+	goto inProgress
+)
+
+%remoteDownloadPartialCheck%
+if %errorlevel% equ 0 (
 	cls
 	echo Downloading In Progress....
 	echo.
@@ -1016,10 +1025,9 @@ if %errorlevel% neq 0 (
 	goto inProgress
 )
 
-%wait% 2
+%wait% 1
 
 %remoteDownloadCheck%
-
 if %errorlevel% equ 0 (
 	cls
 	%lgreen%
@@ -1031,13 +1039,11 @@ if %errorlevel% equ 0 (
 	goto %returnTo%
 )
 
-%wait% 2
+%wait% 1
 
-%remoteDownloadCheck%
-
-if %errorlevel% neq 0 (
+%remoteDownloadPartialCheck%
+if %errorlevel% equ 0 (
 	cls
-	%laqua%
 	echo Downloading In Progress....
 	echo.
 	echo.
@@ -1045,7 +1051,9 @@ if %errorlevel% neq 0 (
 	goto inProgress
 )
 
-goto %returnTo%
+%wait% 1
+
+goto inProgress
 
 
 :downloadMulti
