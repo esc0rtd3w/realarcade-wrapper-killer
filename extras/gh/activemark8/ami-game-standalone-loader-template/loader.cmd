@@ -5,6 +5,12 @@ title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 :reset
 color 0e
 
+cls
+echo Setting Up Modified Environment....
+echo.
+echo.
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+
 mode con lines=26
 
 set root=%~dp0
@@ -148,6 +154,7 @@ set uudecode="%unix%\uudecode.exe"
 set uuencode="%unix%\uuencode.exe"
 set zcat="%unix%\zcat.exe"
 ::set zip="%unix%\zip.exe"
+
 
 
 ::-----------------------------------------------------------------------------------
@@ -400,6 +407,7 @@ if %errorlevel% equ 0 (
 	echo Killing Services To Properly Continue....
 	echo.
 	echo.
+	%wait% 1
 	%serviceStop%
 	%serviceDelete%
 	%serviceRegRemove%
@@ -434,10 +442,12 @@ goto loader
 
 %lyellow%
 cls
-echo Preparing To Launch %gameNameTitle%....
+echo Removing All activeMARK Control Traces....
 echo.
 echo.
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+
+%wait% 1
 
 :: Copy Source Files To Local For Launch
 xcopy /y /e /i /r "%root%dynamicdata" "%amPath%\dynamicdata"
@@ -476,9 +486,12 @@ set gameExec=%exe_launch%
 
 %lyellow%
 cls
-echo Preparing To Launch %gameNameTitle%....
+echo Preparing %gameNameTitle%....
 echo.
 echo.
+
+%wait% 1
+
 ::echo To Enter Recovery Press R
 ::echo.
 ::echo.
@@ -487,11 +500,15 @@ echo.
 ::if errorlevel 2 goto recovery
 ::if errorlevel 1 set nothing=0
 
-%wait% 2
+::%wait% 2
 
 :: Get session ID
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+
+%lyellow%
 cls
+echo Preparing %gameNameTitle%....
+echo.
+echo.
 %baseReq%%getSessionID%
 copy /y %amiRequest% %amiRequestSessionID%
 
@@ -501,6 +518,15 @@ set /p sessionID=<%amiRequestSessionID%
 :: Request JSON Config File
 :: Single DOUBLE QUOTE here on purpose
 %baseReq%%download1%%cid%"
+
+
+%lyellow%
+cls
+echo Gathering Game Information....
+echo.
+echo.
+
+%wait% 1
 
 :: Get "installation_title" Part 1
 for /f "delims=: tokens=3" %%a in ('type %amiRequest%') do (
@@ -565,6 +591,14 @@ for /f "delims=, tokens=1" %%a in ('type %amiRequestTracking%') do (
 :: Get Device ID (from init.json)
 %reqGetDeviceId%%reqDeviceID%"
 
+%lyellow%
+cls
+echo Requesting Device ID....
+echo.
+echo.
+
+%wait% 1
+
 :: Get "device_id" Part 1 (only write 4th line with device_id. kinda clunky!!)
 setlocal enabledelayedexpansion
 for /f "tokens=*" %%a in ('type %amiRequest%') do (
@@ -585,9 +619,12 @@ for /f "delims=: tokens=2" %%a in ('type %amiRequestDeviceId%') do (
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lyellow%
 cls
-echo Preparing To Launch %gameNameTitle%....
+echo Finalizing Game Variables....
 echo.
 echo.
+
+%wait% 1
+
 setlocal enabledelayedexpansion
 
 set jsonInstallationTitle=!jsonInstallationTitle:"=!
@@ -713,14 +750,29 @@ echo.
 
 %runShellWaitTerminate% %baseReq%%launch1%%cid%%launch2%
 
+
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%lgreen%
+cls
+echo Launching %gameNameTitle%....
+echo.
+echo.
 :: Kill Server As Soon As Game Launches To Stop Time Tracking (20160615)
 %serviceStop%
 %serviceDelete%
 %serviceRegRemove%
 %serviceRegRemoveLicensing%
+
 set amiServiceInstalled=0
 set serverStatus=0
 
+
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%lgreen%
+cls
+echo Launching %gameNameTitle%....
+echo.
+echo.
 
 cls
 echo Cleaning Up Files....
@@ -755,6 +807,14 @@ if %errorlevel% equ 0 (
 	%serviceDelete%
 	%serviceRegRemove%
 	%serviceRegRemoveLicensing%
+	
+	title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+	%lgreen%
+	cls
+	echo Launching %gameNameTitle%....
+	echo.
+	echo.
+	%wait% 1
 	)
 
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
@@ -797,8 +857,12 @@ goto inProgress
 
 :inProgress
 
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%lgreen%
 cls
-echo Downloading In Progress....
+echo Extracting \\GH_SERVER\\%gameNameDashes%.rfs....
+echo.
+echo.
 
 %wait% 10
 

@@ -299,7 +299,8 @@ echo 2) Open Default Apps Directory
 echo.
 echo 3) Service Options
 echo.
-echo 4) List Installed Games
+::echo 4) List Installed Games
+echo 4) Write INI File Using Game Info
 echo 5) Enter New Game Credentials
 echo 6) Rebuild GET Request
 echo 7) Watch AM Instant Log
@@ -314,13 +315,38 @@ if errorlevel 8 goto amiMenu
 if errorlevel 7 goto watchLog
 if errorlevel 6 set returnTo=amiMenu2&&goto rebuildReq
 if errorlevel 5 goto newCreds
-if errorlevel 4 goto listGames
+::if errorlevel 4 goto listGames
+if errorlevel 4 goto writeIni
 if errorlevel 3 goto svcOptions
 if errorlevel 2 goto openApps
 if errorlevel 1 goto chkRemote
 
 goto end
 
+
+:writeIni
+
+set iniFileLoader=%temp%\settings-add.txt
+
+echo.>%iniFileLoader%
+echo loader_version=1.0>>%iniFileLoader%
+echo ami_server_version=8.45.43.0>>%iniFileLoader%
+echo ami_server_local=0>>%iniFileLoader%
+echo ami_server_embedded=1>>%iniFileLoader%
+echo ami_server_remote=0>>%iniFileLoader%
+echo ami_server_local_path=C:\Program Files\unRealArcade\services\ami\aminstantservice.exe>>%iniFileLoader%
+echo ami_server_embedded_path=loader\aminstantservice.exe>>%iniFileLoader%
+echo ami_server_remote_path=http://nowhereyet.com>>%iniFileLoader%
+echo content_id=%cid%>>%iniFileLoader%
+echo game_name=%jsonInstallationTitleClean2%>>%iniFileLoader%
+echo game_name_dashes=%gameNameDashes%>>%iniFileLoader%
+echo game_path=C:\ProgramData\activeMARK\instant\apps\%gameNameDashesHalf%%cidHalf%\>>%iniFileLoader%
+echo disk_size=>>%iniFileLoader%
+echo exe_launch=>>%iniFileLoader%
+
+%runShellWaitTerminate% "notepad.exe %iniFileLoader%"
+
+goto amiMenu2
 
 
 :showGames
@@ -948,7 +974,7 @@ goto amiMenu
 
 :download
 
-::set remoteDownloadFinished=2
+set remoteDownloadFinished=2
 
 :: Single DOUBLE QUOTE here on purpose
 ::%runShellWaitTerminate% %baseReq%%remoteRfsBase%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
@@ -959,7 +985,7 @@ cls
 echo Checking For Download Path....
 echo.
 echo.
-%wait% 5
+%wait% 7
 
 if not exist %amInstantAppPath% (
 cls
@@ -982,7 +1008,7 @@ pause
 set remoteDownloadFinished=3
 goto %returnTo%
 )
-::set remoteDownloadFinished=1
+set remoteDownloadFinished=1
 
 goto %returnTo%
 ::goto inProgress
@@ -990,11 +1016,11 @@ goto %returnTo%
 
 :download2
 
-::set remoteDownloadFinished=2
+set remoteDownloadFinished=2
 
 %runShellWaitTerminate% %baseReqDownloadRFS%
 
-::set remoteDownloadFinished=1
+set remoteDownloadFinished=1
 
 
 goto %returnTo%
@@ -1254,7 +1280,6 @@ pause
 endlocal
 
 goto %returnTo%
-
 
 
 :svcOptions
