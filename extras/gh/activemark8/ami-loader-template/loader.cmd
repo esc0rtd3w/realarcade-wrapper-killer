@@ -138,7 +138,7 @@ set zcat="%unix%\zcat.exe"
 ::set zip="%unix%\zip.exe"
 
 
-set wait=~%dp0loader\wait.exe
+set wait=%~dp0loader\wait.exe
 
 ::-----------------------------------------------------------------------------------
 ::Set Windows OS Version
@@ -256,7 +256,7 @@ set amInstantRemotePlayer=http://games-dl.gamehouse.com/gamehouse/activemark/ami
 
 
 
-set zip="~%dp0loader\sevenZ.exe" a -y -r
+set zip="%~dp0loader\sevenZ.exe" a -y -r
 
 set amiRequest="%temp%\ami-request.txt"
 
@@ -415,7 +415,9 @@ set errorType=ignore
 
 set serviceDescription=Enhances gaming experience from the web browsers
 
-set servicePath=%SystemDrive%\Program Files\unRealArcade\services\ami
+set servicePathLocal=%SystemDrive%\Program Files\unRealArcade\services\ami
+set servicePathEmbedded=%~dp0loader
+set servicePathRemote=http://nothinghereyet.com
 
 set serviceCreate="%SystemRoot%\system32\sc.exe" create %serviceName% binPath= "\"%servicePath%\%serviceBin%\" %serviceArgs%" displayname= "%serviceDisplayName%" start= %serviceStartupType%
 set serviceCreateAddDescription="%SystemRoot%\system32\sc.exe" description %serviceName% "%serviceDescription%"
@@ -462,7 +464,7 @@ set returnTo=amiMenu
 
 :: New Menu with working options only (20160515)
 cls
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %laqua%
 echo Content ID: %cid%
 echo Name: %gameNameDashes%
@@ -516,7 +518,7 @@ goto end
 set returnTo=amiMenu2
 
 cls
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %laqua%
 echo Content ID: %cid%
 echo Name: %gameNameDashes%
@@ -600,7 +602,7 @@ goto %returnTo%
 set returnTo=menuGameSelect
 
 cls
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %laqua%
 echo Content ID: %cid%
 echo Name: %gameNameDashes%
@@ -1496,7 +1498,7 @@ goto %returnTo%
 :svcOptions
 
 cls
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %laqua%
 echo Content ID: %cid%
 echo Name: %gameNameDashes%
