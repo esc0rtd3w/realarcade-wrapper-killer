@@ -1002,7 +1002,7 @@ goto inProgress
 cls
 echo Downloading In Progress....
 
-%wait% 1
+%wait% 10
 
 %remoteDownloadCheck%
 ::echo %errorlevel%
@@ -1016,7 +1016,7 @@ if %errorlevel% neq 0 (
 	goto inProgress
 )
 
-%wait% 1
+%wait% 2
 
 %remoteDownloadCheck%
 
@@ -1028,9 +1028,10 @@ if %errorlevel% equ 0 (
 	echo.
 	pause
 	set remoteDownloadFinished=1
+	goto %returnTo%
 )
 
-%wait% 1
+%wait% 2
 
 %remoteDownloadCheck%
 
