@@ -310,7 +310,7 @@ goto end
 
 :showGames
 
-%runShellTerminate% "notepad.exe %amiGameList%"
+%runTerminate% notepad.exe %amiGameList%
 
 goto amiMenu
 
