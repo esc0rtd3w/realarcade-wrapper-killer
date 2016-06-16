@@ -124,6 +124,10 @@ set reqConnection=--header="Connection: keep-alive"
 set baseReq=wget -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
+
+:: A few name fixes for updated RFS files (make better later!!!)
+::if %jsonRfsUrl%==clearit set baseReqDownloadRFS=wget %outFileRFS% "clearit_v2
+
 ::set baseReqListGames=wget -d %reqGetListGames% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "http://localhost:%port%%reqGetListGames%"
 
 
@@ -478,6 +482,9 @@ set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %req
 if not exist "%desktop%\am-rfs-downloads" md "%desktop%\am-rfs-downloads"
 set outFileRFS=-O "%desktop%\am-rfs-downloads\%gameNameDashes%.rfs"
 set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
+
+:: A few name fixes for updated RFS files (make better later!!!)
+::if %jsonRfsUrl%==clearit set baseReqDownloadRFS=wget %outFileRFS% "clearit_v2
 
 
 :: Logging
