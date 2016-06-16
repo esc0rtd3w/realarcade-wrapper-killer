@@ -148,6 +148,7 @@ chainz
 chateau-garden
 chef-solitaire-usa
 chicken-attack
+chicken-invaders-2
 chicken-invaders-2-the-next-wave-christmas-edition
 chicken-invaders-3-revenge-of-the-yolk-christmas-edition
 chicken-invaders-3
