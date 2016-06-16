@@ -996,7 +996,8 @@ goto inProgress
 ::set remoteDownloadFinished=1
 
 
-goto inProgress
+goto %returnTo%
+::goto inProgress
 
 
 :inProgress
@@ -1013,6 +1014,18 @@ if not exist %gamesJsonFile% (
 	echo.
 	set remoteDownloadFinished=2
 	goto inProgress
+)
+
+%remoteDownloadCheck%
+if %errorlevel% equ 0 (
+	cls
+	%lgreen%
+	echo Download Finished
+	echo.
+	echo.
+	pause
+	set remoteDownloadFinished=1
+	goto %returnTo%
 )
 
 %remoteDownloadPartialCheck%
