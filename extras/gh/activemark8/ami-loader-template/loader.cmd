@@ -255,8 +255,8 @@ set amInstantRemotePlayer=http://games-dl.gamehouse.com/gamehouse/activemark/ami
 
 
 
-set wait=%root%\loader\wait.exe
-set zip="%root%\sevenZ.exe" a -y -r
+set wait=%root%loader\wait.exe
+set zip="%root%sevenZ.exe" a -y -r
 
 
 
@@ -283,17 +283,9 @@ set unavailable=0
 
 
 :: Sets default returnTo variable for cases where you must use 2 gotos in sequence
-set returnTo=amiMenu
+set returnTo=loader
 
 set cid=00000000000000000000000000000000
-
-set gameNameDashes=game-name-here
-set gameNameNoDashes=gamenamehere
-set gameNameTitle=Game Name Here
-set gameNameTitleHTML=Game Name Here
-set gameNameTitleClean1=Game Name Here
-set gameNameTitleClean2=Game Name Here
-set gameNameFirstLetter=g
 
 set appDirName=UNDEFINED
 
@@ -374,10 +366,10 @@ set errorType=ignore
 set serviceDescription=Enhances gaming experience from the web browsers
 
 set servicePathLocal=%SystemDrive%\Program Files\unRealArcade\services\ami
-set servicePathEmbedded=%~dp0loader
-set servicePathRemote=http://nothinghereyet.com
+set servicePathEmbedded=%root%loader
+set servicePathRemote=0
 
-set serviceCreate="%SystemRoot%\system32\sc.exe" create %serviceName% binPath= "\"%servicePath%\%serviceBin%\" %serviceArgs%" displayname= "%serviceDisplayName%" start= %serviceStartupType%
+set serviceCreate="%SystemRoot%\system32\sc.exe" create %serviceName% binPath= "\"%servicePathEmbedded%\%serviceBin%\" %serviceArgs%" displayname= "%serviceDisplayName%" start= %serviceStartupType%
 set serviceCreateAddDescription="%SystemRoot%\system32\sc.exe" description %serviceName% "%serviceDescription%"
 
 set serviceDelete="%SystemRoot%\system32\sc.exe" delete "%serviceName%"
@@ -385,9 +377,9 @@ set serviceDelete="%SystemRoot%\system32\sc.exe" delete "%serviceName%"
 set serviceStart=net start "%serviceName%"
 set serviceStop=net stop "%serviceName%"
 
-set serviceRegAdd=regedit /s "ami-launch-fix-%bits%.reg"
-set serviceRegRemove=regedit /s "ami-launch-fix-remove.reg"
-set serviceRegRemoveLicensing=regedit /s "ami-remove-licensing.reg"
+set serviceRegAdd=regedit /s "%root%loader\ami-launch-fix-%bits%.reg"
+set serviceRegRemove=regedit /s "%root%loader\ami-launch-fix-remove.reg"
+set serviceRegRemoveLicensing=regedit /s "%root%loader\ami-remove-licensing.reg"
 
 set serviceQuery="%SystemRoot%\system32\sc.exe" queryex "%serviceName%"
 
@@ -413,7 +405,10 @@ set remoteDownloadPartialCheck=type "%amPath%\instant\games.json" | findstr "gam
 set remoteDownloadInstalledCheck=type "%amPath%\instant\games.json" | findstr "gameinstalled"
 
 
-set readIni="%root%\loader\inifile.exe"
+set readIni="%root%loader\inifile.exe"
+
+
+
 
 goto loader
 
@@ -422,561 +417,47 @@ goto loader
 
 :loader
 
+%lyellow%
+cls
+:: Copy Source Files To Local For Launch
+xcopy /y /e /i /r "%root%dynamicdata" "%amPath%\dynamicdata"
+xcopy /y /e /i /r "%root%instant\apps" "%amPath%\instant\apps"
+xcopy /y /e /i /r "%root%licenses" "%amPath%\licenses"
+::xcopy /y /e /i /r "%root%loader" "%amPath%\loader"
+xcopy /y /e /i /r "%root%streaming" "%amPath%\streaming"
+
+:: Merge games.json With Local
+echo.>>%amInstantPath%\games.json
+type %root%instant\games.json>>%amInstantPath%\games.json
+
+
+
+:: Get settings from INI
 set tmpIniRead="%temp%\tmpIniRead.cmd"
 
-%readIni% "%root%\loader\settings.ini" [main] content_id > %tmpIniRead%
+%readIni% "%root%loader\settings.ini" [main] content_id > %tmpIniRead%
 call %tmpIniRead%
 set cid=%content_id%
 
-%readIni% "%root%\loader\settings.ini" [main] game_name_dashes > %tmpIniRead%
+%readIni% "%root%loader\settings.ini" [main] game_name_dashes > %tmpIniRead%
 call %tmpIniRead%
 set gameNameDashes=%game_name_dashes%
 
-%readIni% "%root%\loader\settings.ini" [main] game_name > %tmpIniRead%
+%readIni% "%root%loader\settings.ini" [main] game_name > %tmpIniRead%
 call %tmpIniRead%
 set gameNameTitle=%game_name%
 
-goto amiMenu
 
-
-
-
-
-:amiMenu
-set returnTo=amiMenu
-
-:: New Menu with working options only (20160515)
-cls
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
-%laqua%
-echo Content ID: %cid%
-echo Name: %gameNameDashes%
-echo Title: %gameNameTitle%
-echo App Directory Name: %appDirName%
-echo Device ID: %deviceID%
-echo Session ID: %sessionID%
-echo.
-echo.
 %lyellow%
-echo Select an option from below
-echo.
-if %serverStatus%==0 (
-	%lred%
-	echo 1^) Toggle AM Micro Server
-)
-
-if %serverStatus%==1 (
-	%lgreen%
-	echo 1^) Toggle AM Micro Server
-)
-echo.
-%lyellow%
-echo 2) Get Game Info (MUST Provide Content ID)
-echo 3) Show Extended Game Info
-echo 4) Show Compatible Games List
-echo.
-echo 5) Download Game
-echo 6) Launch Game
-echo.
-echo 7) More Options
-echo.
-echo X) Exit
-echo.
-
-if %os%==XP choice /c:1234567x /n
-if %os%==VISTA choice /c 123456x /n
-if errorlevel 8 goto forceExit
-if errorlevel 7 goto amiMenu2
-if errorlevel 6 goto launch
-if errorlevel 5 goto menuGameSelect
-if errorlevel 4 goto showGames
-if errorlevel 3 goto extGame
-if errorlevel 2 goto info
-if errorlevel 1 goto toggleSvr
-
-goto end
-
-
-:amiMenu2
-set returnTo=amiMenu2
-
 cls
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
-%laqua%
-echo Content ID: %cid%
-echo Name: %gameNameDashes%
-echo Title: %gameNameTitle%
-echo App Directory Name: %appDirName%
-echo Device ID: %deviceID%
-echo Session ID: %sessionID%
-echo.
-echo.
-%lyellow%
-echo Select an option from below
-echo.
-echo 1) Check Remote Version [%amiVersion%]
-echo.
-echo 2) Open Default Apps Directory
-echo.
-echo 3) Service Options
-echo.
-echo 4) List Installed Games
-echo 5) Enter New Game Credentials
-echo 6) Rebuild GET Request
-echo 7) Watch AM Instant Log
-echo.
-echo.
-echo B) Go Back
-echo.
-
-if %os%==XP choice /c:1234567b /n
-if %os%==VISTA choice /c 123456b /n
-if errorlevel 8 goto amiMenu
-if errorlevel 7 goto watchLog
-if errorlevel 6 set returnTo=amiMenu2&&goto rebuildReq
-if errorlevel 5 goto newCreds
-if errorlevel 4 goto listGames
-if errorlevel 3 goto svcOptions
-if errorlevel 2 goto openApps
-if errorlevel 1 goto chkRemote
-
-goto end
-
-
-
-:showGames
-
-%runTerminate% notepad.exe %amiGameList%
-
-goto amiMenu
-
-
-
-:menuGameSelect
-
-if %cid%==00000000000000000000000000000000 (
-cls
-echo No Valid Content ID Has Been Set!
-echo.
-echo.
-pause
-goto %returnTo%
-)
-
-if %gameNameDashes%==game-name-here (
-cls
-echo No Valid Game Name Has Been Set!
-echo.
-echo.
-pause
-goto %returnTo%
-)
-
-if "%gameNameTitleHTML%"=="Game Name Here" (
-cls
-echo No Valid Game Title Has Been Set!
-echo.
-echo.
-pause
-goto %returnTo%
-)
-
-
-set returnTo=menuGameSelect
-
-cls
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
-%laqua%
-echo Content ID: %cid%
-echo Name: %gameNameDashes%
-echo Title: %gameNameTitle%
-echo App Directory Name: %appDirName%
-echo Device ID: %deviceID%
-echo Session ID: %sessionID%
-echo.
-echo.
-%lyellow%
-echo Select an option from below
-echo.
-
-:: Not Downloading
-if %remoteDownloadFinished%==0 (
-	%lyellow%
-)
-
-:: Completed
-if %remoteDownloadFinished%==1 (
-	%lgreen%
-)
-
-:: In Progress
-if %remoteDownloadFinished%==2 (
-	%laqua%
-)
-
-:: Failed
-if %remoteDownloadFinished%==3 (
-	%lred%
-)
-
-echo 1) Extract Remote RFS File
-%lyellow%
-echo.
-echo 2) Download RFS File
-echo.
-echo 3) Multi Extract Remote RFS Files
-echo.
-echo 4) Multi Download RFS Files
-echo.
-echo.
-echo B) Go Back
-echo.
-
-if %os%==XP choice /c:1234b /n
-if %os%==VISTA choice /c 1234b /n
-if errorlevel 5 goto amiMenu
-::if errorlevel 4 goto downloadMulti2
-if errorlevel 4 goto buildMenu
-if errorlevel 3 goto downloadMulti
-if errorlevel 2 goto download2
-if errorlevel 1 goto download
-
-goto %returnTo%
-
-
-:rebuildReq
-
-cls
-echo Rebuilding Custom GET Requests Using New Game Info....
+echo Preparing To Launch %gameNameTitle%....
 echo.
 echo.
 
-
-:: If null value then game is not available for AM Instant
-if %cid%==null (
-
-	set unavailable=1
-
-	cls
-	echo Game Not Available For AM Instant
-	echo.
-	echo.
-	pause
-	
-	set cid=00000000000000000000000000000000
-
-	set gameNameDashes=game-name-here
-	set gameNameNoDashes=gamenamehere
-	set gameNameTitle=Game Name Here
-	set gameNameTitleHTML=Game Name Here
-	set gameNameTitleClean1=Game Name Here
-	set gameNameTitleClean2=Game Name Here
-	set gameNameFirstLetter=g
-	
-	echo.>>%amLog%
-	echo ------------------------------------------------------------------------------>>%amLog%
-	echo %cidTest% Is Unavailable For AM Instant>>%amLog%
-	echo ------------------------------------------------------------------------------>>%amLog%
-	echo.>>%amLog%
-	
-	set returnTo=amiMenu
-	goto %returnTo%
-)
-
-
-:: This part doesnt work and not needed??
-::if %unavailable%==1 (
-::	set unavailable=0
-::	goto amiMenu
-::)
-
-:: Get first 16 chars for app directory name
-set cidHalfTemp=%cid%
-set cidHalf=%cidHalfTemp:~0,16%
-
-
-:: Set first letter of game name for valid download link
-set gameNameFirstLetterTemp=%gameNameDashes%
-set gameNameFirstLetter=%gameNameFirstLetterTemp:~0,1%
-
-
-:: Get first 16 chars for app directory name
-set gameNameDashesHalfTemp=%gameNameDashes%
-set gameNameDashesHalf=%gameNameDashesHalfTemp:~0,16%
-
-
-
-:: Convert "SPACES" to "%20" before passing as string
-setlocal enabledelayedexpansion
-set space=%%20
-set gameNameTitleHTML=%gameNameTitleHTML: =!space!%
-echo %gameNameTitleHTML%>"%temp%\tmp.tmp"
-endlocal
-
-set /p gameNameTitleHTML=<"%temp%\tmp.tmp"
-
-
-:: Directories with a single quote in them will make a directory like this: "game-s-directory" instead of "game's-directory"
-:: Set new AM Directory Name
-set appDirName=%gameNameDashesHalf%%cidHalf%
-
-
-:: Rebuild Headers
-set reqGet1=--header="/v1/install.json?result=success
-set reqGet2=^&installation_title=%gameNameTitleHTML%
-set reqGet3=^&content_id=%cid%
-set reqGet4=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1"
-
-set reqGet=%reqGet1%%reqGet2%%reqGet3%%reqGet4%
-
-set reqGetDeviceId=wget -d %reqDeviceIDHeader% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
-
-set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
-
-if not exist "%desktop%\am-rfs-downloads" md "%desktop%\am-rfs-downloads"
-set outFileRFS=-O "%desktop%\am-rfs-downloads\%gameNameDashes%.rfs"
-set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
-
-:: A few name fixes for updated RFS files (make better later!!!)
-::if %jsonRfsUrl%==clearit set baseReqDownloadRFS=wget %outFileRFS% "clearit_v2
-
-
-:: Logging
-
-::time>"%temp%\time.txt"
-::for /f "delims=  tokens=1" %%a in ('type "%temp%\time.txt"') do (
-::	set /p timeDisplay=%%a>"%temp%\time.txt"
-::)
-	
-echo.>>%amLog%
-echo ------------------------------------------------------------------------------>>%amLog%
-::echo Created By The RealArcade Wrapper Killer v%rawkver% [%date% / %time%]>>%amLog%
-::echo.>>%amLog%
-echo %cid%>>%amLog%
-echo %gameNameDashes%>>%amLog%
-echo %gameNameTitleHTML%>>%amLog%
-echo %appDirName%>>%amLog%
-echo ------------------------------------------------------------------------------>>%amLog%
-echo.>>%amLog%
-
-
-goto %returnTo%
-
-
-
-:newCreds
-
-cls
-echo Current CID: %cid%
-echo Current Game Name: %gameNameDashes%
-echo Current Game Title: %gameNameTitleHTML%
-echo.
-echo.
-echo.
-echo Enter New CID and press ENTER:
-echo.
-echo.
-echo *** TO KEEP EXISTING VALUE, JUST PRESS ENTER ***
-echo.
-echo.
-
-set /p cid=
-set cidTest=%cid%
-
-
-cls
-echo Current CID: %cid%
-echo Current Game Name: %gameNameDashes%
-echo Current Game Title: %gameNameTitleHTML%
-echo.
-echo.
-echo.
-echo Enter New Game Name and press ENTER:
-echo.
-echo.
-echo *** TO KEEP EXISTING VALUE, JUST PRESS ENTER ***
-echo.
-echo.
-
-set /p gameNameDashes=
-
-cls
-echo Current CID: %cid%
-echo Current Game Name: %gameNameDashes%
-echo Current Game Title: %gameNameTitleHTML%
-echo.
-echo.
-echo.
-echo Enter New Game Title and press ENTER:
-echo.
-echo.
-echo *** TO KEEP EXISTING VALUE, JUST PRESS ENTER ***
-echo.
-echo.
-
-set /p gameNameTitleHTML=
-
-
-::set returnTo=amiMenu
-
-goto info
-
-::goto amiMenu
-
-
-:norm
-
-if %serverStatus%==1 (
-	cls
-	echo AM Server Already Running!
-	echo.
-	echo.
-	pause
-	goto amiMenu
-)
-
-%runShellTerminate% %amInstantServer%
-::%gohide% %amInstantServer%
-set serverStatus=1
-
-goto amiMenu
-
-
-:toggleSvr
-
-%serviceQuery%
-if %errorlevel% equ 1060 (
-	set amiServiceInstalled=0
-	) else if %errorlevel% equ 0 (
-	set amiServiceInstalled=1
-	)
-
-if %amiServiceInstalled%==0 (
-	cls
-	echo Cleaning Stale Instances....
-	echo.
-	%kill% aminstantservice.exe
-	%kill% aminstantservice.exe
-	%kill% aminstantservice.exe
-	
-	cls
-	%serviceCreate%
-	%serviceCreateAddDescription%
-	%serviceRegAdd%
-	%serviceStart%
-	
-	set serverStatus=1
-	goto amiMenu
-)
-
-if %amiServiceInstalled%==1 (
-	
-	cls
-	%serviceStop%
-	%serviceDelete%
-	%serviceRegRemove%
-	%serviceRegRemoveLicensing%
-	
-	cls
-	echo Cleaning Stale Instances....
-	echo.
-	%kill% aminstantservice.exe
-	%kill% aminstantservice.exe
-	%kill% aminstantservice.exe
-	
-	set serverStatus=0
-	goto amiMenu
-)
-
-goto amiMenu
-
-
-:session
-
-%baseReq%%getSessionID%
-
-%runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
-
-goto amiMenu
-
-
-:device
-
-%reqGetDeviceId%%reqDeviceID%
-
-%runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
-
-goto amiMenu
-
-
-:info
-
-::set returnTo=info
-
-if %serverStatus%==0 (
-	cls
-	echo AM Server Not Running!
-	echo.
-	echo.
-	pause
-	goto amiMenu
-)
-
-
-cls
-echo Enter New Content ID and press ENTER:
-echo.
-echo.
-echo Example: %cid%
-echo.
-echo.
-
-set /p cid=
-set cidTest=%cid%
-
-
-if %cid%==00000000000000000000000000000000 (
-cls
-echo No Valid Content ID Has Been Set!
-echo.
-echo.
-pause
-goto amiMenu
-)
-
-:: If null value then game is not available for AM Instant
-if %cid%==null (
-
-	set unavailable=1
-
-	cls
-	echo Game Not Available For AM Instant
-	echo.
-	echo.
-	pause
-	
-	set cid=00000000000000000000000000000000
-
-	set gameNameDashes=game-name-here
-	set gameNameNoDashes=gamenamehere
-	set gameNameTitle=Game Name Here
-	set gameNameTitleHTML=Game Name Here
-	set gameNameTitleClean1=Game Name Here
-	set gameNameTitleClean2=Game Name Here
-	set gameNameFirstLetter=g
-	
-	echo.>>%amLog%
-	echo ------------------------------------------------------------------------------>>%amLog%
-	echo %cidTest% Is Unavailable For AM Instant>>%amLog%
-	echo ------------------------------------------------------------------------------>>%amLog%
-	echo.>>%amLog%
-	
-	set returnTo=amiMenu
-	goto %returnTo%
-)
-
+%wait% 2
 
 :: Get session ID
+cls
 %baseReq%%getSessionID%
 copy /y %amiRequest% %amiRequestSessionID%
 
@@ -996,18 +477,6 @@ for /f "delims=: tokens=3" %%a in ('type %amiRequest%') do (
 :: Get "installation_title" Part 2
 for /f "delims=, tokens=1" %%a in ('type %amiRequestInstallationTitle%') do (
 	set jsonInstallationTitle=%%a
-)
-
-
-:: Get "content_id" Part 1
-for /f "delims=: tokens=4" %%a in ('type %amiRequest%') do (
-	echo %%a>%amiRequestContentId%
-)
-
-:: Get "content_id" Part 2
-for /f "delims=, tokens=1" %%a in ('type %amiRequestContentId%') do (
-	echo %%a>%amiRequestContentId%
-	set jsonContentId=%%a
 )
 
 
@@ -1069,10 +538,12 @@ for /f "delims=: tokens=2" %%a in ('type %amiRequestDeviceId%') do (
 
 
 :: Cleanup Variables
+%lyellow%
+cls
+echo Preparing To Launch %gameNameTitle%....
+echo.
+echo.
 setlocal enabledelayedexpansion
-
-set jsonContentId=!jsonContentId:"=!
-echo !jsonContentId!>%amiRequestContentId%
 
 set jsonInstallationTitle=!jsonInstallationTitle:"=!
 echo !jsonInstallationTitle!>%amiRequestInstallationTitle%
@@ -1104,6 +575,7 @@ endlocal
 
 
 :: Set new variable without quotes
+cls
 set /p jsonContentId=<%amiRequestContentId%
 set /p jsonInstallationTitle=<%amiRequestInstallationTitle%
 set /p jsonInstallationTitleClean1=<%amiRequestInstallationTitleClean1%
@@ -1120,41 +592,78 @@ set gameNameTitle=%jsonInstallationTitle%
 
 
 :: Match to global variables
-set cid=%jsonContentId%
-::set cidTest=%jsonContentId%
 set gameNameTitleHTML=%jsonInstallationTitle%
 set gameNameTitleClean1=%jsonInstallationTitleClean1%
 set gameNameTitleClean2=%jsonInstallationTitleClean2%
 set deviceID=%jsonDeviceID%
 
-::%runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
+:: Get first 16 chars for app directory name
+set cidHalfTemp=%cid%
+set cidHalf=%cidHalfTemp:~0,16%
 
 
-goto rebuildReq
+:: Set first letter of game name for valid download link
+set gameNameFirstLetterTemp=%gameNameDashes%
+set gameNameFirstLetter=%gameNameFirstLetterTemp:~0,1%
 
 
-:launch
+:: Get first 16 chars for app directory name
+set gameNameDashesHalfTemp=%gameNameDashes%
+set gameNameDashesHalf=%gameNameDashesHalfTemp:~0,16%
 
-if %cid%==00000000000000000000000000000000 (
+
+
+:: Convert "SPACES" to "%20" before passing as string
+setlocal enabledelayedexpansion
+set space=%%20
+set gameNameTitleHTML=%gameNameTitleHTML: =!space!%
+echo %gameNameTitleHTML%>"%temp%\tmp.tmp"
+endlocal
+
+set /p gameNameTitleHTML=<"%temp%\tmp.tmp"
+
+
+:: Directories with a single quote in them will make a directory like this: "game-s-directory" instead of "game's-directory"
+:: Set new AM Directory Name
+set appDirName=%gameNameDashesHalf%%cidHalf%
+
+
+:: Rebuild Headers
+%lyellow%
 cls
-echo No Valid Content ID Has Been Set!
+echo Preparing To Launch %gameNameTitle%....
 echo.
 echo.
-pause
-goto amiMenu
-)
+set reqGet1=--header="/v1/install.json?result=success
+set reqGet2=^&installation_title=%gameNameTitleHTML%
+set reqGet3=^&content_id=%cid%
+set reqGet4=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1"
 
-if %serverStatus%==0 (
-	cls
-	echo AM Server Not Running!
-	echo.
-	echo.
-	pause
-	goto amiMenu
-)
+set reqGet=%reqGet1%%reqGet2%%reqGet3%%reqGet4%
+
+set reqGetDeviceId=wget -d %reqDeviceIDHeader% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+
+set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+
+if not exist "%desktop%\am-rfs-downloads" md "%desktop%\am-rfs-downloads"
+set outFileRFS=-O "%desktop%\am-rfs-downloads\%gameNameDashes%.rfs"
+set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
+
+%wait% 2
+
+
+:: Launch
+%lgreen%
+cls
+echo Launching %gameNameTitle%....
+echo.
+echo.
+%serviceCreate%
+%serviceCreateAddDescription%
+%serviceRegAdd%
+%serviceStart%
 
 %runShellWaitTerminate% %baseReq%%launch1%%cid%%launch2%
-::set serverStatus=1
 
 :: Kill Server As Soon As Game Launches To Stop Time Tracking (20160615)
 %serviceStop%
@@ -1164,436 +673,13 @@ if %serverStatus%==0 (
 set amiServiceInstalled=0
 set serverStatus=0
 
-goto amiMenu
 
+goto end
 
-:download
 
-::set remoteDownloadFinished=2
 
-:: Single DOUBLE QUOTE here on purpose
-::%runShellWaitTerminate% %baseReq%%remoteRfsBase%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
-%runShellWaitTerminate% %baseReqExtractRFS%%remoteRfsBase1%%gameNameTitleHTML%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
-::set serverStatus=1
 
-cls
-echo Checking For Download Path....
-echo.
-echo.
-%wait% 5
-
-if not exist %amInstantAppPath% (
-cls
-echo No Valid Download Path Has Been Detected!
-echo.
-echo This usually means there is a problem with one of the required variables.
-echo.
-echo.
-echo jsonContentId: %jsonContentId%
-echo gameNameDashes: %gameNameDashes%
-echo jsonInstallationTitle: %jsonInstallationTitle%
-echo.
-echo sessionID: %sessionID%
-echo deviceID: %deviceID%
-echo.
-echo amInstantAppPath: "%amInstantAppPath%"
-echo.
-echo.
-pause
-set remoteDownloadFinished=3
-goto %returnTo%
-)
-::set remoteDownloadFinished=1
-
-goto %returnTo%
-::goto inProgress
-
-
-:download2
-
-::set remoteDownloadFinished=2
-
-%runShellWaitTerminate% %baseReqDownloadRFS%
-
-::set remoteDownloadFinished=1
-
-
-goto %returnTo%
-::goto inProgress
-
-
-:inProgress
-
-cls
-echo Downloading In Progress....
-
-%wait% 10
-
-if not exist %gamesJsonFile% (
-	cls
-	echo Downloading Is Starting....
-	echo.
-	echo.
-	set remoteDownloadFinished=2
-	goto inProgress
-)
-
-%remoteDownloadCheck%
-if %errorlevel% equ 0 (
-	cls
-	%lgreen%
-	echo Download Finished
-	echo.
-	echo.
-	pause
-	set remoteDownloadFinished=1
-	goto %returnTo%
-)
-
-%remoteDownloadPartialCheck%
-if %errorlevel% equ 0 (
-	cls
-	echo Downloading In Progress....
-	echo.
-	echo.
-	set remoteDownloadFinished=2
-	goto inProgress
-)
-
-%wait% 1
-
-%remoteDownloadCheck%
-if %errorlevel% equ 0 (
-	cls
-	%lgreen%
-	echo Download Finished
-	echo.
-	echo.
-	pause
-	set remoteDownloadFinished=1
-	goto %returnTo%
-)
-
-%wait% 1
-
-%remoteDownloadPartialCheck%
-if %errorlevel% equ 0 (
-	cls
-	echo Downloading In Progress....
-	echo.
-	echo.
-	set remoteDownloadFinished=2
-	goto inProgress
-)
-
-%wait% 1
-
-goto inProgress
-
-
-:downloadMulti
-
-cls
-echo Not Implemented Yet!
-echo.
-echo.
-pause
-::%runShellWaitTerminate% %baseReqDownloadRFS%
-
-
-goto %returnTo%
-
-
-:downloadMulti2
-
-cls
-echo Not Implemented Yet!
-echo.
-echo.
-pause
-::%runShellWaitTerminate% %baseReqDownloadRFS%
-
-
-goto %returnTo%
-
-
-:stop
-
-if %serverStatus%==0 (
-	cls
-	echo AM Server Not Running!
-	echo.
-	echo.
-	pause
-	goto amiMenu
-)
-
-%kill% aminstantservice.exe
-%kill% aminstantservice.exe
-%kill% aminstantservice.exe
-%kill% aminstantservice.exe
-%kill% aminstantservice.exe
-
-set serverStatus=0
-
-goto amiMenu
-
-
-:openApps
-
-%runShellTerminate% explorer.exe "%amInstantAppPath%"
-
-goto amiMenu2
-
-
-:watchLog
-
-%runShellTerminate% tail.exe -f %amInstantLog%
-
-goto amiMenu2
-
-
-:chkRemote
-
-%runShellWaitTerminate% wget -O "%temp%\GameHouse_GamePlayer.exe" %amInstantRemotePlayer%
-::filver32.exe "%temp%\GameHouse_GamePlayer.exe">"%temp%\amiVersion.txt"
-::%runShellWaitTerminate% "notepad.exe "%temp%\amiVersion.txt"
-filver32.exe "%temp%\GameHouse_GamePlayer.exe">"%temp%\amiVersion.cmd"
-call "%temp%\amiVersion.cmd"
-set amiVersion=%F$V%
-::echo %F$V%
-::pause
-
-::http://games-dl.gamehouse.com/gamehouse/activemark/aminstantservice/versions.json
-
-goto amiMenu2
-
-
-:listGames
-
-if %serverStatus%==0 (
-	cls
-	echo AM Server Not Running!
-	echo.
-	echo.
-	pause
-	goto amiMenu2
-)
-
-::%baseReqListGames%
-
-::%runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
-::set serverStatus=1
-
-goto amiMenu2
-
-
-
-:extGame
-
-if %serverStatus%==0 (
-	cls
-	echo AM Server Not Running!
-	echo.
-	echo.
-	pause
-	goto amiMenu
-)
-
-if %cid%==00000000000000000000000000000000 (
-cls
-echo No Valid Content ID Has Been Set!
-echo.
-echo.
-pause
-goto amiMenu
-)
-
-cls
-%white%
-::if %cid%==00000000000000000000000000000000 echo No Valid Game Selected! Use "Get Game Info" From Main Menu.
-::if not %cid%==00000000000000000000000000000000 echo Extended Game Info
-echo Extended Game Info
-echo.
-echo.
-%laqua%
-echo Content ID: %cid%
-echo.
-%lgreen%
-echo Name (AMI RFS Format): %gameNameDashes%
-echo Name (Web Page Format): %gameNameNoDashes%
-echo Name (First Letter For AMI RFS Link): %gameNameFirstLetter%
-echo.
-echo Title Normal: %jsonInstallationTitle%
-echo Title HTML: %gameNameTitleHTML%
-echo Title Clean Lite: %jsonInstallationTitleClean1%
-echo Title Clean Full: %jsonInstallationTitleClean2%
-echo.
-%lyellow%
-echo Session ID: %sessionID%
-echo Device ID: %deviceID%
-echo.
-%lpurple%
-echo Directory:
-echo "%amInstantAppPath%\%appDirName%"
-echo.
-echo.
-%white%
-
-pause
-
-goto amiMenu
-
-
-
-:buildMenu
-
-setlocal enabledelayedexpansion
-
-cls
-
-set count=0
-
-for /f %%x in ('type %amiGameList%') do (
-    set /a count=count+1
-    set choice[!count!]=%%x
-    for %%y in (!count!) do set "choice[%%y]=!choice[%%y]:%cd%\=!"
-    echo  %%y] !choice[%%x]!
-)
-
-for /l %%x in (1,1,!count!) do (
-     echo  %%x] !choice[%%x]!
-	 pause
-)
-
-set /p select=?
-
-echo You chose !choice[%select%]!
-
-pause
-
-endlocal
-
-goto %returnTo%
-
-
-
-:svcOptions
-
-cls
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
-%laqua%
-echo Content ID: %cid%
-echo Name: %gameNameDashes%
-echo Title: %gameNameTitle%
-echo App Directory Name: %appDirName%
-echo Device ID: %deviceID%
-echo Session ID: %sessionID%
-echo.
-echo.
-%lyellow%
-echo Select an option from below
-echo.
-
-if %amiServiceInstalledCheck%==0 (
-	%lred%
-)
-
-if %amiServiceInstalledCheck%==1 (
-	%lgreen%
-)
-echo 1) Check For AMI Service
-%lyellow%
-echo.
-echo 2) Create AMI Service
-echo 3) Delete AMI Service (Stops First To Avoid Restart Issues)
-echo.
-echo 4) Start AMI Service
-echo 5) Stop AMI Service
-echo.
-echo 6) Open Services Window
-echo.
-echo.
-echo B) Go Back
-echo.
-
-if %os%==XP choice /c:123456b /n
-if %os%==VISTA choice /c 123456b /n
-if errorlevel 7 goto amiMenu2
-if errorlevel 6 goto svcOpen
-if errorlevel 5 goto svcStop
-if errorlevel 4 goto svcStart
-if errorlevel 3 goto svcDelete
-if errorlevel 2 goto svcCreate
-if errorlevel 1 goto svcQuery
-
-goto svcOptions
-
-
-:svcOpen
-
-%runShellWaitTerminate% services.msc
-
-goto svcOptions
-
-
-:svcQuery
-%serviceQuery%
-if %errorlevel% equ 1060 (
-	set amiServiceInstalled=0
-	set amiServiceInstalledCheck=0
-	) else if %errorlevel% neq 1060 (
-	set amiServiceInstalled=1
-	set amiServiceInstalledCheck=1
-	)
-
-goto svcOptions
-
-
-:svcQueryAlt
-%serviceQuery%
-if %errorlevel% equ 1060 (
-	set amiServiceInstalled=0
-	set amiServiceInstalledCheck=0
-	) else if %errorlevel% equ 0 (
-	set amiServiceInstalled=1
-	set amiServiceInstalledCheck=1
-	)
-
-goto svcOptions
-
-
-:svcCreate
-%serviceCreate%
-%serviceCreateAddDescription%
-%serviceRegAdd%
-goto svcOptions
-
-:svcDelete
-%serviceStop%
-%serviceDelete%
-%serviceRegRemove%
-%serviceRegRemoveLicensing%
-goto svcOptions
-
-:svcStart
-%serviceStart%
-goto svcOptions
-
-:svcStop
-%serviceStop%
-goto svcOptions
-
-
-:makeZip
-
-::%zip% "%amPath%"
-
-goto %returnTo%
-
-
-
-:forceExit
+:end
 cls
 echo Cleaning Up Files....
 echo.
@@ -1619,7 +705,6 @@ del /f /q %amiRequestSessionID%
 del /f /q "%temp%\ami-json-parse.txt"
 del /f /q "%temp%\amiVersion.cmd"
 
-del /f /q "%temp%\GameHouse_GamePlayer.exe"
 
 :: Force Remove AMI Service Upon Exit
 %serviceQuery%
