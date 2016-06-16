@@ -14,9 +14,9 @@ del /f /s /q "%root%\instant\info.json"
 del /f /s /q "%root%\instant\pending-requests.json"
 del /f /s /q "%root%\streaming\access.lock"
 
-rd /s /q "%root%\data"
+::rd /s /q "%root%\data"
 
-
+attrib -h -s -r "%root%\data"
 
 
 
