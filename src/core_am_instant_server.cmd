@@ -1017,7 +1017,7 @@ if not exist %gamesJsonFile% (
 	goto inProgress
 )
 
-%remoteDownloadCheck%
+%remoteDownloadFinished%
 if %errorlevel% equ 0 (
 	cls
 	%lgreen%
@@ -1041,7 +1041,7 @@ if %errorlevel% equ 0 (
 
 %wait% 1
 
-%remoteDownloadCheck%
+%remoteDownloadFinished%
 if %errorlevel% equ 0 (
 	cls
 	%lgreen%

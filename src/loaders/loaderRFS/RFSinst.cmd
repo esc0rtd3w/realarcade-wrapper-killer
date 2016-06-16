@@ -419,6 +419,8 @@ set readIni="%root%loader\inifile.exe"
 
 set gameExec=0
 
+set nothing=0
+
 
 goto loader
 
@@ -426,9 +428,23 @@ goto loader
 
 
 :loader
+cls
+echo Preparing To Launch %gameNameTitle%....
+echo.
+echo.
+echo To Enter Recovery Press R
+echo.
+echo.
+if %os%==XP choice /c:nr /n /t:5 /d:n
+if %os%==VISTA choice /c nr /n /t 5 /d n
+if errorlevel 2 goto recovery
+if errorlevel 1 set nothing=0
 
 %lyellow%
 cls
+echo Preparing To Launch %gameNameTitle%....
+echo.
+echo.
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 :: Copy Source Files To Local For Launch
@@ -485,7 +501,6 @@ set /p sessionID=<%amiRequestSessionID%
 
 :: Request JSON Config File
 :: Single DOUBLE QUOTE here on purpose
-::%runShellWaitTerminate% %baseReq%%download1%%cid%"
 %baseReq%%download1%%cid%"
 
 :: Get "installation_title" Part 1
@@ -537,7 +552,6 @@ for /f "delims=, tokens=1" %%a in ('type %amiRequestTracking%') do (
 :: Request JSON Init File
 
 :: Get Device ID (from init.json)
-::%runShellWaitTerminate% %reqGetDeviceId%%reqDeviceID%"
 %reqGetDeviceId%%reqDeviceID%"
 
 :: Get "device_id" Part 1 (only write 4th line with device_id. kinda clunky!!)
@@ -696,12 +710,6 @@ set amiServiceInstalled=0
 set serverStatus=0
 
 
-goto end
-
-
-
-
-:end
 cls
 echo Cleaning Up Files....
 echo.
@@ -752,6 +760,102 @@ taskkill /f /im "%gameExec%"
 
 goto end
 
+
+:recovery
+set returnTo=extractOK
+
+%laqua%
+cls
+echo Extracting %gameNameDashes%.rfs From GameHouse Servers....
+echo.
+echo.
+%baseReqExtractRFS%%remoteRfsBase1%%gameNameTitleHTML%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
+
+goto inProgress
+
+
+:inProgress
+
+cls
+echo Downloading In Progress....
+
+%wait% 10
+
+if not exist %gamesJsonFile% (
+	cls
+	echo Downloading Is Starting....
+	echo.
+	echo.
+	set remoteDownloadFinished=2
+	goto inProgress
+)
+
+%remoteDownloadCheck%
+if %errorlevel% equ 0 (
+	cls
+	%lgreen%
+	echo Download Finished
+	echo.
+	echo.
+	pause
+	set remoteDownloadFinished=1
+	goto %returnTo%
+)
+
+%remoteDownloadPartialCheck%
+if %errorlevel% equ 0 (
+	cls
+	echo Downloading In Progress....
+	echo.
+	echo.
+	set remoteDownloadFinished=2
+	goto inProgress
+)
+
+%wait% 1
+
+%remoteDownloadCheck%
+if %errorlevel% equ 0 (
+	cls
+	%lgreen%
+	echo Download Finished
+	echo.
+	echo.
+	pause
+	set remoteDownloadFinished=1
+	goto %returnTo%
+)
+
+%wait% 1
+
+%remoteDownloadPartialCheck%
+if %errorlevel% equ 0 (
+	cls
+	echo Downloading In Progress....
+	echo.
+	echo.
+	set remoteDownloadFinished=2
+	goto inProgress
+)
+
+%wait% 1
+
+goto inProgress
+
+
+:extractOK
+%lgreen%
+cls
+echo %gameNameDashes%.rfs Has Been Successfully Extracted!
+echo.
+echo.
+echo Press any key once the download has finished
+echo.
+echo.
+echo.
+pause>nul
+
+goto reset
 
 
 :end
