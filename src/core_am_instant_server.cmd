@@ -211,6 +211,10 @@ set amiServiceInstalled=0
 set amiServiceInstalledCheck=2
 
 
+set remoteDownloadFinished=0
+set remoteDownloadCheck=type "%amRoot%\instant\games.json" | findstr "gameinstalled"
+
+
 goto amiMenu
 
 
@@ -371,7 +375,24 @@ echo.
 %lyellow%
 echo Select an option from below
 echo.
+
+:: Not Downloading
+if %remoteDownloadFinished%==0 (
+	%lyellow%
+)
+
+:: Completed
+if %remoteDownloadFinished%==1 (
+	%lgreen%
+)
+
+:: In Progress
+if %remoteDownloadFinished%==2 (
+	%laqua%
+)
+
 echo 1) Extract Remote RFS File
+%lyellow%
 echo.
 echo 2) Download RFS File
 echo.
@@ -920,6 +941,8 @@ goto amiMenu
 
 :download
 
+::set remoteDownloadFinished=2
+
 :: Single DOUBLE QUOTE here on purpose
 ::%runShellWaitTerminate% %baseReq%%remoteRfsBase%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
 %runShellWaitTerminate% %baseReqExtractRFS%%remoteRfsBase1%%gameNameTitleHTML%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
@@ -950,14 +973,63 @@ echo.
 echo.
 pause
 )
+::set remoteDownloadFinished=1
 
-goto %returnTo%
+goto inProgress
 
 
 :download2
 
+::set remoteDownloadFinished=2
+
 %runShellWaitTerminate% %baseReqDownloadRFS%
 
+::set remoteDownloadFinished=1
+
+
+goto inProgress
+
+
+:inProgress
+
+%wait% 5
+
+%remoteDownloadCheck%
+
+if %errorlevel% neq 0 (
+	cls
+	echo Downloading In Progress....
+	echo..
+	echo..
+	set remoteDownloadFinished=2
+	goto inProgress
+)
+
+%wait% 5
+
+%remoteDownloadCheck%
+
+if %errorlevel% equ 0 (
+	cls
+	echo Download Finished
+	echo..
+	echo..
+	pause
+	set remoteDownloadFinished=1
+)
+
+%wait% 5
+
+%remoteDownloadCheck%
+
+if %errorlevel% neq 0 (
+	cls
+	echo Downloading In Progress....
+	echo..
+	echo..
+	set remoteDownloadFinished=2
+	goto inProgress
+)
 
 goto %returnTo%
 
@@ -1167,11 +1239,11 @@ echo Select an option from below
 echo.
 
 if %amiServiceInstalledCheck%==0 (
-%lred%
+	%lred%
 )
 
 if %amiServiceInstalledCheck%==1 (
-%lgreen%
+	%lgreen%
 )
 echo 1) Check For AMI Service
 %lyellow%
