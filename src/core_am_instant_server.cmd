@@ -188,6 +188,7 @@ set serviceStop=net stop "%serviceName%"
 
 set serviceRegAdd=regedit /s "ami-launch-fix-%bits%.reg"
 set serviceRegRemove=regedit /s "ami-launch-fix-remove.reg"
+set serviceRegRemoveLicensing=regedit /s "ami-remove-licensing.reg"
 
 set serviceQuery="%SystemRoot%\system32\sc.exe" queryex "%serviceName%"
 
@@ -198,6 +199,7 @@ if %errorlevel% equ 0 (
 	%serviceStop%
 	%serviceDelete%
 	%serviceRegRemove%
+	%serviceRegRemoveLicensing%
 	)
 
 %kill% aminstantservice.exe
@@ -621,6 +623,7 @@ if %amiServiceInstalled%==1 (
 	%serviceStop%
 	%serviceDelete%
 	%serviceRegRemove%
+	%serviceRegRemoveLicensing%
 	
 	cls
 	echo Cleaning Stale Instances....
@@ -896,6 +899,14 @@ if %serverStatus%==0 (
 
 %runShellWaitTerminate% %baseReq%%launch1%%cid%%launch2%
 ::set serverStatus=1
+
+:: Kill Server As Soon As Game Launches To Stop Time Tracking (20160615)
+%serviceStop%
+%serviceDelete%
+%serviceRegRemove%
+%serviceRegRemoveLicensing%
+set amiServiceInstalled=0
+set serverStatus=0
 
 goto amiMenu
 
@@ -1226,6 +1237,7 @@ goto svcOptions
 %serviceStop%
 %serviceDelete%
 %serviceRegRemove%
+%serviceRegRemoveLicensing%
 goto svcOptions
 
 :svcStart
@@ -1270,6 +1282,7 @@ if %errorlevel% equ 0 (
 	%serviceStop%
 	%serviceDelete%
 	%serviceRegRemove%
+	%serviceRegRemoveLicensing%
 	)
 
 goto end
