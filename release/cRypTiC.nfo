@@ -174,7 +174,9 @@
 
 	* UPDATED: RAWK Core to v3.0.9
 
-                   * Nothing new here :(
+                   * Fixed ALL launching issues with new AMI games
+
+                   * Moved OGM and AMI into "services" directory
 
 
 
