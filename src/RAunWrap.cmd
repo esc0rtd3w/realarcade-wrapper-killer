@@ -309,6 +309,7 @@ if %rauninstalled%==1 goto restart0
 if %launchwebdl%==1 goto webdl
 if %launchwebdl%==0 goto startnow
 
+
 goto startnow
 
 
@@ -369,6 +370,9 @@ if exist %systemroot%\system32\rawkreg.ok goto skipreg
 ::-----------------------------------------------------------------------------------
 
 call "core_disable_old_reg_hacks.cmd"
+
+:: Clean old registry hacks (added 20160615)
+call "core_clean_reg_hacks.cmd"
 
 
 :skipreg

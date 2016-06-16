@@ -24,11 +24,12 @@ echo Applying RA Player Preferences....
 echo.
 regedit /s "rawk_prefs.reg">nul
 
+:: FINALLY DISABLED 20160615
 ::-----------------------------------------------------------------------------------
-:: Tagging a file to keep track of reg hack being applied << use "rawkreset" from
+:: Tagging a file to keep track of reg hack being applied << use "core_clean_reg_hacks" from
 :: RUN box or command prompt to reset
 ::-----------------------------------------------------------------------------------
 
-echo ALL BLOCK-BASED reg hacks removed! - RAWK v4.7 BETA 2 > %systemroot%\system32\rawkreg.ok
+::echo ALL BLOCK-BASED reg hacks removed! - RAWK v4.7 BETA 2 > %systemroot%\system32\rawkreg.ok
 
 :end

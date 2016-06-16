@@ -80,6 +80,7 @@ Source: ..\core_errorhandling.cmd; DestDir: {app}; Attribs: hidden; Flags: delet
 Source: ..\core_cheats.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 Source: ..\core_clean_exe.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_clean_gh.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_clean_reg_hacks.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_clean_zy.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_clean_ini.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_clean_main.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
@@ -305,7 +306,6 @@ Source: ..\sys32\uniq.exe; DestDir: {sys}; Attribs: System; Flags: overwriteread
 ;Source: ..\sys32\hidecon.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 ;Source: ..\sys32\hideexec.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 Source: ..\sys32\quiet.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\rawkreset.cmd; DestDir: {sys}; Flags: overwritereadonly
 
 ; Tasklist and Taskkill (Local)
 ; Fixes game termination problems for an OS like Windows XP Home Edition
