@@ -5,6 +5,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 :reset
 mode con lines=26
 
+
 :: Get environment from the wrapper killer
 echo.>"%temp%\rawkEnv.cmd"
 for /f "tokens=* delims= " %%a in ('type "%temp%\rawkEnvTemp.cmd"') do (
@@ -19,6 +20,7 @@ if not exist "C:\Program Files (x86)" set bits=32
 if exist "C:\Program Files (x86)" set bits=64
 if "%PROCESSOR_ARCHITECTURE%"=="AMD64" set bits=64
 
+set zip="%sys32RawkPath%\sevenZ.exe" a -y -r
 
 set amiRequest="%temp%\ami-request.txt"
 
@@ -32,6 +34,7 @@ set amiRequestDeviceId="%temp%\amiRequestDeviceID.txt"
 set amiRequestSessionID="%temp%\amiRequestSessionID.txt"
 
 set gameNameNoDashesSet="%temp%\gameNameNoDashesSet.txt"
+set gameNameUnderscoresSet="%temp%\gameNameUnderscores.txt"
 
 set sessionID=0000-00-00-00-00-00-000-0000000000000
 set deviceID=0000000000000000000000000000000000000000
@@ -845,6 +848,9 @@ echo !jsonDeviceID!>%amiRequestDeviceID%
 set gameNameNoDashes=!gameNameDashes:-=!
 echo !gameNameNoDashes!>%gameNameNoDashesSet%
 
+set gameNameUnderscores=!gameNameDashes:-=_!
+echo !gameNameUnderscores!>%gameNameUnderscoresSet%
+
 endlocal
 
 
@@ -858,6 +864,7 @@ set /p jsonTracking=<%amiRequestTracking%
 set /p jsonDeviceID=<%amiRequestDeviceID%
 
 set /p gameNameNoDashes=<%gameNameNoDashesSet%
+set /p gameNameUnderscoresSet=<%gameNameUnderscoresSet%
 
 :: Store Game Name Title Original Format
 set gameNameTitle=%jsonInstallationTitle%
@@ -1249,6 +1256,14 @@ goto svcOptions
 goto svcOptions
 
 
+:makeZip
+
+::%zip% "%amPath%"
+
+goto %returnTo%
+
+
+
 :forceExit
 cls
 echo Cleaning Up Files....
@@ -1269,6 +1284,7 @@ del /f /q %amiRequestTracking%
 del /f /q %amiRequestDeviceId%
 
 del /f /q %gameNameNoDashesSet%
+del /f /q %gameNameUnderscoresSet%
 
 del /f /q %amiRequestSessionID%
 del /f /q "%temp%\ami-json-parse.txt"
