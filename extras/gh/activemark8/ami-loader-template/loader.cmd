@@ -428,6 +428,14 @@ set tmpIniRead="%temp%\tmpIniRead.cmd"
 call %tmpIniRead%
 set cid=%content_id%
 
+%readIni% "%root%\loader\settings.ini" [main] game_name_dashes > %tmpIniRead%
+call %tmpIniRead%
+set gameNameDashes=%game_name_dashes%
+
+%readIni% "%root%\loader\settings.ini" [main] game_name > %tmpIniRead%
+call %tmpIniRead%
+set gameNameTitle=%game_name%
+
 goto amiMenu
 
 
