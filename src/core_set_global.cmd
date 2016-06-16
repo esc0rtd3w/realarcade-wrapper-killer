@@ -154,6 +154,40 @@ set uraStubRoot=C:\Program Files\unRealArcade\stubs
 set uraTempRoot=C:\Program Files\unRealArcade\temp
 set rawkRoot=C:\Program Files\unRealArcade\rawk
 
+:: Unix Utilities
+set unix=C:\Program Files\unRealArcade\tools\unix-utils
+
+set agrep="%unix%\agrep.exe"
+set bunzip2="%unix%\bunzip2.exe"
+set bzip2="%unix%\bzip2.exe"
+set bzip2recover="%unix%\bzip2recover.exe"
+set cat="%unix%\cat.exe"
+set cmp="%unix%\cmp.exe"
+set dd="%unix%\dd.exe"
+set diff="%unix%\diff.exe"
+set diff3="%unix%\diff3.exe"
+set du="%unix%\du.exe"
+set egrep="%unix%\egrep.exe"
+set env="%unix%\env.exe"
+set fgrep="%unix%\fgrep.exe"
+set gawk="%unix%\gawk.exe"
+set grep="%unix%\grep.exe"
+set gunzip="%unix%\gunzip.exe"
+set gzip="%unix%\gzip.exe"
+set head="%unix%\head.exe"
+set ls="%unix%\ls.exe"
+set printenv="%unix%\printenv.exe"
+set mkdir="%unix%\mkdir.exe"
+set sdiff="%unix%\sdiff.exe"
+set sed="%unix%\sed.exe"
+set tail="%unix%\tail.exe"
+::set unrar="%unix%\unrar.exe"
+set uudecode="%unix%\uudecode.exe"
+set uuencode="%unix%\uuencode.exe"
+set zcat="%unix%\zcat.exe"
+::set zip="%unix%\zip.exe"
+
+
 ::-----------------------------------------------------------------------------------
 ::Portable RGS Loader Specific
 ::-----------------------------------------------------------------------------------
