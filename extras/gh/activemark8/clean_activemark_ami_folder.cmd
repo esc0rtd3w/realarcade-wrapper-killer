@@ -9,6 +9,7 @@ set root=%ProgramData%\activeMARK
 rd /s /q "%root%\data"
 rd /s /q "%root%\dynamicdata"
 rd /s /q "%root%\instant"
+rd /s /q "%root%\licenses"
 rd /s /q "%root%\stats"
 rd /s /q "%root%\streaming"
 
