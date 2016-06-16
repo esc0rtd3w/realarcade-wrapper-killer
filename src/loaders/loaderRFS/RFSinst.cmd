@@ -393,10 +393,13 @@ set serviceRegRemoveLicensing=regedit /s "%root%loader\ami-remove-licensing.reg"
 
 set serviceQuery="%SystemRoot%\system32\sc.exe" queryex "%serviceName%"
 
-
 :: Force Remove AMI Service Upon Exit
 %serviceQuery%
 if %errorlevel% equ 0 (
+	cls
+	echo Killing Services To Properly Continue....
+	echo.
+	echo.
 	%serviceStop%
 	%serviceDelete%
 	%serviceRegRemove%
@@ -428,17 +431,6 @@ goto loader
 
 
 :loader
-cls
-echo Preparing To Launch %gameNameTitle%....
-echo.
-echo.
-echo To Enter Recovery Press R
-echo.
-echo.
-if %os%==XP choice /c:nr /n /t:5 /d:n
-if %os%==VISTA choice /c nr /n /t 5 /d n
-if errorlevel 2 goto recovery
-if errorlevel 1 set nothing=0
 
 %lyellow%
 cls
@@ -487,6 +479,13 @@ cls
 echo Preparing To Launch %gameNameTitle%....
 echo.
 echo.
+::echo To Enter Recovery Press R
+::echo.
+::echo.
+::if %os%==XP choice /c:nr /n /t:5 /d:n
+::if %os%==VISTA choice /c nr /n /t 5 /d n
+::if errorlevel 2 goto recovery
+::if errorlevel 1 set nothing=0
 
 %wait% 2
 
@@ -511,6 +510,18 @@ for /f "delims=: tokens=3" %%a in ('type %amiRequest%') do (
 :: Get "installation_title" Part 2
 for /f "delims=, tokens=1" %%a in ('type %amiRequestInstallationTitle%') do (
 	set jsonInstallationTitle=%%a
+)
+
+
+:: Get "content_id" Part 1
+for /f "delims=: tokens=4" %%a in ('type %amiRequest%') do (
+	echo %%a>%amiRequestContentId%
+)
+
+:: Get "content_id" Part 2
+for /f "delims=, tokens=1" %%a in ('type %amiRequestContentId%') do (
+	echo %%a>%amiRequestContentId%
+	set jsonContentId=%%a
 )
 
 
@@ -626,6 +637,7 @@ set gameNameTitle=%jsonInstallationTitle%
 
 
 :: Match to global variables
+set cid=%jsonContentId%
 set gameNameTitleHTML=%jsonInstallationTitle%
 set gameNameTitleClean1=%jsonInstallationTitleClean1%
 set gameNameTitleClean2=%jsonInstallationTitleClean2%
@@ -764,6 +776,14 @@ goto end
 :recovery
 set returnTo=extractOK
 
+%wait% 2
+%serviceCreate%
+%serviceCreateAddDescription%
+%serviceRegAdd%
+%serviceStart%
+
+%wait% 5
+
 %laqua%
 cls
 echo Extracting %gameNameDashes%.rfs From GameHouse Servers....
@@ -790,7 +810,7 @@ if not exist %gamesJsonFile% (
 	goto inProgress
 )
 
-%remoteDownloadCheck%
+%remoteDownloadFinished%
 if %errorlevel% equ 0 (
 	cls
 	%lgreen%
@@ -814,7 +834,7 @@ if %errorlevel% equ 0 (
 
 %wait% 1
 
-%remoteDownloadCheck%
+%remoteDownloadFinished%
 if %errorlevel% equ 0 (
 	cls
 	%lgreen%
@@ -854,6 +874,11 @@ echo.
 echo.
 echo.
 pause>nul
+
+%serviceStop%
+%serviceDelete%
+%serviceRegRemove%
+%serviceRegRemoveLicensing%
 
 goto reset
 
