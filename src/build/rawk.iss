@@ -306,6 +306,7 @@ Source: ..\sys32\uniq.exe; DestDir: {sys}; Attribs: System; Flags: overwriteread
 ;Source: ..\sys32\hidecon.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 ;Source: ..\sys32\hideexec.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 Source: ..\sys32\quiet.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\sevenZ.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
 
 ; Tasklist and Taskkill (Local)
 ; Fixes game termination problems for an OS like Windows XP Home Edition
