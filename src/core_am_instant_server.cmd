@@ -984,7 +984,8 @@ goto %returnTo%
 )
 ::set remoteDownloadFinished=1
 
-goto inProgress
+goto %returnTo%
+::goto inProgress
 
 
 :download2
