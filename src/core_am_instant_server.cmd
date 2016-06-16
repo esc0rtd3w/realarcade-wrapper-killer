@@ -199,6 +199,7 @@ if %errorlevel% equ 0 (
 %kill% aminstantservice.exe
 
 set amiServiceInstalled=0
+set amiServiceInstalledCheck=2
 
 
 goto amiMenu
@@ -1027,7 +1028,7 @@ if %serverStatus%==0 (
 
 ::%baseReqListGames%
 
-%runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
+::%runShellWaitTerminate% "notepad.exe %temp%\ami-request.txt"
 ::set serverStatus=1
 
 goto amiMenu2
@@ -1139,23 +1140,33 @@ echo.
 %lyellow%
 echo Select an option from below
 echo.
+
+if %amiServiceInstalledCheck%==0 (
+%lred%
+)
+
+if %amiServiceInstalledCheck%==1 (
+%lgreen%
+)
 echo 1) Check For AMI Service
+%lyellow%
 echo.
 echo 2) Create AMI Service
-echo.
-echo 3) Delete AMI Service
+echo 3) Delete AMI Service (Stops First To Avoid Restart Issues)
 echo.
 echo 4) Start AMI Service
-echo.
 echo 5) Stop AMI Service
+echo.
+echo 6) Open Services Window
 echo.
 echo.
 echo B) Go Back
 echo.
 
-if %os%==XP choice /c:12345b /n
-if %os%==VISTA choice /c 12345b /n
-if errorlevel 6 goto amiMenu2
+if %os%==XP choice /c:123456b /n
+if %os%==VISTA choice /c 123456b /n
+if errorlevel 7 goto amiMenu2
+if errorlevel 6 goto svcOpen
 if errorlevel 5 goto svcStop
 if errorlevel 4 goto svcStart
 if errorlevel 3 goto svcDelete
@@ -1165,12 +1176,21 @@ if errorlevel 1 goto svcQuery
 goto svcOptions
 
 
+:svcOpen
+
+%runShellWaitTerminate% services.msc
+
+goto svcOptions
+
+
 :svcQuery
 %serviceQuery%
 if %errorlevel% equ 1060 (
 	set amiServiceInstalled=0
+	set amiServiceInstalledCheck=0
 	) else if %errorlevel% neq 1060 (
 	set amiServiceInstalled=1
+	set amiServiceInstalledCheck=1
 	)
 
 goto svcOptions
@@ -1180,8 +1200,10 @@ goto svcOptions
 %serviceQuery%
 if %errorlevel% equ 1060 (
 	set amiServiceInstalled=0
+	set amiServiceInstalledCheck=0
 	) else if %errorlevel% equ 0 (
 	set amiServiceInstalled=1
+	set amiServiceInstalledCheck=1
 	)
 
 goto svcOptions
@@ -1194,6 +1216,7 @@ goto svcOptions
 goto svcOptions
 
 :svcDelete
+%serviceStop%
 %serviceDelete%
 %serviceRegRemove%
 goto svcOptions
