@@ -769,6 +769,7 @@ echo.
 pause>nul
 
 taskkill /f /im "%gameExec%"
+taskkill /f /im "%serviceBin%"
 
 goto end
 
