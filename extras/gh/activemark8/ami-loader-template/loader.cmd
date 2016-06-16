@@ -5,6 +5,8 @@ title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 :reset
 mode con lines=26
 
+set root=%~dp0
+
 
 set bits=32
 
@@ -138,8 +140,6 @@ set zcat="%unix%\zcat.exe"
 ::set zip="%unix%\zip.exe"
 
 
-set wait=%~dp0loader\wait.exe
-
 ::-----------------------------------------------------------------------------------
 ::Set Windows OS Version
 ::-----------------------------------------------------------------------------------
@@ -221,7 +221,7 @@ set runTerminate=start ""
 set runWaitTerminate=start "" /wait
 
 
-:: AM Instant Server
+:: AM Instant Server Local
 set amInstantServer="%uraServicesRoot%\ami\aminstantservice.exe"
 set amInstantServerQuiet="%uraServicesRoot%\ami\aminstantservice.exe" --quiet
 set amInstantServerConsole="%uraServicesRoot%\ami\aminstantservice.exe" --console
@@ -238,15 +238,15 @@ set amInstantServerServiceUninstall="%uraServicesRoot%\ami\aminstantservice.exe"
 set amInstantServerServiceInstallAndStart="%uraServicesRoot%\ami\aminstantservice.exe" --service-install-and-start
 set amInstantServerUninstall="%uraServicesRoot%\ami\aminstantservice.exe" --uninstall
 
-:: AMI Paths
+:: AMI Paths Local
 set amPath=%pd%\activeMARK
 set amInstantPath=%pd%\activeMARK\instant
 set amInstantAppPath=%pd%\activeMARK\instant\apps
 
-:: AMI Game List
+:: AMI Game List Local
 set amiGameList="C:\Program Files\unRealArcade\gamelist\am-instant.txt"
 
-:: AMI Log
+:: AMI Log Local
 set amInstantLog="%amInstantPath%\aminstant.log"
 
 :: Remote GameHouse Player
@@ -255,8 +255,10 @@ set amInstantRemotePlayer=http://games-dl.gamehouse.com/gamehouse/activemark/ami
 
 
 
+set wait=%root%\loader\wait.exe
+set zip="%root%\sevenZ.exe" a -y -r
 
-set zip="%~dp0loader\sevenZ.exe" a -y -r
+
 
 set amiRequest="%temp%\ami-request.txt"
 
@@ -276,9 +278,7 @@ set sessionID=0000-00-00-00-00-00-000-0000000000000
 set deviceID=0000000000000000000000000000000000000000
 
 set amiVersion=0.00.00
-
 set serverStatus=0
-
 set unavailable=0
 
 
@@ -312,13 +312,6 @@ set pageNewGames=http://www.gamehouse.com/new-games
 
 set dumpPage=wget -d %memberCookie% -O %outFileTemp% %pageNewGames%
 
-:: Builds app folder name by taking the first 16 chars from name and cid and combining them
-
-:: gameNameDashes: jewel-quest-solitaire
-:: cid: 3675cb0b1a06f37e8c45f0fd3eab3393
-
-:: appDirName=jewel-quest-soli3675cb0b1a06f37e
-
 
 :: Set localhost port
 ::set port=27021
@@ -330,23 +323,11 @@ set reqDeviceIDHeader=/v1/init.json?query_id=0000000000000
 
 
 :: This must be rebuilt each time the game is changed
-::set reqGet=0
-::set reqGet=/v1/install.json?result=success^&installation_title=%gameNameTitleHTML%^&content_id=%cid%^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1
 set reqGet1=--header="/v1/install.json?result=success
 set reqGet2=^&installation_title=%gameNameTitleHTML%
 set reqGet3=^&content_id=%cid%
 set reqGet4=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1"
 set reqGet=%reqGet1%%reqGet2%%reqGet3%%reqGet4%
-
-
-:: Get Games List (BROKEN AS OF 20160615)
-::set reqGetListGames1=/v1/listGames.json?include_uninstalled=false
-::set reqGetListGames2=^&query_id=1463457306950
-::set reqGetListGames=%reqGetListGames1%^%reqGetListGames2%
-::echo %reqGetListGames1%
-::echo %reqGetListGames2%
-::echo %reqGetListGames%
-::pause
 
 
 set reqHost=--header="Host: localhost:%port%"
@@ -364,12 +345,6 @@ set baseReq=wget -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %re
 set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
 
-:: A few name fixes for updated RFS files (make better later!!!)
-::if %jsonRfsUrl%==clearit set baseReqDownloadRFS=wget %outFileRFS% "clearit_v2
-
-::set baseReqListGames=wget -d %reqGetListGames% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "http://localhost:%port%%reqGetListGames%"
-
-
 :: Device ID Request
 set reqGetDeviceId=wget -d %reqDeviceIDHeader% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
@@ -380,7 +355,6 @@ set download1=http://www.gamehouse.com/member/api/games/downloaddetails.json?amc
 
 set getSessionID=http://www.gamehouse.com/member/api/player/getsessionid.json
 
-:: http://games-dl.gamehouse.com/gamehouse/pc/h/hoyle-official-card-games-collection/hoyle-official-card-games-collection.rfs
 set remoteRfsBase=http://games-dl.gamehouse.com/gamehouse/pc
 
 set remoteRfsBase1=127.0.0.1:%port%/v1/install.json?result=success^&installation_title=
@@ -388,29 +362,13 @@ set remoteRfsBase2=^&content_id=
 set remoteRfsBase3=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc
 
 
-:: Successful Download Request
-:: http://localhost:%port%/v1/install.json?result=success&installation_title=Strike%20Solitaire&content_id=9f6a8eae6c2af6791074094b9bd8f181&rfs=http%3A%2F%2Fgames-dl.gamehouse.com%2Fgamehouse%2Fpc%2Fs%2Fstrike-solitaire%2Fstrike-solitaire.rfs
-
-:: /v1/install.json?result=success&installation_title=Strike%20Solitaire&content_id=9f6a8eae6c2af6791074094b9bd8f181&rfs=http%3A%2F%2Fgames-dl.gamehouse.com%2Fgamehouse%2Fpc%2Fs%2Fstrike-solitaire%2Fstrike-solitaire.rfs HTTP/1.1
-:: Host: localhost:%port%
-:: User-Agent: AmHttpClient 1.0
-:: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
-:: Accept-Language: en-US,en;q=0.5
-:: Accept-Encoding: gzip, deflate
-:: Referer: http://www.gamehouse.com/member/
-:: Origin: http://www.gamehouse.com
-:: Connection: keep-alive
-
-
 :: AMI Service Stuff
 set serviceBin=aminstantservice.exe
-::set args=--console
 set serviceArgs=--service-run
 set serviceName=AMInstantService
 set serviceDisplayName=activeMARK Instant Service
 set serviceDescription=activeMARK Instant Service
 set serviceStartupType=demand
-::set startupType=auto
 set errorType=ignore
 
 set serviceDescription=Enhances gaming experience from the web browsers
@@ -455,7 +413,24 @@ set remoteDownloadPartialCheck=type "%amPath%\instant\games.json" | findstr "gam
 set remoteDownloadInstalledCheck=type "%amPath%\instant\games.json" | findstr "gameinstalled"
 
 
+set readIni="%root%\loader\inifile.exe"
+
+goto loader
+
+
+
+
+:loader
+
+set tmpIniRead="%temp%\tmpIniRead.cmd"
+
+%readIni% "%root%\loader\settings.ini" [main] content_id > %tmpIniRead%
+call %tmpIniRead%
+set cid=%content_id%
+
 goto amiMenu
+
+
 
 
 
