@@ -8,6 +8,14 @@ color 0e
 mode con lines=26
 
 set root=%~dp0
+set rootClean=%ProgramData%\activeMARK
+
+rd /s /q "%rootClean%\data"
+rd /s /q "%rootClean%\dynamicdata"
+rd /s /q "%rootClean%\instant"
+rd /s /q "%rootClean%\licenses"
+rd /s /q "%rootClean%\stats"
+rd /s /q "%rootClean%\streaming"
 
 
 set bits=32
@@ -409,7 +417,7 @@ set remoteDownloadInstalledCheck=type "%amPath%\instant\games.json" | findstr "g
 
 set readIni="%root%loader\inifile.exe"
 
-
+set gameExec=0
 
 
 goto loader
@@ -430,9 +438,11 @@ xcopy /y /e /i /r "%root%licenses" "%amPath%\licenses"
 ::xcopy /y /e /i /r "%root%loader" "%amPath%\loader"
 xcopy /y /e /i /r "%root%streaming" "%amPath%\streaming"
 
+%wait% 1
+
 :: Merge games.json With Local
 echo.>>%amInstantPath%\games.json
-type %root%instant\games.json>>%amInstantPath%\games.json
+type %root%instant\games.json>>"%amInstantPath%\games.json"
 
 
 
@@ -450,6 +460,10 @@ set gameNameDashes=%game_name_dashes%
 %readIni% "%root%loader\settings.ini" [main] game_name > %tmpIniRead%
 call %tmpIniRead%
 set gameNameTitle=%game_name%
+
+%readIni% "%root%loader\settings.ini" [main] exe_launch > %tmpIniRead%
+call %tmpIniRead%
+set gameExec=%exe_launch%
 
 
 %lyellow%
@@ -723,10 +737,33 @@ if %errorlevel% equ 0 (
 	%serviceRegRemoveLicensing%
 	)
 
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%laqua%
+cls
+echo %gameNameTitle% Is Running....
+echo.
+echo.
+echo Press any key to kill %gameExec%....
+echo.
+echo.
+pause>nul
+
+taskkill /f /im "%gameExec%"
+
 goto end
 
 
 
 :end
+
+%wait% 5
+
+rd /s /q "%rootClean%\data"
+rd /s /q "%rootClean%\dynamicdata"
+rd /s /q "%rootClean%\instant"
+rd /s /q "%rootClean%\licenses"
+rd /s /q "%rootClean%\stats"
+rd /s /q "%rootClean%\streaming"
+
 
 exit
