@@ -3,6 +3,8 @@ title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 
 :reset
+color 0e
+
 mode con lines=26
 
 set root=%~dp0
@@ -419,6 +421,8 @@ goto loader
 
 %lyellow%
 cls
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+
 :: Copy Source Files To Local For Launch
 xcopy /y /e /i /r "%root%dynamicdata" "%amPath%\dynamicdata"
 xcopy /y /e /i /r "%root%instant\apps" "%amPath%\instant\apps"
@@ -457,6 +461,7 @@ echo.
 %wait% 2
 
 :: Get session ID
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 cls
 %baseReq%%getSessionID%
 copy /y %amiRequest% %amiRequestSessionID%
@@ -538,6 +543,7 @@ for /f "delims=: tokens=2" %%a in ('type %amiRequestDeviceId%') do (
 
 
 :: Cleanup Variables
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lyellow%
 cls
 echo Preparing To Launch %gameNameTitle%....
@@ -629,6 +635,7 @@ set appDirName=%gameNameDashesHalf%%cidHalf%
 
 
 :: Rebuild Headers
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lyellow%
 cls
 echo Preparing To Launch %gameNameTitle%....
@@ -653,6 +660,7 @@ set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
 
 
 :: Launch
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lgreen%
 cls
 echo Launching %gameNameTitle%....
