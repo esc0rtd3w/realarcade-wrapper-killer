@@ -177,7 +177,7 @@ set serviceStartupType=demand
 ::set startupType=auto
 set errorType=ignore
 
-set description=Enhances gaming experience from the web browsers
+set serviceDescription=Enhances gaming experience from the web browsers
 
 set servicePath=%SystemDrive%\Program Files\unRealArcade\services\ami
 
