@@ -458,11 +458,15 @@ xcopy /y /e /i /r "%root%streaming" "%amPath%\streaming"
 
 %wait% 1
 
+%lyellow%
+cls
+echo Loading Game Settings From INI....
+echo.
+echo.
+
 :: Merge games.json With Local
 echo.>>%amInstantPath%\games.json
 type %root%instant\games.json>>"%amInstantPath%\games.json"
-
-
 
 :: Get settings from INI
 set tmpIniRead="%temp%\tmpIniRead.cmd"
@@ -522,7 +526,7 @@ set /p sessionID=<%amiRequestSessionID%
 
 %lyellow%
 cls
-echo Gathering Game Information....
+echo Sending Magic Bytes To Local Server....
 echo.
 echo.
 
@@ -591,9 +595,10 @@ for /f "delims=, tokens=1" %%a in ('type %amiRequestTracking%') do (
 :: Get Device ID (from init.json)
 %reqGetDeviceId%%reqDeviceID%"
 
+
 %lyellow%
 cls
-echo Requesting Device ID....
+echo Sending Magic Bytes To Local Server....
 echo.
 echo.
 
@@ -808,7 +813,6 @@ if %errorlevel% equ 0 (
 	%serviceRegRemove%
 	%serviceRegRemoveLicensing%
 	
-	title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 	%lgreen%
 	cls
 	echo Launching %gameNameTitle%....
