@@ -14,6 +14,8 @@ title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 mode con lines=26
 
 set root=%~dp0
+set rootGame=%~dp0game
+set rootLoader=%~dp0loader
 set rootClean=%ProgramData%\activeMARK
 
 rd /s /q "%rootClean%\data"
@@ -450,11 +452,12 @@ title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %wait% 1
 
 :: Copy Source Files To Local For Launch
-xcopy /y /e /i /r "%root%dynamicdata" "%amPath%\dynamicdata"
-xcopy /y /e /i /r "%root%instant\apps" "%amPath%\instant\apps"
-xcopy /y /e /i /r "%root%licenses" "%amPath%\licenses"
-::xcopy /y /e /i /r "%root%loader" "%amPath%\loader"
-xcopy /y /e /i /r "%root%streaming" "%amPath%\streaming"
+xcopy /y /e /i /r "%rootGame%\dynamicdata" "%amPath%\dynamicdata"
+xcopy /y /e /i /r "%rootGame%\instant\apps" "%amPath%\instant\apps"
+xcopy /y /e /i /r "%rootGame%\licenses" "%amPath%\licenses"
+xcopy /y /e /i /r "%rootGame%\streaming" "%amPath%\streaming"
+
+::xcopy /y /e /i /r "%rootLoader%" "%amPath%\loader"
 
 %wait% 1
 
