@@ -1,6 +1,6 @@
 [Setup]
-AppName=RealArcade Demo Unwrapper v5.6.1
-AppVerName=RealArcade Demo Unwrapper v5.6.1
+AppName=RealArcade Demo Unwrapper v5.6.2
+AppVerName=RealArcade Demo Unwrapper v5.6.2
 DefaultDirName=C:\My Games
 OutputBaseFilename=RAWrapperKiller
 OutputDir=..\..\release
@@ -25,11 +25,11 @@ Uninstallable=false
 CreateUninstallRegKey=false
 WizardImageFile=inno\WizModernImage.bmp
 WizardSmallImageFile=inno\WizModernSmallImage.bmp
-VersionInfoVersion=5.6.1
+VersionInfoVersion=5.6.2
 VersionInfoCompany=cRypTiCwaRe
 VersionInfoDescription=Unpack ALL RealArcade/Gamehouse RGS/RGA/RFS Games
 VersionInfoProductName=RealArcade Wrapper Killer
-VersionInfoProductVersion=5.6.1
+VersionInfoProductVersion=5.6.2
 ;LicenseFile=..\rawk_license.txt
 ;InfoBeforeFile=..\rawk_info.txt
 
