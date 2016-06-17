@@ -31,7 +31,7 @@ taskkill /f /t /im "RNArcade.exe"
 set gamesroot=C:\My Games
 set downloadroot=C:\My Download Files
 
-set root=%ProgramFiles%\unRealArcade\loaderRGSv2
+set root=%ProgramFiles%\unRealArcade\loaders\loaderRGSv2
 
 set unpacked=0
 

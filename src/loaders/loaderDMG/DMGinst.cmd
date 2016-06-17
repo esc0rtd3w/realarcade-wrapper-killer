@@ -25,7 +25,7 @@ if errorlevel 1 set os=XP
 set gamesroot=C:\Gamehouse Mac Games\
 set downloadroot=C:\My Download Files
 
-set root=%ProgramFiles%\unRealArcade\loaderDMG
+set root=%ProgramFiles%\unRealArcade\loaders\loaderDMG
 
 set unpacked=0
 

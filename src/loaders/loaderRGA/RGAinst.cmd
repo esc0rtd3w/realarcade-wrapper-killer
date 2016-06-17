@@ -25,7 +25,7 @@ if errorlevel 1 set os=XP
 set gamesroot=C:\Gamehouse Games
 set downloadroot=C:\My Download Files
 
-set root=%ProgramFiles%\unRealArcade\loaderRGA
+set root=%ProgramFiles%\unRealArcade\loaders\loaderRGA
 
 set unpacked=0
 

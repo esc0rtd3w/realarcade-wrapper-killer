@@ -4,6 +4,7 @@ title RealArcade Wrapper Killer    (.-+'~^-+ RGS Loader v2.1.2 +-^~`+-.)     [..
 
 color 4f
 
+set root=%ProgramFiles%\unRealArcade\loaders\loaderRGSv1
 
 
 nircmd exec hide "RGSinst.exe" /m application/vnd.rn-rn_secured_installer %1
