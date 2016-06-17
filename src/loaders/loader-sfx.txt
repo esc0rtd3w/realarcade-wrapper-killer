@@ -1,6 +1,6 @@
 ;The comment below contains SFX script commands
 
-Path=C:\Program Files\unRealArcade
+Path=C:\Program Files\unRealArcade\loaders
 SavePath
 Silent=1
 Overwrite=1
