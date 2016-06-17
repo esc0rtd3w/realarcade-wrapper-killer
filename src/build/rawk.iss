@@ -215,13 +215,13 @@ Source: ..\gui\uradl.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: 
 Source: ..\services\ami\aminstantservice.exe; DestDir: "C:\Program Files\unRealArcade\services\ami"; Flags: overwritereadonly
 
 ; GH Web Scraper
-Source: ..\web\GHWebScraper\bin\Release\GHWebScraper.exe; DestDir: "C:\Program Files\unRealArcade\tools"; Flags: overwritereadonly
+Source: ..\tools\GHWebScraper\bin\Release\GHWebScraper.exe; DestDir: "C:\Program Files\unRealArcade\tools"; Flags: overwritereadonly
 
 ; URA Web Browser
-Source: ..\web\URABrowser\Debug\URABrowser.exe; DestDir: "C:\Program Files\unRealArcade\tools"; Flags: overwritereadonly
+Source: ..\tools\URABrowser\Debug\URABrowser.exe; DestDir: "C:\Program Files\unRealArcade\tools"; Flags: overwritereadonly
 
 ; AM Instant Injector
-Source: ..\web\AMInjector\Debug\AMInjector.exe; DestDir: "C:\Program Files\unRealArcade\tools"; Flags: overwritereadonly
+Source: ..\tools\AMInjector\Debug\AMInjector.exe; DestDir: "C:\Program Files\unRealArcade\tools"; Flags: overwritereadonly
 
 ; Game Lists
 Source: ..\gamelist\am-instant.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
