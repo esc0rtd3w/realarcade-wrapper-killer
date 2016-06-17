@@ -148,6 +148,7 @@ set rgsroot=http://games-dl2.real.com/gameconsole/games/demorgses
 ::-----------------------------------------------------------------------------------
 
 set uraRoot=C:\Program Files\unRealArcade
+set uraLoadersRoot=C:\Program Files\unRealArcade\loaders
 set uraToolsRoot=C:\Program Files\unRealArcade\tools
 set uraServicesRoot=C:\Program Files\unRealArcade\services
 set uraStubRoot=C:\Program Files\unRealArcade\stubs
@@ -553,6 +554,7 @@ set amInstantAppPath=%pd%\activeMARK\instant\apps
 
 :: AMI Game List
 set amiGameList="C:\Program Files\unRealArcade\gamelist\am-instant.txt"
+set amiGameListCID="C:\Program Files\unRealArcade\gamelist\content-id.txt"
 
 :: AMI Log
 set amInstantLog="%amInstantPath%\aminstant.log"
