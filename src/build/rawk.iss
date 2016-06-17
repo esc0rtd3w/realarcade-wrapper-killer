@@ -228,6 +228,14 @@ Source: ..\tools\AMI_Game_Monitor\Debug\AMI_Game_Monitor.exe; DestDir: "C:\Progr
 
 ; Game Lists
 Source: ..\gamelist\am-instant.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
+Source: ..\gamelist\content-id.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
+Source: ..\gamelist\names-DE.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
+Source: ..\gamelist\names-EN.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
+Source: ..\gamelist\names-ES.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
+Source: ..\gamelist\names-FR.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
+Source: ..\gamelist\names-IT.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
+Source: ..\gamelist\names-JP.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
+Source: ..\gamelist\names-NL.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
 
 ; Unix Utilities
 Source: ..\sys32\unix-utils.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
