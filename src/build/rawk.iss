@@ -223,6 +223,9 @@ Source: ..\tools\URABrowser\Debug\URABrowser.exe; DestDir: "C:\Program Files\unR
 ; AM Instant Injector
 Source: ..\tools\AMInjector\Debug\AMInjector.exe; DestDir: "C:\Program Files\unRealArcade\tools"; Flags: overwritereadonly
 
+; AM Game Monitor
+Source: ..\tools\AMI_Game_Monitor\Debug\AMI_Game_Monitor.exe; DestDir: "C:\Program Files\unRealArcade\tools"; Flags: overwritereadonly
+
 ; Game Lists
 Source: ..\gamelist\am-instant.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
 
