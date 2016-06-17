@@ -1,0 +1,3 @@
+﻿  stdafx.cpp
+  AMI_Game_Monitor.cpp
+AMI_Game_Monitor.cpp(16): fatal error C1190: managed targeted code requires a '/clr' option
