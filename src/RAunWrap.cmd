@@ -39,6 +39,11 @@ regedit /s "C:\Program Files\unRealArcade\loaders\loaderDMG\setDMG.reg"
 "C:\Program Files\unRealArcade\temp\loaderRFS.exe"
 regedit /s "C:\Program Files\unRealArcade\loaders\loaderRFS\setRFS.reg"
 
+:: New AMI Loader (activeMARK Instant Server)
+::%rgsloader6%
+"C:\Program Files\unRealArcade\temp\loaderAMI.exe"
+regedit /s "C:\Program Files\unRealArcade\loaders\loaderAMI\setAMI.reg"
+
 ::-----------------------------------------------------------------------------------
 :: Using ORIGINAL RealArcade Uninstaller (added 20110221)
 ::--------------------------------------------------------
