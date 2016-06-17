@@ -22,22 +22,22 @@ set rawkver=5.6.2
 :: New v2.0 RGS Loader
 ::%rgsloader2%
 "C:\Program Files\unRealArcade\temp\loaderRGSv2.exe"
-regedit /s "C:\Program Files\unRealArcade\loaderRGSv2\setRGS.reg"
+regedit /s "C:\Program Files\unRealArcade\loaders\loaderRGSv2\setRGS.reg"
 
 :: New RGA Loader
 ::%rgsloader3%
 "C:\Program Files\unRealArcade\temp\loaderRGA.exe"
-regedit /s "C:\Program Files\unRealArcade\loaderRGA\setRGA.reg"
+regedit /s "C:\Program Files\unRealArcade\loaders\loaderRGA\setRGA.reg"
 
 :: New DMG Loader
 ::%rgsloader4%
 "C:\Program Files\unRealArcade\temp\loaderDMG.exe"
-regedit /s "C:\Program Files\unRealArcade\loaderDMG\setDMG.reg"
+regedit /s "C:\Program Files\unRealArcade\loaders\loaderDMG\setDMG.reg"
 
 :: New RFS Loader
 ::%rgsloader5%
 "C:\Program Files\unRealArcade\temp\loaderRFS.exe"
-regedit /s "C:\Program Files\unRealArcade\loaderRFS\setRFS.reg"
+regedit /s "C:\Program Files\unRealArcade\loaders\loaderRFS\setRFS.reg"
 
 ::-----------------------------------------------------------------------------------
 :: Using ORIGINAL RealArcade Uninstaller (added 20110221)
