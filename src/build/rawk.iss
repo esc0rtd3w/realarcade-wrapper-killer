@@ -175,6 +175,9 @@ Source: ..\demoGH.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstal
 Source: ..\demoZY.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 
 
+
+; All Loaders
+
 ; RGS Loader v1.0
 Source: ..\loaders\loaderRGSv1.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
 
@@ -189,6 +192,11 @@ Source: ..\loaders\loaderDMG.exe; DestDir: "C:\Program Files\unRealArcade\temp";
 
 ; RFS Loader Files
 Source: ..\loaders\loaderRFS.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+
+; AMI Loader Files
+Source: ..\loaders\loaderAMI.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+
+
 
 ;RealArcade Spoofer
 Source: ..\rna\rnaspoof.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
