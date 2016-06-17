@@ -6,6 +6,21 @@ RealArcade Wrapper Killer Version History From NFO Files
 
 
 
+v5.6.1
+----------
+
+	* UPDATED: RAWK Core to v3.0.9
+
+                   * Added new standalone AMI Game Launcher
+
+                   * Updated All Gamelists For Local Storage
+
+                   * Fixed ALL launching issues with new AMI games
+
+                   * Moved OGM and AMI into "services" directory
+
+
+
 v5.6
 ----------
 
