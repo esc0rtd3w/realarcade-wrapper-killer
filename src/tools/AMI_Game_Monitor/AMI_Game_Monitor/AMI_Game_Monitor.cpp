@@ -27,12 +27,14 @@ private:
 	static void OnChanged(Object^ /*source*/, FileSystemEventArgs^ e)
 	{
 		// Specify what is done when a file is changed, created, or deleted.
+		//Console::WriteLine("File: {0} {1}", e->FullPath, e->ChangeType);
 		Console::WriteLine("File: {0} {1}", e->FullPath, e->ChangeType);
 	}
 
 	static void OnRenamed(Object^ /*source*/, RenamedEventArgs^ e)
 	{
 		// Specify what is done when a file is renamed.
+		//Console::WriteLine("File: {0} renamed to {1}", e->OldFullPath, e->FullPath);
 		Console::WriteLine("File: {0} renamed to {1}", e->OldFullPath, e->FullPath);
 	}
 
@@ -40,14 +42,50 @@ public:
 	[PermissionSet(SecurityAction::Demand, Name = "FullTrust")]
 	int static run()
 	{
+
+		Console::Title = "activeMARK Instant Server Game Monitor";
+
 		array<String^>^args = System::Environment::GetCommandLineArgs();
 
-		// If a directory is not specified, exit program.
+		// If no args specified, do something
 		if (args->Length != 2)
 		{
 			// Display the proper way to call the program.
-			Console::WriteLine("Usage: amigm.exe [$directory]");
-			return 0;
+			//Console::WriteLine("Usage: amigm.exe [$directory]");
+			Console::WriteLine("Usage: amigm.exe [options] [$directory (optional with --directory)]");
+			return 420;
+		}
+
+		// For this part, I got a little help from here: http://www.cplusplus.com/forum/articles/13355/
+		if (args)
+		{
+			int i = 1;
+			int arg = 1;
+			int argv1[1];
+			int argv2[1];
+			int argv3[1];
+			if (i + 1 != arg)
+				if (args[i] == "--debug") {
+					arg = argv1[i + 1];
+					Console::WriteLine("--debug: ");
+				}
+				else if (args[i] == "--directory") {
+					arg = argv2[i + 1];
+					Console::WriteLine("--directory: ");
+				}
+				else if (args[i] == "--help") {
+					arg = argv3[i + 1];
+					Console::WriteLine("--help: ");
+				}
+				else {
+					std::cout << "Not enough or invalid arguments, please try again.\n";
+					Sleep(2000);
+				}
+
+			// Display the proper way to call the program.
+			//Console::WriteLine("Usage: amigm.exe [$directory]");
+			Console::WriteLine(args[0] + " " + args[1]);
+			return 101;
 		}
 
 		// Create a new FileSystemWatcher and set its properties.
