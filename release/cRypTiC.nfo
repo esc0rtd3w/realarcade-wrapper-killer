@@ -176,6 +176,8 @@
 
                    * Added new standalone AMI Game Launcher
 
+                   * Updated All Gamelists For Local Storage
+
                    * Fixed ALL launching issues with new AMI games
 
                    * Moved OGM and AMI into "services" directory
