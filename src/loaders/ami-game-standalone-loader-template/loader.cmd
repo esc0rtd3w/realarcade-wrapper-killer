@@ -995,6 +995,11 @@ del /f /q %amiRequestSessionID%
 del /f /q "%temp%\ami-json-parse.txt"
 del /f /q "%temp%\amiVersion.cmd"
 
+del /f /q %regFileServiceUninstall%
+del /f /q %regFileServiceMain%
+
+del /f /q %servicePathRegFormattedTempFile%
+
 
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lgreen%
