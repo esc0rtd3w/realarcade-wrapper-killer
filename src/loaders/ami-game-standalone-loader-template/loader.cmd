@@ -409,7 +409,11 @@ set servicePathRemote=0
 ::set serviceRegUninstVersionMajor="VersionMajor"="8"
 ::set serviceRegUninstVersionMinor="VersionMinor"="45"
 
-set serviceRegUninstMainKey64=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v "" /t REG_SZ /d "" /f
+
+:: Write Registry Directly (Issues 20160618)
+set serviceRegUninstMainKeyFix164=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /f
+set serviceRegUninstMainKeyFix264=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games"
+set serviceRegUninstMainKeyFix364=%regDelete% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v "" /f
 set serviceRegUninstDisplayIcon64=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v DisplayIcon /t REG_SZ /d "%servicePathEmbedded%\%serviceBin%" /f
 set serviceRegUninstDisplayVersion64=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v DisplayName /t REG_SZ /d "activeMARK Instant Service" /f
 set serviceRegUninstDisplayName64=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v DisplayVersion /t REG_SZ /d "8.45.43" /f
@@ -421,7 +425,9 @@ set serviceRegUninstUninstallString64=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6
 set serviceRegUninstVersionMajor64=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v VersionMajor /t REG_SZ /d "8" /f
 set serviceRegUninstVersionMinor64=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v VersionMinor /t REG_SZ /d "45" /f
 
-set serviceRegUninstMainKey32=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v "" /t REG_SZ /d "" /f
+set serviceRegUninstMainKeyFix132=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /f
+set serviceRegUninstMainKeyFix232=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games"
+set serviceRegUninstMainKeyFix332=%regDelete% "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v "" /f
 set serviceRegUninstDisplayIcon32=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v DisplayIcon /t REG_SZ /d "%servicePathEmbedded%\%serviceBin%" /f
 set serviceRegUninstDisplayVersion32=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v DisplayName /t REG_SZ /d "activeMARK Instant Service" /f
 set serviceRegUninstDisplayName32=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v DisplayVersion /t REG_SZ /d "8.45.43" /f
@@ -441,10 +447,13 @@ set serviceRegUninstVersionMinor32=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Microso
 ::set serviceRegSvcDisplayName="DisplayName"="activeMARK Instant Service"
 ::set serviceRegSvcImagePath="ImagePath"="\"C:\\Program Files\\unRealArcade\\services\\ami\\aminstantservice.exe\" --service-run"
 
-set serviceRegSvcMainKey=%regAdd% "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService" /v "" /t REG_SZ /d "" /f
+
+:: Write Registry Directly (Issues 20160618)
+set serviceRegSvcMainKey=%regAdd% "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService" /f
 set serviceRegSvcDisplayName=%regAdd% "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService" /v DisplayName /t REG_SZ /d "activeMARK Instant Service" /f
 set serviceRegSvcErrorControl=%regAdd% "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService" /v ErrorControl /t REG_DWORD /d 1 /f
 set serviceRegSvcImagePath=%regAdd% "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService" /v ImagePath /t REG_SZ /d "\"%servicePathEmbedded%\%serviceBin%\" --service-run" /f
+::set serviceRegSvcImagePath=%regAdd% "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService" /v ImagePath /t REG_SZ /d "%servicePathEmbedded%\%serviceBin% --service-run" /f
 set serviceRegSvcStart=%regAdd% "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService" /v Start /t REG_DWORD /d 3 /f
 set serviceRegSvcType=%regAdd% "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService" /v Type /t REG_DWORD /d 16 /f
 
@@ -462,6 +471,7 @@ set serviceStart=net start "%serviceName%"
 set serviceStop=net stop "%serviceName%"
 
 set serviceRegAdd=regedit /s "%loaderPathRegistry%\ami-launch-fix-%bits%.reg"
+set serviceRegAddMinimal=regedit /s "%loaderPathRegistry%\ami-launch-fix-minimal-%bits%.reg"
 set serviceRegAddFixKeys=regedit /s "%loaderPathRegistry%\ami-launch-fix-keys-only-%bits%.reg"
 set serviceRegRemove=regedit /s "%loaderPathRegistry%\ami-launch-fix-remove.reg"
 set serviceRegRemoveLicensing=regedit /s "%loaderPathRegistry%\ami-remove-licensing.reg"
@@ -832,33 +842,23 @@ echo.
 if %bits%==32 (
 
 	%serviceRegAddFixKeys%
-	%serviceRegUninstDisplayIcon32%
-	%serviceRegUninstDisplayVersion32%
-	%serviceRegUninstDisplayName32%
+	%serviceRegAddMinimal%
+	%serviceRegUninstMainKey32%
 	%serviceRegUninstInstallDir32%
 	%serviceRegUninstInstallLocation32%
 	%serviceRegUninstServicePath32%
 	%serviceRegUninstUninstallString32%
-	%serviceRegUninstPublisher32%
-	%serviceRegUninstVersionMajor32%
-	%serviceRegUninstVersionMinor32%
-	%serviceRegCleanUnwanted%
 )
 
 if %bits%==64 (
 
 	%serviceRegAddFixKeys%
-	%serviceRegUninstDisplayIcon64%
-	%serviceRegUninstDisplayVersion64%
-	%serviceRegUninstDisplayName64%
+	%serviceRegAddMinimal%
+	%serviceRegUninstMainKey64%
 	%serviceRegUninstInstallDir64%
 	%serviceRegUninstInstallLocation64%
 	%serviceRegUninstServicePath64%
 	%serviceRegUninstUninstallString64%
-	%serviceRegUninstPublisher64%
-	%serviceRegUninstVersionMajor64%
-	%serviceRegUninstVersionMinor64%
-	%serviceRegCleanUnwanted%
 )
 
 %serviceRegSvcMainKey%
@@ -867,8 +867,10 @@ if %bits%==64 (
 %serviceRegSvcImagePath%
 %serviceRegSvcStart%
 %serviceRegSvcType%
+pause
 
 %serviceStart%
+pause
 
 %runShellWaitTerminate% %baseReq%%launch1%%cid%%launch2%
 pause
@@ -965,34 +967,18 @@ set returnTo=extractOK
 :: Write Registry Settings
 if %bits%==32 (
 
-	%serviceRegAddFixKeys%
-	%serviceRegUninstDisplayIcon32%
-	%serviceRegUninstDisplayVersion32%
-	%serviceRegUninstDisplayName32%
 	%serviceRegUninstInstallDir32%
 	%serviceRegUninstInstallLocation32%
 	%serviceRegUninstServicePath32%
 	%serviceRegUninstUninstallString32%
-	%serviceRegUninstPublisher32%
-	%serviceRegUninstVersionMajor32%
-	%serviceRegUninstVersionMinor32%
-	%serviceRegCleanUnwanted%
 )
 
 if %bits%==64 (
 
-	%serviceRegAddFixKeys%
-	%serviceRegUninstDisplayIcon64%
-	%serviceRegUninstDisplayVersion64%
-	%serviceRegUninstDisplayName64%
 	%serviceRegUninstInstallDir64%
 	%serviceRegUninstInstallLocation64%
 	%serviceRegUninstServicePath64%
 	%serviceRegUninstUninstallString64%
-	%serviceRegUninstPublisher64%
-	%serviceRegUninstVersionMajor64%
-	%serviceRegUninstVersionMinor64%
-	%serviceRegCleanUnwanted%
 )
 
 %serviceStart%
