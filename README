@@ -13,10 +13,6 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
 
 
-
-
-
-
                    ²²²²²²²                          ²²²²²        ²²²²²
                  ²²²²²² ²²²                     ²²²²²  ²²       ²²²²²²
            ²²²²² ²²²²²²  ²²      ²²   ²²²²²²²² ²²²²² ²²²  ²²²² ²² ²²²²
@@ -95,10 +91,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 Ü  ßßß                      ßÛÛ² ÛÛÛ NEWS ÛÛÛ ²ÛÛß    Û                  ßßß Ü
       
 
-        * Now fully supporting ActiveMark Instant Server (AMIS). There are
-          available options for parsing JSON files, using custom GET commands
-          to download extracted RFS files, launching game, checking installed
-          games, and more. The scripting also supports many other options.
+        * No Major News At The Moment :(
 
 
                                [ SUPER OLD NEWS ]
@@ -112,6 +105,11 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
 
                                  [ OLD NEWS ]
+
+        * Now fully supporting ActiveMark Instant Server (AMIS). There are
+          available options for parsing JSON files, using custom GET commands
+          to download extracted RFS files, launching game, checking installed
+          games, and more. The scripting also supports many other options.
 
         * I have missed a lot of news over the past couple years. There
           have been multiple iterations of RGA formats that now have

@@ -77,10 +77,7 @@
 ‹  ﬂﬂﬂ                      ﬂ€€≤ €€€ NEWS €€€ ≤€€ﬂ    €                  ﬂﬂﬂ ‹
       
 
-        * Now fully supporting ActiveMark Instant Server (AMIS). There are
-          available options for parsing JSON files, using custom GET commands
-          to download extracted RFS files, launching game, checking installed
-          games, and more. The scripting also supports many other options.
+        * No Major News At The Moment :(
 
 
                                [ SUPER OLD NEWS ]
@@ -94,6 +91,11 @@
 
 
                                  [ OLD NEWS ]
+
+        * Now fully supporting ActiveMark Instant Server (AMIS). There are
+          available options for parsing JSON files, using custom GET commands
+          to download extracted RFS files, launching game, checking installed
+          games, and more. The scripting also supports many other options.
 
         * I have missed a lot of news over the past couple years. There
           have been multiple iterations of RGA formats that now have
