@@ -620,6 +620,8 @@ xcopy /y /e /i /r "%gamePathLicenses%" "%amPath%\licenses"
 xcopy /y /e /i /r "%gamePathStats%" "%amPath%\stats"
 xcopy /y /e /i /r "%gamePathStreaming%" "%amPath%\streaming"
 
+rd /s /q "%pd%\com.gamehouse.aminstaller"
+
 %wait% 1
 
 %lyellow%
@@ -1178,6 +1180,8 @@ rd /s /q "%rootClean%\instant"
 rd /s /q "%rootClean%\licenses"
 rd /s /q "%rootClean%\stats"
 rd /s /q "%rootClean%\streaming"
+
+rd /s /q "%pd%\com.gamehouse.aminstaller"
 
 
 exit
