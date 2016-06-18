@@ -882,7 +882,7 @@ set appDirName=%gameNameDashesHalf%%cidHalf%
 
 :: Rebuild Headers
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
-%laqua%
+%lyellow%
 cls
 echo Preparing To Launch %gameNameTitle%....
 echo.
@@ -908,11 +908,12 @@ set baseReqDownloadRFS=%wget% %outFileRFS% "%jsonRfsUrl%
 
 :: Launch
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
-%laqua%
+%lgreen%
 cls
 echo Preparing To Launch %gameNameTitle%....
 echo.
 echo.
+
 %serviceCreate%
 %serviceCreateAddDescription%
 
@@ -928,7 +929,7 @@ regedit /s %regFileServiceMain%
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lgreen%
 cls
-echo Launching %gameNameTitle%....
+echo Preparing To Launch %gameNameTitle%....
 echo.
 echo.
 
