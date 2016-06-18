@@ -470,6 +470,7 @@ set serviceRegUninstVersionMinor="VersionMinor"="%amiVersionMinor%"
 
 if exist %regFileServiceUninstall% del /f /q %regFileServiceUninstall%
 echo %regHeaderDefault%>>%regFileServiceUninstall%
+echo.>>%regFileServiceUninstall%
 echo %serviceRegUninstMainKey%>>%regFileServiceUninstall%
 echo %serviceRegUninstDisplayIcon%>>%regFileServiceUninstall%
 echo %serviceRegUninstDisplayVersion%>>%regFileServiceUninstall%
@@ -532,7 +533,8 @@ set serviceRegSvcDisplayName="DisplayName"="%serviceDisplayName%"
 set serviceRegSvcImagePath="ImagePath"="%serviceBinPathRegFormatted% %serviceArgs%"
 
 if exist %regFileServiceMain% del /f /q %regFileServiceMain%
-echo %regHeaderDefault%>>%regFileServiceUninstall%
+echo %regHeaderDefault%>>%regFileServiceMain%
+echo.>>%regFileServiceMain%
 echo %serviceRegSvcMainKey%>>%regFileServiceMain%
 echo %serviceRegSvcType%>>%regFileServiceMain%
 echo %serviceRegSvcStart%>>%regFileServiceMain%
@@ -880,11 +882,12 @@ set appDirName=%gameNameDashesHalf%%cidHalf%
 
 :: Rebuild Headers
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
-%lyellow%
+%laqua%
 cls
 echo Preparing To Launch %gameNameTitle%....
 echo.
 echo.
+
 set reqGet1=--header="/v1/install.json?result=success
 set reqGet2=^&installation_title=%gameNameTitleHTML%
 set reqGet3=^&content_id=%cid%
@@ -905,20 +908,34 @@ set baseReqDownloadRFS=%wget% %outFileRFS% "%jsonRfsUrl%
 
 :: Launch
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
-%lgreen%
+%laqua%
 cls
-echo Launching %gameNameTitle%....
+echo Preparing To Launch %gameNameTitle%....
 echo.
 echo.
 %serviceCreate%
 %serviceCreateAddDescription%
 
+%wait% 2
+
 regedit /s %regFileServiceUninstall%
 regedit /s %regFileServiceMain%
 
+%wait% 3
+
 %serviceStart%
 
-%runShellWaitTerminate% %baseReq%%launch1%%cid%%launch2%
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%lgreen%
+cls
+echo Launching %gameNameTitle%....
+echo.
+echo.
+
+%wait% 1
+
+::%runShellWaitTerminate% %baseReq%%launch1%%cid%%launch2%
+%baseReq%%launch1%%cid%%launch2%
 
 
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
@@ -927,6 +944,7 @@ cls
 echo Launching %gameNameTitle%....
 echo.
 echo.
+
 :: Kill Server As Soon As Game Launches To Stop Time Tracking (20160615)
 %serviceStop%
 %serviceDelete%
@@ -951,6 +969,13 @@ echo.
 %kill% aminstantservice.exe
 %kill% aminstantservice.exe
 
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%lgreen%
+cls
+echo Launching %gameNameTitle%....
+echo.
+echo.
+
 del /f /q "%temp%\tmp.tmp"
 
 del /f /q %amiRequest%
@@ -969,6 +994,13 @@ del /f /q %amiRequestSessionID%
 del /f /q "%temp%\ami-json-parse.txt"
 del /f /q "%temp%\amiVersion.cmd"
 
+
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%lgreen%
+cls
+echo Launching %gameNameTitle%....
+echo.
+echo.
 
 :: Force Remove AMI Service Upon Exit
 %serviceQuery%
@@ -1007,13 +1039,23 @@ goto end
 set returnTo=extractOK
 
 %wait% 2
+
 %serviceCreate%
 %serviceCreateAddDescription%
+
+%wait% 2
 
 regedit /s %regFileServiceUninstall%
 regedit /s %regFileServiceMain%
 
+%wait% 3
+
 %serviceStart%
+
+%wait% 1
+
+::%runShellWaitTerminate% %baseReq%%launch1%%cid%%launch2%
+%baseReq%%launch1%%cid%%launch2%
 
 %wait% 5
 
