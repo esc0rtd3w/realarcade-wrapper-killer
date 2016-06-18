@@ -592,7 +592,8 @@ set pathDataGameSaves=%pd%\
 set pathDataGameSettings=%pd%\
 set checkForGameSave=call "%loaderPathScripts%\save_check.cmd"
 
-
+set gameSavePath=0
+set gameSavePathType=0
 
 goto loader
 
@@ -600,8 +601,6 @@ goto loader
 
 
 :loader
-
-%checkForGameSave%
 
 %lyellow%
 cls
@@ -652,6 +651,18 @@ set gameNameTitle=%game_name%
 %readIni% "%loaderPath%\settings.ini" [main] exe_launch > %tmpIniRead%
 call %tmpIniRead%
 set gameExec=%exe_launch%
+
+%readIni% "%loaderPath%\settings.ini" [main] save_external > %tmpIniRead%
+call %tmpIniRead%
+set gameSavePathType=%save_external%
+
+%readIni% "%loaderPath%\settings.ini" [main] save_path > %tmpIniRead%
+call %tmpIniRead%
+set gameSavePath=%save_path%
+
+
+
+%checkForGameSave%
 
 
 %lyellow%
