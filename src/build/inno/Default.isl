@@ -100,7 +100,8 @@ NewFolderName=
 
 ; *** "Welcome" wizard page
 WelcomeLabel1=Supports XP, Vista, 7, 8, 8.1, 10
-WelcomeLabel2=This will remove the demo protection on any RealArcade / Gamehouse v1.2 (RGS) game (*_free.rgs).%n%nThese games can be downloaded using the older v1.2 player, or by using the included "ra1_games.htm" file.%n%nThis tool will also handle Gamehouse and Zylom game variants!%n%nCurrently the Gamehouse and Zylom RGA archives can only be extracted, but most newer games will still be in trial mode.%n%nPlease click > > > and then click [ FIND GAME HERE ] on the next page to select your game's folder [Default C:\My Games\GameName\]%n%nThe entire process takes about 30 seconds or less.
+;WelcomeLabel2=This will remove the demo protection on any RealArcade / Gamehouse v1.2 (RGS) game (*_free.rgs).%n%nThese games can be downloaded using the older v1.2 player, or by using the included "ra1_games.htm" file.%n%nThis tool will also handle Gamehouse and Zylom game variants!%n%nCurrently the Gamehouse and Zylom RGA archives can only be extracted, but most newer games will still be in trial mode.%n%nPlease click > > > and then click [ FIND GAME HERE ] on the next page to select your game's folder [Default C:\My Games\GameName\]%n%nThe entire process takes about 30 seconds or less.
+WelcomeLabel2=This will remove the demo protection on any RealArcade / Gamehouse v1.2 (RGS) game (*_free.rgs).%n%nThis protection scheme is now considered legacy and game installers are no longer available from GameHouse.%n%nThis tool will handle Gamehouse and Zylom RGA game variants, but archives can only be extracted.%n%nThere is now support for new 2016 RFS files. These files cannot currently be extracted locally, but can be extracted remotely from GameHouse servers by using the included activeMARK Instant Server menu, available as a hotkey.%n%nTo use any of the additional or advanced tools and options, choose the default "My Games" folder [Default C:\My Games\GameName\] and options will be available.
 
 ; *** "Password" wizard page
 WizardPassword=Password
@@ -133,11 +134,12 @@ UserInfoSerial=&Serial Number:
 UserInfoNameRequired=You must enter a name.
 
 ; *** "Select Destination Location" wizard page
-WizardSelectDir=RealNetworks RGS Game Unpacking Script Ready...
+;WizardSelectDir=RealNetworks RGS Game Unpacking Script Ready...
+WizardSelectDir=RealNetworks/GameHouse Multi Scripting Engine Ready!
 ;Use spaces for non (x.x.x) releases like this (x.x  )
 
 ; 103 characters for one line
-SelectDirDesc=Rls: 5.6.2   Cores: Main/3.1.0   RNA/1.9.4   GH/1.0.1   ZY/1.0.0   DB: Main/1.3.1    Loaders: RGS/2.1.3    RGA/1.0.2    DMG/1.0.1    RFS/1.0.2    AMI/1.0.0
+SelectDirDesc=Rls: 5.6.2   DB: RA/1.3.1   Cores: Main/3.1.0   RNA/1.9.4   GH/1.0.1   ZY/1.0.0    Loaders: RGS/2.1.3    RGA/1.0.2    DMG/1.0.1    RFS/1.0.2    AMI/1.0.0
 
 SelectDirLabel3=YOU MUST SELECT YOUR GAMES FOLDER BEFORE CONTINUING!!!
 SelectDirBrowseLabel=Enter The Path of The Target Game Here:
