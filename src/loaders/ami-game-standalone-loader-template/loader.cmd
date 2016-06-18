@@ -313,7 +313,6 @@ set gameNameUnderscoresSet="%temp%\gameNameUnderscores.txt"
 set sessionID=0000-00-00-00-00-00-000-0000000000000
 set deviceID=0000000000000000000000000000000000000000
 
-set amiVersion=0.00.00
 set serverStatus=0
 set unavailable=0
 
@@ -438,6 +437,7 @@ set servicePathRegFormatted=%servicePathRegFormattedTemp%\\
 set serviceBinPathRegFormatted=%servicePathRegFormattedTemp%\\%serviceBin%
 set serviceUninstPathRegFormatted=%servicePathRegFormattedTemp%\\uninst.exe
 
+set regHeaderDefault=Windows Registry Editor Version 5.00
 
 :: Reg Entry #1
 ::set serviceRegUninstMainKey=[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games]
@@ -468,6 +468,8 @@ set serviceRegUninstPublisher="Publisher"="%amiPublisher%"
 set serviceRegUninstVersionMajor="VersionMajor"="%amiVersionMajor%"
 set serviceRegUninstVersionMinor="VersionMinor"="%amiVersionMinor%"
 
+if exist %regFileServiceUninstall% del /f /q %regFileServiceUninstall%
+echo %regHeaderDefault%>>%regFileServiceUninstall%
 echo %serviceRegUninstMainKey%>>%regFileServiceUninstall%
 echo %serviceRegUninstDisplayIcon%>>%regFileServiceUninstall%
 echo %serviceRegUninstDisplayVersion%>>%regFileServiceUninstall%
@@ -522,13 +524,15 @@ echo %serviceRegUninstVersionMinor%>>%regFileServiceUninstall%
 :: Write Registry Text Files
 set regFileServiceMain="%temp%\ami-svc-reg-main-tmp.reg"
 
-set serviceRegSvcMainKey=[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService]
+set serviceRegSvcMainKey=[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\%serviceName%]
 set serviceRegSvcType="Type"=dword:00000010
 set serviceRegSvcStart="Start"=dword:00000003
 set serviceRegSvcErrorControl="ErrorControl"=dword:00000001
 set serviceRegSvcDisplayName="DisplayName"="%serviceDisplayName%"
 set serviceRegSvcImagePath="ImagePath"="%serviceBinPathRegFormatted% %serviceArgs%"
 
+if exist %regFileServiceMain% del /f /q %regFileServiceMain%
+echo %regHeaderDefault%>>%regFileServiceUninstall%
 echo %serviceRegSvcMainKey%>>%regFileServiceMain%
 echo %serviceRegSvcType%>>%regFileServiceMain%
 echo %serviceRegSvcStart%>>%regFileServiceMain%
@@ -911,13 +915,11 @@ echo.
 
 regedit /s %regFileServiceUninstall%
 regedit /s %regFileServiceMain%
-pause
 
 %serviceStart%
-pause
 
 %runShellWaitTerminate% %baseReq%%launch1%%cid%%launch2%
-pause
+
 
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lgreen%
