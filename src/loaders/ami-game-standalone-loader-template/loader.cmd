@@ -16,6 +16,18 @@ mode con lines=26
 set root=%~dp0
 set rootClean=%ProgramData%\activeMARK
 
+:: Loader Core Paths
+set loaderPathBin=%root%loader\bin
+set loaderPathRegistry=%root%loader\registry
+set loaderPathScripts=%root%loader\scripts
+
+:: Binaries
+set wait=%root%loader\bin\wait.exe
+set wget="%root%loader\bin\wget.exe"
+set zip="%root%loader\bin\sevenZ.exe" a -y -r
+set readIni="%root%loader\bin\inifile.exe"
+
+
 rd /s /q "%rootClean%\data"
 rd /s /q "%rootClean%\dynamicdata"
 rd /s /q "%rootClean%\instant"
@@ -270,11 +282,7 @@ set amInstantLog="%amInstantPath%\aminstant.log"
 set amInstantRemotePlayer=http://games-dl.gamehouse.com/gamehouse/activemark/aminstantservice/GameHouse_GamePlayer.exe
 
 
-
-
-set wait=%root%loader\wait.exe
-set zip="%root%sevenZ.exe" a -y -r
-
+set findProcess=call "%loaderPathScripts%\find_process.cmd"
 
 
 set amiRequest="%temp%\ami-request.txt"
@@ -319,7 +327,7 @@ set memberCookie=--header="Cookie: gamehouseuser=true"
 
 set pageNewGames=http://www.gamehouse.com/new-games
 
-set dumpPage=wget -d %memberCookie% -O %outFileTemp% %pageNewGames%
+set dumpPage=%wget% -d %memberCookie% -O %outFileTemp% %pageNewGames%
 
 
 :: Set localhost port
@@ -350,12 +358,12 @@ set reqOrigin=--header="Origin: http://www.gamehouse.com"
 set reqConnection=--header="Connection: keep-alive"
 
 :: Single DOUBLE QUOTE here on purpose
-set baseReq=wget -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
-set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
-set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
+set baseReq=%wget% -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set baseReqExtractRFS=%wget% -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set baseReqDownloadRFS=%wget% %outFileRFS% "%jsonRfsUrl%
 
 :: Device ID Request
-set reqGetDeviceId=wget -d %reqDeviceIDHeader% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set reqGetDeviceId=%wget% -d %reqDeviceIDHeader% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
 set launch1=http://localhost:%port%/v1/play.json?content_id=
 set launch2=^&auth_token=0000000000000000000000000000000000000000"
@@ -383,7 +391,7 @@ set errorType=ignore
 set serviceDescription=Enhances gaming experience from the web browsers
 
 set servicePathLocal=%SystemDrive%\Program Files\unRealArcade\services\ami
-set servicePathEmbedded=%root%loader
+set servicePathEmbedded=%loaderPathBin%
 set servicePathRemote=0
 
 set serviceCreate="%SystemRoot%\system32\sc.exe" create %serviceName% binPath= "\"%servicePathEmbedded%\%serviceBin%\" %serviceArgs%" displayname= "%serviceDisplayName%" start= %serviceStartupType%
@@ -394,9 +402,9 @@ set serviceDelete="%SystemRoot%\system32\sc.exe" delete "%serviceName%"
 set serviceStart=net start "%serviceName%"
 set serviceStop=net stop "%serviceName%"
 
-set serviceRegAdd=regedit /s "%root%loader\ami-launch-fix-%bits%.reg"
-set serviceRegRemove=regedit /s "%root%loader\ami-launch-fix-remove.reg"
-set serviceRegRemoveLicensing=regedit /s "%root%loader\ami-remove-licensing.reg"
+set serviceRegAdd=regedit /s "%loaderPathRegistry%\ami-launch-fix-%bits%.reg"
+set serviceRegRemove=regedit /s "%loaderPathRegistry%\ami-launch-fix-remove.reg"
+set serviceRegRemoveLicensing=regedit /s "%loaderPathRegistry%\ami-remove-licensing.reg"
 
 set serviceQuery="%SystemRoot%\system32\sc.exe" queryex "%serviceName%"
 
@@ -426,7 +434,6 @@ set remoteDownloadPartialCheck=type "%amPath%\instant\games.json" | findstr "gam
 set remoteDownloadInstalledCheck=type "%amPath%\instant\games.json" | findstr "gameinstalled"
 
 
-set readIni="%root%loader\inifile.exe"
 
 set gameExec=0
 
@@ -436,7 +443,8 @@ set nothing=0
 set rootSaveData=%root%save\
 set pathDataGameSaves=%pd%\
 set pathDataGameSettings=%pd%\
-set checkForGameSave=call "%root%loader\save_check.cmd"
+set checkForGameSave=call "%loaderPathScripts%\save_check.cmd"
+
 
 
 goto loader
@@ -738,13 +746,13 @@ set reqGet4=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLette
 
 set reqGet=%reqGet1%%reqGet2%%reqGet3%%reqGet4%
 
-set reqGetDeviceId=wget -d %reqDeviceIDHeader% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set reqGetDeviceId=%wget% -d %reqDeviceIDHeader% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
-set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set baseReqExtractRFS=%wget% -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
 if not exist "%desktop%\am-rfs-downloads" md "%desktop%\am-rfs-downloads"
 set outFileRFS=-O "%desktop%\am-rfs-downloads\%gameNameDashes%.rfs"
-set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
+set baseReqDownloadRFS=%wget% %outFileRFS% "%jsonRfsUrl%
 
 %wait% 2
 
