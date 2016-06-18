@@ -14,8 +14,6 @@ title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 mode con lines=26
 
 set root=%~dp0
-set rootGame=%~dp0game
-set rootLoader=%~dp0loader
 set rootClean=%ProgramData%\activeMARK
 
 rd /s /q "%rootClean%\data"
@@ -124,6 +122,40 @@ set uraStubRoot=C:\Program Files\unRealArcade\stubs
 set uraTempRoot=C:\Program Files\unRealArcade\temp
 set rawkRoot=C:\Program Files\unRealArcade\rawk
 
+:: Unix Utilities
+set unix=C:\Program Files\unRealArcade\tools\unix-utils
+
+set agrep="%unix%\agrep.exe"
+set bunzip2="%unix%\bunzip2.exe"
+set bzip2="%unix%\bzip2.exe"
+set bzip2recover="%unix%\bzip2recover.exe"
+set cat="%unix%\cat.exe"
+set cmp="%unix%\cmp.exe"
+set dd="%unix%\dd.exe"
+set diff="%unix%\diff.exe"
+set diff3="%unix%\diff3.exe"
+set du="%unix%\du.exe"
+set egrep="%unix%\egrep.exe"
+set env="%unix%\env.exe"
+set fgrep="%unix%\fgrep.exe"
+set gawk="%unix%\gawk.exe"
+set grep="%unix%\grep.exe"
+set gunzip="%unix%\gunzip.exe"
+set gzip="%unix%\gzip.exe"
+set head="%unix%\head.exe"
+set ls="%unix%\ls.exe"
+set printenv="%unix%\printenv.exe"
+set mkdir="%unix%\mkdir.exe"
+set sdiff="%unix%\sdiff.exe"
+set sed="%unix%\sed.exe"
+set tail="%unix%\tail.exe"
+::set unrar="%unix%\unrar.exe"
+set uudecode="%unix%\uudecode.exe"
+set uuencode="%unix%\uuencode.exe"
+set zcat="%unix%\zcat.exe"
+::set zip="%unix%\zip.exe"
+
+
 
 ::-----------------------------------------------------------------------------------
 ::Set Windows OS Version
@@ -206,6 +238,23 @@ set runTerminate=start ""
 set runWaitTerminate=start "" /wait
 
 
+:: AM Instant Server Local
+set amInstantServer="%uraServicesRoot%\ami\aminstantservice.exe"
+set amInstantServerQuiet="%uraServicesRoot%\ami\aminstantservice.exe" --quiet
+set amInstantServerConsole="%uraServicesRoot%\ami\aminstantservice.exe" --console
+set amInstantServerServiceRun="%uraServicesRoot%\ami\aminstantservice.exe" --service-run
+set amInstantServerWaitAmEnd="%uraServicesRoot%\ami\aminstantservice.exe" --wait-am-end
+set amInstantServerAutoUpgrade="%uraServicesRoot%\ami\aminstantservice.exe" --autoupgrade
+set amInstantServerUpgrade="%uraServicesRoot%\ami\aminstantservice.exe" --upgrade
+set amInstantServerUpgradeQuiet="%uraServicesRoot%\ami\aminstantservice.exe" --upgrade --quiet
+set amInstantServerBringToTop="%uraServicesRoot%\ami\aminstantservice.exe" --bring-to-top
+set amInstantServerVersion="%uraServicesRoot%\ami\aminstantservice.exe" --version
+set amInstantServerHelp="%uraServicesRoot%\ami\aminstantservice.exe" --help
+set amInstantServerServiceInstall="%uraServicesRoot%\ami\aminstantservice.exe" --service-install
+set amInstantServerServiceUninstall="%uraServicesRoot%\ami\aminstantservice.exe" --service-uninstall
+set amInstantServerServiceInstallAndStart="%uraServicesRoot%\ami\aminstantservice.exe" --service-install-and-start
+set amInstantServerUninstall="%uraServicesRoot%\ami\aminstantservice.exe" --uninstall
+
 :: AMI Paths Local
 set amPath=%pd%\activeMARK
 set amInstantPath=%pd%\activeMARK\instant
@@ -223,8 +272,8 @@ set amInstantRemotePlayer=http://games-dl.gamehouse.com/gamehouse/activemark/ami
 
 
 
-set wait=%rootLoader%\wait.exe
-set zip="%rootLoader%\sevenZ.exe" a -y -r
+set wait=%root%loader\wait.exe
+set zip="%root%sevenZ.exe" a -y -r
 
 
 
@@ -334,7 +383,7 @@ set errorType=ignore
 set serviceDescription=Enhances gaming experience from the web browsers
 
 set servicePathLocal=%SystemDrive%\Program Files\unRealArcade\services\ami
-set servicePathEmbedded=%rootLoader%
+set servicePathEmbedded=%root%loader
 set servicePathRemote=0
 
 set serviceCreate="%SystemRoot%\system32\sc.exe" create %serviceName% binPath= "\"%servicePathEmbedded%\%serviceBin%\" %serviceArgs%" displayname= "%serviceDisplayName%" start= %serviceStartupType%
@@ -345,9 +394,9 @@ set serviceDelete="%SystemRoot%\system32\sc.exe" delete "%serviceName%"
 set serviceStart=net start "%serviceName%"
 set serviceStop=net stop "%serviceName%"
 
-set serviceRegAdd=regedit /s "%rootLoader%\ami-launch-fix-%bits%.reg"
-set serviceRegRemove=regedit /s "%rootLoader%\ami-launch-fix-remove.reg"
-set serviceRegRemoveLicensing=regedit /s "%rootLoader%\ami-remove-licensing.reg"
+set serviceRegAdd=regedit /s "%root%loader\ami-launch-fix-%bits%.reg"
+set serviceRegRemove=regedit /s "%root%loader\ami-launch-fix-remove.reg"
+set serviceRegRemoveLicensing=regedit /s "%root%loader\ami-remove-licensing.reg"
 
 set serviceQuery="%SystemRoot%\system32\sc.exe" queryex "%serviceName%"
 
@@ -377,11 +426,17 @@ set remoteDownloadPartialCheck=type "%amPath%\instant\games.json" | findstr "gam
 set remoteDownloadInstalledCheck=type "%amPath%\instant\games.json" | findstr "gameinstalled"
 
 
-set readIni="%rootLoader%\inifile.exe"
+set readIni="%root%loader\inifile.exe"
 
 set gameExec=0
 
 set nothing=0
+
+:: These are for save data for each game
+set rootSaveData=%root%save\
+set pathDataGameSaves=%pd%\
+set pathDataGameSettings=%pd%\
+set checkForGameSave=call "%root%loader\save_check.cmd"
 
 
 goto loader
@@ -390,6 +445,8 @@ goto loader
 
 
 :loader
+
+%checkForGameSave%
 
 %lyellow%
 cls
@@ -401,13 +458,11 @@ title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %wait% 1
 
 :: Copy Source Files To Local For Launch
-xcopy /y /e /i /r "%rootGame%\data" "%amPath%\data"
-xcopy /y /e /i /r "%rootGame%\dynamicdata" "%amPath%\dynamicdata"
-xcopy /y /e /i /r "%rootGame%\instant\apps" "%amPath%\instant\apps"
-xcopy /y /e /i /r "%rootGame%\licenses" "%amPath%\licenses"
-xcopy /y /e /i /r "%rootGame%\streaming" "%amPath%\streaming"
-
-::xcopy /y /e /i /r "%rootLoader%" "%amPath%\loader"
+xcopy /y /e /i /r "%root%dynamicdata" "%amPath%\dynamicdata"
+xcopy /y /e /i /r "%root%instant\apps" "%amPath%\instant\apps"
+xcopy /y /e /i /r "%root%licenses" "%amPath%\licenses"
+::xcopy /y /e /i /r "%root%loader" "%amPath%\loader"
+xcopy /y /e /i /r "%root%streaming" "%amPath%\streaming"
 
 %wait% 1
 
@@ -419,66 +474,26 @@ echo.
 
 :: Merge games.json With Local
 echo.>>%amInstantPath%\games.json
-type %rootGame%\instant\games.json>>"%amInstantPath%\games.json"
+type %root%instant\games.json>>"%amInstantPath%\games.json"
 
 :: Get settings from INI
 set tmpIniRead="%temp%\tmpIniRead.cmd"
 
-%readIni% "%rootLoader%\settings.ini" [main] content_id > %tmpIniRead%
+%readIni% "%root%loader\settings.ini" [main] content_id > %tmpIniRead%
 call %tmpIniRead%
 set cid=%content_id%
-if not defined content_id (
 
-	cls
-	echo content_id in settings.ini is corrupt!
-	echo.
-	echo.
-	pause
-	goto end
-
-)
-
-%readIni% "%rootLoader%\settings.ini" [main] game_name_dashes > %tmpIniRead%
+%readIni% "%root%loader\settings.ini" [main] game_name_dashes > %tmpIniRead%
 call %tmpIniRead%
 set gameNameDashes=%game_name_dashes%
-if not defined game_name_dashes (
 
-	cls
-	echo game_name_dashes in settings.ini is corrupt!
-	echo.
-	echo.
-	pause
-	goto end
-
-)
-
-%readIni% "%rootLoader%\settings.ini" [main] game_name > %tmpIniRead%
+%readIni% "%root%loader\settings.ini" [main] game_name > %tmpIniRead%
 call %tmpIniRead%
 set gameNameTitle=%game_name%
-if not defined game_name (
 
-	cls
-	echo game_name in settings.ini is corrupt!
-	echo.
-	echo.
-	pause
-	goto end
-
-)
-
-%readIni% "%rootLoader%\settings.ini" [main] exe_launch > %tmpIniRead%
+%readIni% "%root%loader\settings.ini" [main] exe_launch > %tmpIniRead%
 call %tmpIniRead%
 set gameExec=%exe_launch%
-if not defined exe_launch (
-
-	cls
-	echo exe_launch in settings.ini is corrupt!
-	echo.
-	echo.
-	pause
-	goto end
-
-)
 
 
 %lyellow%
@@ -503,7 +518,7 @@ echo.
 
 %lyellow%
 cls
-echo Preparing %gameNameTitle%....
+echo Sending Magic Bytes To Local Server....
 echo.
 echo.
 %baseReq%%getSessionID%
@@ -946,11 +961,6 @@ goto reset
 
 
 :end
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
-cls
-echo Cleaning Up....
-echo.
-echo.
 
 %wait% 5
 
