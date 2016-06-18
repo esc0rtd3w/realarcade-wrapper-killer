@@ -137,7 +137,7 @@ WizardSelectDir=RealNetworks RGS Game Unpacking Script Ready...
 ;Use spaces for non (x.x.x) releases like this (x.x  )
 
 ; 103 characters for one line
-SelectDirDesc=rls: 5.6.2   core: 3.1.0   db: 1.3.1   rna: 1.9.4   coreGH: 1.0.1   coreZY: 1.0.0    rgsLoader: 2.1.3    rgaLoader: 1.0.2    dmgLoader: 1.0.1    rfsLoader: 1.0.2
+SelectDirDesc=Rls: 5.6.2   Cores: Main/3.1.0   RNA/1.9.4   GH/1.0.1   ZY/1.0.0   DB: Main/1.3.1    Loaders: RGS/2.1.3    RGA/1.0.2    DMG/1.0.1    RFS/1.0.2    AMI/1.0.0
 
 SelectDirLabel3=YOU MUST SELECT YOUR GAMES FOLDER BEFORE CONTINUING!!!
 SelectDirBrowseLabel=Enter The Path of The Target Game Here:
