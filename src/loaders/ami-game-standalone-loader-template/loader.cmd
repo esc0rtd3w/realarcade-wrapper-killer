@@ -16,16 +16,27 @@ mode con lines=26
 set root=%~dp0
 set rootClean=%ProgramData%\activeMARK
 
+:: Game Core Paths
+set gamePath=%root%game
+set gamePathData=%gamePath%\data
+set gamePathDynamicData=%gamePath%\dynamicdata
+set gamePathInstant=%gamePath%\instant
+set gamePathInstantApps=%gamePath%\instant\apps
+set gamePathLicenses=%gamePath%\licenses
+set gamePathStats=%gamePath%\stats
+set gamePathStreaming=%gamePath%\streaming
+
 :: Loader Core Paths
-set loaderPathBin=%root%loader\bin
-set loaderPathRegistry=%root%loader\registry
-set loaderPathScripts=%root%loader\scripts
+set loaderPath=%root%loader
+set loaderPathBin=%loaderPath%\bin
+set loaderPathRegistry=%loaderPath%\registry
+set loaderPathScripts=%loaderPath%\scripts
 
 :: Binaries
-set wait=%root%loader\bin\wait.exe
-set wget="%root%loader\bin\wget.exe"
-set zip="%root%loader\bin\sevenZ.exe" a -y -r
-set readIni="%root%loader\bin\inifile.exe"
+set wait=%loaderPathBin%\wait.exe
+set wget="%loaderPathBin%\wget.exe"
+set zip="%loaderPathBin%\sevenZ.exe" a -y -r
+set readIni="%loaderPathBin%\inifile.exe"
 
 
 rd /s /q "%rootClean%\data"
@@ -41,6 +52,15 @@ set bits=32
 if not exist "C:\Program Files (x86)" set bits=32
 if exist "C:\Program Files (x86)" set bits=64
 if "%PROCESSOR_ARCHITECTURE%"=="AMD64" set bits=64
+
+:: Registry Commands
+set reg=reg
+set regForce=reg /f
+set regForceAdd=reg add /f
+set regAdd=reg add
+set regForceDelete=reg delete /f
+set regDelete=reg delete
+set regQuery=reg query /f
 
 
 ::-----------------------------------------------------------------------------------
@@ -250,23 +270,6 @@ set runTerminate=start ""
 set runWaitTerminate=start "" /wait
 
 
-:: AM Instant Server Local
-set amInstantServer="%uraServicesRoot%\ami\aminstantservice.exe"
-set amInstantServerQuiet="%uraServicesRoot%\ami\aminstantservice.exe" --quiet
-set amInstantServerConsole="%uraServicesRoot%\ami\aminstantservice.exe" --console
-set amInstantServerServiceRun="%uraServicesRoot%\ami\aminstantservice.exe" --service-run
-set amInstantServerWaitAmEnd="%uraServicesRoot%\ami\aminstantservice.exe" --wait-am-end
-set amInstantServerAutoUpgrade="%uraServicesRoot%\ami\aminstantservice.exe" --autoupgrade
-set amInstantServerUpgrade="%uraServicesRoot%\ami\aminstantservice.exe" --upgrade
-set amInstantServerUpgradeQuiet="%uraServicesRoot%\ami\aminstantservice.exe" --upgrade --quiet
-set amInstantServerBringToTop="%uraServicesRoot%\ami\aminstantservice.exe" --bring-to-top
-set amInstantServerVersion="%uraServicesRoot%\ami\aminstantservice.exe" --version
-set amInstantServerHelp="%uraServicesRoot%\ami\aminstantservice.exe" --help
-set amInstantServerServiceInstall="%uraServicesRoot%\ami\aminstantservice.exe" --service-install
-set amInstantServerServiceUninstall="%uraServicesRoot%\ami\aminstantservice.exe" --service-uninstall
-set amInstantServerServiceInstallAndStart="%uraServicesRoot%\ami\aminstantservice.exe" --service-install-and-start
-set amInstantServerUninstall="%uraServicesRoot%\ami\aminstantservice.exe" --uninstall
-
 :: AMI Paths Local
 set amPath=%pd%\activeMARK
 set amInstantPath=%pd%\activeMARK\instant
@@ -384,15 +387,71 @@ set serviceBin=aminstantservice.exe
 set serviceArgs=--service-run
 set serviceName=AMInstantService
 set serviceDisplayName=activeMARK Instant Service
-set serviceDescription=activeMARK Instant Service
+set serviceDescription=Enhances gaming experience from the web browsers
 set serviceStartupType=demand
 set errorType=ignore
-
-set serviceDescription=Enhances gaming experience from the web browsers
 
 set servicePathLocal=%SystemDrive%\Program Files\unRealArcade\services\ami
 set servicePathEmbedded=%loaderPathBin%
 set servicePathRemote=0
+
+
+:: Reg Entry #1
+::set serviceRegUninstMainKey=[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games]
+::set serviceRegUninstDisplayIcon="DisplayIcon"="C:\\Program Files\\unRealArcade\\services\\ami\\aminstantservice.exe"
+::set serviceRegUninstDisplayVersion="DisplayVersion"="8.45.43"
+::set serviceRegUninstDisplayName="DisplayName"="activeMARK Instant Service"
+::set serviceRegUninstInstallDir="InstallDir"="C:\\Program Files\\unRealArcade\\services\\ami\\"
+::set serviceRegUninstInstallLocation="InstallLocation"="C:\\Program Files\\unRealArcade\\services\\ami\\"
+::set serviceRegUninstServicePath="ServicePath"="C:\\Program Files\\unRealArcade\\services\\ami\\aminstantservice.exe"
+::set serviceRegUninstUninstallString="UninstallString"="C:\\Program Files\\unRealArcade\\services\\ami\\uninst.exe"
+::set serviceRegUninstPublisher="Publisher"="GameHouse"
+::set serviceRegUninstVersionMajor="VersionMajor"="8"
+::set serviceRegUninstVersionMinor="VersionMinor"="45"
+
+set serviceRegUninstMainKey64=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v "" /t REG_SZ /d "" /f
+set serviceRegUninstDisplayIcon64=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v DisplayIcon /t REG_SZ /d "%servicePathEmbedded%\%serviceBin%" /f
+set serviceRegUninstDisplayVersion64=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v DisplayName /t REG_SZ /d "activeMARK Instant Service" /f
+set serviceRegUninstDisplayName64=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v DisplayVersion /t REG_SZ /d "8.45.43" /f
+set serviceRegUninstInstallDir64=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v InstallDir /t REG_SZ /d "%servicePathEmbedded%" /f
+set serviceRegUninstInstallLocation64=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v InstallLocation /t REG_SZ /d "%servicePathEmbedded%" /f
+set serviceRegUninstPublisher64=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v Publisher /t REG_SZ /d "GameHouse" /f
+set serviceRegUninstServicePath64=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v ServicePath /t REG_SZ /d "%servicePathEmbedded%\%serviceBin% --service-run" /f
+set serviceRegUninstUninstallString64=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v UninstallString /t REG_SZ /d "%servicePathEmbedded%\uninst.exe" /f
+set serviceRegUninstVersionMajor64=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v VersionMajor /t REG_SZ /d "8" /f
+set serviceRegUninstVersionMinor64=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v VersionMinor /t REG_SZ /d "45" /f
+
+set serviceRegUninstMainKey32=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v "" /t REG_SZ /d "" /f
+set serviceRegUninstDisplayIcon32=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v DisplayIcon /t REG_SZ /d "%servicePathEmbedded%\%serviceBin%" /f
+set serviceRegUninstDisplayVersion32=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v DisplayName /t REG_SZ /d "activeMARK Instant Service" /f
+set serviceRegUninstDisplayName32=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v DisplayVersion /t REG_SZ /d "8.45.43" /f
+set serviceRegUninstInstallDir32=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v InstallDir /t REG_SZ /d "%servicePathEmbedded%" /f
+set serviceRegUninstInstallLocation32=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v InstallLocation /t REG_SZ /d "%servicePathEmbedded%" /f
+set serviceRegUninstPublisher32=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v Publisher /t REG_SZ /d "GameHouse" /f
+set serviceRegUninstServicePath32=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v ServicePath /t REG_SZ /d "%servicePathEmbedded%\%serviceBin% --service-run" /f
+set serviceRegUninstUninstallString32=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v UninstallString /t REG_SZ /d "%servicePathEmbedded%\uninst.exe" /f
+set serviceRegUninstVersionMajor32=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v VersionMajor /t REG_SZ /d "8" /f
+set serviceRegUninstVersionMinor32=%regAdd% "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse Games" /v VersionMinor /t REG_SZ /d "45" /f
+
+:: Reg Entry #2
+::set serviceRegSvcMainKey=[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService]
+::set serviceRegSvcType="Type"=dword:00000010
+::set serviceRegSvcStart="Start"=dword:00000003
+::set serviceRegSvcErrorControl="ErrorControl"=dword:00000001
+::set serviceRegSvcDisplayName="DisplayName"="activeMARK Instant Service"
+::set serviceRegSvcImagePath="ImagePath"="\"C:\\Program Files\\unRealArcade\\services\\ami\\aminstantservice.exe\" --service-run"
+
+set serviceRegSvcMainKey=%regAdd% "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService" /v "" /t REG_SZ /d "" /f
+set serviceRegSvcDisplayName=%regAdd% "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService" /v DisplayName /t REG_SZ /d "activeMARK Instant Service" /f
+set serviceRegSvcErrorControl=%regAdd% "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService" /v ErrorControl /t REG_DWORD /d 1 /f
+set serviceRegSvcImagePath=%regAdd% "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService" /v ImagePath /t REG_SZ /d "\"%servicePathEmbedded%\%serviceBin%\" --service-run" /f
+set serviceRegSvcStart=%regAdd% "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService" /v Start /t REG_DWORD /d 3 /f
+set serviceRegSvcType=%regAdd% "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService" /v Type /t REG_DWORD /d 16 /f
+
+set serviceRegCleanUnwanted=%regDelete% "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AMInstantService" /v ObjectName /f
+
+
+
 
 set serviceCreate="%SystemRoot%\system32\sc.exe" create %serviceName% binPath= "\"%servicePathEmbedded%\%serviceBin%\" %serviceArgs%" displayname= "%serviceDisplayName%" start= %serviceStartupType%
 set serviceCreateAddDescription="%SystemRoot%\system32\sc.exe" description %serviceName% "%serviceDescription%"
@@ -403,6 +462,7 @@ set serviceStart=net start "%serviceName%"
 set serviceStop=net stop "%serviceName%"
 
 set serviceRegAdd=regedit /s "%loaderPathRegistry%\ami-launch-fix-%bits%.reg"
+set serviceRegAddFixKeys=regedit /s "%loaderPathRegistry%\ami-launch-fix-keys-only-%bits%.reg"
 set serviceRegRemove=regedit /s "%loaderPathRegistry%\ami-launch-fix-remove.reg"
 set serviceRegRemoveLicensing=regedit /s "%loaderPathRegistry%\ami-remove-licensing.reg"
 
@@ -466,11 +526,12 @@ title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %wait% 1
 
 :: Copy Source Files To Local For Launch
-xcopy /y /e /i /r "%root%dynamicdata" "%amPath%\dynamicdata"
-xcopy /y /e /i /r "%root%instant\apps" "%amPath%\instant\apps"
-xcopy /y /e /i /r "%root%licenses" "%amPath%\licenses"
-::xcopy /y /e /i /r "%root%loader" "%amPath%\loader"
-xcopy /y /e /i /r "%root%streaming" "%amPath%\streaming"
+xcopy /y /e /i /r "%gamePathData%" "%amPath%\data"
+xcopy /y /e /i /r "%gamePathDynamicData%" "%amPath%\dynamicdata"
+xcopy /y /e /i /r "%gamePathInstantApps%" "%amPath%\instant\apps"
+xcopy /y /e /i /r "%gamePathLicenses%" "%amPath%\licenses"
+xcopy /y /e /i /r "%gamePathStats%" "%amPath%\stats"
+xcopy /y /e /i /r "%gamePathStreaming%" "%amPath%\streaming"
 
 %wait% 1
 
@@ -482,24 +543,24 @@ echo.
 
 :: Merge games.json With Local
 echo.>>%amInstantPath%\games.json
-type %root%instant\games.json>>"%amInstantPath%\games.json"
+type %gamePathInstant%\games.json>>"%amInstantPath%\games.json"
 
 :: Get settings from INI
 set tmpIniRead="%temp%\tmpIniRead.cmd"
 
-%readIni% "%root%loader\settings.ini" [main] content_id > %tmpIniRead%
+%readIni% "%loaderPath%\settings.ini" [main] content_id > %tmpIniRead%
 call %tmpIniRead%
 set cid=%content_id%
 
-%readIni% "%root%loader\settings.ini" [main] game_name_dashes > %tmpIniRead%
+%readIni% "%loaderPath%\settings.ini" [main] game_name_dashes > %tmpIniRead%
 call %tmpIniRead%
 set gameNameDashes=%game_name_dashes%
 
-%readIni% "%root%loader\settings.ini" [main] game_name > %tmpIniRead%
+%readIni% "%loaderPath%\settings.ini" [main] game_name > %tmpIniRead%
 call %tmpIniRead%
 set gameNameTitle=%game_name%
 
-%readIni% "%root%loader\settings.ini" [main] exe_launch > %tmpIniRead%
+%readIni% "%loaderPath%\settings.ini" [main] exe_launch > %tmpIniRead%
 call %tmpIniRead%
 set gameExec=%exe_launch%
 
@@ -766,11 +827,51 @@ echo.
 echo.
 %serviceCreate%
 %serviceCreateAddDescription%
-%serviceRegAdd%
+
+:: Write Registry Settings
+if %bits%==32 (
+
+	%serviceRegAddFixKeys%
+	%serviceRegUninstDisplayIcon32%
+	%serviceRegUninstDisplayVersion32%
+	%serviceRegUninstDisplayName32%
+	%serviceRegUninstInstallDir32%
+	%serviceRegUninstInstallLocation32%
+	%serviceRegUninstServicePath32%
+	%serviceRegUninstUninstallString32%
+	%serviceRegUninstPublisher32%
+	%serviceRegUninstVersionMajor32%
+	%serviceRegUninstVersionMinor32%
+	%serviceRegCleanUnwanted%
+)
+
+if %bits%==64 (
+
+	%serviceRegAddFixKeys%
+	%serviceRegUninstDisplayIcon64%
+	%serviceRegUninstDisplayVersion64%
+	%serviceRegUninstDisplayName64%
+	%serviceRegUninstInstallDir64%
+	%serviceRegUninstInstallLocation64%
+	%serviceRegUninstServicePath64%
+	%serviceRegUninstUninstallString64%
+	%serviceRegUninstPublisher64%
+	%serviceRegUninstVersionMajor64%
+	%serviceRegUninstVersionMinor64%
+	%serviceRegCleanUnwanted%
+)
+
+%serviceRegSvcMainKey%
+%serviceRegSvcDisplayName%
+%serviceRegSvcErrorControl%
+%serviceRegSvcImagePath%
+%serviceRegSvcStart%
+%serviceRegSvcType%
+
 %serviceStart%
 
 %runShellWaitTerminate% %baseReq%%launch1%%cid%%launch2%
-
+pause
 
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lgreen%
@@ -860,7 +961,40 @@ set returnTo=extractOK
 %wait% 2
 %serviceCreate%
 %serviceCreateAddDescription%
-%serviceRegAdd%
+
+:: Write Registry Settings
+if %bits%==32 (
+
+	%serviceRegAddFixKeys%
+	%serviceRegUninstDisplayIcon32%
+	%serviceRegUninstDisplayVersion32%
+	%serviceRegUninstDisplayName32%
+	%serviceRegUninstInstallDir32%
+	%serviceRegUninstInstallLocation32%
+	%serviceRegUninstServicePath32%
+	%serviceRegUninstUninstallString32%
+	%serviceRegUninstPublisher32%
+	%serviceRegUninstVersionMajor32%
+	%serviceRegUninstVersionMinor32%
+	%serviceRegCleanUnwanted%
+)
+
+if %bits%==64 (
+
+	%serviceRegAddFixKeys%
+	%serviceRegUninstDisplayIcon64%
+	%serviceRegUninstDisplayVersion64%
+	%serviceRegUninstDisplayName64%
+	%serviceRegUninstInstallDir64%
+	%serviceRegUninstInstallLocation64%
+	%serviceRegUninstServicePath64%
+	%serviceRegUninstUninstallString64%
+	%serviceRegUninstPublisher64%
+	%serviceRegUninstVersionMajor64%
+	%serviceRegUninstVersionMinor64%
+	%serviceRegCleanUnwanted%
+)
+
 %serviceStart%
 
 %wait% 5
