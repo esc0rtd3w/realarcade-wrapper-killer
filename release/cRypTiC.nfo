@@ -174,7 +174,7 @@
 
 	* UPDATED: RAWK Core to v3.1.0
 
-                   * Nothing new here :(
+                   * Added "AMI Loader" To Core
 
 
 
@@ -199,6 +199,14 @@
         * UPDATED: DMG Loader v1.0.1
 
                    * Nothing new here :(
+
+
+
+        * UPDATED: AMI Loader v1.0.0
+
+                   * Added initial support
+
+                   * Added default association to .rfsindex files
 
 
 
