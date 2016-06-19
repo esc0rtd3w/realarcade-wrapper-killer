@@ -297,13 +297,10 @@ echo 1) Check Remote Version [%amiVersion%]
 echo.
 echo 2) Open Default Apps Directory
 echo.
-echo 3) Service Options
+echo 3) Write INI File Using Game Info
+echo 4) Rebuild GET Request
 echo.
-::echo 4) List Installed Games
-echo 4) Write INI File Using Game Info
-::echo 5) Enter New Game Credentials
-echo 5) Rebuild GET Request
-echo.
+echo 5) Service Options
 echo 6) Testing Options
 echo 7) Watch AM Instant Log
 echo.
@@ -315,12 +312,12 @@ if %os%==XP choice /c:1234567b /n
 if %os%==VISTA choice /c 123456b /n
 if errorlevel 8 goto amiMenu
 if errorlevel 7 goto watchLog
-if errorlevel 6 set returnTo=amiMenu2&&goto testing
-if errorlevel 5 set returnTo=amiMenu2&&goto rebuildReq
+if errorlevel 6 goto testing
+if errorlevel 5 goto svcOptions
 ::if errorlevel 5 goto newCreds
 ::if errorlevel 4 goto listGames
-if errorlevel 4 goto writeIni
-if errorlevel 3 goto svcOptions
+if errorlevel 4 set returnTo=amiMenu2&&goto rebuildReq
+if errorlevel 3 goto writeIni
 if errorlevel 2 goto openApps
 if errorlevel 1 goto chkRemote
 
