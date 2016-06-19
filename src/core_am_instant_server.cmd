@@ -215,6 +215,7 @@ set gamesJsonFile="%amPath%\instant\games.json"
 set remoteDownloadPartialCheck=type "%amPath%\instant\games.json" | findstr "gamepartiallypreloaded"
 set remoteDownloadInstalledCheck=type "%amPath%\instant\games.json" | findstr "gameinstalled"
 
+set gamesDynamicDataPath="%amPath%\dynamicdata"
 
 goto amiMenu
 
@@ -1009,8 +1010,8 @@ goto %returnTo%
 )
 set remoteDownloadFinished=1
 
-goto %returnTo%
-::goto inProgress
+::goto %returnTo%
+goto inProgress
 
 
 :download2
@@ -1022,41 +1023,22 @@ set remoteDownloadFinished=2
 set remoteDownloadFinished=1
 
 
-goto %returnTo%
-::goto inProgress
+::goto %returnTo%
+goto inProgress
 
 
 :inProgress
 
 cls
 echo Downloading In Progress....
+set remoteDownloadFinished=0
 
 %wait% 10
 
-if not exist %gamesJsonFile% (
+if not exist "%gamesDynamicDataPath%" (
 	cls
-	echo Downloading Is Starting....
-	echo.
-	echo.
-	set remoteDownloadFinished=2
-	goto inProgress
-)
-
-%remoteDownloadFinished%
-if %errorlevel% equ 0 (
-	cls
-	%lgreen%
-	echo Download Finished
-	echo.
-	echo.
-	pause
-	set remoteDownloadFinished=1
-	goto %returnTo%
-)
-
-%remoteDownloadPartialCheck%
-if %errorlevel% equ 0 (
-	cls
+	%laqua%
+	echo 
 	echo Downloading In Progress....
 	echo.
 	echo.
@@ -1064,30 +1046,15 @@ if %errorlevel% equ 0 (
 	goto inProgress
 )
 
-%wait% 1
-
-%remoteDownloadFinished%
-if %errorlevel% equ 0 (
+if exist "%gamesDynamicDataPath%" (
 	cls
 	%lgreen%
-	echo Download Finished
+	echo 
+	echo Downloading Finished!
 	echo.
 	echo.
-	pause
 	set remoteDownloadFinished=1
 	goto %returnTo%
-)
-
-%wait% 1
-
-%remoteDownloadPartialCheck%
-if %errorlevel% equ 0 (
-	cls
-	echo Downloading In Progress....
-	echo.
-	echo.
-	set remoteDownloadFinished=2
-	goto inProgress
 )
 
 %wait% 1
