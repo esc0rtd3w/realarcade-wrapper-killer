@@ -43,6 +43,15 @@ set loaderPathBin=%loaderPath%\bin
 set loaderPathRegistry=%loaderPath%\registry
 set loaderPathScripts=%loaderPath%\scripts
 
+:: Loader Core User Paths
+set userPath=%root%user
+set userSettings=%userPath%\settings.ini
+set userPathId=%userPath%\0
+set userIdConfig=%userPathId%\id.ini
+set userPathBackup=%userPathId%\backup
+set userPathConfig=%userPathId%\config
+set userPathSaves=%userPathId%\saves
+
 set loaderExtKill="%loaderPath%\extKill.txt"
 
 :: Binaries
@@ -725,7 +734,12 @@ set gameSavePath=%save_path%
 
 
 
-%checkForGameSave%
+::%checkForGameSave%
+
+
+
+:: Copy game save to local from user
+::xcopy /y /e /i /r "%root%user\0\saves\%cidEarly%" "%gameSavePath%"
 
 
 %lyellow%
@@ -1295,6 +1309,11 @@ goto reset
 :end
 
 %wait% 5
+
+
+:: Copy game save from local to user
+::xcopy /y /e /i /r "%gameSavePath%" "%root%user\0\saves\%cidEarly%"
+
 
 rd /s /q "%rootClean%\data"
 rd /s /q "%rootClean%\dynamicdata"
