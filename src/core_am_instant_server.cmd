@@ -301,8 +301,10 @@ echo 3) Service Options
 echo.
 ::echo 4) List Installed Games
 echo 4) Write INI File Using Game Info
-echo 5) Enter New Game Credentials
-echo 6) Rebuild GET Request
+::echo 5) Enter New Game Credentials
+echo 5) Rebuild GET Request
+echo.
+echo 6) Testing Options
 echo 7) Watch AM Instant Log
 echo.
 echo.
@@ -313,8 +315,9 @@ if %os%==XP choice /c:1234567b /n
 if %os%==VISTA choice /c 123456b /n
 if errorlevel 8 goto amiMenu
 if errorlevel 7 goto watchLog
-if errorlevel 6 set returnTo=amiMenu2&&goto rebuildReq
-if errorlevel 5 goto newCreds
+if errorlevel 6 set returnTo=amiMenu2&&goto testing
+if errorlevel 5 set returnTo=amiMenu2&&goto rebuildReq
+::if errorlevel 5 goto newCreds
 ::if errorlevel 4 goto listGames
 if errorlevel 4 goto writeIni
 if errorlevel 3 goto svcOptions
@@ -322,6 +325,112 @@ if errorlevel 2 goto openApps
 if errorlevel 1 goto chkRemote
 
 goto end
+
+
+
+:testing
+
+set returnto=amiMenu2
+
+cls
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%laqua%
+echo Content ID: %cid%
+echo Name: %gameNameDashes%
+echo Title: %gameNameTitle%
+echo App Directory Name: %appDirName%
+echo Device ID: %deviceID%
+echo Session ID: %sessionID%
+echo.
+echo.
+%lred%
+echo *** CAUTION! TEST MODE OPTIONS ***
+%lyellow%
+echo.
+echo.
+echo Select an option from below
+echo.
+echo.
+echo 1) Download and Prepare For Packaging
+echo.
+echo 2) Clean Working activeMARK Directory
+echo.
+echo.
+echo B) Go Back
+echo.
+
+if %os%==XP choice /c:12b /n
+if %os%==VISTA choice /c 12b /n
+if errorlevel 3 goto amiMenu2
+if errorlevel 2 goto cleanAmFull
+if errorlevel 1 goto test1
+
+goto %returnto%
+
+
+:test1
+
+set returnto=test2
+
+if %cid%==00000000000000000000000000000000 (
+cls
+echo No Valid Content ID Has Been Set!
+echo.
+echo.
+pause
+goto amiMenu
+)
+
+:: Download Extracted RFS
+%runShellWaitTerminate% %baseReqExtractRFS%%remoteRfsBase1%%gameNameTitleHTML%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
+goto inProgress
+
+goto testing
+
+
+:test2
+
+set returnto=testing
+
+:: Launch Game
+%runShellWaitTerminate% %baseReq%%launch1%%cid%%launch2%
+%serviceStop%
+%serviceDelete%
+%serviceRegRemove%
+%serviceRegRemoveLicensing%
+set amiServiceInstalled=0
+set serverStatus=0
+
+:: Prepare For Packaging
+set root=%ProgramData%\activeMARK
+del /f /s /q "%root%\instant\aminstant.log"
+del /f /s /q "%root%\instant\connection.json"
+del /f /s /q "%root%\instant\datagathering.json"
+del /f /s /q "%root%\instant\games.json.lock"
+del /f /s /q "%root%\instant\info.json"
+del /f /s /q "%root%\instant\pending-requests.json"
+del /f /s /q "%root%\streaming\access.lock"
+attrib -h -s -r "%root%\data"
+
+goto %returnTo%
+
+
+:cleanAmFull
+
+set returnto=testing
+
+set root=%ProgramData%\activeMARK
+
+rd /s /q "%root%\data"
+rd /s /q "%root%\dynamicdata"
+rd /s /q "%root%\instant"
+rd /s /q "%root%\licenses"
+rd /s /q "%root%\stats"
+rd /s /q "%root%\streaming"
+
+
+goto testing
+
 
 
 :writeIni
@@ -1030,7 +1139,10 @@ goto inProgress
 :inProgress
 
 cls
-echo Downloading In Progress....
+echo 
+echo Preparing For Remote RFS Extraction....
+echo.
+echo.
 set remoteDownloadFinished=0
 
 %wait% 10
@@ -1040,6 +1152,8 @@ if not exist "%gamesDynamicDataPath%" (
 	%laqua%
 	echo 
 	echo Downloading In Progress....
+	echo.
+	echo Please Be Patient! Some Files May Be Very Large!
 	echo.
 	echo.
 	set remoteDownloadFinished=2
@@ -1053,7 +1167,11 @@ if exist "%gamesDynamicDataPath%" (
 	echo Downloading Finished!
 	echo.
 	echo.
+	echo Press any key to return to the main menu....
+	echo.
+	echo.
 	set remoteDownloadFinished=1
+	pause>nul
 	goto %returnTo%
 )
 
