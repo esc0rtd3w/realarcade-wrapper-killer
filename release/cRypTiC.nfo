@@ -176,6 +176,8 @@
 
 	* UPDATED: RAWK Core to v3.1.0
 
+                   * Updated To Support AMI Server v8.46.46
+
                    * Updated all intro text on main Inno Setup
 
                    * Added "AMI Loader" To Core
