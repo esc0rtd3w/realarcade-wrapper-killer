@@ -13,10 +13,10 @@ title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 mode con lines=26
 
-set amiVersion=8.45.43
+set amiVersion=8.46.46
 set amiVersionMajor=8
-set amiVersionMinor=45
-set amiVersionRevision=43
+set amiVersionMinor=46
+set amiVersionRevision=46
 
 set amiPublisher=GameHouse
 
