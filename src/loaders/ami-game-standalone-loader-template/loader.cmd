@@ -24,6 +24,9 @@ set amiPublisher=GameHouse
 set root=%~dp0
 set rootClean=%ProgramData%\activeMARK
 
+:: Save Core Paths
+set savePath=%root%save
+
 :: Game Core Paths
 set gamePath=%root%game
 set gamePathData=%gamePath%\data
@@ -934,6 +937,9 @@ echo.
 
 regedit /s %regFileServiceUninstall%
 regedit /s %regFileServiceMain%
+
+:: Import any game related registry
+regedit /s "%savePath%\save.reg"
 
 %wait% 3
 
