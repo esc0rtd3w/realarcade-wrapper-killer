@@ -130,19 +130,42 @@
 
       To use this software, take the following steps:
 
-        1) 
+        1) Extract ZIP Archive.
 
-        2) 
+        2a) Open Web Browser and Disable Cookies For gamehouse.com.
 
-        3) 
-        
-        4) 
+            Navigate to gamehouse.com and select a game. At this point if you
+            have the AMI Server running, the game will begin downloading into
+            "%ProgramData%\activeMARK\". The RealArcade Wrapper Killer has this
+            option built-in for running the server as a standalone service.
 
-        5) 
+            * If you do not have the AMI Server running, the webpage will offer
+              you an EXE file as a download link. Download this and install it
+              and the files will begin to install to the default activeMARK
+              directory. The loader will uninstall this service from your
+              system upon launch.
 
+        2b) If you have the files already, just place them in the correct folder.
 
-        
-        * 
+            \game\data\*
+            \game\dynamicdata\*
+            \game\instant\*
+            \game\licenses\*
+            \game\stats\*
+            \game\streaming\*
+
+        3) Place all files from "%ProgramData%\activeMARK\*" into a RAR file
+           named "%content_id%.ami" and place into "\game\" directory.
+
+        4) Rename "\game\settings.ini" to "\game\%content_id%.ini".
+
+        5) Fill out the basic info into "\game\%content_id%.ini". These include
+           content_id, game_name, game_name_dashes, exe_launch, game_path*,  
+           disk_size*, save_external*, and save_path*. * are OPTIONAL.
+
+        6) Rename folder to %content_id% under "\user\0\saves\%content_id%".
+
+        7) Run Game With "loader.cmd".
 
 
                 ***************************************************
