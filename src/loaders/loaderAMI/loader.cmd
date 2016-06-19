@@ -308,6 +308,7 @@ set amiRequest="%temp%\ami-request.txt"
 set amiRequestInstallationTitle="%temp%\amiRequestInstallationTitle.txt"
 set amiRequestInstallationTitleClean1="%temp%\amiRequestInstallationTitleClean1.txt"
 set amiRequestInstallationTitleClean2="%temp%\amiRequestInstallationTitleClean2.txt"
+set amiRequestInstallationTitleClean3="%temp%\amiRequestInstallationTitleClean3.txt"
 set amiRequestContentId="%temp%\amiRequestContentId.txt"
 set amiRequestRFS="%temp%\amiRequestRFS.txt"
 set amiRequestTracking="%temp%\amiRequestTracking.txt"
@@ -727,7 +728,6 @@ set gameSavePath=%save_path%
 %checkForGameSave%
 
 
-
 %lyellow%
 cls
 echo Preparing %gameNameTitle%....
@@ -870,6 +870,7 @@ echo.
 
 %wait% 1
 
+
 setlocal enabledelayedexpansion
 
 	set jsonInstallationTitle=!jsonInstallationTitle:"=!
@@ -880,6 +881,9 @@ setlocal enabledelayedexpansion
 
 	set jsonInstallationTitleClean2=!jsonInstallationTitleClean1: -=!
 	echo !jsonInstallationTitleClean2!>%amiRequestInstallationTitleClean2%
+
+	::set jsonInstallationTitleClean3=!jsonInstallationTitleClean1:&-=!
+	::echo !jsonInstallationTitleClean3!>%amiRequestInstallationTitleClean3%
 
 	set jsonRfsUrl=!jsonRfsUrl:"=!
 	echo !jsonRfsUrl!>%jsonRfsUrl%
@@ -907,6 +911,7 @@ set /p jsonContentId=<%amiRequestContentId%
 set /p jsonInstallationTitle=<%amiRequestInstallationTitle%
 set /p jsonInstallationTitleClean1=<%amiRequestInstallationTitleClean1%
 set /p jsonInstallationTitleClean2=<%amiRequestInstallationTitleClean2%
+::set /p jsonInstallationTitleNoAmp=<%amiRequestInstallationTitleClean3%
 set /p jsonRfsUrl=<%jsonRfsUrl%
 set /p jsonTracking=<%amiRequestTracking%
 set /p jsonDeviceID=<%amiRequestDeviceID%
@@ -916,6 +921,19 @@ set /p gameNameUnderscoresSet=<%gameNameUnderscoresSet%
 
 :: Store Game Name Title Original Format
 set gameNameTitle=%jsonInstallationTitle%
+
+
+:: Strip and Convert & to "and" As Separate Variable
+setlocal enabledelayedexpansion
+	set "gameNameTitleTemp=!jsonInstallationTitleClean1:&=and!"
+	echo !gameNameTitleTemp!>%temp%\tmp.tmp
+endlocal
+
+set /p gameNameTitleAmpConvert=<%temp%\tmp.tmp
+
+::echo jsonInstallationTitleNoAmp: %jsonInstallationTitleNoAmp%
+::echo gameNameTitleAmpConvert: %gameNameTitleAmpConvert%
+::pause
 
 
 :: Match to global variables
@@ -960,7 +978,7 @@ set appDirName=%gameNameDashesHalf%%cidHalf%
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lyellow%
 cls
-echo Preparing To Launch %gameNameTitle%....
+echo Preparing To Launch %gameNameTitleAmpConvert%....
 echo.
 echo.
 
@@ -987,7 +1005,7 @@ set baseReqDownloadRFS=%wget% %outFileRFS% "%jsonRfsUrl%
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lgreen%
 cls
-echo Preparing To Launch %gameNameTitle%....
+echo Preparing To Launch %gameNameTitleAmpConvert%....
 echo.
 echo.
 
@@ -1009,7 +1027,7 @@ regedit /s "%savePath%\save.reg"
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lgreen%
 cls
-echo Preparing To Launch %gameNameTitle%....
+echo Preparing To Launch %gameNameTitleAmpConvert%....
 echo.
 echo.
 
@@ -1022,7 +1040,7 @@ echo.
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lgreen%
 cls
-echo Launching %gameNameTitle%....
+echo Launching %gameNameTitleAmpConvert%....
 echo.
 echo.
 
@@ -1039,7 +1057,7 @@ set serverStatus=0
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lgreen%
 cls
-echo Launching %gameNameTitle%....
+echo Launching %gameNameTitleAmpConvert%....
 echo.
 echo.
 
@@ -1054,7 +1072,7 @@ taskkill /f /im aminstantservice.exe
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lgreen%
 cls
-echo Launching %gameNameTitle%....
+echo Launching %gameNameTitleAmpConvert%....
 echo.
 echo.
 
@@ -1064,6 +1082,7 @@ del /f /q %amiRequest%
 del /f /q %amiRequestInstallationTitle%
 del /f /q %amiRequestInstallationTitleClean1%
 del /f /q %amiRequestInstallationTitleClean2%
+del /f /q %amiRequestInstallationTitleClean3%
 del /f /q %amiRequestContentId%
 del /f /q %amiRequestRFS%
 del /f /q %amiRequestTracking%
@@ -1085,7 +1104,7 @@ del /f /q %servicePathRegFormattedTempFile%
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lgreen%
 cls
-echo Launching %gameNameTitle%....
+echo Launching %gameNameTitleAmpConvert%....
 echo.
 echo.
 
@@ -1099,7 +1118,7 @@ if %errorlevel% equ 0 (
 	
 	%lgreen%
 	cls
-	echo Launching %gameNameTitle%....
+	echo Launching %gameNameTitleAmpConvert%....
 	echo.
 	echo.
 	%wait% 1
@@ -1108,7 +1127,7 @@ if %errorlevel% equ 0 (
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %laqua%
 cls
-echo %gameNameTitle% Is Running....
+echo %gameNameTitleAmpConvert% Is Running....
 echo.
 echo.
 ::echo Press any key to kill %gameExec%....
