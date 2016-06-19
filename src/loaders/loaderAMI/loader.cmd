@@ -905,6 +905,13 @@ setlocal enabledelayedexpansion
 endlocal
 
 
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%lyellow%
+cls
+echo Finalizing Game Variables....
+echo.
+echo.
+
 :: Set new variable without quotes
 cls
 set /p jsonContentId=<%amiRequestContentId%
@@ -935,6 +942,13 @@ set /p gameNameTitleAmpConvert=<%temp%\tmp.tmp
 ::echo gameNameTitleAmpConvert: %gameNameTitleAmpConvert%
 ::pause
 
+
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%lyellow%
+cls
+echo Finalizing Game Variables....
+echo.
+echo.
 
 :: Match to global variables
 set cid=%jsonContentId%
