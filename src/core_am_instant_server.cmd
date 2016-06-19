@@ -1136,7 +1136,7 @@ goto inProgress
 :inProgress
 
 cls
-echo 
+echo.
 echo Preparing For Remote RFS Extraction....
 echo.
 echo.
