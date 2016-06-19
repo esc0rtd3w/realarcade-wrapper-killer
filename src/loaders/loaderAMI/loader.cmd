@@ -46,7 +46,9 @@ set loaderPathScripts=%loaderPath%\scripts
 :: Binaries
 set wait=%loaderPathBin%\wait.exe
 set wget="%loaderPathBin%\wget.exe"
-set zip="%loaderPathBin%\sevenZ.exe" a -y -r
+set unpack="%loaderPathBin%\rar.exe" x -y
+set pack="%loaderPathBin%\rar.exe" a -m5 -ep1
+
 set readIni="%loaderPathBin%\inifile.exe"
 
 
@@ -605,22 +607,23 @@ goto loader
 
 :loader
 
+
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lyellow%
 cls
 echo Removing All activeMARK Control Traces....
 echo.
 echo.
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 %wait% 1
 
 :: Copy Source Files To Local For Launch
-xcopy /y /e /i /r "%gamePathData%" "%amPath%\data"
-xcopy /y /e /i /r "%gamePathDynamicData%" "%amPath%\dynamicdata"
-xcopy /y /e /i /r "%gamePathInstantApps%" "%amPath%\instant\apps"
-xcopy /y /e /i /r "%gamePathLicenses%" "%amPath%\licenses"
-xcopy /y /e /i /r "%gamePathStats%" "%amPath%\stats"
-xcopy /y /e /i /r "%gamePathStreaming%" "%amPath%\streaming"
+::xcopy /y /e /i /r "%gamePathData%" "%amPath%\data"
+::xcopy /y /e /i /r "%gamePathDynamicData%" "%amPath%\dynamicdata"
+::xcopy /y /e /i /r "%gamePathInstantApps%" "%amPath%\instant\apps"
+::xcopy /y /e /i /r "%gamePathLicenses%" "%amPath%\licenses"
+::xcopy /y /e /i /r "%gamePathStats%" "%amPath%\stats"
+::xcopy /y /e /i /r "%gamePathStreaming%" "%amPath%\streaming"
 
 rd /s /q "%pd%\com.gamehouse.aminstaller"
 
@@ -666,6 +669,29 @@ set gameSavePath=%save_path%
 
 
 %checkForGameSave%
+
+
+
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%lyellow%
+cls
+echo Extracting Game Data Container....
+echo.
+echo.
+
+set datContainer="%gamePath%\%cid%.ami"
+
+%unpack% %datContainer% "%amPath%"
+
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%lyellow%
+cls
+echo Extracting Game Data Container....
+echo.
+echo.
+
+%wait% 2
+
 
 
 %lyellow%
@@ -923,6 +949,7 @@ set baseReqDownloadRFS=%wget% %outFileRFS% "%jsonRfsUrl%
 
 
 :: Launch
+
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lgreen%
 cls
