@@ -947,10 +947,10 @@ set gameNameTitle=%jsonInstallationTitle%
 :: Strip and Convert & to "and" As Separate Variable
 setlocal enabledelayedexpansion
 	set "gameNameTitleTemp=!jsonInstallationTitleClean1:&=and!"
-	echo !gameNameTitleTemp!>%temp%\tmp.tmp
+	echo !gameNameTitleTemp!>%temp%\tmp2.tmp
 endlocal
 
-set /p gameNameTitleAmpConvert=<%temp%\tmp.tmp
+set /p gameNameTitleAmpConvert=<%temp%\tmp2.tmp
 
 ::echo jsonInstallationTitleNoAmp: %jsonInstallationTitleNoAmp%
 ::echo gameNameTitleAmpConvert: %gameNameTitleAmpConvert%
@@ -1105,6 +1105,7 @@ echo.
 echo.
 
 del /f /q "%temp%\tmp.tmp"
+del /f /q "%temp%\tmp2.tmp"
 
 del /f /q %amiRequest%
 del /f /q %amiRequestInstallationTitle%
