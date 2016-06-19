@@ -19,7 +19,7 @@ set amiVersionMinor=46
 set amiVersionRevision=46
 
 set amiPublisher=GameHouse
-
+set kill = taskkill /f /im
 
 set root=%~dp0
 set rootClean=%ProgramData%\activeMARK
@@ -42,6 +42,8 @@ set loaderPath=%root%loader
 set loaderPathBin=%loaderPath%\bin
 set loaderPathRegistry=%loaderPath%\registry
 set loaderPathScripts=%loaderPath%\scripts
+
+set loaderExtKill="%loaderPath%\extKill.txt"
 
 :: Binaries
 set wait=%loaderPathBin%\wait.exe
@@ -573,6 +575,7 @@ if %errorlevel% equ 0 (
 	%serviceRegRemove%
 	%serviceRegRemoveLicensing%
 	)
+	
 
 %kill% aminstantservice.exe
 
@@ -607,6 +610,22 @@ goto loader
 
 :loader
 
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%lyellow%
+cls
+echo Terminating All Stale Processes....
+echo.
+echo.
+
+:: Load any other exectutable files that need terminated
+setlocal ENABLEDELAYEDEXPANSION
+set processList=0
+for /f "tokens=*" %%a in ('type %loaderExtKill%') do (
+    set /a processList=!processList! + 1
+	taskkill /f /im "%%a"
+)
+endlocal
+
 
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lyellow%
@@ -629,6 +648,43 @@ rd /s /q "%pd%\com.gamehouse.aminstaller"
 
 %wait% 1
 
+
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%lyellow%
+cls
+echo Extracting Game Data Container....
+echo.
+echo.
+
+set getCidFromAmiFileText="%temp%\getCidFromAmiFile.txt"
+
+dir /b %gamePath%>%getCidFromAmiFileText%
+
+set /p amiEarly=<%getCidFromAmiFileText%
+del /f /q %getCidFromAmiFileText%
+
+setlocal enabledelayedexpansion
+	set cidEarlyTemp=!amiEarly:.ami=!
+	echo !cidEarlyTemp!>%getCidFromAmiFileText%
+endlocal
+	
+set /p cidEarly=<%getCidFromAmiFileText%
+del /f /q %getCidFromAmiFileText%
+
+::echo amiEarly: %amiEarly%
+::echo cidEarly: %cidEarly%
+::pause
+
+
+set datContainer="%gamePath%\%amiEarly%"
+::echo %datContainer%
+::pause
+
+%unpack% %datContainer% "%amPath%"
+
+%wait% 1
+
+
 %lyellow%
 cls
 echo Loading Game Settings From INI....
@@ -642,55 +698,33 @@ type %gamePathInstant%\games.json>>"%amInstantPath%\games.json"
 :: Get settings from INI
 set tmpIniRead="%temp%\tmpIniRead.cmd"
 
-%readIni% "%loaderPath%\settings.ini" [main] content_id > %tmpIniRead%
+%readIni% "%gamePath%\settings.ini" [main] content_id > %tmpIniRead%
 call %tmpIniRead%
 set cid=%content_id%
 
-%readIni% "%loaderPath%\settings.ini" [main] game_name_dashes > %tmpIniRead%
+%readIni% "%gamePath%\settings.ini" [main] game_name_dashes > %tmpIniRead%
 call %tmpIniRead%
 set gameNameDashes=%game_name_dashes%
 
-%readIni% "%loaderPath%\settings.ini" [main] game_name > %tmpIniRead%
+%readIni% "%gamePath%\settings.ini" [main] game_name > %tmpIniRead%
 call %tmpIniRead%
 set gameNameTitle=%game_name%
 
-%readIni% "%loaderPath%\settings.ini" [main] exe_launch > %tmpIniRead%
+%readIni% "%gamePath%\settings.ini" [main] exe_launch > %tmpIniRead%
 call %tmpIniRead%
 set gameExec=%exe_launch%
 
-%readIni% "%loaderPath%\settings.ini" [main] save_external > %tmpIniRead%
+%readIni% "%gamePath%\settings.ini" [main] save_external > %tmpIniRead%
 call %tmpIniRead%
 set gameSavePathType=%save_external%
 
-%readIni% "%loaderPath%\settings.ini" [main] save_path > %tmpIniRead%
+%readIni% "%gamePath%\settings.ini" [main] save_path > %tmpIniRead%
 call %tmpIniRead%
 set gameSavePath=%save_path%
 
 
 
 %checkForGameSave%
-
-
-
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
-%lyellow%
-cls
-echo Extracting Game Data Container....
-echo.
-echo.
-
-set datContainer="%gamePath%\%cid%.ami"
-
-%unpack% %datContainer% "%amPath%"
-
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
-%lyellow%
-cls
-echo Extracting Game Data Container....
-echo.
-echo.
-
-%wait% 2
 
 
 
@@ -1012,9 +1046,10 @@ echo.
 cls
 echo Cleaning Up Files....
 echo.
-%kill% aminstantservice.exe
-%kill% aminstantservice.exe
-%kill% aminstantservice.exe
+
+taskkill /f /im aminstantservice.exe
+taskkill /f /im aminstantservice.exe
+taskkill /f /im aminstantservice.exe
 
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lgreen%
@@ -1076,13 +1111,23 @@ cls
 echo %gameNameTitle% Is Running....
 echo.
 echo.
-echo Press any key to kill %gameExec%....
+::echo Press any key to kill %gameExec%....
+echo Press any key to kill %gameExec% and dependencies....
 echo.
 echo.
 pause>nul
 
 taskkill /f /im "%gameExec%"
 taskkill /f /im "%serviceBin%"
+
+:: Load any other exectutable files that need terminated
+setlocal ENABLEDELAYEDEXPANSION
+set processList=0
+for /f "tokens=*" %%a in ('type %loaderExtKill%') do (
+    set /a processList=!processList! + 1
+	taskkill /f /im "%%a"
+)
+endlocal
 
 goto end
 
@@ -1226,6 +1271,8 @@ rd /s /q "%rootClean%\stats"
 rd /s /q "%rootClean%\streaming"
 
 rd /s /q "%pd%\com.gamehouse.aminstaller"
+
+
 
 
 exit
