@@ -698,27 +698,27 @@ type %gamePathInstant%\games.json>>"%amInstantPath%\games.json"
 :: Get settings from INI
 set tmpIniRead="%temp%\tmpIniRead.cmd"
 
-%readIni% "%gamePath%\settings.ini" [main] content_id > %tmpIniRead%
+%readIni% "%gamePath%\%cidEarly%.ini" [main] content_id > %tmpIniRead%
 call %tmpIniRead%
 set cid=%content_id%
 
-%readIni% "%gamePath%\settings.ini" [main] game_name_dashes > %tmpIniRead%
+%readIni% "%gamePath%\%cidEarly%.ini" [main] game_name_dashes > %tmpIniRead%
 call %tmpIniRead%
 set gameNameDashes=%game_name_dashes%
 
-%readIni% "%gamePath%\settings.ini" [main] game_name > %tmpIniRead%
+%readIni% "%gamePath%\%cidEarly%.ini" [main] game_name > %tmpIniRead%
 call %tmpIniRead%
 set gameNameTitle=%game_name%
 
-%readIni% "%gamePath%\settings.ini" [main] exe_launch > %tmpIniRead%
+%readIni% "%gamePath%\%cidEarly%.ini" [main] exe_launch > %tmpIniRead%
 call %tmpIniRead%
 set gameExec=%exe_launch%
 
-%readIni% "%gamePath%\settings.ini" [main] save_external > %tmpIniRead%
+%readIni% "%gamePath%\%cidEarly%.ini" [main] save_external > %tmpIniRead%
 call %tmpIniRead%
 set gameSavePathType=%save_external%
 
-%readIni% "%gamePath%\settings.ini" [main] save_path > %tmpIniRead%
+%readIni% "%gamePath%\%cidEarly%.ini" [main] save_path > %tmpIniRead%
 call %tmpIniRead%
 set gameSavePath=%save_path%
 
