@@ -409,6 +409,31 @@ del /f /s /q "%root%\instant\pending-requests.json"
 del /f /s /q "%root%\streaming\access.lock"
 attrib -h -s -r "%root%\data"
 
+%wait% 3
+
+
+::debuggg
+::set t0kens=7
+::echo SET NEW TOKEN VALUE: 
+::set /p t0kens=
+:: Get EXE name from game
+set dyn="%root%\dynamicdata\%cid%.json"
+for /f "delims=\ tokens=7" %%a in ('type %dyn%') do (
+	echo %%a>"%temp%\t0ken.txt"
+)
+::goto debuggg
+%wait% 3
+
+set getEXE="%temp%\t0ken.txt"
+for /f "delims=" tokens=1" %%a in ('type %getEXE%') do (
+	echo %%a>"%temp%\t0ken2.txt"
+)
+
+set /p exe_launch_temp=<"%temp%\t0ken2.txt"
+echo %exe_launch_temp%
+pause
+taskkill /f /im "%exe_launch_temp%"
+
 goto %returnTo%
 
 
@@ -979,6 +1004,8 @@ for /f "delims=: tokens=2" %%a in ('type %amiRequestDeviceId%') do (
 
 
 
+
+
 :: Cleanup Variables
 setlocal enabledelayedexpansion
 
@@ -1136,13 +1163,16 @@ goto inProgress
 :inProgress
 
 cls
+%laqua%
 echo.
-echo Preparing For Remote RFS Extraction....
+echo Downloading In Progress....
+echo.
+echo Please Be Patient! Some Files May Be Very Large!
 echo.
 echo.
 set remoteDownloadFinished=0
 
-%wait% 10
+%wait% 6
 
 if not exist "%gamesDynamicDataPath%" (
 	cls
