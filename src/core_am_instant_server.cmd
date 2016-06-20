@@ -701,6 +701,8 @@ set /p exe_launch=<"%temp%\t0ken_exe.txt"
 %wait% 1
 
 :: Cleanup Temp Files
+del /f /q "%temp%\t0ken.txt"
+del /f /q "%temp%\t0ken_content_id.txt"
 del /f /q "%temp%\t0ken_name_guess.txt"
 del /f /q "%temp%\t0ken_exe.txt"
 del /f /q "%temp%\t0ken_disk_size.txt"
