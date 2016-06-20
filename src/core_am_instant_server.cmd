@@ -709,13 +709,13 @@ del /f /q "%temp%\t0ken_disk_size.txt"
 del /f /q "%temp%\t0ken_install_path.txt"
 del /f /q "%temp%\t0ken_download_url.txt"
 
-cls
-echo name_guess: %name_guess%
-echo exe_launch: %exe_launch%
-echo disk_size: %disk_size%
-echo install_path: %install_path%
-echo download_url: %download_url%
-pause
+::cls
+::echo name_guess: %name_guess%
+::echo exe_launch: %exe_launch%
+::echo disk_size: %disk_size%
+::echo install_path: %install_path%
+::echo download_url: %download_url%
+::pause
 
 goto test3
 
