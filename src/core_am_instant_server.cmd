@@ -590,6 +590,14 @@ attrib -h -s -r "%root%\data"
 
 %wait% 3
 
+cls
+echo \stats\%cid%.json NOT FOUND!
+echo.
+echo.
+echo To generate the stats JSON file, please exit game normally!
+echo.
+echo.
+
 
 set dyn="%root%\dynamicdata\%cid%.json"
 for /f "delims=\ tokens=7" %%a in ('type %dyn%') do (
@@ -597,6 +605,14 @@ for /f "delims=\ tokens=7" %%a in ('type %dyn%') do (
 )
 
 %wait% 3
+
+cls
+echo \stats\%cid%.json NOT FOUND!
+echo.
+echo.
+echo To generate the stats JSON file, please exit game normally!
+echo.
+echo.
 
 set /p getEXE=<"%temp%\t0ken.txt"
 
