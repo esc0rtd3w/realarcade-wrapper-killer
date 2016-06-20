@@ -752,6 +752,8 @@ if "%gameNameTitle%"=="null" (
 	echo.
 	echo The path may have a " " SPACE in it. Try removing and run again.
 	echo.
+	echo Press any key to exit....
+	echo.
 	echo.
 	pause>nul
 	goto end
@@ -764,6 +766,8 @@ if "%gameNameTitle%"=="" (
 	echo This is a problem and loading cannot continue!
 	echo.
 	echo The path may have a " " SPACE in it. Try removing and run again.
+	echo.
+	echo Press any key to exit....
 	echo.
 	echo.
 	pause>nul
