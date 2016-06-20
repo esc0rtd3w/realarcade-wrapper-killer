@@ -559,6 +559,9 @@ set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
 
 :: Download Extracted RFS
 %runShellWaitTerminate% %baseReqExtractRFS%%remoteRfsBase1%%gameNameTitleHTML%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
+
+
+
 goto inProgress
 
 goto testing
@@ -598,10 +601,36 @@ echo To generate the stats JSON file, please exit game normally!
 echo.
 echo.
 
+:: Get Variables From games.json
 
-set dyn="%root%\dynamicdata\%cid%.json"
-for /f "delims=\ tokens=7" %%a in ('type %dyn%') do (
-	echo %%a>"%temp%\t0ken.txt"
+:: Get name_guess
+set name_guess="%root%\dynamicdata\%cid%.json"
+for /f "delims=\ tokens=7" %%a in ('type %name_guess%') do (
+	echo %%a>"%temp%\t0ken_name_guess.txt"
+)
+
+:: Get exe_launch
+set exe_launch="%root%\dynamicdata\%cid%.json"
+for /f "delims=\ tokens=7" %%a in ('type %exe_launch%') do (
+	echo %%a>"%temp%\t0ken_exe.txt"
+)
+
+:: Get disk_size
+set disk_size="%root%\dynamicdata\%cid%.json"
+for /f "delims=\ tokens=7" %%a in ('type %disk_size%') do (
+	echo %%a>"%temp%\t0ken_disk_size.txt"
+)
+
+:: Get install_path
+set install_path="%root%\dynamicdata\%cid%.json"
+for /f "delims=\ tokens=7" %%a in ('type %install_path%') do (
+	echo %%a>"%temp%\t0ken_install_path.txt"
+)
+
+:: Get download_url
+set download_url="%root%\dynamicdata\%cid%.json"
+for /f "delims=\ tokens=7" %%a in ('type %download_url%') do (
+	echo %%a>"%temp%\t0ken_download_url.txt"
 )
 
 %wait% 3
@@ -614,16 +643,58 @@ echo To generate the stats JSON file, please exit game normally!
 echo.
 echo.
 
-set /p getEXE=<"%temp%\t0ken.txt"
+set /p name_guess=<"%temp%\t0ken_name_guess.txt"
+set /p exe_launch=<"%temp%\t0ken_exe.txt"
+set /p disk_size=<"%temp%\t0ken_disk_size.txt"
+set /p install_path=<"%temp%\t0ken_install_path.txt"
+set /p download_url=<"%temp%\t0ken_download_url.txt"
+
+%wait% 1
 
 setlocal enabledelayedexpansion
 
-	set getEXETemp=!getEXE:",=!
-	echo !getEXETemp!>"%temp%\t0ken.txt"
+	set getNameGuessTemp=!name_guess:",=!
+	echo !getNameGuessTemp!>"%temp%\t0ken_name_guess.txt"
+	
+	set getEXETemp=!exe_launch:",=!
+	echo !getEXETemp!>"%temp%\t0ken_exe.txt"
+
+	set getDiskSizeTemp=!disk_size:",=!
+	echo !getDiskSizeTemp!>"%temp%\t0ken_disk_size.txt"
+
+	set getInstallPathTemp=!install_path:",=!
+	echo !getInstallPathTemp!>"%temp%\t0ken_install_path.txt"
+
+	set getDownloadUrlTemp=!download_url:",=!
+	echo !getDownloadUrlTemp!>"%temp%\t0ken_download_url.txt"
 
 endlocal
 
-set /p exe_launch_temp=<"%temp%\t0ken.txt"
+%wait% 1
+
+:: Final Settings of Variables From games.json
+set /p name_guess=<"%temp%\t0ken_name_guess.txt"
+set /p exe_launch=<"%temp%\t0ken_exe.txt"
+set /p disk_size=<"%temp%\t0ken_disk_size.txt"
+set /p install_path=<"%temp%\t0ken_install_path.txt"
+set /p download_url=<"%temp%\t0ken_download_url.txt"
+
+%wait% 1
+
+:: Cleanup Temp Files
+del /f /q "%temp%\t0ken_name_guess.txt"
+del /f /q "%temp%\t0ken_exe.txt"
+del /f /q "%temp%\t0ken_disk_size.txt"
+del /f /q "%temp%\t0ken_install_path.txt"
+del /f /q "%temp%\t0ken_download_url.txt"
+
+cls
+echo name_guess: %name_guess%
+echo exe_launch: %exe_launch%
+echo disk_size: %disk_size%
+echo install_path: %install_path%
+echo download_url: %download_url%
+pause
 
 goto test3
 
@@ -647,7 +718,7 @@ echo.
 
 if %os%==XP choice /c:rs /n /d:s /t:5
 if %os%==VISTA choice /c rs /n /d s /t 5
-if errorlevel 2 goto test3
+if errorlevel 2 set doNothing=true
 
 if errorlevel 1 (
 
@@ -736,7 +807,7 @@ set iniFileLoader=%temp%\settings-add.txt
 
 echo.>%iniFileLoader%
 echo loader_version=1.0>>%iniFileLoader%
-echo ami_server_version=8.45.43.0>>%iniFileLoader%
+echo ami_server_version=8.46.46.0>>%iniFileLoader%
 echo ami_server_local=0>>%iniFileLoader%
 echo ami_server_embedded=1>>%iniFileLoader%
 echo ami_server_remote=0>>%iniFileLoader%
