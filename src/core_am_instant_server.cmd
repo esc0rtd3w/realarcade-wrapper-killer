@@ -369,14 +369,176 @@ goto %returnto%
 
 set returnto=test2
 
-if %cid%==00000000000000000000000000000000 (
 cls
-echo No Valid Content ID Has Been Set!
+echo Enter New CID and press ENTER (MUST BE VALID!!):
 echo.
 echo.
-pause
-goto amiMenu
+set /p cid=
+
+%serviceStop%
+%serviceDelete%
+%serviceRegRemove%
+%serviceRegRemoveLicensing%
+
+%kill% aminstantservice.exe
+%kill% aminstantservice.exe
+%kill% aminstantservice.exe
+
+%serviceCreate%
+%serviceCreateAddDescription%
+%serviceRegAdd%
+%serviceStart%
+
+%baseReq%%getSessionID%
+copy /y %amiRequest% %amiRequestSessionID%
+set /p sessionID=<%amiRequestSessionID%
+
+%baseReq%%download1%%cid%"
+
+for /f "delims=: tokens=3" %%a in ('type %amiRequest%') do (
+	echo %%a>%amiRequestInstallationTitle%
 )
+
+for /f "delims=, tokens=1" %%a in ('type %amiRequestInstallationTitle%') do (
+	set jsonInstallationTitle=%%a
+)
+
+for /f "delims=: tokens=4" %%a in ('type %amiRequest%') do (
+	echo %%a>%amiRequestContentId%
+)
+
+for /f "delims=, tokens=1" %%a in ('type %amiRequestContentId%') do (
+	echo %%a>%amiRequestContentId%
+	set jsonContentId=%%a
+)
+
+for /f "delims=: tokens=6" %%a in ('type %amiRequest%') do (
+	echo %%a>%amiRequestRFS%
+)
+
+for /f "delims=, tokens=1" %%a in ('type %amiRequestRFS%') do (
+	echo %%a>%amiRequestRFS%
+)
+
+for /f "delims=, tokens=*" %%a in ('type %amiRequestRFS%') do (
+	echo %%a>%amiRequestRFS%
+	set jsonRfsUrl=http:%%a
+)
+
+for /f "delims=/ tokens=5" %%a in ('type %amiRequestRFS%') do (
+	set gameNameDashes=%%a
+	set gameNameFirstLetterTemp=%gameNameDashes%
+	set gameNameFirstLetter=%gameNameFirstLetterTemp:~0,1%
+)
+
+for /f "delims=: tokens=7" %%a in ('type %amiRequest%') do (
+	echo %%a>%amiRequestTracking%
+)
+
+for /f "delims=, tokens=1" %%a in ('type %amiRequestTracking%') do (
+	set jsonTracking=%%a
+)
+
+%reqGetDeviceId%%reqDeviceID%"
+
+setlocal enabledelayedexpansion
+for /f "tokens=*" %%a in ('type %amiRequest%') do (
+	set /a amiRequest=!amiRequest! + 1
+	set var!amiRequest!=%%a
+	if !amiRequest!==4 echo %%a>%amiRequestDeviceID%
+)
+endlocal
+
+for /f "delims=: tokens=2" %%a in ('type %amiRequestDeviceId%') do (
+	set jsonDeviceID=%%a
+)
+
+setlocal enabledelayedexpansion
+
+set jsonContentId=!jsonContentId:"=!
+echo !jsonContentId!>%amiRequestContentId%
+
+set jsonInstallationTitle=!jsonInstallationTitle:"=!
+echo !jsonInstallationTitle!>%amiRequestInstallationTitle%
+
+set jsonInstallationTitleClean1=!jsonInstallationTitle:'=!
+echo !jsonInstallationTitleClean1!>%amiRequestInstallationTitleClean1%
+
+set jsonInstallationTitleClean2=!jsonInstallationTitleClean1: -=!
+echo !jsonInstallationTitleClean2!>%amiRequestInstallationTitleClean2%
+
+set jsonRfsUrl=!jsonRfsUrl:"=!
+echo !jsonRfsUrl!>%jsonRfsUrl%
+
+set jsonTracking=!jsonTracking:"=!
+echo !jsonTracking!>%amiRequestTracking%
+
+set jsonDeviceID=!jsonDeviceID:"=!
+set jsonDeviceID=!jsonDeviceID: =!
+set jsonDeviceID=!jsonDeviceID:,=!
+echo !jsonDeviceID!>%amiRequestDeviceID%
+
+set gameNameNoDashes=!gameNameDashes:-=!
+echo !gameNameNoDashes!>%gameNameNoDashesSet%
+
+set gameNameUnderscores=!gameNameDashes:-=_!
+echo !gameNameUnderscores!>%gameNameUnderscoresSet%
+
+endlocal
+
+set /p jsonContentId=<%amiRequestContentId%
+set /p jsonInstallationTitle=<%amiRequestInstallationTitle%
+set /p jsonInstallationTitleClean1=<%amiRequestInstallationTitleClean1%
+set /p jsonInstallationTitleClean2=<%amiRequestInstallationTitleClean2%
+set /p jsonRfsUrl=<%jsonRfsUrl%
+set /p jsonTracking=<%amiRequestTracking%
+set /p jsonDeviceID=<%amiRequestDeviceID%
+
+set /p gameNameNoDashes=<%gameNameNoDashesSet%
+set /p gameNameUnderscoresSet=<%gameNameUnderscoresSet%
+
+set gameNameTitle=%jsonInstallationTitle%
+
+set cid=%jsonContentId%
+set gameNameTitleHTML=%jsonInstallationTitle%
+set gameNameTitleClean1=%jsonInstallationTitleClean1%
+set gameNameTitleClean2=%jsonInstallationTitleClean2%
+set deviceID=%jsonDeviceID%
+
+set cidHalfTemp=%cid%
+set cidHalf=%cidHalfTemp:~0,16%
+
+set gameNameFirstLetterTemp=%gameNameDashes%
+set gameNameFirstLetter=%gameNameFirstLetterTemp:~0,1%
+
+set gameNameDashesHalfTemp=%gameNameDashes%
+set gameNameDashesHalf=%gameNameDashesHalfTemp:~0,16%
+
+setlocal enabledelayedexpansion
+set space=%%20
+set gameNameTitleHTML=%gameNameTitleHTML: =!space!%
+echo %gameNameTitleHTML%>"%temp%\tmp.tmp"
+endlocal
+
+set /p gameNameTitleHTML=<"%temp%\tmp.tmp"
+
+set appDirName=%gameNameDashesHalf%%cidHalf%
+
+set reqGet1=--header="/v1/install.json?result=success
+set reqGet2=^&installation_title=%gameNameTitleHTML%
+set reqGet3=^&content_id=%cid%
+set reqGet4=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs HTTP/1.1"
+
+set reqGet=%reqGet1%%reqGet2%%reqGet3%%reqGet4%
+
+set reqGetDeviceId=wget -d %reqDeviceIDHeader% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+
+set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+
+if not exist "%desktop%\am-rfs-downloads" md "%desktop%\am-rfs-downloads"
+set outFileRFS=-O "%desktop%\am-rfs-downloads\%gameNameDashes%.rfs"
+set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
+
 
 :: Download Extracted RFS
 %runShellWaitTerminate% %baseReqExtractRFS%%remoteRfsBase1%%gameNameTitleHTML%%remoteRfsBase2%%cid%%remoteRfsBase3%/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs"
@@ -412,21 +574,21 @@ attrib -h -s -r "%root%\data"
 %wait% 3
 
 
-::debuggg
-::set t0kens=7
-::echo SET NEW TOKEN VALUE: 
-::set /p t0kens=
-:: Get EXE name from game
 set dyn="%root%\dynamicdata\%cid%.json"
 for /f "delims=\ tokens=7" %%a in ('type %dyn%') do (
 	echo %%a>"%temp%\t0ken.txt"
 )
-::goto debuggg
+
 %wait% 3
 
-set getEXE="%temp%\t0ken.txt"
+set /p getEXE=<"%temp%\t0ken.txt"
+echo %getEXE%
+pause
+
 for /f "delims=" tokens=1" %%a in ('type %getEXE%') do (
 	echo %%a>"%temp%\t0ken2.txt"
+	echo %%a
+	pause
 )
 
 set /p exe_launch_temp=<"%temp%\t0ken2.txt"
