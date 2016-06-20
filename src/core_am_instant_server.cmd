@@ -601,13 +601,7 @@ echo Please Wait! Reading available info from games.json....
 echo.
 echo.
 
-:: Get Variables From games.json
-
-:: Get name_guess
-set name_guess="%root%\dynamicdata\%cid%.json"
-for /f "delims=\ tokens=7" %%a in ('type %name_guess%') do (
-	echo %%a>"%temp%\t0ken_name_guess.txt"
-)
+:: Get Variables From \dynamicdata\%cid%.json
 
 :: Get exe_launch
 set exe_launch="%root%\dynamicdata\%cid%.json"
@@ -615,21 +609,41 @@ for /f "delims=\ tokens=7" %%a in ('type %exe_launch%') do (
 	echo %%a>"%temp%\t0ken_exe.txt"
 )
 
+:: Get Variables From \instant\games.json
+set gamesJSON="%root%\instant\games.json"
+
+:: Get content_id
+type %gamesJSON% | findstr content_id>"%temp%\t0ken_content_id.txt"
+set /p content_id=<"%temp%\t0ken_content_id.txt"
+for /f "delims=" tokens=3" %%a in ('echo %gamesJSON%') do (
+	echo %%a>"%temp%\t0ken_content_id.txt"
+)
+
+:: Get name_guess
+type %gamesJSON% | findstr name_guess>"%temp%\t0ken_name_guess.txt"
+set /p name_guess=<"%temp%\t0ken_name_guess.txt"
+for /f "delims=\ tokens=2" %%a in ('echo %gamesJSON%') do (
+	echo %%a>"%temp%\t0ken_name_guess.txt"
+)
+
 :: Get disk_size
-set disk_size="%root%\dynamicdata\%cid%.json"
-for /f "delims=\ tokens=7" %%a in ('type %disk_size%') do (
+type %gamesJSON% | findstr disk_size>"%temp%\t0ken_disk_size.txt"
+set /p disk_size=<"%temp%\t0ken_disk_size.txt"
+for /f "delims=\ tokens=2" %%a in ('echo %gamesJSON%') do (
 	echo %%a>"%temp%\t0ken_disk_size.txt"
 )
 
 :: Get install_path
-set install_path="%root%\dynamicdata\%cid%.json"
-for /f "delims=\ tokens=7" %%a in ('type %install_path%') do (
+type %gamesJSON% | findstr install_path>"%temp%\t0ken_install_path.txt"
+set /p install_path=<"%temp%\t0ken_install_path.txt"
+for /f "delims=\ tokens=10" %%a in ('echo %gamesJSON%') do (
 	echo %%a>"%temp%\t0ken_install_path.txt"
 )
 
 :: Get download_url
-set download_url="%root%\dynamicdata\%cid%.json"
-for /f "delims=\ tokens=7" %%a in ('type %download_url%') do (
+type %gamesJSON% | findstr download_url>"%temp%\t0ken_download_url.txt"
+set /p download_url=<"%temp%\t0ken_download_url.txt"
+for /f "delims=" tokens=3" %%a in ('echo %gamesJSON%') do (
 	echo %%a>"%temp%\t0ken_download_url.txt"
 )
 
