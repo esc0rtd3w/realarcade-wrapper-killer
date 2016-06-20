@@ -613,39 +613,44 @@ for /f "delims=\ tokens=7" %%a in ('type %exe_launch%') do (
 set gamesJSON="%root%\instant\games.json"
 
 :: Get content_id
-type %gamesJSON% | findstr content_id>"%temp%\t0ken_content_id.txt"
-set /p content_id=<"%temp%\t0ken_content_id.txt"
-for /f "delims=" tokens=3" %%a in ('echo %gamesJSON%') do (
-	echo %%a>"%temp%\t0ken_content_id.txt"
-)
+::type %gamesJSON% | findstr content_id>"%temp%\t0ken_content_id.txt"
+::set /p content_id=<"%temp%\t0ken_content_id.txt"
+::%wait% 1
+::for /f "delims=" tokens=3" %%a in ('echo %content_id%') do (
+::	echo %%a>"%temp%\t0ken_content_id.txt"
+::)
 
 :: Get name_guess
-type %gamesJSON% | findstr name_guess>"%temp%\t0ken_name_guess.txt"
-set /p name_guess=<"%temp%\t0ken_name_guess.txt"
-for /f "delims=\ tokens=2" %%a in ('echo %gamesJSON%') do (
-	echo %%a>"%temp%\t0ken_name_guess.txt"
-)
+::type %gamesJSON% | findstr name_guess>"%temp%\t0ken_name_guess.txt"
+::set /p name_guess=<"%temp%\t0ken_name_guess.txt"
+::%wait% 1
+::for /f "delims=\ tokens=2" %%a in ('echo %name_guess%') do (
+::	echo %%a>"%temp%\t0ken_name_guess.txt"
+::)
 
 :: Get disk_size
-type %gamesJSON% | findstr disk_size>"%temp%\t0ken_disk_size.txt"
-set /p disk_size=<"%temp%\t0ken_disk_size.txt"
-for /f "delims=\ tokens=2" %%a in ('echo %gamesJSON%') do (
-	echo %%a>"%temp%\t0ken_disk_size.txt"
-)
+::type %gamesJSON% | findstr disk_size>"%temp%\t0ken_disk_size.txt"
+::set /p disk_size=<"%temp%\t0ken_disk_size.txt"
+::%wait% 1
+::for /f "delims=\ tokens=2" %%a in ('echo %disk_size%') do (
+::	echo %%a>"%temp%\t0ken_disk_size.txt"
+::)
 
 :: Get install_path
-type %gamesJSON% | findstr install_path>"%temp%\t0ken_install_path.txt"
-set /p install_path=<"%temp%\t0ken_install_path.txt"
-for /f "delims=\ tokens=10" %%a in ('echo %gamesJSON%') do (
-	echo %%a>"%temp%\t0ken_install_path.txt"
-)
+::type %gamesJSON% | findstr install_path>"%temp%\t0ken_install_path.txt"
+::set /p install_path=<"%temp%\t0ken_install_path.txt"
+::%wait% 1
+::for /f "delims=\ tokens=10" %%a in ('echo %install_path%') do (
+::	echo %%a>"%temp%\t0ken_install_path.txt"
+::)
 
 :: Get download_url
-type %gamesJSON% | findstr download_url>"%temp%\t0ken_download_url.txt"
-set /p download_url=<"%temp%\t0ken_download_url.txt"
-for /f "delims=" tokens=3" %%a in ('echo %gamesJSON%') do (
-	echo %%a>"%temp%\t0ken_download_url.txt"
-)
+::type %gamesJSON% | findstr download_url>"%temp%\t0ken_download_url.txt"
+::set /p download_url=<"%temp%\t0ken_download_url.txt"
+::%wait% 1
+::for /f "delims=" tokens=3" %%a in ('echo %download_url%') do (
+::	echo %%a>"%temp%\t0ken_download_url.txt"
+::)
 
 %wait% 1
 
@@ -657,41 +662,41 @@ echo Please Wait! Reading available info from games.json....
 echo.
 echo.
 
-set /p name_guess=<"%temp%\t0ken_name_guess.txt"
+::set /p name_guess=<"%temp%\t0ken_name_guess.txt"
 set /p exe_launch=<"%temp%\t0ken_exe.txt"
-set /p disk_size=<"%temp%\t0ken_disk_size.txt"
-set /p install_path=<"%temp%\t0ken_install_path.txt"
-set /p download_url=<"%temp%\t0ken_download_url.txt"
+::set /p disk_size=<"%temp%\t0ken_disk_size.txt"
+::set /p install_path=<"%temp%\t0ken_install_path.txt"
+::set /p download_url=<"%temp%\t0ken_download_url.txt"
 
 %wait% 1
 
 setlocal enabledelayedexpansion
 
-	set getNameGuessTemp=!name_guess:",=!
-	echo !getNameGuessTemp!>"%temp%\t0ken_name_guess.txt"
+::	set getNameGuessTemp=!name_guess:",=!
+::	echo !getNameGuessTemp!>"%temp%\t0ken_name_guess.txt"
 	
 	set getEXETemp=!exe_launch:",=!
 	echo !getEXETemp!>"%temp%\t0ken_exe.txt"
 
-	set getDiskSizeTemp=!disk_size:",=!
-	echo !getDiskSizeTemp!>"%temp%\t0ken_disk_size.txt"
+::	set getDiskSizeTemp=!disk_size:",=!
+::	echo !getDiskSizeTemp!>"%temp%\t0ken_disk_size.txt"
 
-	set getInstallPathTemp=!install_path:",=!
-	echo !getInstallPathTemp!>"%temp%\t0ken_install_path.txt"
+::	set getInstallPathTemp=!install_path:",=!
+::	echo !getInstallPathTemp!>"%temp%\t0ken_install_path.txt"
 
-	set getDownloadUrlTemp=!download_url:",=!
-	echo !getDownloadUrlTemp!>"%temp%\t0ken_download_url.txt"
+::	set getDownloadUrlTemp=!download_url:",=!
+::	echo !getDownloadUrlTemp!>"%temp%\t0ken_download_url.txt"
 
 endlocal
 
 %wait% 1
 
 :: Final Settings of Variables From games.json
-set /p name_guess=<"%temp%\t0ken_name_guess.txt"
+::set /p name_guess=<"%temp%\t0ken_name_guess.txt"
 set /p exe_launch=<"%temp%\t0ken_exe.txt"
-set /p disk_size=<"%temp%\t0ken_disk_size.txt"
-set /p install_path=<"%temp%\t0ken_install_path.txt"
-set /p download_url=<"%temp%\t0ken_download_url.txt"
+::set /p disk_size=<"%temp%\t0ken_disk_size.txt"
+::set /p install_path=<"%temp%\t0ken_install_path.txt"
+::set /p download_url=<"%temp%\t0ken_download_url.txt"
 
 %wait% 1
 
