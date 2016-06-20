@@ -616,7 +616,7 @@ goto test3
 
 title amiJsonTestFinder
 
-%show% amiJsonTestFinder
+::%show% amiJsonTestFinder
 
 cls
 echo \stats\%cid%.json NOT FOUND!
