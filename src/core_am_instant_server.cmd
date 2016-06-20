@@ -597,7 +597,7 @@ cls
 echo \stats\%cid%.json NOT FOUND!
 echo.
 echo.
-echo To generate the stats JSON file, please exit game normally!
+echo Please Wait! Reading available info from games.json....
 echo.
 echo.
 
@@ -633,13 +633,13 @@ for /f "delims=\ tokens=7" %%a in ('type %download_url%') do (
 	echo %%a>"%temp%\t0ken_download_url.txt"
 )
 
-%wait% 3
+%wait% 1
 
 cls
 echo \stats\%cid%.json NOT FOUND!
 echo.
 echo.
-echo To generate the stats JSON file, please exit game normally!
+echo Please Wait! Reading available info from games.json....
 echo.
 echo.
 
@@ -712,7 +712,7 @@ echo.
 echo To generate the stats JSON file, please exit game normally!
 echo.
 echo.
-echo You can also press R to relaunch the game....
+echo You can now also press R to relaunch the game....
 echo.
 echo.
 
