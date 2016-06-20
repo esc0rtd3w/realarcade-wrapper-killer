@@ -55,7 +55,7 @@ set userPathSaves=%userPathId%\saves
 set loaderExtKill="%loaderPath%\extKill.txt"
 
 :: Binaries
-set wait=%loaderPathBin%\wait.exe
+set wait="%loaderPathBin%\wait.exe"
 set wget="%loaderPathBin%\wget.exe"
 set unpack="%loaderPathBin%\rar.exe" x -y
 set pack="%loaderPathBin%\rar.exe" a -m5 -ep1
@@ -668,7 +668,7 @@ echo.
 
 set getCidFromAmiFileText="%temp%\getCidFromAmiFile.txt"
 
-dir /b %gamePath%>%getCidFromAmiFileText%
+dir /b "%gamePath%">%getCidFromAmiFileText%
 
 set /p amiEarly=<%getCidFromAmiFileText%
 del /f /q %getCidFromAmiFileText%
@@ -693,7 +693,6 @@ set datContainer="%gamePath%\%amiEarly%"
 %unpack% %datContainer% "%amPath%"
 
 %wait% 1
-
 
 %lyellow%
 cls
@@ -742,6 +741,36 @@ set gameSavePath=%save_path%
 ::xcopy /y /e /i /r "%root%user\0\saves\%cidEarly%" "%gameSavePath%"
 
 
+:: Check for null values
+::type %amiRequest%
+::pause
+if "%gameNameTitle%"=="null" (
+	cls
+	echo Game Has NULL Value!
+	echo.
+	echo This is a problem and loading cannot continue!
+	echo.
+	echo The path may have a " " SPACE in it. Try removing and run again.
+	echo.
+	echo.
+	pause>nul
+	goto end
+)
+
+if "%gameNameTitle%"=="" (
+	cls
+	echo Game Has NULL Value!
+	echo.
+	echo This is a problem and loading cannot continue!
+	echo.
+	echo The path may have a " " SPACE in it. Try removing and run again.
+	echo.
+	echo.
+	pause>nul
+	goto end
+)
+
+
 %lyellow%
 cls
 echo Preparing %gameNameTitle%....
@@ -767,6 +796,7 @@ cls
 echo Sending Magic Bytes To Local Server....
 echo.
 echo.
+
 %baseReq%%getSessionID%
 copy /y %amiRequest% %amiRequestSessionID%
 
