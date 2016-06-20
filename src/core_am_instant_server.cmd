@@ -329,6 +329,7 @@ goto end
 :testing
 
 set returnto=amiMenu2
+set testMode=1
 
 cls
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
@@ -593,11 +594,42 @@ endlocal
 
 set /p exe_launch_temp=<"%temp%\t0ken.txt"
 
-%wait% 1
+%wait% 5
 
 taskkill /f /im "%exe_launch_temp%"
 
-set testMode=1
+
+%kill% aminstantservice.exe
+
+:: Launch again to generate stats file???
+::%serviceCreate%
+::%serviceCreateAddDescription%
+::%serviceRegAdd%
+::%serviceStart%
+
+::%runShellWaitTerminate% %baseReq%%launch1%%cid%%launch2%
+
+::%wait% 10
+
+::%serviceStop%
+::%serviceDelete%
+::%serviceRegRemove%
+::%serviceRegRemoveLicensing%
+
+::%wait% 10
+
+::taskkill /f /im "%exe_launch_temp%"
+
+:: Prepare For Packaging
+::set root=%ProgramData%\activeMARK
+::del /f /s /q "%root%\instant\aminstant.log"
+::del /f /s /q "%root%\instant\connection.json"
+::del /f /s /q "%root%\instant\datagathering.json"
+::del /f /s /q "%root%\instant\games.json.lock"
+::del /f /s /q "%root%\instant\info.json"
+::del /f /s /q "%root%\instant\pending-requests.json"
+::del /f /s /q "%root%\streaming\access.lock"
+::attrib -h -s -r "%root%\data"
 
 goto %returnTo%
 
