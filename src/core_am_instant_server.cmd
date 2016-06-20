@@ -5,6 +5,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+
 :reset
 mode con lines=26
 
+set testMode=0
 
 :: Get environment from the wrapper killer
 echo.>"%temp%\rawkEnv.cmd"
@@ -358,7 +359,7 @@ echo.
 
 if %os%==XP choice /c:12b /n
 if %os%==VISTA choice /c 12b /n
-if errorlevel 3 goto amiMenu2
+if errorlevel 3 set testMode=0&&goto amiMenu2
 if errorlevel 2 goto cleanAmFull
 if errorlevel 1 goto test1
 
@@ -595,6 +596,8 @@ set /p exe_launch_temp=<"%temp%\t0ken.txt"
 %wait% 1
 
 taskkill /f /im "%exe_launch_temp%"
+
+set testMode=1
 
 goto %returnTo%
 
@@ -1358,7 +1361,7 @@ if exist "%gamesDynamicDataPath%" (
 	echo.
 	echo.
 	set remoteDownloadFinished=1
-	pause>nul
+	if %testMode%==0 pause>nul
 	goto %returnTo%
 )
 
