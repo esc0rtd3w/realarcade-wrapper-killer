@@ -641,9 +641,34 @@ echo.
 echo To generate the stats JSON file, please exit game normally!
 echo.
 echo.
+echo You can also press R to relaunch the game....
+echo.
+echo.
 
+if %os%==XP choice /c:rs /n /d:s /t:5
+if %os%==VISTA choice /c rs /n /d s /t 5
+if errorlevel 2 goto test3
 
-%wait% 5
+if errorlevel 1 (
+
+	%serviceStop%
+	%serviceDelete%
+	%serviceRegRemove%
+	%serviceRegRemoveLicensing%
+	
+	%serviceCreate%
+	%serviceCreateAddDescription%
+	%serviceRegAdd%
+	%serviceStart%
+	%runShellWaitTerminate% %baseReq%%launch1%%cid%%launch2%
+	
+	%serviceStop%
+	%serviceDelete%
+	%serviceRegRemove%
+	%serviceRegRemoveLicensing%
+)
+
+::%wait% 5
 
 ::taskkill /f /im "%exe_launch_temp%"
 
@@ -1414,7 +1439,6 @@ goto inProgress
 
 cls
 %laqua%
-echo.
 echo Downloading In Progress....
 echo.
 echo Please Be Patient! Some Files May Be Very Large!
