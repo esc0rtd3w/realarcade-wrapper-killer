@@ -582,18 +582,18 @@ for /f "delims=\ tokens=7" %%a in ('type %dyn%') do (
 %wait% 3
 
 set /p getEXE=<"%temp%\t0ken.txt"
-echo %getEXE%
-pause
 
-for /f "delims=" tokens=1" %%a in ('type %getEXE%') do (
-	echo %%a>"%temp%\t0ken2.txt"
-	echo %%a
-	pause
-)
+setlocal enabledelayedexpansion
 
-set /p exe_launch_temp=<"%temp%\t0ken2.txt"
-echo %exe_launch_temp%
-pause
+	set getEXETemp=!getEXE:",=!
+	echo !getEXETemp!>"%temp%\t0ken.txt"
+
+endlocal
+
+set /p exe_launch_temp=<"%temp%\t0ken.txt"
+
+%wait% 1
+
 taskkill /f /im "%exe_launch_temp%"
 
 goto %returnTo%
@@ -1339,7 +1339,6 @@ set remoteDownloadFinished=0
 if not exist "%gamesDynamicDataPath%" (
 	cls
 	%laqua%
-	echo 
 	echo Downloading In Progress....
 	echo.
 	echo Please Be Patient! Some Files May Be Very Large!
@@ -1352,7 +1351,6 @@ if not exist "%gamesDynamicDataPath%" (
 if exist "%gamesDynamicDataPath%" (
 	cls
 	%lgreen%
-	echo 
 	echo Downloading Finished!
 	echo.
 	echo.
