@@ -609,12 +609,28 @@ endlocal
 
 set /p exe_launch_temp=<"%temp%\t0ken.txt"
 
+goto test3
+
+
+:test3
+
+cls
+echo \stats\%cid%.json NOT FOUND!
+echo.
+echo.
+echo To generate the stats JSON file, please exit game normally!
+echo.
+echo.
+
+
 %wait% 5
 
-taskkill /f /im "%exe_launch_temp%"
+::taskkill /f /im "%exe_launch_temp%"
 
+if not exist "%root%\stats\%cid%.json" goto test3
+if exist "%root%\stats\%cid%.json" goto %returnTo%
 
-%kill% aminstantservice.exe
+::%kill% aminstantservice.exe
 
 :: Launch again to generate stats file???
 ::%serviceCreate%
@@ -646,7 +662,9 @@ taskkill /f /im "%exe_launch_temp%"
 ::del /f /s /q "%root%\streaming\access.lock"
 ::attrib -h -s -r "%root%\data"
 
-goto %returnTo%
+
+goto test3
+
 
 
 :cleanAmFull
