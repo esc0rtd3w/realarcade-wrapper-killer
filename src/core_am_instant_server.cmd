@@ -1404,7 +1404,7 @@ if exist "%gamesDynamicDataPath%" (
 	echo Downloading Finished!
 	echo.
 	echo.
-	echo Press any key to return to the main menu....
+	if %testMode%==0 echo Press any key to return to the main menu....
 	echo.
 	echo.
 	set remoteDownloadFinished=1
