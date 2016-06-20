@@ -27,6 +27,9 @@ set rootClean=%ProgramData%\activeMARK
 :: Save Core Paths
 set savePath=%root%save
 
+:: Images Core Path
+set imagesPath=%root%images
+
 :: Game Core Paths
 set gamePath=%root%game
 set gamePathData=%gamePath%\data
@@ -693,6 +696,12 @@ set datContainer="%gamePath%\%amiEarly%"
 %unpack% %datContainer% "%amPath%"
 
 %wait% 1
+
+:: Set image variables
+set imagesPathCurrent=%imagesPath%\%cidEarly%
+set imageBackgound="%imagesPathCurrent%\background.jpg"
+set imagePreview="%imagesPathCurrent%\preview.jpg"
+
 
 %lyellow%
 cls
