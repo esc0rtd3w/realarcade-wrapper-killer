@@ -223,6 +223,19 @@ goto amiMenu
 
 
 :amiMenu
+
+:: Prepare For Packaging
+set root=%ProgramData%\activeMARK
+del /f /s /q "%root%\instant\aminstant.log"
+del /f /s /q "%root%\instant\connection.json"
+del /f /s /q "%root%\instant\datagathering.json"
+del /f /s /q "%root%\instant\games.json.lock"
+del /f /s /q "%root%\instant\info.json"
+del /f /s /q "%root%\instant\pending-requests.json"
+del /f /s /q "%root%\streaming\access.lock"
+attrib -h -s -r "%root%\data"
+
+
 set returnTo=amiMenu
 
 :: New Menu with working options only (20160515)
@@ -278,6 +291,8 @@ goto end
 
 
 :amiMenu2
+attrib -h -s -r "%root%\data"
+
 set returnTo=amiMenu2
 
 cls
