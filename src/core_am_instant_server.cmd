@@ -768,8 +768,8 @@ if not exist "%root%\stats\%cid%.json" goto test3
 
 if exist "%root%\stats\%cid%.json" (
 
-	wget "http://cdn.ghstatic.com/images/gh/prod/games/%gameNameDashes%/images/%gameNameDashes%_large.jpg" -O "%root%background.jpg"
-	wget "http://cdn.ghstatic.com/images/gh/prod/games/%gameNameDashes%/images/%gameNameDashes%_small.jpg" -O "%root%preview.jpg"
+	%wget% "http://cdn.ghstatic.com/images/gh/prod/games/%gameNameDashes%/images/%gameNameDashes%_large.jpg" -O "%root%background.jpg"
+	%wget% "http://cdn.ghstatic.com/images/gh/prod/games/%gameNameDashes%/images/%gameNameDashes%_small.jpg" -O "%root%preview.jpg"
 
 	goto %returnTo%
 )
