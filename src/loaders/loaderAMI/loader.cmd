@@ -671,7 +671,7 @@ echo.
 
 set getCidFromAmiFileText="%temp%\getCidFromAmiFile.txt"
 
-dir /b "%gamePath%">%getCidFromAmiFileText%
+dir /b "%gamePath%" | findstr ".ami">%getCidFromAmiFileText%
 
 set /p amiEarly=<%getCidFromAmiFileText%
 del /f /q %getCidFromAmiFileText%
@@ -689,9 +689,12 @@ del /f /q %getCidFromAmiFileText%
 ::pause
 
 
+:: Set RESCUE variables from valid
+set rescue_ami_package=%amiEarly%
+set rescue_content_id=%cidEarly%
+
+
 set datContainer="%gamePath%\%amiEarly%"
-::echo %datContainer%
-::pause
 
 %unpack% %datContainer% "%amPath%"
 
@@ -701,6 +704,10 @@ set datContainer="%gamePath%\%amiEarly%"
 set imagesPathCurrent=%imagesPath%\%cidEarly%
 set imageBackgound="%imagesPathCurrent%\background.jpg"
 set imagePreview="%imagesPathCurrent%\preview.jpg"
+
+:: Set RESCUE variables from valid
+set rescue_imageBackgound=%imageBackgound%
+set rescue_imagePreview=%amiEarly%
 
 
 %lyellow%
@@ -739,7 +746,6 @@ set gameSavePathType=%save_external%
 %readIni% "%gamePath%\%cidEarly%.ini" [main] save_path > %tmpIniRead%
 call %tmpIniRead%
 set gameSavePath=%save_path%
-
 
 
 ::%checkForGameSave%
@@ -783,6 +789,13 @@ if "%gameNameTitle%"=="" (
 	goto end
 )
 
+:: Set RESCUE variables from valid
+set rescue_gameNameDashes=%gameNameDashes%
+set rescue_gameNameTitle=%gameNameTitle%
+set rescue_gameExec=%gameExec%
+set rescue_gameSavePathType=%gameSavePathType%
+set rescue_gameSavePath=%gameSavePath%
+
 
 %lyellow%
 cls
@@ -815,6 +828,8 @@ copy /y %amiRequest% %amiRequestSessionID%
 
 set /p sessionID=<%amiRequestSessionID%
 
+:: Set RESCUE variables from valid
+set rescue_sessionID=%sessionID%
 
 :: Request JSON Config File
 :: Single DOUBLE QUOTE here on purpose
@@ -981,7 +996,7 @@ set /p jsonTracking=<%amiRequestTracking%
 set /p jsonDeviceID=<%amiRequestDeviceID%
 
 set /p gameNameNoDashes=<%gameNameNoDashesSet%
-set /p gameNameUnderscoresSet=<%gameNameUnderscoresSet%
+set /p gameNameUnderscores=<%gameNameUnderscoresSet%
 
 :: Store Game Name Title Original Format
 set gameNameTitle=%jsonInstallationTitle%
@@ -1045,6 +1060,23 @@ set /p gameNameTitleHTML=<"%temp%\tmp.tmp"
 set appDirName=%gameNameDashesHalf%%cidHalf%
 
 
+:: Set RESCUE variables from valid
+set rescue_cid=%cid%
+set rescue_gameNameTitleHTML=%gameNameTitleHTML%
+set rescue_gameNameTitleClean1=%gameNameTitleClean1%
+set rescue_gameNameTitleClean2=%gameNameTitleClean2%
+set rescue_deviceID=%deviceID%
+set rescue_cidHalf=%cidHalf%
+set rescue_gameNameDashesHalf=%gameNameDashesHalf%
+set rescue_gameNameFirstLetter=%gameNameFirstLetter%
+set rescue_gameNameTitleAmpConvert=%gameNameTitleAmpConvert%
+set rescue_gameNameNoDashes=%gameNameNoDashes%
+set rescue_gameNameUnderscores=%gameNameUnderscores%
+set rescue_jsonRfsUrl=%jsonRfsUrl%
+set rescue_jsonTracking=%jsonTracking%
+set rescue_jsonDeviceID=%jsonDeviceID%
+
+
 :: Rebuild Headers
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lyellow%
@@ -1070,6 +1102,12 @@ set baseReqDownloadRFS=%wget% %outFileRFS% "%jsonRfsUrl%
 
 %wait% 2
 
+:: Set RESCUE variables from valid
+set rescue_reqGet=%reqGet%
+set rescue_reqGetDeviceId=%reqGetDeviceId%
+set rescue_baseReqExtractRFS=%baseReqExtractRFS%
+set rescue_outFileRFS=%outFileRFS%
+set rescue_baseReqDownloadRFS=%baseReqDownloadRFS%
 
 :: Launch
 
@@ -1107,6 +1145,8 @@ echo.
 ::%runShellWaitTerminate% %baseReq%%launch1%%cid%%launch2%
 %baseReq%%launch1%%cid%%launch2%
 
+:: Set RESCUE variables from valid
+set rescue_launch=%baseReq%%launch1%%cid%%launch2%
 
 title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 %lgreen%
