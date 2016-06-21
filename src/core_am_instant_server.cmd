@@ -806,6 +806,9 @@ goto test3
 
 :test4
 
+::echo %cid%
+::pause
+
 if not exist "%root%\images\%cid%" md "%root%\images\%cid%"
 wget -d http://cdn.ghstatic.com/images/gh/prod/games/%gameNameDashes%/images/%gameNameDashes%_large.jpg -O "%root%\images\%cid%\background.jpg"
 wget -d http://cdn.ghstatic.com/images/gh/prod/games/%gameNameDashes%/images/%gameNameDashes%_small.jpg -O "%root%\images\%cid%\preview.jpg"
