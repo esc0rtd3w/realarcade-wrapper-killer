@@ -806,13 +806,14 @@ goto test3
 
 :test4
 
-wget -d http://cdn.ghstatic.com/images/gh/prod/games/%gameNameDashes%/images/%gameNameDashes%_large.jpg -O "%root%\background.jpg"
-wget -d http://cdn.ghstatic.com/images/gh/prod/games/%gameNameDashes%/images/%gameNameDashes%_small.jpg -O "%root%\preview.jpg"
+if not exist "%root%\images\%cid%" md "%root%\images\%cid%"
+wget -d http://cdn.ghstatic.com/images/gh/prod/games/%gameNameDashes%/images/%gameNameDashes%_large.jpg -O "%root%\images\%cid%\background.jpg"
+wget -d http://cdn.ghstatic.com/images/gh/prod/games/%gameNameDashes%/images/%gameNameDashes%_small.jpg -O "%root%\images\%cid%\preview.jpg"
 
-echo %gameNameDashes%
-echo "%root%background.jpg"
-echo "%root%preview.jpg"
-pause
+::echo %gameNameDashes%
+::echo "%root%background.jpg"
+::echo "%root%preview.jpg"
+::pause
 goto %returnTo%
 
 
