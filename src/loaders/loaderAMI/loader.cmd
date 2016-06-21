@@ -28,7 +28,7 @@ set rootClean=%ProgramData%\activeMARK
 set savePath=%root%save
 
 :: Images Core Path
-set imagesPath=%root%images
+set imagesPath=%root%game\images
 
 :: Game Core Paths
 set gamePath=%root%game
