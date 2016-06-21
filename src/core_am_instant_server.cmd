@@ -75,7 +75,7 @@ set memberCookie=--header="Cookie: gamehouseuser=true"
 
 set pageNewGames=http://www.gamehouse.com/new-games
 
-set dumpPage=wget -d %memberCookie% -O %outFileTemp% %pageNewGames%
+set dumpPage=%wget% -d %memberCookie% -O %outFileTemp% %pageNewGames%
 
 :: Builds app folder name by taking the first 16 chars from name and cid and combining them
 
@@ -125,18 +125,18 @@ set reqOrigin=--header="Origin: http://www.gamehouse.com"
 set reqConnection=--header="Connection: keep-alive"
 
 :: Single DOUBLE QUOTE here on purpose
-set baseReq=wget -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
-set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
-set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
+set baseReq=%wget% -d %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set baseReqExtractRFS=%wget% -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set baseReqDownloadRFS=%wget% %outFileRFS% "%jsonRfsUrl%
 
 :: A few name fixes for updated RFS files (make better later!!!)
-::if %jsonRfsUrl%==clearit set baseReqDownloadRFS=wget %outFileRFS% "clearit_v2
+::if %jsonRfsUrl%==clearit set baseReqDownloadRFS=%wget% %outFileRFS% "clearit_v2
 
-::set baseReqListGames=wget -d %reqGetListGames% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "http://localhost:%port%%reqGetListGames%"
+::set baseReqListGames=%wget% -d %reqGetListGames% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "http://localhost:%port%%reqGetListGames%"
 
 
 :: Device ID Request
-set reqGetDeviceId=wget -d %reqDeviceIDHeader% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set reqGetDeviceId=%wget% -d %reqDeviceIDHeader% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
 set launch1=http://localhost:%port%/v1/play.json?content_id=
 set launch2=^&auth_token=0000000000000000000000000000000000000000"
@@ -548,13 +548,13 @@ set reqGet4=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLette
 
 set reqGet=%reqGet1%%reqGet2%%reqGet3%%reqGet4%
 
-set reqGetDeviceId=wget -d %reqDeviceIDHeader% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set reqGetDeviceId=%wget% -d %reqDeviceIDHeader% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
-set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set baseReqExtractRFS=%wget% -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
 if not exist "%desktop%\am-rfs-downloads" md "%desktop%\am-rfs-downloads"
 set outFileRFS=-O "%desktop%\am-rfs-downloads\%gameNameDashes%.rfs"
-set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
+set baseReqDownloadRFS=%wget% %outFileRFS% "%jsonRfsUrl%
 
 
 :: Download Extracted RFS
@@ -768,8 +768,8 @@ if not exist "%root%\stats\%cid%.json" goto test3
 
 if exist "%root%\stats\%cid%.json" (
 
-	%wget% "http://cdn.ghstatic.com/images/gh/prod/games/%gameNameDashes%/images/%gameNameDashes%_large.jpg" -O "%root%background.jpg"
-	%wget% "http://cdn.ghstatic.com/images/gh/prod/games/%gameNameDashes%/images/%gameNameDashes%_small.jpg" -O "%root%preview.jpg"
+	%%wget%% "http://cdn.ghstatic.com/images/gh/prod/games/%gameNameDashes%/images/%gameNameDashes%_large.jpg" -O "%root%background.jpg"
+	%%wget%% "http://cdn.ghstatic.com/images/gh/prod/games/%gameNameDashes%/images/%gameNameDashes%_small.jpg" -O "%root%preview.jpg"
 
 	goto %returnTo%
 )
@@ -1039,16 +1039,16 @@ set reqGet4=^&rfs=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLette
 
 set reqGet=%reqGet1%%reqGet2%%reqGet3%%reqGet4%
 
-set reqGetDeviceId=wget -d %reqDeviceIDHeader% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set reqGetDeviceId=%wget% -d %reqDeviceIDHeader% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
-set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
+set baseReqExtractRFS=%wget% -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %reqAcceptLanguage% %reqAcceptEncoding% %reqReferer% %reqOrigin% %reqConnection% %outFileTemp% "
 
 if not exist "%desktop%\am-rfs-downloads" md "%desktop%\am-rfs-downloads"
 set outFileRFS=-O "%desktop%\am-rfs-downloads\%gameNameDashes%.rfs"
-set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
+set baseReqDownloadRFS=%wget% %outFileRFS% "%jsonRfsUrl%
 
 :: A few name fixes for updated RFS files (make better later!!!)
-::if %jsonRfsUrl%==clearit set baseReqDownloadRFS=wget %outFileRFS% "clearit_v2
+::if %jsonRfsUrl%==clearit set baseReqDownloadRFS=%wget% %outFileRFS% "clearit_v2
 
 
 :: Logging
@@ -1642,7 +1642,7 @@ goto amiMenu2
 
 :chkRemote
 
-%runShellWaitTerminate% wget -O "%temp%\GameHouse_GamePlayer.exe" %amInstantRemotePlayer%
+%runShellWaitTerminate% %wget% -O "%temp%\GameHouse_GamePlayer.exe" %amInstantRemotePlayer%
 ::filver32.exe "%temp%\GameHouse_GamePlayer.exe">"%temp%\amiVersion.txt"
 ::%runShellWaitTerminate% "notepad.exe "%temp%\amiVersion.txt"
 filver32.exe "%temp%\GameHouse_GamePlayer.exe">"%temp%\amiVersion.cmd"

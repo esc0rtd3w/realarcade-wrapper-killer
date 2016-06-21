@@ -147,6 +147,8 @@ set rgsroot=http://games-dl2.real.com/gameconsole/games/demorgses
 ::URA and RAWK Custom
 ::-----------------------------------------------------------------------------------
 
+set wget="%rawkDumpSys%\wget.exe"
+
 set uraRoot=C:\Program Files\unRealArcade
 set uraLoadersRoot=C:\Program Files\unRealArcade\loaders
 set uraToolsRoot=C:\Program Files\unRealArcade\tools
@@ -448,6 +450,7 @@ set custom_patches=0
 set rawkLaunch="C:\Program Files\unRealArcade\rawk.exe"
 set rawkDump="C:\Program Files\unRealArcade\rawk\dump"
 set rawkLaunchCLI="C:\Program Files\unRealArcade\rawk\dump\{app}\*"
+set rawkDumpSys="C:\Program Files\unRealArcade\rawk\dump\{sys}"
 
 :: BEGIN OLD NON-WORKING CRAP -------------------------------------------------------------------------------------------------------
 
