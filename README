@@ -15,6 +15,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
 
 
+
                    ²²²²²²²                          ²²²²²        ²²²²²
                  ²²²²²² ²²²                     ²²²²²  ²²       ²²²²²²
            ²²²²² ²²²²²²  ²²      ²²   ²²²²²²²² ²²²²² ²²²  ²²²² ²² ²²²²
@@ -93,7 +94,24 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 Ü  ßßß                      ßÛÛ² ÛÛÛ NEWS ÛÛÛ ²ÛÛß    Û                  ßßß Ü
       
 
-        * No Major News At The Moment :(
+        * As of 6-16-2016, GameHouse has removed 11 games from AMI Instant
+          Service. These appear to all be older PopCap games. Unfortunately,
+          I was unable to grab these RFS files before their removal. All of
+          these titles are supported for the older RGS filetype still.
+
+               Games Include:
+
+                    Amazing Adventures The Lost Tomb
+                    Bejeweled Twist
+                    Bonnie's Bookstore
+                    Bookworm Adventures
+                    Dynomite
+                    Iggle Pop!
+                    Mahjong Escape - Ancient China
+                    Monopoly
+                    Platypus
+                    Rocket Mania
+                    Typer Shark
 
 
                                [ SUPER OLD NEWS ]
@@ -192,7 +210,9 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
 	* UPDATED: RAWK Core to v3.1.1
 
-                   * Nothing new here :(
+                   * Added Artwork Download AMI Server Menu
+
+                   * Fixed Testing Mode for AMI Server Menu
 
 
 
