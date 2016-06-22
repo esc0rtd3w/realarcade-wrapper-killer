@@ -392,6 +392,16 @@ echo.
 echo.
 set /p cid=
 
+if %cid%==null (
+
+	goto test1
+)
+
+if %cid%==00000000000000000000000000000000 (
+
+	goto test1
+)
+
 %serviceStop%
 %serviceDelete%
 %serviceRegRemove%
@@ -1619,6 +1629,16 @@ echo Not Implemented Yet!
 echo.
 echo.
 pause
+
+set cidList="%root%loader\cid.txt"
+setlocal ENABLEDELAYEDEXPANSION
+set processList=0
+for /f "tokens=*" %%a in ('type %cidList%') do (
+    set /a processList=!processList! + 1
+	taskkill /f /im "%%a"
+)
+endlocal
+
 ::%runShellWaitTerminate% %baseReqDownloadRFS%
 
 
