@@ -3,13 +3,16 @@ title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 
 :reset
+
+set titl3=title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+
 color 0e
 
 cls
 echo Setting Up Modified Environment....
 echo.
 echo.
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%titl3%
 
 mode con lines=26
 
@@ -623,7 +626,7 @@ goto loader
 
 :loader
 
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%titl3%
 %lyellow%
 cls
 echo Terminating All Stale Processes....
@@ -640,7 +643,7 @@ for /f "tokens=*" %%a in ('type %loaderExtKill%') do (
 endlocal
 
 
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%titl3%
 %lyellow%
 cls
 echo Removing All activeMARK Control Traces....
@@ -662,7 +665,7 @@ rd /s /q "%pd%\com.gamehouse.aminstaller"
 %wait% 1
 
 
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%titl3%
 %lyellow%
 cls
 echo Extracting Game Data Container....
@@ -672,6 +675,45 @@ echo.
 set getCidFromAmiFileText="%temp%\getCidFromAmiFile.txt"
 
 dir /b "%gamePath%" | findstr ".ami">%getCidFromAmiFileText%
+
+if errorlevel neq 0 (
+
+	set returnTo=reset
+
+	cls
+	echo No AMI Container Found!
+	echo.
+	echo.
+	echo Choose an option from below and press ENTER:
+	echo.
+	echo 1) Extract Remote RFS To Local Storage
+	echo.
+	echo 2) Download RFS File (AMI Version)
+	echo.
+	echo 3) Download RFS File (GH Version)
+	echo.
+	echo 4) Download AMI Container From cRypTiCwaRe Servers
+	echo.
+	echo 5) Build AMI Container From Directory
+	echo.
+	echo.
+	echo X) Exit
+	echo.
+	echo.
+	
+	
+	if %os%==XP choice /c:12345x /n
+	if %os%==VISTA choice /c 12345x /n
+	if errorlevel 6 goto end
+	if errorlevel 5 goto liteBuild
+	if errorlevel 4 goto liteDlAmi
+	if errorlevel 3 goto liteDlRfsGh
+	if errorlevel 2 goto liteDlRfsAm
+	if errorlevel 1 goto liteExtractRfs
+
+	goto noAMI
+
+)
 
 set /p amiEarly=<%getCidFromAmiFileText%
 del /f /q %getCidFromAmiFileText%
@@ -746,6 +788,10 @@ set gameSavePathType=%save_external%
 %readIni% "%gamePath%\%cidEarly%.ini" [main] save_path > %tmpIniRead%
 call %tmpIniRead%
 set gameSavePath=%save_path%
+
+%readIni% "%gamePath%\%cidEarly%.ini" [main] loader_version > %tmpIniRead%
+call %tmpIniRead%
+set loaderVersion=%loader_version%
 
 
 ::%checkForGameSave%
@@ -933,7 +979,7 @@ for /f "delims=: tokens=2" %%a in ('type %amiRequestDeviceId%') do (
 
 
 :: Cleanup Variables
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%titl3%
 %lyellow%
 cls
 echo Finalizing Game Variables....
@@ -977,7 +1023,7 @@ setlocal enabledelayedexpansion
 endlocal
 
 
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%titl3%
 %lyellow%
 cls
 echo Finalizing Game Variables....
@@ -1015,7 +1061,7 @@ set /p gameNameTitleAmpConvert=<%temp%\tmp2.tmp
 ::pause
 
 
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%titl3%
 %lyellow%
 cls
 echo Finalizing Game Variables....
@@ -1078,7 +1124,7 @@ set rescue_jsonDeviceID=%jsonDeviceID%
 
 
 :: Rebuild Headers
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%titl3%
 %lyellow%
 cls
 echo Preparing To Launch %gameNameTitleAmpConvert%....
@@ -1111,7 +1157,7 @@ set rescue_baseReqDownloadRFS=%baseReqDownloadRFS%
 
 :: Launch
 
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%titl3%
 %lgreen%
 cls
 echo Preparing To Launch %gameNameTitleAmpConvert%....
@@ -1133,7 +1179,7 @@ regedit /s "%savePath%\save.reg"
 
 %serviceStart%
 
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%titl3%
 %lgreen%
 cls
 echo Preparing To Launch %gameNameTitleAmpConvert%....
@@ -1148,7 +1194,7 @@ echo.
 :: Set RESCUE variables from valid
 set rescue_launch=%baseReq%%launch1%%cid%%launch2%
 
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%titl3%
 %lgreen%
 cls
 echo Launching %gameNameTitleAmpConvert%....
@@ -1165,7 +1211,7 @@ set amiServiceInstalled=0
 set serverStatus=0
 
 
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%titl3%
 %lgreen%
 cls
 echo Launching %gameNameTitleAmpConvert%....
@@ -1180,7 +1226,7 @@ taskkill /f /im aminstantservice.exe
 taskkill /f /im aminstantservice.exe
 taskkill /f /im aminstantservice.exe
 
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%titl3%
 %lgreen%
 cls
 echo Launching %gameNameTitleAmpConvert%....
@@ -1213,7 +1259,7 @@ del /f /q %regFileServiceMain%
 del /f /q %servicePathRegFormattedTempFile%
 
 
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%titl3%
 %lgreen%
 cls
 echo Launching %gameNameTitleAmpConvert%....
@@ -1236,7 +1282,7 @@ if %errorlevel% equ 0 (
 	%wait% 1
 	)
 
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+%titl3%
 %laqua%
 cls
 echo %gameNameTitleAmpConvert% Is Running....
@@ -1297,72 +1343,61 @@ echo.
 goto inProgress
 
 
+
+:: Grab RFS File
+set outFileRFS=-O "%amPath%\%gameNameDashes%.rfs"
+set baseRfsUrl=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs
+set baseReqDownloadRFS=wget %outFileRFS% "%baseRfsUrl%
+%runShellWaitTerminate% %baseReqDownloadRFS%
+
+:: Grab RFSINDEX File
+set outFileRFS=-O "%amPath%\%gameNameDashes%.0.rfsindex"
+set baseRfsIndexUrl=http://profiler-cdn.am.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs.0.rfsindex
+set baseReqDownloadRFSIndex=wget %outFileRFS% "%baseRfsIndexUrl%
+%runShellWaitTerminate% %baseReqDownloadRFSIndex%
+
+
+goto %returnto%
+
+
 :inProgress
 
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
-%lgreen%
+%titl3%
 cls
+%laqua%
 echo Extracting \\GH_SERVER\\%gameNameDashes%.rfs....
 echo.
+echo Please Be Patient! Some Files May Be Very Large!
 echo.
+echo.
+set remoteDownloadFinished=0
 
-%wait% 10
+%wait% 6
 
-if not exist %gamesJsonFile% (
+if not exist "%gamesDynamicDataPath%" (
 	cls
-	echo Downloading Is Starting....
+	%laqua%
+	echo Extracting \\GH_SERVER\\%gameNameDashes%.rfs....
+	echo.
+	echo Please Be Patient! Some Files May Be Very Large!
 	echo.
 	echo.
 	set remoteDownloadFinished=2
 	goto inProgress
 )
 
-%remoteDownloadFinished%
-if %errorlevel% equ 0 (
+if exist "%gamesDynamicDataPath%" (
 	cls
 	%lgreen%
-	echo Download Finished
+	echo Extraction Finished!
 	echo.
 	echo.
-	pause
+	echo Press any key to continue....
+	echo.
+	echo.
 	set remoteDownloadFinished=1
-	goto %returnTo%
-)
-
-%remoteDownloadPartialCheck%
-if %errorlevel% equ 0 (
-	cls
-	echo Downloading In Progress....
-	echo.
-	echo.
-	set remoteDownloadFinished=2
-	goto inProgress
-)
-
-%wait% 1
-
-%remoteDownloadFinished%
-if %errorlevel% equ 0 (
-	cls
-	%lgreen%
-	echo Download Finished
-	echo.
-	echo.
-	pause
-	set remoteDownloadFinished=1
-	goto %returnTo%
-)
-
-%wait% 1
-
-%remoteDownloadPartialCheck%
-if %errorlevel% equ 0 (
-	cls
-	echo Downloading In Progress....
-	echo.
-	echo.
-	set remoteDownloadFinished=2
-	goto inProgress
+	pause>nul
+	goto reset
 )
 
 %wait% 1
@@ -1370,24 +1405,73 @@ if %errorlevel% equ 0 (
 goto inProgress
 
 
-:extractOK
-%lgreen%
-cls
-echo %gameNameDashes%.rfs Has Been Successfully Extracted!
-echo.
-echo.
-echo Press any key once the download has finished
-echo.
-echo.
-echo.
-pause>nul
 
-%serviceStop%
-%serviceDelete%
-%serviceRegRemove%
-%serviceRegRemoveLicensing%
+:download
 
-goto reset
+:: Grab RFS File
+set outFileRFS=-O "%amPath%\%gameNameDashes%.rfs"
+set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
+%runShellWaitTerminate% %baseReqDownloadRFS%
+
+:: Grab RFSINDEX File
+set outFileRFS=-O "%amPath%\%gameNameDashes%.0.rfsindex"
+set baseRfsIndexUrl=http://profiler-cdn.am.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs.0.rfsindex
+set baseReqDownloadRFSIndex=wget %outFileRFS% "%baseRfsIndexUrl%
+%runShellWaitTerminate% %baseReqDownloadRFSIndex%
+
+goto %returnto%
+
+
+:liteExtractRfs
+
+
+
+goto %returnto%
+
+
+:liteDlRfsAm
+
+:: Grab AM RFS File
+set outFileRFS=-O "%amPath%\%gameNameDashes%.rfs"
+set baseRfsUrl=http://games-dl.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs
+set baseReqDownloadRFS=wget %outFileRFS% "%baseRfsUrl%
+%runShellWaitTerminate% %baseReqDownloadRFS%
+
+:: Grab RFSINDEX File
+set outFileRFS=-O "%amPath%\%gameNameDashes%.0.rfsindex"
+set baseRfsIndexUrl=http://profiler-cdn.am.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs.0.rfsindex
+set baseReqDownloadRFSIndex=wget %outFileRFS% "%baseRfsIndexUrl%
+%runShellWaitTerminate% %baseReqDownloadRFSIndex%
+
+goto %returnto%
+
+
+:liteDlRfsGh
+
+:: Grab GH RFS File
+set outFileRFS=-O "%amPath%\%cidEarly%-%gameNameNoDashes%.rfs"
+set baseRfsUrl=http://games-dl.gamehouse.com/zylom/ghmigration/%gameNameNoDashes%/%cidEarly%-%gameNameNoDashes%.rfs
+set baseReqDownloadRFS=wget %outFileRFS% "%baseRfsUrl%
+%runShellWaitTerminate% %baseReqDownloadRFS%
+
+goto %returnto%
+
+
+:liteDlRfsAm
+
+set outFileAMI=-O "%amPath%\%gameNameUnderscores%_AMiLoader-cRypTiC.zip"
+set baseAmiUrl=https://mega.nz/#F!PBwHURzL!T0uRSD0NEiVjBK3siDwC-Q/%gameNameFirstLetter%/%gameNameUnderscores%_AMiLoader-cRypTiC.zip
+set baseReqDownloadAMI=wget %outFileAMI% "%baseAmiUrl%
+%runShellWaitTerminate% %baseReqDownloadAMI%
+
+goto %returnto%
+
+
+:liteBuild
+
+
+
+goto %returnto%
 
 
 :end
