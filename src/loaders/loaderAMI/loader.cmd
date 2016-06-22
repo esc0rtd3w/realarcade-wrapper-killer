@@ -21,6 +21,7 @@ set amiVersionMajor=8
 set amiVersionMinor=46
 set amiVersionRevision=46
 
+
 set amiPublisher=GameHouse
 set kill = taskkill /f /im
 
@@ -674,44 +675,16 @@ echo.
 
 set getCidFromAmiFileText="%temp%\getCidFromAmiFile.txt"
 
+:: Check for missing AMI Container
+set amiMissing=0
+dir /b "%gamePath%" | findstr ".ami"
+if errorlevel 1 set amiMissing=1
+
 dir /b "%gamePath%" | findstr ".ami">%getCidFromAmiFileText%
 
-if errorlevel neq 0 (
+if %amiMissing%==1 (
 
-	set returnTo=reset
-
-	cls
-	echo No AMI Container Found!
-	echo.
-	echo.
-	echo Choose an option from below and press ENTER:
-	echo.
-	echo 1) Extract Remote RFS To Local Storage
-	echo.
-	echo 2) Download RFS File (AMI Version)
-	echo.
-	echo 3) Download RFS File (GH Version)
-	echo.
-	echo 4) Download AMI Container From cRypTiCwaRe Servers
-	echo.
-	echo 5) Build AMI Container From Directory
-	echo.
-	echo.
-	echo X) Exit
-	echo.
-	echo.
-	
-	
-	if %os%==XP choice /c:12345x /n
-	if %os%==VISTA choice /c 12345x /n
-	if errorlevel 6 goto end
-	if errorlevel 5 goto liteBuild
-	if errorlevel 4 goto liteDlAmi
-	if errorlevel 3 goto liteDlRfsGh
-	if errorlevel 2 goto liteDlRfsAm
-	if errorlevel 1 goto liteExtractRfs
-
-	goto noAMI
+	goto noAmi
 
 )
 
@@ -1420,6 +1393,45 @@ set baseReqDownloadRFSIndex=wget %outFileRFS% "%baseRfsIndexUrl%
 %runShellWaitTerminate% %baseReqDownloadRFSIndex%
 
 goto %returnto%
+
+
+:noAmi
+%lred%
+set returnTo=reset
+set choice=6
+
+cls
+echo No AMI Container Found!
+echo.
+%lyellow%
+echo.
+echo Choose an option from below:
+echo.
+echo 1) Extract Remote RFS To Local Storage
+echo.
+echo 2) Download RFS File (AMI Version)
+echo.
+echo 3) Download RFS File (GH Version)
+echo.
+echo 4) Download AMI Container From cRypTiCwaRe Servers
+echo.
+echo 5) Build AMI Container From Directory
+echo.
+echo.
+echo X) Exit
+echo.
+echo.
+
+if %os%==XP choice /c:12345x /n
+if %os%==VISTA choice /c 12345x /n
+if errorlevel 6 goto end
+if errorlevel 5 goto liteBuild
+if errorlevel 4 goto liteDlAmi
+if errorlevel 3 goto liteDlRfsGh
+if errorlevel 2 goto liteDlRfsAm
+if errorlevel 1 goto liteExtractRfs
+
+goto noAMI
 
 
 :liteExtractRfs
