@@ -6,6 +6,65 @@ RealArcade Wrapper Killer Version History From NFO Files
 
 
 
+v5.7.0
+----------
+
+        * As of 6-16-2016, GameHouse removed about 70+ games from AMI Instant
+          Service. These appear to mostly be PopCap, Hasbro, and Pogo games. I
+          was able to download most of these titles (rfs, rfsindex, extracted)
+          and preserve them. Most of the games that were not recovered are
+          available as RGS installers.
+
+               Games Not Recovered Include:
+
+                    Allied Star Police
+                    Amazing Adventures The Lost Tomb
+                    AstroPop
+                    Atomica
+                    Battleship
+                    Bejeweled
+                    Chuzzle
+                    Escape Rosecliff Island
+                    Escape The Emerald Star
+                    Escape Whisper Valley
+                    Hammer Heads
+                    Heavy Weapon
+                    Hidden Identity – Chicago Blackout
+                    Monopoly
+                    Mummy Maze
+                    Mystery P.I. - Stolen in San Francisco
+                    Mystery P.I. - The Curious Case of Counterfeit Cove
+                    Mystery P.I. - The London Caper
+                    Mystery Solitaire
+                    NingPo MahJong
+                    Noah's Ark
+                    Operation Mania
+                    Pixelus
+                    Seven Seas
+                    Talismania
+                    TipTop
+                    Venice
+                    Word Harmony
+                    Zuma's Revenge Platinum Edition
+
+
+	* UPDATED: RAWK Core to v3.1.1
+
+                   * Lots of updates to AMI Server Menu
+
+                   * Added Artwork Download AMI Server Menu
+
+                   * Fixed Testing Mode for AMI Server Menu
+
+
+        * UPDATED: AMI Loader v1.0.0
+
+                   * Added initial support
+
+                   * Added default association to .rfsindex files
+
+
+
 v5.6.2
 ----------
 
