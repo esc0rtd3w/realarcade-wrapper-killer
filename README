@@ -32,7 +32,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
                      ²²²                  proudly presents...
 
               
-                       RealArcade Wrapper Killer v5.7.0
+                       RealArcade Wrapper Killer v5.7.1
 
 
                 -[ PWNING RealNetworks/GameHouse Since 2005 ]-  
@@ -47,7 +47,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
       Category .. [ Utility           ] ° Protection. [ RGS/RGA/RFS Trial ]°
       Tested by.. [ esc0rtd3w         ] ° Language..  [ EN/DE/FR/ES/NL/JP ]
-   °  Packed by.. [ cRypTiC/esc0rtd3w ] ° Filename .  [ c-rawk570.zip     ]°
+   °  Packed by.. [ cRypTiC/esc0rtd3w ] ° Filename .  [ c-rawk571.zip     ]°
       Coded by... [ cRypTiC/esc0rtd3w ] ° Disks ....  [ 01 x 17MB         ]±
 
    ±        .  ß            Ü        °   Ü     Ü ß           Ü       ßÛÜ   þÛ Ü
@@ -95,6 +95,21 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 Ü  ßßß                      ßÛÛ² ÛÛÛ NEWS ÛÛÛ ²ÛÛß    Û                  ßßß Ü
       
 
+        * Nothing New Yet!
+
+
+                               [ SUPER OLD NEWS ]
+
+
+        * Beginning November 2009, RealArcade and GameHouse merged. You can 
+          still use the old style RA v1.2 player to download new games.
+
+        * Some pre-merge GameHouse games WILL NOT be available in RGS format.
+
+
+
+                                 [ OLD NEWS ]
+
         * As of 6-16-2016, GameHouse removed about 70+ games from AMI Instant
           Service. These appear to mostly be PopCap, Hasbro, and Pogo games. I
           was able to download most of these titles (rfs, rfsindex, extracted)
@@ -132,19 +147,6 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
                     Venice
                     Word Harmony
                     Zuma's Revenge Platinum Edition
-
-
-                               [ SUPER OLD NEWS ]
-
-
-        * Beginning November 2009, RealArcade and GameHouse merged. You can 
-          still use the old style RA v1.2 player to download new games.
-
-        * Some pre-merge GameHouse games WILL NOT be available in RGS format.
-
-
-
-                                 [ OLD NEWS ]
 
         * Now fully supporting ActiveMark Instant Server (AMIS). There are
           available options for parsing JSON files, using custom GET commands
@@ -230,9 +232,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
 	* UPDATED: RAWK Core to v3.1.1
 
-                   * Added Artwork Download AMI Server Menu
-
-                   * Fixed Testing Mode for AMI Server Menu
+                   * Nothing new here :(
 
 
 
@@ -262,9 +262,7 @@ RealArcade Wrapper Killer Removes 60 Minute Demo Time Trials on RGS Files and Mo
 
         * UPDATED: AMI Loader v1.0.0
 
-                   * Added initial support
-
-                   * Added default association to .rfsindex files
+                   * Nothing new here :(
 
 
 
