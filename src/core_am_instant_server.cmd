@@ -831,10 +831,10 @@ set baseReqDownloadRFSIndex=wget %outFileRFS% "%baseRfsIndexUrl%
 %runShellWaitTerminate% %baseReqDownloadRFSIndex%
 
 :: Grab GH RFS File
-set outFileRFS=-O "%amPath%\%cidEarly%-%gameNameNoDashes%.rfs"
-set baseRfsGhUrl=http://games-dl.gamehouse.com/zylom/ghmigration/%gameNameNoDashes%/%cidEarly%-%gameNameNoDashes%.rfs
-set baseReqDownloadRFSGh=wget %outFileRFS% "%baseRfsGhUrl%
-%runShellWaitTerminate% %baseReqDownloadRFSGh%
+::set outFileRFS=-O "%amPath%\%cidEarly%-%gameNameNoDashes%.rfs"
+::set baseRfsGhUrl=http://games-dl.gamehouse.com/zylom/ghmigration/%gameNameNoDashes%/%cidEarly%-%gameNameNoDashes%.rfs
+::set baseReqDownloadRFSGh=wget %outFileRFS% "%baseRfsGhUrl%
+::%runShellWaitTerminate% %baseReqDownloadRFSGh%
 
 :: Grab AMI File
 ::set outFileAMI=-O "%amPath%\%gameNameUnderscores%_AMiLoader-cRypTiC.zip"
