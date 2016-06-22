@@ -277,7 +277,7 @@ echo X) Exit
 echo.
 
 if %os%==XP choice /c:1234567x /n
-if %os%==VISTA choice /c 123456x /n
+if %os%==VISTA choice /c 1234567x /n
 if errorlevel 8 goto forceExit
 if errorlevel 7 goto amiMenu2
 if errorlevel 6 goto launch
