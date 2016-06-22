@@ -4,7 +4,7 @@ title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 :reset
 
-set titl3=title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+set windowTitle=title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 color 0e
 
@@ -12,7 +12,7 @@ cls
 echo Setting Up Modified Environment....
 echo.
 echo.
-%titl3%
+%windowTitle%
 
 mode con lines=26
 
@@ -627,7 +627,7 @@ goto loader
 
 :loader
 
-%titl3%
+%windowTitle%
 %lyellow%
 cls
 echo Terminating All Stale Processes....
@@ -644,7 +644,7 @@ for /f "tokens=*" %%a in ('type %loaderExtKill%') do (
 endlocal
 
 
-%titl3%
+%windowTitle%
 %lyellow%
 cls
 echo Removing All activeMARK Control Traces....
@@ -666,7 +666,7 @@ rd /s /q "%pd%\com.gamehouse.aminstaller"
 %wait% 1
 
 
-%titl3%
+%windowTitle%
 %lyellow%
 cls
 echo Extracting Game Data Container....
@@ -952,7 +952,7 @@ for /f "delims=: tokens=2" %%a in ('type %amiRequestDeviceId%') do (
 
 
 :: Cleanup Variables
-%titl3%
+%windowTitle%
 %lyellow%
 cls
 echo Finalizing Game Variables....
@@ -996,7 +996,7 @@ setlocal enabledelayedexpansion
 endlocal
 
 
-%titl3%
+%windowTitle%
 %lyellow%
 cls
 echo Finalizing Game Variables....
@@ -1034,7 +1034,7 @@ set /p gameNameTitleAmpConvert=<%temp%\tmp2.tmp
 ::pause
 
 
-%titl3%
+%windowTitle%
 %lyellow%
 cls
 echo Finalizing Game Variables....
@@ -1097,7 +1097,7 @@ set rescue_jsonDeviceID=%jsonDeviceID%
 
 
 :: Rebuild Headers
-%titl3%
+%windowTitle%
 %lyellow%
 cls
 echo Preparing To Launch %gameNameTitleAmpConvert%....
@@ -1130,7 +1130,7 @@ set rescue_baseReqDownloadRFS=%baseReqDownloadRFS%
 
 :: Launch
 
-%titl3%
+%windowTitle%
 %lgreen%
 cls
 echo Preparing To Launch %gameNameTitleAmpConvert%....
@@ -1152,7 +1152,7 @@ regedit /s "%savePath%\save.reg"
 
 %serviceStart%
 
-%titl3%
+%windowTitle%
 %lgreen%
 cls
 echo Preparing To Launch %gameNameTitleAmpConvert%....
@@ -1167,7 +1167,7 @@ echo.
 :: Set RESCUE variables from valid
 set rescue_launch=%baseReq%%launch1%%cid%%launch2%
 
-%titl3%
+%windowTitle%
 %lgreen%
 cls
 echo Launching %gameNameTitleAmpConvert%....
@@ -1184,7 +1184,7 @@ set amiServiceInstalled=0
 set serverStatus=0
 
 
-%titl3%
+%windowTitle%
 %lgreen%
 cls
 echo Launching %gameNameTitleAmpConvert%....
@@ -1199,7 +1199,7 @@ taskkill /f /im aminstantservice.exe
 taskkill /f /im aminstantservice.exe
 taskkill /f /im aminstantservice.exe
 
-%titl3%
+%windowTitle%
 %lgreen%
 cls
 echo Launching %gameNameTitleAmpConvert%....
@@ -1232,7 +1232,7 @@ del /f /q %regFileServiceMain%
 del /f /q %servicePathRegFormattedTempFile%
 
 
-%titl3%
+%windowTitle%
 %lgreen%
 cls
 echo Launching %gameNameTitleAmpConvert%....
@@ -1255,7 +1255,7 @@ if %errorlevel% equ 0 (
 	%wait% 1
 	)
 
-%titl3%
+%windowTitle%
 %laqua%
 cls
 echo %gameNameTitleAmpConvert% Is Running....
@@ -1335,7 +1335,7 @@ goto %returnto%
 
 :inProgress
 
-%titl3%
+%windowTitle%
 cls
 %laqua%
 echo Extracting \\GH_SERVER\\%gameNameDashes%.rfs....
