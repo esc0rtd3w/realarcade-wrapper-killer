@@ -819,16 +819,28 @@ wget -d http://cdn.ghstatic.com/images/gh/prod/games/%gameNameDashes%/images/%ga
 ::echo "%root%preview.jpg"
 ::pause
 
-:: Grab RFS File
+:: Grab AM RFS File
 set outFileRFS=-O "%amPath%\%gameNameDashes%.rfs"
 set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
 %runShellWaitTerminate% %baseReqDownloadRFS%
 
-:: Grab RFSINDEX File
+:: Grab AM RFSINDEX File
 set outFileRFS=-O "%amPath%\%gameNameDashes%.0.rfsindex"
 set baseRfsIndexUrl=http://profiler-cdn.am.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs.0.rfsindex
 set baseReqDownloadRFSIndex=wget %outFileRFS% "%baseRfsIndexUrl%
 %runShellWaitTerminate% %baseReqDownloadRFSIndex%
+
+:: Grab GH RFS File
+set outFileRFS=-O "%amPath%\%cidEarly%-%gameNameNoDashes%.rfs"
+set baseRfsGhUrl=http://games-dl.gamehouse.com/zylom/ghmigration/%gameNameNoDashes%/%cidEarly%-%gameNameNoDashes%.rfs
+set baseReqDownloadRFSGh=wget %outFileRFS% "%baseRfsGhUrl%
+%runShellWaitTerminate% %baseReqDownloadRFSGh%
+
+:: Grab AMI File
+::set outFileAMI=-O "%amPath%\%gameNameUnderscores%_AMiLoader-cRypTiC.zip"
+::set baseRfsUrl=https://mega.nz/#F!PBwHURzL!T0uRSD0NEiVjBK3siDwC-Q/%gameNameFirstLetter%/%gameNameUnderscores%_AMiLoader-cRypTiC.zip
+::set baseReqDownloadAMI=wget %outFileAMI% "%baseRfsUrl%
+::%runShellWaitTerminate% %baseReqDownloadAMI%
 
 goto %returnTo%
 
