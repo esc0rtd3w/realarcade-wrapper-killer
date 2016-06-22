@@ -392,16 +392,6 @@ echo.
 echo.
 set /p cid=
 
-if %cid%==null (
-
-	goto test1
-)
-
-if %cid%==00000000000000000000000000000000 (
-
-	goto test1
-)
-
 %serviceStop%
 %serviceDelete%
 %serviceRegRemove%
@@ -566,6 +556,18 @@ if not exist "%desktop%\am-rfs-downloads" md "%desktop%\am-rfs-downloads"
 set outFileRFS=-O "%desktop%\am-rfs-downloads\%gameNameDashes%.rfs"
 set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
 set baseRfsIndexUrl=http://profiler-cdn.am.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs.0.rfsindex
+
+
+
+if %cid%==null (
+
+	goto test1
+)
+
+if %cid%==00000000000000000000000000000000 (
+
+	goto test1
+)
 
 
 :: Download Extracted RFS
