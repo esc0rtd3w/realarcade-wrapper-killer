@@ -555,6 +555,7 @@ set baseReqExtractRFS=wget -d %reqGet% %reqHost% %reqUserAgent% %reqAccept% %req
 if not exist "%desktop%\am-rfs-downloads" md "%desktop%\am-rfs-downloads"
 set outFileRFS=-O "%desktop%\am-rfs-downloads\%gameNameDashes%.rfs"
 set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
+set baseRfsIndexUrl=http://profiler-cdn.am.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs.0.rfsindex
 
 
 :: Download Extracted RFS
@@ -817,6 +818,18 @@ wget -d http://cdn.ghstatic.com/images/gh/prod/games/%gameNameDashes%/images/%ga
 ::echo "%root%background.jpg"
 ::echo "%root%preview.jpg"
 ::pause
+
+:: Grab RFS File
+set outFileRFS=-O "%amPath%\%gameNameDashes%.rfs"
+set baseReqDownloadRFS=wget %outFileRFS% "%jsonRfsUrl%
+%runShellWaitTerminate% %baseReqDownloadRFS%
+
+:: Grab RFSINDEX File
+set outFileRFS=-O "%amPath%\%gameNameDashes%.0.rfsindex"
+set baseRfsIndexUrl=http://profiler-cdn.am.gamehouse.com/gamehouse/pc/%gameNameFirstLetter%/%gameNameDashes%/%gameNameDashes%.rfs.0.rfsindex
+set baseReqDownloadRFSIndex=wget %outFileRFS% "%baseRfsIndexUrl%
+%runShellWaitTerminate% %baseReqDownloadRFSIndex%
+
 goto %returnTo%
 
 
