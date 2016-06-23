@@ -1255,6 +1255,26 @@ if %errorlevel% equ 0 (
 	%wait% 1
 	)
 
+	
+:: Lock time
+set lockStatus=1
+
+set amiStartDateText=%date%
+set amiStartTime=%time:~0,2%:%time:~3,2%:%time:~6,2%
+
+set amiStartDateText="%temp%\ami-startDate.txt"
+set amiStartTimeText="%temp%\ami-startTime.txt"
+
+set /p amiLockDate=<%amiStartDateText%
+set /p amiLockTime=<%amiStartTimeText%
+
+::set amiTimePlayed=0
+
+echo %gameExec%>"%temp%\ami-gameExec.txt"
+
+%runShellWaitTerminate% "%loaderPath%\scripts\time_lock.cmd"
+
+
 %windowTitle%
 %laqua%
 cls
@@ -1265,6 +1285,7 @@ echo.
 echo Press any key to kill %gameExec% and dependencies....
 echo.
 echo.
+
 pause>nul
 
 taskkill /f /im "%gameExec%"
@@ -1280,6 +1301,8 @@ for /f "tokens=*" %%a in ('type %loaderExtKill%') do (
 endlocal
 
 goto end
+
+
 
 
 :recovery
