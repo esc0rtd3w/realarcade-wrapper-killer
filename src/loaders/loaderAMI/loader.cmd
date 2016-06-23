@@ -1152,6 +1152,29 @@ regedit /s "%savePath%\save.reg"
 
 %serviceStart%
 
+	
+:: Lock time
+set lockStatus=1
+
+set amiStartDateText=%date%
+set amiStartTime=%time:~0,2%:%time:~3,2%:%time:~6,2%
+
+set amiStartDateText="%temp%\ami-startDate.txt"
+set amiStartTimeText="%temp%\ami-startTime.txt"
+
+set /p amiLockDate=<%amiStartDateText%
+set /p amiLockTime=<%amiStartTimeText%
+
+::set amiTimePlayed=0
+
+echo %gameExec%>"%temp%\ami-gameExec.txt"
+
+::echo %gameExec%
+::pause
+
+%runShellTerminate% "%loaderPath%\scripts\time_lock.cmd"
+
+
 %windowTitle%
 %lgreen%
 cls
@@ -1254,25 +1277,6 @@ if %errorlevel% equ 0 (
 	echo.
 	%wait% 1
 	)
-
-	
-:: Lock time
-set lockStatus=1
-
-set amiStartDateText=%date%
-set amiStartTime=%time:~0,2%:%time:~3,2%:%time:~6,2%
-
-set amiStartDateText="%temp%\ami-startDate.txt"
-set amiStartTimeText="%temp%\ami-startTime.txt"
-
-set /p amiLockDate=<%amiStartDateText%
-set /p amiLockTime=<%amiStartTimeText%
-
-::set amiTimePlayed=0
-
-echo %gameExec%>"%temp%\ami-gameExec.txt"
-
-%runShellWaitTerminate% "%loaderPath%\scripts\time_lock.cmd"
 
 
 %windowTitle%
