@@ -36,6 +36,10 @@ set amiLockTimeHoursRestore=%amiStartTimeHours%
 set amiLockTimeMinutesRestore=%amiStartTimeMinutes%
 set amiLockTimeSecondsRestore=%amiStartTimeSeconds%
 
+set amiLockMinutesRunning=0
+
+set waitTime=59
+
 :lock
 %lyellow%
 
@@ -44,14 +48,13 @@ echo Locking Windows Time Until Game Has Been Terminated....
 echo.
 echo.
 
-
 :: Set Fake Time
 time %amiLockTime%
 
 :: Add Time To Restore Time
 
 :: Adjust SECONDS to match wait time
-set /a amiLockTimeSecondsRestore+=1
+set /a amiLockTimeSecondsRestore+=%waitTime%
 
 :: Adjust MINUTES to match seconds
 if %amiLockTimeSecondsRestore% gtr 59 (
@@ -73,32 +76,28 @@ if %amiLockTimeMinutesRestore% gtr 59 (
 echo.
 echo.
 %lgreen%
-echo Fake Time:
-echo.
-echo amiLockTime: %amiLockTimeHours%:%amiLockTimeMinutes%:%amiLockTimeSeconds%
-echo amiLockTimeHours: %amiLockTimeHours%
-echo amiLockTimeMinutes: %amiLockTimeMinutes%
-echo amiLockTimeSeconds: %amiLockTimeSeconds%
-echo.
-echo.
-%laqua%
-echo Current Time:
-echo.
-echo amiLockTime: %amiLockTimeHoursRestore%:%amiLockTimeMinutesRestore%:%amiLockTimeSecondsRestore%
-echo amiLockTimeHours: %amiLockTimeHoursRestore%
-echo amiLockTimeMinutes: %amiLockTimeMinutesRestore%
-echo amiLockTimeSeconds: %amiLockTimeSecondsRestore%
+echo Game Has Been Running For %amiLockMinutesRunning% Minutes
 echo.
 echo.
 
-%wait% 5
+::%lgreen%
+::echo Fake Time: %amiLockTimeHours%:%amiLockTimeMinutes%
+::echo.
+::echo.
+
+::%laqua%
+::echo Current Time: %amiLockTimeHoursRestore%:%amiLockTimeMinutesRestore%
+::echo.
+::echo.
+
+%wait% %waitTime%
 
 set /p gameExec=<%gameExecText%
 
-setlocal enableextensions
-for /f %%x in ('tasklist /nh /fi "IMAGENAME eq %gameExec%"') do if %%x==%gameExec% goto lock
+::setlocal enableextensions
+for /f %%x in ('tasklist /nh /fi "IMAGENAME eq %gameExec%"') do if %%x==%gameExec% set /a amiLockMinutesRunning+=1&&goto lock
 goto unlock
-endlocal
+::endlocal
 
 ::wmic process list full | find "%gameExec%" | findstr /v "CommandLine" | findstr /v "Description" | findstr /v "Name">%gameExecText%
 ::wmic process list full | find "%gameExec%" | findstr /v "CommandLine" | findstr /v "Description" | findstr /v "Name">%gameExecTextCheck%
@@ -123,14 +122,16 @@ endlocal
 :unlock
 color 0e
 
-cls
+::cls
+echo.
+echo.
 echo Restoring Time Back To Normal....
 echo.
 echo.
 
-pause
-
 time %amiLockTimeHoursRestore%:%amiLockTimeMinutesRestore%:%amiLockTimeSecondsRestore%
+
+pause
 
 goto end
 
