@@ -37,8 +37,11 @@ set amiLockTimeMinutesRestore=%amiStartTimeMinutes%
 set amiLockTimeSecondsRestore=%amiStartTimeSeconds%
 
 set amiLockMinutesRunning=0
+set amiLockSecondsRunningLoop=0
 
-set waitTime=59
+set waitTime=1
+
+set newTime=0
 
 :lock
 %lyellow%
@@ -54,13 +57,18 @@ time %amiLockTime%
 :: Add Time To Restore Time
 
 :: Adjust SECONDS to match wait time
-set /a amiLockTimeSecondsRestore+=%waitTime%
+if %newTime% neq 0 (
+
+	set /a amiLockTimeSecondsRestore+=%waitTime%
+	set /a amiLockSecondsRunningLoop+=1
+)
 
 :: Adjust MINUTES to match seconds
 if %amiLockTimeSecondsRestore% gtr 59 (
 
 	set /a amiLockTimeSecondsRestore=00
 	set /a amiLockTimeMinutesRestore+=1
+	set /a amiLockMinutesRunning+=1
 
 )
 
@@ -76,7 +84,7 @@ if %amiLockTimeMinutesRestore% gtr 59 (
 echo.
 echo.
 %lgreen%
-echo Game Has Been Running For %amiLockMinutesRunning% Minutes
+echo Game Has Been Running For %amiLockMinutesRunning%:%amiLockSecondsRunningLoop%
 echo.
 echo.
 
@@ -92,10 +100,16 @@ echo.
 
 %wait% %waitTime%
 
+:: Adjust newTime variable after first run
+if %newTime% equ 0 (
+
+	set /a newTime+=1
+)
+
 set /p gameExec=<%gameExecText%
 
 ::setlocal enableextensions
-for /f %%x in ('tasklist /nh /fi "IMAGENAME eq %gameExec%"') do if %%x==%gameExec% set /a amiLockMinutesRunning+=1&&goto lock
+for /f %%x in ('tasklist /nh /fi "IMAGENAME eq %gameExec%"') do if %%x==%gameExec% goto lock
 goto unlock
 ::endlocal
 
@@ -129,9 +143,12 @@ echo Restoring Time Back To Normal....
 echo.
 echo.
 
+:: Fix for time delay
+::set /a amiLockTimeMinutesRestore+=1
+
 time %amiLockTimeHoursRestore%:%amiLockTimeMinutesRestore%:%amiLockTimeSecondsRestore%
 
-pause
+::pause
 
 goto end
 
