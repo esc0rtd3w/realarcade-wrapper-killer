@@ -1,5 +1,6 @@
 // activeMARK Instant Server Time Lock
 
+
 #include "stdafx.h"
 
 #include <string>
@@ -12,11 +13,34 @@
 #include <time.h>
 #include "stdio.h"
 #include "windows.h"
+#include <cstdlib>
+#include <cstdio>
+#include <tlhelp32.h>
+
 
 using namespace std;
+using namespace System;
+using namespace System::Diagnostics;
 
 
 // Original Help Source: http://stackoverflow.com/questions/997946/how-to-get-current-time-and-date-in-c
+
+wchar_t* gameEXE;
+
+bool IsProcessRunning(const wchar_t *processName);
+
+string amiLockDate;
+string amiLockTime;
+
+string amiStartDate;
+string amiStartDateDay;
+string amiStartDateMonth;
+string amiStartDateYear;
+
+string amiStartTime;
+string amiStartTimeHours;
+string amiStartTimeMinutes;
+string amiStartTimeSeconds;
 
 
 // Get current date/time, format is YYYY-MM-DD.HH:mm:ss
@@ -81,46 +105,91 @@ const string currentTime(int section) {
 
 void TimeLoop() {
 
-	cout << "Inside Time Loop" << endl;
 
-	currentTime(1);
+}
 
+bool IsProcessRunning(const wchar_t *processName)
+{
+	bool exists = false;
+	PROCESSENTRY32 entry;
+	entry.dwSize = sizeof(PROCESSENTRY32);
 
-	getchar();
+	HANDLE snapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, NULL);
 
+	if (Process32First(snapshot, &entry))
+		while (Process32Next(snapshot, &entry))
+			if (!wcsicmp(entry.szExeFile, processName))
+				exists = true;
+
+	CloseHandle(snapshot);
+	return exists;
+}
+
+bool isRunning(LPWSTR pName)
+{
+	HWND hwnd;
+	hwnd = FindWindow(NULL, pName);
+	if (hwnd != 0) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+int main2(array<System::String ^> ^args)
+{
+	String ^notepad_path = "C:\\Windows\\System32\\notepad.exe";//<-- path to .exe
+	ProcessStartInfo ^notepad_procinfo = gcnew ProcessStartInfo(notepad_path);//<-- process start info,
+																			  //^^ required to associate an instance of the process class with the process it creates.
+	Process ^notepad_proc = gcnew Process();//<-- Process class instance.
+
+	notepad_proc->StartInfo = notepad_procinfo;//<-- Set this property to the notepad_procinfo.
+	if (notepad_proc->Start())//<-- parameterless start method called, it uses the previously established ProcessStartInfo
+							  //^^ This method is NOT static, unlike the version you were previously using.  This version is unique to the class instance.
+	{
+		Console::WriteLine("Notepad running.");
+	}
+	else
+	{
+		Console::WriteLine("PROCESS CREATION FAILED!");
+		return 1;
+	}
+	while (!notepad_proc->HasExited)
+	{
+		Console::WriteLine("Still running...");
+		Threading::Thread::Sleep(1000);
+	}
+	return 0;
 }
 
 int main() {
 
-	char* _amiLockDate;
-	char* _amiLockTime;
+	amiStartDate = currentDate(1);
+	amiStartDateDay = currentDate(2);
+	amiStartDateMonth = currentDate(3);
+	amiStartDateYear = currentDate(4);
 
-	int amiLockDate;
-	int amiLockTime;
+	amiStartTime = currentTime(1);
+	amiStartTimeHours = currentTime(2).substr(0, 2);
+	amiStartTimeMinutes = currentTime(3).substr(3, 5).substr(0, 2);
+	amiStartTimeSeconds = currentTime(4).substr(6, 8);
 
-	int amiStartDate;
-	int amiStartDateDay;
-	int amiStartDateMonth;
-	int amiStartDateYear;
-
-	int amiStartTime;
-	int amiStartTimeHours;
-	int amiStartTimeMinutes;
-	int amiStartTimeSeconds;
 
 	TimeLoop();
 
 	//Console::Title = "activeMARK Instant Server Time Lock";
 
 	//cout << "AMI Time Lock                                   esc0rtd3w 2016 \n\n" << endl;
-	cout << "currentDate: " << currentDate(1) << endl;
-	cout << "currentDateDay: " << currentDate(2) << endl;
-	cout << "currentDateMonth: " << currentDate(3) << endl;
-	cout << "currentDateYear: " << currentDate(4) << endl;
-	cout << "currentTime: " << currentTime(1) << endl;
-	cout << "currentTimeHour: " << currentTime(2).substr(0, 2) << endl;
-	cout << "currentTimeMinute: " << currentTime(3).substr(3, 5).substr(0, 2) << endl;
-	cout << "currentTimeSecond: " << currentTime(4).substr(6, 8) << endl;
+	cout << "currentDate: " << amiStartDate << endl;
+	cout << "currentDateDay: " << amiStartDateDay << endl;
+	cout << "currentDateMonth: " << amiStartDateMonth << endl;
+	cout << "currentDateYear: " << amiStartDateYear << endl;
+	cout <<  endl;
+	cout << "currentTime: " << amiStartTime << endl;
+	cout << "currentTimeHour: " << amiStartTimeHours << endl;
+	cout << "currentTimeMinute: " << amiStartTimeMinutes << endl;
+	cout << "currentTimeSecond: " << amiStartTimeSeconds << endl;
 
 	getchar();  // wait for keyboard input
 

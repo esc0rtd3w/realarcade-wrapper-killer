@@ -1,0 +1,41 @@
+﻿  stdafx.cpp
+  ami_time_lock.cpp
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(22): error C2871: 'System': a namespace with this name does not exist
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(23): error C2653: 'System': is not a class or namespace name
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(23): error C2871: 'Diagnostics': a namespace with this name does not exist
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(140): error C2653: 'System': is not a class or namespace name
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(140): error C2065: 'String': undeclared identifier
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(140): error C2059: syntax error: '>'
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(140): error C2976: 'std::array': too few template arguments
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\utility(306): note: see declaration of 'std::array'
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(140): error C3193: '^': requires '/clr' or '/ZW' command line option
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(142): error C2065: 'String': undeclared identifier
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(142): error C2065: 'notepad_path': undeclared identifier
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(143): error C2065: 'ProcessStartInfo': undeclared identifier
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(143): error C2065: 'notepad_procinfo': undeclared identifier
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(143): error C2065: 'gcnew': undeclared identifier
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(143): error C2146: syntax error: missing ';' before identifier 'ProcessStartInfo'
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(143): error C2065: 'notepad_path': undeclared identifier
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(143): error C3861: 'ProcessStartInfo': identifier not found
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(145): error C2065: 'Process': undeclared identifier
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(145): error C2065: 'notepad_proc': undeclared identifier
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(145): error C2065: 'gcnew': undeclared identifier
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(145): error C2146: syntax error: missing ';' before identifier 'Process'
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(145): error C3861: 'Process': identifier not found
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(147): error C2065: 'notepad_proc': undeclared identifier
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(147): error C2227: left of '->StartInfo' must point to class/struct/union/generic type
+  c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(147): note: type is 'unknown-type'
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(147): error C2065: 'notepad_procinfo': undeclared identifier
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(148): error C2065: 'notepad_proc': undeclared identifier
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(148): error C2227: left of '->Start' must point to class/struct/union/generic type
+  c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(148): note: type is 'unknown-type'
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(151): error C2653: 'Console': is not a class or namespace name
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(151): error C3861: 'WriteLine': identifier not found
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(155): error C2653: 'Console': is not a class or namespace name
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(155): error C3861: 'WriteLine': identifier not found
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(158): error C2065: 'notepad_proc': undeclared identifier
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(158): error C2227: left of '->HasExited' must point to class/struct/union/generic type
+  c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(158): note: type is 'unknown-type'
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(160): error C2653: 'Console': is not a class or namespace name
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(160): error C3861: 'WriteLine': identifier not found
+c:\users\hacker\documents\github\realarcade-wrapper-killer\src\tools\ami_time_lock\ami_time_lock\ami_time_lock.cpp(161): error C2653: 'Threading': is not a class or namespace name
