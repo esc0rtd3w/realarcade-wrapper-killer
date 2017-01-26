@@ -1,0 +1,2782 @@
+Text strings referenced in ntdll.text
+Address    Disassembly                               Text string
+77AA00C7   PUSH 77AA00D5                             ASCII [Pj
+77AB15EE   ADD ESP,4                                 (Initial CPU selection)
+77ABA870   SUB EAX,75004E00                          ASCII sportEnum
+77ABFB01   PUSH 77ABFB28                             UNICODE API-
+77AC8107   PUSH 77AB98F6                             ASCII RtlUnlockHeap
+77AC8165   PUSH 77AB98EA                             ASCII RtlLockHeap
+77AC952B   MOV EBX,77AC95B8                          ASCII TpIsTimerSet
+77AC9530   MOV ESI,77AC2798                          ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77AC9542   MOV EDI,77AC27C4                          ASCII TppTimerpValidateTimer
+77AC968E   MOV EDI,77AC96DC                          UNICODE __CD__
+77ACAEFD   PUSH 77AB8E18                             UNICODE S-1-
+77ACB1DC   PUSH 77AB56BA                             UNICODE REGISTRYUSER
+77ACB977   MOV DWORD PTR DS[ECX],77AD0E90           ASCII Actx 
+77ACBC4B   MOV ECX,77AB4298                          ASCII Referencing
+77ACBCB3   MOV EDX,77B9021C                          ASCII xE
+77ACC44F   MOV EBX,77AB29DA                          ASCII dw7rtmminkernelntdllldrapi.c
+77ACCA16   MOV DWORD PTR SS[EBP-38],77AB8A5A        UNICODE LdrpResGetMappingSize Enter
+77ACCA2B   MOV DWORD PTR SS[EBP-40],77AB8A24        UNICODE LdrpResGetMappingSize Exit
+77ACCBDD   MOV DWORD PTR SS[EBP-34],77AB8BC2        UNICODE LdrpResGetResourceDirectory Enter
+77ACCBF2   MOV DWORD PTR SS[EBP-40],77AB8B80        UNICODE LdrpResGetResourceDirectory Exit
+77ACCD7B   MOV DWORD PTR SS[EBP-48],77AB8DC8        UNICODE LdrResSearchResource Enter
+77ACCD90   MOV DWORD PTR SS[EBP-50],77AB8D94        UNICODE LdrResSearchResource Exit
+77ACCFA6   MOV DWORD PTR SS[EBP-120],77AB8CC2       UNICODE LdrpResSearchResourceMappedFile Enter
+77ACCFC4   MOV DWORD PTR SS[EBP-138],77AB8C78       UNICODE LdrpResSearchResourceMappedFile Exit
+77ACD22C   MOV DWORD PTR SS[EBP-6C],77AB8AE6        UNICODE LdrpResSearchResourceInsideDirectory Enter
+77ACD241   MOV DWORD PTR SS[EBP-74],77AB8A92        UNICODE LdrpResSearchResourceInsideDirectory Exit
+77ACD730   MOV DWORD PTR DS[EAX],77B9021C           ASCII xE
+77ACD790   CMP EDI,77B9021C                          ASCII xE
+77ACD936   MOV EDI,77B9021C                          ASCII xE
+77ACDC3F   CMP EDI,77B9021C                          ASCII xE
+77ACE41B   MOV EBX,77AB44AE                          ASCII LdrpHandleOneNewFormatImportDescriptor
+77ACE420   MOV EDI,77AB3FEE                          ASCII dw7rtmminkernelntdllldrsnap.c
+77ACE5EC   PUSH 7FFE0030                             UNICODE CWindows
+77ACE609   MOV ESI,77AB3FDC                          UNICODE SysWOW64
+77ACE656   MOV EAX,7FFE0030                          UNICODE CWindows
+77ACE9A4   MOV EBX,77AB458A                          ASCII LdrpHandleOneOldFormatImportDescriptor
+77ACE9A9   MOV EDI,77AB3FEE                          ASCII dw7rtmminkernelntdllldrsnap.c
+77ACEB4D   MOV EBX,77AB2C66                          ASCII dw7rtmminkernelntdllldrfind.c
+77ACF7B2   MOV EAX,77AB41FE                          ASCII Unknown
+77AD0FA9   MOV DWORD PTR DS[EAX],77B9021C           ASCII xE
+77AD10E7   CMP EBX,77B9021C                          ASCII xE
+77AD12D2   MOV ECX,77AB42A4                          ASCII Dereferencing
+77AD40D4   MOV EBX,77AC2798                          ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77AD42FE   MOV EBX,77AD4194                          ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77AD442C   MOV EBX,77AD44C0                          ASCII TpSetTimer
+77AD4431   MOV ESI,77AC2798                          ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77AD4443   MOV EDI,77AC27C4                          ASCII TppTimerpValidateTimer
+77AD4D6B   MOV EDI,77AD4DA0                          ASCII TppCleanupGroupMemberAddCallback
+77AD4D70   MOV ESI,77AD4D28                          ASCII dw7rtmminkernelthreadpoolntdllcgrpmem.c
+77AD4DD6   MOV EDI,77AD4E10                          ASCII TppCleanupGroupMemberCompleteCallbacks
+77AD4DDB   MOV ESI,77AD4D28                          ASCII dw7rtmminkernelthreadpoolntdllcgrpmem.c
+77AD4ED7   MOV EDI,77AD4FAC                          ASCII TppCallbackMayRunLongProlog
+77AD4EDC   MOV EBX,77AD4E90                          ASCII dw7rtmminkernelthreadpoolntdllcallback.c
+77AD4FDD   MOV EDI,77AD5048                          ASCII TpCallbackIndependent
+77AD4FE2   MOV ESI,77AD4E90                          ASCII dw7rtmminkernelthreadpoolntdllcallback.c
+77AD594E   MOV EBX,77AD4194                          ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77AD59C4   MOV EBX,77AD5A68                          ASCII TppWaitpExecuteCallback
+77AD59C9   MOV EDI,77AD4168                          ASCII dw7rtmminkernelthreadpoolntdllwait.c
+77AD5AFA   MOV EDI,77AD5B3C                          ASCII TppWaitComplete
+77AD5AFF   MOV ESI,77AD4168                          ASCII dw7rtmminkernelthreadpoolntdllwait.c
+77AD5B8C   MOV EBX,77AD5C28                          ASCII TppTimerpExecuteCallback
+77AD5B91   MOV EDI,77AC2798                          ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77AD5D1A   MOV EBX,77AD5D84                          ASCII TppTimerpUpdate
+77AD5DAA   MOV EBX,77AC2798                          ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77AD5E42   MOV EBX,77AD4E90                          ASCII dw7rtmminkernelthreadpoolntdllcallback.c
+77AD5F20   MOV EBX,77AD5F7C                          ASCII TppTimerpDequeueTimer
+77AD5F25   MOV EDI,77AC2798                          ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77AD6F59   PUSH 77AB5FAA                             UNICODE RegistryMachineSoftwareMicrosoftSQMClientWindowsDisabledSessions
+77AD6FA2   PUSH 77AB603C                             UNICODE GlobalSession
+77AD7001   PUSH 77AB5FAA                             UNICODE RegistryMachineSoftwareMicrosoftSQMClientWindowsDisabledSessions
+77AD7051   PUSH 77AB5F86                             UNICODE MachineThrottling
+77AD71E8   PUSH 77AB5E48                             UNICODE svchost.exe
+77AD7320   PUSH 77AB5E60                             UNICODE RegistryMachineSoftwareMicrosoftSQMClientWindowsDisabledProcesses
+77AD79D9   MOV DWORD PTR SS[EBP-34],77AB8C3E        UNICODE LdrResFallbackLangList Enter
+77AD79E4   MOV DWORD PTR SS[EBP-3C],77AB8C06        UNICODE LdrResFallbackLangList Exit
+77AD7BC7   MOV DWORD PTR SS[EBP-8],77AB8B3C         UNICODE RtlpResUltimateFallbackInfo Enter
+77AD7C6B   MOV DWORD PTR SS[EBP-48],77AB8712        UNICODE MUI
+77AD7C95   MOV DWORD PTR SS[EBP-30],77AB8954        UNICODE LdrResGetRCConfig Enter
+77AD7CAA   MOV DWORD PTR SS[EBP-38],77AB8926        UNICODE LdrResGetRCConfig Exit
+77AD7EA1   PUSH 77AB8712                             UNICODE MUI
+77AD7FFB   MOV EDI,77AD809C                          ASCII TpBindFileToDirect
+77AD8000   MOV ESI,77AE9788                          ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77AD82F9   MOV ESI,77AB489E                          UNICODE .Local
+77AD8673   PUSH 77AD83C0                             UNICODE {%08lx-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x}
+77AD91A9   MOV ESI,77ACA840                          UNICODE 
+77ADB629   PUSH 77AB9CF6                             UNICODE %s
+77ADB79F   PUSH 77AD83C0                             UNICODE {%08lx-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x}
+77ADBC35   PUSH 77AB9C7C                             UNICODE %u.%u.%u.%u
+77ADCD2E   MOV EDI,77AB991A                          ASCII RtlValidateHeap
+77ADD0D0   PUSH 77AB9C12                             UNICODE 
+77ADD1C9   PUSH 77AB9C08                             UNICODE %x
+77ADD2A4   PUSH 77AB9C6E                             UNICODE %%%u
+77ADE85B   PUSH 77AB33F6                             ASCII SE_InstallBeforeInit
+77ADE88B   PUSH 77AB33E2                             ASCII SE_InstallAfterInit
+77ADE8B6   PUSH 77AB33D4                             ASCII SE_DllLoaded
+77ADE8E1   PUSH 77AB33C4                             ASCII SE_DllUnloaded
+77ADE90C   PUSH 77AB33B0                             ASCII SE_LdrEntryRemoved
+77ADE937   PUSH 77AB339A                             ASCII SE_GetProcAddressLoad
+77ADE962   PUSH 77AB338A                             ASCII SE_ProcessDying
+77ADEAB8   MOV EDX,77B9021C                          ASCII xE
+77ADECA9   PUSH 77AB9C6E                             UNICODE %%%u
+77ADEF4B   MOV ESI,77ADEF84                          UNICODE .
+77AE044A   MOV EBX,77AE04BC                          ASCII TppWaiterEnqueueTransition
+77AE044F   MOV EDI,77AD4194                          ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77AE05EA   MOV ESI,77AD4168                          ASCII dw7rtmminkernelthreadpoolntdllwait.c
+77AE05FC   MOV EDI,77AE02F8                          ASCII TppWaitpValidateWait
+77AE0840   MOV EDI,77AE0674                          ASCII TppWaiterAllocWaitSlot
+77AE0845   MOV ESI,77AD4194                          ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77AE0CA9   MOV EDI,77AB3C6E                          ASCII LdrpInitializeProcess
+77AE0CAE   MOV ESI,77AB3010                          ASCII dw7rtmminkernelntdllldrinit.c
+77AE0FA7   PUSH 77AB3A80                             UNICODE !Process
+77AE0FAC   PUSH 77AB3A72                             UNICODE NTDLL!
+77AE1023   PUSH 7FFE0030                             UNICODE CWindows
+77AE18FA   PUSH 77AB3F66                             UNICODE SoftwarePoliciesMicrosoftWindowsSaferCodeIdentifiers
+77AE1B21   PUSH 77AB9164                             UNICODE ntdll.dll
+77AE1E32   PUSH 77AB38EA                             UNICODE SysWOW64
+77AE1E96   MOV EDI,77B9021C                          ASCII xE
+77AE25D8   PUSH 77AE2660                             UNICODE Cleanup Group
+77AE25DD   PUSH 77AE2644                             UNICODE Threadpool!
+77AE28CA   MOV DWORD PTR SS[EBP-D8],77AB3CD8        ASCII BaseQueryModuleData
+77AE2916   MOV EAX,77B9021C                          ASCII xE
+77AE3CFD   PUSH 77ABA6CC                             UNICODE AlternateCodePage
+77AE3E28   PUSH 77AB9518                             UNICODE RegistryMachineSystemCurrentControlSetControlNLSLanguage
+77AE3E56   PUSH 77AB94E8                             UNICODE InstallLanguageFallback
+77AE405A   PUSH 77ABA930                             UNICODE SoftwarePoliciesMicrosoftControl PanelDesktop
+77AE4591   PUSH 77AB9214                             UNICODE Control PanelDesktopMuiCached
+77AE45BC   PUSH 77AB91DC                             UNICODE MachinePreferredUILanguages
+77AE465E   PUSH 77ABA8BA                             UNICODE RegistryMachineSoftwarePoliciesMicrosoftMUISettings
+77AE46D8   PUSH 77AB94BC                             UNICODE Control PanelDesktop
+77AE4709   MOV EAX,77AB9254                          UNICODE PreferredUILanguages
+77AE4BE9   PUSH 77ABA890                             UNICODE WindowsExcludedProcs
+77AE4C0E   PUSH 77ABA85C                             UNICODE Kernel-MUI-Number-Allowed
+77AE4C4F   PUSH 77ABA824                             UNICODE Kernel-MUI-Language-Allowed
+77AE4D3C   PUSH 77ABA7E2                             UNICODE Kernel-MUI-Language-Disallowed
+77AE4E24   PUSH 77ABA7B2                             UNICODE Kernel-MUI-Language-SKU
+77AE4F98   PUSH 77ABA99E                             UNICODE Control PanelDesktopMuiCachedMachineLanguageConfiguration
+77AE4FBF   PUSH 77AB97C4                             UNICODE RegistryMachineSystemCurrentControlSetControlMUISettingsLanguageConfiguration
+77AE5016   PUSH 77ABA8BA                             UNICODE RegistryMachineSoftwarePoliciesMicrosoftMUISettings
+77AE5075   PUSH 77ABA930                             UNICODE SoftwarePoliciesMicrosoftControl PanelDesktop
+77AE509C   PUSH 77ABAA18                             UNICODE Control PanelDesktopLanguageConfiguration
+77AE5268   PUSH 77AB9398                             UNICODE RegistryMachineSystemCurrentControlSetControlMUIUILanguages
+77AE532D   PUSH 77ABA994                             UNICODE Type
+77AE56D4   PUSH 77ABA710                             UNICODE RegistryMachineSystemCurrentControlSetControlMUIUILanguagesPendingDelete
+77AE5FB2   MOV EDI,77AE5FEC                          ASCII TpDisablePoolCallbackChecks
+77AE5FB7   MOV ESI,77AE9788                          ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77AE80F7   MOV ESI,77AE8130                          UNICODE .Local
+77AE818F   MOV ESI,77AB7C1E                          UNICODE WinSxS
+77AE8B0E   CMP EBX,77AD0E90                          ASCII Actx 
+77AE8CDB   PUSH 77AB6714                             ASCII SXS Activation context data at %p has invalid TOC entry array offset
+
+77AE8CE6   PUSH 77AB66D2                             ASCII SXS Activation context data at %p has invalid TOC header offset
+
+77AE8CF1   PUSH 77AB663A                             ASCII SXS Activation context data at %p has invalid assembly roster offset
+
+77AE8CFC   PUSH 77AB65F6                             ASCII SXS Warning Activation context data at %p lacks assembly roster
+
+77AE8D07   PUSH 77AB65B4                             ASCII SXS Warning Activation context data at %p missing default TOC
+
+77AE8F45   CMP EBX,77B9021C                          ASCII xE
+77AE9C1C   PUSH 77AB6254                             UNICODE RegistryMachineSoftwarePoliciesMicrosoftSQMClientWindows
+77AE9C82   PUSH 77AB623E                             UNICODE CEIPEnable
+77AE9CA5   PUSH 77AB60C2                             UNICODE RegistryMachineSoftwareMicrosoftSQMClientWindows
+77AE9D07   PUSH 77AB623E                             UNICODE CEIPEnable
+77AE9D6E   PUSH 77AB6222                             UNICODE CEIPSampledIn
+77AE9D86   PUSH 77AB61A6                             UNICODE RegistryMachineSoftwareMicrosoftReliability AnalysisRAC
+77AE9DE4   PUSH 77AB6186                             UNICODE RacSampleNumber
+77AE9DFF   PUSH 77AB615C                             UNICODE CEIPSamplingRangeLow
+77AE9E1E   PUSH 77AB6130                             UNICODE CEIPSamplingRangeHigh
+77AE9F57   MOV EDI,77AE9FF4                          ASCII TpAllocTimer
+77AE9F5C   MOV ESI,77AC2798                          ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77AEAEF9   MOV DWORD PTR SS[EBP-10],77AB8712        UNICODE MUI
+77AEC7E9   MOV EBX,77AE9788                          ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77AEC948   MOV EBX,77AEC988                          ASCII TppWorkDestroy
+77AEC94D   MOV EDI,77AEC908                          ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77AED353   CMP EBX,77B9021C                          ASCII xE
+77AEE462   MOV EDI,77AB86B2                          UNICODE .mui
+77AEF4AA   PUSH 77AEF4C8                             UNICODE rescache
+77AEF60B   MOV DWORD PTR SS[EBP-218],77AEF668       UNICODE %SystemRoot%
+77AF0306   PUSH 77AB5D7C                             UNICODE VS_VERSION_INFO
+77AF2F0B   MOV DWORD PTR SS[EBP-34],77AB2C4E        UNICODE D3DRM.DLL
+77AF2F12   MOV DWORD PTR SS[EBP-2C],77AB2C36        UNICODE MSVCP50.DLL
+77AF2F19   MOV DWORD PTR SS[EBP-24],77AB2C1C        UNICODE MSVBVM50.DLL
+77AF2F24   MOV DWORD PTR SS[EBP-1C],77AB2BEE        UNICODE PCATESTDEPRECATION.DLL
+77AF31D7   PUSH 77AB26A4                             ASCII .aspack
+77AF31EF   PUSH 77AB269E                             ASCII .pcle
+77AF3207   PUSH 77AB2696                             ASCII .sforce
+77AF3257   PUSH 77AB268A                             ASCII secserv.dll
+77AF3432   PUSH 77AB889C                             UNICODE UseFilter
+77AF3543   PUSH 77AB2742                             UNICODE DllNXOptions
+77AF38CB   PUSH 77AF3A2C                             UNICODE COMPLUS_InstallRoot
+77AF38F8   PUSH 7FFE0030                             UNICODE CWindows
+77AF48B2   MOV EBX,77AF48EC                          ASCII TppAlpcpCallbackEpilog
+77AF48B7   MOV EDI,77AF482C                          ASCII dw7rtmminkernelthreadpoolntdlllpc.c
+77AF4919   MOV EBX,77AF482C                          ASCII dw7rtmminkernelthreadpoolntdlllpc.c
+77AF4926   MOV EDI,77AF49EC                          ASCII TppAlpcpExecuteCallback
+77AF5A48   MOV EDI,77AF5AE4                          ASCII TpBindAlpcToDirect
+77AF5A4D   MOV ESI,77AE9788                          ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77AF62BC   MOV EDI,77AF630C                          ASCII TppCleanupGroupMemberRelease
+77AF62C1   MOV ESI,77AD4D28                          ASCII dw7rtmminkernelthreadpoolntdllcgrpmem.c
+77AF648E   MOV EBX,77AF6520                          ASCII TppSimplepExecuteCallback
+77AF6493   MOV EDI,77AF653C                          ASCII dw7rtmminkernelthreadpoolntdllsimple.c
+77AF66ED   MOV EDI,77AF673C                          ASCII TppSimplepFree
+77AF66F2   MOV ESI,77AF653C                          ASCII dw7rtmminkernelthreadpoolntdllsimple.c
+77AF68F9   MOV ECX,77AB42B2                          ASCII Pinning
+77AF7260   PUSH 77AB8712                             UNICODE MUI
+77AF8340   MOV EBX,77AF83AC                          ASCII TpUnreserveTaskPost
+77AF8345   MOV EDI,77AE9788                          ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77AFB0DA   PUSH 77AB62F4                             UNICODE ASqmManifestVersion
+77AFB16E   PUSH 77AB6060                             UNICODE AdaptiveSqmNameSpaceBoundary
+77AFB191   PUSH 77AB6058                             UNICODE DPS
+77AFB544   MOV ESI,77AF67FC                          ASCII dw7rtmminkernelthreadpoolntdllio.c
+77AFB557   MOV EBX,77AF6828                          ASCII TppIopValidateIo
+77AFC265   MOV EDI,77AFC29C                          ASCII TppCleanupGroupMemberWait
+77AFC26A   MOV ESI,77AD4D28                          ASCII dw7rtmminkernelthreadpoolntdllcgrpmem.c
+77AFC394   MOV ESI,77AC2798                          ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77AFC3A6   MOV EDI,77AC27C4                          ASCII TppTimerpValidateTimer
+77AFC521   MOV ESI,77AC2798                          ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77AFC533   MOV EDI,77AC27C4                          ASCII TppTimerpValidateTimer
+77AFC80B   MOV EDI,77AFC890                          ASCII TpAllocWait
+77AFC810   MOV ESI,77AD4168                          ASCII dw7rtmminkernelthreadpoolntdllwait.c
+77AFC995   MOV EBX,77AFC2B8                          ASCII FALSE
+77AFC99A   MOV ESI,77AD4168                          ASCII dw7rtmminkernelthreadpoolntdllwait.c
+77AFC9AC   MOV EDI,77AE02F8                          ASCII TppWaitpValidateWait
+77AFCA37   MOV ESI,77AD4168                          ASCII dw7rtmminkernelthreadpoolntdllwait.c
+77AFCA49   MOV EDI,77AE02F8                          ASCII TppWaitpValidateWait
+77AFCC26   MOV ESI,77AC2798                          ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77AFCC38   MOV EDI,77AC27C4                          ASCII TppTimerpValidateTimer
+77AFCE85   MOV EBX,77AC2798                          ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77AFCF1E   MOV EDI,77AFCF54                          ASCII TppTimerpDestroyTimerQueueQueue
+77AFCF23   MOV ESI,77AC2798                          ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77AFCF89   MOV EDI,77AFD000                          ASCII TpSetPoolMinThreads
+77AFCF8E   MOV ESI,77AE9788                          ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77AFD02C   MOV EDI,77AFD09C                          ASCII TpSetPoolMaxThreads
+77AFD031   MOV ESI,77AE9788                          ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77AFD42F   MOV ESI,77AF67FC                          ASCII dw7rtmminkernelthreadpoolntdllio.c
+77AFD441   MOV EDI,77AF6828                          ASCII TppIopValidateIo
+77AFD563   MOV EDI,77AFD5CC                          ASCII TpReleaseCleanupGroup
+77AFD568   MOV ESI,77AFD64C                          ASCII dw7rtmminkernelthreadpoolntdllcgrp.c
+77AFD5F3   MOV EDI,77AFD634                          ASCII TppCleanupGrouppFree
+77AFD5F8   MOV ESI,77AFD64C                          ASCII dw7rtmminkernelthreadpoolntdllcgrp.c
+77AFD6E5   MOV ESI,77AF67FC                          ASCII dw7rtmminkernelthreadpoolntdllio.c
+77AFD6F8   MOV EBX,77AF6828                          ASCII TppIopValidateIo
+77AFD791   MOV ESI,77AF67FC                          ASCII dw7rtmminkernelthreadpoolntdllio.c
+77AFD7A3   MOV EDI,77AF6828                          ASCII TppIopValidateIo
+77AFD853   MOV EBX,77AFC2B8                          ASCII FALSE
+77AFD858   MOV ESI,77AEC908                          ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77AFD86A   MOV EDI,77AF683C                          ASCII TppWorkpValidateWork
+77AFD8F5   MOV ESI,77AEC908                          ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77AFD907   MOV EDI,77AF683C                          ASCII TppWorkpValidateWork
+77AFDC6E   MOV ESI,77AF482C                          ASCII dw7rtmminkernelthreadpoolntdlllpc.c
+77AFDC80   MOV EDI,77AFDD10                          ASCII TppAlpcpValidateAlpc
+77AFE172   MOV EDI,77AFE1C8                          ASCII TpCallbackMayRunLong
+77AFE177   MOV ESI,77AD4E90                          ASCII dw7rtmminkernelthreadpoolntdllcallback.c
+77B007AC   MOV ESI,77AD4168                          ASCII dw7rtmminkernelthreadpoolntdllwait.c
+77B007BE   MOV EDI,77AE02F8                          ASCII TppWaitpValidateWait
+77B01934   MOV ESI,77AD4168                          ASCII dw7rtmminkernelthreadpoolntdllwait.c
+77B01946   MOV EDI,77AE02F8                          ASCII TppWaitpValidateWait
+77B01CA6   MOV EDI,77B01CDC                          ASCII TppIopCallbackEpilog
+77B01CAB   MOV ESI,77AF67FC                          ASCII dw7rtmminkernelthreadpoolntdllio.c
+77B031CA   MOV DWORD PTR DS[EAX],77B9021C           ASCII xE
+77B0389E   PUSH 77AB5B1A                             UNICODE WindowsErrorReportingServicePort
+77B039DA   MOV DWORD PTR SS[EBP-8],77AB5AD2         UNICODE KernelObjectsSystemErrorPortReady
+77B03CFD   MOV EBX,77B03D6C                          ASCII TppExceptionFilter
+77B03D02   MOV EDI,77B03D40                          ASCII dw7rtmminkernelthreadpoolntdlltp.c
+77B0451C   MOV EBX,77AB2D9C                          ASCII LdrpRelocateImage
+77B04521   MOV EDI,77AB2C66                          ASCII dw7rtmminkernelntdllldrfind.c
+77B04591   PUSH 77AB2D98                             ASCII LDR
+77B051FD   PUSH 77B05270                             UNICODE Time Zones
+77B0522A   PUSH 77B05288                             UNICODE Dynamic DST
+77B053B9   MOV DWORD PTR SS[EBP-88],77B05488        UNICODE FirstEntry
+77B053C9   MOV DWORD PTR SS[EBP-6C],77B05470        UNICODE LastEntry
+77B05A25   PUSH 77AB28C4                             ASCII CLIENT(ntdll) Found CheckAppHelp = %d for %wZ in ImageFileExecutionOptions
+
+77B05A65   PUSH 77AB28A6                             UNICODE ExecuteOptions
+77B05AAB   PUSH 77AB284C                             ASCII CLIENT(ntdll) Found ExecuteOptions = %ws for %wZ in application compatibility database
+
+77B05ABF   PUSH 77AB2838                             UNICODE Execute=1
+77B05AD6   PUSH 77AB27D6                             ASCII CLIENT(ntdll) Found Execute=1, turning off execution protection for the process because of %wZ
+
+77B06E68   PUSH 77AB9178                             UNICODE TimeZoneInformation
+77B06FB0   MOV DWORD PTR SS[EBP-130],77B06D78       UNICODE Bias
+77B06FC6   MOV DWORD PTR SS[EBP-114],77B06D84       UNICODE StandardName
+77B06FD6   MOV DWORD PTR SS[EBP-F8],77B06DA0        UNICODE StandardBias
+77B06FE6   MOV DWORD PTR SS[EBP-DC],77B06DBC        UNICODE StandardStart
+77B06FF6   MOV DWORD PTR SS[EBP-C0],77B06DD8        UNICODE DaylightName
+77B07006   MOV DWORD PTR SS[EBP-A4],77B06DF4        UNICODE DaylightBias
+77B07016   MOV DWORD PTR SS[EBP-88],77B07070        UNICODE DaylightStart
+77B070CB   PUSH 77B071F0                             UNICODE RegistryMachineHARDWAREDESCRIPTIONSystemCentralProcessor
+77B070D0   PUSH 77B071DC                             UNICODE %ws%u
+77B0714F   PUSH 77B071D0                             UNICODE ~MHz
+77B07CB2   MOV EBX,77AD5D84                          ASCII TppTimerpUpdate
+77B083D6   MOV EBX,77B08474                          ASCII TppWorkpExecuteCallback
+77B083DB   MOV EDI,77AEC908                          ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B084A1   MOV EBX,77B0852C                          ASCII TpPostWork
+77B084A6   MOV ESI,77AEC908                          ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B084B8   MOV EDI,77AF683C                          ASCII TppWorkpValidateWork
+77B0A5A5   MOV ESI,77AB9F96                          ASCII %d
+77B0D40F   PUSH 77AB473C                             ASCII DLL %wZ has TLS information at %p
+
+77B0D416   PUSH 77AB472A                             ASCII LdrpInitializeTls
+77B0D420   PUSH 77AB4652                             ASCII dw7rtmminkernelntdllldrtls.c
+77B0D58A   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B0D597   PUSH 77AB8E68                             ASCII HEAP 
+77B0D5A2   PUSH 77AB90AA                             ASCII !(Flags & ~HEAP_CREATE_VALID_MASK)
+77B0D8D7   PUSH 77AB414A                             ASCII Calling the Windows subsystem post-import routine %p failed with status 0x%08lx
+
+77B0D8DE   PUSH 77AB4130                             ASCII LdrpRunInitializeRoutines
+77B0D8E8   PUSH 77AB3FEE                             ASCII dw7rtmminkernelntdllldrsnap.c
+77B0D919   PUSH 77AB4108                             ASCII Calling init routine %p for DLL %wZ
+
+77B0D920   PUSH 77AB4130                             ASCII LdrpRunInitializeRoutines
+77B0D92A   PUSH 77AB3FEE                             ASCII dw7rtmminkernelntdllldrsnap.c
+77B0D94C   PUSH 77AB40EA                             UNICODE BreakOnDllLoad
+77B0D993   PUSH 77AB40AA                             ASCII Init routine %p for DLL %wZ failed during DLL_PROCESS_ATTACH
+
+77B0D99A   PUSH 77AB4130                             ASCII LdrpRunInitializeRoutines
+77B0D9A4   PUSH 77AB3FEE                             ASCII dw7rtmminkernelntdllldrsnap.c
+77B0D9F4   MOV EAX,77AB2A2C                          UNICODE NULL
+77B0D9FD   PUSH 77AB2A0E                             ASCII DLL name %wZ DLL path %ws
+
+77B0DA04   PUSH 77AB2BE2                             ASCII LdrLoadDll
+77B0DA4D   PUSH 77AB2946                             ASCII Status 0x%08lx
+
+77B0DA54   PUSH 77AB2BE2                             ASCII LdrLoadDll
+77B0DA95   PUSH 77AB46AC                             ASCII LdrpAllocateTls
+77B0DB16   PUSH 77AB4674                             ASCII TlsVector %p Index %d  %d bytes copied from %p to %p
+
+77B0DB1D   PUSH 77AB46AC                             ASCII LdrpAllocateTls
+77B0DB27   PUSH 77AB4652                             ASCII dw7rtmminkernelntdllldrtls.c
+77B0DB5F   PUSH 77AB46D4                             ASCII Calling TLS callback %p for DLL %wZ at %p
+
+77B0DB66   PUSH 77AB46BC                             ASCII LdrpCallTlsInitializers
+77B0DB70   PUSH 77AB4652                             ASCII dw7rtmminkernelntdllldrtls.c
+77B0DB9E   PUSH 77AB46BC                             ASCII LdrpCallTlsInitializers
+77B0E07F   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B0E08C   PUSH 77AB8E68                             ASCII HEAP 
+77B0E097   PUSH 77AB8F00                             ASCII ((FreeBlock-Flags & HEAP_ENTRY_DECOMMITTED)  (ROUND_UP_TO_POWER2(FreeBlock, PAGE_SIZE) == (ULONG_PTR)FreeBlock))
+77B0E167   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B0E174   PUSH 77AB8E68                             ASCII HEAP 
+77B0E17F   PUSH 77AB8EBE                             ASCII ROUND_UP_TO_POWER2(FreeBlock, PAGE_SIZE) == (ULONG_PTR)FreeBlock
+77B0E844   PUSH 77AB2684                             ASCII .txt
+77B0E85B   PUSH 77AB267E                             ASCII .txt2
+77B0E8D3   PUSH 77AB278E                             ASCII CLIENT(ntdll) Processing %ws for patching section protection for %wZ
+
+77B0E91D   PUSH 77AB275E                             ASCII CLIENT(ntdll) Processing section info %ws...
+
+77B0EEAF   PUSH 90028                                ASCII p 
+77B0F1CA   MOV EAX,77AB2A2C                          UNICODE NULL
+77B0F1D1   PUSH 77AB2A0E                             ASCII DLL name %wZ DLL path %ws
+
+77B0F1D8   PUSH 77AB29FC                             ASCII LdrGetDllHandleEx
+77B0F1E2   PUSH 77AB29DA                             ASCII dw7rtmminkernelntdllldrapi.c
+77B0F215   PUSH 77AB29AE                             ASCII DLL name %wZ was redirected to %wZ by SxS
+
+77B0F21C   PUSH 77AB29FC                             ASCII LdrGetDllHandleEx
+77B0F226   PUSH 77AB29DA                             ASCII dw7rtmminkernelntdllldrapi.c
+77B0F292   PUSH 77AB2990                             ASCII Locating DLL %wZ in path %wZ
+
+77B0F299   PUSH 77AB29FC                             ASCII LdrGetDllHandleEx
+77B0F2A3   PUSH 77AB29DA                             ASCII dw7rtmminkernelntdllldrapi.c
+77B0F324   PUSH 77AB2958                             ASCII SxS redirection of DLL %wZ failed with status 0x%08lx
+
+77B0F32B   PUSH 77AB29FC                             ASCII LdrGetDllHandleEx
+77B0F335   PUSH 77AB29DA                             ASCII dw7rtmminkernelntdllldrapi.c
+77B0F35A   PUSH 77AB2946                             ASCII Status 0x%08lx
+
+77B0F361   PUSH 77AB29FC                             ASCII LdrGetDllHandleEx
+77B0F36B   PUSH 77AB29DA                             ASCII dw7rtmminkernelntdllldrapi.c
+77B0F3FE   PUSH 77AB2A56                             ASCII LdrReadMemory
+77B0F546   PUSH 77AB2A64                             ASCII LdrLockLoaderLock
+77B0F59D   PUSH 77AB2A76                             ASCII LdrUnlockLoaderLock
+77B0F612   PUSH 77AB2AC6                             ASCII Unmapping DLL %wZ
+
+77B0F619   PUSH 77AB2AB8                             ASCII LdrpUnloadDll
+77B0F623   PUSH 77AB29DA                             ASCII dw7rtmminkernelntdllldrapi.c
+77B0F657   PUSH 77AB2A8A                             ASCII Uninitializing DLL %wZ (Init routine %p)
+
+77B0F65E   PUSH 77AB2AB8                             ASCII LdrpUnloadDll
+77B0F668   PUSH 77AB29DA                             ASCII dw7rtmminkernelntdllldrapi.c
+77B0F68D   PUSH 77AB2AB8                             ASCII LdrpUnloadDll
+77B0F6CC   PUSH 77AB2B1A                             ASCII Locating procedure %Z by name
+
+77B0F6D3   PUSH 77AB2B00                             ASCII LdrGetProcedureAddressEx
+77B0F6DD   PUSH 77AB29DA                             ASCII dw7rtmminkernelntdllldrapi.c
+77B0F700   PUSH 77AB2ADC                             ASCII Loading procedure 0x%lx by ordinal
+
+77B0F707   PUSH 77AB2B00                             ASCII LdrGetProcedureAddressEx
+77B0F711   PUSH 77AB29DA                             ASCII dw7rtmminkernelntdllldrapi.c
+77B0F766   PUSH 77AB2B00                             ASCII LdrGetProcedureAddressEx
+77B0F7A5   PUSH 77AB2BC4                             ASCII DLL name %wZ DLL path %wZ
+
+77B0F7AC   PUSH 77AB2BB8                             ASCII LdrpLoadDll
+77B0F7B6   PUSH 77AB29DA                             ASCII dw7rtmminkernelntdllldrapi.c
+77B0F7D5   PUSH 77AB2B92                             ASCII DLL %wZ was redirected to %wZ by SxS
+
+77B0F7DC   PUSH 77AB2BB8                             ASCII LdrpLoadDll
+77B0F7E6   PUSH 77AB29DA                             ASCII dw7rtmminkernelntdllldrapi.c
+77B0F852   PUSH 77AB2B72                             ASCII Loading DLL %wZ from path %wZ
+
+77B0F859   PUSH 77AB2BB8                             ASCII LdrpLoadDll
+77B0F863   PUSH 77AB29DA                             ASCII dw7rtmminkernelntdllldrapi.c
+77B0F8C8   PUSH 77AB2B3C                             ASCII Could not validate the crypto signature for DLL %wZ
+
+77B0F8CE   PUSH 77AB2BB8                             ASCII LdrpLoadDll
+77B0F8D8   PUSH 77AB29DA                             ASCII dw7rtmminkernelntdllldrapi.c
+77B0F91A   MOV DWORD PTR DS[EAX],77B9021C           ASCII xE
+77B0F94F   PUSH 77AB2BB8                             ASCII LdrpLoadDll
+77B0F99F   PUSH 77AB2958                             ASCII SxS redirection of DLL %wZ failed with status 0x%08lx
+
+77B0F9A5   PUSH 77AB2BB8                             ASCII LdrpLoadDll
+77B0F9AF   PUSH 77AB29DA                             ASCII dw7rtmminkernelntdllldrapi.c
+77B0F9D4   PUSH 77AB2946                             ASCII Status 0x%08lx
+
+77B0F9DB   PUSH 77AB2BB8                             ASCII LdrpLoadDll
+77B0F9E5   PUSH 77AB29DA                             ASCII dw7rtmminkernelntdllldrapi.c
+77B0FA05   PUSH 77B0FA58                             UNICODE COMPLUS_Version
+77B0FBBB   PUSH 77AB2946                             ASCII Status 0x%08lx
+
+77B0FBC2   PUSH 77AB2C8A                             ASCII LdrpFindKnownDll
+77B0FBCC   PUSH 77AB2C66                             ASCII dw7rtmminkernelntdllldrfind.c
+77B0FBE7   PUSH 77AB2C9C                             ASCII DLL name %wZ
+
+77B0FBEE   PUSH 77AB2CAC                             ASCII LdrpResolveFileName
+77B0FC0D   PUSH 77AB2946                             ASCII Status 0x%08lx
+
+77B0FC14   PUSH 77AB2CAC                             ASCII LdrpResolveFileName
+77B0FC33   PUSH 77AB2C9C                             ASCII DLL name %wZ
+
+77B0FC3A   PUSH 77AB2CC0                             ASCII LdrpResolveDllName
+77B0FC44   PUSH 77AB2C66                             ASCII dw7rtmminkernelntdllldrfind.c
+77B0FD3B   PUSH 77AB2946                             ASCII Status 0x%08lx
+
+77B0FD42   PUSH 77AB2CC0                             ASCII LdrpResolveDllName
+77B0FD4C   PUSH 77AB2C66                             ASCII dw7rtmminkernelntdllldrfind.c
+77B0FD65   PUSH 77AB2CEA                             ASCII DLL name %ws
+
+77B0FD6C   PUSH 77AB2CD4                             ASCII LdrpMapViewOfSection
+77B0FD76   PUSH 77AB2C66                             ASCII dw7rtmminkernelntdllldrfind.c
+77B0FE0B   PUSH 77AB2946                             ASCII Status 0x%08lx
+
+77B0FE12   PUSH 77AB2CD4                             ASCII LdrpMapViewOfSection
+77B0FE1C   PUSH 77AB2C66                             ASCII dw7rtmminkernelntdllldrfind.c
+77B0FE3B   PUSH 77AB2C9C                             ASCII DLL name %wZ
+
+77B0FE96   PUSH 77AB2946                             ASCII Status 0x%08lx
+
+77B0FEBB   PUSH 77AB2BC4                             ASCII DLL name %wZ DLL path %wZ
+
+77B0FEC2   PUSH 77AB2DAE                             ASCII LdrpSearchPath
+77B0FECC   PUSH 77AB2C66                             ASCII dw7rtmminkernelntdllldrfind.c
+77B0FF33   PUSH 77AB2946                             ASCII Status 0x%08lx
+
+77B0FF3A   PUSH 77AB2DAE                             ASCII LdrpSearchPath
+77B0FF44   PUSH 77AB2C66                             ASCII dw7rtmminkernelntdllldrfind.c
+77B0FF60   PUSH 77AB2BC4                             ASCII DLL name %wZ DLL path %wZ
+
+77B0FF67   PUSH 77AB2DBE                             ASCII LdrpFindOrMapDll
+77B0FF71   PUSH 77AB2C66                             ASCII dw7rtmminkernelntdllldrfind.c
+77B1009F   PUSH 77AB2DBE                             ASCII LdrpFindOrMapDll
+77B101B2   PUSH 77AB2946                             ASCII Status 0x%08lx
+
+77B101B9   PUSH 77AB2DBE                             ASCII LdrpFindOrMapDll
+77B101C3   PUSH 77AB2C66                             ASCII dw7rtmminkernelntdllldrfind.c
+77B101DD   PUSH 77AB2BC4                             ASCII DLL name %wZ DLL path %wZ
+
+77B101E4   PUSH 77AB2DD0                             ASCII LdrpFindLoadedDll
+77B101EE   PUSH 77AB2C66                             ASCII dw7rtmminkernelntdllldrfind.c
+77B1027E   PUSH 77AB2946                             ASCII Status 0x%08lx
+
+77B10285   PUSH 77AB2DD0                             ASCII LdrpFindLoadedDll
+77B1028F   PUSH 77AB2C66                             ASCII dw7rtmminkernelntdllldrfind.c
+77B102DA   PUSH 77AB312A                             ASCII Could not locate the init routine for the shim engine DLL
+
+77B102E0   PUSH 77AB310C                             ASCII LdrpRunShimEngineInitRoutine
+77B102EA   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B1031B   PUSH 77AB317A                             ASCII Process 0x%x (%wZ) exiting
+
+77B10322   PUSH 77AB3166                             ASCII LdrShutdownProcess
+77B1032C   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B10472   PUSH 77AB3352                             ASCII Could not locate procedure %s in the shim engine DLL
+
+77B10478   PUSH 77AB3336                             ASCII LdrpGetShimEngineInterface
+77B10482   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B104C4   PUSH 77AB3458                             ASCII Loading the shim engine DLL %wZ failed with status 0x%08lx
+
+77B104CA   PUSH 77AB3444                             ASCII LdrpLoadShimEngine
+77B104D4   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B1050C   PUSH 77AB340C                             ASCII The init routine for the shim engine DLL %wZ failed
+
+77B10512   PUSH 77AB3444                             ASCII LdrpLoadShimEngine
+77B1051C   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B1055B   PUSH 77AB28A6                             UNICODE ExecuteOptions
+77B10585   PUSH 77AB364C                             UNICODE DisableExceptionChainValidation
+77B10611   PUSH 77AB3622                             UNICODE DisableHeapLookaside
+77B10626   PUSH 77AB3606                             UNICODE ShutdownFlags
+77B1063A   PUSH 77AB35D2                             UNICODE MinimumStackCommitInBytes
+77B1066D   PUSH 77AB35BC                             UNICODE GlobalFlag
+77B106B1   PUSH 77AB35BC                             UNICODE GlobalFlag
+77B10713   PUSH 77AB357A                             ASCII Initializing the app verifier package failed with status 0x%08lx
+
+77B10719   PUSH 77AB355A                             ASCII LdrpInitializeExecutionOptions
+77B10723   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B1078B   PUSH 77AB3526                             UNICODE MaxDeadActivationContexts
+77B107AE   PUSH 77AB34FA                             UNICODE UnloadEventTraceDepth
+77B107D1   PUSH 77AB34E0                             UNICODE TracingFlags
+77B1082B   PUSH 77AB35BC                             UNICODE GlobalFlag
+77B10894   PUSH 77AB3496                             ASCII Initializing the application verifier package failed with status 0x%08lx
+
+77B1089A   PUSH 77AB355A                             ASCII LdrpInitializeExecutionOptions
+77B108A4   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B10A27   PUSH 77AB3C84                             ASCII Initializing the execution options for the process %lx failed with status 0x%08lx
+
+77B10A2D   PUSH 77AB3C6E                             ASCII LdrpInitializeProcess
+77B10A37   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B10A6E   PUSH 77AB3C52                             ASCII Initializing process 0x%lx
+
+77B10AF9   PUSH 77AB3C0E                             ASCII Applying WOW64 fixups to the executable failed with status 0x%08lx
+
+77B10BD4   PUSH 77AB3BD8                             UNICODE StackTraceDatabaseSizeInMb
+77B10C23   PUSH 77AB3BB2                             ASCII Stack trace database size is %ld Mb
+
+77B10C2A   PUSH 77AB3C6E                             ASCII LdrpInitializeProcess
+77B10C34   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B10C9C   PUSH 77AB3B90                             ASCII Creating the process heap failed
+
+77B10CA2   PUSH 77AB3C6E                             ASCII LdrpInitializeProcess
+77B10CAC   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B10CEC   PUSH 77AB3A48                             UNICODE DebugProcessHeapOnly
+77B10E15   PUSH 77AB39FE                             ASCII Querying the known DLL directory link object failed with status 0x%08lx
+
+77B10E1B   PUSH 77AB3C6E                             ASCII LdrpInitializeProcess
+77B10E25   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B10E40   PUSH 77AB39B6                             ASCII Opening the known DLL directory link object failed with status 0x%08lx
+
+77B10E46   PUSH 77AB3C6E                             ASCII LdrpInitializeProcess
+77B10E50   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B10EAA   PUSH 77AB3974                             ASCII Allocating a buffer to hold the current working directory failed
+
+77B10EB0   PUSH 77AB3C6E                             ASCII LdrpInitializeProcess
+77B10EC8   MOV ESI,7FFE0030                          UNICODE CWindows
+77B10F1E   PUSH 77AB393A                             ASCII Allocating a data table entry for the executable failed
+
+77B10F24   PUSH 77AB3C6E                             ASCII LdrpInitializeProcess
+77B10F2E   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B10F7D   PUSH 77AB3900                             ASCII Allocating a data table entry for the system DLL failed
+
+77B10F83   PUSH 77AB3C6E                             ASCII LdrpInitializeProcess
+77B10FC2   PUSH 77AB389E                             ASCII Beginning execution of %wZ (%wZ)
+	Current directory %wZ
+	Search path %wZ
+
+77B10FC9   PUSH 77AB3C6E                             ASCII LdrpInitializeProcess
+77B10FD3   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B11004   PUSH 77AB3856                             ASCII Initializing the current directory to %wZ failed with status 0x%08lx
+
+77B1100B   PUSH 77AB3C6E                             ASCII LdrpInitializeProcess
+77B11015   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B11072   PUSH 77AB380E                             ASCII Allocating a data table entry for the application verifier DLL failed
+
+77B11078   PUSH 77AB3C6E                             ASCII LdrpInitializeProcess
+77B11181   PUSH 77AB2D98                             ASCII LDR
+77B111DA   PUSH 77AB37DA                             ASCII Initializing TLS slots failed with status 0x%08lx
+
+77B111E1   PUSH 77AB3C6E                             ASCII LdrpInitializeProcess
+77B11209   PUSH 77AB3786                             ASCII Locating procedure %Z in Windows subsystem DLL %wZ failed with status 0x%08lx
+
+77B11210   PUSH 77AB3C6E                             ASCII LdrpInitializeProcess
+77B1121A   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B11244   PUSH 77AB3786                             ASCII Locating procedure %Z in Windows subsystem DLL %wZ failed with status 0x%08lx
+
+77B1124B   PUSH 77AB3C6E                             ASCII LdrpInitializeProcess
+77B11255   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B112A9   PUSH 77AB3726                             ASCII Walking the import tables of the executable and its static imports failed with status 0x%08lx
+
+77B112AF   PUSH 77AB3C6E                             ASCII LdrpInitializeProcess
+77B112FB   PUSH 77AB36E6                             ASCII Loading Windows subsystem DLL %wZ failed with status 0x%08lx
+
+77B11302   PUSH 77AB3C6E                             ASCII LdrpInitializeProcess
+77B1130C   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B11389   PUSH 77AB368C                             ASCII Running the init routines of the executable's static imports failed with status 0x%08lx
+
+77B11390   PUSH 77AB3C6E                             ASCII LdrpInitializeProcess
+77B113BC   PUSH 77AB32FA                             UNICODE DisableUserModeCallbackFilter
+77B1142A   PUSH 77AB304E                             ASCII Process initialization failed with status 0x%08lx
+
+77B11431   PUSH 77AB3D1C                             ASCII _LdrpInitialize
+77B1143B   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B11534   PUSH 77AB3CEC                             ASCII Delaying execution failed with status 0x%08lx
+
+77B1153B   PUSH 77AB3D1C                             ASCII _LdrpInitialize
+77B11545   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B11944   PUSH 77AB408E                             ASCII DLL name %s DLL path %wZ
+
+77B1194B   PUSH 77AB4078                             ASCII LdrpLoadImportModule
+77B11952   PUSH 77AB3FEE                             ASCII dw7rtmminkernelntdllldrsnap.c
+77B119E9   PUSH 77AB404C                             ASCII DLL name %wZ was redirected to %wZ by SxS.
+
+77B119F0   PUSH 77AB4078                             ASCII LdrpLoadImportModule
+77B119FA   PUSH 77AB3FEE                             ASCII dw7rtmminkernelntdllldrsnap.c
+77B11A4F   PUSH 77AB4012                             ASCII Loading DLL %wZ from path %wZ failed with status 0x%08lx
+
+77B11A56   PUSH 77AB4078                             ASCII LdrpLoadImportModule
+77B11A60   PUSH 77AB3FEE                             ASCII dw7rtmminkernelntdllldrsnap.c
+77B11AEC   PUSH 77AB2958                             ASCII SxS redirection of DLL %wZ failed with status 0x%08lx
+
+77B11AF2   PUSH 77AB4078                             ASCII LdrpLoadImportModule
+77B11AFC   PUSH 77AB3FEE                             ASCII dw7rtmminkernelntdllldrsnap.c
+77B11B31   PUSH 77AB2946                             ASCII Status 0x%08lx
+
+77B11B38   PUSH 77AB4078                             ASCII LdrpLoadImportModule
+77B11B42   PUSH 77AB3FEE                             ASCII dw7rtmminkernelntdllldrsnap.c
+77B11B6B   PUSH 77AB4214                             ASCII Hint index 0x%lx for procedure %s in DLL %s is invalid
+
+77B11B72   PUSH 77AB4206                             ASCII LdrpSnapThunk
+77B11B7C   PUSH 77AB3FEE                             ASCII dw7rtmminkernelntdllldrsnap.c
+77B11BD0   PUSH 77AB41CE                             ASCII Ordinal 0x%lx could not be located in DLL %s
+
+77B11BD7   PUSH 77AB4206                             ASCII LdrpSnapThunk
+77B11BF1   PUSH 77AB419C                             ASCII Procedure %s could not be located in DLL %s
+
+77B11BF8   PUSH 77AB4206                             ASCII LdrpSnapThunk
+77B11C02   PUSH 77AB3FEE                             ASCII dw7rtmminkernelntdllldrsnap.c
+77B11C24   MOV EAX,77AB41FE                          ASCII Unknown
+77B11CEC   PUSH 77AB4266                             ASCII %s loaded DLL %wZ (new reference count 0x%lx)
+
+77B11CF3   PUSH 77AB4250                             ASCII LdrpUpdateLoadCount2
+77B11CFD   PUSH 77AB3FEE                             ASCII dw7rtmminkernelntdllldrsnap.c
+77B11D3E   PUSH 77AB42BA                             ASCII LdrpFixupIATForRelocatedImport
+77B11D7C   PUSH 77AB42E6                             ASCII DLL %wZ does not contain an export table
+
+77B11D83   PUSH 77AB42DA                             ASCII LdrpSnapIAT
+77B11D8D   PUSH 77AB3FEE                             ASCII dw7rtmminkernelntdllldrsnap.c
+77B11DBC   PUSH 77AB42DA                             ASCII LdrpSnapIAT
+77B11DEE   PUSH 77AB4492                             ASCII DLL %wZ is bound to %s
+
+77B11E2D   PUSH 77AB443E                             ASCII Loading %ws from the bound import table of DLL %wZ failed with status 0x%08lx
+
+77B11E60   PUSH 77AB43EE                             ASCII Recording a static link from DLL %wZ to DLL %wZ failed with status 0x%08lx
+
+77B11E99   PUSH 77AB43C2                             ASCII DLL %wZ is bound via forwarders to %s
+
+77B11F11   PUSH 77AB4368                             ASCII Recording a static forwarder link from DLL %wZ to DLL %wZ failed with status 0x%08lx
+
+77B11F79   PUSH 77AB4312                             ASCII Snapping the invalid bindings from DLL %wZ to DLL %wZ failed with status 0x%08lx
+
+77B11FE1   PUSH 77AB4572                             ASCII DLL %wZ imports %s
+
+77B1201E   PUSH 77AB4524                             ASCII Loading %ws from the import table of DLL %wZ failed with status 0x%08lx
+
+77B12068   PUSH 77AB43EE                             ASCII Recording a static link from DLL %wZ to DLL %wZ failed with status 0x%08lx
+
+77B12094   PUSH 77AB44D6                             ASCII Snapping the imports from DLL %wZ to DLL %wZ failed with status 0x%08lx
+
+77B120FA   PUSH 77AB4610                             ASCII Probing for the manifest of DLL %wZ failed with status 0x%08lx
+
+77B12100   PUSH 77AB45F6                             ASCII LdrpProcessStaticImports
+77B1210A   PUSH 77AB3FEE                             ASCII dw7rtmminkernelntdllldrsnap.c
+77B12149   PUSH 77AB45B2                             ASCII Querying the active activation context failed with status 0x%08lx
+
+77B1214F   PUSH 77AB45F6                             ASCII LdrpProcessStaticImports
+77B12159   PUSH 77AB3FEE                             ASCII dw7rtmminkernelntdllldrsnap.c
+77B12266   PUSH 77AB4702                             ASCII LdrpAllocateTlsEntry
+77B12366   PUSH 77AB4718                             ASCII LdrpHandleTlsData
+77B1255A   PUSH 77AB4900                             ASCII RTL Acquire Shared Sem Timeout %d(%I64u secs)
+
+77B12569   PUSH 77AB48E0                             ASCII RTL Resource at %p
+
+77B12586   PUSH 77AB48C0                             ASCII RTL Re-Waiting
+
+77B12648   PUSH 77AB4930                             ASCII RTL Acquire Exclusive Sem Timeout %d (%I64u secs)
+
+77B12657   PUSH 77AB48E0                             ASCII RTL Resource at %p
+
+77B12674   PUSH 77AB48C0                             ASCII RTL Re-Waiting
+
+77B127D9   PUSH 77AB4A90                             ASCII RTL Enter Critical Section Timeout (%I64u secs) %d
+
+77B12809   PUSH 77AB4A40                             ASCII RTL Pid.Tid %x.%x, owner tid %x Critical Section %p - ContentionCount == %lu
+
+77B12846   PUSH 77AB48C0                             ASCII RTL Re-Waiting
+
+77B12A7A   PUSH 77AB4D50                             ASCII Initialization stack trace. Use dps to dump it if non-NULL.
+77B12A8F   PUSH 77AB4D20                             ASCII Critical section debug info address
+77B12A95   PUSH 77AB4D00                             ASCII Critical section address
+77B12A9B   PUSH 77AB4CD0                             ASCII undeleted critical section in freed memory
+77B12AFD   PUSH 77AB4D50                             ASCII Initialization stack trace. Use dps to dump it if non-NULL.
+77B12B12   PUSH 77AB4C90                             ASCII Address of the debug info found in the active list.
+77B12B18   PUSH 77AB4C50                             ASCII Invalid debug info address of this critical section
+77B12B21   PUSH 77AB4D00                             ASCII Critical section address
+77B12B2A   PUSH 77AB4C30                             ASCII corrupted critical section
+77B12B46   PUSH 77AB4BE0                             ASCII Second initialization stack trace. Use dps to dump it if non-NULL.
+77B12B5C   PUSH 77AB4B90                             ASCII First initialization stack trace. Use dps to dump it if non-NULL.
+77B12B71   PUSH 77AB4C90                             ASCII Address of the debug info found in the active list.
+77B12B77   PUSH 77AB4B70                             ASCII Critical section address.
+77B12B80   PUSH 77AB4B30                             ASCII double initialized or corrupted critical section
+77B12BA4   PUSH 77AB4D50                             ASCII Initialization stack trace. Use dps to dump it if non-NULL.
+77B12BB9   PUSH 77AB4D20                             ASCII Critical section debug info address
+77B12BBF   PUSH 77AB4D00                             ASCII Critical section address
+77B12BC5   PUSH 77AB4B10                             ASCII Thread identifier
+77B12BCB   PUSH 77AB4AD0                             ASCII Thread is in a state in which it cannot own a critical section
+77B138C6   PUSH 77AB62D4                             UNICODE ASqmManifest_%x
+77B13E0B   PUSH 77AB64AE                             ASCII This != NULL
+77B13E15   PUSH 77AB6488                             ASCII dw7rtmminkernelntdllsxsisol.cpp
+77B13E1A   PUSH 77AB646C                             ASCII Internal error check failed
+77B13E2E   PUSH 77AB63FC                             ASCII (This-PrivateDynamicallyAllocatedString == NULL)  (This-PrivateDynamicallyAllocatedString-Buffer == NULL)
+77B13E3A   PUSH 77AB63BE                             ASCII rUS.Length = This-PrivatePreallocatedString-MaximumLength
+77B13E44   PUSH 77AB6488                             ASCII dw7rtmminkernelntdllsxsisol.cpp
+77B13E49   PUSH 77AB646C                             ASCII Internal error check failed
+77B13F26   PUSH 77AB656C                             ASCII sxsisol_SearchActCtxForDllName
+77B13F37   PUSH 77AB652C                             ASCII [%x.%x] SXS %s - Relative redirection plus env var expansion.
+
+77B13F60   PUSH 77AB64D8                             ASCII !(askd.Flags & ACTIVATION_CONTEXT_SECTION_KEYED_DATA_FLAG_FOUND_IN_SYSTEM_DEFAULT)
+77B140C2   PUSH 77AB64BC                             ASCII Status != STATUS_NOT_FOUND
+77B140CC   PUSH 77AB6488                             ASCII dw7rtmminkernelntdllsxsisol.cpp
+77B140D1   PUSH 77AB646C                             ASCII Internal error check failed
+77B14292   PUSH 77AB658C                             ASCII Status != STATUS_SXS_SECTION_NOT_FOUND
+77B1429C   PUSH 77AB6488                             ASCII dw7rtmminkernelntdllsxsisol.cpp
+77B142A1   PUSH 77AB646C                             ASCII Internal error check failed
+77B142CF   PUSH 77AB675C                             ASCII SXS Activation context data at %p has TOC header too small (%lu)
+
+77B142E6   PUSH 77AB6682                             ASCII SXS Activation context data at %p has assembly roster header too small (%lu)
+
+77B142FD   PUSH 77AB67D4                             ASCII RtlCreateActivationContext
+77B14302   PUSH 77AB67A0                             ASCII SXS %s() passed the empty activation context data
+
+77B144F8   PUSH 77AB689A                             ASCII RtlDeactivateActivationContext
+77B144FD   PUSH 77AB686C                             ASCII SXS %s() called with invalid flags 0x%08lx
+
+77B14519   PUSH 77AB689A                             ASCII RtlDeactivateActivationContext
+77B1451E   PUSH 77AB6836                             ASCII SXS %s() called with invalid cookie type 0x%08I64x
+
+77B1453A   PUSH 77AB689A                             ASCII RtlDeactivateActivationContext
+77B1453F   PUSH 77AB67F0                             ASCII SXS %s() called with invalid cookie tid 0x%08I64x - should be %08lx
+
+77B146AE   PUSH 77AB68FE                             ASCII RtlDeactivateActivationContextUnsafeFast
+77B146B3   PUSH 77AB68BA                             ASCII SXS %s() Active frame is not the frame being deactivated %p != %p
+
+77B147D2   PUSH 77AB6A00                             ASCII RtlpFindActivationContextSection_CheckParameters
+77B147D7   PUSH 77AB699A                             ASCII SXS %s() flags contains return_flags but they don't fit in size, return invalid_parameter 0x%08lx.
+
+77B147E4   PUSH 77AB6A00                             ASCII RtlpFindActivationContextSection_CheckParameters
+77B147E9   PUSH 77AB6928                             ASCII SXS %s() flags contains return_assembly_metadata but they don't fit in size, return invalid_parameter 0x%08lx.
+
+77B1484B   PUSH 77AB6AF0                             ASCII RtlpFindUnicodeStringInSection Unsupported hash algorithm %lu found in string section.
+
+77B1486E   PUSH 77AB6AAA                             ASCII SXS String hash collision chain offset at %p (= %ld) out of bounds
+
+77B1488B   PUSH 77AB6A32                             ASCII SXS String hash table entry at %p has invalid key offset (= %ld)
+   Header = %p; Index = %lu; Bucket = %p; Chain = %p
+
+77B14A19   PUSH 77AB6D92                             ASCII SXSRTL Extended TOC offset (%ld) is outside bounds of activation context data (%lu bytes)
+
+77B14A52   PUSH 77AB6CFE                             ASCII SXSRTL Extended TOC entry array (starting at offset %ld; count = %lu; entry size = %u) is outside bounds of activation context data (%lu bytes)
+
+77B14AC5   PUSH 77AB6C8A                             ASCII SXSRTL Extended TOC section TOC %d (offset %ld, size %u) is outside activation context data bounds (%lu bytes)
+
+77B14AD5   PUSH 77AB6C0A                             ASCII SXSRTL TOC entry array (offset %ld; count = %lu; entry size = %u) is outside bounds of activation context data (%lu bytes)
+
+77B14B28   PUSH 77AB6BA0                             ASCII SXSRTL Section found (offset %ld; length %lu) extends past end of activation context data (%lu bytes)
+
+77B14B34   PUSH 77AB6B4A                             ASCII SXSRTL Activation context data at %p too small; TotalSize = %lu; HeaderSize = %lu
+
+77B14C68   PUSH 77AB6DF0                             ASCII RtlFindActivationContextSectionString() found section at %p (length %lu) which is not a string section
+
+77B14CA1   PUSH 77AB6E58                             ASCII RtlFindActivationContextSectionGuid() found section at %p (length %lu) which is not a GUID section
+
+77B14D59   PUSH 77AB738E                             ASCII RtlpCrackActivationContextStringSectionHeader
+77B14D5E   PUSH 77AB730C                             ASCII SXS %s() passed string section at %p only %lu bytes long; that's not even enough for the 4-byte magic and 4-byte header length!
+
+77B14D67   PUSH 77AB738E                             ASCII RtlpCrackActivationContextStringSectionHeader
+77B14D6C   PUSH 77AB72AE                             ASCII SXS %s() found assembly information section with wrong magic value
+   Expected %lu; got %lu
+
+77B14D88   PUSH 77AB738E                             ASCII RtlpCrackActivationContextStringSectionHeader
+77B14D8D   PUSH 77AB7238                             ASCII SXS %s() passed string section at %p claims %lu byte header size; that doesn't even include the HeaderSize member!
+
+77B14DAB   PUSH 77AB738E                             ASCII RtlpCrackActivationContextStringSectionHeader
+77B14DB0   PUSH 77AB71D2                             ASCII SXS %s() passed string section at %p with too small of a header
+   HeaderSize %lu
+   Required %lu
+
+77B14DBA   PUSH 77AB738E                             ASCII RtlpCrackActivationContextStringSectionHeader
+77B14DBF   PUSH 77AB7132                             ASCII SXS %s() found assembly information section with element list overlapping section header
+   Section header %p
+   Header Size %lu
+   ElementListOffset %lu
+
+77B14DC9   PUSH 77AB738E                             ASCII RtlpCrackActivationContextStringSectionHeader
+77B14DCE   PUSH 77AB708A                             ASCII SXS %s() found assembly information section with search structure overlapping section header
+   Section header %p
+   Header Size %lu
+   SearchStructureOffset %lu
+
+77B14DD8   PUSH 77AB738E                             ASCII RtlpCrackActivationContextStringSectionHeader
+77B14DDD   PUSH 77AB6FEE                             ASCII SXS %s() found assembly information section with user data overlapping section header
+   Section header %p
+   Header Size %lu
+   User Data Offset %lu
+
+77B14DE8   PUSH 77AB738E                             ASCII RtlpCrackActivationContextStringSectionHeader
+77B14DED   PUSH 77AB6F6E                             ASCII SXS %s() found assembly information section with user data too small
+   Section header %p
+   UserDataSize %lu; needed %lu
+
+77B14E05   PUSH 77AB738E                             ASCII RtlpCrackActivationContextStringSectionHeader
+77B14E0A   PUSH 77AB6EBC                             ASCII SXS %s() found assembly information section with user data extending beyond section data
+   Section header %p
+   UserDataSize %lu
+   UserDataOffset %lu
+   Section size %lu
+
+77B14E8A   PUSH 77AB73F8                             ASCII RtlpQueryInformationActivationContextBasicInformation
+77B14E8F   PUSH 77AB73BC                             ASCII SXS %s() received invalid non-zero sub-instance index %lu
+
+77B14EC3   PUSH 77AB7484                             ASCII RtlpQueryInformationActivationContextDetailedInformation
+77B14EC8   PUSH 77AB73BC                             ASCII SXS %s() received invalid non-zero sub-instance index %lu
+
+77B14EFD   PUSH 77AB7484                             ASCII RtlpQueryInformationActivationContextDetailedInformation
+77B14F02   PUSH 77AB742E                             ASCII SXS %s() found activation context data at %p with assembly roster that has no root
+
+77B14F1F   PUSH 77AB7522                             ASCII RtlpQueryAssemblyInformationActivationContextDetailedInformation
+77B14F24   PUSH 77AB74BE                             ASCII SXS %s() received invalid sub-instance index %lu out of %lu Assemblies in the Acitvation Context
+
+77B14F84   PUSH 77AB762C                             ASCII RtlpQueryRunLevel
+77B14F89   PUSH 77AB742E                             ASCII SXS %s() found activation context data at %p with assembly roster that has no root
+
+77B14F91   PUSH 77AB762C                             ASCII RtlpQueryRunLevel
+77B14F96   PUSH 77AB75EA                             ASCII SXS %s() found activation context data at %p with wrong format
+
+77B14FB5   PUSH 77AB796A                             ASCII RtlQueryInformationActivationContext
+77B14FBA   PUSH 77AB7936                             ASCII SXS %s() - Caller passed invalid flags (0x%08lx)
+
+77B14FD8   PUSH 77AB796A                             ASCII RtlQueryInformationActivationContext
+77B14FDD   PUSH 77AB78E4                             ASCII SXS %s() - Caller passed meaningless flagsclass combination (0x%08lx0x%08lx)
+
+77B14FFB   PUSH 77AB796A                             ASCII RtlQueryInformationActivationContext
+77B15000   PUSH 77AB78A8                             ASCII SXS %s() - caller asked for unknown information class %lu
+
+77B1501C   PUSH 77AB796A                             ASCII RtlQueryInformationActivationContext
+77B15021   PUSH 77AB785E                             ASCII SXS %s() - caller passed nonzero buffer length but NULL buffer pointer
+
+77B1503D   PUSH 77AB796A                             ASCII RtlQueryInformationActivationContext
+77B15042   PUSH 77AB7800                             ASCII SXS %s() - caller supplied no buffer to populate and no place to return required byte count
+
+77B1505E   PUSH 77AB796A                             ASCII RtlQueryInformationActivationContext
+77B15063   PUSH 77AB77A6                             ASCII SXS %s() - Caller asked to use activation context from address in .dll but passed NULL
+
+77B15078   PUSH 77AB796A                             ASCII RtlQueryInformationActivationContext
+77B1507D   PUSH 77AB7764                             ASCII SXS %s() - Caller passed invalid address, not in any .dll (%p)
+
+77B15099   PUSH 77AB796A                             ASCII RtlQueryInformationActivationContext
+77B1509E   PUSH 77AB7712                             ASCII SXS %s() - Caller asked to use activation context from hmodule but passed NULL
+
+77B150A6   PUSH 77AB796A                             ASCII RtlQueryInformationActivationContext
+77B150AB   PUSH 77AB76E2                             ASCII SXS %s() - Caller passed invalid hmodule (%p)
+
+77B150B5   PUSH 77AB796A                             ASCII RtlQueryInformationActivationContext
+77B150BA   PUSH 77AB7698                             ASCII SXS %s() - caller asked to use active activation context but passed %p
+
+77B150F5   PUSH 77AB796A                             ASCII RtlQueryInformationActivationContext
+77B150FA   PUSH 77AB763E                             ASCII SXS %s() - internal coding error; missing switch statement branch for InfoClass == %lu
+
+77B1519F   PUSH 77AB7990                             ASCII RtlpLocateActivationContextSection() found section at %p (length %lu) which is not a string section
+
+77B1525C   PUSH 77AB7BD6                             ASCII SXS Unable to enumerate assembly storage subkey #%lu Status = 0x%08lx
+
+77B152C1   PUSH 77AB7B86                             ASCII SXS Attempt to get storage location from subkey %wZ failed; Status = 0x%08lx
+
+77B152F2   PUSH 77AB7B4E                             ASCII SXS Unable to open registry key %wZ Status = 0x%08lx
+
+77B15369   PUSH 77AB7C82                             ASCII RtlpInitializeAssemblyStorageMap
+77B1536E   PUSH 77AB7C30                             ASCII SXS %s() bad parameters
+SXS    Map         0x%lx
+SXS    EntryCount  0x%lx
+
+77B153DE   PUSH 77AB7DB4                             ASCII RtlpInsertAssemblyStorageMapEntry
+77B153E3   PUSH 77AB7CA4                             ASCII SXS %s() bad parameters
+SXS  Map                     %p
+SXS  AssemblyRosterIndex     0x%lx
+SXS  Map-AssemblyCount      0x%lx
+SXS  StorageLocation         %p
+SXS  StorageLocation-Length 0x%x
+SXS  StorageLocation-Buffer %p
+...
+77B1542F   PUSH 77AB7FE0                             ASCII SXS Assembly storage resolution failing probe because combined path length does not fit in an UNICODE_STRING.
+
+77B15463   PUSH 77AB7F82                             ASCII SXS Assembly storage resolution failing probe because attempt to allocate %u bytes failed.
+
+77B15490   PUSH 77AB7F40                             ASCII SXS Attempt to translate DOS path name %S to NT format failed
+
+77B15516   PUSH 77AB7EEE                             ASCII SXS Unable to open assembly directory under storage root %S; Status = 0x%08lx
+
+77B155A3   PUSH 77AB7EC6                             ASCII RtlpProbeAssemblyStorageRootForAssembly
+77B155A8   PUSH 77AB7DD6                             ASCII SXS %s() bad parameters
+SXS  Flags               0x%lx
+SXS  Root                %p
+SXS  AssemblyDirectory   %p
+SXS  PreAllocatedString  %p
+SXS  DynamicString       %p
+SXS  StringUsed          %p
+SXS  OpenDirectoryHandle %p...
+77B155E4   PUSH 77AB8126                             ASCII RtlpGetActivationContextDataStorageMapAndRosterHeader
+77B155E9   PUSH 77AB80F6                             ASCII SXS %s() passed the empty activation context
+
+77B156AD   PUSH 77AB8126                             ASCII RtlpGetActivationContextDataStorageMapAndRosterHeader
+77B156B2   PUSH 77AB8050                             ASCII SXS %s() bad parameters
+SXS    Flags                 0x%lx
+SXS    Peb                   %p
+SXS    ActivationContextData %p
+SXS    AssemblyStorageMap    %p
+
+77B156E0   PUSH 77AB83FC                             ASCII SXS Assembly directory name stored in assembly information too long (%lu bytes) - ACTIVATION_CONTEXT_DATA at %p
+
+77B15757   PUSH 77AB7F40                             ASCII SXS Attempt to translate DOS path name %S to NT format failed
+
+77B157B9   PUSH 77AB83A4                             ASCII SXS Attempt to probe known root of assembly storage (%wZ) failed; Status = 0x%08lx
+
+77B157F0   PUSH 77AB8326                             ASCII SXS Attempt to insert well known storage root into assembly storage map assembly roster index %lu failed; Status = 0x%08lx
+
+77B15841   PUSH 77AB82D8                             ASCII SXS Unable to resolve storage root for assembly directory %wZ in %Iu tries
+
+77B15874   PUSH 77AB826E                             ASCII SXS Attempt to probe assembly storage root %wZ for assembly directory %wZ failed with status = 0x%08lx
+
+77B158AA   PUSH 77AB7EEE                             ASCII SXS Unable to open assembly directory under storage root %S; Status = 0x%08lx
+
+77B158C0   PUSH 77AB821C                             ASCII SXS Storage resolution failed to insert entry to storage map; Status = 0x%08lx
+
+77B158DB   PUSH 77AB81F8                             ASCII RtlpResolveAssemblyStorageMapEntry
+77B158E0   PUSH 77AB815C                             ASCII SXS %s() bad parameters
+SXS   Map                 %p
+SXS   Data                %p
+SXS   AssemblyRosterIndex 0x%lx
+SXS   Map-AssemblyCount  0x%lx
+
+77B1591B   PUSH 77AB864E                             ASCII RtlGetAssemblyStorageRoot
+77B15920   PUSH 77AB80F6                             ASCII SXS %s() passed the empty activation context
+
+77B1593B   PUSH 77AB85CA                             ASCII SXS RtlGetAssemblyStorageRoot() unable to get activation context data, storage map and assembly roster header.  Status = 0x%08lx
+
+77B15944   PUSH 77AB864E                             ASCII RtlGetAssemblyStorageRoot
+77B15949   PUSH 77AB856A                             ASCII SXS %s() bad parameters AssemblyRosterIndex 0x%lx = AssemblyRosterHeader-EntryCount 0x%lx
+
+77B1595C   PUSH 77AB8510                             ASCII SXS RtlGetAssemblyStorageRoot() unable to resolve storage map entry.  Status = 0x%08lx
+
+77B15977   PUSH 77AB864E                             ASCII RtlGetAssemblyStorageRoot
+77B1597C   PUSH 77AB846E                             ASCII SXS %s() bad parameters
+SXS    Flags               0x%lx
+SXS    AssemblyRosterIndex 0x%lx
+SXS    AssemblyStorageRoot %p
+SXS    Callback            %p
+
+77B16099   MOV DWORD PTR SS[EBP-4],60000            ASCII Actx 
+77B16841   PUSH 77AB86EC                             ASCII LdrpLoadResourceFromAlternativeModule
+77B16846   PUSH 77AB86BC                             ASCII 'LDR %s(), invalid image format of MUI file 
+
+77B16F80   PUSH 77AB8892                             UNICODE 
+77B17077   PUSH 77AB8874                             UNICODE FilterFullPath
+77B17F99   PUSH 77AB8E12                             UNICODE 0x
+77B19465   PUSH 77AB8E22                             UNICODE #%u
+77B1963D   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B1964A   PUSH 77AB8E68                             ASCII HEAP 
+77B19655   PUSH 77AB8E7C                             ASCII ((PHEAP_ENTRY)LastKnownEntry = Entry)
+77B19699   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B196A6   PUSH 77AB8E68                             ASCII HEAP 
+77B196B1   PUSH 77AB8EA4                             ASCII (UCRBlock-Size = Size)
+77B198F0   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B198FD   PUSH 77AB8E68                             ASCII HEAP 
+77B19910   PUSH 77AB8FB0                             ASCII RtlpHeapFreeVirtualMemory failed %lx for heap %p (base %p, size %x)
+
+77B199D7   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B199E4   PUSH 77AB8E68                             ASCII HEAP 
+77B199F7   PUSH 77AB8FF6                             ASCII ZwAllocateVirtualMemory failed %lx for heap %p (base %p, size %p)
+
+77B19A82   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B19A8F   PUSH 77AB8E68                             ASCII HEAP 
+77B19A9A   PUSH 77AB903A                             ASCII (HeapHandle != NULL)
+77B19D8B   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B19D98   PUSH 77AB8E68                             ASCII HEAP 
+77B19DA3   PUSH 77AB9096                             ASCII (UCRBlock != NULL)
+77B19DF7   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B19E8D   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B19E9A   PUSH 77AB8E68                             ASCII HEAP 
+77B19EA5   PUSH 77AB907A                             ASCII ((LONG)FreeEntry-Size  1)
+77B19F99   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B19FA6   PUSH 77AB8E68                             ASCII HEAP 
+77B19FB1   PUSH 77AB9060                             ASCII (LONG)FreeEntry-Size  1
+77B1A051   PUSH 77AB8E68                             ASCII HEAP 
+77B1A05C   PUSH 77AB9050                             ASCII (!TrailingUCR)
+77B1A23C   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B1A249   PUSH 77AB8E68                             ASCII HEAP 
+77B1A25D   PUSH 77AB8E2A                             ASCII HEAP Free Heap block %lx modified at %lx after it was freed
+
+77B1A2EF   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B1A2FC   PUSH 77AB8E68                             ASCII HEAP 
+77B1A310   PUSH 77AB8E2A                             ASCII HEAP Free Heap block %lx modified at %lx after it was freed
+
+77B1A517   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B1A524   PUSH 77AB8E68                             ASCII HEAP 
+77B1A538   PUSH 77AB8E2A                             ASCII HEAP Free Heap block %lx modified at %lx after it was freed
+
+77B1A5C9   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B1A5D6   PUSH 77AB8E68                             ASCII HEAP 
+77B1A5EA   PUSH 77AB8E2A                             ASCII HEAP Free Heap block %lx modified at %lx after it was freed
+
+77B1A762   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B1A76F   PUSH 77AB8E68                             ASCII HEAP 
+77B1A783   PUSH 77AB8E2A                             ASCII HEAP Free Heap block %lx modified at %lx after it was freed
+
+77B1AF8C   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B1AF99   PUSH 77AB8E68                             ASCII HEAP 
+77B1AFB0   PUSH 77AB8E2A                             ASCII HEAP Free Heap block %lx modified at %lx after it was freed
+
+77B1C490   PUSH 77AB91A0                             ASCII RtlQueryRegistryValues Miscomputed buffer size at line %d
+
+77B1C589   PUSH 77AB91A0                             ASCII RtlQueryRegistryValues Miscomputed buffer size at line %d
+
+77B1C5D6   MOV DWORD PTR SS[EBP-6C],77B2E628        UNICODE TimeZoneKeyName
+77B1C5E0   MOV DWORD PTR SS[EBP-50],77B2E648        UNICODE DynamicDaylightTimeDisabled
+77B1D120   PUSH 77AB9618                             ASCII  ASSERT FAILED Input parameter LanguagesBuffer for function RtlSetThreadPreferredUILanguages is not a valid multi-string!
+
+77B1D4FF   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B1D50C   PUSH 77AB8E68                             ASCII HEAP 
+77B1D518   PUSH 77AB98C4                             ASCII Invalid heap signature for heap at %x
+77B1D52D   PUSH 77AB98B4                             ASCII , passed to %s
+77B1D6A7   PUSH 77AB9904                             UNICODE GlobalTags
+77B1D924   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B1D931   PUSH 77AB8E68                             ASCII HEAP 
+77B1D945   PUSH 77AB8E2A                             ASCII HEAP Free Heap block %lx modified at %lx after it was freed
+
+77B1DEFA   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B1DF07   PUSH 77AB8E68                             ASCII HEAP 
+77B1DF1B   PUSH 77AB992A                             ASCII Unable to release memory at %p for %p bytes - Status == %x
+
+77B1EAC6   MOV EBX,77AB8E70                          ASCII HEAP[%wZ] 
+77B1EAEC   PUSH 77AB8E68                             ASCII HEAP 
+77B1EAF7   PUSH 77AB9B42                             ASCII Inspecting leaks at process shutdown ...
+
+77B1EB7D   PUSH 77AB8E68                             ASCII HEAP 
+77B1EB8E   PUSH 77AB9B2C                             ASCII %ld leaks detected.
+
+77B1EBC7   PUSH 77AB8E68                             ASCII HEAP 
+77B1EBD2   PUSH 77AB9B18                             ASCII No leaks detected.
+
+77B1EC36   MOV ECX,77AB9BAC                          ASCII ffff
+77B1EC52   PUSH 77AB9C42                             UNICODE %hs%u.%u.%u.%u
+77B1EC9B   PUSH 77AB9C18                             UNICODE ffff0%u.%u.%u.%u
+77B1ECDF   PUSH 77AB9BEE                             UNICODE %u.%u.%u.%u
+77B1ED32   PUSH 77AB9C64                             UNICODE ]%u
+77B1ED69   PUSH 77AB9C94                             UNICODE %u
+77B1F7E0   MOV ECX,77AB9CF6                          UNICODE %s
+77B1F824   PUSH 77AB9CE4                             UNICODE %%%u!%s!
+77B1F867   PUSH 77AB9CDE                             UNICODE hc
+77B1F890   PUSH 77AB9CD8                             UNICODE hs
+77B1FB74   PUSH 77AB9D60                             ASCII RTL RtlNtStatusToDosError(0x%lx) No Valid Win32 Error Mapping
+
+77B1FB7E   PUSH 77AB9D2C                             ASCII RTL Edit ntosrtlgenerr.c to correct the problem
+
+77B1FB88   PUSH 77AB9CFC                             ASCII RTL ERROR_MR_MID_NOT_FOUND is being returned
+
+77B1FCD0   PUSH 77AB9EC4                             UNICODE en
+77B1FCE5   PUSH 77AB9EB8                             UNICODE en-US
+77B1FD9F   MOV EBX,77B1FDE0                          UNICODE en-US
+77B1FDA4   PUSH 77AB9EC4                             UNICODE en
+77B1FDB5   MOV EBX,77B1FDE0                          UNICODE en-US
+77B20000   PUSH 77AB9F12                             UNICODE RegistryMachineSystemCurrentControlSetControlProductOptions
+77B20015   PUSH 77AB9EFA                             UNICODE ProductType
+77B200C3   PUSH 77AB9EEE                             UNICODE WinNt
+77B200D1   PUSH 77AB9EDC                             UNICODE LanmanNt
+77B200DF   PUSH 77AB9ECA                             UNICODE ServerNt
+77B22768   MOV EAX,77AB9484                          UNICODE PreferredUILanguagesPending
+77B227C2   PUSH 77ABAA70                             ASCII  RtlpMuiRegLoadLicInformation failed with status %x
+77B22950   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B2299A   PUSH 77AB8E68                             ASCII HEAP 
+77B229AD   PUSH 77ABB51E                             ASCII Invalid address specified to %s( %p, %p )
+
+77B22BCE   PUSH 77ABB958                             ASCII Enabling heap debug options
+
+77B22FA9   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B22FB6   PUSH 77AB8E68                             ASCII HEAP 
+77B22FC1   PUSH 77ABB976                             ASCII RtlpGetBitState(LookupTable, (ULONG)(LookupIndex - LookupTable-BaseIndex))
+77B23027   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B23034   PUSH 77AB8E68                             ASCII HEAP 
+77B2303F   PUSH 77ABB9C2                             ASCII (ROUND_UP_TO_POWER2(Size, PAGE_SIZE) == Size)
+77B244B4   MOV EDI,77AF49EC                          ASCII TppAlpcpExecuteCallback
+77B244B9   PUSH 77B24674                             ASCII Instance = %p, Alpc = %p
+
+77B244F8   PUSH 77B24648                             ASCII Unable to reference Alpc %p's dll at %p
+
+77B24589   MOV EDI,77AF49EC                          ASCII TppAlpcpExecuteCallback
+77B245AF   PUSH 77B24620                             ASCII Executing Alpc callback %p(%p, %p, %p)
+
+77B246AA   PUSH 77B24820                             ASCII AlpcReturn = %p, AlpcPort = %p, Callback = %p, Context = %p, CallbackEnviron = %p
+
+77B246B1   PUSH 77B24808                             ASCII TppAllocAlpcCompletion
+77B246BB   PUSH 77AF482C                             ASCII dw7rtmminkernelthreadpoolntdlllpc.c
+77B24700   PUSH 77B247F4                             ASCII Allocated alpc %p
+
+77B24707   PUSH 77B24808                             ASCII TppAllocAlpcCompletion
+77B24711   PUSH 77AF482C                             ASCII dw7rtmminkernelthreadpoolntdlllpc.c
+77B24735   PUSH 77B2E76C                             ASCII Status %08x
+
+77B2473C   PUSH 77B24808                             ASCII TppAllocAlpcCompletion
+77B24746   PUSH 77AF482C                             ASCII dw7rtmminkernelthreadpoolntdlllpc.c
+77B247CC   PUSH 77B2E76C                             ASCII Status %08x
+
+77B247D3   PUSH 77B24808                             ASCII TppAllocAlpcCompletion
+77B247DD   PUSH 77AF482C                             ASCII dw7rtmminkernelthreadpoolntdlllpc.c
+77B24886   PUSH 77B2E77C                             ASCII Alpc = %p
+
+77B2488D   PUSH 77B24980                             ASCII TpReleaseAlpcCompletion
+77B248B4   PUSH 77B2E760                             ASCII TRUE
+77B248BA   PUSH 77B2E738                             ASCII Alpc = %p, ValidateForRelease = %hs
+
+77B248E1   PUSH 77B2E730                             ASCII TRUE
+
+77B2490F   PUSH 77B24980                             ASCII TpReleaseAlpcCompletion
+77B2496A   PUSH 77B2E728                             ASCII FALSE
+
+77B249AD   PUSH 77B24A08                             ASCII TppAlpcpFree
+77B249B7   PUSH 77AF482C                             ASCII dw7rtmminkernelthreadpoolntdlllpc.c
+77B249DF   PUSH 77B24A08                             ASCII TppAlpcpFree
+77B249E9   PUSH 77AF482C                             ASCII dw7rtmminkernelthreadpoolntdlllpc.c
+77B24A28   PUSH 77B2E77C                             ASCII Alpc = %p
+
+77B24A86   PUSH 77B24BD0                             ASCII CleanupGroupReturn = %p
+
+77B24A8D   PUSH 77B24BBC                             ASCII TpAllocCleanupGroup
+77B24A94   PUSH 77AFD64C                             ASCII dw7rtmminkernelthreadpoolntdllcgrp.c
+77B24AC4   PUSH 77B24BA0                             ASCII Allocated cleanup group %p
+
+77B24ACB   PUSH 77B24BBC                             ASCII TpAllocCleanupGroup
+77B24AD2   PUSH 77AFD64C                             ASCII dw7rtmminkernelthreadpoolntdllcgrp.c
+77B24AF6   PUSH 77B2E76C                             ASCII Status %08x
+
+77B24AFD   PUSH 77B24BBC                             ASCII TpAllocCleanupGroup
+77B24B04   PUSH 77AFD64C                             ASCII dw7rtmminkernelthreadpoolntdllcgrp.c
+77B24B7B   PUSH 77B2E76C                             ASCII Status %08x
+
+77B24B82   PUSH 77B24BBC                             ASCII TpAllocCleanupGroup
+77B24B89   PUSH 77AFD64C                             ASCII dw7rtmminkernelthreadpoolntdllcgrp.c
+77B24C01   PUSH 77B24C5C                             ASCII TppCleanupGroupAddMember
+77B24C0B   PUSH 77AFD64C                             ASCII dw7rtmminkernelthreadpoolntdllcgrp.c
+77B24C33   PUSH 77B24C5C                             ASCII TppCleanupGroupAddMember
+77B24C3D   PUSH 77AFD64C                             ASCII dw7rtmminkernelthreadpoolntdllcgrp.c
+77B24C8D   PUSH 77B24CE8                             ASCII TppCleanupGroupRemoveMember
+77B24C97   PUSH 77AFD64C                             ASCII dw7rtmminkernelthreadpoolntdllcgrp.c
+77B24CBF   PUSH 77B24CE8                             ASCII TppCleanupGroupRemoveMember
+77B24CC9   PUSH 77AFD64C                             ASCII dw7rtmminkernelthreadpoolntdllcgrp.c
+77B24D28   PUSH 77B24F48                             ASCII CleanupGroup = %p, CancelPendingCallbacks = %hs, CleanupParameter = %p
+
+77B24D2F   PUSH 77B24F24                             ASCII TpReleaseCleanupGroupMembers
+77B24D39   PUSH 77AFD64C                             ASCII dw7rtmminkernelthreadpoolntdllcgrp.c
+77B24EA7   PUSH 77B24F24                             ASCII TpReleaseCleanupGroupMembers
+77B24F03   PUSH 77B24F24                             ASCII TpReleaseCleanupGroupMembers
+77B24F0D   PUSH 77AFD64C                             ASCII dw7rtmminkernelthreadpoolntdllcgrp.c
+77B24FA5   PUSH 77B2E7A4                             ASCII CleanupGroup = %p
+
+77B24FFA   PUSH 77B2E7A4                             ASCII CleanupGroup = %p
+
+77B250F7   PUSH 77B252A4                             ASCII Io = %p, ApcContext = %p, IoSB = %p
+
+77B250FE   PUSH 77B2528C                             ASCII TppIopExecuteCallback
+77B25108   PUSH 77AF67FC                             ASCII dw7rtmminkernelthreadpoolntdllio.c
+77B2518E   PUSH 77B2528C                             ASCII TppIopExecuteCallback
+77B251D0   PUSH 77B2525C                             ASCII Executing Io callback %p(%p, %p, %p, %p, %p)
+
+77B251D7   PUSH 77B2528C                             ASCII TppIopExecuteCallback
+77B251E1   PUSH 77AF67FC                             ASCII dw7rtmminkernelthreadpoolntdllio.c
+77B2523B   PUSH 77B2528C                             ASCII TppIopExecuteCallback
+77B25245   PUSH 77AF67FC                             ASCII dw7rtmminkernelthreadpoolntdllio.c
+77B252E5   PUSH 77B25450                             ASCII IoReturn = %p, FileHandle = %p, Callback = %p, Context = %p, CallbackEnviron = %p
+
+77B252EC   PUSH 77B25438                             ASCII TpAllocIoCompletion
+77B252F6   PUSH 77AF67FC                             ASCII dw7rtmminkernelthreadpoolntdllio.c
+77B25326   PUSH 77B25424                             ASCII Allocated Io %p
+
+77B2532D   PUSH 77B25438                             ASCII TpAllocIoCompletion
+77B25337   PUSH 77AF67FC                             ASCII dw7rtmminkernelthreadpoolntdllio.c
+77B2535B   PUSH 77B2E76C                             ASCII Status %08x
+
+77B25362   PUSH 77B25438                             ASCII TpAllocIoCompletion
+77B2536C   PUSH 77AF67FC                             ASCII dw7rtmminkernelthreadpoolntdllio.c
+77B253FC   PUSH 77B2E76C                             ASCII Status %08x
+
+77B25403   PUSH 77B25438                             ASCII TpAllocIoCompletion
+77B2540D   PUSH 77AF67FC                             ASCII dw7rtmminkernelthreadpoolntdllio.c
+77B254B1   PUSH 77B2E7B8                             ASCII Io = %p
+
+77B254B8   PUSH 77B25508                             ASCII TppIopFree
+77B254C2   PUSH 77AF67FC                             ASCII dw7rtmminkernelthreadpoolntdllio.c
+77B254EA   PUSH 77B25508                             ASCII TppIopFree
+77B254F4   PUSH 77AF67FC                             ASCII dw7rtmminkernelthreadpoolntdllio.c
+77B25523   MOV EAX,77B2E760                          ASCII TRUE
+77B2552A   MOV EAX,77AFC2B8                          ASCII FALSE
+77B25536   PUSH 77B2567C                             ASCII Io = %p, CancelPendingCallbacks = %hs
+
+77B2553D   PUSH 77B25664                             ASCII TpWaitForIoCompletion
+77B25564   PUSH 77AFC2B8                             ASCII FALSE
+77B2556A   PUSH 77B2E7C4                             ASCII Io = %p, ValidateForRelease = %hs
+
+77B25591   PUSH 77B2E730                             ASCII TRUE
+
+77B255F2   PUSH 77B25664                             ASCII TpWaitForIoCompletion
+77B2564D   PUSH 77B2E728                             ASCII FALSE
+
+77B256B6   PUSH 77B2E7B8                             ASCII Io = %p
+
+77B256BD   PUSH 77B257B0                             ASCII TpReleaseIoCompletion
+77B256E4   PUSH 77B2E760                             ASCII TRUE
+77B256EA   PUSH 77B2E7C4                             ASCII Io = %p, ValidateForRelease = %hs
+
+77B25711   PUSH 77B2E730                             ASCII TRUE
+
+77B2573F   PUSH 77B257B0                             ASCII TpReleaseIoCompletion
+77B2579A   PUSH 77B2E728                             ASCII FALSE
+
+77B257D9   PUSH 77B2E7B8                             ASCII Io = %p
+
+77B257E0   PUSH 77B258E0                             ASCII TpStartAsyncIoOperation
+77B25807   PUSH 77AFC2B8                             ASCII FALSE
+77B2580D   PUSH 77B2E7C4                             ASCII Io = %p, ValidateForRelease = %hs
+
+77B25834   PUSH 77B2E730                             ASCII TRUE
+
+77B2586D   PUSH 77B258E0                             ASCII TpStartAsyncIoOperation
+77B258C8   PUSH 77B2E728                             ASCII FALSE
+
+77B2590B   PUSH 77B2E7B8                             ASCII Io = %p
+
+77B25912   PUSH 77B25A10                             ASCII TpCancelAsyncIoOperation
+77B25939   PUSH 77AFC2B8                             ASCII FALSE
+77B2593F   PUSH 77B2E7C4                             ASCII Io = %p, ValidateForRelease = %hs
+
+77B25966   PUSH 77B2E730                             ASCII TRUE
+
+77B2599F   PUSH 77B25A10                             ASCII TpCancelAsyncIoOperation
+77B259FA   PUSH 77B2E728                             ASCII FALSE
+
+77B25A3C   PUSH 77B2E7B8                             ASCII Io = %p
+
+77B25AA3   PUSH 77B2E7E8                             ASCII Pool = %p
+
+77B25AD8   PUSH 77B2E76C                             ASCII Status %08x
+
+77B25B05   PUSH 77B2E76C                             ASCII Status %08x
+
+77B25B31   PUSH 77B25B90                             ASCII TpPoolReferenceExistingGlobalPool
+77B25B3B   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B25B5F   PUSH 77B25B84                             ASCII Pool %p
+
+77B25B66   PUSH 77B25B90                             ASCII TpPoolReferenceExistingGlobalPool
+77B25B70   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B25BCA   PUSH 77B25C84                             ASCII Pool = %p, MinThreads = %d
+
+77B25BF5   PUSH 77B2E76C                             ASCII Status %08x
+
+77B25C6C   PUSH 77B2E76C                             ASCII Status %08x
+
+77B25CB6   PUSH 77B25D64                             ASCII Pool = %p, MaxThreads = %d
+
+77B25DA7   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B25E2A   PUSH 77B25E44                             ASCII TppPoolFreeUnusedNodes
+77B25E34   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B25E6F   PUSH 77B2E7F4                             ASCII Pool = %p, Guard = %p
+
+77B25E76   PUSH 77B25ED0                             ASCII TppPoolAddGuard
+77B25E80   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B25EA8   PUSH 77B25ED0                             ASCII TppPoolAddGuard
+77B25EB2   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B25EF4   PUSH 77B2E7F4                             ASCII Pool = %p, Guard = %p
+
+77B25EFB   PUSH 77B25F54                             ASCII TppPoolRemoveGuard
+77B25F05   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B25F2D   PUSH 77B25F54                             ASCII TppPoolRemoveGuard
+77B25F37   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B25F80   PUSH 77B26020                             ASCII File = %x, Direct = %p, Pool = %p
+
+77B25FAD   PUSH 77B2E76C                             ASCII Status %08x
+
+77B26005   PUSH 77B2E76C                             ASCII Status %08x
+
+77B2605C   PUSH 77B260FC                             ASCII AlpcPort = %x, Direct = %p, Pool = %p
+
+77B26089   PUSH 77B2E76C                             ASCII Status %08x
+
+77B260E1   PUSH 77B2E76C                             ASCII Status %08x
+
+77B26145   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B26290   PUSH 77B2630C                             ASCII TpReleasePool
+77B262EC   PUSH 77B2630C                             ASCII TpReleasePool
+77B262F6   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B2633C   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B26364   PUSH 77B2638C                             ASCII TppPoolpFree
+77B2636E   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B263A9   PUSH 77B2E7E8                             ASCII Pool = %p
+
+77B263B0   PUSH 77B26428                             ASCII TppPoolReserveTaskPost
+77B263BA   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B263E5   PUSH 77B2E76C                             ASCII Status %08x
+
+77B263EC   PUSH 77B26428                             ASCII TppPoolReserveTaskPost
+77B263F6   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B26453   PUSH 77B2651C                             ASCII Task = %p, Pool = %p
+
+77B2645A   PUSH 77B26510                             ASCII TpPostTask
+77B26464   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B264A0   PUSH 77B264F4                             ASCII Releasing a worker thread
+
+77B264A7   PUSH 77B26510                             ASCII TpPostTask
+77B264B1   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B264D9   PUSH 77B26510                             ASCII TpPostTask
+77B264E3   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B26545   PUSH 77B2E7E8                             ASCII Pool = %p
+
+77B2654C   PUSH 77B265BC                             ASCII TppPoolUnreserveTaskPost
+77B26582   PUSH 77B265BC                             ASCII TppPoolUnreserveTaskPost
+77B265A2   PUSH 77B265BC                             ASCII TppPoolUnreserveTaskPost
+77B265FC   PUSH 77B26674                             ASCII Pool = %p, Tcb = %p
+
+77B26603   PUSH 77B26660                             ASCII TppPoolAddWorker
+77B2660D   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B26635   PUSH 77B26660                             ASCII TppPoolAddWorker
+77B2663F   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B266A1   PUSH 77B266FC                             ASCII TppPoolRemoveWorker
+77B266AB   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B266D3   PUSH 77B266FC                             ASCII TppPoolRemoveWorker
+77B266DD   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B26724   PUSH 77B26790                             ASCII TppPoolpDereferenceGlobalPool
+77B2672E   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B26771   PUSH 77B26790                             ASCII TppPoolpDereferenceGlobalPool
+77B2677B   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B267FB   PUSH 77B26814                             ASCII TpDereferenceGlobalPool
+77B26805   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B2683C   PUSH 77B2E818                             ASCII PoolReturn = %p
+
+77B26843   PUSH 77B26A8C                             ASCII TpAllocPool
+77B2684D   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B26896   PUSH 77B2E76C                             ASCII Status %08x
+
+77B2689D   PUSH 77B26A8C                             ASCII TpAllocPool
+77B268A7   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B26A63   PUSH 77B2E76C                             ASCII Status %08x
+
+77B26A6A   PUSH 77B26A8C                             ASCII TpAllocPool
+77B26A74   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B26AA2   SUB EAX,75FFFFFC                          ASCII NetJoinDomain
+77B26AAF   PUSH 77B26C00                             ASCII TppPoolpReferenceGlobalPool
+77B26AB6   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B26AD8   PUSH 77B2E76C                             ASCII Status %08x
+
+77B26ADF   PUSH 77B26C00                             ASCII TppPoolpReferenceGlobalPool
+77B26AE9   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B26B24   PUSH 77B2E76C                             ASCII Status %08x
+
+77B26B2B   PUSH 77B26C00                             ASCII TppPoolpReferenceGlobalPool
+77B26B35   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B26B82   PUSH 77B2E76C                             ASCII Status %08x
+
+77B26B89   PUSH 77B26C00                             ASCII TppPoolpReferenceGlobalPool
+77B26BD9   PUSH 77B2E76C                             ASCII Status %08x
+
+77B26BE0   PUSH 77B26C00                             ASCII TppPoolpReferenceGlobalPool
+77B26BEA   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B26C31   PUSH 77B2E7E8                             ASCII Pool = %p
+
+77B26C38   PUSH 77B26D20                             ASCII TpReserveTaskPost
+77B26C42   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B26CA1   PUSH 77B2E76C                             ASCII Status %08x
+
+77B26CA8   PUSH 77B26D20                             ASCII TpReserveTaskPost
+77B26CF8   PUSH 77B2E76C                             ASCII Status %08x
+
+77B26CFF   PUSH 77B26D20                             ASCII TpReserveTaskPost
+77B26D0E   PUSH 77AE9788                             ASCII dw7rtmminkernelthreadpoolntdllpool.c
+77B26D45   PUSH 77B2E7E8                             ASCII Pool = %p
+
+77B26DCE   PUSH 77B26E70                             ASCII TimerQueueQueue = %p, Timer = %p
+
+77B26E18   PUSH 77B26E5C                             ASCII Dequeued Timer %p
+
+77B26EA5   PUSH 77B2E82C                             ASCII TimerQueueQueue = %p
+
+77B26EFA   PUSH 77B2E844                             ASCII TimerQueue = %p
+
+77B26F01   PUSH 77B26F44                             ASCII TppTimerpFreeTimerQueue
+77B26F2F   PUSH 77B26F44                             ASCII TppTimerpFreeTimerQueue
+77B26F6F   PUSH 77B2E858                             ASCII Timer = %p
+
+77B26FE3   PUSH 77B27058                             ASCII Executing Timer callback %p(%p, %p, %p)
+
+77B270A7   PUSH 77B27148                             ASCII TimerQueueQueue = %p, Timer = %p, DueTime = 0x%I64x, Window = %d
+
+77B270AE   PUSH 77B2712C                             ASCII TppTimerpEnqueueTimer
+77B27117   PUSH 77B2712C                             ASCII TppTimerpEnqueueTimer
+77B2719D   PUSH 77B2E858                             ASCII Timer = %p
+
+77B271A4   PUSH 77B27278                             ASCII TppTimerpExpire
+77B271AE   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B27228   MOV EAX,77B27268                          ASCII Result = TRUE
+
+77B27231   MOV EAX,77B27258                          ASCII Result = FALSE
+
+77B2723E   PUSH 77B27278                             ASCII TppTimerpExpire
+77B27248   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B272AE   PUSH 77B27648                             ASCII TimerQueue = %p, DoAbsoluteQueue = %s
+
+77B272B5   PUSH 77B2762C                             ASCII TppTimerpExpireTimerQueue
+77B272BF   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B2739E   PUSH 77B27608                             ASCII No timers found; canceling ktimer
+
+77B273A5   PUSH 77B2762C                             ASCII TppTimerpExpireTimerQueue
+77B273AF   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B273D0   PUSH 77B275DC                             ASCII No timers found; no duetime currently set.
+
+77B273D7   PUSH 77B2762C                             ASCII TppTimerpExpireTimerQueue
+77B273E1   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B27403   PUSH 77B275B8                             ASCII Earliest timer by window end = %p
+
+77B2740A   PUSH 77B2762C                             ASCII TppTimerpExpireTimerQueue
+77B27414   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B2743A   PUSH 77B2758C                             ASCII KTimer already set for due time = 0x%016x
+
+77B27441   PUSH 77B2762C                             ASCII TppTimerpExpireTimerQueue
+77B2744B   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B27477   MOV ECX,77B27580                          ASCII Absolute
+77B27481   MOV ECX,77B27574                          ASCII Relative
+77B274AB   PUSH 77B27500                             ASCII KTimer was set for 0x%016I64x
+	Now is 0x%016I64x
+	Earliest timer is 0x%016I64x
+	Setting KTimer to 0x%016I64x (%s)
+
+77B274B2   PUSH 77B2762C                             ASCII TppTimerpExpireTimerQueue
+77B274BC   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B274E4   PUSH 77B2762C                             ASCII TppTimerpExpireTimerQueue
+77B274EE   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B2768C   MOV EBX,77AD5D84                          ASCII TppTimerpUpdate
+77B27697   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B276B8   PUSH 77B2790C                             ASCII Processing TimerQueue-TransitionQueue
+
+77B276C5   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B276E7   PUSH 77B278F4                             ASCII Processing Timer = %p
+
+77B276F4   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B27710   MOV ECX,77B2E760                          ASCII TRUE
+77B2771A   MOV ECX,77AFC2B8                          ASCII FALSE
+77B27723   MOV EAX,77B2E760                          ASCII TRUE
+77B2772A   MOV EAX,77AFC2B8                          ASCII FALSE
+77B27742   PUSH 77B27830                             ASCII Got stable data for Timer = %p  
+   CapturedTimerSet = %hs
+ CapturedIsAbsolute = %hs
+    CapturedDueTime = 0x%016I64x
+     CapturedPeriod = %d
+     CapturedWindow = %d
+          NextTimer = %p
+
+77B27749   PUSH 77AD5D84                             ASCII TppTimerpUpdate
+77B27753   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B277A7   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B277C8   PUSH 77B27800                             ASCII TimerQueue-Lock held by another thread
+
+77B277D5   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B27947   PUSH 77B2E82C                             ASCII TimerQueueQueue = %p
+
+77B2794E   PUSH 77B279FC                             ASCII TppTimerpTimerExpired
+77B27983   PUSH 77B279D8                             ASCII Timer queue %p has no references.
+
+77B2798A   PUSH 77B279FC                             ASCII TppTimerpTimerExpired
+77B279C3   PUSH 77B279FC                             ASCII TppTimerpTimerExpired
+77B27A2A   PUSH 77B27AA0                             ASCII TppTimerpInitTimerQueueQueue
+77B27A34   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B27A58   PUSH 77B2E76C                             ASCII Status %08x
+
+77B27A5F   PUSH 77B27AA0                             ASCII TppTimerpInitTimerQueueQueue
+77B27A69   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B27ACD   PUSH 77B27C24                             ASCII TimerQueueReturn = %p
+
+77B27AD4   PUSH 77B27C08                             ASCII TppTimerpAllocTimerQueue
+77B27ADE   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B27B04   PUSH 77B2E76C                             ASCII Status %08x
+
+77B27B0B   PUSH 77B27C08                             ASCII TppTimerpAllocTimerQueue
+77B27B15   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B27B45   PUSH 77B27BEC                             ASCII Allocated timer queue %p
+
+77B27B4C   PUSH 77B27C08                             ASCII TppTimerpAllocTimerQueue
+77B27B56   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B27B7A   PUSH 77B2E76C                             ASCII Status %08x
+
+77B27B81   PUSH 77B27C08                             ASCII TppTimerpAllocTimerQueue
+77B27B8B   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B27C65   PUSH 77B27D40                             ASCII Callback = %p, Context = %p, CallbackEnviron = %p, Flags = 0x%08x
+
+77B27C6C   PUSH 77B27D30                             ASCII TppTimerAlloc
+77B27C76   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B27CA6   PUSH 77B2E88C                             ASCII Allocated timer %p
+
+77B27CAD   PUSH 77B27D30                             ASCII TppTimerAlloc
+77B27CB7   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B27CDB   PUSH 77B2E76C                             ASCII Status %08x
+
+77B27CE2   PUSH 77B27D30                             ASCII TppTimerAlloc
+77B27CEC   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B27D9E   PUSH 77B2E8A0                             ASCII Callback = %p, Context = %p, CallbackEnviron = %p
+
+77B27DCA   PUSH 77B2E88C                             ASCII Allocated timer %p
+
+77B27DF7   PUSH 77B2E76C                             ASCII Status %08x
+
+77B27E4F   PUSH 77B2E76C                             ASCII Status %08x
+
+77B27E94   PUSH 77B2E8D8                             ASCII Timer = %p, DueTime = 0x%016I64x, Period = %d, WindowLength = %d
+
+77B27E9B   PUSH 77B281D0                             ASCII TppTimerpSet
+77B27EA5   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B27EC6   PUSH 77B281C0                             ASCII Nothing to do.
+
+77B27ECD   PUSH 77B281D0                             ASCII TppTimerpSet
+77B27ED7   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B27F0F   PUSH 77B28170                             ASCII Setting timer %p to relative time 0x%016I64x from interrupt time 0x%016I64x
+
+77B27F16   PUSH 77B281D0                             ASCII TppTimerpSet
+77B27F20   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B27F43   PUSH 77B2813C                             ASCII Setting timer %p to absolute time 0x%016I64x
+
+77B27F4A   PUSH 77B281D0                             ASCII TppTimerpSet
+77B27F54   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B27FB7   PUSH 77B28124                             ASCII Un-setting timer %p
+
+77B27FBE   PUSH 77B281D0                             ASCII TppTimerpSet
+77B27FC8   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B2802F   PUSH 77B28170                             ASCII Setting timer %p to relative time 0x%016I64x from interrupt time 0x%016I64x
+
+77B28036   PUSH 77B281D0                             ASCII TppTimerpSet
+77B28040   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B2806C   PUSH 77B2813C                             ASCII Setting timer %p to absolute time 0x%016I64x
+
+77B28073   PUSH 77B281D0                             ASCII TppTimerpSet
+77B2807D   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B280B7   PUSH 77B28124                             ASCII Un-setting timer %p
+
+77B280BE   PUSH 77B281D0                             ASCII TppTimerpSet
+77B280C8   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B28105   PUSH 77B281D0                             ASCII TppTimerpSet
+77B2810F   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B281F2   PUSH 77B2E858                             ASCII Timer = %p
+
+77B2821C   PUSH 77AFC2B8                             ASCII FALSE
+77B28224   PUSH 77B2E864                             ASCII Timer = %p, ValidateForRelease = %hs
+
+77B28247   PUSH 77B2E730                             ASCII TRUE
+
+77B2826C   MOV EAX,77B2E760                          ASCII TRUE
+77B28275   MOV EAX,77AFC2B8                          ASCII FALSE
+77B28280   PUSH 77B2831C                             ASCII Result is %hs
+
+77B282D6   PUSH 77B2E728                             ASCII FALSE
+
+77B28300   PUSH 77B2E91C                             ASCII Timer %p was not valid
+
+77B2835A   PUSH 77B2E8D8                             ASCII Timer = %p, DueTime = 0x%016I64x, Period = %d, WindowLength = %d
+
+77B28384   PUSH 77AFC2B8                             ASCII FALSE
+77B2838C   PUSH 77B2E864                             ASCII Timer = %p, ValidateForRelease = %hs
+
+77B283B3   PUSH 77B2E730                             ASCII TRUE
+
+77B28430   PUSH 77B2E728                             ASCII FALSE
+
+77B28462   PUSH 77B2E91C                             ASCII Timer %p was not valid
+
+77B2848D   PUSH 77B2E858                             ASCII Timer = %p
+
+77B28494   PUSH 77B285D8                             ASCII TpTimerOutstandingCallbackCount
+77B284BB   PUSH 77AFC2B8                             ASCII FALSE
+77B284C1   PUSH 77B2E864                             ASCII Timer = %p, ValidateForRelease = %hs
+
+77B284E8   PUSH 77B2E730                             ASCII TRUE
+
+77B2853E   PUSH 77B285D8                             ASCII TpTimerOutstandingCallbackCount
+77B28591   PUSH 77B2E728                             ASCII FALSE
+
+77B285B9   PUSH 77B2E91C                             ASCII Timer %p was not valid
+
+77B285C0   PUSH 77B285D8                             ASCII TpTimerOutstandingCallbackCount
+77B28608   MOV EAX,77B2E760                          ASCII TRUE
+77B2860F   MOV EAX,77AFC2B8                          ASCII FALSE
+77B2861B   PUSH 77B2877C                             ASCII Timer = %p, CancelPendingCallbacks = %hs
+
+77B28622   PUSH 77B2876C                             ASCII TpWaitForTimer
+77B28649   PUSH 77AFC2B8                             ASCII FALSE
+77B2864F   PUSH 77B2E864                             ASCII Timer = %p, ValidateForRelease = %hs
+
+77B28676   PUSH 77B2E730                             ASCII TRUE
+
+77B286CC   PUSH 77B2876C                             ASCII TpWaitForTimer
+77B2871F   PUSH 77B2E728                             ASCII FALSE
+
+77B2874F   PUSH 77B2E91C                             ASCII Timer %p was not valid
+
+77B28756   PUSH 77B2876C                             ASCII TpWaitForTimer
+77B287B9   PUSH 77B2E858                             ASCII Timer = %p
+
+77B287C0   PUSH 77B288A4                             ASCII TpReleaseTimer
+77B287E7   PUSH 77B2E760                             ASCII TRUE
+77B287ED   PUSH 77B2E864                             ASCII Timer = %p, ValidateForRelease = %hs
+
+77B28814   PUSH 77B2E730                             ASCII TRUE
+
+77B2883D   PUSH 77B288A4                             ASCII TpReleaseTimer
+77B28898   PUSH 77B2E728                             ASCII FALSE
+
+77B288C8   PUSH 77B28918                             ASCII TppTimerpFree
+77B288D2   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B288FA   PUSH 77B28918                             ASCII TppTimerpFree
+77B28904   PUSH 77AC2798                             ASCII dw7rtmminkernelthreadpoolntdlltimer.c
+77B2893C   PUSH 77B289C0                             ASCII Wait = %p, WaitStatus = 0x%08x
+
+77B28967   PUSH 77B289AC                             ASCII Posting wait %p
+
+77B289F3   PUSH 77B2E934                             ASCII Wait = %p
+
+77B28A6D   PUSH 77B28AE4                             ASCII Executing Wait callback %p(%p, %p, %p, 0x%08x)
+
+77B28B31   PUSH 77B28C58                             ASCII WaitReturn = %p, Callback = %p, Context = %p, CallbackEnviron = %p, Flags = %p
+
+77B28B38   PUSH 77B28C44                             ASCII TppWaitAlloc
+77B28B42   PUSH 77AD4168                             ASCII dw7rtmminkernelthreadpoolntdllwait.c
+77B28B72   PUSH 77B28C30                             ASCII Allocated wait %p
+
+77B28B79   PUSH 77B28C44                             ASCII TppWaitAlloc
+77B28B83   PUSH 77AD4168                             ASCII dw7rtmminkernelthreadpoolntdllwait.c
+77B28BA7   PUSH 77B2E76C                             ASCII Status %08x
+
+77B28BAE   PUSH 77B28C44                             ASCII TppWaitAlloc
+77B28BB8   PUSH 77AD4168                             ASCII dw7rtmminkernelthreadpoolntdllwait.c
+77B28CC4   PUSH 77B28D58                             ASCII WaitReturn = %p, Callback = %p, Context = %p, CallbackEnviron = %p
+
+77B28CEA   PUSH 77B2E76C                             ASCII Status %08x
+
+77B28D3B   PUSH 77B2E76C                             ASCII Status %08x
+
+77B28DDA   PUSH 77B28EF8                             ASCII Wait = %p, Handle = %p, Timeout = 0x%I64x x100ns, Interrupt = 0x%I64x x100ns
+
+77B28DE1   PUSH 77B28EE8                             ASCII TppWaitpSet
+77B28DEB   PUSH 77AD4168                             ASCII dw7rtmminkernelthreadpoolntdllwait.c
+77B28EC2   PUSH 77B28EE8                             ASCII TppWaitpSet
+77B28ECC   PUSH 77AD4168                             ASCII dw7rtmminkernelthreadpoolntdllwait.c
+77B28F71   PUSH 77B2E968                             ASCII Wait = %p, Handle = %p, Timeout = 0x%I64x x100ns
+
+77B28F78   PUSH 77B2906C                             ASCII TpSetWait
+77B28F9F   PUSH 77AFC2B8                             ASCII FALSE
+77B28FA5   PUSH 77B2E940                             ASCII Wait = %p, ValidateForRelease = %hs
+
+77B28FCC   PUSH 77B2E730                             ASCII TRUE
+
+77B28FFA   PUSH 77B2906C                             ASCII TpSetWait
+77B29055   PUSH 77B2E728                             ASCII FALSE
+
+77B290A1   PUSH 77B2E968                             ASCII Wait = %p, Handle = %p, Timeout = 0x%I64x x100ns
+
+77B290A8   PUSH 77B2919C                             ASCII TppSetWaitInterrupt
+77B290CF   PUSH 77AFC2B8                             ASCII FALSE
+77B290D5   PUSH 77B2E940                             ASCII Wait = %p, ValidateForRelease = %hs
+
+77B290FC   PUSH 77B2E730                             ASCII TRUE
+
+77B2912A   PUSH 77B2919C                             ASCII TppSetWaitInterrupt
+77B29185   PUSH 77B2E728                             ASCII FALSE
+
+77B291C3   PUSH 77B2E934                             ASCII Wait = %p
+
+77B291CA   PUSH 77B292C4                             ASCII TpWaitOutstandingCallbackCount
+77B291F1   PUSH 77AFC2B8                             ASCII FALSE
+77B291F7   PUSH 77B2E940                             ASCII Wait = %p, ValidateForRelease = %hs
+
+77B2921E   PUSH 77B2E730                             ASCII TRUE
+
+77B29246   PUSH 77B292B8                             ASCII Count = %d
+
+77B2924D   PUSH 77B292C4                             ASCII TpWaitOutstandingCallbackCount
+77B292A0   PUSH 77B2E728                             ASCII FALSE
+
+77B292F3   MOV EAX,77B2E760                          ASCII TRUE
+77B29305   PUSH 77B29410                             ASCII Wait = %p, CancelPendingCallbacks = %hs
+
+77B2930C   PUSH 77B29400                             ASCII TpWaitForWait
+77B29338   PUSH 77B2E940                             ASCII Wait = %p, ValidateForRelease = %hs
+
+77B2935F   PUSH 77B2E730                             ASCII TRUE
+
+77B2938D   PUSH 77B29400                             ASCII TpWaitForWait
+77B293E8   PUSH 77B2E728                             ASCII FALSE
+
+77B2944C   PUSH 77B2E934                             ASCII Wait = %p
+
+77B29453   PUSH 77B29548                             ASCII TpReleaseWait
+77B2947A   PUSH 77B2E760                             ASCII TRUE
+77B29480   PUSH 77B2E940                             ASCII Wait = %p, ValidateForRelease = %hs
+
+77B294A7   PUSH 77B2E730                             ASCII TRUE
+
+77B294D5   PUSH 77B29548                             ASCII TpReleaseWait
+77B29530   PUSH 77B2E728                             ASCII FALSE
+
+77B29564   PUSH 77B2E934                             ASCII Wait = %p
+
+77B2956B   PUSH 77B295BC                             ASCII TppWaitpFree
+77B29575   PUSH 77AD4168                             ASCII dw7rtmminkernelthreadpoolntdllwait.c
+77B2959D   PUSH 77B295BC                             ASCII TppWaitpFree
+77B295A7   PUSH 77AD4168                             ASCII dw7rtmminkernelthreadpoolntdllwait.c
+77B295DC   PUSH 77B2E99C                             ASCII Work = %p
+
+77B2962B   MOV EAX,77B2E760                          ASCII TRUE
+77B29635   MOV EAX,77AFC2B8                          ASCII FALSE
+77B29641   PUSH 77B2E9A8                             ASCII Work = %p, CancelPendingCallbacks = %hs
+
+77B29648   PUSH 77B296DC                             ASCII TppWorkWait
+77B29652   PUSH 77AEC908                             ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B296C1   PUSH 77B296DC                             ASCII TppWorkWait
+77B296CB   PUSH 77AEC908                             ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B29708   PUSH 77B29790                             ASCII Work = %p, Context = %p, CallbackEnviron = %p, Flags = 0x%08x, CleanupGroupVFuncs = %p, TaskVFuncs = %p
+
+77B2970F   PUSH 77B29778                             ASCII TppWorkInitialize
+77B29719   PUSH 77AEC908                             ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B29749   PUSH 77B2E76C                             ASCII Status %08x
+
+77B29750   PUSH 77B29778                             ASCII TppWorkInitialize
+77B2975A   PUSH 77AEC908                             ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B29813   PUSH 77B29968                             ASCII WorkReturn = %p, Callback = %p, Context = %p, CallbackEnviron = %p
+
+77B2981A   PUSH 77B2995C                             ASCII TpAllocWork
+77B29824   PUSH 77AEC908                             ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B29854   PUSH 77B29948                             ASCII Allocated Work %p
+
+77B2985B   PUSH 77B2995C                             ASCII TpAllocWork
+77B29865   PUSH 77AEC908                             ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B29889   PUSH 77B2E76C                             ASCII Status %08x
+
+77B29890   PUSH 77B2995C                             ASCII TpAllocWork
+77B2989A   PUSH 77AEC908                             ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B29920   PUSH 77B2E76C                             ASCII Status %08x
+
+77B29927   PUSH 77B2995C                             ASCII TpAllocWork
+77B29931   PUSH 77AEC908                             ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B299BC   MOV EAX,77B2E760                          ASCII TRUE
+77B299CE   PUSH 77B2E9A8                             ASCII Work = %p, CancelPendingCallbacks = %hs
+
+77B299D5   PUSH 77B29AEC                             ASCII TpWaitForWork
+77B29A01   PUSH 77B2E9D4                             ASCII Work = %p, ValidateForRelease = %hs
+
+77B29A28   PUSH 77B2E730                             ASCII TRUE
+
+77B29A51   PUSH 77B29AEC                             ASCII TpWaitForWork
+77B29AA9   PUSH 77B2E728                             ASCII FALSE
+
+77B29ADA   PUSH 77B29AEC                             ASCII TpWaitForWork
+77B29B14   PUSH 77B29C08                             ASCII TpReleaseWork
+77B29B3B   PUSH 77B2E760                             ASCII TRUE
+77B29B41   PUSH 77B2E9D4                             ASCII Work = %p, ValidateForRelease = %hs
+
+77B29B68   PUSH 77B2E730                             ASCII TRUE
+
+77B29B96   PUSH 77B29C08                             ASCII TpReleaseWork
+77B29BF1   PUSH 77B2E728                             ASCII FALSE
+
+77B29C2B   PUSH 77B29C7C                             ASCII TppWorkpFree
+77B29C35   PUSH 77AEC908                             ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B29C5D   PUSH 77B29C7C                             ASCII TppWorkpFree
+77B29C67   PUSH 77AEC908                             ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B29CA0   MOV EAX,77AFC2B8                          ASCII FALSE
+77B29CAF   PUSH 77B29E04                             ASCII Instance = %p, Work = %p, Release = %hs
+
+77B29CB6   PUSH 77B29DE4                             ASCII TppWorkCallbackPrologRelease
+77B29CC0   PUSH 77AEC908                             ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B29D6C   PUSH 77B29DD0                             ASCII Returning FALSE
+
+77B29D73   PUSH 77B29DE4                             ASCII TppWorkCallbackPrologRelease
+77B29D7D   PUSH 77AEC908                             ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B29DA0   PUSH 77B29DC0                             ASCII Returning TRUE
+
+77B29DA7   PUSH 77B29DE4                             ASCII TppWorkCallbackPrologRelease
+77B29DB1   PUSH 77AEC908                             ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B29E40   PUSH 77B2E99C                             ASCII Work = %p
+
+77B29E47   PUSH 77B29EAC                             ASCII TppWorkPost
+77B29E51   PUSH 77AEC908                             ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B29E93   PUSH 77B29EAC                             ASCII TppWorkPost
+77B29E9D   PUSH 77AEC908                             ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B29ED2   PUSH 77B29F84                             ASCII TppWorkCallbackEpilog
+77B29EDC   PUSH 77AEC908                             ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B29F69   PUSH 77B29F84                             ASCII TppWorkCallbackEpilog
+77B29F73   PUSH 77AEC908                             ASCII dw7rtmminkernelthreadpoolntdllwork.c
+77B29FAF   PUSH 77B2E99C                             ASCII Work = %p
+
+77B29FD9   PUSH 77AFC2B8                             ASCII FALSE
+77B29FE1   PUSH 77B2E9D4                             ASCII Work = %p, ValidateForRelease = %hs
+
+77B2A008   PUSH 77B2E730                             ASCII TRUE
+
+77B2A085   PUSH 77B2E728                             ASCII FALSE
+
+77B2A0D4   PUSH 77B2E99C                             ASCII Work = %p
+
+77B2A148   PUSH 77B2A1BC                             ASCII Executing Work callback %p(%p, %p, %p)
+
+77B2A2A6   PUSH 77B2A458                             ASCII ThreadPool callback %p(%p) returned with a transaction uncleared
+
+77B2A2E0   PUSH 77B2A418                             ASCII ThreadPool callback %p(%p) returned with the loader lock held
+
+77B2A31A   PUSH 77B2A3D0                             ASCII ThreadPool callback %p(%p) returned with preferred languages set
+
+77B2A354   PUSH 77B2A388                             ASCII ThreadPool callback %p(%p) returned with background priorities set
+
+77B2A644   PUSH 77B2E9FC                             ASCII Instance = %p
+
+77B2A64B   PUSH 77B2A6D4                             ASCII TpDisassociateCallback
+77B2A6BD   PUSH 77B2A6D4                             ASCII TpDisassociateCallback
+77B2A6FE   PUSH 77B2E9FC                             ASCII Instance = %p
+
+77B2A736   PUSH 77B2E76C                             ASCII Status %08x
+
+77B2A768   PUSH 77B2E76C                             ASCII Status %08x
+
+77B2A78A   PUSH 77B2E76C                             ASCII Status %08x
+
+77B2A791   PUSH 77AD4FAC                             ASCII TppCallbackMayRunLongProlog
+77B2A79B   PUSH 77AD4E90                             ASCII dw7rtmminkernelthreadpoolntdllcallback.c
+77B2A7E5   PUSH 77B2E76C                             ASCII Status %08x
+
+77B2A819   PUSH 77B2E9FC                             ASCII Instance = %p
+
+77B2A856   PUSH 77B2E76C                             ASCII Status %08x
+
+77B2A873   PUSH 77B2E76C                             ASCII Status %08x
+
+77B2A8A5   PUSH 77B2E9FC                             ASCII Instance = %p
+
+77B2A8E2   PUSH 77B2E76C                             ASCII Status %08x
+
+77B2A8FF   PUSH 77B2E76C                             ASCII Status %08x
+
+77B2A939   PUSH 77B2AA60                             ASCII Exception .exr %p - .cxr %p - Status 0x%08x - dt nt!_TP_CALLBACK_INSTANCE %p
+
+77B2A982   PUSH 77B2AA00                             ASCII Unhandled Exception .exr %p - .cxr %p - Status 0x%08x - dt nt!_TP_CALLBACK_INSTANCE %p
+
+77B2A9AC   PUSH 77B2A9CC                             ASCII Recovering the thread after a stack overflow.
+
+77B2AD0A   PUSH 77B2AD48                             ASCII ThreadPool attempt to terminate a worker thread via handle %p
+Contact the owner of the function calling TerminateExit thread.
+
+77B2ADE3   PUSH 77B2E99C                             ASCII Work = %p
+
+77B2AE53   PUSH 77B2AEC8                             ASCII Executing Simple Work callback %p(%p, %p)
+
+77B2AF0A   PUSH 77B2E8A0                             ASCII Callback = %p, Context = %p, CallbackEnviron = %p
+
+77B2AF11   PUSH 77B2B090                             ASCII TpSimpleTryPost
+77B2AF18   PUSH 77AF653C                             ASCII dw7rtmminkernelthreadpoolntdllsimple.c
+77B2AF46   PUSH 77B2B06C                             ASCII Allocated simple work %p; posting.
+
+77B2AF4C   PUSH 77B2B090                             ASCII TpSimpleTryPost
+77B2AF56   PUSH 77AF653C                             ASCII dw7rtmminkernelthreadpoolntdllsimple.c
+77B2AF7A   PUSH 77B2E76C                             ASCII Status %08x
+
+77B2AF81   PUSH 77B2B090                             ASCII TpSimpleTryPost
+77B2AF8B   PUSH 77AF653C                             ASCII dw7rtmminkernelthreadpoolntdllsimple.c
+77B2B045   PUSH 77B2E76C                             ASCII Status %08x
+
+77B2B04C   PUSH 77B2B090                             ASCII TpSimpleTryPost
+77B2B056   PUSH 77AF653C                             ASCII dw7rtmminkernelthreadpoolntdllsimple.c
+77B2B0B5   PUSH 77B2E99C                             ASCII Work = %p
+
+77B2B10A   PUSH 77B2E788                             ASCII CleanupGroupMember = %p
+
+77B2B162   PUSH 77B2B1A4                             ASCII CleanupGroupMember = %p, CancelledCallbackCount = %d
+
+77B2B1F0   PUSH 77B2B234                             ASCII CleanupGroupMember = %p, CallbackCount = %d
+
+77B2B27F   PUSH 77B2B3D8                             ASCII CleanupGroupMember = %p, Context = %p, CallbackEnviron = %p, Flags = 0x%08x, VFuncs = %p
+
+77B2B286   PUSH 77B2B3B8                             ASCII TppCleanupGroupMemberInitialize
+77B2B28D   PUSH 77AD4D28                             ASCII dw7rtmminkernelthreadpoolntdllcgrpmem.c
+77B2B2B1   PUSH 77B2E76C                             ASCII Status %08x
+
+77B2B2B8   PUSH 77B2B3B8                             ASCII TppCleanupGroupMemberInitialize
+77B2B2C2   PUSH 77AD4D28                             ASCII dw7rtmminkernelthreadpoolntdllcgrpmem.c
+77B2B455   PUSH 77B2B50C                             ASCII CleanupGroupMember = %p, RaiseIfAlreadyRaised = %hs
+
+77B2B4A6   PUSH 77B2E728                             ASCII FALSE
+
+77B2B4C7   PUSH 77B2E730                             ASCII TRUE
+
+77B2B4EC   PUSH 77B2E728                             ASCII FALSE
+
+77B2B552   PUSH 77B2E788                             ASCII CleanupGroupMember = %p
+
+77B2B559   PUSH 77B2B610                             ASCII TppCleanupGroupMemberDestroy
+77B2B563   PUSH 77AD4D28                             ASCII dw7rtmminkernelthreadpoolntdllcgrpmem.c
+77B2B59E   PUSH 77B2B610                             ASCII TppCleanupGroupMemberDestroy
+77B2B5A8   PUSH 77AD4D28                             ASCII dw7rtmminkernelthreadpoolntdllcgrpmem.c
+77B2B641   PUSH 77B2B6F4                             ASCII Instance = %p, CleanupGroupMember = %p
+
+77B2B648   PUSH 77B2B6D0                             ASCII TppCleanupGroupMemberCallbackProlog
+77B2B652   PUSH 77AD4D28                             ASCII dw7rtmminkernelthreadpoolntdllcgrpmem.c
+77B2B6B7   PUSH 77B2B6D0                             ASCII TppCleanupGroupMemberCallbackProlog
+77B2B6C1   PUSH 77AD4D28                             ASCII dw7rtmminkernelthreadpoolntdllcgrpmem.c
+77B2B9E2   PUSH 77B2E7E8                             ASCII Pool = %p
+
+77B2B9E9   PUSH 77B2BD7C                             ASCII TppWorkerThread
+77B2B9F3   PUSH 77B2BD4C                             ASCII dw7rtmminkernelthreadpoolntdllworker.c
+77B2BA20   PUSH 77B2BD28                             ASCII Pool release in progress; exiting
+
+77B2BA26   PUSH 77B2BD7C                             ASCII TppWorkerThread
+77B2BA30   PUSH 77B2BD4C                             ASCII dw7rtmminkernelthreadpoolntdllworker.c
+77B2BA59   PUSH 77B2BD14                             ASCII Top of worker loop
+
+77B2BA5F   PUSH 77B2BD7C                             ASCII TppWorkerThread
+77B2BA69   PUSH 77B2BD4C                             ASCII dw7rtmminkernelthreadpoolntdllworker.c
+77B2BAEA   PUSH 77B2BCF0                             ASCII Wait completed with STATUS_ALERTED
+
+77B2BAF0   PUSH 77B2BD7C                             ASCII TppWorkerThread
+77B2BAFA   PUSH 77B2BD4C                             ASCII dw7rtmminkernelthreadpoolntdllworker.c
+77B2BB20   PUSH 77B2BCC8                             ASCII Wait completed with STATUS_USER_APC
+
+77B2BB26   PUSH 77B2BD7C                             ASCII TppWorkerThread
+77B2BB30   PUSH 77B2BD4C                             ASCII dw7rtmminkernelthreadpoolntdllworker.c
+77B2BC6F   PUSH 77B2E76C                             ASCII Status %08x
+
+77B2BC76   PUSH 77B2BD7C                             ASCII TppWorkerThread
+77B2BC80   PUSH 77B2BD4C                             ASCII dw7rtmminkernelthreadpoolntdllworker.c
+77B2BDA0   PUSH 77B2EA14                             ASCII Tcb = %p, Wait = %p
+
+77B2BDA7   PUSH 77B2BE2C                             ASCII TppWaiterpRemoveWait
+77B2BE16   PUSH 77B2BE2C                             ASCII TppWaiterpRemoveWait
+77B2BE5B   PUSH 77B2BF6C                             ASCII Tcb = %p, Wait = %p, CapturedHandle = %x
+
+77B2BE62   PUSH 77B2BF54                             ASCII TppWaiterpInsertWait
+77B2BE6C   PUSH 77AD4194                             ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2BF38   PUSH 77B2BF54                             ASCII TppWaiterpInsertWait
+77B2BF42   PUSH 77AD4194                             ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2BFB2   PUSH 77B2C028                             ASCII Tcb = %p, Index = %d, Wait = %p, Status = %08x
+
+77B2BFB9   PUSH 77B2C010                             ASCII TppWaiterpCompleteWait
+77B2BFC3   PUSH 77AD4194                             ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2BFF6   PUSH 77B2C010                             ASCII TppWaiterpCompleteWait
+77B2C000   PUSH 77AD4194                             ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2C06D   PUSH 77B2E80C                             ASCII Tcb = %p
+
+77B2C074   PUSH 77B2C1C8                             ASCII TppWaiterpDoTransitions
+77B2C07E   PUSH 77AD4194                             ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2C0A5   MOV ECX,77B2C1C4                          ASCII REL
+77B2C0AF   MOV ECX,77B2C1C0                          ASCII ABS
+77B2C0B8   MOV EAX,77B2E760                          ASCII TRUE
+77B2C0BF   MOV EAX,77AFC2B8                          ASCII FALSE
+77B2C0D1   PUSH 77B2C130                             ASCII Got stable data for Wait = %p  
+  CapturedHasDueTime = %s
+  CapturedHasDueType = %s
+  CapturedDueTime = 0x%016I64x
+   CapturedHandle = 0x%x
+
+77B2C0D8   PUSH 77B2C1C8                             ASCII TppWaiterpDoTransitions
+77B2C0E2   PUSH 77AD4194                             ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2C115   PUSH 77B2C1C8                             ASCII TppWaiterpDoTransitions
+77B2C11F   PUSH 77AD4194                             ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2C1EE   PUSH 77B2E80C                             ASCII Tcb = %p
+
+77B2C1F5   PUSH 77B2C8D0                             ASCII TppWaiterpThread
+77B2C1FF   PUSH 77AD4194                             ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2C221   PUSH 77B2C8B0                             ASCII Top of waiter loop Tcb = %p
+
+77B2C228   PUSH 77B2C8D0                             ASCII TppWaiterpThread
+77B2C232   PUSH 77AD4194                             ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2C419   PUSH 77B2C860                             ASCII Waiter is waiting Tcb-ActiveWaits = %d, TimeoutPtr = %p, Timeout = %016I64x
+
+77B2C420   PUSH 77B2C8D0                             ASCII TppWaiterpThread
+77B2C42A   MOV EBX,77AD4194                          ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2C44F   PUSH 77B2C834                             ASCII Waiter wait completed with status %08x
+
+77B2C456   PUSH 77B2C8D0                             ASCII TppWaiterpThread
+77B2C549   PUSH 77B2C814                             ASCII Looking for the failing wait
+
+77B2C550   PUSH 77B2C8D0                             ASCII TppWaiterpThread
+77B2C730   PUSH 77B2C808                             ASCII Exiting
+
+77B2C737   PUSH 77B2C8D0                             ASCII TppWaiterpThread
+77B2C741   PUSH 77AD4194                             ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2C7A1   PUSH 77B2E76C                             ASCII Status %08x
+
+77B2C7A8   PUSH 77B2C8D0                             ASCII TppWaiterpThread
+77B2C7B2   PUSH 77AD4194                             ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2C8FD   PUSH 77B2CA14                             ASCII TppWaiterpSpinupThread
+77B2C907   PUSH 77AD4194                             ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2C9A0   PUSH 77B2C9F8                             ASCII Spun up waiter Tcb = %p
+
+77B2C9A7   PUSH 77B2CA14                             ASCII TppWaiterpSpinupThread
+77B2C9B1   PUSH 77AD4194                             ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2C9D5   PUSH 77B2E76C                             ASCII Status %08x
+
+77B2C9DC   PUSH 77B2CA14                             ASCII TppWaiterpSpinupThread
+77B2C9E6   PUSH 77AD4194                             ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2CA50   MOV EDI,77AE0674                          ASCII TppWaiterAllocWaitSlot
+77B2CA5B   MOV ESI,77AD4194                          ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2CA7E   PUSH 77B2E80C                             ASCII Tcb = %p
+
+77B2CA85   PUSH 77B2CB70                             ASCII TppWaiterpReference
+77B2CAB3   PUSH 77B2CB70                             ASCII TppWaiterpReference
+77B2CADD   PUSH 77B2CB94                             ASCII Using Tcb %p
+
+77B2CB0A   PUSH 77B2CB84                             ASCII Alloced Tcb %p
+
+77B2CB41   PUSH 77B2E76C                             ASCII Status %08x
+
+77B2CB5E   MOV EDI,77AE0674                          ASCII TppWaiterAllocWaitSlot
+77B2CB63   MOV ESI,77AD4194                          ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2CBCC   PUSH 77B2CCDC                             ASCII TppWaiterFreeWaitSlot
+77B2CBD6   PUSH 77AD4194                             ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2CC3F   PUSH 77B2CCBC                             ASCII Terminating waiter Tcb = %p
+
+77B2CC46   PUSH 77B2CCDC                             ASCII TppWaiterFreeWaitSlot
+77B2CC50   PUSH 77AD4194                             ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2CC88   PUSH 77B2CCDC                             ASCII TppWaiterFreeWaitSlot
+77B2CC92   PUSH 77AD4194                             ASCII dw7rtmminkernelthreadpoolntdllwaiter.c
+77B2CD0B   PUSH 77B2CD50                             ASCII Wait = %p, Wait-Tcb = %p
+
+77B2DA79   PUSH 77B2DB84                             ASCII  RESCACHE Segment %u magic field is corrupt!!! 
+
+77B2DA86   PUSH 77B2DB50                             ASCII  -------- Follow-up avgarcia;erik;muidev 
+
+77B2DAA5   PUSH 77B2DAF8                             ASCII  RESCACHE Segment %u is no longer valid. It may have been unmapped already!!! 
+
+77B2DAB4   PUSH 77B2DB50                             ASCII  -------- Follow-up avgarcia;erik;muidev 
+
+77B2DC97   PUSH 77B2EA2C                             UNICODE SYSTEM
+77B2EC23   MOV ESI,77ACA840                          UNICODE 
+77B2EEA3   PUSH 77AB26AC                             ASCII Set 0x%X protection for %p section for %d bytes, old protection 0x%X
+
+77B2EF2B   PUSH 77AB26F2                             ASCII CLIENT(ntdll) Tyring to fix protection for %ws section in %wZ module to 0x%X
+
+77B2FFFF   PUSH 77AB2928                             ASCII %04x%04x @ %08d - %s - %s 
+77B3013B   PUSH 77AB2A36                             ASCII LdrVerifyImageMatchesChecksumEx
+77B30207   PUSH 77AB2A36                             ASCII LdrVerifyImageMatchesChecksumEx
+77B30878   PUSH 77AB2D62                             ASCII Querying large page info failed with status 0x%08lx
+
+77B3087E   PUSH 77AB2D46                             ASCII LdrpProtectAndRelocateImage
+77B30888   PUSH 77AB2C66                             ASCII dw7rtmminkernelntdllldrfind.c
+77B308CB   PUSH 77AB2CFA                             ASCII Changing the protection of the executable at %p failed with status 0x%08lx
+
+77B308D1   PUSH 77AB2D46                             ASCII LdrpProtectAndRelocateImage
+77B3090D   PUSH 77AB2D46                             ASCII LdrpProtectAndRelocateImage
+77B30957   PUSH 77AB2CFA                             ASCII Changing the protection of the executable at %p failed with status 0x%08lx
+
+77B3095D   PUSH 77AB2D46                             ASCII LdrpProtectAndRelocateImage
+77B30967   PUSH 77AB2C66                             ASCII dw7rtmminkernelntdllldrfind.c
+77B30995   PUSH 77AB2946                             ASCII Status 0x%08lx
+
+77B3099C   PUSH 77AB2D46                             ASCII LdrpProtectAndRelocateImage
+77B309A6   PUSH 77AB2C66                             ASCII dw7rtmminkernelntdllldrfind.c
+77B30A51   PUSH 77AB2FFC                             ASCII BoG_ 90.0&!!  Yy
+77B30A89   PUSH 77AB2FF4                             ASCII stxt371
+77B30AA3   PUSH 77AB2684                             ASCII .txt
+77B30ABA   PUSH 77AB267E                             ASCII .txt2
+77B30E13   PUSH 77AB304E                             ASCII Process initialization failed with status 0x%08lx
+
+77B30E1A   PUSH 77AB3034                             ASCII LdrpInitializationFailure
+77B30E24   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B30E8E   PUSH 77AB30A6                             ASCII Process initialization raised exception 0x%08lx
+	Exception record .exr %p
+	Context record .cxr %p
+
+77B30E95   PUSH 77AB3082                             ASCII LdrpInitializeProcessWrapperFilter
+77B30E9F   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B30FA8   PUSH 77AB321C                             UNICODE SPPsvc.exe
+77B3105C   PUSH 77AB3200                             UNICODE PageHeapFlags
+77B310AB   PUSH 77AB31C0                             ASCII Per-DLL page heap is disabled since fast fill heap is enabled
+
+77B310B2   PUSH 77AB3196                             ASCII LdrpInitializeApplicationVerifierPackage
+77B310BC   PUSH 77AB3010                             ASCII dw7rtmminkernelntdllldrinit.c
+77B3116D   PUSH 77AB3232                             ASCII LdrpTouchThreadStack
+77B311A3   MOV ESI,77AB32CE                          UNICODE CWDIllegalInDLLSearch
+77B311CF   PUSH 77AB3248                             UNICODE RegistryMachineSystemCurrentControlSetControlSession Manager
+77B31360   PUSH 77AB32FA                             UNICODE DisableUserModeCallbackFilter
+77B31761   PUSH 77AB4844                             ASCII Function %s raised exception 0x%08lx
+	Exception record .exr %p
+	Context record .cxr %p
+
+77B31768   PUSH 77AB4828                             ASCII LdrpGenericExceptionFilter
+77B31772   PUSH 77AB4804                             ASCII dw7rtmminkernelntdllldrutil.c
+77B31793   PUSH 77AB47DC                             ASCII 0A,Excepti
+77B317A4   PUSH 77AB4786                             ASCII Break repeatedly, break Once, Ignore, terminate Process or terminate Thread (boipt) 
+77B317EC   PUSH 77AB4762                             ASCII Execute '.cxr %p' to dump context
+
+77B31992   MOV ESI,77AB48AC                          UNICODE .DLL
+77B31A13   MOV ESI,77AB489E                          UNICODE .Local
+77B322E4   PUSH 77AB49E0                             ASCII Resource @ %lx
+
+77B322F2   PUSH 77AB49C0                             ASCII  NumberOfWaitingShared = %lx
+
+77B32300   PUSH 77AB4990                             ASCII  NumberOfWaitingExclusive = %lx
+
+77B3230E   PUSH 77AB4970                             ASCII  NumberOfActive = %lx
+
+77B323F3   PUSH 77AB49F0                             ASCII NTDLL Calling thread (%X) not owner of CritSect %p  Owner ThreadId %X
+
+77B34000   PUSH 77AB4E1C                             UNICODE Objects%4u
+77B34011   PUSH 77AB4E04                             UNICODE Objects=%4u
+77B34026   PUSH 77AB4DEA                             UNICODE VirtualAlloc
+77B35037   PUSH 77AB4E7C                             ASCII Failed to protect memory Va=%p, RegionSize=%lx, NewProtect=%lx - %lx
+
+77B3503E   PUSH 77AB4E5A                             ASCII Wx86SetRelocatedSharedProtection
+77B35048   PUSH 77AB4E36                             ASCII dw7rtmminkernelntdllldrwx86.c
+77B3519E   PUSH 77AB4FBE                             ASCII Validating the PE headers at %p failed
+
+77B351A4   PUSH 77AB4FAE                             ASCII FixupBlockList
+77B351AE   PUSH 77AB4E36                             ASCII dw7rtmminkernelntdllldrwx86.c
+77B35248   PUSH 77AB4F74                             ASCII Image at %p contains invalid block size. Stopping fixups
+
+77B3524F   PUSH 77AB4FAE                             ASCII FixupBlockList
+77B35259   PUSH 77AB4E36                             ASCII dw7rtmminkernelntdllldrwx86.c
+77B3528A   PUSH 77AB4F1C                             ASCII Failure after relocating some sections for image at %p; Relocation information invalid
+
+77B35291   PUSH 77AB4FAE                             ASCII FixupBlockList
+77B352B1   PUSH 77AB4EC4                             ASCII No fixup info for image at %p; private sections will be used for shared data sections.
+
+77B352B8   PUSH 77AB4FAE                             ASCII FixupBlockList
+77B352C2   PUSH 77AB4E36                             ASCII dw7rtmminkernelntdllldrwx86.c
+77B35406   PUSH 77AB4FBE                             ASCII Validating the PE headers at %p failed
+
+77B3540C   PUSH 77AB5060                             ASCII LdrpWx86ProtectImagePages
+77B35416   PUSH 77AB4E36                             ASCII dw7rtmminkernelntdllldrwx86.c
+77B3545A   PUSH 77AB5020                             ASCII Changing the page protection at %p failed with status 0x%08lx
+
+77B35461   PUSH 77AB5060                             ASCII LdrpWx86ProtectImagePages
+77B3546B   PUSH 77AB4E36                             ASCII dw7rtmminkernelntdllldrwx86.c
+77B35538   PUSH 77AB4FE6                             ASCII Failed to protect section %lx at %lx with protection %lx
+
+77B3553F   PUSH 77AB5060                             ASCII LdrpWx86ProtectImagePages
+77B35549   PUSH 77AB4E36                             ASCII dw7rtmminkernelntdllldrwx86.c
+77B355AF   PUSH 77AB509E                             ASCII Relocating DirEntry %lx from %lx to %lx
+
+77B355B6   PUSH 77AB507A                             ASCII LdrpWx86RelocateImageDirectoryEntry
+77B355C0   PUSH 77AB4E36                             ASCII dw7rtmminkernelntdllldrwx86.c
+77B35646   PUSH 77AB50EC                             ASCII Changing export Export[%lx] from %lx to %lx
+
+77B3564D   PUSH 77AB50C8                             ASCII LdrpWx86FixupExportedSharedSection
+77B35657   PUSH 77AB4E36                             ASCII dw7rtmminkernelntdllldrwx86.c
+77B356DE   PUSH 77AB5020                             ASCII Changing the page protection at %p failed with status 0x%08lx
+
+77B356E4   PUSH 77AB5224                             ASCII Wow64LdrpWx86FormatVirtualImage
+77B356EE   PUSH 77AB4E36                             ASCII dw7rtmminkernelntdllldrwx86.c
+77B358A2   PUSH 77AB51FE                             ASCII Unsupported IMAGE_SCN_MEM_SHARED %x
+
+77B358A9   PUSH 77AB5224                             ASCII Wow64LdrpWx86FormatVirtualImage
+77B358B3   PUSH 77AB4E36                             ASCII dw7rtmminkernelntdllldrwx86.c
+77B35AF6   PUSH 77AB51AA                             ASCII Relocating shared data for shared data section 0x%x of image at %p by 0x%lx bytes
+
+77B35AFD   PUSH 77AB5224                             ASCII Wow64LdrpWx86FormatVirtualImage
+77B35B07   PUSH 77AB4E36                             ASCII dw7rtmminkernelntdllldrwx86.c
+77B35B79   PUSH 77AB4F74                             ASCII Image at %p contains invalid block size. Stopping fixups
+
+77B35B80   PUSH 77AB5224                             ASCII Wow64LdrpWx86FormatVirtualImage
+77B35B8A   PUSH 77AB4E36                             ASCII dw7rtmminkernelntdllldrwx86.c
+77B35BEB   PUSH 77AB5152                             ASCII Failure after relocating some sections for image at %p; relocation information invalid
+
+77B35BF2   PUSH 77AB5224                             ASCII Wow64LdrpWx86FormatVirtualImage
+77B35C16   PUSH 77AB511A                             ASCII Failure after relocating some sections for image at %p
+
+77B35C1C   PUSH 77AB5224                             ASCII Wow64LdrpWx86FormatVirtualImage
+77B35C26   PUSH 77AB4E36                             ASCII dw7rtmminkernelntdllldrwx86.c
+77B35C5E   PUSH 77AB4EC4                             ASCII No fixup info for image at %p; private sections will be used for shared data sections.
+
+77B35C65   PUSH 77AB5224                             ASCII Wow64LdrpWx86FormatVirtualImage
+77B35C6F   PUSH 77AB4E36                             ASCII dw7rtmminkernelntdllldrwx86.c
+77B35EAC   PUSH 77AB5244                             ASCII User32 init not called
+77B35FBC   PUSH 77B2E000                             UNICODE verifier.dll
+77B3603F   MOV EDI,77B9021C                          ASCII xE
+77B36060   PUSH 77AB52F8                             ASCII AVRF provider %ws was not found in the initialization list 
+
+77B360DE   PUSH 77AB5336                             ASCII AVRF provider %ws 
+
+77B3612D   PUSH 77AB53B0                             ASCII AVRF chain searching in %ws
+
+77B36156   PUSH 77AB5398                             ASCII AVRF chain dll %ws
+
+77B3618C   PUSH 77AB5378                             ASCII AVRF chain thunk %s == %s 
+
+77B361FA   PUSH 77AB534C                             ASCII AVRF Found duplicate for (%ws %s) in %ws
+
+77B36279   PUSH 77AB53F2                             ASCII AVRF Checking %ws for duplicate (%ws %s) 
+
+77B362AC   PUSH 77AB53D0                             ASCII AVRF Chaining (%ws %s) to %ws
+
+77B363D3   PUSH 77AB547C                             ASCII AVRF Unable to unprotect IAT to modify thunks (status %08X).
+
+77B36456   PUSH 77AB544A                             ASCII AVRF internal error New thunk for %s is null. 
+
+77B3647D   PUSH 77AB5420                             ASCII AVRF Snapped (%ws %s) with (%ws %p). 
+
+77B36648   PUSH 77AB54DC                             ASCII AVRF warning did not find `%s' export in %ws . 
+
+77B36674   PUSH 77AB54BC                             ASCII AVRF (%ws) %s export found. 
+
+77B36761   PUSH 77AB5510                             ASCII AVRF failed to enable handle checking (status %X) 
+
+77B368CF   PUSH 77AB55DE                             UNICODE verifier.dll
+77B368F1   PUSH 77AB55A2                             ASCII AVRF Failed to find verifier.dll among loaded providers! 
+
+77B36903   PUSH 77AB558E                             ASCII VerifierStopMessage
+77B36929   PUSH 77AB5546                             ASCII AVRF Failed to find `VerifierStopMessage()' export in verifier.dll! 
+
+77B369A9   PUSH 77AB55F8                             ASCII 
+
+===========================================================
+VERIFIER STOP %p pid 0x%X %s 
+
+	%p  %s
+	%p  %s
+	%p  %s
+	%p  %s
+===========================================================
+
+
+77B36A86   PUSH 77AB56BA                             UNICODE REGISTRYUSER
+77B36BA4   PUSH 77AB2FC0                             UNICODE KnownDlls32
+77B36C61   PUSH 77AB2FA0                             UNICODE KnownDllPath
+77B36C68   PUSH 77AB56F0                             UNICODE SystemRoot
+77B36D8E   PUSH 77AB56DA                             UNICODE System32
+77B36F54   PUSH 77AB2D98                             ASCII LDR
+77B373AF   PUSH 77AB58B8                             ASCII AVRF verifier dll `%ws' 
+
+77B373D1   PUSH 7FFE0030                             UNICODE CWindows
+77B37412   PUSH 77AB5876                             ASCII AVRF %ws failed to load provider `%ws' (status %08X) from %ws
+
+77B3744E   PUSH 77AB584E                             ASCII AVRF provider %ws is not a DLL image 
+
+77B37480   PUSH 77AB581A                             ASCII AVRF cannot find an entry point for provider %ws 
+
+77B374C7   PUSH 77AB57E2                             ASCII AVRF provider %ws passed an invalid descriptor @ %p 
+
+77B374E6   PUSH 77AB57AE                             ASCII AVRF initialized provider %ws (descriptor @ %p) 
+
+77B37566   PUSH 77AB577C                             ASCII AVRF provider %ws did not initialize correctly 
+
+77B37581   PUSH 77AB573C                             ASCII AVRF exception raised in provider %ws initialization routine 
+
+77B37595   PUSH 77AB5708                             ASCII AVRF exception raised while probing provider %ws 
+
+77B3762B   PUSH 77AB58D4                             ASCII AVRF pid 0x%X found dll descriptor for `%ws' with verified exports 
+
+77B376E1   PUSH 77AB58D4                             ASCII AVRF pid 0x%X found dll descriptor for `%ws' with verified exports 
+
+77B37811   PUSH 77AB5948                             ASCII AVRF resnapping %ws ... 
+
+77B37831   PUSH 77AB591C                             ASCII AVRF skipped resnapping provider %ws ... 
+
+77B3790F   PUSH 77AB5964                             ASCII AVRF AVrfDllUnloadNotification called for a provider (%p) 
+
+77B379CF   PUSH 77AB5A92                             ASCII AVRF %ws pid 0x%X flags 0x%X application verifier enabled
+
+77B379FE   PUSH 77AB5A36                             ASCII AVRF %ws pid 0x%X application verifier will be disabled due to an initialization error.
+
+77B37A61   PUSH 77AB5A0E                             ASCII AVRF -- final list of providers -- 
+
+77B37B2A   PUSH 77AB59F2                             UNICODE VerifierFlags
+77B37B6A   PUSH 77AB59D8                             UNICODE HandleTraces
+77B37B7F   PUSH 77AB59BC                             UNICODE VerifierDebug
+77B37B97   PUSH 77AB59A2                             UNICODE VerifierDlls
+77B386A5   PUSH 77AB5B5E                             UNICODE RegistryMachineSoftwareMicrosoftWindows NTCurrentVersionImage File Execution Options
+77B386FB   PUSH 77AB35BC                             UNICODE GlobalFlag
+77B38D33   MOV ECX,77B2DF9C                          UNICODE (null)
+77B38D54   PUSH 77AB5C42                             UNICODE RegistryMachineSoftwareMicrosoftSQMClientWindowsWMR
+77B38DA1   PUSH 77AB5C18                             UNICODE WMRSendMessageString
+77B38DDB   PUSH 77AB5CDC                             UNICODE RegistryMachineSoftwareMicrosoftWindowsWindows Error ReportingEscalation
+77B38E28   PUSH 77AB5CB8                             UNICODE DisableEscalation
+77B38F54   PUSH 77AB5DF4                             UNICODE WinShipAssert
+77B38F6D   PUSH 77AB5DC0                             UNICODE WindowsMessageReportingB1
+77B38FD6   PUSH 77AB5DA8                             UNICODE %d.%d.%d.%d
+77B39000   MOV EBX,77AB5DA2                          UNICODE %X
+77B39047   PUSH 77AB5D9C                             UNICODE %d
+77B390C7   PUSH 77AB5DA8                             UNICODE %d.%d.%d.%d
+77B39394   PUSH 77AB56BA                             UNICODE REGISTRYUSER
+77B393E1   PUSH 77AB5E10                             UNICODE SoftwareMicrosoftWindows
+77B397D7   PUSH 77AB5EF4                             UNICODE RegistryMachineSoftwareMicrosoftSQMClientWindowsCommonDatapoints
+77B398F0   PUSH 77AB60C2                             UNICODE RegistryMachineSoftwareMicrosoftSQMClientWindows
+77B39937   PUSH 77AB609A                             UNICODE WSqmConsLastRunTime
+77B39AED   PUSH 77AB5EF4                             UNICODE RegistryMachineSoftwareMicrosoftSQMClientWindowsCommonDatapoints
+77B39BC9   PUSH 77AB6322                             UNICODE RegistryMachineSoftwareMicrosoftSQMClientWindowsAdaptiveSqmThrottling
+77B39C1C   PUSH 77AB631C                             UNICODE %u
+77B39E9C   MOV EDI,77B2DF9C                          UNICODE (null)
+77B3A7A9   MOV EAX,77B2DF9C                          UNICODE (null)
+77B3C24E   PUSH 77AB75A2                             ASCII RtlpQueryFilesInAssemblyInformationActivationContextDetailedInformation
+77B3C253   PUSH 77AB74BE                             ASCII SXS %s() received invalid sub-instance index %lu out of %lu Assemblies in the Acitvation Context
+
+77B3C2A8   PUSH 77AB75A2                             ASCII RtlpQueryFilesInAssemblyInformationActivationContextDetailedInformation
+77B3C2AD   PUSH 77AB7564                             ASCII SXS %s() received invalid file index (%d) in Assembly (%d)
+
+77B3C53C   PUSH 77AB7B0E                             ASCII SXS Unable to open storage root subkey %wZ; Status = 0x%08lx
+
+77B3C576   PUSH 77AB7AC0                             ASCII SXS Unabel to query location from storage root subkey %wZ; Status = 0x%08lx
+
+77B3C594   PUSH 77AB7A82                             ASCII SXS Assembly storage root location value type is not REG_SZ
+
+77B3C5A5   PUSH 77AB7A44                             ASCII SXS Assembly storage root location value has non-even size
+
+77B3C5D2   PUSH 77AB79F6                             ASCII SXS Assembly storage root location for %wZ does not fit in a UNICODE STRING
+
+77B3CD07   PUSH 77B3CD24                             ASCII Invalid parameter passed to C runtime function.
+
+77B3D9D7   MOV DWORD PTR SS[EBP-2AC],77AB86A6       UNICODE Type
+77B3D9E1   MOV DWORD PTR SS[EBP-2A8],77AB8698       UNICODE  Name
+77B3D9EB   MOV DWORD PTR SS[EBP-2A4],77AB8682       UNICODE  Language
+77B3D9F5   MOV DWORD PTR SS[EBP-2A0],77AB8674       UNICODE  Item
+77B3DA26   PUSH 77AB8668                             UNICODE SR - 
+77B3E306   MOV DWORD PTR DS[ECX+4],60000            ASCII Actx 
+77B3E32A   MOV DWORD PTR DS[ECX+4],60001            ASCII ctx 
+77B3E34E   MOV DWORD PTR DS[ECX+4],60002            ASCII tx 
+77B3E505   PUSH 77AB8848                             UNICODE Wow64 Emulation Layer
+77B3EA0B   MOV DWORD PTR SS[EBP-24],77AB88EA        UNICODE LdrpResValidateFilePath Enter
+77B3EA20   MOV DWORD PTR SS[EBP-2C],77AB88B0        UNICODE LdrpResValidateFilePath Exit
+77B3EC78   MOV DWORD PTR SS[EBP-4],77AB8954         UNICODE LdrResGetRCConfig Enter
+77B3EC83   MOV DWORD PTR SS[EBP-C],77AB8926         UNICODE LdrResGetRCConfig Exit
+77B3ED2C   MOV DWORD PTR SS[EBP-1C],77AB89AC        UNICODE LdrpResMapFile Enter
+77B3ED37   MOV DWORD PTR SS[EBP-24],77AB8984        UNICODE LdrpResMapFile Exit
+77B3EF5C   MOV DWORD PTR SS[EBP-28],77AB89FC        UNICODE LdrResRelease Enter
+77B3EF71   MOV DWORD PTR SS[EBP-30],77AB89D6        UNICODE LdrResRelease Exit
+77B3F165   MOV DWORD PTR SS[EBP-144],77AB8D50       UNICODE LdrpResSearchResourceHandle Enter
+77B3F183   MOV DWORD PTR SS[EBP-13C],77AB8D0E       UNICODE LdrpResSearchResourceHandle Exit
+77B41A6C   PUSH 77AB8E06                             UNICODE RXACT
+77B41BD9   PUSH 77AB8DFE                             UNICODE Log
+77B41D22   PUSH 77AB8DFE                             UNICODE Log
+77B4568F   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B4569C   PUSH 77AB8E68                             ASCII HEAP 
+77B456AF   PUSH 77AB8F74                             ASCII Heap block at %p modified at %p past requested size of %lx
+
+77B475AC   PUSH 77AB9126                             ASCII 
+ Assertion failed %s%s
+   Source File %s, line %ld
+
+
+77B475D3   PUSH 77AB90CE                             ASCII Break repeatedly, break Once, Ignore, terminate Process, or terminate Thread (boipt) 
+77B4761C   PUSH 77AB4762                             ASCII Execute '.cxr %p' to dump context
+
+77B4803A   PUSH 77B06D78                             UNICODE Bias
+77B48060   PUSH 77B06D84                             UNICODE StandardName
+77B4807F   PUSH 77B06DA0                             UNICODE StandardBias
+77B4809D   PUSH 77B06DBC                             UNICODE StandardStart
+77B480C1   PUSH 77B06DD8                             UNICODE DaylightName
+77B480DC   PUSH 77B06DF4                             UNICODE DaylightBias
+77B480F9   PUSH 77B07070                             UNICODE DaylightStart
+77B48122   PUSH 77B2E628                             UNICODE TimeZoneKeyName
+77B48153   PUSH 77B2E628                             UNICODE TimeZoneKeyName
+77B48179   PUSH 77B2E648                             UNICODE DynamicDaylightTimeDisabled
+77B4864D   MOV DWORD PTR SS[EBP-44],77AB8712        UNICODE MUI
+77B48A99   PUSH 77AB86B2                             UNICODE .mui
+77B4974B   PUSH 77AB927E                             UNICODE RegistryMachineSystemCurrentControlSetControlMUISettings
+77B49782   PUSH 77AB9254                             UNICODE PreferredUILanguages
+77B497BF   PUSH 77AB9214                             UNICODE Control PanelDesktopMuiCached
+77B497E7   PUSH 77AB91DC                             UNICODE MachinePreferredUILanguages
+77B4A237   PUSH 77AB92FE                             UNICODE RegistryMachineSystemCurrentControlSetControlCMFSQMDataBootLanguages
+77B4A396   PUSH 77AB9398                             UNICODE RegistryMachineSystemCurrentControlSetControlMUIUILanguages
+77B4AC10   PUSH 77AB959E                             ASCII  ASSERT FAILED Input parameter LanguagesBuffer for function RtlpSetPreferredUILanguages is not a valid multi-string!
+
+77B4B0AA   PUSH 77AB9518                             UNICODE RegistryMachineSystemCurrentControlSetControlNLSLanguage
+77B4B0DB   PUSH 77AB94E8                             UNICODE InstallLanguageFallback
+77B4B1C8   PUSH 77AB94BC                             UNICODE Control PanelDesktop
+77B4B1FB   PUSH 77AB9484                             UNICODE PreferredUILanguagesPending
+77B4B229   PUSH 77AB944A                             UNICODE LanguageConfigurationPending
+77B4B30F   PUSH 77AB927E                             UNICODE RegistryMachineSystemCurrentControlSetControlMUISettings
+77B4B344   PUSH 77AB9254                             UNICODE PreferredUILanguages
+77B4B389   PUSH 77AB941E                             UNICODE LanguageConfiguration
+77B4B59A   PUSH 77AB9698                             ASCII  ASSERT FAILED Input parameter LanguagesBuffer for function RtlSetProcessPreferredUILanguages is not a valid multi-string!
+
+77B4B735   PUSH 77AB9718                             ASCII  ASSERT FAILED Input parameter pwmszLanguage for function RtlGetUILanguageInfo is not a valid multi-string!
+
+77B4CD59   PUSH 77AB9518                             UNICODE RegistryMachineSystemCurrentControlSetControlNLSLanguage
+77B4CD83   PUSH 77AB94E8                             UNICODE InstallLanguageFallback
+77B4CDBD   PUSH 77AB927E                             UNICODE RegistryMachineSystemCurrentControlSetControlMUISettings
+77B4CDEB   PUSH 77AB9254                             UNICODE PreferredUILanguages
+77B4CE19   PUSH 77AB97C4                             UNICODE RegistryMachineSystemCurrentControlSetControlMUISettingsLanguageConfiguration
+77B4CE72   PUSH 77AB9214                             UNICODE Control PanelDesktopMuiCached
+77B4CEA1   PUSH 77AB91DC                             UNICODE MachinePreferredUILanguages
+77B4CEC4   PUSH 77AB978A                             UNICODE MachineLanguageConfiguration
+77B4CF2F   PUSH 77AB92FE                             UNICODE RegistryMachineSystemCurrentControlSetControlCMFSQMDataBootLanguages
+77B4D68F   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B4D69C   PUSH 77AB8E68                             ASCII HEAP 
+77B4D6AB   PUSH 77AB9892                             ASCII VirtualQuery Failed 0x%08x %x
+
+77B4D6D4   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B4D6E1   PUSH 77AB8E68                             ASCII HEAP 
+77B4D6F0   PUSH 77AB9870                             ASCII VirtualProtect Failed 0x%08x %x
+
+77B4F56F   PUSH 77AB4E1C                             UNICODE Objects%4u
+77B4F587   PUSH 77AB4E04                             UNICODE Objects=%4u
+77B4F59D   PUSH 77AB4DEA                             UNICODE VirtualAlloc
+77B5040A   PUSH 77AB9966                             UNICODE SmApiPort
+77B51A80   PUSH 77AB997C                             UNICODE SystemRootbootstat.dat
+77B51C97   PUSH 77AB997C                             UNICODE SystemRootbootstat.dat
+77B52167   PUSH 77AB631C                             UNICODE %u
+77B526FA   PUSH 77AB99AE                             UNICODE System Volume Information
+77B5305C   PUSH 77AB9A02                             ASCII Error
+
+77B530A1   PUSH 77AB99E2                             ASCII Not enough memory to complete
+
+77B5324B   PUSH 77AB9A2E                             ASCII Conflicting descriptors %08lx
+
+77B5327F   PUSH 77AB9A0A                             ASCII Unable to allocate page descriptor
+
+77B5351B   PUSH 77AB9A8C                             ASCII Entry     User      Heap          Size    Req.Size     Flags
+
+77B53525   MOV DWORD PTR SS[ESP],77AB9A4E           ASCII ------------------------------------------------------------
+
+77B5356E   PUSH 77AB9AFA                             ASCII busy 
+77B5357A   PUSH 77AB9AF0                             ASCII virtual 
+77B53586   PUSH 77AB9AEA                             ASCII UCR 
+77B53591   PUSH 77AB9AE4                             ASCII free 
+77B535A1   PUSH 77AB9ADC                             ASCII extra 
+77B535B1   PUSH 77AB9AD6                             ASCII fill 
+77B535C2   PUSH 77AB9ACA                             ASCII user_flag 
+77B53625   PUSH 77AB9B00                             ASCII %p  %p  %p  %8lx  %p  
+77B53965   MOV EAX,77AB9BAC                          ASCII ffff
+77B53982   PUSH 77AB9B9A                             ASCII %hs%u.%u.%u.%u
+77B539BE   PUSH 77AB9B84                             ASCII ffff0%u.%u.%u.%u
+77B53A5F   PUSH 77AB9B80                             ASCII 
+77B53AAC   PUSH 77AB9B7A                             ASCII %x
+77B53AE3   PUSH 77AB9B6C                             ASCII %u.%u.%u.%u
+77B53B73   PUSH 77AB9BB8                             ASCII %%%u
+77B53B9C   PUSH 77AB9BB2                             ASCII ]%u
+77B53C00   PUSH 77AB9BC0                             ASCII %u.%u.%u.%u
+77B53C6E   PUSH 77AB9BCC                             ASCII %u
+77B53CE1   PUSH 77AB9BD0                             ASCII %02X-%02X-%02X-%02X-%02X-%02X
+77B53D28   PUSH 77AB9C9C                             UNICODE %02X-%02X-%02X-%02X-%02X-%02X
+77B550D5   PUSH 77AB9E82                             UNICODE SystemRootGlobalization
+77B55110   PUSH 77AB9E78                             UNICODE .nlp
+77B55F74   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B55F81   PUSH 77AB8E68                             ASCII HEAP 
+77B55F9B   PUSH 77AB9F9A                             ASCII  Leaked Block 0x%p size 0x%p (stack %p depth %u)
+
+77B565A9   PUSH 77B2E2F4                             UNICODE xn--
+77B56997   PUSH 77B2E2F4                             UNICODE xn--
+77B56B4A   PUSH 77B2E2F4                             UNICODE xn--
+77B58B3F   PUSH 77ABA606                             ASCII 
+
+  Unhandled exception 0x%08lx, hit in %ws%s
+
+
+77B58B56   PUSH 77ABA5D2                             ASCII 
+
+  A stack buffer overrun occurred in %ws%s
+
+
+77B58B65   PUSH 77ABA552                             ASCII This is usually the result of a memory copy to a local buffer or structure where the size is not properly calculatedchecked.
+
+77B58B71   PUSH 77ABA500                             ASCII If this bug ends up in the shipping product, it could be a severe security hole.
+
+77B58B7D   PUSH 77ABA49C                             ASCII The stack trace should show the guilty function (the function directly above __report_gsfailure).
+
+77B58BB3   PUSH 77ABA472                             ASCII 
+
+  Resource timeout (%p) in %ws%s
+
+
+77B58BD2   PUSH 77ABA442                             ASCII The resource is owned exclusively by thread %x
+
+77B58BE3   PUSH 77ABA416                             ASCII The resource is owned shared by %d threads
+
+77B58BF4   PUSH 77ABA3B8                             ASCII The resource is unowned.  This usually implies a slow-moving machine due to memory pressure
+
+
+77B58C00   PUSH 77ABA386                             ASCII 
+
+  Critical Section Timeout (%p) in %ws%s
+
+
+77B58C1D   PUSH 77ABA358                             ASCII The critical section is owned by thread %x.
+
+77B58C29   PUSH 77ABA312                             ASCII Go determine why that thread has not released the critical section.
+
+
+77B58C3A   PUSH 77ABA2AC                             ASCII The critical section is unowned.  This usually implies a slow-moving machine due to memory pressure
+
+
+77B58C7C   PUSH 77ABA28C                             ASCII 
+
+  Inpage error in %ws%s
+
+
+77B58C93   PUSH 77ABA25C                             ASCII The instruction at %p referenced memory at %p.
+
+77B58CA4   PUSH 77ABA238                             ASCII This failed because of error %x.
+
+
+77B58CD4   PUSH 77ABA1EC                             ASCII This means that the IO device reported an IO error.  Check your hardware.
+77B58CDB   PUSH 77ABA17E                             ASCII This means the data could not be read, typically because of a bad block on the disk.  Check your hardware.
+
+
+77B58CE2   PUSH 77ABA11E                             ASCII This means the machine is out of memory.  Use !vm to see where all the memory is being used.
+
+
+77B58CED   PUSH 77ABA0EE                             ASCII 
+
+  An Access Violation occurred in %ws%s
+
+
+77B58D04   MOV ECX,77ABA0E4                          ASCII write to
+77B58D0B   MOV ECX,77ABA0DA                          ASCII read from
+77B58D14   PUSH 77ABA0B6                             ASCII The instruction at %p tried to %s 
+77B58D2D   PUSH 77ABA09C                             ASCII an invalid address, %p
+
+
+77B58D3E   PUSH 77ABA08A                             ASCII a NULL pointer
+
+
+77B58D4F   PUSH 77ABA05C                             ASCII   enter .exr %p for the exception record
+
+77B58D6B   PUSH 77ABA036                             ASCII    enter .cxr %p for the context
+
+77B58D7A   PUSH 77ABA00C                             ASCII   then kb to get the faulting stack
+
+
+77B58D9D   PUSH 77AB9FCC                             ASCII   Restarting wait on critsec or resource at %p (in %ws%s)
+
+
+77B59C8F   PUSH 77ABA63A                             ASCII Trace database failed to release segment %p 
+
+77B59DFA   PUSH 77ABA66A                             ASCII Trace database failing attempt to save biiiiig trace (size %u) 
+
+77B5A5D5   PUSH 77AB94BC                             UNICODE Control PanelDesktop
+77B5A5EE   PUSH 77AB9214                             UNICODE Control PanelDesktopMuiCached
+77B5A615   PUSH 77AB91DC                             UNICODE MachinePreferredUILanguages
+77B5A64F   PUSH 77AB927E                             UNICODE RegistryMachineSystemCurrentControlSetControlMUISettings
+77B5A675   PUSH 77AB9254                             UNICODE PreferredUILanguages
+77B5A753   PUSH 77ABA6AC                             UNICODE MachineUILock
+77B5B69F   PUSH 77ABA6F0                             UNICODE DefaultFallback
+77B5BD44   PUSH 77AB9254                             UNICODE PreferredUILanguages
+77B5BECD   PUSH 77AB927E                             UNICODE RegistryMachineSystemCurrentControlSetControlMUISettings
+77B5BEFC   PUSH 77AB9254                             UNICODE PreferredUILanguages
+77B5C01A   PUSH 77ABA8BA                             UNICODE RegistryMachineSoftwarePoliciesMicrosoftMUISettings
+77B5C5FA   PUSH 77ABA6F0                             UNICODE DefaultFallback
+77B5CC70   PUSH 77ABAAA8                             ASCII .hotp1  
+77B5CEDD   MOV EDX,77ABAB76                          ASCII (no change)
+77B5CEFB   PUSH 77ABAB4E                             ASCII 	%08I64X VA64 %016I64X - %016I64X %s
+
+77B5CF25   MOV ECX,77ABAB76                          ASCII (no change)
+77B5CF3F   PUSH 77ABAB22                             ASCII 	%08I64X PC32 %08X - %08X (target %p) %s
+
+77B5CF6D   MOV ECX,77ABAB76                          ASCII (no change)
+77B5CF7F   PUSH 77ABAB02                             ASCII 09,%08I64X 
+77B5CFAE   MOV EAX,77ABAAF6                          ASCII  (padding)
+77B5CFB4   PUSH 77ABAAE2                             ASCII 09,         
+77B5CFCF   PUSH 77ABAACE                             ASCII 09,%08I64X 
+77B5CFE1   PUSH 77ABAAB2                             ASCII Invalid fixup information
+
+77B5D07A   PUSH 77ABABCE                             ASCII Validation failure. Source = %p, Target = %p, Size = %x
+
+77B5D096   PUSH 77ABABAC                             ASCII Invalid target validation range
+
+77B5D09D   PUSH 77ABAB82                             ASCII Invalid source hotpatch validation range
+
+77B5D11B   PUSH 77ABAC62                             ASCII Skipping hook-specific validation range during global validation
+
+77B5D14C   PUSH 77ABAC34                             ASCII Validation failed for global range %u of %u
+
+77B5D162   PUSH 77ABAC08                             ASCII Invalid hotpatch validation array pointer
+
+77B5D230   PUSH 77ABACC4                             ASCII Invalid hotpatch validation pointer in hook record
+
+77B5D387   PUSH 77ABACA4                             ASCII Hook type not yet implemented
+
+77B5D50B   PUSH 77ABADE8                             ASCII Invalid hotpatch base address
+
+77B5D532   PUSH 77ABADCA                             ASCII Invalid target base address
+
+77B5D540   PUSH 77ABADAA                             ASCII Invalid hotpatch hook pointer
+
+77B5D574   PUSH 77ABAD80                             ASCII Hotpatch loaded  2GB from target image
+
+77B5D5CF   PUSH 77ABAD62                             ASCII Invalid hook type specified
+
+77B5D71A   PUSH 77ABAD46                             ASCII Unsupported template type
+
+77B5D7AC   PUSH 77ABAD22                             ASCII Invalid hotpatch relative address
+
+77B5D7F8   PUSH 77ABAD02                             ASCII 09,%08I64X 
+77B5D814   PUSH 77ABACFC                             ASCII  %02X
+77B5D82A   PUSH 77ABACF8                             ASCII  }
+
+77B5D897   PUSH 77ABAE54                             ASCII No hooks defined in hotpatch
+
+77B5D8C7   PUSH 77ABAE2E                             ASCII Inserting %u hooks into target image
+
+77B5DA53   PUSH 77ABAE08                             ASCII Invalid hotpatch hook array pointer
+
+77B5DC12   PUSH 77ABAEA8                             ASCII Failed to normalize PE header for validation
+
+77B5DC2E   PUSH 77ABAE72                             ASCII Header too large (%u%u) for copynormalizevalidate
+
+77B5DDDA   PUSH 77ABAED6                             ASCII PE header hash ID comparsion failure (PE2)
+
+77B5DE95   PUSH 77ABAF56                             ASCII Unrecognized
+77B5DE9C   PUSH 77ABAF3C                             ASCII HOTP_ID_PeDebugSignature
+77B5DEB1   PUSH 77ABAF26                             ASCII HOTP_ID_PeHeaderHash2
+77B5DED0   PUSH 77ABAF10                             ASCII HOTP_ID_PeHeaderHash1
+77B5DEE5   PUSH 77ABAF02                             ASCII HOTP_ID_None
+
+77B5E614   PUSH 77ABAF64                             ASCII Critical error detected %lx
+
+77B5E6E4   MOV EBX,77AB8E68                          ASCII HEAP 
+77B5E6E9   MOV ESI,77AB8E70                          ASCII HEAP[%wZ] 
+77B5E71F   PUSH 77ABB1C0                             ASCII Heap error detected at %p (heap handle %p)
+
+77B5E73D   MOV EDI,77ABB1AA                          ASCII heap_failure_internal
+77B5E744   MOV EDI,77ABB194                          ASCII heap_failure_unknown
+77B5E74B   MOV EDI,77ABB17E                          ASCII heap_failure_generic
+77B5E752   MOV EDI,77ABB160                          ASCII heap_failure_entry_corruption
+77B5E759   MOV EDI,77ABB136                          ASCII heap_failure_multiple_entries_corruption
+77B5E760   MOV EDI,77ABB110                          ASCII heap_failure_virtual_block_corruption
+77B5E767   MOV EDI,77ABB0F4                          ASCII heap_failure_buffer_overrun
+77B5E76E   MOV EDI,77ABB0D6                          ASCII heap_failure_buffer_underrun
+77B5E775   MOV EDI,77ABB0BA                          ASCII heap_failure_block_not_busy
+77B5E77C   MOV EDI,77ABB09C                          ASCII heap_failure_invalid_argument
+77B5E783   MOV EDI,77ABB07E                          ASCII heap_failure_usage_after_free
+77B5E78A   MOV EDI,77ABB05C                          ASCII heap_failure_cross_heap_operation
+77B5E791   MOV EDI,77ABB03A                          ASCII heap_failure_freelists_corruption
+77B5E798   MOV EDI,77ABB018                          ASCII heap_failure_listentry_corruption
+77B5E7D6   PUSH 77ABB002                             ASCII Error code %d - %s
+
+77B5E824   PUSH 77ABAFF2                             ASCII Parameter1 %p
+
+77B5E86F   PUSH 77ABAFE2                             ASCII Parameter2 %p
+
+77B5E8BA   PUSH 77ABAFD2                             ASCII Parameter3 %p
+
+77B5E913   PUSH 77ABAFA0                             ASCII Last known valid blocks before - %p, after - %p
+
+77B5E956   PUSH 77ABAF82                             ASCII Stack trace available at %p
+
+77B5F97C   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B5F989   PUSH 77AB8E68                             ASCII HEAP 
+77B5F9A0   PUSH 77ABB226                             ASCII Heap %p - headers modified (%p is %lx instead of %lx)
+
+77B5F9FC   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B5FA09   PUSH 77AB8E68                             ASCII HEAP 
+77B5FA1B   PUSH 77ABB1EC                             ASCII     This is located in the %s field of the heap header.
+
+77B601EF   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B60220   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B6022D   PUSH 77AB8E68                             ASCII HEAP 
+77B60249   PUSH 77ABB3C4                             ASCII Heap entry %p has incorrect PreviousSize field (%04x instead of %04x)
+
+77B60294   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B602A1   PUSH 77AB8E68                             ASCII HEAP 
+77B602B5   PUSH 77ABB38E                             ASCII Free Heap block %p modified at %p after it was freed
+
+77B602E9   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B602F6   PUSH 77AB8E68                             ASCII HEAP 
+77B60307   PUSH 77ABB35A                             ASCII Heap block at %p has incorrect segment offset (%x)
+
+77B60345   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B60352   PUSH 77AB8E68                             ASCII HEAP 
+77B60364   PUSH 77ABB326                             ASCII Heap block at %p is not last block in segment (%p)
+
+77B603AA   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B603B7   PUSH 77AB8E68                             ASCII HEAP 
+77B603CE   PUSH 77ABB2F2                             ASCII Heap block at %p has corrupted PreviousSize (%lx)
+
+77B603D8   PUSH 77AB8E68                             ASCII HEAP 
+77B603E8   PUSH 77ABB2A8                             ASCII Heap Segment at %p contains invalid NumberOfUnCommittedPages (%x != %x)
+
+77B60428   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B60435   PUSH 77AB8E68                             ASCII HEAP 
+77B60445   PUSH 77ABB25E                             ASCII Heap Segment at %p contains invalid NumberOfUnCommittedRanges (%x != %x)
+
+77B604BA   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B604C7   PUSH 77AB8E68                             ASCII HEAP 
+77B604D3   PUSH 77ABB4FA                             ASCII Invalid ReserveSize parameter - %x
+
+77B60512   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B6051F   PUSH 77AB8E68                             ASCII HEAP 
+77B6052D   PUSH 77ABB4D6                             ASCII Invalid CommitSize parameter - %x
+
+77B60563   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B60570   PUSH 77AB8E68                             ASCII HEAP 
+77B6057B   PUSH 77ABB49E                             ASCII May not specify Lock parameter with HEAP_NO_SERIALIZE
+
+77B605CD   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B605DA   PUSH 77AB8E68                             ASCII HEAP 
+77B605E9   PUSH 77ABB46E                             ASCII Specified HeapBase (%p) invalid,  Status = %lx
+
+77B60616   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B60623   PUSH 77AB8E68                             ASCII HEAP 
+77B60632   PUSH 77ABB43E                             ASCII Specified HeapBase (%p) != to BaseAddress (%p)
+
+77B6066B   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B60678   PUSH 77AB8E68                             ASCII HEAP 
+77B60686   PUSH 77ABB40C                             ASCII Specified HeapBase (%p) is free or not writable
+
+77B6081B   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B60828   PUSH 77AB8E68                             ASCII HEAP 
+77B60837   PUSH 77ABB68A                             ASCII dedicated (%04x) free list element %p is marked busy
+
+77B60885   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B60892   PUSH 77AB8E68                             ASCII HEAP 
+77B6089E   PUSH 77ABB656                             ASCII Non-Dedicated free list element %p is out of order
+
+77B609DA   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B609E7   PUSH 77AB8E68                             ASCII HEAP 
+77B609F6   PUSH 77ABB602                             ASCII Number of free blocks in arena (%ld) does not match number in the free lists (%ld)
+
+77B60A32   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B60A3F   PUSH 77AB8E68                             ASCII HEAP 
+77B60A50   PUSH 77ABB5A6                             ASCII Total size of free blocks in arena (%ld) does not match number total in heap header (%ld)
+
+77B60AF9   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B60B06   PUSH 77AB8E68                             ASCII HEAP 
+77B60B1E   PUSH 77ABB578                             ASCII Pseudo Tag %04x size incorrect (%x != %x) %p
+
+77B60B4E   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B60B5B   PUSH 77AB8E68                             ASCII HEAP 
+77B60B77   PUSH 77ABB54A                             ASCII Tag %04x (%ws) size incorrect (%x != %x) %p
+
+77B60BF2   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B60BFF   PUSH 77AB8E68                             ASCII HEAP 
+77B60C0B   PUSH 77ABB6D0                             ASCII May not destroy the process heap at %p
+
+77B60C1B   PUSH 77ABB6C0                             ASCII RtlDestroyHeap
+77B60CA4   PUSH 77ABB786                             ASCII RtlAllocateHeap
+77B60E00   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B60E0D   PUSH 77AB8E68                             ASCII HEAP 
+77B60E21   PUSH 77ABB75C                             ASCII Just allocated block at %p for %x bytes
+
+77B60E96   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B60EA3   PUSH 77AB8E68                             ASCII HEAP 
+77B60EBE   PUSH 77ABB724                             ASCII Just allocated block at %p for 0x%x bytes with tag %ws
+
+77B60EF2   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B60EFF   PUSH 77AB8E68                             ASCII HEAP 
+77B60F0E   PUSH 77ABB6F8                             ASCII Invalid allocation size - %x (exceeded %x)
+
+77B60FD2   MOV EBX,77ABB864                          ASCII RtlReAllocateHeap
+77B61098   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B610A5   PUSH 77AB8E68                             ASCII HEAP 
+77B610B9   PUSH 77ABB836                             ASCII About to reallocate block at %p to %x bytes
+
+77B61185   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B61192   PUSH 77AB8E68                             ASCII HEAP 
+77B611AD   PUSH 77ABB7FA                             ASCII About to rellocate block at %p to 0x%x bytes with tag %ws
+
+77B612A3   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B612B0   PUSH 77AB8E68                             ASCII HEAP 
+77B612C4   PUSH 77ABB7D0                             ASCII Just reallocated block at %p to %x bytes
+
+77B61334   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B61341   PUSH 77AB8E68                             ASCII HEAP 
+77B6135C   PUSH 77ABB796                             ASCII Just reallocated block at %p to 0x%x bytes with tag %ws
+
+77B61390   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B6139D   PUSH 77AB8E68                             ASCII HEAP 
+77B613AC   PUSH 77ABB6F8                             ASCII Invalid allocation size - %x (exceeded %x)
+
+77B61473   MOV EBX,77ABB8BA                          ASCII RtlFreeHeap
+77B61504   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B61511   PUSH 77AB8E68                             ASCII HEAP 
+77B61522   PUSH 77ABB89E                             ASCII About to free block at %p
+
+77B615E9   PUSH 77AB8E70                             ASCII HEAP[%wZ] 
+77B615F6   PUSH 77AB8E68                             ASCII HEAP 
+77B6160E   PUSH 77ABB876                             ASCII About to free block at %p with tag %ws
+
+77B616FA   PUSH 77ABB8C6                             ASCII RtlGetUserInfoHeap
+77B6174F   PUSH 77ABB8C6                             ASCII RtlGetUserInfoHeap
+77B61824   PUSH 77ABB8DA                             ASCII RtlSetUserValueHeap
+77B61879   PUSH 77ABB8DA                             ASCII RtlSetUserValueHeap
+77B6196D   PUSH 77ABB8EE                             ASCII RtlSetUserFlagsHeap
+77B619C2   PUSH 77ABB8EE                             ASCII RtlSetUserFlagsHeap
+77B61AA1   PUSH 77ABB902                             ASCII RtlSizeHeap
+77B61AF5   PUSH 77ABB902                             ASCII RtlSizeHeap
+77B61BBE   PUSH 77ABB90E                             ASCII RtlCompactHeap
+77B61CBC   PUSH 77ABB91E                             ASCII RtlZeroHeap
+77B61D89   PUSH 77ABB92A                             ASCII RtlCreateTagHeap
+77B61E75   PUSH 77ABB93C                             ASCII RtlQueryTagHeap
+77B61F4D   PUSH 77ABB94C                             ASCII RtlWalkHeap
