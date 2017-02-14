@@ -1,0 +1,242 @@
+#!/bin/sh
+
+
+# GH Game Link Dumper v0.1
+
+# Part of the RealArcade Wrapper Killer
+
+# esc0rtd3w 2017
+
+
+baseURL="http://www.gamehouse.com"
+baseURLRGSFree="http://games-dl2.real.com/gameconsole/games/demorgses/"
+baseURLRGSFull="http://games-dl2.real.com/gameconsole/games/demorgses/"
+baseURLRGA1="http://games-dl2.real.com/gameconsole/realarcadev21/games/am-"
+baseURLRGA2="http://games-dl2.real.com/gameconsole/realarcadev21/games/am-"
+baseURLRGA3="http://games-dl2.real.com/gameconsole/realarcadev21/games/dip/"
+baseURLRGA4="http://games-dl.gamehouse.com/zylom/ghmigration/"
+baseURLRFSGH="http://www.gamehouse.com"
+baseURLRFSAM="http://www.gamehouse.com"
+baseURLRFSAMIndex="http://www.gamehouse.com"
+
+inputJSON="games-windows.json"
+
+outputText="games-windows-links.txt"
+outputTextCID="games-windows-cid.txt"
+
+outputHTML="games-windows-links.html"
+outputHTMLRGSFree="games-windows-links-rgs-free.html"
+outputHTMLRGSFull="games-windows-links-rgs-full.html"
+outputHTMLRGA1="games-windows-links-rga-v1.html"
+outputHTMLRGA2="games-windows-links-rga-v2.html"
+outputHTMLRGA3="games-windows-links-rga-v3.html"
+outputHTMLRGA4="games-windows-links-rga-v4.html"
+outputHTMLRFSGH="games-windows-links-rfs-gh.html"
+outputHTMLRFSAM="games-windows-links-rfs-am.html"
+outputHTMLRFSRFSIndex="games-windows-links-rfsindex-am.html"
+
+outputTMP="dump.tmp"
+outputTMP2="dump2.tmp"
+
+dumpText="games-windows-dump-list.txt"
+dumpTextCID="games-windows-cid-dump-list.txt"
+
+dumpIni="games-windows-dump-list.ini"
+
+jsonWindows="games-windows.json"
+jsonOnline="games-online.json"
+jsonAll="games-full.json"
+
+
+na="NO_DATA"
+
+# Data Gathering URL
+# http://www.gamehouse.com/datagathering/actiontracking?actiontrackingkindid=225&actiontrackingsourceid=4458
+
+
+dumpWebToJSON(){
+
+	wget -d --header="Cookie: gamehouseuser=true"  -O "$jsonWindows" "http://www.gamehouse.com/games.json?gametype=download&genre=all&sorting=name&count=4000&filterType=null"
+
+	#wget -d --header="Cookie: gamehouseuser=true" -O "$jsonOnline" "http://www.gamehouse.com/games.json?gametype=online&genre=all&sorting=name&count=4000&filterType=null"
+
+	#wget -d --header="Cookie: gamehouseuser=true" -O "$jsonAll" "http://www.gamehouse.com/games.json?gametype=null&genre=all&sorting=name&count=4000&filterType=null"
+
+}
+
+
+dumpGamesToList(){
+	
+	clear
+	echo "Building List From \"$inputJSON\""
+	echo ""
+	echo ""
+	grep -Po '"url":.*?[^\\]"' "$inputJSON" | cut -f2 -d":" | cut -c2- | sed 's/"$//'>"$outputTMP"
+
+	rm "$outputText"
+	rm "$outputHTML"
+
+	# Create Files With Links
+	while read -r line
+	do
+
+		# Output Text File
+		echo "$baseURL$line">>"$outputText"
+
+		## Output HTML Files
+
+		# GameHouse Web Page
+		echo "<a href=\"$baseURL$line\" target=\"__blank\">$baseURL$line\</a><br>">>"$outputHTML"
+
+		# RGS Free
+		echo "<a href=\"$baseURLRGSFree$line_free.rgs\" target=\"__blank\">$baseURL$line_free.rgs</a><br>">>"$outputHTMLRGSFree"
+
+		# RGS Full
+		echo "<a href=\"$baseURL$line_free.rgs\" target=\"__blank\">$baseURL$line_free.rgs</a><br>">>"$outputHTMLRGSFull"
+
+		# RGA v1
+		echo "<a href=\"$baseURL$line/am-$line.rga\" target=\"__blank\">$baseURL$line/am-$line.rga</a><br>">>"$outputHTMLRGA1"
+
+		# RGA v2
+		echo "<a href=\"$baseURL$line/am-$line.rga\" target=\"__blank\">$baseURL$line/am-$line.rga</a><br>">>"$outputHTMLRGA2"
+
+		# RGA v3
+		echo "<a href=\"$baseURL$line/$line.rga\" target=\"__blank\">$baseURL$line/$line.rga</a><br>">>"$outputHTMLRGA3"
+
+		# RGA v4
+		echo "<a href=\"$baseURL$line/$line.rga\" target=\"__blank\">$baseURL$line/$line.rga</a><br>">>"$outputHTMLRGA4"
+
+		# RFS GH
+		#echo "<a href=\"$baseURL$line\" target=\"__blank\">$baseURL$line\</a><br>">>"$outputHTMLRFSGH"
+
+		# RFS AM
+		#echo "<a href=\"$baseURL$line\" target=\"__blank\">$baseURL$line\</a><br>">>"$outputHTMLRFSAM"
+
+		# RFSIndex AM
+		#echo "<a href=\"$baseURL$line\" target=\"__blank\">$baseURL$line\</a><br>">>"$outputHTMLRFSRFSIndex"
+
+	done < "$outputTMP"
+
+	rm "$outputTMP"
+}
+
+
+dumpPages(){
+
+	
+	rm "$dumpText"
+
+	gameCounter=0
+
+
+	# Write INI Header (Done Once Before Loop)
+	echo "; Game List Dumped By The RealArcade Wrapper Killer">"$dumpIni"
+	echo "">>"$dumpIni"
+	echo "">>"$dumpIni"
+
+
+	# Follow Links and Dump Pages
+	while read -r line
+	do
+		
+		wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.5.2" -O "$outputTMP" "$line"
+
+		# Get Some Info From Web Page
+		contentID=$(grep "contentid=" "$outputTMP" | cut -f3 -d"=" | cut -f1 -d"&")
+		nameTitle=$(grep "game_name" "$outputTMP" | cut -f2 -d":" | cut -c2- | sed 's/,$//' | sed -e 's|["'\'']||g')
+		nameDashes=$(grep "review-content-grp').load('/reviews/all/game/" "$outputTMP" | cut -f5 -d"/")
+		nameNoDashes=$(grep "review-content-grp').load('/reviews/all/game/" "$outputTMP" | cut -f5 -d"/" | sed -e 's|["'-']||g')
+
+		gameCounter=$(($gameCounter + 1))
+
+		echo ""	
+		echo ""	
+		echo "Game Entry #$gameCounter:"		
+		echo ""		
+		echo "contentID: $contentID"
+		echo "nameTitle: $nameTitle"
+		echo "nameDashes: $nameDashes"
+		echo "nameNoDashes: $nameNoDashes"
+		echo ""	
+
+		# Write To File
+		echo "">>"$dumpText"		
+		echo "Game Entry #$gameCounter:">>"$dumpText"			
+		echo "">>"$dumpText"			
+		echo "contentID: $contentID">>"$dumpText"	
+		echo "nameTitle: $nameTitle">>"$dumpText"	
+		echo "nameDashes: $nameDashes">>"$dumpText"	
+		echo "nameNoDashes: $nameNoDashes">>"$dumpText"	
+		echo ""		
+
+		# Write INI File
+		writeIni
+
+	done < "$outputText"
+	
+	rm "$outputTMP"
+}
+
+
+dumpPagesCidOnly(){
+
+	
+	rm "$dumpTextCID"
+
+	gameCounter=0
+
+	# Follow Links and Dump Pages
+	while read -r line
+	do
+		
+		wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.5.2" -O "$outputTMP" "$line"
+
+		contentID=$(grep "contentid=" "$outputTMP" | cut -f3 -d"=" | cut -f1 -d"&")
+
+		gameCounter=$(($gameCounter + 1))
+
+		echo ""		
+		echo "contentID: $contentID"
+		echo ""	
+
+		# Write To File	
+		echo "$contentID">>"$dumpTextCID"
+
+	done < "$outputText"
+	
+	rm "$outputTMP"
+	rm "$outputText"
+	rm "$outputHTML"
+}
+
+
+writeIni(){
+
+	echo "[$contentID]">>"$dumpIni"		
+	echo "name_title=$nameTitle">>"$dumpIni"	
+	echo "name_stub=$nameNoDashes">>"$dumpIni"	
+	echo "name_web=$nameDashes">>"$dumpIni"	
+	echo "installation_id=$na">>"$dumpIni"	
+	echo "atoken=$na">>"$dumpIni"
+	echo "dmg_legacy=$na">>"$dumpIni"
+	echo "dmg_gh=$na">>"$dumpIni"
+	echo "dmg_amac=$na">>"$dumpIni"
+	echo "rga_legacy=$na">>"$dumpIni"
+	echo "rga_gh=$na">>"$dumpIni"
+	echo "rga_am=$na">>"$dumpIni"
+	echo "rga_amg=$na">>"$dumpIni"
+	echo "rgs_free=$na">>"$dumpIni"
+	echo "rgs_full=$na">>"$dumpIni"
+	echo "rfs=$na">>"$dumpIni"
+	echo "rfs_index=$na">>"$dumpIni"
+	echo "">>"$dumpIni"
+
+}
+
+dumpWebToJSON
+dumpGamesToList
+dumpPages
+#dumpPagesCidOnly
+
+
+
