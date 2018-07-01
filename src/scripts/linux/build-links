@@ -139,7 +139,7 @@ dumpGamesToList(){
 		echo "<a href=\"$baseURLRFSAM$nameFirstLetter/$nameDashes/$nameDashes.rfs\" target=\"__blank\">$baseURLRFSAM$nameFirstLetter/$nameDashes/$nameDashes.rfs</a><br>">>"$outputHTMLRFSAM"
 
 		# RFSIndex AM
-		echo "<a href=\"$baseURLRFSAMIndex$nameFirstLetter/$nameDashes.rfsindex\" target=\"__blank\">$baseURLRFSAMIndex$nameFirstLetter/$nameDashes.rfsindex</a><br>">>"$outputHTMLRFSRFSIndex"
+		echo "<a href=\"$baseURLRFSAMIndex$nameFirstLetter/$nameDashes/$nameDashes.rfsindex\" target=\"__blank\">$baseURLRFSAMIndex$nameFirstLetter/$nameDashes/$nameDashes.rfsindex</a><br>">>"$outputHTMLRFSRFSIndex"
 
 		# RFS EXE
 		echo "<a href=\"$baseURLRFSEXE$nameDashes.exe\" target=\"__blank\">$baseURLRFSEXE$nameDashes.exe</a><br>">>"$outputHTMLRFSEXE"
