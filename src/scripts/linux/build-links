@@ -19,7 +19,7 @@ baseURLRGA3="http://games-dl2.real.com/gameconsole/realarcadev21/games/dip/"
 baseURLRGA4="http://games-dl.gamehouse.com/zylom/ghmigration/"
 baseURLRFS="http://games-dl.gamehouse.com/gamehouse/pc/"
 baseURLRFSAM="http://games-dl.gamehouse.com/gamehouse/pc/"
-baseURLRFSAMIndex="http://games-dl.gamehouse.com/gamehouse/pc/"
+baseURLRFSAMIndex="http://profiler-cdn.am.gamehouse.com/gamehouse/pc/"
 baseURLRFSEXE="http://www.gamehouse.com/game/download/"
 baseURLRFSGH="http://games-dl.gamehouse.com/gamehouse/pc/"
 
@@ -139,7 +139,7 @@ dumpGamesToList(){
 		echo "<a href=\"$baseURLRFSAM$nameFirstLetter/$nameDashes/$nameDashes.rfs\" target=\"__blank\">$baseURLRFSAM$nameFirstLetter/$nameDashes/$nameDashes.rfs</a><br>">>"$outputHTMLRFSAM"
 
 		# RFSIndex AM
-		echo "<a href=\"$baseURLRFSAMIndex$nameFirstLetter/$nameDashes/$nameDashes.rfsindex\" target=\"__blank\">$baseURLRFSAMIndex$nameFirstLetter/$nameDashes/$nameDashes.rfsindex</a><br>">>"$outputHTMLRFSRFSIndex"
+		echo "<a href=\"$baseURLRFSAMIndex$nameFirstLetter/$nameDashes/$nameDashes.rfs.0.rfsindex\" target=\"__blank\">$baseURLRFSAMIndex$nameFirstLetter/$nameDashes/$nameDashes.rfs.0.rfsindex</a><br>">>"$outputHTMLRFSRFSIndex"
 
 		# RFS EXE
 		echo "<a href=\"$baseURLRFSEXE$nameDashes.exe\" target=\"__blank\">$baseURLRFSEXE$nameDashes.exe</a><br>">>"$outputHTMLRFSEXE"
