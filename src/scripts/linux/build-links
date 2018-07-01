@@ -85,8 +85,13 @@ dumpGamesToList(){
 	echo "Building List From \"$inputJSON\""
 	echo ""
 	echo ""
+
+	getNameFromJSON=$(grep -Po '"url":.*?[^\\]"' "$inputJSON" | cut -f2 -d":" | cut -c3- | sed 's/"$//' | cut -c16-)
+
 	#grep -Po '"url":.*?[^\\]"' "$inputJSON" | cut -f2 -d":" | cut -c2- | sed 's/"$//'>"$outputTMP"
-	grep -Po '"url":.*?[^\\]"' "$inputJSON" | cut -f2 -d":" | cut -c3- | sed 's/"$//' | cut -c16- > "$outputTMP"
+	#grep -Po '"url":.*?[^\\]"' "$inputJSON" | cut -f2 -d":" | cut -c3- | sed 's/"$//' | cut -c16- > "$outputTMP"
+
+	echo "$getNameFromJSON" > "$outputTMP"
 
 	rm "$outputText"
 	rm "$outputHTML"
@@ -94,7 +99,6 @@ dumpGamesToList(){
 	# Create Files With Links
 	while read -r line
 	do
-
 		# Output Text File
 		echo "$baseURLDG$line">>"$outputText"
 		echo "$baseURLWeb$line">>"$outputTextWeb"
@@ -126,16 +130,16 @@ dumpGamesToList(){
 		echo "<a href=\"$baseURLRGA4$line/$line.rga\" target=\"__blank\">$baseURLRGA4$line/$line.rga</a><br>">>"$outputHTMLRGA4"
 
 		# RFS AM
-		echo "<a href=\"$baseURLRFSAM$line.rfs\" target=\"__blank\">$baseURLRFSAM$line.rfs\</a><br>">>"$outputHTMLRFSAM"
+		echo "<a href=\"$baseURLRFSAM$line.rfs\" target=\"__blank\">$baseURLRFSAM$line.rfs</a><br>">>"$outputHTMLRFSAM"
 
 		# RFSIndex AM
-		echo "<a href=\"$baseURLRFSAMIndex$line.rfs\" target=\"__blank\">$baseURLRFSAMIndex$line.rfs\</a><br>">>"$outputHTMLRFSRFSIndex"
+		echo "<a href=\"$baseURLRFSAMIndex$line.rfs\" target=\"__blank\">$baseURLRFSAMIndex$line.rfs</a><br>">>"$outputHTMLRFSRFSIndex"
 
 		# RFS EXE
-		echo "<a href=\"$baseURLRFSEXE$line.exe\" target=\"__blank\">$baseURLRFSEXE$line.exe\</a><br>">>"$outputHTMLRFSEXE"
+		echo "<a href=\"$baseURLRFSEXE$line.exe\" target=\"__blank\">$baseURLRFSEXE$line.exe</a><br>">>"$outputHTMLRFSEXE"
 
 		# RFS GH
-		echo "<a href=\"$baseURLRFSGH$line.rfs\" target=\"__blank\">$baseURLRFSGH$line.rfs\</a><br>">>"$outputHTMLRFSGH"
+		echo "<a href=\"$baseURLRFSGH$line.rfs\" target=\"__blank\">$baseURLRFSGH$line.rfs</a><br>">>"$outputHTMLRFSGH"
 
 	done < "$outputTMP"
 
