@@ -1,23 +1,26 @@
 #!/bin/sh
 
 
-# GH Game Link Dumper v0.1
+# GH Game Link Dumper v0.2
 
 # Part of the RealArcade Wrapper Killer
 
-# esc0rtd3w 2017
-
+# esc0rtd3w 2018
 
 baseURL="http://www.gamehouse.com"
+baseURLWeb="http://www.gamehouse.com/#/games/"
 baseURLRGSFree="http://games-dl2.real.com/gameconsole/games/demorgses/"
 baseURLRGSFull="http://games-dl2.real.com/gameconsole/games/demorgses/"
 baseURLRGA1="http://games-dl2.real.com/gameconsole/realarcadev21/games/am-"
 baseURLRGA2="http://games-dl2.real.com/gameconsole/realarcadev21/games/am-"
+baseURLRGA2Free="http://games-dl2.real.com/gameconsole/realarcadev21/games/amg-"
 baseURLRGA3="http://games-dl2.real.com/gameconsole/realarcadev21/games/dip/"
 baseURLRGA4="http://games-dl.gamehouse.com/zylom/ghmigration/"
-baseURLRFSGH="http://www.gamehouse.com"
-baseURLRFSAM="http://www.gamehouse.com"
-baseURLRFSAMIndex="http://www.gamehouse.com"
+baseURLRFS="http://games-dl.gamehouse.com/gamehouse/pc/"
+baseURLRFSAM="http://games-dl.gamehouse.com/gamehouse/pc/"
+baseURLRFSAMIndex="http://games-dl.gamehouse.com/gamehouse/pc/"
+baseURLRFSEXE="http://www.gamehouse.com/game/download/"
+baseURLRFSGH="http://games-dl.gamehouse.com/gamehouse/pc/"
 
 inputJSON="games-windows.json"
 
@@ -29,11 +32,13 @@ outputHTMLRGSFree="games-windows-links-rgs-free.html"
 outputHTMLRGSFull="games-windows-links-rgs-full.html"
 outputHTMLRGA1="games-windows-links-rga-v1.html"
 outputHTMLRGA2="games-windows-links-rga-v2.html"
+outputHTMLRGA2Free="games-windows-links-rga-v2-free.html"
 outputHTMLRGA3="games-windows-links-rga-v3.html"
 outputHTMLRGA4="games-windows-links-rga-v4.html"
-outputHTMLRFSGH="games-windows-links-rfs-gh.html"
 outputHTMLRFSAM="games-windows-links-rfs-am.html"
 outputHTMLRFSRFSIndex="games-windows-links-rfsindex-am.html"
+outputHTMLRFSEXE="games-windows-links-rfs-exe.html"
+outputHTMLRFSGH="games-windows-links-rfs-gh.html"
 
 outputTMP="dump.tmp"
 outputTMP2="dump2.tmp"
@@ -49,6 +54,13 @@ jsonAll="games-full.json"
 
 
 na="NO_DATA"
+
+extRgsFree="_free.rgs"
+extRgsFull="_full.rgs"
+extRga=".rga"
+extRfs=".rfs"
+
+wgetHeader="--header=\"Cookie: gamehouseuser=true\" --header=\"User-Agent: RealArcade Wrapper Killer v5.7.1\""
 
 # Data Gathering URL
 # http://www.gamehouse.com/datagathering/actiontracking?actiontrackingkindid=225&actiontrackingsourceid=4458
@@ -81,7 +93,7 @@ dumpGamesToList(){
 	do
 
 		# Output Text File
-		echo "$baseURL$line">>"$outputText"
+		echo "$baseURLWeb$line">>"$outputText"
 
 		## Output HTML Files
 
@@ -89,31 +101,37 @@ dumpGamesToList(){
 		echo "<a href=\"$baseURL$line\" target=\"__blank\">$baseURL$line\</a><br>">>"$outputHTML"
 
 		# RGS Free
-		echo "<a href=\"$baseURLRGSFree$line_free.rgs\" target=\"__blank\">$baseURL$line_free.rgs</a><br>">>"$outputHTMLRGSFree"
+		echo "<a href=\"$baseURLRGSFree$line$extRgsFree\" target=\"__blank\">$baseURLRGSFree$line$extRgsFree</a><br>">>"$outputHTMLRGSFree"
 
 		# RGS Full
-		echo "<a href=\"$baseURL$line_free.rgs\" target=\"__blank\">$baseURL$line_free.rgs</a><br>">>"$outputHTMLRGSFull"
+		echo "<a href=\"$baseURLRGSFull$line$extRgsFull\" target=\"__blank\">$baseURLRGSFull$line$extRgsFull</a><br>">>"$outputHTMLRGSFull"
 
 		# RGA v1
-		echo "<a href=\"$baseURL$line/am-$line.rga\" target=\"__blank\">$baseURL$line/am-$line.rga</a><br>">>"$outputHTMLRGA1"
+		echo "<a href=\"$baseURLRGA1$line/am-$line.rga\" target=\"__blank\">$baseURLRGA1$line/am-$line.rga</a><br>">>"$outputHTMLRGA1"
 
 		# RGA v2
-		echo "<a href=\"$baseURL$line/am-$line.rga\" target=\"__blank\">$baseURL$line/am-$line.rga</a><br>">>"$outputHTMLRGA2"
+		echo "<a href=\"$baseURLRGA2$line/am-$line.rga\" target=\"__blank\">$baseURLRGA2$line/am-$line.rga</a><br>">>"$outputHTMLRGA2"
+
+		# RGA v2 Free
+		echo "<a href=\"$baseURLRGA2Free$line/am-$line.rga\" target=\"__blank\">$baseURLRGA2Free$line/amg-$line.rga</a><br>">>"$outputHTMLRGA2"
 
 		# RGA v3
-		echo "<a href=\"$baseURL$line/$line.rga\" target=\"__blank\">$baseURL$line/$line.rga</a><br>">>"$outputHTMLRGA3"
+		echo "<a href=\"$baseURLRGA3$line/$line.rga\" target=\"__blank\">$baseURLRGA3$line/$line.rga</a><br>">>"$outputHTMLRGA3"
 
 		# RGA v4
-		echo "<a href=\"$baseURL$line/$line.rga\" target=\"__blank\">$baseURL$line/$line.rga</a><br>">>"$outputHTMLRGA4"
-
-		# RFS GH
-		#echo "<a href=\"$baseURL$line\" target=\"__blank\">$baseURL$line\</a><br>">>"$outputHTMLRFSGH"
+		echo "<a href=\"$baseURLRGA4$line/$line.rga\" target=\"__blank\">$baseURLRGA4$line/$line.rga</a><br>">>"$outputHTMLRGA4"
 
 		# RFS AM
-		#echo "<a href=\"$baseURL$line\" target=\"__blank\">$baseURL$line\</a><br>">>"$outputHTMLRFSAM"
+		echo "<a href=\"$baseURLRFSAM$line.rfs\" target=\"__blank\">$baseURLRFSAM$line.rfs\</a><br>">>"$outputHTMLRFSAM"
 
 		# RFSIndex AM
-		#echo "<a href=\"$baseURL$line\" target=\"__blank\">$baseURL$line\</a><br>">>"$outputHTMLRFSRFSIndex"
+		echo "<a href=\"$baseURLRFSAMIndex$line.rfs\" target=\"__blank\">$baseURLRFSAMIndex$line.rfs\</a><br>">>"$outputHTMLRFSRFSIndex"
+
+		# RFS EXE
+		echo "<a href=\"$baseURLRFSEXE$line.exe\" target=\"__blank\">$baseURLRFSEXE$line.exe\</a><br>">>"$outputHTMLRFSEXE"
+
+		# RFS GH
+		echo "<a href=\"$baseURLRFSGH$line.rfs\" target=\"__blank\">$baseURLRFSGH$line.rfs\</a><br>">>"$outputHTMLRFSGH"
 
 	done < "$outputTMP"
 
@@ -139,7 +157,7 @@ dumpPages(){
 	while read -r line
 	do
 		
-		wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.5.2" -O "$outputTMP" "$line"
+		wget $wgetHeader -O "$outputTMP" "$line"
 
 		# Get Some Info From Web Page
 		contentID=$(grep "contentid=" "$outputTMP" | cut -f3 -d"=" | cut -f1 -d"&")
@@ -189,7 +207,7 @@ dumpPagesCidOnly(){
 	while read -r line
 	do
 		
-		wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.5.2" -O "$outputTMP" "$line"
+		wget $wgetHeader -O "$outputTMP" "$line"
 
 		contentID=$(grep "contentid=" "$outputTMP" | cut -f3 -d"=" | cut -f1 -d"&")
 
@@ -229,6 +247,8 @@ writeIni(){
 	echo "rgs_full=$na">>"$dumpIni"
 	echo "rfs=$na">>"$dumpIni"
 	echo "rfs_index=$na">>"$dumpIni"
+	echo "rfs_gh=$na">>"$dumpIni"
+	echo "rfs_exe=$na">>"$dumpIni"
 	echo "">>"$dumpIni"
 
 }
@@ -237,6 +257,5 @@ dumpWebToJSON
 dumpGamesToList
 dumpPages
 #dumpPagesCidOnly
-
 
 
