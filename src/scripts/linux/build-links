@@ -103,6 +103,7 @@ dumpGamesToList(){
 	do
 		nameDashes=$(echo "$line")
 		nameNoDashes=$(echo "$line" | sed -e 's|["'-']||g')
+		nameFirstLetter=$(echo "$line" | sed -e "{ s/^\(.\).*/\1/ ; q }")
 
 		# Output Text File
 		echo "$baseURLDG$line">>"$outputText"
@@ -135,10 +136,10 @@ dumpGamesToList(){
 		echo "<a href=\"$baseURLRGA4$nameNoDashes/$nameNoDashes.rga\" target=\"__blank\">$baseURLRGA4$nameNoDashes/$nameNoDashes.rga</a><br>">>"$outputHTMLRGA4"
 
 		# RFS AM
-		echo "<a href=\"$baseURLRFSAM$nameDashes.rfs\" target=\"__blank\">$baseURLRFSAM$nameDashes.rfs</a><br>">>"$outputHTMLRFSAM"
+		echo "<a href=\"$baseURLRFSAM$nameFirstLetter/$nameDashes/$nameDashes.rfs\" target=\"__blank\">$baseURLRFSAM$nameFirstLetter/$nameDashes/$nameDashes.rfs</a><br>">>"$outputHTMLRFSAM"
 
 		# RFSIndex AM
-		echo "<a href=\"$baseURLRFSAMIndex$nameDashes.rfs\" target=\"__blank\">$baseURLRFSAMIndex$nameDashes.rfs</a><br>">>"$outputHTMLRFSRFSIndex"
+		echo "<a href=\"$baseURLRFSAMIndex$nameFirstLetter/$nameDashes.rfsindex\" target=\"__blank\">$baseURLRFSAMIndex$nameFirstLetter/$nameDashes.rfsindex</a><br>">>"$outputHTMLRFSRFSIndex"
 
 		# RFS EXE
 		echo "<a href=\"$baseURLRFSEXE$nameDashes.exe\" target=\"__blank\">$baseURLRFSEXE$nameDashes.exe</a><br>">>"$outputHTMLRFSEXE"
