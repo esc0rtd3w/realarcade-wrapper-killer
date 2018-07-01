@@ -87,6 +87,8 @@ dumpGamesToList(){
 	echo ""
 
 	getNameFromJSON=$(grep -Po '"url":.*?[^\\]"' "$inputJSON" | cut -f2 -d":" | cut -c3- | sed 's/"$//' | cut -c16-)
+	nameDashes=$(echo "$getNameFromJSON")
+	nameNoDashes=$(echo "$getNameFromJSON" | sed -e 's|["'-']||g')
 
 	#grep -Po '"url":.*?[^\\]"' "$inputJSON" | cut -f2 -d":" | cut -c2- | sed 's/"$//'>"$outputTMP"
 	#grep -Po '"url":.*?[^\\]"' "$inputJSON" | cut -f2 -d":" | cut -c3- | sed 's/"$//' | cut -c16- > "$outputTMP"
@@ -99,6 +101,9 @@ dumpGamesToList(){
 	# Create Files With Links
 	while read -r line
 	do
+		nameDashes=$(echo "$line")
+		nameNoDashes=$(echo "$line" | sed -e 's|["'-']||g')
+
 		# Output Text File
 		echo "$baseURLDG$line">>"$outputText"
 		echo "$baseURLWeb$line">>"$outputTextWeb"
@@ -106,40 +111,40 @@ dumpGamesToList(){
 		## Output HTML Files
 
 		# GameHouse Web Page
-		echo "<a href=\"$baseURL$line\" target=\"__blank\">$baseURL$line\</a><br>">>"$outputHTML"
+		echo "<a href=\"$baseURL$nameDashes\" target=\"__blank\">$baseURL$nameDashes\</a><br>">>"$outputHTML"
 
 		# RGS Free
-		echo "<a href=\"$baseURLRGSFree$line$extRgsFree\" target=\"__blank\">$baseURLRGSFree$line$extRgsFree</a><br>">>"$outputHTMLRGSFree"
+		echo "<a href=\"$baseURLRGSFree$nameNoDashes$extRgsFree\" target=\"__blank\">$baseURLRGSFree$nameNoDashes$extRgsFree</a><br>">>"$outputHTMLRGSFree"
 
 		# RGS Full
-		echo "<a href=\"$baseURLRGSFull$line$extRgsFull\" target=\"__blank\">$baseURLRGSFull$line$extRgsFull</a><br>">>"$outputHTMLRGSFull"
+		echo "<a href=\"$baseURLRGSFull$nameNoDashes$extRgsFull\" target=\"__blank\">$baseURLRGSFull$nameNoDashes$extRgsFull</a><br>">>"$outputHTMLRGSFull"
 
 		# RGA v1
-		echo "<a href=\"$baseURLRGA1$line/am-$line.rga\" target=\"__blank\">$baseURLRGA1$line/am-$line.rga</a><br>">>"$outputHTMLRGA1"
+		echo "<a href=\"$baseURLRGA1$nameNoDashes/am-$nameNoDashes.rga\" target=\"__blank\">$baseURLRGA1$nameNoDashes/am-$nameNoDashes.rga</a><br>">>"$outputHTMLRGA1"
 
 		# RGA v2
-		echo "<a href=\"$baseURLRGA2$line/am-$line.rga\" target=\"__blank\">$baseURLRGA2$line/am-$line.rga</a><br>">>"$outputHTMLRGA2"
+		echo "<a href=\"$baseURLRGA2$nameNoDashes/am-$nameNoDashes.rga\" target=\"__blank\">$baseURLRGA2$nameNoDashes/am-$nameNoDashes.rga</a><br>">>"$outputHTMLRGA2"
 
 		# RGA v2 Free
-		echo "<a href=\"$baseURLRGA2Free$line/am-$line.rga\" target=\"__blank\">$baseURLRGA2Free$line/amg-$line.rga</a><br>">>"$outputHTMLRGA2Free"
+		echo "<a href=\"$baseURLRGA2Free$nameNoDashes/am-$nameNoDashes.rga\" target=\"__blank\">$baseURLRGA2Free$nameNoDashes/amg-$nameNoDashes.rga</a><br>">>"$outputHTMLRGA2Free"
 
 		# RGA v3
-		echo "<a href=\"$baseURLRGA3$line/$line.rga\" target=\"__blank\">$baseURLRGA3$line/$line.rga</a><br>">>"$outputHTMLRGA3"
+		echo "<a href=\"$baseURLRGA3$nameNoDashes/$nameNoDashes.rga\" target=\"__blank\">$baseURLRGA3$nameNoDashes/$nameNoDashes.rga</a><br>">>"$outputHTMLRGA3"
 
 		# RGA v4
-		echo "<a href=\"$baseURLRGA4$line/$line.rga\" target=\"__blank\">$baseURLRGA4$line/$line.rga</a><br>">>"$outputHTMLRGA4"
+		echo "<a href=\"$baseURLRGA4$nameNoDashes/$nameNoDashes.rga\" target=\"__blank\">$baseURLRGA4$nameNoDashes/$nameNoDashes.rga</a><br>">>"$outputHTMLRGA4"
 
 		# RFS AM
-		echo "<a href=\"$baseURLRFSAM$line.rfs\" target=\"__blank\">$baseURLRFSAM$line.rfs</a><br>">>"$outputHTMLRFSAM"
+		echo "<a href=\"$baseURLRFSAM$nameDashes.rfs\" target=\"__blank\">$baseURLRFSAM$nameDashes.rfs</a><br>">>"$outputHTMLRFSAM"
 
 		# RFSIndex AM
-		echo "<a href=\"$baseURLRFSAMIndex$line.rfs\" target=\"__blank\">$baseURLRFSAMIndex$line.rfs</a><br>">>"$outputHTMLRFSRFSIndex"
+		echo "<a href=\"$baseURLRFSAMIndex$nameDashes.rfs\" target=\"__blank\">$baseURLRFSAMIndex$nameDashes.rfs</a><br>">>"$outputHTMLRFSRFSIndex"
 
 		# RFS EXE
-		echo "<a href=\"$baseURLRFSEXE$line.exe\" target=\"__blank\">$baseURLRFSEXE$line.exe</a><br>">>"$outputHTMLRFSEXE"
+		echo "<a href=\"$baseURLRFSEXE$nameDashes.exe\" target=\"__blank\">$baseURLRFSEXE$nameDashes.exe</a><br>">>"$outputHTMLRFSEXE"
 
 		# RFS GH
-		echo "<a href=\"$baseURLRFSGH$line.rfs\" target=\"__blank\">$baseURLRFSGH$line.rfs</a><br>">>"$outputHTMLRFSGH"
+		echo "<a href=\"$baseURLRFSGH$nameNoDashes.rfs\" target=\"__blank\">$baseURLRFSGH$nameNoDashes.rfs</a><br>">>"$outputHTMLRFSGH"
 
 	done < "$outputTMP"
 
