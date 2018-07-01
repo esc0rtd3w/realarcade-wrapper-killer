@@ -112,7 +112,7 @@ dumpGamesToList(){
 		## Output HTML Files
 
 		# GameHouse Web Page
-		echo "<a href=\"$baseURL$nameDashes\" target=\"__blank\">$baseURL$nameDashes\</a><br>">>"$outputHTML"
+		echo "<a href=\"$baseURL$nameDashes\" target=\"__blank\">$baseURL$nameDashes</a><br>">>"$outputHTML"
 
 		# RGS Free
 		echo "<a href=\"$baseURLRGSFree$nameNoDashes$extRgsFree\" target=\"__blank\">$baseURLRGSFree$nameNoDashes$extRgsFree</a><br>">>"$outputHTMLRGSFree"
