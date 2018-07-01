@@ -7,9 +7,9 @@
 
 # esc0rtd3w 2018
 
-baseURL="http://www.gamehouse.com"
-baseURLDG="http://www.gamehouse.com/download-games"
-baseURLWeb="http://www.gamehouse.com/#/games"
+baseURL="http://www.gamehouse.com/"
+baseURLDG="http://www.gamehouse.com/download-games/"
+baseURLWeb="http://www.gamehouse.com/#/games/"
 baseURLRGSFree="http://games-dl2.real.com/gameconsole/games/demorgses/"
 baseURLRGSFull="http://games-dl2.real.com/gameconsole/games/demorgses/"
 baseURLRGA1="http://games-dl2.real.com/gameconsole/realarcadev21/games/am-"
@@ -86,7 +86,7 @@ dumpGamesToList(){
 	echo ""
 	echo ""
 	#grep -Po '"url":.*?[^\\]"' "$inputJSON" | cut -f2 -d":" | cut -c2- | sed 's/"$//'>"$outputTMP"
-	grep -Po '"url":.*?[^\\]"' "$inputJSON" | cut -f2 -d":" | cut -c2- | sed 's/"$//' | cut -c16- > "$outputTMP"
+	grep -Po '"url":.*?[^\\]"' "$inputJSON" | cut -f2 -d":" | cut -c3- | sed 's/"$//' | cut -c16- > "$outputTMP"
 
 	rm "$outputText"
 	rm "$outputHTML"
