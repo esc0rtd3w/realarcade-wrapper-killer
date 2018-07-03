@@ -14,5 +14,5 @@ class AMIServer(SimpleHTTPServer.SimpleHTTPRequestHandler):
 print "Starting AM Instant Server on " + IP + ":" + str(PORT)
 
 SocketServer.TCPServer.allow_reuse_address = True
-server = SocketServer.TCPServer(('', PORT), AMIServer)
+server = SocketServer.TCPServer(('127.0.0.1', PORT), AMIServer)
 server.serve_forever()
