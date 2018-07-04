@@ -237,6 +237,7 @@ dumpPages(){
 		nameDashes=$(readNameDashes)
 		nameNoDashes=$(readNameNoDashes)
 
+		# Read from dataLayer array in HTML source
 		nameTitle=$(readDataLayer "game_name")
 		gamesetName=$(readDataLayer "gameset_name")
 		gamesetID=$(readDataLayer "gameset_id")
