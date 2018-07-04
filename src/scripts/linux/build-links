@@ -303,10 +303,12 @@ writeIni(){
 
 writeXML(){
 
-	echo "<!--Game List Dumped By The RealArcade Wrapper Killer-->">"$dumpXML"
+	echo "<!--Game List Dumped By The RealArcade Wrapper Killer-->">>"$dumpXML"
 	echo "">>"$dumpXML"
 	echo "">>"$dumpXML"
+	echo "<dump_root>">>"$dumpXML"
 	echo "<game>">>"$dumpXML"
+	echo "<entry>$gameCounter</entry>">>"$dumpXML"
 	echo "<game_id>$gameID</game_id>">>"$dumpXML"
 	echo "<genre>$genreName</genre>">>"$dumpXML"
 	echo "<name_title>$nameTitle</name_title>">>"$dumpXML"	
@@ -317,6 +319,7 @@ writeXML(){
 	echo "<gameset_id>$gamesetID</gameset_id>">>"$dumpXML"
 	echo "<game_id>$gameID</game_id>">>"$dumpXML"
 	echo "</game>">>"$dumpXML"
+	echo "</dump_root>">>"$dumpXML"
 	echo "">>"$dumpXML"
 
 }
