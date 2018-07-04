@@ -43,7 +43,6 @@ outputHTMLRFSEXE="games-windows-links-rfs-exe.html"
 outputHTMLRFSGH="games-windows-links-rfs-gh.html"
 
 outputTMP="dump.tmp"
-outputTMP2="dump2.tmp"
 
 dumpText="games-windows-dump-list.txt"
 dumpTextCID="games-windows-cid-dump-list.txt"
@@ -62,11 +61,36 @@ extRgsFull="_full.rgs"
 extRga=".rga"
 extRfs=".rfs"
 
+testPage="http://www.gamehouse.com/download-games/experiment"
+
 #wgetHeader="--header=\"Cookie: gamehouseuser=true\" --header=\"User-Agent: RealArcade Wrapper Killer v5.7.1\""
 
 # Data Gathering URL
 # http://www.gamehouse.com/datagathering/actiontracking?actiontrackingkindid=225&actiontrackingsourceid=4458
 
+
+removeOldFiles(){
+
+	rm "$outputText"
+	rm "$outputTextCID"
+	rm "$outputTextWeb"
+	rm "$outputHTML"
+	rm "$outputHTMLRGSFree"
+	rm "$outputHTMLRGSFull"
+	rm "$outputHTMLRGA1"
+	rm "$outputHTMLRGA2"
+	rm "$outputHTMLRGA2Free"
+	rm "$outputHTMLRGA3"
+	rm "$outputHTMLRGA4"
+	rm "$outputHTMLRFSAM"
+	rm "$outputHTMLRFSRFSIndex"
+	rm "$outputHTMLRFSEXE"
+	rm "$outputHTMLRFSGH"
+	rm "$outputHTMLRFSGH"
+	rm "$outputHTMLRFSGH"
+	rm "$dumpIni"
+
+}
 
 dumpWebToJSON(){
 
@@ -80,7 +104,9 @@ dumpWebToJSON(){
 
 
 dumpGamesToList(){
-	
+
+	removeOldFiles
+
 	clear
 	echo "Building List From \"$inputJSON\""
 	echo ""
@@ -94,9 +120,6 @@ dumpGamesToList(){
 	#grep -Po '"url":.*?[^\\]"' "$inputJSON" | cut -f2 -d":" | cut -c3- | sed 's/"$//' | cut -c16- > "$outputTMP"
 
 	echo "$getNameFromJSON" > "$outputTMP"
-
-	rm "$outputText"
-	rm "$outputHTML"
 
 	# Create Files With Links
 	while read -r line
@@ -155,16 +178,44 @@ dumpGamesToList(){
 
 dumpPages(){
 
-	
-	rm "$dumpText"
-
+	# Reset Game Counter
 	gameCounter=0
 
+	# Remove Old Files
+	rm "$dumpText"
+	rm "$dumpIni"
+	rm "$outputTMP"
 
-	# Write INI Header (Done Once Before Loop)
+	# Write INI Dump Header (Done Once Before Loop)
 	echo "; Game List Dumped By The RealArcade Wrapper Killer">"$dumpIni"
 	echo "">>"$dumpIni"
 	echo "">>"$dumpIni"
+
+	# Get Basic Info From Sample Page
+	wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.7.1" -O "$outputTMP" "$testPage"
+	osName=$(readDataLayer "operating_system_name")
+	playerID=$(readDataLayer "player_id")
+	isLoggedIn=$(readDataLayer "is_logged_in")
+	isFunticketSubscriber=$(readDataLayer "is_funticket_subscriber")
+	isExFunticketTrialSubscriber=$(readDataLayer "is_ex_funticket_trial_subscriber")
+	isFunticketTriuthlSubscriber=$(readDataLayer "is_funticket_triuthl_subscriber")
+	isTakeOverActive=$(readDataLayer "is_take_over_active")
+	rm "$outputTMP"
+
+	# Write Text Dump Header (Done Once Before Loop)
+	echo "; Game List Dumped By The RealArcade Wrapper Killer">"$dumpText"
+	echo "">>"$dumpText"
+	echo "">>"$dumpText"
+	echo "">>"$dumpText"
+	echo "osName: $osName">>"$dumpText"
+	echo "playerID: $playerID">>"$dumpText"
+	echo "isLoggedIn: $isLoggedIn">>"$dumpText"
+	echo "isFunticketSubscriber: $isFunticketSubscriber">>"$dumpText"
+	echo "isExFunticketTrialSubscriber: $isExFunticketTrialSubscriber">>"$dumpText"
+	echo "isFunticketTriuthlSubscriber: $isFunticketTriuthlSubscriber">>"$dumpText"
+	echo "isTakeOverActive: $isTakeOverActive">>"$dumpText"
+	echo "">>"$dumpText"
+	echo "">>"$dumpText"
 
 
 	# Follow Links and Dump Pages
@@ -179,6 +230,12 @@ dumpPages(){
 		nameDashes=$(grep "review-content-grp').load('/reviews/all/game/" "$outputTMP" | cut -f5 -d"/")
 		nameNoDashes=$(grep "review-content-grp').load('/reviews/all/game/" "$outputTMP" | cut -f5 -d"/" | sed -e 's|["'-']||g')
 
+		gamesetName=$(readDataLayer "gameset_name")
+		gamesetID=$(readDataLayer "gameset_id")
+		gameID=$(readDataLayer "game_id")
+		genreName=$(readDataLayer "main_genre_name")
+		
+
 		gameCounter=$(($gameCounter + 1))
 
 		echo ""	
@@ -189,16 +246,24 @@ dumpPages(){
 		echo "nameTitle: $nameTitle"
 		echo "nameDashes: $nameDashes"
 		echo "nameNoDashes: $nameNoDashes"
+		echo "gamesetName: $gamesetName"
+		echo "gamesetID: $gamesetID"
+		echo "gameID: $gameID"
+		echo "genreName: $genreName"
 		echo ""	
 
 		# Write To File
 		echo "">>"$dumpText"		
-		echo "Game Entry #$gameCounter:">>"$dumpText"			
-		echo "">>"$dumpText"			
-		echo "contentID: $contentID">>"$dumpText"	
-		echo "nameTitle: $nameTitle">>"$dumpText"	
-		echo "nameDashes: $nameDashes">>"$dumpText"	
-		echo "nameNoDashes: $nameNoDashes">>"$dumpText"	
+		echo "Game Entry #$gameCounter:">>"$dumpText"	
+		echo "">>"$dumpText"
+		echo "contentID: $contentID">>"$dumpText"
+		echo "nameTitle: $nameTitle">>"$dumpText"
+		echo "nameDashes: $nameDashes">>"$dumpText"
+		echo "nameNoDashes: $nameNoDashes">>"$dumpText"
+		echo "gamesetName: $gamesetName">>"$dumpText"
+		echo "gamesetID: $gamesetID">>"$dumpText"
+		echo "gameID: $gameID">>"$dumpText"
+		echo "genreName: $genreName">>"$dumpText"
 		echo ""		
 
 		# Write INI File
@@ -262,6 +327,12 @@ writeIni(){
 	echo "rfs=$na">>"$dumpIni"
 	echo "rfs_index=$na">>"$dumpIni"
 	echo "">>"$dumpIni"
+
+}
+
+readDataLayer(){
+
+	grep "$1" "$outputTMP" | cut -f2 -d":" | cut -c2- | sed 's/,$//' | sed -e 's|["'\'']||g'
 
 }
 
