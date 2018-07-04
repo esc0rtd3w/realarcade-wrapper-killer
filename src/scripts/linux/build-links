@@ -220,7 +220,7 @@ dumpPages(){
 	echo "">>"$dumpText"
 
 	# Write XML Dump Header (Done Once Before Loop)
-	echo "<!--Game List Dumped By The RealArcade Wrapper Killer-->">>"$dumpXML"
+	echo "<!--Game List Dumped By The RealArcade Wrapper Killer-->">"$dumpXML"
 	echo "">>"$dumpXML"
 	echo "">>"$dumpXML"
 	echo "<dump_root>">>"$dumpXML"
