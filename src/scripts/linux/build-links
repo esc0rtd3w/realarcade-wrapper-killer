@@ -303,14 +303,19 @@ writeIni(){
 
 writeXML(){
 
+	echo "<!--Game List Dumped By The RealArcade Wrapper Killer-->">"$dumpXML"
 	echo "">>"$dumpXML"
 	echo "">>"$dumpXML"
 	echo "<game>">>"$dumpXML"
 	echo "<game_id>$gameID</game_id>">>"$dumpXML"
-	echo "<content_id>$contentID</content_id>">>"$dumpXML"
+	echo "<genre>$genreName</genre>">>"$dumpXML"
 	echo "<name_title>$nameTitle</name_title>">>"$dumpXML"	
 	echo "<name_stub>$nameNoDashes</name_stub>">>"$dumpXML"
 	echo "<name_web>$nameDashes</name_web>">>"$dumpXML"
+	echo "<gameset_name>$gamesetName</gameset_name>">>"$dumpXML"
+	echo "<content_id>$contentID</content_id>">>"$dumpXML"
+	echo "<gameset_id>$gamesetID</gameset_id>">>"$dumpXML"
+	echo "<game_id>$gameID</game_id>">>"$dumpXML"
 	echo "</game>">>"$dumpXML"
 	echo "">>"$dumpXML"
 
