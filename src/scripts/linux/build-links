@@ -219,6 +219,12 @@ dumpPages(){
 	echo "">>"$dumpText"
 	echo "">>"$dumpText"
 
+	# Write XML Dump Header (Done Once Before Loop)
+	echo "<!--Game List Dumped By The RealArcade Wrapper Killer-->">>"$dumpXML"
+	echo "">>"$dumpXML"
+	echo "">>"$dumpXML"
+	echo "<dump_root>">>"$dumpXML"
+
 
 	# Follow Links and Dump Pages
 	while read -r line
@@ -254,28 +260,36 @@ dumpPages(){
 		echo "genreName: $genreName"
 		echo ""	
 
-		# Write To File
-		echo "">>"$dumpText"		
-		echo "Game Entry #$gameCounter:">>"$dumpText"	
-		echo "">>"$dumpText"
-		echo "contentID: $contentID">>"$dumpText"
-		echo "nameTitle: $nameTitle">>"$dumpText"
-		echo "nameDashes: $nameDashes">>"$dumpText"
-		echo "nameNoDashes: $nameNoDashes">>"$dumpText"
-		echo "gamesetName: $gamesetName">>"$dumpText"
-		echo "gamesetID: $gamesetID">>"$dumpText"
-		echo "gameID: $gameID">>"$dumpText"
-		echo "genreName: $genreName">>"$dumpText"
-		echo ""		
-
+		# Append New Data To Files For Each Loop
+		writeText
 		writeIni
 		writeXML
 
 	done < "$outputText"
 	
+	# Close XML File Layout After List Is Complete
+	echo "</dump_root>">>"$dumpXML"
+	
+	# Cleanup Files
 	rm "$outputTMP"
 }
 
+
+writeText(){
+
+	echo "">>"$dumpText"		
+	echo "Game Entry #$gameCounter:">>"$dumpText"	
+	echo "">>"$dumpText"
+	echo "contentID: $contentID">>"$dumpText"
+	echo "nameTitle: $nameTitle">>"$dumpText"
+	echo "nameDashes: $nameDashes">>"$dumpText"
+	echo "nameNoDashes: $nameNoDashes">>"$dumpText"
+	echo "gamesetName: $gamesetName">>"$dumpText"
+	echo "gamesetID: $gamesetID">>"$dumpText"
+	echo "gameID: $gameID">>"$dumpText"
+	echo "genreName: $genreName">>"$dumpText"
+	echo ""	
+}
 
 writeIni(){
 
@@ -303,10 +317,6 @@ writeIni(){
 
 writeXML(){
 
-	echo "<!--Game List Dumped By The RealArcade Wrapper Killer-->">>"$dumpXML"
-	echo "">>"$dumpXML"
-	echo "">>"$dumpXML"
-	echo "<dump_root>">>"$dumpXML"
 	echo "<game>">>"$dumpXML"
 	echo "<entry>$gameCounter</entry>">>"$dumpXML"
 	echo "<game_id>$gameID</game_id>">>"$dumpXML"
@@ -319,7 +329,6 @@ writeXML(){
 	echo "<gameset_id>$gamesetID</gameset_id>">>"$dumpXML"
 	echo "<game_id>$gameID</game_id>">>"$dumpXML"
 	echo "</game>">>"$dumpXML"
-	echo "</dump_root>">>"$dumpXML"
 	echo "">>"$dumpXML"
 
 }
