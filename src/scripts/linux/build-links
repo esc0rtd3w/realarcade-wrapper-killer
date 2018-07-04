@@ -48,6 +48,7 @@ dumpText="games-windows-dump-list.txt"
 dumpTextCID="games-windows-cid-dump-list.txt"
 
 dumpIni="games-windows-dump-list.ini"
+dumpXML="games-windows-dump-list.xml"
 
 jsonWindows="games-windows.json"
 jsonOnline="games-online.json"
@@ -89,6 +90,7 @@ removeOldFiles(){
 	rm "$outputHTMLRFSGH"
 	rm "$outputHTMLRFSGH"
 	rm "$dumpIni"
+	rm "$dumpXML"
 
 }
 
@@ -192,7 +194,7 @@ dumpPages(){
 	echo "">>"$dumpIni"
 
 	# Get Basic Info From Sample Page
-	wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.7.1" -O "$outputTMP" "$testPage"
+	dumpPageToTemp "$testPage"
 	osName=$(readDataLayer "operating_system_name")
 	playerID=$(readDataLayer "player_id")
 	isLoggedIn=$(readDataLayer "is_logged_in")
@@ -222,7 +224,7 @@ dumpPages(){
 	while read -r line
 	do
 		
-		wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.7.1" -O "$outputTMP" "$line"
+		dumpPageToTemp "$line"
 
 		# Get Some Info From Web Page
 		contentID=$(readContentID)
@@ -266,8 +268,8 @@ dumpPages(){
 		echo "genreName: $genreName">>"$dumpText"
 		echo ""		
 
-		# Write INI File
 		writeIni
+		writeXML
 
 	done < "$outputText"
 	
@@ -295,6 +297,38 @@ writeIni(){
 	echo "rfs=$na">>"$dumpIni"
 	echo "rfs_index=$na">>"$dumpIni"
 	echo "">>"$dumpIni"
+
+}
+
+
+writeXML(){
+
+	echo "">>"$dumpXML"
+	echo "">>"$dumpXML"
+	echo "<game>">>"$dumpXML"
+	echo "<game_id>">>"$dumpXML"
+	echo "$gameID">>"$dumpXML"
+	echo "</game_id>">>"$dumpXML"
+	echo "<content_id>">>"$dumpXML"
+	echo "$contentID">>"$dumpXML"
+	echo "</content_id>">>"$dumpXML"
+	echo "<name_title>">>"$dumpXML"	
+	echo "$nameTitle">>"$dumpXML"	
+	echo "</name_title>">>"$dumpXML"	
+	echo "<name_stub>">>"$dumpXML"	
+	echo "$nameNoDashes">>"$dumpXML"	
+	echo "<name_stub>">>"$dumpXML"	
+	echo "<name_web>">>"$dumpXML"	
+	echo "$nameDashes">>"$dumpXML"	
+	echo "<name_web>">>"$dumpXML"
+	echo "</game>">>"$dumpXML"
+	echo "">>"$dumpXML"
+
+}
+
+dumpPageToTemp(){
+
+	wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.7.1" -O "$outputTMP" "$1"
 
 }
 
