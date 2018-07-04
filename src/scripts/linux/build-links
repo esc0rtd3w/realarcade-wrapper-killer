@@ -198,12 +198,12 @@ dumpPages(){
 	isLoggedIn=$(readDataLayer "is_logged_in")
 	isFunticketSubscriber=$(readDataLayer "is_funticket_subscriber")
 	isExFunticketTrialSubscriber=$(readDataLayer "is_ex_funticket_trial_subscriber")
-	isFunticketTriuthlSubscriber=$(readDataLayer "is_funticket_triuthl_subscriber")
+	#isFunticketTriuthlSubscriber=$(readDataLayer "is_funticket_triuthl_subscriber")
 	isTakeOverActive=$(readDataLayer "is_take_over_active")
 	rm "$outputTMP"
 
 	# Write Text Dump Header (Done Once Before Loop)
-	echo "; Game List Dumped By The RealArcade Wrapper Killer">"$dumpText"
+	echo "Game List Dumped By The RealArcade Wrapper Killer">"$dumpText"
 	echo "">>"$dumpText"
 	echo "">>"$dumpText"
 	echo "">>"$dumpText"
@@ -212,7 +212,7 @@ dumpPages(){
 	echo "isLoggedIn: $isLoggedIn">>"$dumpText"
 	echo "isFunticketSubscriber: $isFunticketSubscriber">>"$dumpText"
 	echo "isExFunticketTrialSubscriber: $isExFunticketTrialSubscriber">>"$dumpText"
-	echo "isFunticketTriuthlSubscriber: $isFunticketTriuthlSubscriber">>"$dumpText"
+	#echo "isFunticketTriuthlSubscriber: $isFunticketTriuthlSubscriber">>"$dumpText"
 	echo "isTakeOverActive: $isTakeOverActive">>"$dumpText"
 	echo "">>"$dumpText"
 	echo "">>"$dumpText"
