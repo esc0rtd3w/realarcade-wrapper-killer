@@ -225,11 +225,11 @@ dumpPages(){
 		wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.7.1" -O "$outputTMP" "$line"
 
 		# Get Some Info From Web Page
-		contentID=$(grep "contentid=" "$outputTMP" | cut -f3 -d"=" | cut -f1 -d"&")
-		nameTitle=$(grep "game_name" "$outputTMP" | cut -f2 -d":" | cut -c2- | sed 's/,$//' | sed -e 's|["'\'']||g')
-		nameDashes=$(grep "review-content-grp').load('/reviews/all/game/" "$outputTMP" | cut -f5 -d"/")
-		nameNoDashes=$(grep "review-content-grp').load('/reviews/all/game/" "$outputTMP" | cut -f5 -d"/" | sed -e 's|["'-']||g')
+		contentID=$(readContentID)
+		nameDashes=$(readNameDashes)
+		nameNoDashes=$(readNameNoDashes)
 
+		nameTitle=$(readDataLayer "game_name")
 		gamesetName=$(readDataLayer "gameset_name")
 		gamesetID=$(readDataLayer "gameset_id")
 		gameID=$(readDataLayer "game_id")
@@ -335,6 +335,25 @@ readDataLayer(){
 	grep "$1" "$outputTMP" | cut -f2 -d":" | cut -c2- | sed 's/,$//' | sed -e 's|["'\'']||g'
 
 }
+
+readContentID(){
+
+	grep "contentid=" "$outputTMP" | cut -f3 -d"=" | cut -f1 -d"&"
+
+}
+
+readNameDashes(){
+
+	grep "review-content-grp').load('/reviews/all/game/" "$outputTMP" | cut -f5 -d"/"
+
+}
+
+readNameNoDashes(){
+
+	grep "review-content-grp').load('/reviews/all/game/" "$outputTMP" | cut -f5 -d"/" | sed -e 's|["'-']||g'
+
+}
+
 
 dumpWebToJSON
 dumpGamesToList
