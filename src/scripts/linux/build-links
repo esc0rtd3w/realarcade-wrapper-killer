@@ -21,7 +21,8 @@ baseURLRFS="http://games-dl.gamehouse.com/gamehouse/pc/"
 baseURLRFSAM="http://games-dl.gamehouse.com/gamehouse/pc/"
 baseURLRFSAMIndex="http://profiler-cdn.am.gamehouse.com/gamehouse/pc/"
 baseURLRFSEXE="http://www.gamehouse.com/game/download/"
-baseURLRFSGH="http://games-dl.gamehouse.com/gamehouse/pc/"
+baseURLRFSGHWeb="http://www.gamehouse.com/download/ogm/pc/"
+baseURLRFSGHIM="http://installer-manager.gamehouse.com/InstallerManager/getinstaller?filename="
 
 inputJSON="games-windows.json"
 
@@ -40,9 +41,11 @@ outputHTMLRGA4="games-windows-links-rga-v4.html"
 outputHTMLRFSAM="games-windows-links-rfs-am.html"
 outputHTMLRFSRFSIndex="games-windows-links-rfsindex-am.html"
 outputHTMLRFSEXE="games-windows-links-rfs-exe.html"
-outputHTMLRFSGH="games-windows-links-rfs-gh.html"
+outputHTMLRFSGHWeb="games-windows-links-rfs-gh-web.html"
+outputHTMLRFSGHWebTemp="games-windows-links-rfs-gh-web.tmp"
 
 outputTMP="dump.tmp"
+outputJSON="dump.json"
 
 dumpText="games-windows-dump-list.txt"
 dumpTextCID="games-windows-cid-dump-list.txt"
@@ -86,11 +89,14 @@ removeOldFiles(){
 	rm "$outputHTMLRFSAM"
 	rm "$outputHTMLRFSRFSIndex"
 	rm "$outputHTMLRFSEXE"
-	rm "$outputHTMLRFSGH"
-	rm "$outputHTMLRFSGH"
-	rm "$outputHTMLRFSGH"
+	rm "$outputHTMLRFSGHWeb"
 	rm "$dumpIni"
+	rm "$dumpText"
 	rm "$dumpXML"
+	rm "$outputHTMLRFSGHWeb"
+	rm "$outputHTMLRFSGHWebTemp"
+	rm "$outputTMP"
+	rm "$outputJSON"
 
 }
 
@@ -169,8 +175,8 @@ dumpGamesToList(){
 		# RFS EXE
 		echo "<a href=\"$baseURLRFSEXE$nameDashes.exe\" target=\"__blank\">$baseURLRFSEXE$nameDashes.exe</a><br>">>"$outputHTMLRFSEXE"
 
-		# RFS GH
-		echo "<a href=\"$baseURLRFSGH$nameNoDashes.rfs\" target=\"__blank\">$baseURLRFSGH$nameNoDashes.rfs</a><br>">>"$outputHTMLRFSGH"
+		# RFS GH Web Temp
+		echo "<a href=\"$baseURLRFSGHWeb$nameDashes.json\" target=\"__blank\">$baseURLRFSGHWeb$nameDashes.json</a><br>">>"$outputHTMLRFSGHWebTemp"
 
 	done < "$outputTMP"
 
@@ -261,6 +267,8 @@ dumpPages(){
 		echo "genreName: $genreName"
 		echo ""	
 
+		dumpJsonGHRFS "$line"
+
 		# Append New Data To Files For Each Loop
 		writeText
 		writeIni
@@ -273,6 +281,27 @@ dumpPages(){
 	
 	# Cleanup Files
 	rm "$outputTMP"
+}
+
+
+dumpJsonGHRFS(){
+
+	
+	wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.7.1" -O "$outputJSON" "$baseURLRFSGHWeb$nameDashes.json"
+
+	installerName=$(getinstallerName)
+
+	echo "<a href=\"$baseURLRGA4$nameNoDashes/$installerName\" target=\"__blank\">$baseURLRGA4$nameNoDashes/$installerName</a><br>">>"$outputHTMLRFSGHWeb"
+	
+	# Cleanup Files
+	rm "$outputJSON"
+	rm "$outputHTMLRFSGHWebTemp"
+}
+
+getinstallerName(){
+
+	grep "filename=" "$outputJSON" | cut -f2 -d"=" | cut -f1 -d"&"
+
 }
 
 
@@ -367,6 +396,7 @@ readNameNoDashes(){
 }
 
 
+removeOldFiles
 dumpWebToJSON
 dumpGamesToList
 dumpPages
