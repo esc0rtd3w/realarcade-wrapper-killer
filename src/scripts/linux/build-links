@@ -42,7 +42,7 @@ outputHTMLRFSAM="games-windows-links-rfs-am.html"
 outputHTMLRFSRFSIndex="games-windows-links-rfsindex-am.html"
 outputHTMLRFSEXE="games-windows-links-rfs-exe.html"
 outputHTMLRFSGHWeb="games-windows-links-rfs-gh-web.html"
-outputHTMLRFSGHWebTemp="games-windows-links-rfs-gh-web.tmp"
+#outputHTMLRFSGHWebTemp="games-windows-links-rfs-gh-web.tmp"
 
 outputTMP="dump.tmp"
 outputJSON="dump.json"
@@ -94,7 +94,7 @@ removeOldFiles(){
 	rm "$dumpText"
 	rm "$dumpXML"
 	rm "$outputHTMLRFSGHWeb"
-	rm "$outputHTMLRFSGHWebTemp"
+	#rm "$outputHTMLRFSGHWebTemp"
 	rm "$outputTMP"
 	rm "$outputJSON"
 
@@ -176,7 +176,7 @@ dumpGamesToList(){
 		echo "<a href=\"$baseURLRFSEXE$nameDashes.exe\" target=\"__blank\">$baseURLRFSEXE$nameDashes.exe</a><br>">>"$outputHTMLRFSEXE"
 
 		# RFS GH Web Temp
-		echo "<a href=\"$baseURLRFSGHWeb$nameDashes.json\" target=\"__blank\">$baseURLRFSGHWeb$nameDashes.json</a><br>">>"$outputHTMLRFSGHWebTemp"
+		#echo "<a href=\"$baseURLRFSGHWeb$nameDashes.json\" target=\"__blank\">$baseURLRFSGHWeb$nameDashes.json</a><br>">>"$outputHTMLRFSGHWebTemp"
 
 	done < "$outputTMP"
 
@@ -290,12 +290,13 @@ dumpJsonGHRFS(){
 	wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.7.1" -O "$outputJSON" "$baseURLRFSGHWeb$nameDashes.json"
 
 	installerName=$(getinstallerName)
-
+	
+	# RFS GH Web
 	echo "<a href=\"$baseURLRGA4$nameNoDashes/$installerName\" target=\"__blank\">$baseURLRGA4$nameNoDashes/$installerName</a><br>">>"$outputHTMLRFSGHWeb"
 	
 	# Cleanup Files
 	rm "$outputJSON"
-	rm "$outputHTMLRFSGHWebTemp"
+	#rm "$outputHTMLRFSGHWebTemp"
 }
 
 getinstallerName(){
