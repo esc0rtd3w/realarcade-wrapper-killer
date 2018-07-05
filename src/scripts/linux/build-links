@@ -254,14 +254,14 @@ dumpPages(){
 		echo ""	
 		echo "Game Entry #$gameCounter:"		
 		echo ""		
-		echo "contentID: $contentID"
 		echo "nameTitle: $nameTitle"
-		echo "nameDashes: $nameDashes"
-		echo "nameNoDashes: $nameNoDashes"
-		echo "gamesetName: $gamesetName"
-		echo "gamesetID: $gamesetID"
+		echo "contentID: $contentID"
 		echo "gameID: $gameID"
 		echo "genreName: $genreName"
+		#echo "nameDashes: $nameDashes"
+		#echo "nameNoDashes: $nameNoDashes"
+		#echo "gamesetName: $gamesetName"
+		#echo "gamesetID: $gamesetID"
 		echo ""	
 
 		dumpJsonGHRFS "$line"
@@ -294,7 +294,7 @@ dumpJsonGHRFS(){
 	echo "<a href=\"$baseURLRGA4$nameNoDashes/$installerName\" target=\"__blank\">$baseURLRGA4$nameNoDashes/$installerName</a><br>">>"$outputHTMLRFSGHWeb"
 	
 	# RFS GH Web Install Manager
-	echo "<a href=\"$baseURLRFSGHIM$installerName&offering=$offeringName&channel=$channelName\" target=\"__blank\">$baseURLRFSGHIM$installerName&offering=$offeringName&channel=$channelName</a><br>">>"$outputHTMLRFSGHWebIM"
+	echo "<a href=\"$baseURLRFSGHIM$installerName&offering=$offeringName&channel=$channelName\" target=\"__blank\">Installer_$nameNoDashes.exe</a><br>">>"$outputHTMLRFSGHWebIM"
 	
 	# Cleanup Files
 	rm "$outputJSON"
