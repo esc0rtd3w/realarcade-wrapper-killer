@@ -75,6 +75,11 @@ testPage="http://www.gamehouse.com/download-games/experiment"
 
 removeOldFiles(){
 
+	clear
+	echo "Removing Old Files..."
+	echo ""
+	echo ""
+
 	rm "$outputText"
 	rm "$outputTextCID"
 	rm "$outputTextWeb"
@@ -103,11 +108,27 @@ removeOldFiles(){
 
 dumpWebToJSON(){
 
-	wget -d --header="Cookie: gamehouseuser=true"  -O "$jsonWindows" "http://www.gamehouse.com/games.json?gametype=download&genre=all&sorting=name&count=4000&filterType=null"
+	clear
+	echo "Downloading Games List [games-$1.json]"
+	echo ""
+	echo ""
 
-	#wget -d --header="Cookie: gamehouseuser=true" -O "$jsonOnline" "http://www.gamehouse.com/games.json?gametype=online&genre=all&sorting=name&count=4000&filterType=null"
+	case "$1" in
 
-	#wget -d --header="Cookie: gamehouseuser=true" -O "$jsonAll" "http://www.gamehouse.com/games.json?gametype=null&genre=all&sorting=name&count=4000&filterType=null"
+	"all")
+	wget --quiet --header="Cookie: gamehouseuser=true" -O "$jsonAll" "http://www.gamehouse.com/games.json?gametype=null&genre=all&sorting=name&count=4000&filterType=null"
+	;;
+
+	"online")
+	wget --quiet --header="Cookie: gamehouseuser=true" -O "$jsonOnline" "http://www.gamehouse.com/games.json?gametype=online&genre=all&sorting=name&count=4000&filterType=null"
+	;;
+
+	"windows")
+	wget --quiet --header="Cookie: gamehouseuser=true"  -O "$jsonWindows" "http://www.gamehouse.com/games.json?gametype=download&genre=all&sorting=name&count=4000&filterType=null"
+	;;
+
+
+	esac
 
 }
 
@@ -117,7 +138,7 @@ dumpGamesToList(){
 	removeOldFiles
 
 	clear
-	echo "Building List From \"$inputJSON\""
+	echo "Building Lists From \"$inputJSON\""
 	echo ""
 	echo ""
 
@@ -183,6 +204,11 @@ dumpGamesToList(){
 
 
 dumpPages(){
+
+	clear
+	echo "Initializing Game Info Dump From List..."
+	echo ""
+	echo ""
 
 	# Reset Game Counter
 	gameCounter=0
@@ -273,9 +299,8 @@ dumpPages(){
 		echo "genreName: $genreName"
 		#echo "nameDashes: $nameDashes"
 		#echo "nameNoDashes: $nameNoDashes"
-		#echo "gamesetName: $gamesetName"
-		#echo "gamesetID: $gamesetID"
-		echo ""	
+		echo "gamesetName: $gamesetName"
+		echo "gamesetID: $gamesetID"
 
 		dumpJsonGHRFS "$line"
 
@@ -283,6 +308,8 @@ dumpPages(){
 		writeText
 		writeIni
 		writeXML
+
+		echo "Done!"	
 
 	done < "$outputText"
 	
@@ -297,7 +324,8 @@ dumpPages(){
 dumpJsonGHRFS(){
 
 	
-	wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.7.1" -O "$outputJSON" "$baseURLRFSGHWeb$nameDashes.json"
+	#wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.7.1" -O "$outputJSON" "$baseURLRFSGHWeb$nameDashes.json"
+	wget --quiet --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.7.1" -O "$outputJSON" "$baseURLRFSGHWeb$nameDashes.json"
 
 	installerName=$(getinstallerName)
 	offeringName=$(getOfferingName)
@@ -402,7 +430,8 @@ removeBadChars(){
 
 dumpPageToTemp(){
 
-	wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.7.1" -O "$outputTMP" "$1"
+	#wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.7.1" -O "$outputTMP" "$1"
+	wget --quiet --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.7.1" -O "$outputTMP" "$1"
 
 }
 
@@ -432,7 +461,9 @@ readNameNoDashes(){
 
 
 removeOldFiles
-dumpWebToJSON
+#dumpWebToJSON "all"
+#dumpWebToJSON "online"
+dumpWebToJSON "windows"
 dumpGamesToList
 dumpPages
 #dumpPagesCidOnly
