@@ -259,11 +259,9 @@ dumpPages(){
 	echo "ContentID List Dumped By The RealArcade Wrapper Killer">"$outputTextCID"
 	echo "">>"$outputTextCID"
 	echo "">>"$outputTextCID"
-	echo "">>"$outputTextCID"
 
 	# Write Stub Text Header (Done Once Before Loop)
 	echo "Game Stub List Dumped By The RealArcade Wrapper Killer">"$outputHTMLRFSGHWebIM"
-	echo "">>"$outputHTMLRFSGHWebIM"
 	echo "">>"$outputHTMLRFSGHWebIM"
 	echo "">>"$outputHTMLRFSGHWebIM"
 
@@ -271,7 +269,7 @@ dumpPages(){
 	# Follow Links and Dump Pages
 	while read -r line
 	do
-		
+		# Additional JSON Parsing and File Outputs
 		dumpPageToTemp "$line"
 
 		# Get Some Info From Web Page
