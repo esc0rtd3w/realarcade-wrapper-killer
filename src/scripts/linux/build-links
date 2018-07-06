@@ -180,7 +180,7 @@ dumpGamesToList(){
 		echo "<a href=\"$baseURLRGA2$nameNoDashes/am-$nameNoDashes.rga\" target=\"__blank\">$baseURLRGA2$nameNoDashes/am-$nameNoDashes.rga</a><br>">>"$outputHTMLRGA2"
 
 		# RGA v2 Free
-		echo "<a href=\"$baseURLRGA2Free$nameNoDashes/am-$nameNoDashes.rga\" target=\"__blank\">$baseURLRGA2Free$nameNoDashes/amg-$nameNoDashes.rga</a><br>">>"$outputHTMLRGA2Free"
+		echo "<a href=\"$baseURLRGA2Free$nameNoDashes/amg-$nameNoDashes.rga\" target=\"__blank\">$baseURLRGA2Free$nameNoDashes/amg-$nameNoDashes.rga</a><br>">>"$outputHTMLRGA2Free"
 
 		# RGA v3
 		echo "<a href=\"$baseURLRGA3$nameNoDashes/$nameNoDashes.rga\" target=\"__blank\">$baseURLRGA3$nameNoDashes/$nameNoDashes.rga</a><br>">>"$outputHTMLRGA3"
