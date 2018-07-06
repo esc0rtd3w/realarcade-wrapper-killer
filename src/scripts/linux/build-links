@@ -269,7 +269,7 @@ dumpPages(){
 	# Follow Links and Dump Pages
 	while read -r line
 	do
-		# Additional JSON Parsing and File Outputs
+		# Dump Each Links HTML Source and Parse
 		dumpPageToTemp "$line"
 
 		# Get Some Info From Web Page
@@ -300,6 +300,7 @@ dumpPages(){
 		echo "gamesetName: $gamesetName"
 		echo "gamesetID: $gamesetID"
 
+		# Additional JSON Parsing and File Outputs
 		dumpJsonGHRFS "$line"
 
 		# Append New Data To Files For Each Loop
