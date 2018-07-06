@@ -93,6 +93,7 @@ removeOldFiles(){
 	rm "$dumpIni"
 	rm "$dumpText"
 	rm "$dumpXML"
+	rm "$outputTextCID"
 	rm "$outputHTMLRFSGHWeb"
 	rm "$outputHTMLRFSGHWebIM"
 	rm "$outputTMP"
@@ -228,6 +229,18 @@ dumpPages(){
 	echo "">>"$dumpXML"
 	echo "<dump_root>">>"$dumpXML"
 
+	# Write CID Dump Header (Done Once Before Loop)
+	echo "ContentID List Dumped By The RealArcade Wrapper Killer">"$outputTextCID"
+	echo "">>"$outputTextCID"
+	echo "">>"$outputTextCID"
+	echo "">>"$outputTextCID"
+
+	# Write Stub Text Header (Done Once Before Loop)
+	echo "Game Stub List Dumped By The RealArcade Wrapper Killer">"$outputHTMLRFSGHWebIM"
+	echo "">>"$outputHTMLRFSGHWebIM"
+	echo "">>"$outputHTMLRFSGHWebIM"
+	echo "">>"$outputHTMLRFSGHWebIM"
+
 
 	# Follow Links and Dump Pages
 	while read -r line
@@ -295,6 +308,9 @@ dumpJsonGHRFS(){
 	
 	# RFS GH Web Install Manager
 	echo "<a href=\"$baseURLRFSGHIM$installerName&offering=$offeringName&channel=$channelName\" target=\"__blank\">Installer_$nameNoDashes.exe</a><br>">>"$outputHTMLRFSGHWebIM"
+	
+	# CID Only Dump
+	echo "$contentID">>"$outputTextCID"
 	
 	# Cleanup Files
 	rm "$outputJSON"
