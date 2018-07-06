@@ -377,8 +377,7 @@ writeIni(){
 
 writeXML(){
 
-	# Remove Bad Characters
-	nameTitle=$(echo $nameTitle | sed -r 's/[&]+/&amp;/g')
+	removeBadChars
 
 	echo "<game>">>"$dumpXML"
 	echo "<entry>$gameCounter</entry>">>"$dumpXML"
@@ -392,6 +391,12 @@ writeXML(){
 	echo "<gameset_id>$gamesetID</gameset_id>">>"$dumpXML"
 	echo "</game>">>"$dumpXML"
 	echo "">>"$dumpXML"
+
+}
+
+removeBadChars(){
+
+	nameTitle=$(echo $nameTitle | sed -r 's/[&]+/&amp;/g')
 
 }
 
