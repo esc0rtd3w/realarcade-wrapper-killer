@@ -50,6 +50,7 @@ outputJSON="dump.json"
 dumpText="games-windows-dump-list.txt"
 dumpTextCID="games-windows-cid-dump-list.txt"
 
+dumpAmiPathName="games-windows-ami-path-names.txt"
 dumpIni="games-windows-dump-list.ini"
 dumpXML="games-windows-dump-list.xml"
 
