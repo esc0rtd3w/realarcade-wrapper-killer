@@ -67,6 +67,9 @@ extRfs=".rfs"
 
 testPage="http://www.gamehouse.com/download-games/experiment"
 
+amiDirBase="C:\\\\ProgramData\\\\activeMARK\\\\instant\\\\apps\\\\"
+amiDirName="xxxx-xxxxxxxx-xxxx0000000000000000"
+
 #wgetHeader="--header=\"Cookie: gamehouseuser=true\" --header=\"User-Agent: RealArcade Wrapper Killer v5.7.1\""
 
 # Data Gathering URL
@@ -98,6 +101,7 @@ removeOldFiles(){
 	rm "$dumpIni"
 	rm "$dumpText"
 	rm "$dumpXML"
+	rm "$dumpAmiPathName"
 	rm "$outputTextCID"
 	rm "$outputHTMLRFSGHWeb"
 	rm "$outputHTMLRFSGHWebIM"
@@ -214,9 +218,16 @@ dumpPages(){
 	gameCounter=0
 
 	# Remove Old Files
+	rm "$dumpAmiPathName"
 	rm "$dumpText"
 	rm "$dumpIni"
+	rm "$dumpXML"
 	rm "$outputTMP"
+
+	# Write AMI Path Dump Header (Done Once Before Loop)
+	echo "; AMI Path List Dumped By The RealArcade Wrapper Killer">"$dumpAmiPathName"
+	echo "">>"$dumpAmiPathName"
+	echo "">>"$dumpAmiPathName"
 
 	# Write INI Dump Header (Done Once Before Loop)
 	echo "; Game List Dumped By The RealArcade Wrapper Killer">"$dumpIni"
@@ -304,6 +315,7 @@ dumpPages(){
 		dumpJsonGHRFS "$line"
 
 		# Append New Data To Files For Each Loop
+		createAmiDirName
 		writeText
 		writeIni
 		writeXML
@@ -361,6 +373,32 @@ getChannelName(){
 
 }
 
+createAmiDirName(){
+
+	# Sample Full Path In games.json:
+	# C:\\ProgramData\\activeMARK\\instant\\apps\\solitaire-cruisea1e9c2f474536a70\\solitairecruise.exe
+
+	# Base Path: C:\\ProgramData\\activeMARK\\instant\\apps\\
+	# First 16 Chars Name Dashes: solitaire-cruise
+	# Firstt 16 Chars Content ID: a1e9c2f474536a70
+	# Exe Name: \\solitairecruise.exe
+
+	# Get first 16 chars of game name with dashes
+	nameDashesPart1=$(echo "$nameDashes" | cut -c1-16)
+	nameDashesPart2=$(echo "$nameDashes" | cut -c1-16)
+
+	# Get first 16 chars of content id
+	cidPart1=$(echo "$contentID" | cut -c1-16)
+	cidPart2=$(echo "$contentID" | cut -c1-16)
+
+	amiDirName="$nameDashesPart1$cidPart1"
+
+	#echo "$amiDirBase$amiDirName\\\\"
+
+	echo "$amiDirName">>"$dumpAmiPathName"
+
+}
+
 
 writeText(){
 
@@ -375,6 +413,7 @@ writeText(){
 	echo "gamesetID: $gamesetID">>"$dumpText"
 	echo "gameID: $gameID">>"$dumpText"
 	echo "genreName: $genreName">>"$dumpText"
+	echo "amiDirName: $amiDirName">>"$dumpText"
 	echo ""	
 }
 
@@ -386,6 +425,7 @@ writeIni(){
 	echo "name_web=$nameDashes">>"$dumpIni"	
 	echo "installation_id=$na">>"$dumpIni"	
 	echo "atoken=$na">>"$dumpIni"
+	echo "ami_dir_name=$amiDirName">>"$dumpIni"
 	echo "dmg_legacy=$na">>"$dumpIni"
 	echo "dmg_gh=$na">>"$dumpIni"
 	echo "dmg_amac=$na">>"$dumpIni"
@@ -416,6 +456,7 @@ writeXML(){
 	echo "<gameset_name>$gamesetName</gameset_name>">>"$dumpXML"
 	echo "<content_id>$contentID</content_id>">>"$dumpXML"
 	echo "<gameset_id>$gamesetID</gameset_id>">>"$dumpXML"
+	echo "<ami_dir_name>$amiDirName</ami_dir_name>">>"$dumpXML"
 	echo "</game>">>"$dumpXML"
 	echo "">>"$dumpXML"
 
