@@ -120,17 +120,17 @@ dumpWebToJSON(){
 
 	case "$1" in
 
-	"all")
-	wget --quiet --header="Cookie: gamehouseuser=true" -O "$jsonAll" "http://www.gamehouse.com/games.json?gametype=null&genre=all&sorting=name&count=4000&filterType=null"
-	;;
+		"all")
+		wget --quiet --header="Cookie: gamehouseuser=true" -O "$jsonAll" "http://www.gamehouse.com/games.json?gametype=null&genre=all&sorting=name&count=4000&filterType=null"
+		;;
 
-	"online")
-	wget --quiet --header="Cookie: gamehouseuser=true" -O "$jsonOnline" "http://www.gamehouse.com/games.json?gametype=online&genre=all&sorting=name&count=4000&filterType=null"
-	;;
+		"online")
+		wget --quiet --header="Cookie: gamehouseuser=true" -O "$jsonOnline" "http://www.gamehouse.com/games.json?gametype=online&genre=all&sorting=name&count=4000&filterType=null"
+		;;
 
-	"windows")
-	wget --quiet --header="Cookie: gamehouseuser=true"  -O "$jsonWindows" "http://www.gamehouse.com/games.json?gametype=download&genre=all&sorting=name&count=4000&filterType=null"
-	;;
+		"windows")
+		wget --quiet --header="Cookie: gamehouseuser=true"  -O "$jsonWindows" "http://www.gamehouse.com/games.json?gametype=download&genre=all&sorting=name&count=4000&filterType=null"
+		;;
 
 
 	esac
@@ -384,13 +384,59 @@ createAmiDirName(){
 	# Firstt 16 Chars Content ID: a1e9c2f474536a70
 	# Exe Name: \\solitairecruise.exe
 
-	# Get first 16 chars of game name with dashes
-	nameDashesPart1=$(echo "$nameDashes" | cut -c1-16)
-	nameDashesPart2=$(echo "$nameDashes" | cut -c1-16)
+	# Char Conversions Needed
+	# ' = -
+
+	# Dashes are not counted as part of the 16 chars but must be inserted as normal
+	# There should never be a dash next to the start of the content id
+	# BAD:  example-a-good-game-abcdef0123456789
+	# GOOD: example-a-good-gameabcdef0123456789
+
+	# Get first 16 chars of game name with and without dashes
+	charsDashes=$(echo "$nameDashes" | cut -c1-16)
+	charsNoDashes=$(echo "$nameNoDashes" | cut -c1-16)
+
+	# Get last chars to make sure dashes name has right last char when done
+	charsDashesLastChar=$(echo -n "$charsDashes" | tail -c 1)
+	charsNoDashesLastChar=$(echo -n "$charsNoDashes" | tail -c 1)
+
+	#dashCountTemp="${charsNoDashes//[^-]}"
+	dashCountTemp=$(echo "$charsNoDashes" | tr -cd '-' | wc -c)
+	dashCount=$(echo "${#dashCountTemp}")
+
+	extraChars=$((16 + $dashCount + 1))
+
+	# If the 16th char is a dash, add an extra 1 for extra chars
+	case "$nameDashesPart1LastChar" in
+
+		"-")
+		extraChars=$((16 + $dashCount + 2))
+		;;
+
+	esac
+
+	charsDashes=$(echo "$nameDashes" | cut -c1-$extraChars)
+	charsDashesNew=$(echo "$charsDashes" | tr -d '-')
+	charsDashesNewLastChar=$(echo -n "$charsDashesNew" | tail -c 1)
+
+	# Check for last char again to match no dashes name
+	case "$charsDashesLastChar" in
+
+		"$charsDashesNewLastChar")
+		echo "Characters Match"
+		;;
+
+		*)
+		echo "Characters DO NOT Match"
+		;;
+
+	esac
+
+	nameDashesPart1="$charsDashes"
+	
 
 	# Get first 16 chars of content id
 	cidPart1=$(echo "$contentID" | cut -c1-16)
-	cidPart2=$(echo "$contentID" | cut -c1-16)
 
 	amiDirName="$nameDashesPart1$cidPart1"
 
@@ -402,6 +448,9 @@ createAmiDirName(){
 
 
 writeText(){
+
+	# Char Conversions Needed
+	# \ = '
 
 	echo "">>"$dumpText"		
 	echo "Game Entry #$gameCounter:">>"$dumpText"	
