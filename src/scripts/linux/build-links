@@ -411,15 +411,27 @@ createAmiDirName(){
 	dashCount=$(echo "$charsDashes" | tr -cd '-' | wc -c)
 
 	extraChars=$((16 + $dashCount))
+	extraCharsTest=$(($extraChars - $dashCount))
 
-	# If the 16th char is a dash, add an extra 1 for extra chars
+	# If the 16th char is a dash, add an extra 2 for extra chars
 	case "$charsDashesLastChar" in
 
 		"-")
-		extraChars=$((16 + $dashCount + 1))
+		extraChars=$((16 + $dashCount + 2))
+		extraCharsTest=$(($extraChars - $dashCount))
 		;;
 
 	esac
+
+
+	if ! [ "$extraCharsTest" -gt "17" ];
+		then
+			echo ""
+			echo "Char Length Should Be OK"
+		else
+			echo ""
+			echo "Wrong Amount of Chars"
+	fi
 
 	charsDashes=$(echo "$nameDashes" | cut -c1-$extraChars)
 	charsDashesNew=$(echo "$charsDashes" | tr -d '-')
@@ -429,10 +441,12 @@ createAmiDirName(){
 	case "$charsNoDashesLastChar" in
 
 		"$charsDashesNewLastChar")
+		echo ""
 		echo "Characters Match"
 		;;
 
 		*)
+		echo ""
 		echo "Characters DO NOT Match"
 		;;
 
@@ -443,8 +457,8 @@ createAmiDirName(){
 	echo "dashCount: $dashCount"
 	echo "dashCountTemp: $dashCountTemp"
 	echo "charsNoDashes: $charsNoDashes"
-	echo "charsDashes: $charsDashes"
-	echo "charsDashesNew: $charsDashesNew"
+	echo "charsDashes:  $charsDashes"
+	echo "charsDashesNew:   $charsDashesNew"
 	echo "charsNoDashesLastChar: $charsNoDashesLastChar"
 	echo "charsDashesLastChar: $charsDashesLastChar"
 	echo "charsDashesNewLastChar: $charsDashesNewLastChar"
