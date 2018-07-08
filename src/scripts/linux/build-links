@@ -77,6 +77,14 @@ amiDirName="xxxx-xxxxxxxx-xxxx0000000000000000"
 # http://www.gamehouse.com/datagathering/actiontracking?actiontrackingkindid=225&actiontrackingsourceid=4458
 
 
+setWindowTitle(){
+
+	title='echo -ne "\033]0;realarcade-wrapper-killer/src/scripts/linux/build-links\007"'
+
+	$title
+
+}
+
 removeOldFiles(){
 
 	clear
@@ -404,13 +412,13 @@ createAmiDirName(){
 	dashCountTemp=$(echo "$charsNoDashes" | tr -cd '-' | wc -c)
 	dashCount=$(echo "${#dashCountTemp}")
 
-	extraChars=$((16 + $dashCount + 1))
+	extraChars=$((16 + $dashCount))
 
 	# If the 16th char is a dash, add an extra 1 for extra chars
-	case "$nameDashesPart1LastChar" in
+	case "$charsDashesLastChar" in
 
 		"-")
-		extraChars=$((16 + $dashCount + 2))
+		extraChars=$((16 + $dashCount + 1))
 		;;
 
 	esac
@@ -432,9 +440,20 @@ createAmiDirName(){
 
 	esac
 
+	# Debug Output
+	echo "extraChars: $extraChars"
+	echo "dashCount: $dashCount"
+	echo "dashCountTemp: $dashCountTemp"
+	echo "charsNoDashes: $charsNoDashes"
+	echo "charsDashes: $charsDashes"
+	echo "charsDashesNew: $charsDashesNew"
+	echo "charsNoDashesLastChar: $charsNoDashesLastChar"
+	echo "charsDashesLastChar: $charsDashesLastChar"
+	echo "charsDashesNewLastChar: $charsDashesNewLastChar"
+
+	# New fixed no dashes name
 	nameDashesPart1="$charsDashes"
 	
-
 	# Get first 16 chars of content id
 	cidPart1=$(echo "$contentID" | cut -c1-16)
 
