@@ -420,7 +420,7 @@ createAmiDirName(){
 	charsDashesNewLastChar=$(echo -n "$charsDashesNew" | tail -c 1)
 
 	# Check for last char again to match no dashes name
-	case "$charsDashesLastChar" in
+	case "$charsNoDashesLastChar" in
 
 		"$charsDashesNewLastChar")
 		echo "Characters Match"
