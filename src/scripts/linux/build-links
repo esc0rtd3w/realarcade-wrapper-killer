@@ -408,9 +408,7 @@ createAmiDirName(){
 	charsDashesLastChar=$(echo -n "$charsDashes" | tail -c 1)
 	charsNoDashesLastChar=$(echo -n "$charsNoDashes" | tail -c 1)
 
-	#dashCountTemp="${charsDashes//[^-]}"
-	dashCountTemp=$(echo "$charsDashes" | tr -cd '-' | wc -c)
-	dashCount=$(echo "${#dashCountTemp}")
+	dashCount=$(echo "$charsDashes" | tr -cd '-' | wc -c)
 
 	extraChars=$((16 + $dashCount))
 
