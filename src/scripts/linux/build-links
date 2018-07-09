@@ -304,7 +304,9 @@ dumpPages(){
 		gameID=$(readDataLayer "game_id")
 		genreName=$(readDataLayer "main_genre_name")
 		
+		# Remove Unicode chars first (\u2013) then remove backslashes
 		removeBadChars "unicode"
+		removeBadChars "backslash"
 
 		gameCounter=$(($gameCounter + 1))
 
@@ -567,6 +569,10 @@ removeBadChars(){
 
 	"unicode")
 	nameTitle=$(echo $nameTitle | sed 's/\\u2013/-/')
+	;;
+
+	"backslash")
+	nameTitle=$(echo $nameTitle | sed "s/\\\/\'/")
 	;;
 
 	esac
