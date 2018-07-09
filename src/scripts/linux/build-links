@@ -304,6 +304,7 @@ dumpPages(){
 		gameID=$(readDataLayer "game_id")
 		genreName=$(readDataLayer "main_genre_name")
 		
+		removeBadChars "unicode"
 
 		gameCounter=$(($gameCounter + 1))
 
@@ -538,7 +539,7 @@ writeIni(){
 
 writeXML(){
 
-	removeBadChars
+	removeBadChars "xml"
 
 	echo "<game>">>"$dumpXML"
 	echo "<entry>$gameCounter</entry>">>"$dumpXML"
@@ -558,7 +559,17 @@ writeXML(){
 
 removeBadChars(){
 
+	case "$1" in
+	
+	"xml")
 	nameTitle=$(echo $nameTitle | sed -r 's/[&]+/&amp;/g')
+	;;
+
+	"unicode")
+	nameTitle=$(echo $nameTitle | sed 's/\\u2013/-/')
+	;;
+
+	esac
 
 }
 
