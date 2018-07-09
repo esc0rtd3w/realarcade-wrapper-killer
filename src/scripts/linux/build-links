@@ -258,6 +258,7 @@ dumpPages(){
 	echo "Game List Dumped By The RealArcade Wrapper Killer">"$dumpText"
 	echo "">>"$dumpText"
 	echo "">>"$dumpText"
+	date>>"$dumpText"
 	echo "">>"$dumpText"
 	echo "osName: $osName">>"$dumpText"
 	echo "playerID: $playerID">>"$dumpText"
@@ -274,6 +275,7 @@ dumpPages(){
 	echo "">>"$dumpXML"
 	echo "">>"$dumpXML"
 	echo "<dump_root>">>"$dumpXML"
+	echo "">>"$dumpXML"
 
 	# Write CID Dump Header (Done Once Before Loop)
 	echo "ContentID List Dumped By The RealArcade Wrapper Killer">"$outputTextCID"
