@@ -319,6 +319,7 @@ dumpPages(){
 		#echo "nameNoDashes: $nameNoDashes"
 		echo "gamesetName: $gamesetName"
 		echo "gamesetID: $gamesetID"
+		echo ""
 
 		# Additional JSON Parsing and File Outputs
 		dumpJsonGHRFS "$line"
@@ -408,42 +409,43 @@ createAmiDirName(){
 	charsDashesLastChar=$(echo -n "$charsDashes" | tail -c 1)
 	charsNoDashesLastChar=$(echo -n "$charsNoDashes" | tail -c 1)
 
+	# Check number of dashes from 16 chars
 	dashCount=$(echo "$charsDashes" | tr -cd '-' | wc -c)
 
 	extraChars=$((16 + $dashCount + 1))
 
-	# If the 16th char is a dash, add an extra 2 for extra chars
+	# If the 16th char is a dash, add an extra 1 for extra chars
 	case "$charsDashesLastChar" in
 
 		"-")
-		extraChars=$((16 + $dashCount + 2))
+		# Recut new chars with number of dashes being number to extend cut
+		#echo "BAD: Dash at last char"
+		extraChars=$((16 + $dashCount + 1))
+		charsDashes=$(echo "$nameDashes" | cut -c1-$extraChars)
+		charsDashesLastChar=$(echo -n "$charsDashes" | tail -c 1)
+		dashCount=$(echo "$charsDashes" | tr -cd '-' | wc -c)
 		;;
 
 	esac
 
-	# Check total number of chars
-	extraCharsTest=$(($extraChars - $dashCount))
-
-	if [ "$extraCharsTest" -gt "17" ];
-		then
-			echo ""
-			echo "extraCharsTest: Char Length Should Be OK"
-		else
-			echo ""
-			echo "extraCharsTest: Wrong Amount of Chars"
-	fi
-
 	charsDashes=$(echo "$nameDashes" | cut -c1-$extraChars)
 	charsDashesNew=$(echo "$charsDashes" | tr -d '-')
+	#charsDashesCount=$(echo "$charsDashesNew" | wc -c)
 
-	charsDashesCount=$(echo "$charsDashesNew" | wc -c)
+	# Compare original no dashes name to new name and remove extra chars
+	case "$charsNoDashes" in
+	
+		"$charsDashesNew")
+		#echo "charsDashesNew: Names Match"
+		;;
+	
+		*)
+		#echo "charsDashesNew: Fixing Name"
+		charsDashes=$(echo "$charsDashes" | sed 's/.$//')
+		charsDashesNew=$(echo "$charsDashesNew" | sed 's/.$//')
+		;;
 
-	if [ "$charsDashesCount" -eq "16" ];
-		then
-			echo "charsDashesNew: Char Length Should Be OK"
-		else
-			echo "charsDashesNew: Wrong Amount of Chars"
-	fi
+	esac
 
 	# Get last char from new fixed name
 	charsDashesNewLastChar=$(echo -n "$charsDashesNew" | tail -c 1)
@@ -451,9 +453,9 @@ createAmiDirName(){
 	# Check for last char again to match no dashes name
 	case "$charsNoDashesLastChar" in
 
-		"$charsDashesNewLastChar")\
-		echo "charsDashesNewLastChar: Characters Match"
-		echo ""
+		"$charsDashesNewLastChar")
+		#echo "charsDashesNewLastChar: Characters Match"
+		#echo ""
 		;;
 
 		*)
@@ -464,14 +466,14 @@ createAmiDirName(){
 	esac
 
 	# Debug Output
-	echo "extraChars: $extraChars"
-	echo "dashCount: $dashCount"
+	#echo "extraChars: $extraChars"
+	#echo "dashCount: $dashCount"
 	echo "charsNoDashes: $charsNoDashes"
 	echo "charsDashes:  $charsDashes"
 	echo "charsDashesNew:   $charsDashesNew"
-	echo "charsNoDashesLastChar: $charsNoDashesLastChar"
-	echo "charsDashesLastChar: $charsDashesLastChar"
-	echo "charsDashesNewLastChar: $charsDashesNewLastChar"
+	#echo "charsNoDashesLastChar: $charsNoDashesLastChar"
+	#echo "charsDashesLastChar: $charsDashesLastChar"
+	#echo "charsDashesNewLastChar: $charsDashesNewLastChar"
 
 	# New fixed no dashes name
 	nameDashesPart1="$charsDashes"
