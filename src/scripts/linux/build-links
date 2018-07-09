@@ -570,7 +570,13 @@ removeBadChars(){
 	;;
 
 	"unicode")
+	nameTitle=$(echo $nameTitle | sed 's/\\u00A2/-/')
+	nameTitle=$(echo $nameTitle | sed 's/\\u00AE/-/')
+	nameTitle=$(echo $nameTitle | sed 's/\\u00E2/-/')
 	nameTitle=$(echo $nameTitle | sed 's/\\u2013/-/')
+	nameTitle=$(echo $nameTitle | sed 's/\\u2019/-/')
+	nameTitle=$(echo $nameTitle | sed 's/\\u201E/-/')
+	nameTitle=$(echo $nameTitle | sed 's/\\u2122/-/')
 	;;
 
 	"backslash")
