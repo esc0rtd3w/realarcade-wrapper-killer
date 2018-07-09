@@ -459,7 +459,7 @@ createAmiDirName(){
 		;;
 
 		*)
-		echo "charsDashesNewLastChar: Characters DO NOT Match"
+		echo "charsDashesNewLastChar: Last Characters DO NOT Match"
 		echo ""
 		;;
 
@@ -468,9 +468,9 @@ createAmiDirName(){
 	# Debug Output
 	#echo "extraChars: $extraChars"
 	#echo "dashCount: $dashCount"
-	echo "charsNoDashes: $charsNoDashes"
-	echo "charsDashes:  $charsDashes"
-	echo "charsDashesNew:   $charsDashesNew"
+	#echo "charsNoDashes: $charsNoDashes"
+	#echo "charsDashes:  $charsDashes"
+	#echo "charsDashesNew:   $charsDashesNew"
 	#echo "charsNoDashesLastChar: $charsNoDashesLastChar"
 	#echo "charsDashesLastChar: $charsDashesLastChar"
 	#echo "charsDashesNewLastChar: $charsDashesNewLastChar"
@@ -484,6 +484,7 @@ createAmiDirName(){
 	amiDirName="$nameDashesPart1$cidPart1"
 
 	#echo "$amiDirBase$amiDirName\\\\"
+	echo "amiDirName: $amiDirName"
 
 	echo "$amiDirName">>"$dumpAmiPathName"
 
