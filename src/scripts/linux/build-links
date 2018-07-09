@@ -570,13 +570,13 @@ removeBadChars(){
 	;;
 
 	"unicode")
-	nameTitle=$(echo $nameTitle | sed 's/\\u00A2/-/')
-	nameTitle=$(echo $nameTitle | sed 's/\\u00AE/-/')
-	nameTitle=$(echo $nameTitle | sed 's/\\u00E2/-/')
-	nameTitle=$(echo $nameTitle | sed 's/\\u2013/-/')
-	nameTitle=$(echo $nameTitle | sed 's/\\u2019/-/')
-	nameTitle=$(echo $nameTitle | sed 's/\\u201E/-/')
-	nameTitle=$(echo $nameTitle | sed 's/\\u2122/-/')
+	nameTitle=$(echo $nameTitle | sed 's/\\u00A2/c/') # CENT SIGN
+	nameTitle=$(echo $nameTitle | sed 's/\\u00AE//') # REGISTERED SIGN
+	nameTitle=$(echo $nameTitle | sed 's/\\u00E2/a/') # LATIN SMALL LETTER A WITH CIRCUMFLEX
+	nameTitle=$(echo $nameTitle | sed 's/\\u2013/-/') # EN DASH
+	nameTitle=$(echo $nameTitle | sed 's/\\u2019//') # RIGHT SINGLE QUOTATION MARK
+	nameTitle=$(echo $nameTitle | sed 's/\\u201E//') # DOUBLE LOW-9 QUOTATION MARK
+	nameTitle=$(echo $nameTitle | sed 's/\\u2122//') # TRADE MARK SIGN
 	;;
 
 	"backslash")
