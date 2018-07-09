@@ -307,7 +307,10 @@ dumpPages(){
 		genreName=$(readDataLayer "main_genre_name")
 		
 		# Remove Unicode chars first (\u2013) then remove backslashes
+		# Removing twice as each run replaces one instance
 		removeBadChars "unicode"
+		removeBadChars "unicode"
+		removeBadChars "backslash"
 		removeBadChars "backslash"
 
 		gameCounter=$(($gameCounter + 1))
