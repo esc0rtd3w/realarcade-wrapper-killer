@@ -1,0 +1,39 @@
+.Defualt_Text {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #000000;
+}
+a {
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FC0;
+}
+a:visited {
+	color: #C90;
+}
+a:hover {
+	color: #FF0;
+}
+a:active {
+	color: #FC0;
+	font-weight: bold;
+}
+.caption_text {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 14px;
+	font-weight: normal;
+}
+.Section_Headline {
+	font-size: 20px;
+	color: #9FF;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.Defualt_Text p #Hybridization {
+	color: #9C9;
+}
+.Attention {
+	color: #BAEF38;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}

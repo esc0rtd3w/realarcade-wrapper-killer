@@ -1,0 +1,51 @@
+/*
+ * FCSS Framework
+ * http://css.falkicon.com/
+ *
+ * Copyright (c) 2009 Jason W. Falk
+ * Licensed under the MIT license.
+ * http://css.falkicon.com/licence/
+ *
+ *
+ * DOCUMENT: main.css
+ * Includes required style sheets for site
+ */
+
+
+/*
+ * FRAMEWORK STYLES: Do Not Edit
+ *==============================================================*/
+
+/* Removes formatting from base elements */
+	@import url("http://origin.gamehouse.com/static/realplayer/fcss/framework/reset.css");
+/* Sets base page structure */
+	@import url("http://origin.gamehouse.com/static/realplayer/fcss/framework/grid.css");
+/* Sets typography */
+	@import url("http://origin.gamehouse.com/static/realplayer/fcss/framework/type.css");
+/* Defines Node Defaults */
+	@import url("http://origin.gamehouse.com/static/realplayer/fcss/framework/node.css");
+
+
+/*
+ * SITE STYLES: Edit Your Sites CSS Here
+ * Optionally duplicate this set for multiple site styles,
+ * Simply duplicate the the site folder and rename per style.
+ * Example:
+ *   site_a/template.css
+ *   site_b/template.css
+ *==============================================================*/
+
+/* Defines Template specific CSS */
+	@import url("http://origin.gamehouse.com/static/realplayer/fcss/site/template.css");
+/* Define CSS images. */
+	@import url("http://origin.gamehouse.com/static/realplayer/fcss/site/images.css");
+/* Use to override existing CSS for unusual exceptions; typically classes and IDs from 3rd party code. */
+	@import url("http://origin.gamehouse.com/static/realplayer/fcss/site/override.css");
+
+
+/*
+ * EXTENSIONS: Do Not Edit
+ *==============================================================*/
+
+/* Define CSS framework extensions. */
+	@import url("http://origin.gamehouse.com/static/realplayer/fcss/framework/extensions.css");

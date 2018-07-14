@@ -1,0 +1,159 @@
+body{ padding:0; margin:0;}
+*{padding:0; margin:0; font-weight:normal;}
+img,fieldset{border:none;}
+*{outline:none;}
+
+.wrapper{ width:1000px; margin:0 auto;}
+#body_container{width:952px; float:left; padding:23px 24px 0 24px;
+ background:#fff url(http://media.gamehouse.com/m/promos/mac_games/body_container_bg.jpg) repeat-x 0 bottom;
+}
+p{ font-size:12px; line-height:18px; color:#676767; font-family:Arial, Helvetica, sans-serif;}
+a.button {position: relative; text-decoration: none; font-family: 'Nunito', sans-serif;	font-weight: 700;	display: inline-block;
+	text-align: center;
+	-webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+	margin-bottom:15px !important;/*Temporary*/
+}
+a.button.large {
+	font-size: 30px;
+	padding: 4px 60px;
+	margin-bottom:9px;
+}
+
+a.button.green {
+	color: #fff;
+	text-shadow: 0px 2px 0px #0E4E09;
+	background-color: #278515;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#67c230), to(#278515));
+	background-image: -webkit-linear-gradient(top, #67c230, #278515);
+	background-image: -moz-linear-gradient(top, #67c230, #278515);
+	background-image: -ms-linear-gradient(top, #67c230, #278515);
+	background-image: -o-linear-gradient(top, #67c230, #278515);
+	background-image: linear-gradient(to bottom, #67c230, #278515);
+}
+a.button.green:hover {
+	background-color: #2b8e16;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#95dd45), to(#2b8e16));
+	background-image: -webkit-linear-gradient(top, #95dd45, #2b8e16);
+	background-image: -moz-linear-gradient(top, #95dd45, #2b8e16);
+	background-image: -ms-linear-gradient(top, #95dd45, #2b8e16);
+	background-image: -o-linear-gradient(top, #95dd45, #2b8e16);
+	background-image: linear-gradient(to bottom, #95dd45, #2b8e16);
+}
+a.button.large.green,
+a.button.huge.green {
+	-webkit-box-shadow: 0px 9px 0px #0E4E09;
+    -moz-box-shadow: 0px 9px 0px #0E4E09;
+    box-shadow: 0px 9px 0px #0E4E09;
+}
+a.button.large.green:active,
+a.button.huge.green:active {
+	-webkit-box-shadow: 0px 3px 0px #0E4E09;
+    -moz-box-shadow: 0px 3px 0px #0E4E09;
+    box-shadow: 0px 3px 0px #0E4E09;	
+}
+
+
+a.button.medium.green {
+	-webkit-box-shadow: 0px 3px 0px #0E4E09;
+    -moz-box-shadow: 0px 3px 0px #0E4E09;
+    box-shadow: 0px 3px 0px #0E4E09;
+}
+a.button.medium.green:active {
+	-webkit-box-shadow: 0px 1px 0px #0E4E09;
+    -moz-box-shadow: 0px 1px 0px #0E4E09;
+    box-shadow: 0px 1px 0px #0E4E09;	
+}
+
+a.blue_btn{ display:block; font-size:14px; line-height:18px;
+	-moz-border-radius: 6px;
+	font-family: 'Nunito', sans-serif;
+
+-webkit-border-radius: 6px;
+border-radius: 6px;
+padding:7px 0; color:#fff; text-decoration:none;
+font-family:Arial, Helvetica, sans-serif;
+font-weight:bold;
+text-shadow:1px 1px 0px #415773;
+	background:#6096db; text-align:center;
+	 float:left; width:100%;
+background-image: -moz-linear-gradient(top, #6fa0de, #4685d5);
+background-image: -ms-linear-gradient(top, #6fa0de, #4685d5);
+background-image: -o-linear-gradient(top, #6fa0de, #4685d5);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#6fa0de), to(#4685d5));
+background-image: -webkit-linear-gradient(top, #6fa0de, #4685d5);
+background-image: linear-gradient(top, #6fa0de, #4685d5);
+	 
+}
+a.blue_btn:hover
+{
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#4584d4', endColorstr = '#6e9edd');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr = '#4584d4', endColorstr = '#6e9edd')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #4584d4, #6e9edd);
+background-image: -ms-linear-gradient(top, #4584d4, #6e9edd);
+background-image: -o-linear-gradient(top, #4584d4, #6e9edd);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#4584d4), to(#6e9edd));
+background-image: -webkit-linear-gradient(top, #4584d4, #6e9edd);
+background-image: linear-gradient(top, #4584d4, #6e9edd);
+	}
+.top_section{ float:left; width:100%;}
+.video_box{ float:left; width:372px;}
+.video_box img{ float:left;}
+
+.funpass_box{ float:right; width:565px;}
+.fun_pass_ad{ float:left; width:506px; margin-top:-4px; background:url(http://media.gamehouse.com/m/promos/mac_games/fun_pass_box_bg.png) no-repeat 0 0; height:252px; padding:17px 20px 0 39px; position:relative;}
+.fun_pass_ad .photo_box{ float:left;}
+.fun_pass_ad .text{ float:left; width:211px; position:absolute; bottom:42px; left:54px;}
+.limit_box{ float:right; width:256px; height:184px; background:url(http://media.gamehouse.com/m/promos/mac_games/no_time_limit.png) no-repeat 15px 0;}
+.limit_box a{ margin:161px 0 0 0;}
+
+.game_section{ float:left; width:100%; padding-top:23px;}
+.game_detail{ float:left; width:100%; list-style:none;}
+.game_detail li{ float:left; width:auto; padding:0 23px 22px 0;}
+.game_detail li.last{ padding:0px;}
+.game_box{ float:left; margin:0px 0 0 0; width:423px; padding:20px 20px 20px 20px; -moz-border-radius: 10px;
+background-color:#f9f9f9;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#fbfbfb', endColorstr = '#f6f6f6');
+-ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr = '#fbfbfb', endColorstr = '#f6f6f6')";
+background-image: -moz-linear-gradient(top, #fbfbfb, #f6f6f6);
+background-image: -ms-linear-gradient(top, #fbfbfb, #f6f6f6);
+background-image: -o-linear-gradient(top, #fbfbfb, #f6f6f6);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#fbfbfb), to(#f6f6f6));
+background-image: -webkit-linear-gradient(top, #fbfbfb, #f6f6f6);
+background-image: linear-gradient(top, #fbfbfb, #f6f6f6);
+
+-webkit-box-shadow: 0px 1px 0px #cbcac9;
+    -moz-box-shadow: 0px 2px 0px #cbcac9;
+    box-shadow: 0px 2px 0px #cbcac9;
+
+}
+.gameimg{ position:relative; float:left; width:150px; height:180px;}
+.gameimg .thumb{ position:relative; z-index:1; margin:0 0 0 0; display:inline;}
+.gameimg .frame{ position:absolute; left:0px; width:150px; height:180px; top:0px; float:left; no-repeat 0 0; z-index:2; }
+.gameimg h3{ float:left; width:100%; position: absolute; bottom:8px; font-family: 'Nunito', sans-serif; font-weight:bold; z-index:9999; font-size:14px; color:#fff; line-height:16px; text-align:center;}
+.detail{ float:right; width:250px;}
+.detail h4{ font-size:16px; line-height:20px; color:#222222; padding-bottom:5px; font-weight:bold; font-family: 'Nunito', sans-serif;}
+.detail .orange_btn{   width:194px;text-align:center; font-size:16px; line-height:18px; color:#fff;  display:block; text-decoration:none; margin:0 0 5px -15px; position:relative;}
+.detail .orange_btn strong{ font-weight:bold;}
+.detail p{ font-size:12px; line-height:18px; color:#676767; min-height:92px; height:auto !important; height:94px;}
+
+.detail .btn_row .btn_green{float:right; width:176px; padding:6px 0 !important; margin-bottom:0px !important; font-size:12px; line-height:14px; text-shadow:0px 1px 0px #0E4E09;}
+.detail .btn_row .icon{ float:left;}
+.btn_group{ text-align:center; width:100%; float:left; padding-bottom:24px; border-bottom:1px solid #4f8bd6;}
+.btn_group .blue_btn{ width:309px; margin-left:320px;}
+.quote_box{ float:left; width:100%; text-align:center; padding:12px 0;}
+.quote_box img{} 
+
+
+
+
+	
+	

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+  <ModulePrefs
+      title="__MSG_gamehouse_online_games__"
+      description="__MSG_play_the_top_online_games_now__"
+      author="GameHouse"
+      author_email="partners@gamehouse.com"
+      screenshot="http://media.gamehouse.com/m/gamehouse-games-widget/igoogle-gadget/gadget_screenshot.png"
+      thumbnail="http://media.gamehouse.com/m/gamehouse-games-widget/igoogle-gadget/gadget_thumb.png"
+      author_location="Seattle, WA, USA"
+      title_url="http://www.gamehouse.com/online-games"
+      directory_title="__MSG_gamehouse_online_games__"
+      height="508">
+    <Locale messages="http://media.gamehouse.com/m/gamehouse-games-widget/igoogle-gadget/ALL_ALL.xml" />
+  </ModulePrefs>
+  <Content type="html">
+    <![CDATA[
+        <div style="width:302px;margin:0px auto;">
+          <script type="text/javascript" src="http://media.gamehouse.com/m/gamehouse-games-widget/js/gamehouse-widget-embed.js"></script>
+        </div>
+    ]]>
+  </Content>
+</Module>
