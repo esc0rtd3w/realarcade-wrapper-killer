@@ -1,0 +1,2001 @@
+/*
+File name: style.css
+Description: global CSS file
+Website: http://gamehouse.com
+Page width: 960px
+Number of columns: 24 grid layout
+*/
+
+/*==============================================
+General Layout
+==============================================*/
+
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	color:#222;
+	font-size: 12px;
+	background: #1f3f70 url(../../images/background-gradient.html) repeat-x;
+}
+* {margin:0;padding:0;} 
+
+.ie7 body {
+	position: relative;
+	overflow: auto;
+}
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/*negate effect of float*/
+}
+
+.main {width: 960px; min-height:500px; margin: 0 auto; overflow:auto; padding: 5px 23px 20px 23px; background-color: #fff;}  /* must be same height as the footer */
+.productPlay .main {width: 945px;}
+.page_wrapper {
+	width: inherit;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+	padding:5px 0 0;
+}
+
+.container {min-height: 100%;}
+
+.ie7 .container {width: 100%; height:100%}
+
+.floatLeft {float: left;}
+
+.floatRight {float: right;}
+
+.header {margin-bottom: 10px;}
+
+/*==============================================
+List Styles
+==============================================*/
+.playNavigation ul, ul.gameDetailsTabs, .stats ul, .availableBtns ul, ul.thScreenShots, .shareGameWrapper ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.playNavigation li {
+	margin-right: 10px;
+	padding: 10px;
+	float: left;
+	border-right: 1px solid #000;
+}
+
+.shareGameWrapper li {
+	height: 16px;
+	float: left;
+	margin-bottom: 20px;
+	padding: 0 140px 0 0;
+}
+.shareGameWrapper li a {width: 120px; padding-left: 30px; display: block;}
+
+ul.thScreenShots {
+	width: 280px;
+	height: 50px;
+	margin: 0 340px;
+}
+
+ul.thScreenShots {
+	width: inherit;
+	height: 75px;
+	margin: 0 250px;
+}
+
+ul.thScreenShots li {
+	height: 75px;
+	padding-right: 10px;
+	float: left;
+}
+
+ul.gameDetailsTabs li {
+	float: left;
+	padding: 5px 15px;
+	margin-right: 5px;
+	background-color: #f4f4f4;
+}
+
+ul.gameDetailsTabs li:hover {background-color: #4f8ad3;}
+
+li.reviews {width: 180px; margin-left: 15px;}
+li.games {width: 105px;}
+li.share {width: 140px; cursor: default; color: #fff;}
+li.download {width: 180px;}
+.productPlay li.faceBook .last {width: 100px;}
+
+.stats .rt {float: right;}
+
+.availableBtns ul {}
+.availableBtns li {float: left;}
+
+.ie6 ol li, .ie7 ol li {display: list-item; vertical-align: top;} /* Fix for the IE6 and IE7 ordered list numbering issue */
+
+.infoBar .infoWrapper ul {
+	margin: 0 18%;
+	padding-left: 0;
+	list-style: none;
+}
+
+.infoBar .infoWrapper li {
+	padding-right: 30px;
+	float: left;
+}
+
+.infoBar .infoWrapper li.last {padding-right:0;}
+
+.gameDetails ul.gameList {list-style: disc;}
+
+.gameDetails ul.gameList li {
+	color: #222;
+	list-style-position: inside;
+	line-height: 30px;
+	border-bottom: 1px dashed #979797;
+}
+
+.gameDetails ul.gameList li.last {border-bottom: none}
+
+.lrgSqAd {width: 300px; height: 250px;}
+
+.widgetWrapper .nav ul, .lrgContent .nav ul {
+	width: inherit; 
+	list-style: none;
+	margin 0 0 0 5px;
+	padding-left: 0;
+}
+
+.adTxt ul {
+ 	width: inherit; 
+	list-style: none;
+	margin: 0 auto;
+	padding: 0 25%;
+ }
+
+.adTxt li {
+	height: 10px;
+	line-height: 8px;
+	margin-right: 5px;
+	padding-right: 5px;
+	border-right: 1px solid #999;
+	float: left;
+}
+
+.adTxt li.last, .playNavigation li.last {border-right: none;}
+
+.socialNetworking .widgetContent ul {width: inherit; list-style: none; padding-left: 40px;}
+
+.socialNetworking ul li {
+	margin-right: 8px;
+	padding-right: 8px;
+	float: left;
+}
+
+.footer .ftCol_4 li {margin-bottom: 20px;}
+
+.footer .ftCol_4 li.logo_2 .txt {padding-left: 10px; text-align: left;width:145px;}
+.footer .ftCol_4 li.logo_2 a {background:#fff;}
+.footer .ftCol_4 li.logo_2 div {float:left;}
+.footer .ftCol_4 li.logo_2,.footer .ftCol_4 li.logo_3{float:left;margin-right:10px;}
+
+.footer .ftCol_4 li.badge .txt {padding-top: 5px;}
+.footer .ftCol_4 li.copyRighttxtBtn{float:left;}
+.ie7 .footer .ftCol_4 li.copyRighttxtBtn{float:none; clear: both;}
+/*==============================================
+Home Page Layout
+==============================================*/
+
+/* hero module */
+
+.heroGraphic {
+	width: 630px;
+	height: 300px;
+}
+
+.galleryView {
+	width: inherit; 
+	height: 260px;
+	background-color: #e1e1e1;
+	-moz-border-radius:5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(border-radius.html);
+	position:relative;
+}
+.galleryView .panel {
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:#fff;
+}
+
+.specicalOfferBanner p, .heroGraphic p, .lrgAd p, .funPassAd p {text-align: center;}
+
+.strip_wrapper {
+	left: 25px;
+	top: 265px;
+}
+
+.heroGraphicCaption ul {
+	top: 270px;
+	list-style: none; 
+	padding: 0;
+	position: absolute;
+}
+
+ul.hero-nav li {
+	width: 17px;
+	height: 16px;
+	float: left;
+	line-height: 15px;
+	margin-right: 4px;
+	text-align: center;
+	display: block;
+	background-color: #e1dfda;
+	-moz-border-radius:10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	behavior: url(border-radius.html);
+}
+
+ul.hero-nav li.pausePlay, ul.hero-nav li.pausePlay:hover {
+	width: 17px !important;
+	height: 16px !important;
+	display: block;
+	border: none;
+	background-color: transparent;
+}
+
+ul.hero-nav li:hover {
+	width: 13px;
+	height: 12px;
+	line-height: 12px;
+	border: 2px solid #999;
+	cursor: pointer;
+}
+
+.heroGraphicCaption ul.hero-nav li.pause {background-color: none;}
+
+ul.hero-nav li.selected{background-color:#4cacf9;}
+
+.panelTxt {
+	margin-left: 135px;
+	color: #222;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+/* editorial module */
+.editorialWrapper {width: inherit; height: 65px; padding-bottom: 10px;}
+.editorialWrapper .gridCol_8  {margin-left: 0;}
+.editorialWrapper .last  {margin: 0 0 0 5px;}
+
+.editorialBox {
+	width: 625px;
+	height: 62px;
+	color: #3e3e3e;
+	background: url(../../images/editorial_bg.html) no-repeat;
+}
+
+.editorialBoxContent {
+	width: inherit;
+	height: inherit;
+	padding-top: 5px;
+}
+
+.editorialBoxContent p {margin: 0; font-size: 11px; color: #3e3e3e;}
+
+.editorialBoxContent .titleHeader {padding-top: 0; font-size: 14px;}
+.ie7 .editorialBoxContent .titleHeader {padding-top: 0;}
+
+.widgetWrapper {width:inherit;}
+
+.widgetHeader {width: inherit; height: 15px; padding: 5px; margin: 10px 0;}
+
+.widgetContent {
+	width: inherit;
+	margin: 0; 
+	padding: 0;
+}
+
+.productPlay .widgetContent {height: 175px; margin-bottom: 20px;}
+
+.gridCol_16 .widgetContent {min-height: 180px;}
+
+.gridCol_8 .widgetContent {min-height: 90px; margin-bottom: 20px;}
+
+.gridCol_8 .widgetContent.last {margin-bottom: 0;}
+
+
+.widgetContent ul, .titleHeader ul{
+	width: inherit;
+	margin: 0; 
+	padding: 0; 
+	list-style: none;
+}
+
+.widgetContent ul {top: 0;}
+
+.widgetContent.grid li {
+	width: 150px; 
+	height: 150px;
+	margin-right: 7px; 
+	display: block;
+	float: left;
+}
+.widgetContent.list {
+	margin:0 0 10px 10px;	
+}
+
+.widgetContent li.last {margin-right: 0;}
+
+.widgetContent.grid .widgetBox {margin: 0 6px 10px 6px;}
+
+.ie7 .widgetContent.grid .widgetBox {margin: 0 8px 10px 8px;}
+
+
+.widgetContent img.front {
+	position: absolute;
+	z-index: 1;
+}
+
+.widgetContent img {border: 0; padding-top: 3px;}
+
+
+.widgetBox {
+	width: 290px;
+	min-height: 95px;
+	background-color: #ffffff;
+	-moz-border-radius:5px;
+	border-radius: 5px;
+	-moz-box-shadow: 1px 1px 2px #888;
+	-webkit-box-shadow: 1px 1px 2px #888;
+}
+
+.recentActivity .widgetContent {width: 620px;}
+
+.recentActivity .nav .selected {background-color:#4a4849;color:#FFFFFF;-moz-border-radius:5px;border-radius:5px;padding:5px;}
+.recentActivity .nav .selected a{color:#fff}
+.recentActivity .widgetContent li {padding: 14px 5px;border-bottom: 1px solid #ccc;}
+.recentActivity .widgetContent li div {padding-top: 5px; color:#707070;}
+.recentActivity .widgetContent span {font-size:12px; font-weight:bold;}
+
+.recentActivity .widgetContent li .dateTime {padding-top: 5px; color:#999;}
+
+.bundleOfTheWk, .comingSoon {width: 290px;}
+.ie7 .bundleOfTheWk, .comingSoon {width: 300px;}
+
+.freeGames .titleWrapper {text-align: center; padding: 10px 0;}
+.freeGames .titleWrapper p {margin: 0 0 10px 0; color: #fff;}
+.freeGames ul {list-style: none outside none;margin:0;padding:0}
+.freeGames .widgetBox {margin-bottom:10px;}
+.freeGames .desc {height:inherit;padding-top:10px;margin-left:115px;}
+.freeGames .desc p{line-height:15px;padding:5px 0}
+.freeGames .desc .titleHeader{margin:0 10px 5px 0}
+.freeGames .widgetContent {background:#225189 url(../../images/freegame_bg.html) no-repeat 0 0;}
+.freeGames .widgetContent ul {padding-bottom:10px;}
+.freeGames .widgetContent .widgetInsideBtns li{padding: 5px 8px;margin:5px 4px 0 0;}
+.freeGames .widgetContent .widgetInsideBtns .subscriberBenefit {width:92px;height:30px;background:transparent url(../../images/SubscriberBenefit.html) no-repeat 0 0;padding:0;margin:3px 0 0;}
+.freeGames .widgetInsideBtns li a {font-weight: bolder;}
+.freeGames .desc .widgetInsideBtns{height:30px;}
+
+
+.freeGames .widgetContent img {margin: 5px 0 0 5px;}
+.freeGames .widgetContent .gameBorder_overlay {margin:8px 0 0 5px;}
+.freeGames .widgetContent li{margin:0 10px 10px;}
+
+.superSavers {width: 300px; height: 170px; margin-bottom: 20px;}
+.superSavers .widgetContent.grid li {width: 100px; height: 110px; padding-right: 20px;}
+.superSavers .titleWrapper, .comingSoon .titleWrapper {height: 30px;}
+.superSavers .titleHeader, .comingSoon .titleWrapper .titleHeader {padding: 0 30px 0 0; font-size: 14px !important;}
+.superSavers .widgetContent {margin: 10px 0 0 16px;}
+.superSavers .widgetContent ul {top:-20px; position:relative;}
+.superSavers .widgetContent img {padding:5px 0 0 5px;}
+.ie7 .superSavers .widgetContent ul {top:0;}
+
+.bundleOfTheWk .titleWrapper {
+	width: inherit;
+	margin: 0 0 10px 0;
+	padding: 0 0 5px 5px;
+	float: left;
+	position: relative;
+	border-bottom: 1px solid #d6d6d6;
+}
+
+.bundleOfTheWk ul.widgetInsideBtns li {margin: 10px 0;}
+
+.bundleOfTheWk .widgetContent {height: 200px;}
+
+.comingSoon .titleWrapper .titleHeader{float:left;}
+.comingSoon .widgetContent.list {padding: 10px; margin:0 0 20px;}
+.comingSoon .titleWrapper {margin-bottom: 10px;}
+.comingSoon ul {padding-left: 0px;list-style-position:inside;}
+.comingSoon li.borderBottom .titleHeader {display:inline-block;margin:-17px 0 0 30px;vertical-align: top;width: 255px;}
+.comingSoon li.borderBottom.last {border-bottom: none;}
+
+.comingSoon .titleHeader, .comingSoon .widgetInsideBtns {margin-bottom: 5px !important;}
+.comingSoon .widgetInsideBtns {padding-left:30px;}
+
+.ie7 .comingSoon ul {
+	margin-left: 0px;
+	position: relative;
+	z-index: 90;
+}
+
+.comingSoon li.borderBottom {
+  border-bottom: 1px solid #FFFFFF;
+  margin-bottom: 10px;
+  min-height: 18px;
+  padding-left: 3px;
+}
+
+.ie7 .comingSoon li.borderBottom {
+	left: -20px;
+	padding-left: 0;
+	position: relative;
+	z-index: -1;
+	clear: left;
+}
+
+.newsletter, .bundleOfTheWk {width: 268px;}
+.ie7 .newsletter, .bundleOfTheWk {width: 300px;}
+.newsletter .titleWrapper, .newsletter p {margin-bottom: 10px;}
+
+.socialNetworking .widgetContent {min-height: 30px;}
+
+.aboutGameHouse .widgetHeader{height:auto;padding:0;}
+.aboutGameHouse .titleWrapper .titleHeader {font-size:20px;}
+.aboutGameHouse .widgetContent{line-height:17px;}
+.aboutGameHouse .widgetContent h2{margin:10px 0 5px;font-size:16px;}
+
+.widgetWrapper .nav, .lrgContent .nav {
+	height: 25px; 
+	margin: 0; 
+}
+
+.ie7 .recentActivity .nav ul {
+	clear: both;
+	margin-left: 0 !important;	
+}
+
+.widgetWrapper .nav li {
+	float: left; 
+	padding: 5px;
+	margin-right: 20px;
+	cursor: pointer;
+	-moz-border-radius:5px; 
+	-webkit-border-radius: 5px; /* Safari and Chrome */
+	border-radius: 5px;
+}
+
+.widgetWrapper .nav li:hover {background-color: #4A4849;}
+
+.rtSideHomeAd {width: 300px;}
+
+/*==============================================
+Play and Download Page
+==============================================*/ 
+.breadCrumbs a {font-family: 10px; !important}
+
+.gameImgContainer {
+	width: inherit;
+	height: 672px;
+	margin-bottom: 20px;
+	background-color: #1c1c1c;
+}
+
+.bannerAD {
+	width: inherit;
+	min-height: 30px;
+	text-align: center;
+	background-color: #151515;
+}
+
+.playNavigation {
+	width: 900px;
+	height: 40px;
+	margin: 0 auto;
+	padding: 10px 26px;
+	background-color: #151515;
+}
+
+.playNavigationWrapper {
+	width: 870px;
+	height: 43px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 18px;
+	background: url(../../images/navBG/playProduct_BG.html) no-repeat;
+	color: #fff;
+}
+
+.rateIcon {float: left;}
+
+.playWrapper {width: inherit;}
+
+.playModule {padding-top: 60px; text-align: center; color: #fff;}
+
+.gameImg {padding-bottom: 16px;}
+
+.callToAction .playBtn {margin: 0 40%; padding: 30px 10px 26px 10px;}
+
+.thGameImgTxtWrapper {height: 80px; padding: 20px 0 0 0;}
+
+.alertWrapper, .thGameImgTxtWrapper {color: #757575;}
+
+.alertWrapper {margin: 0 30%;}
+
+
+.widgetWrapper.moreGames {
+	height: 218px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.gameDetailsTabs .selector {background-color: #4f8ad3;}
+
+.productPlay .ltCol {width: 575px; padding: 20px;}
+
+.gameDetails {
+	width: inherit;
+	height: 500px;
+	background: url(../../images/navBG/detailsBG.html) repeat-x;
+	margin-bottom: 20px;
+}
+
+.gameDescTxt {margin: 40px 0;}
+.tags {margin-bottom: 10px;}
+
+.preRollImg {margin: 40px 0;}
+
+.rtCol .adWrapper {margin-right: 10px;}
+
+.gameStatsBox {
+	width: 280px;
+	padding: 10px;
+	margin: 10px 10px 10px 0;
+	border: 1px solid #999;
+}
+
+.stats {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	line-height: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.availableBtns{height: 25px; margin-bottom: 10px;}
+
+.availableBtns .txt {float: left; padding-right: 10px; line-height: 23px;}
+
+.downloadBtns {padding: 5px 10px;}
+
+.guarantee .header {margin-bottom: 2px; color: #c16e00;}
+.guarantee p {font-size: 11px; color: #6d573d;}
+
+.guarantee img {
+	width: 58px;
+	height: 44px;
+	margin-right: 10px;
+	float: left;
+}
+
+.closeBtnRt {text-align: right;}
+
+.shareGameWrapper {
+	width: 600px;
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #222;
+}
+
+.shareGame {
+	width: inherit;
+	height: 150px;
+	margin-left: 5%;
+}
+
+.shareGame .titleWrapper {margin-bottom: 20px;}
+
+.shareGameLink {
+	height: 35px;
+	margin: 10px 0;
+	padding-left: 24px;
+	line-height: 30px;
+}
+
+.copyLinkBox {
+	width: 475px;
+	padding: 15px;
+	margin-right: 10px;
+	border: 1px solid #bebebe;
+	float: left;
+}
+
+.gameDetailsTabsWrapper {height:30px padding: 10px;}
+/*==============================================
+Masthead Nav Layout Dark
+==============================================*/
+.infoBar {
+	width: 100%;
+	height: 24px;
+	background:url(../../images/top-bar_bg.html) repeat-x;
+	font-size: 11px;
+	line-height: 18px;
+	
+}
+
+.infoBar .infoWrapper {
+	width: 620px;
+	height: inherit;
+	padding: 2px 0 0 0;
+}
+
+.infoBar .infoWrapper .text {padding-right: 20px;}
+
+.masthead {width: inherit; background-color: #fff;}
+
+.masthead_wrapper {width: 960px; margin: 0 auto; padding-top: 5px;}
+
+.logoUserWrapper {
+	width: inherit;
+	height: 87px;
+}
+
+.logoUserWrapper img {border: 0;}
+
+.userInfo {
+	margin: 15px 0 0 0;
+	text-align:  right;
+}
+.webNameGh {font-size: 24px; line-height: 70px; margin-left: 20px;}
+
+.userAvatarInfo {width: 600px; line-height: 23px;}
+
+.welcomeUser {margin: 0 10px 5px 0; font-weight: bold;}
+
+.userAvatarLinks li {
+	margin-right:10px;
+	padding-right:10px;
+	border-right:1px solid #444444;
+	display:inline;
+}
+.userAvatarLinks {margin: 0 10px 0 0;}
+.userAvatarLinks .last {margin-right: 0; padding-right: 0; border-right:none;}
+
+.userAvatarInfo .tickets {margin: 2px 0 0 0; float: right;}
+.userAvatarInfo .tickets li {margin-right:8px;display:inline;float:left;}
+.signIn.clicked {
+	padding: 2px 5px 10px 5px;
+	color: #ffffff !important;
+	-webkit-border-radius:5px; /* Safari and Chrome */
+	-moz-border-radius:5px;
+	border-radius: 5px;	
+	background-color: #285191;
+}
+.signIn.clicked a.gameLink {color:#fff!important;}
+
+.signInWrapper {
+	width: 280px;
+	margin: 0 0 0 240px;
+	padding: 10px;
+	color: #ffffff;
+	display: none;
+	position: absolute;
+	z-index: 900;
+	-webkit-border-radius:5px; /* Safari and Chrome */
+	-moz-border-radius:5px;
+	border-radius: 5px;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from(#285191), to(#274069));
+	/* For Mozilla/Gecko (Firefox etc) */
+	background-color: #12436E;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#285191), to(#274069), color-stop(.5,#397BAD));
+	background: -moz-linear-gradient(top, #285191 0%, #274e89 50%, #285191 100%);
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#285191, endColorstr=#274069);
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#285191, endColorstr=#274069)";
+}
+
+.ie7 .signInWrapper {margin: 16px 0 0 -240px;}
+.signInWrapper .close{cursor:pointer;font-size:15px;margin-top:-13px;font-weight:bold;}
+.signInWrapper .loginFrame{
+	padding:20px 0 0 0;
+	background:#fff;
+}
+.signInWrapper li {
+	height: 30px;
+	display: block;
+	border-right: none;
+}
+
+.signInWrapper label {float left;}
+.signInWrapper input {
+	width: 210px; 
+	float left;
+	padding: 5px 2px;
+	color: #ffffff;
+	-webkit-border-radius:5px; /* Safari and Chrome */
+	-moz-border-radius:5px;
+	border-radius: 5px;
+	position: relative;
+	text-align:left;
+	letter-spacing: 0.5px;
+	background-color: #5272ab;
+	border:none;
+}
+
+.signInWrapper li.txt {
+	width: inherit;
+	height: 60px;
+	margin-left: 70px;
+	text-align: left;
+	font-size: 10px;
+}
+
+.signInWrapper .txt p {margin: 0 0 4px 0;}
+
+.signInWrapper li.color_4 {
+	width: 80px;
+	margin-left: 70px;
+	text-align: center;
+	-webkit-border-radius:5px; /* Safari and Chrome */
+	-moz-border-radius:5px;
+	border-radius: 5px;
+	
+}
+
+.mainMenu {
+	width: inherit;
+	height: 34px;
+	margin: 5px 0 0 0;
+	background-color: #3c4044;
+	-moz-border-radius:5px;
+	border-radius: 5px;
+}
+.mainMenu .search {z-index:100;}
+.mainMenu  ul {float: left;}
+
+.mainMenu  ul li.navMenu {
+	float:left;
+	font-size:18px;
+	height:34px;
+	line-height:34px;
+	padding:0 22px 0 22px;
+	position: relative;
+}
+
+.mainMenu ul li.navMenu.link_1:hover {-moz-border-radius: 5px 0 0 0;}
+
+.mainMenu ul li.navMenu:hover {
+	background-color:#5295e8;
+	border-bottom:0 none;
+	margin-top:0;
+	line-height:34px;
+	padding:0 22px 0 22px;
+	position: relative;
+	z-index:100;
+}
+
+.home .link_1 { /* Highlight the current menu with css */
+	-moz-border-radius: 5px 0 0 5px; 
+	border-radius: 5px 0 0 5px;
+	background-color: #4282d0;
+}
+
+.home .link_1:hover { /* Highlight the current menu with css: the body id/class method */
+	height:34px;
+	line-height:38px;
+	padding:0 15px 0 12px;
+	position: relative;
+	background-color: #5295e8;
+	-moz-border-radius: 5px 0 0 0; 
+	border-radius: 5px 0 0 0;
+}
+
+.mainMenu  ul li.mainNavLinks.first {
+	padding-left: 0px;
+}
+
+.mainMenu .navMenu .subNavMenu.subCol_1 {width: 710px;}
+.mainMenu .navMenu .subNavMenu.subCol_2 {width: 180px; padding: 10px;}
+.mainMenu .navMenu .subNavMenu.subCol_3 {width: 180px; padding: 10px;}
+
+.mainMenu .navMenu:hover .subNavMenu {display: block;}
+
+.mainMenu .navMenu .subNavMenu .subCol {
+	margin:0;
+	padding: 10px 0 0 15px;
+	position: relative;
+	float:left;
+}
+
+.mainMenu .navMenu .subNavMenu .subCol ul {width: 120px; margin-bottom: 10px;}
+.mainMenu .navMenu .subNavMenu .subCol ul.platforms_list {width:145px;}
+.mainMenu .navMenu .subNavMenu .subCol ul.platforms_list li {margin-right:4px;}
+.mainMenu .navMenu .subNavMenu .subCol ul.genres_list {width: 370px; left: 0; margin-left: -6px;}
+.mainMenu .navMenu .subNavMenu .subCol ul.genres_list li{width: 106px; display: block;}
+.mainMenu .navMenu .subNavMenu .subCol ul.series_list {width: 122px;}
+.mainMenu .navMenu .subNavMenu .header {font-weight: bold; font-size: 14px;}
+.mainMenu .navMenu .subNavMenu .col_1 .header {padding: 0 0 0 15px;}
+.mainMenu .navMenu .subNavMenu .series{margin-left:4px;}
+.mainMenu .navMenu .subNavMenu .genres{margin-left:-2px;}
+
+
+.mainMenu .navMenu .subNavMenu li {margin-right: 4px; line-height: 20px !important; padding: 0 5px 1px 5px;}
+
+.mainMenu .navMenu .subNavMenu li:hover {
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; /* Safari and Chrome */
+	border-radius: 5px;
+	background-color: #5295e8;
+}
+.mainMenu .navMenu .subNavMenu li.noHover:hover {
+	background-color:transparent;
+	}
+
+.mainMenu .navMenu .subNavMenu {
+	width: inherit;
+	margin: 34px 0 0 -22px;
+	font-size: 12px !important;
+	display: none;
+	position: absolute;
+	z-index: 1000;
+	border: 1px solid #cccccc;
+	border-top: none;
+	
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cdcdcd));
+	/* For Mozilla/Gecko (Firefox etc) */
+	background-color: #12436E;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#cdcdcd), color-stop(.5,#f0f0f0));
+	background: -moz-linear-gradient(top, #ffffff 0%, #f0f0f0 50%, #cdcdcd 100%);
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#cdcdcd);
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#cdcdcd)";
+	
+	-webkit-border-radius:0 5px 5px 5px; /* Safari and Chrome */
+	-moz-border-radius:0 5px 5px 5px;
+	border-radius: 0 5px 5px 5px;
+	
+	-webkit-box-shadow: 0px 5px 0px #000;
+	-moz-box-shadow: 0px 5px 0px #000;
+	box-shadow: 0px 5px 0px #000; 
+}
+
+.ie7 .mainMenu .navMenu .subNavMenu {
+	clear: both;
+	margin: 0 0 0 -22px;
+}
+
+.genresWrapper li {
+	float: left;
+}
+
+.colorStrip {
+	width: inherit;
+	height: 5px;
+	display: block;
+	background-color: #5295e8;
+	border: none !important;
+	-moz-border-radius:0 5px 0 0; 
+	-webkit-border-radius: 0 5px 0 0; /* Safari and Chrome */
+	border-radius: 0 5px 0 0;
+}
+
+.subCol_2 .colorStrip {
+	margin-bottom: 10px;
+	width: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.subCol_3 .colorStrip {
+	margin-bottom: 10px;
+	width: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.subNavMenu .col_1 ul, .subNavMenu .col_2 ul  {border-right: 1px dashed #999; margin: 0 10px; padding: 0; min-height: 150px;}
+
+.subNavMenu li.tickets {margin-bottom: 10px; color: #ccc;}
+
+.subNavMenu li.tickets span {color: red;}
+
+
+.subMenuFooter {
+	width:100%;
+	height:30px;
+	background:none repeat scroll 0 0 #bababa;
+	float:left;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+
+.subMenuFooter ul {
+	width:100%;
+	height:30px;
+	padding:5px 0 0 15px;
+}
+
+.subMenuFooter ul li {float:left; margin:0 5px 0 0;}
+.subMenuFooter ul li.first {margin-left: 20px;}
+.subMenuFooter li {height:20px;}
+
+.mainMenu .cart {
+	height:34px;
+	float:left;
+	font-size:12px;
+	line-height:34px;
+	padding-left:30px;
+}
+
+.ie7 .mainMenu .cart {
+	width: 80px;
+	padding-left:20px;
+}
+
+.mainMenu .search {
+	height:34px;
+	margin: 3px 10px 0 0;
+	position: relative;
+	float:right;
+	line-height:34px;
+}
+
+.search .whtTheme {width: 304px;}
+
+.ie7 .mainMenu .search {
+	width: 400px;
+	margin: 0;
+}
+
+.mainMenu .search .txtBtn {
+	width: 60px;
+	height: 24px;
+	top: -4px;
+	margin: 0 0 0 -3px;
+	padding: 0 10px 5px 10px; 
+	position: relative;
+	font-size: 14px;
+	line-height: 16px !important;
+	-moz-border-radius: 0 5px 5px 0;
+	border-radius: 0 5px 5px 0;
+	border: none;
+	cursor:pointer;
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffc925), to(#ffa420));
+	/* For Mozilla/Gecko (Firefox etc) */
+	background:-moz-linear-gradient(center top , #ffc925, #ffa420 70%) repeat scroll 0 0 transparent;
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffc925, endColorstr=#ffa420);
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffc925, endColorstr=#ffa420)";
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {.mainMenu .search .txtBtn {top: -3px; padding: 0 0 1px 0;}}/* Override for Safari and Chrome */
+
+.ie8 .mainMenu .search .txtBtn {top:-1px;padding-bottom:0px;height:24px;}
+
+.ie7 .mainMenu .search .txtBtn {
+	top: -5px;
+	position: relative;
+	padding: 0 10px 0 10px;
+	background: none;
+}
+
+.mainMenu .search input {
+	width:304px;
+	height:24px;
+	line-height: 20px;
+	color:#222;
+	font-size:13px;
+	margin: 0 0 0 0;
+	padding: 0 10px 0 5px;
+	top: -3px;
+	position: relative;
+	text-align:left;
+	letter-spacing: 0.5px;
+	background-color: #fff;
+	border:none;
+	-moz-border-radius: 5px 0 0 5px;
+	border-radius: 5px 0 0 5px;
+}
+
+.ie7 .mainMenu .search input {
+	margin: 8px 0 0 0;
+}
+
+.searchResults .yui-ac-content{
+	width: 280px !important;
+	padding: 10px 0 !important;
+	top: 30px;
+	position: absolute;
+	z-index: 1000;
+	text-align: justify;
+	font-size:13px;
+	border: 1px solid #cccccc;
+	border-top: none;
+	background:#fff;
+}
+.ie7 .searchResults .yui-ac-content{
+	left:0px;	
+}
+.searchResults .yui-ac-content li{padding:0 10px;cursor:pointer;}
+.searchResults .yui-ac-content li:hover{
+	background:#0667B6;
+	color:#fff;
+}
+
+.ie7 .mainMenu .search input {top: -5px;}
+
+.bottomMenu {
+	width: inherit;
+	height: 20px;
+	padding: 10px 0 5px;
+}
+
+.bottomMenu li {
+	margin-right: 10px;
+	padding-right:12px;
+	position: relative;
+	display: inline;
+	float: left;
+	border-right:1px solid #444444;
+}
+
+.bottomMenu li.first {border-right:none;}
+.bottomMenu li.last {margin-right: 0; border-right:none;}
+.bottomMenu li.bookMark a, .bottomMenu li.help a {font-size: 11px !important;}
+
+.fb {
+	top: -3px;
+	width: 95px;
+	height: 20px;
+	padding-right: 0 !important;
+}
+
+.welcomeTxtBox {
+	width: 625px;
+	padding: 3px 5px 3px 10px;
+	background-color: #c2e3fd;
+	-moz-border-radius:5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.help {cursor: help !important;}
+
+
+.masthead_wrapper ul {
+	list-style:none outside none;
+	margin: 0;
+	padding-left: 0;
+}
+
+/*==============================================
+Footer Layout
+==============================================*/ 
+.footer {
+	position: relative;
+	clear:both;
+}
+
+.footer_inside {
+	width: 960px;
+	height: 310px;
+	margin: 0 auto -20px;
+	padding: 20px 23px;
+	color: #fff;
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from(#356da3), to(#1f3f70));
+	/* For Mozilla/Gecko (Firefox etc) */
+	background:-moz-linear-gradient(center top , #356da3, #1f3f70 70%) repeat scroll 0 0 transparent;
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#356da3, endColorstr=#1f3f70);
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#356da3, endColorstr=#1f3f70)";
+}
+.footer ul {list-style: none; padding-left: 0; margin: 5px 0 10px 0;}
+.footer li {padding: 1px 0;}
+/*==============================================
+Navigation Styles
+==============================================*/ 
+a, a:link, a:active, a:visited, a:focus {
+	color:#222;
+	cursor:pointer;
+	font-weight:normal;
+	text-decoration: none;
+}
+
+a:hover {text-decoration: none;}
+
+.navMenuTitle a, .subNavMenu a:hover, .cart a, .playNavigationWrapper a, ul.gameDetailsTabs li a:hover,
+.gameDetailsTabs .selector a, .widgetWrapper .nav li a:hover, .widgetWrapper .nav li:hover
+{color:#ffffff !important;}
+
+.subNavMenu a {color:#000000!important;}
+
+a.gameLink, .recentActivity .widgetContent li a {color:#0667b6 !important;}
+
+.recentActivity .widgetContent li a {font-size: 14px !important; font-weight: bolder;}
+
+.recentActivity .nav li a {font-size: 14px !important;}
+
+a:hover.gameLink {text-decoration: underline;}
+
+.footer a {color:#fff !important;}
+
+.feat_cap_txt a {
+	color:#FFFFFF;
+	font-weight: bolder;
+	margin-left: 10px;
+}
+
+.color_1 a, .color_2 a, .color_5 a {color: #fff;}
+
+.signInWrapper .txt a {color: #fff200;}
+
+.adWrapper .adTxt a {color: #999 !important; font-size: 10px !important;}
+
+
+/*==============================================
+Ad Styles
+==============================================*/
+
+.banner {
+	width: inherit;
+	margin: 0 auto; 
+	background-color: #333;
+}
+
+.banner.pencil {
+	width: inherit;
+	margin: 0;
+	background-color: transparent;
+	text-align:center;
+}
+
+.banner.lrg {
+	height: 90px;
+	bottom: 50px;
+	display: block;
+	text-align: center;
+	-webkit-border-radius: 5px; /* Safari and Chrome */
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+body .bannerBg_bottom {
+	margin: 0 auto 0;
+	padding: 0 23px 23px;
+	position: relative;
+	z-index: 12;
+	background-color: #ffffff;
+}
+
+.bannerBg_bottom .adTxt ul {
+  color: #999999;
+  font-size:10px;
+  list-style:none outside none;
+  margin:2px;
+  text-align: center;
+}
+.bannerBg_bottom .adTxt li {display:inline;float:none;}
+.bannerBg_bottom .adTxt, .bannerBg_bottom .adTxt a {color:#999;}
+.ie7 .banner{border-radius: 5px;} /* Opera 10.5+, future browsers, and now also Internet Explorer 6+ using IE-CSS3 */
+
+.adBorder {
+	width: inherit;
+	min-height:inherit; 
+	border: 4px solid #e2e0db;
+	-webkit-border-radius:6px; /* Safari and Chrome */
+	-moz-border-radius:6px;
+	border-radius: 6px;
+}
+
+.lrgAd {
+	width: inherit;
+	min-height: 200px;
+	border: 1px solid #9e9e9a;
+	margin-bottom: 0;
+	padding: 2px 0 0 0;
+	display: block;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+	-webkit-border-radius:6px; /* Safari and Chrome */
+	-moz-border-radius:6px;
+	border-radius: 6px;
+}
+
+.funPass_home {
+	width: 300px;
+	height: inherit;
+	margin: 10px;
+	padding-bottom: 15px;
+	display: block;
+}
+.adWrapper .adTxt a {color: #999 !important; font-size: 10px !important;}
+.adWrapper .adTxt {
+	width: 309px;
+	height: 20px;
+	margin-top: -3px;
+	padding: 10px 0 0 0;
+	position: relative;
+	z-index: 0;
+	background-color: #f4f3f1;
+	-moz-border-radius: 0 0 10px 10px; 
+	-webkit-border-radius: 0 0 10px 10px; /* Safari and Chrome */
+	border-radius: 0 0 10px 10px;
+	color: #999 !important; font-size: 10px !important;
+}
+/*==============================================
+Button Styles
+==============================================*/
+input.smBtn {
+	padding: 3px;
+	font-size: 12px;
+	text-decoration: none;
+	border: 1px solid #999; 
+	line-height: 20px;
+}
+
+
+input.hugeBtn {
+	padding: 5px 50px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bolder;
+	background-color: #222;
+	border: 1px solid #fff;
+}
+
+.widgetHeader .titleWrapper .txtBtn {
+	margin: -5px 10px 0 0;
+	padding: 4px 10px;
+	position: relative;
+	font-size: 11px;
+	cursor: default !important;
+	border: 1px solid #e1dfda;
+	-moz-border-radius:5px;
+	border-radius: 5px;
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e1dfda));
+	/* For Mozilla/Gecko (Firefox etc) */
+	background:-moz-linear-gradient(center top , #fff, #e1dfda 70%) repeat scroll 0 0 transparent;
+/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#cccccc);
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#cccccc)";
+}
+
+
+ul.widgetInsideBtns li {
+	height: 13px;
+	float: left; 
+	list-style: none;
+	padding: 8px 20px ;
+	border: none;
+	margin: 5px 4px 0 0;
+	line-height: 12px;
+	-moz-border-radius:5px;
+	border-radius: 5px;
+	cursor: default !important;
+}
+
+.list ul.widgetInsideBtns li {
+	height: 13px;
+	font-size: 10px;
+	float: left; 
+	list-style: none;
+	padding: 5px 4px 0 4px;
+	border: none;
+	margin: 5px 4px 0 0;
+	line-height: 8px;
+	-moz-border-radius:5px;
+	border-radius: 5px;
+	cursor: default !important;
+}
+
+.comingSoon ul.widgetInsideBtns {height: 25px; margin-bottom: 5px;}
+
+
+/* button colors */
+
+ul.widgetInsideBtns li.color_1 {background-color: #569dc9;} /* pc button */
+
+ul.widgetInsideBtns li.color_2 {background-color: #747474;} /* mac button */
+
+ul.widgetInsideBtns li.color_3 {background-color: #f8de89;} /* online button */
+
+input.flatBtn_blue {
+	padding: 8px 2px;
+	background-color: #12436e;
+	color: #fff;
+	font-weight: bolder;
+	-moz-border-radius:0px;
+	border-radius: 0px;
+	border: none;
+}
+
+.blue3dBtn {
+	width: 280px;
+	height: 50px;
+	background: url(../../images/btns/productBtn.html) no-repeat;
+}
+
+.green3dBtn_play {
+	width: 186px;
+	height: 49px;
+	display: block;
+	background: url(../../images/btns/greenPlayBtn.html) no-repeat;
+}
+
+.clear { /* generic container (i.e. div) for floating buttons */
+    overflow: hidden;
+    width: 100%;
+}
+
+a.platformBtns {
+    background: transparent url('../../images/btns/pp_rt.html') no-repeat scroll top right;
+    color: #444;
+    display: block;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    height: 23px;
+    margin-right: 6px;
+    padding-right: 23px; /* sliding doors padding */
+    text-decoration: none;
+}
+
+a.platformBtns span {
+    background: transparent url('../../images/btns/pp_lt.html') no-repeat;
+    display: block;
+    line-height: 18px;
+    padding: 2px 10px 5px 10px;
+}
+/*==============================================
+Text Styles
+==============================================*/ 
+
+h1 span {font-weight: normal;}
+
+.titleBold, .titleHeader a, .userAvatarInfo .friends span, .pagBox.next,
+.bundleOfTheWk a, .gameStatsBox .header a, .downloadBtns .txt, .gameDescTxt .header 
+{font-weight: bolder !important;}
+
+.whTxt, a.whTxt, a.whTxt:link, a.whTxt:active, a.whTxt:visited, a.whTxt:focus,
+.downloadBtns .txt  {color: #fff !important;}
+
+.grayxt, .pagBox.prev {color:#bbb !important;}
+
+.titleHeader { /* Titles Headers */ 
+	display: block;
+} 
+
+.homeLtCol .titleHeader, .downloadBtns .txt {font-size: 16px;}
+
+.bundleOfTheWk .titleHeader, .newsletter .titleHeader, .footer_inside .titleHeader, .newsletter li.color_4 a, 
+.gameStatsBox .header
+{font-size: 14px;}
+
+.upcoming_games_module .link a {font-size: 11px; text-align: right;}
+
+.titleWrapper span, .gameStatsBox .header span {font-weight: normal !important;}
+
+.lrgSqAd p, .productPlayer p, .loadSell p {margin: 0; padding: 10px; text-align: center;}
+
+.contentBoxesBlk h2 {margin: 0;}
+
+.contentBoxesBlk p {width: inherit; margin: 5px 0;}
+
+.gameDescTxt p {margin: 15px 0;}
+
+/*==============================================
+Star Rating Styles
+==============================================*/
+.ratingTxt {
+	height: 20px;
+	line-height: 20px;
+	margin-right: 20px;
+}
+
+.ratingBar { /* empty stars */
+  width: 80px;
+  margin-top: -1px;
+  float: left;
+  background: url(../../images/icons/stars.html) repeat-x 0 -17px;
+}
+
+.ratingBar div { /* full stars */
+  height: 18px;
+  background: url(../../images/icons/stars.html) repeat-x 0 1px;
+}
+
+/*==============================================
+Image Styles
+==============================================*/
+
+.ghLogo {
+	width: 235px;
+	height: 81px;
+	background: url(../../images/logo1.html) no-repeat;
+}
+
+.userAvatar {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	background-color: #222;
+}
+
+.miniThumbNail { 
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+	border: none;
+	-moz-border-radius:5px;
+	border-radius: 5px;
+}
+
+.editorialBox .miniThumbNail { 
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	border: none;
+}
+
+.smThumbNail { 
+	width: 80px;
+	height: 45px;
+	margin: 10px;
+	background-color:#222222;
+	-moz-border-radius:5px;
+	border-radius: 5px;
+}
+
+.medThumbNail {
+	width: 100px;
+	height: 75px;
+	margin: 10px;
+	background-color:#222222;
+	-moz-border-radius:5px;
+	border-radius: 5px;
+}
+
+.lrgThumbNail {
+	width: 200px;
+	height: 100px;
+	margin: 10px auto;
+	background-color:#222222;
+}
+
+.preThumbNail {}
+
+.gridView, .listView {width: 20px; height: 20px; margin: 0 2px; background-color: #464646;}
+
+.gameImage_1 {
+	width: 100px;
+	height: 75px;
+	margin: 10px;
+	border: none;
+	-webkit-border-radius:5px; /* Safari and Chrome */
+	-moz-border-radius:5px;
+	border-radius: 5px;
+	-moz-box-shadow: 1px 1px 2px #888;
+	-webkit-box-shadow: 1px 1px 2px #888;
+}
+
+
+/* Icons */
+
+.funTicketIcon {
+	width: 39px;
+	height: 19px;
+	float: left;
+	margin-right: 5px;
+	display: block;
+	background: url(../../images/icons/gameHouseIcons.html) no-repeat 0 0;
+}
+
+.funPassIcon {
+	width: 39px;
+	height: 19px;
+	float: left;
+	margin-right: 5px;
+	display: block;
+	background: url(../../images/icons/gameHouseIcons.html) no-repeat 0 -18px;
+}
+.gamePassIcon {
+	width:28px;
+	height:19px;
+	float:left;
+	margin-right:5px;
+	display:block;
+	background: url(../../images/icons/icon-gamepass.html) no-repeat 0 0;	
+}
+.shoppingCartIcon {
+	width: 22px;
+	height: 16px;
+	margin: 10px 5px 0 0;
+	display: block;
+	background: url(../../images/icons/gameHouseIcons.html) no-repeat 0 -61px;
+}
+
+.fbIcon, a.fbIcon {
+	width: 12px;
+	height: 12px;
+	background: url(../../images/icons/gameHouseIcons.html) no-repeat 0 -88px;
+}
+
+a.fbIcon span {padding-left: 15px;}
+
+.closeX {
+	width: 10px;
+	height: 9px;
+	margin-top: 1px;
+	display: block;
+	background: url(../../images/icons/gameHouseIcons.html) no-repeat 0 -29px;
+}
+
+.arrow_lrg {
+	width: 10px;
+	height: 6px;
+	margin: 16px 0 0 5px;
+	background: url(../../images/icons/gameHouseIcons.html) no-repeat 0 -42px;
+}
+
+.arrow_sm {
+	width: 10px;
+	height: 6px;
+	margin: 5px 0 0 5px;
+	background: url(../../images/icons/gameHouseIcons.html) no-repeat 0 -49px;
+}
+.footer .ftCol_4 .logo_1 div{float:left;}
+.footer .ftCol_4 .logo_1 .txt{width:145px;}
+.footer .ftCol_4 .logo_1{height:35px;}
+.etrustLogo {
+	width: 90px;
+	height: 28px;
+	margin-right: 20px;
+	display:block;
+	background: url(../../images/thumbNails/footerIcons.html) no-repeat 0 -28px;
+}
+
+.bbbLogo {
+	width: 74px;
+	height: 28px;
+	margin-right: 10px;
+	float: left;
+	background: url(../../images/thumbNails/footerIcons.html) no-repeat 0 0;
+}
+
+.iLoveGHlogo {
+	width: 174px;
+	height: 28px;
+	background: url(../../images/thumbNails/footerIcons.html) no-repeat 0 -56px;
+}
+
+.twitterIcon {
+	width: 32px;
+	height: 33px;
+	background: url(../../images/icons/gameHouseIcons.html) no-repeat 0 -102px;
+}
+
+.facebookIcon {
+	width: 32px;
+	height: 32px;
+	background: url(../../images/icons/gameHouseIcons.html) no-repeat 0 -135px;
+}
+
+.youTubeIcon {
+	width: 32px;
+	height: 32px;
+	background: url(../../images/icons/gameHouseIcons.html) no-repeat 0 -168px;
+}
+
+.blogIcon {
+	width: 32px;
+	height: 30px;
+	background: url(../../images/icons/gameHouseIcons.html) no-repeat 0 -199px;
+}
+
+.forumIcon {
+	width: 32px;
+	height: 30px;
+	background: url(../../images/icons/gameHouseIcons.html) no-repeat 0 -228px;
+}
+
+.hero-nav .pausePlay { /* only to be used in the hero module rotator */
+	width:17px;
+	height: 16px;
+	background: url(../../images/icons/gameHouseIcons.html) no-repeat 5px -276px;
+	position: relative;
+}
+
+.hero-nav .playSelected { /* only to be used in the hero module rotator */
+	background: url(../../images/icons/gameHouseIcons.html) no-repeat 6px -258px;
+
+}
+
+.saverImage {
+	width: 50px;
+	height: 50px;
+	top: -21px;
+	padding-right: 10px;
+	background: url(../../images/icon-super-saver.html) no-repeat;
+	position: relative;
+}
+
+.newsLetterIcon {
+	width: 50px;
+	height: 42px;
+	margin: -16px 25px 0 0;
+	padding-right: 15px;
+	background: url(../../images/icon-newsletter.html) no-repeat;
+	position: relative;
+}
+
+a img {border: none;}
+
+.widgetContent .grid a img {
+	left: 0;
+	position: relative;
+	top:4px;
+	z-index: 0;
+}
+.gameBorder_overlay{
+	background: transparent url(../../images/gameOverlays/blank.html) no-repeat 0 0;
+	width: 150px;
+	height: 180px;
+	position: absolute;
+    z-index: 1;
+}
+.white_overlay{background-image:url(../../images/gameOverlays/white-overlay_100x75.html);height:75px;width:100px;}
+.super-saver_overlay{background-image:url(../../images/gameOverlays/super-saver.html);height:107px;width:110px;}
+.action_overlay {background-image:url(../../images/gameOverlays/action.html);}
+.adventure_overlay {background-image: url(../../images/gameOverlays/adventure.html);}
+.arcade_overlay {background-image: url(../../images/gameOverlays/arcade.html);}
+.board_overlay {background-image: url(../../images/gameOverlays/board.html);}
+.brain_overlay {background-image: url(../../images/gameOverlays/brain.html);}
+.card_overlay {background-image: url(../../images/gameOverlays/card.html);}
+.casino_overlay {background-image: url(../../images/gameOverlays/casino.html);}
+.classic_overlay {background-image: url(../../images/gameOverlays/classic.html);}
+.driving_overlay {background-image: url(../../images/gameOverlays/driving.html);}
+.hidden-object_overlay {background-image: url(../../images/gameOverlays/hidden-object.html);}
+.jigsaw_overlay {background-image: url(../../images/gameOverlays/jigsaw.html);}
+.kids_overlay {background-image:url(../../images/gameOverlays/kids.html);}
+.mahjong_overlay {background-image: url(../../images/gameOverlays/mahjong.html);}
+.match-3_overlay {background-image: url(../../images/gameOverlays/match3.html);}
+.new_overlay {background-image: url(../../images/gameOverlays/new.html);}
+.mmo_overlay {background-image: url(../../images/gameOverlays/mmo.html);}
+.online_overlay {background-image: url(../../images/gameOverlays/online.html);}
+.puzzle_overlay {background-image: url(../../images/gameOverlays/puzzle.html);}
+.rpg_overlay{background-image: url(../../images/gameOverlays/rpg.html);}
+.shooting_overlay {background-image: url(../../images/gameOverlays/shooting.html);}
+.simulation_overlay {background-image: url(../../images/gameOverlays/simulation.html);}
+.skill_overlay {background-image: url(../../images/gameOverlays/skill.html);}
+.sports_overlay {background-image: url(../../images/gameOverlays/sports.html);}
+.strategy_overlay {background-image: url(../../images/gameOverlays/strategy.html);}
+.time-management_overlay{background-image: url(../../images/gameOverlays/time-management.html);}
+.word_overlay {background-image: url(../../images/gameOverlays/word.html);}
+
+.reviewIcon {
+	width: 17px;
+	height: 14px;
+	margin: 3px 0 0 8px;
+	display: block;
+	float: left;
+	position: relative;
+	background: url(../../images/icons/ppGamesIcons.html) no-repeat;
+}
+
+.detailsIcon {
+	width: 17px;
+	height: 15px;
+	margin: 3px 0 0 0;
+	display: block;
+	float: left;
+	position: relative;
+	background: url(../../images/icons/ppGamesIcons.html) 0 -16px no-repeat;
+}
+
+.shareIcon {
+	width: 17px;
+	height: 14px;
+	margin: 3px 0 0 0;
+	display: block;
+	float: left;
+	position: relative;
+	background: url(../../images/icons/ppGamesIcons.html) 0 -35px no-repeat;
+}
+
+.dlIcon {
+	width: 17px;
+	height: 20px;
+	margin: 3px 0 0 0;
+	display: block;
+	float: left;
+	position: relative;
+	background: url(../../images/icons/ppGamesIcons.html) 0 -50px no-repeat;
+}
+
+.alertIcon_gray {
+	width: 14px;
+	height: 14px;
+	margin: 1px 0 0 0;
+	display: block;
+	float: left;
+	position: relative;
+	background: url(../../images/icons/ppGamesIcons.html) 0 -73px no-repeat;
+}
+
+.alertIcon_red {
+	width: 14px;
+	height: 14px;
+	margin: 1px 0 0 0;
+	display: block;
+	float: left;
+	position: relative;
+	background: url(../../images/icons/ppGamesIcons.html) 0 -86px no-repeat;
+}
+
+.shareIcon_fb {background: url(../../images/icons/shareGameIcons.html) 0 -85px no-repeat;}
+.shareIcon_twitter {background: url(../../images/icons/shareGameIcons.html) 0 -136px no-repeat;}
+.shareIcon_mySpace {background: url(../../images/icons/shareGameIcons.html) 0 -34px no-repeat;}
+.shareIcon_googleBuzz {background: url(../../images/icons/shareGameIcons.html) 0 0 no-repeat;}
+.shareIcon_yahooBuzz {background: url(../../images/icons/shareGameIcons.html) 0 0 no-repeat;}
+.shareIcon_windowsLive {background: url(../../images/icons/shareGameIcons.html) 0 0 no-repeat;}
+.shareIcon_reddit {background: url(../../images/icons/shareGameIcons.html) 0 0 no-repeat;}
+.shareIcon_digg {background: url(../../images/icons/shareGameIcons.html) 0 0 no-repeat;}
+.shareIcon_email {background: url(../../images/icons/shareGameIcons.html) 0 0 no-repeat;}
+
+.shareIcons {
+	width: 16px;
+	height: 16px;
+	display: block;
+	position: relative;
+}
+
+.listNum {width:16px;height:17px; background:transparent url("../../images/icons/roundNumbers_wh.html") no-repeat scroll 0px 0px;}
+.listNum_1 {background-position:0px 0px;}
+.listNum_2 {background-position:0px -17px;}
+.listNum_3 {background-position:0px -34px;}
+.listNum_4 {background-position:0px -52px;}
+.listNum_5 {background-position:0px -72px;}
+
+
+/*==============================================
+Color Themes
+==============================================*/
+
+/* gradient gold widget without shadow */
+.goldTheme .widgetContent {
+	background-color: #f8d351;
+	-moz-border-radius:5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(border-radius.html);
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8d351), to(#f2bf0b));
+	/* For Mozilla/Gecko (Firefox etc) */
+	background:-moz-linear-gradient(center top , #f8d351, #f2bf0b 70%) repeat scroll 0 0 transparent;
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f8d351, endColorstr=#f2bf0b);
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#f8d351, endColorstr=#f2bf0b)";
+}
+
+/* white widget with shadow */
+.whtTheme .widgetContent {
+	width: inherit;
+	padding: 20px;
+	-moz-border-radius:5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(border-radius.html);
+	-moz-box-shadow: 1px 1px 2px #888;
+	-webkit-box-shadow: 5px #888;
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e1dfda));
+	/* For Mozilla/Gecko (Firefox etc) */
+	background:-moz-linear-gradient(center top , #fff 70%, #e1dfda) repeat scroll 0 0 transparent;
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#cccccc);
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#cccccc)";
+}
+
+
+/* gradient blue widget without shadow */
+.bTheme .widgetContent {
+	-moz-border-radius:5px;
+	border-radius: 5px;
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from(#12436e), to(#387aac));
+	/* For Mozilla/Gecko (Firefox etc) */
+	background-color: #12436E;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#C5D8E6), to(#12436E), color-stop(.5,#397BAD));
+	background: -moz-linear-gradient(top, #C5D8E6 0%, #397BAD 50%, #12436E 100%);
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#387aac, endColorstr=#12436e);
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#387aac, endColorstr=#12436e)";
+}
+
+/* flate baby blue widget without shadow */
+.bbTheme .widgetContent {
+	background-color: #c5e5fe;
+	-moz-border-radius:5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.bbBorder  {
+	border: 3px solid #c5e5fe;
+	-moz-border-radius:5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.color_4 { /* golden gradient */
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8d351), to(#eb8e00));
+	/* For Mozilla/Gecko (Firefox etc) */
+	background:-moz-linear-gradient(center top , #f8d351, #eb8e00 70%) repeat scroll 0 0 transparent;
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f8d351, endColorstr=#eb8e00);
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#f8d351, endColorstr=#eb8e00)";
+}
+
+.color_5 { /* green gradient */
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8d351), to(#f2bf0b));
+	/* For Mozilla/Gecko (Firefox etc) */
+	background:-moz-linear-gradient(center top , #8aab3f, #3e793b 70%) repeat scroll 0 0 transparent;
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f8d351, endColorstr=#f2bf0b);
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#f8d351, endColorstr=#f2bf0b)";
+}
+
+/*==============================================
+Added by jeremy (migth need to be integrated other places
+==============================================*/
+
+.more-less {display:inline-block;padding-right:15px;background:transparent url(../../images/arrowDwn.html) no-repeat right 4px;}
+.more-less.active {background-image:url(../../images/arrowUp.html);}
+
+/* hover box overlay */
+
+.hoverOverlay {
+	background:transparent url(../../images/hoverOverlayLeft.html) no-repeat 0 0;
+	color:#fff;
+	width:307px;
+	height:179px;
+	padding:18px 18px 18px 45px;
+	display:none;
+	position:absolute;
+	z-index:100;
+	top:0;
+	left:0;
+}
+.hoverOverlayRight {
+	background:transparent url(../../images/hoverOverlayRight.html) no-repeat 0 0;
+	padding:18px 45px 18px 18px;
+}
+.ie8 .hoverOverlay,.ie7 .hoverOverlay {
+	background-image:url(../../images/hoverOverlayLeftIE.html);
+}
+.ie8 .hoverOverlayRight,.ie7 .hoverOverlayRight {
+	background-image:url(../../images/hoverOverlayRightIE.html);
+}
+.hoverOverlay h3 {font-size:16px;font-weight:bold;margin:0 0 8px 0;padding:0;}
+.hoverOverlay h3 a {color:#fff;font-weight:bold}
+.hoverOverlay .heading{color:#828282;padding:0 5px 0 0;}
+.hoverOverlay .rating {height:17px;margin:0 0 5px 0}
+.hoverOverlay .rating span{float:left;color:#828282;font-size:10px;}
+.hoverOverlay .rating .stars,.hoverOverlay .rating .stars .starMask{
+    background:transparent url(../../images/hoverOverlayStars.html) no-repeat left bottom;
+    height:17px;
+    width:88px;
+    position:relative;
+    float:left;
+}
+.hoverOverlay .rating .stars .starMask{position:absolute;top:0;left:0;background-position:0px -80px;}
+.hoverOverlay .genres {margin:0 0 8px 0}
+.hoverOverlay .genres .genre {font-weight:bold;margin:0 5px 0 0}
+.hoverOverlay .desc {margin:8px 0;line-height:18px;}
+.hoverOverlay .platforms{height:45px;position:absolute;bottom:16px;width:150px;}
+.hoverOverlay .platforms .heading{color:#fff;font-size:10px;width:150px;margin:0 0 3px 0;}
+.hoverOverlay .platforms .altpc,.hoverOverlay .platforms .altmac,.hoverOverlay .platforms .altweb{
+	background:#519ac4 url(../../images/hoverOverlayPlatforms.html) no-repeat;
+	height:18px;
+	width:26px;
+	margin:3px;
+	text-align:center;
+	line-height:18px;
+	display:block;
+	float:left;
+	color:#fff;
+}
+.hoverOverlay .platforms .altpc{background-color:#519ac4;background-position:left bottom;width:26px;}
+.hoverOverlay .platforms .altmac{background-color:#797979;background-position:left center;width:32px;}
+.hoverOverlay .platforms .altweb{background-color:#fbdf8b;background-position:left top;width:43px;color:#2a2a2a;}
+/*==============================================
+Grid Layout
+==============================================*/
+
+.gridContainer {
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+
+.gridContainer:after {
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	line-height:0;
+	height:0;
+}
+
+.gridCol_1,.gridCol_2,.gridCol_3,.gridCol_4,.gridCol_5,.gridCol_6,.gridCol_7,.gridCol_8,.gridCol_9,.gridCol_10,
+.gridCol_11,.gridCol_12,.gridCol_13,.gridCol_14,.gridCol_15,.gridCol_16,.gridCol_17,.gridCol_18,.gridCol_19,.gridCol_20,
+.gridCol_21,.gridCol_22,.gridCol_23,.gridCol_24 {
+	float:left;
+	margin:0 5px;
+	position:relative;
+	overflow:hidden;
+}
+
+.gridCol_1:after,.gridCol_2:after,.gridCol_3:after,.gridCol_4:after,.gridCol_5:after,
+.gridCol_6:after,.gridCol_7:after,.gridCol_8:after,.gridCol_9:after,.gridCol_10:after,
+.gridCol_11:after,.gridCol_12:after,.gridCol_13:after,.gridCol_14:after,.gridCol_15:after,
+.gridCol_16:after,.gridCol_17:after,.gridCol_18:after,.gridCol_19:after,.gridCol_20:after,
+.gridCol_21:after,.gridCol_22:after,.gridCol_23:after,.gridCol_24:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;	
+}
+
+.gridCol_1 {width:30px;}
+.gridCol_2 {width:70px;}
+.gridCol_3 {width:110px;}
+.gridCol_4 {width:150px;}
+.gridCol_5 {width:190px;}
+.gridCol_6 {width:230px;}
+.gridCol_7 {width:270px;}
+.gridCol_8 {width:310px;}
+.gridCol_9 {width:350px;}
+.gridCol_10 {width:390px;}
+.gridCol_11 {width:430px;}
+.gridCol_12 {width:470px;}
+.gridCol_13 {width:510px;}
+.gridCol_14 {width:550px;}
+.gridCol_15 {width:590px;}
+.gridCol_16 {width:630px;}
+.gridCol_17 {width:670px;}
+.gridCol_18 {width:710px;}
+.gridCol_19 {width:750px;}
+.gridCol_20 {width:790px;}
+.gridCol_21 {width:830px;}
+.gridCol_22 {width:870px;}
+.gridCol_23 {width:910px;}
+.gridCol_24 {width:950px;}

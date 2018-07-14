@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html style="background-color: black;">
+
+<!-- Mirrored from origin.gamehouse.com/static/ghkt/ghkt0002.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Mar 2016 07:06:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<script type="application/javascript" src="jquery-1.7.2.min.js"></script>
+	<script type="application/javascript" src="jquery.cookie.js"></script>
+	<script type="application/javascript" src="jquery.url.js"></script>
+	<script type="application/javascript" src="kontagent_api.js"></script>
+	<script type="application/javascript">
+$(document).ready(function(){$.fn.AppRedirect=function(){this.doInstallRedirect=b.doInstallRedirect;this.doPurchaseRedirect=b.doPurchaseRedirect;this.generateUID=b.generateUID;this.getAppStoreURLPath=b.getAppStoreURLPath;this.getInstalledAppURL=b.getInstalledAppURL;this.getKontagentAppId=b.getKontagentAppId;this.getLongUID=b.getLongUID;this.getRequestType=b.getRequestType;this.getSource=b.getSource;this.removeCookie=b.removeCookie;this.retrieveCookie=b.retrieveCookie;this.sendAppAddRequest=b.sendAppAddRequest;
+this.storeCookie=b.storeCookie;return this};var b={doInstallRedirect:function(a){console.log("doInstallRedirect");window.location.replace(a+"://")},doPurchaseRedirect:function(a){console.log("doPurchaseRedirect");window.location.replace("itms-apps://"+a)},generateUID:function(){var a,b="";for(a=0;8>a;a++)b+=Math.floor(16*Math.random()).toString(16);return b},getAppStoreURLPath:function(){return $.url(window.location.html).param("storeurlpath")},getInstalledAppURL:function(){return $.url(window.location.html).param("appurl")},
+getKontagentAppId:function(){return $.url(window.location.html).param("kid")},getLongUID:function(){return $.url(window.location.html).param("userid")},getRequestType:function(){return $.url(window.location.html).param("type")},getSource:function(){var a=$.url(window.location.html).param("source");"ad"!==a&&"partner"!==a&&(a="ad",console.log("Invalid source, defaulting to: "+a));return a},removeCookie:function(){console.log("removeCookie");$.cookie("KONTAGENT_UID",null)},retrieveCookie:function(){console.log("retrieveCookie");
+return $.cookie("KONTAGENT_UID")},sendAppAddRequest:function(a,b,c){console.log("sendAppAddRequest");$("<iframe />",{src:"http://api.geo.kontagent.net/api/v1/"+c+"/apa/?s="+a+"&i=0&su="+b}).appendTo("body")},storeCookie:function(a){console.log("storeCookie");$.cookie("KONTAGENT_UID",a,{path:"/",expires:7})}},c,e,d,g,a,f;c=$("body").AppRedirect();e=c.getInstalledAppURL();void 0===e?console.log("Must define 'appurl'"):(a=c.getRequestType(),d=c.getKontagentAppId(),void 0===d?console.log("Must define 'kid'"):
+(ktAPI=new KontagentApi(d),console.log(ktAPI),"adclick"===a?$.cookie("KADREDIR")==e?console.log("Already done a redirect!"):($.cookie("KADREDIR",e,{path:"/",expires:28}),c.getSource(),f=ktAPI.genShortUniqueTrackingTag(),g=c.getAppStoreURLPath(),void 0===g?console.log("Must define 'storeurlpath'"):(c.storeCookie(f),d={},a=a=a="",a=$.url(window.location.html).param("sub1"),void 0!=a&&(d.subtype1=a,a=$.url(window.location.html).param("sub2"),void 0!=a&&(d.subtype2=a,a=$.url(window.location.html).param("sub3"),
+void 0!=a&&(d.subtype3=a))),ktAPI.trackThirdPartyCommClick("ad",f,d,function(){console.log("Success. uTag: "+f+". Now redirecting");c.doPurchaseRedirect(g)}))):"install"===a?$.cookie("KINREDIR")==e?console.log("Already done a redirect!"):($.cookie("KINREDIR",e,{path:"/",expires:28}),f=c.retrieveCookie(),d=c.getLongUID(),void 0===f||void 0===d?console.log("Unknown user"):(a={},a.shortUniqueTrackingTag=f,ktAPI.trackApplicationAdded(d,a,function(){console.log("Success. Redirecting.");c.removeCookie();
+c.doInstallRedirect(e)}))):console.log("Unknown 'type' param; should be 'purchase' or 'install'")))});
+</script>
+</head>
+<body style="visibility: hidden;">
+</body>
+
+<!-- Mirrored from origin.gamehouse.com/static/ghkt/ghkt0002.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Mar 2016 07:06:47 GMT -->
+</html>

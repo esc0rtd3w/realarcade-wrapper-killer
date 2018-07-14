@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html style="background-color: black;">
+
+<!-- Mirrored from origin.gamehouse.com/static/ghkt/ghkt0006.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Mar 2016 07:06:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script type="application/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="application/javascript" src="jquery.cookie.js"></script>
+<script type="application/javascript" src="jquery.url.js"></script>
+<script type="application/javascript" src="kontagent_api.js"></script>
+<script type="application/javascript">
+$(document).ready(function(){$.fn.AppRedirect=function(){this.checkRefresh=b.checkRefresh;this.doInstallRedirect=b.doInstallRedirect;this.doGenericRedirect=b.doGenericRedirect;this.doVisitedRedirect=b.doVisitedRedirect;this.generateUID=b.generateUID;this.getAppStoreURLPath=b.getAppStoreURLPath;this.getGenericURL=b.getGenericURL;this.getInstalledAppURL=b.getInstalledAppURL;this.getKontagentAppId=b.getKontagentAppId;this.getKontagentTestOnly=b.getKontagentTestOnly;this.getLongUID=b.getLongUID;this.getRequestType=
+b.getRequestType;this.getSource=b.getSource;this.getUserId=b.getUserId;this.removeCookie=b.removeCookie;this.retrieveCookie=b.retrieveCookie;this.storeCookie=b.storeCookie;return this};var b={checkRefresh:function(g){if("1"===$.url(window.location.html).param("visited"))return void 0==g.retrieveCookie("VISITED")?(g.storeCookie("VISITED","1"),1):2;g.removeCookie("VISITED");return 0},doInstallRedirect:function(g){window.location.replace(g+"://")},doGenericRedirect:function(g){window.location.replace(g)},
+doVisitedRedirect:function(){window.location.replace(window.location.href+"&visited=1")},generateUID:function(){var g,a="";for(g=0;8>g;g++)a+=Math.floor(16*Math.random()).toString(16);return a},getAppStoreURLPath:function(){return $.url(window.location.html).param("storeurlpath")},getGenericURL:function(){return $.url(window.location.html).param("redirecturl")},getInstalledAppURL:function(){return $.url(window.location.html).param("appurl")},getKontagentAppId:function(){return $.url(window.location.html).param("kid")},
+getKontagentTestOnly:function(){return $.url(window.location.html).param("testonly")},getLongUID:function(){return $.url(window.location.html).param("uniqueid")},getRequestType:function(){return $.url(window.location.html).param("type")},getSource:function(){var a=$.url(window.location.html).param("source");"ad"!==a&&"partner"!==a&&(a="ad");return a},getUserId:function(){return $.url(window.location.html).param("userid")},removeCookie:function(a){$.cookie(a,null,{path:"/"})},retrieveCookie:function(a){return $.cookie(a)},
+storeCookie:function(a,b){$.cookie(a,b,{path:"/",expires:7})}},a,d,c,f,e;a=$("body").AppRedirect();d=a.checkRefresh(a);2!==d&&(f=a.getRequestType(),void 0!==f&&(c=a.getKontagentAppId(),void 0!==c&&(ktAPI="1"===a.getKontagentTestOnly()?new KontagentApi(c,{useTestServer:!0}):new KontagentApi(c),"adclick"===f?0===d?(c=a.getSource(),d=ktAPI.genShortUniqueTrackingTag(),a.storeCookie("KONTAGENT_UID",d),f={},e=$.url(window.location.html).param("sub1"),void 0!=e&&(f.subtype1=e,e=$.url(window.location.html).param("sub2"),
+void 0!=e&&(f.subtype2=e,e=$.url(window.location.html).param("sub3"),void 0!=e&&(f.subtype3=e))),ktAPI.trackThirdPartyCommClick(c,d,f,function(){a.doVisitedRedirect()})):(d=a.getAppStoreURLPath(),c=a.getGenericURL(),void 0===d&&void 0===c||(void 0!==c?a.doGenericRedirect(c):a.doGenericRedirect("itms-apps://"+d))):"install"===f&&(c=a.getInstalledAppURL(),void 0!==c&&(0===d?(d=a.retrieveCookie("KONTAGENT_UID"),c=a.getLongUID(),void 0!==c&&(f=a.getUserId(),void 0!==f&&(e={},void 0!=d?e.shortUniqueTrackingTag=
+d:e.uniqueTrackingTag=c,ktAPI.trackApplicationAdded(f,e,function(){a.removeCookie("KONTAGENT_UID");a.doVisitedRedirect()})))):a.doInstallRedirect(c))))))});
+</script>
+</head>
+<body style="visibility: hidden;">
+<form name="refreshForm"><input type="hidden" name="visited" value=""/></form>
+</body>
+
+<!-- Mirrored from origin.gamehouse.com/static/ghkt/ghkt0006.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Mar 2016 07:06:47 GMT -->
+</html>

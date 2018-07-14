@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html style="background-color: black;">
+
+<!-- Mirrored from origin.gamehouse.com/static/ghkt/ghkt0005.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Mar 2016 07:06:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script type="application/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="application/javascript" src="jquery.cookie.js"></script>
+<script type="application/javascript" src="jquery.url.js"></script>
+<script type="application/javascript" src="kontagent_api.js"></script>
+<script type="application/javascript">
+$(document).ready(function(){$.fn.AppRedirect=function(){this.checkRefresh=b.checkRefresh;this.doInstallRedirect=b.doInstallRedirect;this.doPurchaseRedirect=b.doPurchaseRedirect;this.doVisitedRedirect=b.doVisitedRedirect;this.generateUID=b.generateUID;this.getAppStoreURLPath=b.getAppStoreURLPath;this.getInstalledAppURL=b.getInstalledAppURL;this.getKontagentAppId=b.getKontagentAppId;this.getKontagentTestOnly=b.getKontagentTestOnly;this.getLongUID=b.getLongUID;this.getRequestType=b.getRequestType;this.getSource=
+b.getSource;this.getUserId=b.getUserId;this.removeCookie=b.removeCookie;this.retrieveCookie=b.retrieveCookie;this.storeCookie=b.storeCookie;return this};var b={checkRefresh:function(f){if("1"===$.url(window.location.html).param("visited"))return void 0==f.retrieveCookie("VISITED")?(f.storeCookie("VISITED","1"),1):2;f.removeCookie("VISITED");return 0},doInstallRedirect:function(f){window.location.replace(f+"://")},doPurchaseRedirect:function(f){window.location.replace("itms-apps://"+f)},doVisitedRedirect:function(){window.location.replace(window.location.href+
+"&visited=1")},generateUID:function(){var f,a="";for(f=0;8>f;f++)a+=Math.floor(16*Math.random()).toString(16);return a},getAppStoreURLPath:function(){return $.url(window.location.html).param("storeurlpath")},getInstalledAppURL:function(){return $.url(window.location.html).param("appurl")},getKontagentAppId:function(){return $.url(window.location.html).param("kid")},getKontagentTestOnly:function(){return $.url(window.location.html).param("testonly")},getLongUID:function(){return $.url(window.location.html).param("uniqueid")},
+getRequestType:function(){return $.url(window.location.html).param("type")},getSource:function(){var a=$.url(window.location.html).param("source");"ad"!==a&&"partner"!==a&&(a="ad");return a},getUserId:function(){return $.url(window.location.html).param("userid")},removeCookie:function(a){$.cookie(a,null,{path:"/"})},retrieveCookie:function(a){return $.cookie(a)},storeCookie:function(a,b){$.cookie(a,b,{path:"/",expires:7})}},a,g,e,c,d;a=$("body").AppRedirect();g=a.checkRefresh(a);2!==g&&(c=a.getRequestType(),
+void 0!==c&&(e=a.getKontagentAppId(),void 0!==e&&(ktAPI="1"===a.getKontagentTestOnly()?new KontagentApi(e,{useTestServer:!0}):new KontagentApi(e),"adclick"===c?(c=a.getAppStoreURLPath(),0===g?(e=a.getSource(),g=ktAPI.genShortUniqueTrackingTag(),void 0!==c&&(a.storeCookie("KONTAGENT_UID",g),c={},d=$.url(window.location.html).param("sub1"),void 0!=d&&(c.subtype1=d,d=$.url(window.location.html).param("sub2"),void 0!=d&&(c.subtype2=d,d=$.url(window.location.html).param("sub3"),void 0!=d&&(c.subtype3=
+d))),ktAPI.trackThirdPartyCommClick(e,g,c,function(){a.doVisitedRedirect()}))):a.doPurchaseRedirect(c)):"install"===c&&(e=a.getInstalledAppURL(),void 0!==e&&(0===g?(g=a.retrieveCookie("KONTAGENT_UID"),e=a.getLongUID(),void 0!==e&&(c=a.getUserId(),void 0!==c&&(d={},void 0!=g?d.shortUniqueTrackingTag=g:d.uniqueTrackingTag=e,ktAPI.trackApplicationAdded(c,d,function(){a.removeCookie("KONTAGENT_UID");a.doVisitedRedirect()})))):a.doInstallRedirect(e))))))});
+</script>
+</head>
+<body style="visibility: hidden;">
+<form name="refreshForm"><input type="hidden" name="visited" value=""/></form>
+</body>
+
+<!-- Mirrored from origin.gamehouse.com/static/ghkt/ghkt0005.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Mar 2016 07:06:47 GMT -->
+</html>
