@@ -1,0 +1,15 @@
+origin-nfs02.gameco.biz 2014/01/09 12:50:01 [778]
+2014/01/09 12:53:10 [1127] building file list
+2014/01/09 12:53:11 [1127] 12981 files to consider
+2014/01/09 12:53:11 [1127] .d..t...... ./
+2014/01/09 12:53:11 [1127] <f.st...... 1
+2014/01/09 12:53:11 [1127] <f.st...... push-static-all.log
+2014/01/09 12:53:11 [1127] <f..t...... push.static.log
+2014/01/09 12:53:11 [1127] <f.st...... push.to.10.34.240.66.log
+2014/01/09 12:53:11 [1127] <f.st...... push.to.10.34.240.71.log
+2014/01/09 12:53:11 [1127] <f.st...... push.to.origin-nfs01.gameco.biz.log
+2014/01/09 12:53:11 [1127] <f.st...... push.to.origin-nfs02.gameco.biz.log
+2014/01/09 12:53:11 [1127] .d..t...... zylom/corporate/uk/
+2014/01/09 12:53:11 [1127] <f..t...... zylom/corporate/uk/index.html
+2014/01/09 12:53:11 [1127] sent 386370 bytes  received 24880 bytes  274166.67 bytes/sec
+2014/01/09 12:53:11 [1127] total size is 2375556257  speedup is 5776.43

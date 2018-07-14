@@ -1,0 +1,69 @@
+img {
+  border: 0;
+}
+
+div#facebook_welcome_wrapper {
+  width: 977px;
+  margin: 0 auto;
+}
+
+div#facebook_welcome {
+  background: transparent url('http://media.gamehouse.com/m/landingpages/facebooklp/background.jpg') top left no-repeat;
+  position: relative;
+  height: 735px;
+  width: 977px;
+  margin: 0 auto;
+}
+
+a#download-button-uno {
+  position: absolute;
+  top: 320px;
+  left: 220px;
+}
+
+a#download-button-tt2 {
+  position: absolute;
+  top: 297px;
+  left: 220px;
+}
+
+a#download-button-collapse {
+  position: absolute;
+  top: 370px;
+  left: 220px;
+}
+
+ul#other_games {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  position: absolute;
+  bottom: 26px;
+  left: 26px;
+}
+
+ul#other_games li {
+  float: left;
+  padding-right: 6px;
+}
+
+ul#other_games li a img {
+  display: block;
+  margin-top: 4px;
+}
+
+ul#other_games li a img.play-button {
+  margin-left: 1px;
+}
+
+img#lead {
+  position: absolute;
+  left: 47px;
+}
+
+a#funpass {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}

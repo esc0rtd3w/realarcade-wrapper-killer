@@ -1,0 +1,13 @@
+54.201.155.229 2015/03/04 11:14:01 [1410]
+2015/03/04 11:14:02 [1429] building file list
+2015/03/04 11:14:03 [1429] 11764 files to consider
+2015/03/04 11:14:03 [1429] .d..t...... ./
+2015/03/04 11:14:03 [1429] <f.st...... push-static-all.log
+2015/03/04 11:14:03 [1429] <f..t...... push.static.log
+2015/03/04 11:14:03 [1429] <f.st...... push.to.54.148.113.216.log
+2015/03/04 11:14:03 [1429] <f.st...... push.to.54.201.155.229.log
+2015/03/04 11:14:03 [1429] .d..t...... email/slingo_adventure/daily/1_1/
+2015/03/04 11:14:03 [1429] <f+++++++++ email/slingo_adventure/daily/1_1/4_pc.jpg
+2015/03/04 11:14:03 [1429] *deleting   email/slingo_adventure/daily/1_1/4_pc.gif
+2015/03/04 11:14:03 [1429] sent 361958 bytes  received 15829 bytes  251858.00 bytes/sec
+2015/03/04 11:14:03 [1429] total size is 2183579047  speedup is 5779.92

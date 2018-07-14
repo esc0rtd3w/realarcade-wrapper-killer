@@ -1,0 +1,11 @@
+cdn-backend01.gameco.biz 2015/03/02 06:34:39 [15879]
+2015/03/02 06:34:39 [15882] building file list
+2015/03/02 06:34:39 [15882] 11735 files to consider
+2015/03/02 06:34:39 [15882] .d..t...... ./
+2015/03/02 06:34:40 [15882] <f.st...... 1
+2015/03/02 06:34:40 [15882] <f.st...... push-static-all.log
+2015/03/02 06:34:40 [15882] <f..t...... push.static.log
+2015/03/02 06:34:40 [15882] <f.st...... push.to.cdn-backend01.gameco.biz.log
+2015/03/02 06:34:40 [15882] <f.st...... push.to.cdn-backend02.gameco.biz.log
+2015/03/02 06:34:40 [15882] sent 367316 bytes  received 25946 bytes  262174.67 bytes/sec
+2015/03/02 06:34:40 [15882] total size is 2180293361  speedup is 5544.12

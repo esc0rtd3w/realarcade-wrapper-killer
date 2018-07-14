@@ -1,0 +1,245 @@
+ Volume in drive W is images
+ Volume Serial Number is 1DA9-0A3F
+
+ Directory of W:\mortimer
+
+09/13/2011  10:47 AM            26,940 MB_Complete_728x90.jpg
+08/19/2011  11:42 AM            35,036 MB_Win_728x90.jpg
+               2 File(s)         61,976 bytes
+
+ Directory of W:\promotions
+
+01/10/2011  12:07 PM            32,451 Delicious_Contest_728x90.jpg
+08/25/2010  11:21 AM            54,893 SummerPromo_728x90_3.png
+08/05/2010  01:45 PM            31,075 SummerPromo_728x90.png
+06/09/2010  09:36 AM            33,761 GG_VoteWin_728x90.png
+05/26/2010  01:58 PM            37,754 GH_MemorialDay_728x90.png
+09/20/2010  11:33 AM            72,039 NCIS_banner_en_728x90_20100820.jpg
+08/18/2010  09:23 AM            54,782 SummerPromo_728x90_2.png
+08/18/2010  09:38 AM            60,312 SummerPromo_728x90_2Mac.png
+               8 File(s)        377,067 bytes
+
+ Directory of W:\socialgames\ads
+
+10/24/2011  10:43 AM            34,744 UNOBoost_728x90.jpg
+10/24/2011  10:41 AM            96,932 CollapseBlast_728x90.jpg
+10/24/2011  10:26 AM            26,324 SocialGames_728x90.jpg
+               3 File(s)        158,000 bytes
+
+ Directory of W:\unlimited
+
+10/26/2010  11:01 AM            34,357 Unlimited_TextTwist2_728x90.jpg
+10/26/2010  10:35 AM            36,914 UnlimitedTrial_728x90.jpg
+10/26/2010  12:36 PM            34,946 Unlimited_MahjonggDimensions_728x90.jpg
+               3 File(s)        106,217 bytes
+
+ Directory of W:\socialgameads
+
+05/21/2010  04:08 PM            31,858 Scrabble_728x90_Take2.jpg
+05/21/2010  04:08 PM            30,262 Collapse_728x90_Take2.jpg
+05/21/2010  04:08 PM            27,604 Uno_728x90_Take2.jpg
+05/21/2010  04:08 PM            32,027 TT2_728x90_Take2.jpg
+08/18/2010  12:10 PM            38,216 fishdom-uno728x90.swf
+08/18/2010  12:13 PM            38,219 fishdom-collapse728x90.swf
+               6 File(s)        198,186 bytes
+
+ Directory of W:\rewards
+
+02/11/2013  05:09 PM            18,197 rewards-sunset_728x90.png
+               1 File(s)         18,197 bytes
+
+ Directory of W:\leaderboards
+
+07/19/2011  02:54 PM            38,280 dreamland_728x90.jpg
+02/10/2010  01:42 PM           147,867 BigCityAdventureVancouver_728x90.png
+02/10/2010  01:44 PM           102,550 MortimerBeckettLost_728x90.png
+06/29/2011  09:12 AM            35,137 JessicasBowWow_728x90.jpg
+08/06/2010  03:49 PM            33,911 ClockworkMan2_728x90.jpg
+02/10/2010  03:21 PM           101,506 HotelDash_728x90.png
+02/10/2010  02:12 PM           141,160 FarmMania2_728x90.png
+02/10/2010  02:23 PM           146,898 FarmFrenzy3_728x90.png
+02/11/2010  11:29 AM           145,614 JewelQuestHeritagePremium_728x90.png
+08/06/2010  02:51 PM            31,211 JewelQuestHeritage_728x90.jpg
+02/10/2010  01:56 PM           138,019 LuxorAdventures_728x90.png
+02/10/2010  03:40 PM           132,408 NancyDrewRansonShips_728x90.png
+02/10/2010  03:50 PM           133,627 JoJosFashionShowBundle_728x90.png
+02/10/2010  02:38 PM           147,137 3CardstoDeadTime_728x90.png
+08/06/2010  04:42 PM            58,884 CakeManiaLights_728x90.jpg
+              15 File(s)      1,534,209 bytes
+
+ Directory of W:\game_ads
+
+02/01/2010  06:18 PM           142,121 JQHeritageWin_728x90.png
+02/01/2010  05:41 PM           140,463 JewelQuestHeritageWin_728x90.png
+               2 File(s)        282,584 bytes
+
+ Directory of W:\ncis-banners
+
+09/17/2010  09:41 AM            72,039 NCIS_banner_en_728x90_20100820.jpg
+               1 File(s)         72,039 bytes
+
+ Directory of W:\movie_promo
+
+03/10/2010  12:06 PM           103,926 TV_Movies_728x90_Generic.png
+               1 File(s)        103,926 bytes
+
+ Directory of W:\sale
+
+11/12/2010  10:00 AM            38,404 AncientElementals_Sale_728x90.jpg
+01/07/2011  10:44 AM            36,693 IceCreamDream_Sale_728x90.jpg
+06/28/2010  12:36 PM           132,698 SuperSavers_DrWiseMahJong_728x90.png
+06/28/2010  11:48 AM           104,400 SuperSavers_DrWiseLeeLoo_728x90.png
+10/28/2010  02:44 PM            36,080 SaqqarahGHOST_Sale_728x90.jpg
+03/10/2010  11:15 AM            37,689 SuperSaver_728x90.jpg
+09/01/2010  02:29 PM           126,985 SuperSavers_HiddenBeach_728x90.png
+03/25/2010  03:35 PM            95,467 GH_Sale_728x90_April.png
+08/04/2010  03:21 PM           130,655 SuperSavers_DeliciousEsape_728x90.png
+09/01/2010  02:19 PM           135,736 SuperSavers_LilyWuPosh_728x90.png
+05/25/2010  12:27 PM            90,136 GH_Sale_728x90_May26.png
+06/09/2010  11:31 AM           131,099 SuperSavers_BookAloha_728x90.png
+12/03/2010  12:00 PM            38,868 HolidayGardenscapes_Sale_728x90.jpg
+05/10/2010  03:24 PM            46,742 GH_SuperSavers_728x90.jpg
+07/21/2010  02:35 PM           137,999 MyKingdom_Magicians_Sale_728x90.png
+12/03/2010  11:54 AM            27,846 Holiday_728x90.jpg
+08/18/2010  01:53 PM           125,282 BilboJenny_Sale_728x90.png
+08/18/2010  01:28 PM           140,242 JewelREAL_Sale_728x90.png
+10/14/2010  11:48 AM            34,450 HostileJewel_Sale_728x90.jpg
+05/12/2010  12:11 PM           101,731 GH_SuperSavers_728x90.png
+07/21/2010  04:16 PM           137,420 VV_FunPark_Sale_728x90.png
+08/04/2010  03:39 PM           145,604 SuperSavers_DreamHidden_728x90.png
+07/07/2010  03:41 PM           133,456 SuperSavers_ZuluCakeMania_728x90.png
+06/28/2010  12:17 PM           135,260 SuperSavers_FarmFrenzyMahJong_728x90.png
+03/10/2010  11:25 AM           116,243 SSaver_728x90.png
+05/27/2010  11:31 AM            91,618 GH_Sale_728x90_May26_2.png
+06/09/2010  08:47 AM           125,933 SuperSavers_MagicCrystal_728x90.png
+07/07/2010  04:06 PM           135,875 SuperSavers_AroundClubControl_728x90.png
+              28 File(s)      2,770,611 bytes
+
+ Directory of W:\ads\redir
+
+01/11/2011  02:38 PM               208 casale_728_redirect.html
+02/09/2013  10:34 AM               447 Rubicon_GH728x90BTF.html
+02/09/2013  10:35 AM               447 Rubicon_GH728x90ATF.html
+03/14/2013  02:56 PM               315 GAdsense_GH.com_728x90.html
+               4 File(s)          1,417 bytes
+
+ Directory of W:\ads\testpages
+
+02/24/2011  03:35 PM           299,164 baa_launch_sync_728x90_c1.swf
+02/24/2011  02:45 PM             1,916 728x90_placeholder.gif
+               2 File(s)        301,080 bytes
+
+ Directory of W:\ads\testpages\Archive
+
+01/20/2011  05:21 PM            26,725 Beautyandthebeast_728.jpg
+               1 File(s)         26,725 bytes
+
+ Directory of W:\ads\SingOff
+
+07/29/2011  04:03 PM            43,519 singoff_728x90.swf
+08/01/2011  12:14 PM            13,436 singoff_728x90_pre.jpg
+08/14/2011  09:56 PM            21,554 singoff_728x90_rhapsody.jpg
+               3 File(s)         78,509 bytes
+
+ Directory of W:\ads\images
+
+12/20/2010  10:21 AM            84,214 ftd_sps_728x90_pine4.png
+               1 File(s)         84,214 bytes
+
+ Directory of W:\ads\images\House\Mobile
+
+10/25/2012  01:41 PM            94,160 728x90.jpg
+12/17/2012  06:59 PM            90,273 Collapse_728x90_alt.jpg
+01/07/2013  05:48 PM            26,560 DEWW_728x90_badge.png
+               3 File(s)        210,993 bytes
+
+ Directory of W:\ads\images\House\Leaderboard
+
+01/21/2011  11:38 AM           616,866 slots-animated-ad_728x90.gif
+12/14/2010  05:48 PM            32,417 GH_PremiumGames_728x90.jpg
+               2 File(s)        649,283 bytes
+
+ Directory of W:\ads\images\GiganteVaz
+
+08/01/2011  08:21 PM            83,366 retribution_728x90_play_dark_v3.swf
+08/01/2011  08:18 PM            83,262 retribution_728x90_play_retrib_v3.swf
+07/31/2011  04:26 PM            83,876 retribution_728x90_read_dark.swf
+07/31/2011  06:49 PM            83,753 retribution_728x90_read_retrib.swf
+               4 File(s)        334,257 bytes
+
+ Directory of W:\ads\images\Awakened
+
+12/29/2010  10:47 AM            56,321 texttwist_awakened_728x90.swf
+12/29/2010  11:22 AM            24,027 Awakened_728x90.jpg
+12/29/2010  10:47 AM            54,275 texttwist_awakened_728x90_no_play.swf
+               3 File(s)        134,623 bytes
+
+ Directory of W:\ads\images\Grabaroo
+
+12/16/2010  04:40 PM            35,312 Grabaroo_Collapse728x90.gif
+               1 File(s)         35,312 bytes
+
+ Directory of W:\ads\images\Starbucks
+
+06/02/2011  09:29 AM            45,205 728x90_union.jpg
+06/01/2011  09:22 AM            40,743 728x90.jpg
+05/31/2011  02:57 PM            91,223 starbucks_banner_728x90_westword.jpg
+05/31/2011  02:49 PM            89,321 starbucks_banner_728x90_union.jpg
+06/02/2011  09:29 AM            45,102 728x90_westword.jpg
+05/31/2011  03:44 PM            80,592 starbucks_banner_728x90.jpg
+               6 File(s)        392,186 bytes
+
+ Directory of W:\vanimages
+
+12/28/2009  05:05 PM            78,372 topGames_728x90.png
+01/11/2011  04:04 PM            44,381 CakeMania_Max_728x90.jpg
+04/29/2011  02:06 PM            26,060 MyFarmLife_728x90.jpg
+11/08/2010  04:58 PM            31,990 DeliciousDoublePack_728x90.jpg
+04/08/2010  10:21 AM           133,781 FictionFixers_Win_728x90.png
+02/18/2010  02:02 PM           147,187 ShutterIsland_728x90.png
+02/12/2010  12:33 PM           151,287 smallWorlds_728x90_Adventure.png
+03/12/2010  06:01 PM           104,627 5Star_728x90.png
+03/30/2010  12:49 PM           143,607 VV4Premium_728x90.png
+03/09/2010  05:57 PM           152,172 DrWise_Promo_728x90.png
+02/24/2010  04:19 PM           136,527 AlicesTeaCupMadness_728x90.png
+09/07/2010  02:05 PM            69,092 Bestof_2010_728x90.png
+05/18/2010  02:11 PM           118,203 LillyWuPromo_728x90.png
+02/12/2010  02:41 PM           117,481 smallWorlds_728x90.png
+04/07/2010  09:06 AM           139,408 DreamVoyagers_Quote_728x90.png
+04/16/2010  03:39 PM           135,223 HearwildSolitaire_728x90.png
+03/15/2010  02:42 PM           138,345 EscapetheMuseum2_728x90.png
+03/18/2010  02:42 PM           152,571 YoudaLegend_728x90.png
+04/29/2011  01:41 PM            34,954 pVz_728x90.jpg
+01/20/2011  10:13 AM            35,593 728x90_MysteryMortlakeMansion.jpg
+11/16/2009  06:21 AM            24,425 mysterymasterpiecetmthemoonstone_ra_728x90.jpg
+06/17/2010  12:01 PM           130,943 AirBender_Win_728x90.png
+02/18/2011  12:09 PM            37,128 Marooned2_728x90.jpg
+04/15/2010  09:37 AM           141,165 MahjonggDimensions_728x90.png
+04/15/2010  11:36 AM           136,562 MysteryPILondon_728x90.png
+07/22/2010  02:20 PM           136,748 ClockworkMan2_728x90_2.png
+07/12/2010  01:15 PM           111,374 EscapeWhisperValley_728x90.png
+04/29/2011  03:35 PM            33,260 MortimerDoublePack_728x90.jpg
+03/04/2010  04:26 PM           169,673 VVPremium_Win_728x90.png
+04/29/2010  01:53 PM            76,430 728x90_MothersDay.png
+07/21/2010  03:59 PM           136,384 ClockworkMan2_728x90.png
+02/02/2010  02:04 PM            40,551 VDay2010_728x90.png
+04/15/2010  09:45 AM           165,372 DinerDashBoom_728x90.png
+11/01/2010  04:23 PM            37,354 BejeweledContest_728x90.jpg
+02/12/2010  02:06 PM            92,213 smallWorlds_728x90_Decorate.png
+02/16/2011  11:40 AM            40,793 FarmFrenzyRome_728x90.jpg
+02/16/2010  05:30 PM           155,275 JewelQuestPremium_728x90.png
+07/12/2010  01:24 PM           152,581 CakeManiaLights_728x90.png
+02/09/2010  07:04 AM            26,101 janeangeltemplarmystery_ra_728x90.jpg
+03/05/2010  12:35 PM           114,514 GH_Sale_728x90.png
+02/04/2010  05:25 PM            49,945 MortimerFunTicket_728x90.png
+03/09/2010  03:22 PM           142,091 DreamVoyagers_PreRelease_728x90.png
+03/22/2010  02:45 PM           143,856 DreamVoyagers_Promo_728x90.png
+02/18/2010  03:35 AM            32,984 simplzzoo_ra_728x90.jpg
+09/09/2010  04:38 PM           111,071 DOULBE_DOWN_728x90_2.png
+05/19/2010  08:19 AM           118,445 LillyWuPromo2_728x90.png
+03/15/2010  02:23 PM           150,198 FarmFrenzyIceAge_728x90.png
+11/04/2009  07:43 AM            28,900 elementalsthemagickeytm_ra_728x90.jpg
+09/02/2010  08:21 AM           111,867 DOULBE_DOWN_728x90.png
+07/12/2010  01:16 PM           139,674 MidnightMysteries_Salem_728x90.png
+04/30/2010  04:12 PM           114,603 RanchRush2_728x90.png
+03/03/2010  12:21 PM           132,958 HiddenIdentityChicago_728x90.png
