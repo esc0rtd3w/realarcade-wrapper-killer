@@ -1,0 +1,470 @@
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: CheckInstallChrome.clf
+                         ** global header start **
+0000  1B4C7561           header signature: "\27Lua"
+0004  50                 version (major:minor hex digits)
+0005  01                 endianness (1=little endian)
+0006  04                 size of int (bytes)
+0007  04                 size of size_t (bytes)
+0008  04                 size of Instruction (bytes)
+0009  06                 size of OP (bits)
+000A  08                 size of A (bits)
+000B  09                 size of B (bits)
+000C  09                 size of C (bits)
+000D  08                 size of number (bytes)
+000E  B6099368E7F57D41   sample number (double)
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+                         
+0016                     ** function [0] definition (level 1)
+                         ** start of function **
+0016  28000000           string size (40)
+001A  402E5C437573746F+  "@.\\Custo"
+0022  6D53637269707473+  "mScripts"
+002A  5C436865636B496E+  "\\CheckIn"
+0032  7374616C6C436872+  "stallChr"
+003A  6F6D652E6C756100   "ome.lua\0"
+                         source name: @.\\CustomScripts\\CheckInstallChrome.lua
+0042  00000000           line defined (0)
+0046  00                 nups (0)
+0047  00                 numparams (0)
+0048  00                 is_vararg (0)
+0049  02                 maxstacksize (2)
+                         * lines:
+004A  03000000           sizelineinfo (3)
+                         [pc] (line)
+004E  37000000           [1] (55)
+0052  17000000           [2] (23)
+0056  37000000           [3] (55)
+                         * locals:
+005A  00000000           sizelocvars (0)
+                         * upvalues:
+005E  00000000           sizeupvalues (0)
+                         * constants:
+0062  01000000           sizek (1)
+0066  04                 const type 4
+0067  1F000000           string size (31)
+006B  476F6F676C654368+  "GoogleCh"
+0073  726F6D65436F6D70+  "romeComp"
+007B  61746962696C6974+  "atibilit"
+0083  79436865636B00     "yCheck\0"
+                         const [0]: "GoogleChromeCompatibilityCheck"
+                         * functions:
+008A  01000000           sizep (1)
+                         
+008E                     ** function [0] definition (level 2)
+                         ** start of function **
+008E  00000000           string size (0)
+                         source name: (none)
+0092  17000000           line defined (23)
+0096  00                 nups (0)
+0097  01                 numparams (1)
+0098  00                 is_vararg (0)
+0099  0D                 maxstacksize (13)
+                         * lines:
+009A  68000000           sizelineinfo (104)
+                         [pc] (line)
+009E  18000000           [001] (24)
+00A2  19000000           [002] (25)
+00A6  19000000           [003] (25)
+00AA  19000000           [004] (25)
+00AE  19000000           [005] (25)
+00B2  19000000           [006] (25)
+00B6  19000000           [007] (25)
+00BA  19000000           [008] (25)
+00BE  19000000           [009] (25)
+00C2  19000000           [010] (25)
+00C6  19000000           [011] (25)
+00CA  19000000           [012] (25)
+00CE  19000000           [013] (25)
+00D2  19000000           [014] (25)
+00D6  19000000           [015] (25)
+00DA  19000000           [016] (25)
+00DE  19000000           [017] (25)
+00E2  19000000           [018] (25)
+00E6  19000000           [019] (25)
+00EA  1A000000           [020] (26)
+00EE  1B000000           [021] (27)
+00F2  1B000000           [022] (27)
+00F6  1B000000           [023] (27)
+00FA  1B000000           [024] (27)
+00FE  1B000000           [025] (27)
+0102  1C000000           [026] (28)
+0106  1C000000           [027] (28)
+010A  1D000000           [028] (29)
+010E  1D000000           [029] (29)
+0112  1D000000           [030] (29)
+0116  1D000000           [031] (29)
+011A  1D000000           [032] (29)
+011E  1F000000           [033] (31)
+0122  1F000000           [034] (31)
+0126  1F000000           [035] (31)
+012A  1F000000           [036] (31)
+012E  1F000000           [037] (31)
+0132  1F000000           [038] (31)
+0136  1F000000           [039] (31)
+013A  1F000000           [040] (31)
+013E  1F000000           [041] (31)
+0142  1F000000           [042] (31)
+0146  1F000000           [043] (31)
+014A  1F000000           [044] (31)
+014E  1F000000           [045] (31)
+0152  20000000           [046] (32)
+0156  20000000           [047] (32)
+015A  20000000           [048] (32)
+015E  20000000           [049] (32)
+0162  20000000           [050] (32)
+0166  20000000           [051] (32)
+016A  24000000           [052] (36)
+016E  24000000           [053] (36)
+0172  24000000           [054] (36)
+0176  24000000           [055] (36)
+017A  26000000           [056] (38)
+017E  26000000           [057] (38)
+0182  27000000           [058] (39)
+0186  27000000           [059] (39)
+018A  28000000           [060] (40)
+018E  29000000           [061] (41)
+0192  29000000           [062] (41)
+0196  2A000000           [063] (42)
+019A  2A000000           [064] (42)
+019E  2A000000           [065] (42)
+01A2  2A000000           [066] (42)
+01A6  2A000000           [067] (42)
+01AA  2A000000           [068] (42)
+01AE  2A000000           [069] (42)
+01B2  2A000000           [070] (42)
+01B6  2C000000           [071] (44)
+01BA  2C000000           [072] (44)
+01BE  2C000000           [073] (44)
+01C2  2C000000           [074] (44)
+01C6  2C000000           [075] (44)
+01CA  2F000000           [076] (47)
+01CE  2F000000           [077] (47)
+01D2  2F000000           [078] (47)
+01D6  2F000000           [079] (47)
+01DA  35000000           [080] (53)
+01DE  35000000           [081] (53)
+01E2  35000000           [082] (53)
+01E6  35000000           [083] (53)
+01EA  35000000           [084] (53)
+01EE  35000000           [085] (53)
+01F2  35000000           [086] (53)
+01F6  35000000           [087] (53)
+01FA  35000000           [088] (53)
+01FE  35000000           [089] (53)
+0202  35000000           [090] (53)
+0206  35000000           [091] (53)
+020A  35000000           [092] (53)
+020E  35000000           [093] (53)
+0212  35000000           [094] (53)
+0216  35000000           [095] (53)
+021A  35000000           [096] (53)
+021E  35000000           [097] (53)
+0222  36000000           [098] (54)
+0226  36000000           [099] (54)
+022A  36000000           [100] (54)
+022E  36000000           [101] (54)
+0232  36000000           [102] (54)
+0236  36000000           [103] (54)
+023A  37000000           [104] (55)
+                         * locals:
+023E  07000000           sizelocvars (7)
+0242  07000000           string size (7)
+0246  7265636F726400     "record"
+                         local [0]: record
+024D  00000000             startpc (0)
+0251  67000000             endpc   (103)
+0255  09000000           string size (9)
+0259  6462507265666978+  "dbPrefix"
+0261  00                 "\0"
+                         local [1]: dbPrefix
+0262  01000000             startpc (1)
+0266  67000000             endpc   (103)
+026A  0B000000           string size (11)
+026E  626F6F6C5265636F+  "boolReco"
+0276  726400             "rd\0"
+                         local [2]: boolRecord
+0279  14000000             startpc (20)
+027D  67000000             endpc   (103)
+0281  0A000000           string size (10)
+0285  6368726F6D656170+  "chromeap"
+028D  6900               "i\0"
+                         local [3]: chromeapi
+028F  37000000             startpc (55)
+0293  67000000             endpc   (103)
+0297  06000000           string size (6)
+029B  77696E333200       "win32"
+                         local [4]: win32
+02A1  3B000000             startpc (59)
+02A5  4B000000             endpc   (75)
+02A9  08000000           string size (8)
+02AD  646C6C5061746800   "dllPath"
+                         local [5]: dllPath
+02B5  3C000000             startpc (60)
+02B9  4B000000             endpc   (75)
+02BD  08000000           string size (8)
+02C1  7265675061746800   "regPath"
+                         local [6]: regPath
+02C9  3E000000             startpc (62)
+02CD  4B000000             endpc   (75)
+                         * upvalues:
+02D1  00000000           sizeupvalues (0)
+                         * constants:
+02D5  1F000000           sizek (31)
+02D9  04                 const type 4
+02DA  21000000           string size (33)
+02DE  476F6F676C654368+  "GoogleCh"
+02E6  726F6D65436F6D70+  "romeComp"
+02EE  61746962696C6974+  "atibilit"
+02F6  79436865636B3A20+  "yCheck: "
+02FE  00                 "\0"
+                         const [0]: "GoogleChromeCompatibilityCheck: "
+02FF  04                 const type 4
+0300  03000000           string size (3)
+0304  696F00             "io"
+                         const [1]: "io"
+0307  04                 const type 4
+0308  06000000           string size (6)
+030C  777269746500       "write"
+                         const [2]: "write"
+0312  04                 const type 4
+0313  02000000           string size (2)
+0317  0A00               "\n"
+                         const [3]: "\n"
+0319  04                 const type 4
+031A  03000000           string size (3)
+031E  6F7300             "os"
+                         const [4]: "os"
+0321  04                 const type 4
+0322  05000000           string size (5)
+0326  6461746500         "date"
+                         const [5]: "date"
+032B  04                 const type 4
+032C  04000000           string size (4)
+0330  25632000           "%c "
+                         const [6]: "%c "
+0334  04                 const type 4
+0335  02000000           string size (2)
+0339  2800               "("
+                         const [7]: "("
+033B  04                 const type 4
+033C  05000000           string size (5)
+0340  7479706500         "type"
+                         const [8]: "type"
+0345  04                 const type 4
+0346  02000000           string size (2)
+034A  2000               " "
+                         const [9]: " "
+034C  04                 const type 4
+034D  09000000           string size (9)
+0351  746F737472696E67+  "tostring"
+0359  00                 "\0"
+                         const [10]: "tostring"
+035A  04                 const type 4
+035B  02000000           string size (2)
+035F  2900               ")"
+                         const [11]: ")"
+0361  04                 const type 4
+0362  06000000           string size (6)
+0366  66616C736500       "false"
+                         const [12]: "false"
+036C  04                 const type 4
+036D  13000000           string size (19)
+0371  675F636865636B43+  "g_checkC"
+0379  68726F6D65537461+  "hromeSta"
+0381  746500             "te\0"
+                         const [13]: "g_checkChromeState"
+0384  03                 const type 3
+0385  000000000000F03F   const [14]: (1)
+038D  03                 const type 3
+038E  000000000000F0BF   const [15]: (-1)
+0396  00                 const type 0
+                         const [16]: nil
+0397  04                 const type 4
+0398  18000000           string size (24)
+039C  2072657475726E69+  " returni"
+03A4  6E67206361636865+  "ng cache"
+03AC  6420726570792000   "d repy \0"
+                         const [17]: " returning cached repy "
+03B4  03                 const type 3
+03B5  0000000000000000   const [18]: (0)
+03BD  04                 const type 4
+03BE  07000000           string size (7)
+03C2  6C7561636F6D00     "luacom"
+                         const [19]: "luacom"
+03C9  04                 const type 4
+03CA  0D000000           string size (13)
+03CE  4372656174654F62+  "CreateOb"
+03D6  6A65637400         "ject\0"
+                         const [20]: "CreateObject"
+03DB  04                 const type 4
+03DC  23000000           string size (35)
+03E0  474348524F4D452E+  "GCHROME."
+03E8  4368726F6D65436F+  "ChromeCo"
+03F0  6D7061746962696C+  "mpatibil"
+03F8  697479436865636B+  "ityCheck"
+0400  657200             "er\0"
+                         const [21]: "GCHROME.ChromeCompatibilityChecker"
+0403  04                 const type 4
+0404  0D000000           string size (13)
+0408  57696E3332496E74+  "Win32Int"
+0410  65726F7000         "erop\0"
+                         const [22]: "Win32Interop"
+0415  04                 const type 4
+0416  10000000           string size (16)
+041A  62696E5C47434852+  "bin\\GCHR"
+0422  4F4D452E646C6C00   "OME.dll\0"
+                         const [23]: "bin\\GCHROME.dll"
+042A  04                 const type 4
+042B  0B000000           string size (11)
+042F  434F4D5265675061+  "COMRegPa"
+0437  746800             "th\0"
+                         const [24]: "COMRegPath"
+043A  04                 const type 4
+043B  0E000000           string size (14)
+043F  4C61756E63685072+  "LaunchPr"
+0447  6F6365737300       "ocess\0"
+                         const [25]: "LaunchProcess"
+044D  04                 const type 4
+044E  06000000           string size (6)
+0452  202F73202200       " /s \""
+                         const [26]: " /s \""
+0458  04                 const type 4
+0459  02000000           string size (2)
+045D  2200               "\""
+                         const [27]: "\""
+045F  04                 const type 4
+0460  0C000000           string size (12)
+0464  4368726F6D654368+  "ChromeCh"
+046C  65636B00           "eck\0"
+                         const [28]: "ChromeCheck"
+0470  04                 const type 4
+0471  0F000000           string size (15)
+0475  204368726F6D6543+  " ChromeC"
+047D  6865636B202800     "heck (\0"
+                         const [29]: " ChromeCheck ("
+0484  04                 const type 4
+0485  0D000000           string size (13)
+0489  292072657475726E+  ") return"
+0491  6564202800         "ed (\0"
+                         const [30]: ") returned ("
+                         * functions:
+0496  00000000           sizep (0)
+                         * code:
+049A  68000000           sizecode (104)
+049E  01000001           [001] loadk      1   0        ; "GoogleChromeCompatibilityCheck: "
+04A2  45000002           [002] getglobal  2   1        ; io
+04A6  063F0102           [003] gettable   2   2   252  ; "write"
+04AA  C1000003           [004] loadk      3   3        ; "\n"
+04AE  05010004           [005] getglobal  4   4        ; os
+04B2  C63F0204           [006] gettable   4   4   255  ; "date"
+04B6  81010005           [007] loadk      5   6        ; "%c "
+04BA  99000104           [008] call       4   2   2  
+04BE  00800005           [009] move       5   1      
+04C2  C1010006           [010] loadk      6   7        ; "("
+04C6  05020007           [011] getglobal  7   8        ; type
+04CA  00000008           [012] move       8   0      
+04CE  99000107           [013] call       7   2   2  
+04D2  41020008           [014] loadk      8   9        ; " "
+04D6  85020009           [015] getglobal  9   10       ; tostring
+04DA  0000000A           [016] move       10  0      
+04DE  99000109           [017] call       9   2   2  
+04E2  C102000A           [018] loadk      10  11       ; ")"
+04E6  59800402           [019] call       2   9   1  
+04EA  02800002           [020] loadbool   2   1   0    ; true
+04EE  85020003           [021] getglobal  3   10       ; tostring
+04F2  00000004           [022] move       4   0      
+04F6  99000103           [023] call       3   2   2  
+04FA  95C10100           [024] eq         0   3   262  ; "false", to [26] if true
+04FE  54008000           [025] jmp        2            ; to [28]
+0502  02000002           [026] loadbool   2   0   0    ; false
+0506  D4058000           [027] jmp        24           ; to [52]
+050A  45030003           [028] getglobal  3   13       ; g_checkChromeState
+050E  55C20101           [029] eq         1   3   265  ; -1, to [31] if false
+0512  14058000           [030] jmp        21           ; to [52]
+0516  95420000           [031] eq         0   0   266  ; nil, to [33] if true
+051A  94048000           [032] jmp        19           ; to [52]
+051E  45000003           [033] getglobal  3   1        ; io
+0522  06BF0103           [034] gettable   3   3   252  ; "write"
+0526  C1000004           [035] loadk      4   3        ; "\n"
+052A  05010005           [036] getglobal  5   4        ; os
+052E  C6BF0205           [037] gettable   5   5   255  ; "date"
+0532  81010006           [038] loadk      6   6        ; "%c "
+0536  99000105           [039] call       5   2   2  
+053A  00800006           [040] move       6   1      
+053E  41040007           [041] loadk      7   17       ; " returning cached repy "
+0542  85020008           [042] getglobal  8   10       ; tostring
+0546  45030009           [043] getglobal  9   13       ; g_checkChromeState
+054A  19000108           [044] call       8   2   0  
+054E  59000003           [045] call       3   0   1  
+0552  45030003           [046] getglobal  3   13       ; g_checkChromeState
+0556  15C30101           [047] eq         1   3   268  ; 0, to [49] if false
+055A  14008000           [048] jmp        1            ; to [50]
+055E  42000003           [049] loadbool   3   0   1    ; false, to [51]
+0562  02800003           [050] loadbool   3   1   0    ; true
+0566  1B000103           [051] return     3   2      
+056A  C5040003           [052] getglobal  3   19       ; luacom
+056E  86C30103           [053] gettable   3   3   270  ; "CreateObject"
+0572  41050004           [054] loadk      4   21       ; "GCHROME.ChromeCompatibilityChecker"
+0576  99000103           [055] call       3   2   2  
+057A  95C20100           [056] eq         0   3   266  ; nil, to [58] if true
+057E  54048000           [057] jmp        18           ; to [76]
+0582  85050004           [058] getglobal  4   22       ; Win32Interop
+0586  99800004           [059] call       4   1   2  
+058A  C1050005           [060] loadk      5   23       ; "bin\\GCHROME.dll"
+058E  86440206           [061] gettable   6   4   274  ; "COMRegPath"
+0592  99800006           [062] call       6   1   2  
+0596  C6440207           [063] gettable   7   4   275  ; "LaunchProcess"
+059A  00000308           [064] move       8   6      
+059E  81060009           [065] loadk      9   26       ; " /s \""
+05A2  0080020A           [066] move       10  5      
+05A6  C106000B           [067] loadk      11  27       ; "\""
+05AA  D3820409           [068] concat     9   9   11 
+05AE  0280000A           [069] loadbool   10  1   0    ; true
+05B2  59000207           [070] call       7   4   1  
+05B6  C5040007           [071] getglobal  7   19       ; luacom
+05BA  86C30307           [072] gettable   7   7   270  ; "CreateObject"
+05BE  41050008           [073] loadk      8   21       ; "GCHROME.ChromeCompatibilityChecker"
+05C2  99000107           [074] call       7   2   2  
+05C6  00800303           [075] move       3   7      
+05CA  8BC50104           [076] self       4   3   278  ; "ChromeCheck"
+05CE  00000106           [077] move       6   2      
+05D2  99800104           [078] call       4   3   2  
+05D6  47030004           [079] setglobal  4   13       ; g_checkChromeState
+05DA  45000004           [080] getglobal  4   1        ; io
+05DE  063F0204           [081] gettable   4   4   252  ; "write"
+05E2  C1000005           [082] loadk      5   3        ; "\n"
+05E6  05010006           [083] getglobal  6   4        ; os
+05EA  C63F0306           [084] gettable   6   6   255  ; "date"
+05EE  81010007           [085] loadk      7   6        ; "%c "
+05F2  99000106           [086] call       6   2   2  
+05F6  00800007           [087] move       7   1      
+05FA  41070008           [088] loadk      8   29       ; " ChromeCheck ("
+05FE  85020009           [089] getglobal  9   10       ; tostring
+0602  0000010A           [090] move       10  2      
+0606  99000109           [091] call       9   2   2  
+060A  8107000A           [092] loadk      10  30       ; ") returned ("
+060E  8502000B           [093] getglobal  11  10       ; tostring
+0612  4503000C           [094] getglobal  12  13       ; g_checkChromeState
+0616  9900010B           [095] call       11  2   2  
+061A  C102000C           [096] loadk      12  11       ; ")"
+061E  59800404           [097] call       4   9   1  
+0622  45030004           [098] getglobal  4   13       ; g_checkChromeState
+0626  15018601           [099] eq         1   268 4    ; 0, to [101] if false
+062A  14008000           [100] jmp        1            ; to [102]
+062E  42000004           [101] loadbool   4   0   1    ; false, to [103]
+0632  02800004           [102] loadbool   4   1   0    ; true
+0636  1B000104           [103] return     4   2      
+063A  1B800000           [104] return     0   1      
+                         ** end of function **
+
+                         * code:
+063E  03000000           sizecode (3)
+0642  22000000           [1] closure    0   0        ; 0 upvalues
+0646  07000000           [2] setglobal  0   0        ; GoogleChromeCompatibilityCheck
+064A  1B800000           [3] return     0   1      
+                         ** end of function **
+
+064E                     ** end of chunk **

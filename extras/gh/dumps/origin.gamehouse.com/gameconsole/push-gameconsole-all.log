@@ -1,0 +1,1155 @@
+Push process for gameconsole commenced at Thu Apr 25 15:30:01 PDT 2013
+Thu Apr 25 15:30:15 PDT 2013 Waiting for rsyncs to complete...
+Thu Apr 25 15:30:15 PDT 2013 Done 
+10.34.4.51 2013/04/25 15:30:01 [12222]
+2013/04/25 15:30:01 [12225] building file list
+2013/04/25 15:30:03 [12225] 122179 files to consider
+2013/04/25 15:30:03 [12225] .d..t...... ./
+2013/04/25 15:30:03 [12225] <f.st...... 1
+2013/04/25 15:30:05 [12225] <f.st...... push-gameconsole-all.log
+2013/04/25 15:30:05 [12225] <f.st...... push.gameconsole.log
+2013/04/25 15:30:05 [12225] <f.st...... push.to.10.34.4.51.log
+2013/04/25 15:30:05 [12225] <f..t...... installers/OpenCandy/config.lua
+2013/04/25 15:30:05 [12225] *deleting   push.to.10.34.4.52.log
+2013/04/25 15:30:05 [12225] *deleting   push.to.10.34.240.71.log
+2013/04/25 15:30:05 [12225] *deleting   push.to.10.34.240.66.log
+2013/04/25 15:30:06 [12225] sent 3806717 bytes  received 11430 bytes  848477.11 bytes/sec
+2013/04/25 15:30:06 [12225] total size is 892723252475  speedup is 233810.60
+10.34.4.52 2013/04/25 15:30:01 [12222]
+2013/04/25 15:30:06 [12244] building file list
+2013/04/25 15:30:06 [12244] 122180 files to consider
+2013/04/25 15:30:07 [12244] .d..t...... ./
+2013/04/25 15:30:07 [12244] <f.st...... 1
+2013/04/25 15:30:08 [12244] <f.st...... push-gameconsole-all.log
+2013/04/25 15:30:08 [12244] <f.st...... push.gameconsole.log
+2013/04/25 15:30:08 [12244] <f.st...... push.to.10.34.4.51.log
+2013/04/25 15:30:08 [12244] <f.st...... push.to.10.34.4.52.log
+2013/04/25 15:30:08 [12244] .d..t...... gamehouse/pub/
+2013/04/25 15:30:08 [12244] <f..t...... installers/OpenCandy/config.lua
+2013/04/25 15:30:08 [12244] *deleting   push.to.10.34.240.71.log
+2013/04/25 15:30:08 [12244] *deleting   push.to.10.34.240.66.log
+2013/04/25 15:30:09 [12244] sent 3807719 bytes  received 11430 bytes  1527659.60 bytes/sec
+2013/04/25 15:30:09 [12244] total size is 892723253320  speedup is 233749.26
+10.34.240.71 2013/04/25 15:30:01 [12222]
+2013/04/25 15:30:09 [12246] building file list
+2013/04/25 15:30:10 [12246] 122181 files to consider
+2013/04/25 15:30:10 [12246] .d..t...... ./
+2013/04/25 15:30:10 [12246] <f.st...... 1
+2013/04/25 15:30:11 [12246] <f.st...... push-gameconsole-all.log
+2013/04/25 15:30:11 [12246] <f.st...... push.gameconsole.log
+2013/04/25 15:30:11 [12246] <f.st...... push.to.10.34.240.71.log
+2013/04/25 15:30:11 [12246] <f.st...... push.to.10.34.4.51.log
+2013/04/25 15:30:11 [12246] <f.st...... push.to.10.34.4.52.log
+2013/04/25 15:30:11 [12246] <f..t...... installers/OpenCandy/config.lua
+2013/04/25 15:30:11 [12246] *deleting   push.to.10.34.240.66.log
+2013/04/25 15:30:12 [12246] sent 3808634 bytes  received 11522 bytes  1528062.40 bytes/sec
+2013/04/25 15:30:12 [12246] total size is 892723254223  speedup is 233687.64
+10.34.240.66 2013/04/25 15:30:01 [12222]
+2013/04/25 15:30:12 [12249] building file list
+2013/04/25 15:30:13 [12249] 122182 files to consider
+2013/04/25 15:30:13 [12249] .d..t...... ./
+2013/04/25 15:30:13 [12249] <f.st...... 1
+2013/04/25 15:30:14 [12249] <f.st...... push-gameconsole-all.log
+2013/04/25 15:30:14 [12249] <f.st...... push.gameconsole.log
+2013/04/25 15:30:14 [12249] <f.st...... push.to.10.34.240.66.log
+2013/04/25 15:30:14 [12249] <f.st...... push.to.10.34.240.71.log
+2013/04/25 15:30:14 [12249] <f.st...... push.to.10.34.4.51.log
+2013/04/25 15:30:14 [12249] <f.st...... push.to.10.34.4.52.log
+2013/04/25 15:30:14 [12249] <f..t...... installers/OpenCandy/config.lua
+2013/04/25 15:30:14 [12249] sent 3808862 bytes  received 11637 bytes  1528199.60 bytes/sec
+2013/04/25 15:30:14 [12249] total size is 892723255071  speedup is 233666.66
+gameconsole push process ended at Thu Apr 25 15:30:15 PDT 2013
+-------------------------------------------------------
+Push process for gameconsole commenced at Mon Apr 29 09:34:01 PDT 2013
+Mon Apr 29 09:39:58 PDT 2013 Waiting for rsyncs to complete...
+Mon Apr 29 09:39:58 PDT 2013 Done 
+10.34.4.51 2013/04/29 09:34:01 [8284]
+2013/04/29 09:34:02 [8287] building file list
+2013/04/29 09:35:47 [8287] 122189 files to consider
+2013/04/29 09:35:47 [8287] .d..t...... ./
+2013/04/29 09:35:52 [8287] <f.st...... push-gameconsole-all.log
+2013/04/29 09:35:52 [8287] <f..t...... push.gameconsole.log
+2013/04/29 09:35:52 [8287] <f+++++++++ push.to.10.34.240.66.log
+2013/04/29 09:35:52 [8287] <f+++++++++ push.to.10.34.240.71.log
+2013/04/29 09:35:52 [8287] <f.st...... push.to.10.34.4.51.log
+2013/04/29 09:35:52 [8287] <f+++++++++ push.to.10.34.4.52.log
+2013/04/29 09:35:57 [8287] .d..t...... gamehouse/pub/
+2013/04/29 09:35:59 [8287] <f+++++++++ gamehouse/pub/amac-webbies.dmg
+2013/04/29 09:36:09 [8287] .d..t...... realarcadev21/games/dip/
+2013/04/29 09:36:14 [8287] cd+++++++++ realarcadev21/games/dip/dreamscapesthesandman/
+2013/04/29 09:37:25 [8287] <f+++++++++ realarcadev21/games/dip/dreamscapesthesandman/dreamscapesthesandman.rga
+2013/04/29 09:37:25 [8287] cd+++++++++ realarcadev21/games/dip/virtualfamilies2ourdreamhouse/
+2013/04/29 09:37:36 [8287] <f+++++++++ realarcadev21/games/dip/virtualfamilies2ourdreamhouse/virtualfamilies2ourdreamhouse.rga
+2013/04/29 09:37:36 [8287] cd+++++++++ realarcadev21/games/dip/webbies/
+2013/04/29 09:37:46 [8287] <f+++++++++ realarcadev21/games/dip/webbies/webbies.rga
+2013/04/29 09:37:48 [8287] sent 1124228959 bytes  received 244 bytes  4985495.36 bytes/sec
+2013/04/29 09:37:48 [8287] total size is 893843538583  speedup is 795.07
+10.34.4.52 2013/04/29 09:34:01 [8284]
+2013/04/29 09:37:48 [8651] building file list
+2013/04/29 09:37:49 [8651] 122189 files to consider
+2013/04/29 09:37:49 [8651] .d..t...... ./
+2013/04/29 09:37:54 [8651] <f.st...... push-gameconsole-all.log
+2013/04/29 09:37:54 [8651] <f..t...... push.gameconsole.log
+2013/04/29 09:37:54 [8651] <f+++++++++ push.to.10.34.240.66.log
+2013/04/29 09:37:54 [8651] <f+++++++++ push.to.10.34.240.71.log
+2013/04/29 09:37:54 [8651] <f.st...... push.to.10.34.4.51.log
+2013/04/29 09:37:54 [8651] <f.st...... push.to.10.34.4.52.log
+2013/04/29 09:37:54 [8651] .d..t...... gamehouse/pub/
+2013/04/29 09:37:56 [8651] <f+++++++++ gamehouse/pub/amac-webbies.dmg
+2013/04/29 09:38:12 [8651] .d..t...... realarcadev21/games/dip/
+2013/04/29 09:38:17 [8651] cd+++++++++ realarcadev21/games/dip/dreamscapesthesandman/
+2013/04/29 09:38:37 [8651] <f+++++++++ realarcadev21/games/dip/dreamscapesthesandman/dreamscapesthesandman.rga
+2013/04/29 09:38:37 [8651] cd+++++++++ realarcadev21/games/dip/virtualfamilies2ourdreamhouse/
+2013/04/29 09:38:40 [8651] <f+++++++++ realarcadev21/games/dip/virtualfamilies2ourdreamhouse/virtualfamilies2ourdreamhouse.rga
+2013/04/29 09:38:40 [8651] cd+++++++++ realarcadev21/games/dip/webbies/
+2013/04/29 09:38:41 [8651] <f+++++++++ realarcadev21/games/dip/webbies/webbies.rga
+2013/04/29 09:38:53 [8651] sent 1124229599 bytes  received 256 bytes  20628070.73 bytes/sec
+2013/04/29 09:38:53 [8651] total size is 893843539161  speedup is 795.07
+10.34.240.71 2013/04/29 09:34:01 [8284]
+2013/04/29 09:38:54 [8842] building file list
+2013/04/29 09:38:54 [8842] 122189 files to consider
+2013/04/29 09:38:55 [8842] .d..t...... ./
+2013/04/29 09:38:55 [8842] <f.st...... push-gameconsole-all.log
+2013/04/29 09:38:55 [8842] <f..t...... push.gameconsole.log
+2013/04/29 09:38:55 [8842] <f+++++++++ push.to.10.34.240.66.log
+2013/04/29 09:38:55 [8842] <f.st...... push.to.10.34.240.71.log
+2013/04/29 09:38:55 [8842] <f.st...... push.to.10.34.4.51.log
+2013/04/29 09:38:55 [8842] <f.st...... push.to.10.34.4.52.log
+2013/04/29 09:38:55 [8842] .d..t...... gamehouse/pub/
+2013/04/29 09:38:58 [8842] <f+++++++++ gamehouse/pub/amac-webbies.dmg
+2013/04/29 09:38:58 [8842] .d..t...... realarcadev21/games/dip/
+2013/04/29 09:38:58 [8842] cd+++++++++ realarcadev21/games/dip/dreamscapesthesandman/
+2013/04/29 09:39:20 [8842] <f+++++++++ realarcadev21/games/dip/dreamscapesthesandman/dreamscapesthesandman.rga
+2013/04/29 09:39:20 [8842] cd+++++++++ realarcadev21/games/dip/virtualfamilies2ourdreamhouse/
+2013/04/29 09:39:23 [8842] <f+++++++++ realarcadev21/games/dip/virtualfamilies2ourdreamhouse/virtualfamilies2ourdreamhouse.rga
+2013/04/29 09:39:23 [8842] cd+++++++++ realarcadev21/games/dip/webbies/
+2013/04/29 09:39:25 [8842] <f+++++++++ realarcadev21/games/dip/webbies/webbies.rga
+2013/04/29 09:39:26 [8842] sent 1124230107 bytes  received 268 bytes  34591703.85 bytes/sec
+2013/04/29 09:39:26 [8842] total size is 893843539795  speedup is 795.07
+10.34.240.66 2013/04/29 09:34:01 [8284]
+2013/04/29 09:39:26 [8865] building file list
+2013/04/29 09:39:27 [8865] 122189 files to consider
+2013/04/29 09:39:27 [8865] .d..t...... ./
+2013/04/29 09:39:28 [8865] <f.st...... push-gameconsole-all.log
+2013/04/29 09:39:28 [8865] <f..t...... push.gameconsole.log
+2013/04/29 09:39:28 [8865] <f.st...... push.to.10.34.240.66.log
+2013/04/29 09:39:28 [8865] <f.st...... push.to.10.34.240.71.log
+2013/04/29 09:39:28 [8865] <f.st...... push.to.10.34.4.51.log
+2013/04/29 09:39:28 [8865] <f.st...... push.to.10.34.4.52.log
+2013/04/29 09:39:28 [8865] .d..t...... gamehouse/pub/
+2013/04/29 09:39:30 [8865] <f+++++++++ gamehouse/pub/amac-webbies.dmg
+2013/04/29 09:39:30 [8865] .d..t...... realarcadev21/games/dip/
+2013/04/29 09:39:30 [8865] cd+++++++++ realarcadev21/games/dip/dreamscapesthesandman/
+2013/04/29 09:39:53 [8865] <f+++++++++ realarcadev21/games/dip/dreamscapesthesandman/dreamscapesthesandman.rga
+2013/04/29 09:39:53 [8865] cd+++++++++ realarcadev21/games/dip/virtualfamilies2ourdreamhouse/
+2013/04/29 09:39:55 [8865] <f+++++++++ realarcadev21/games/dip/virtualfamilies2ourdreamhouse/virtualfamilies2ourdreamhouse.rga
+2013/04/29 09:39:55 [8865] cd+++++++++ realarcadev21/games/dip/webbies/
+2013/04/29 09:39:57 [8865] <f+++++++++ realarcadev21/games/dip/webbies/webbies.rga
+2013/04/29 09:39:58 [8865] sent 1124230677 bytes  received 280 bytes  35689871.65 bytes/sec
+2013/04/29 09:39:58 [8865] total size is 893843540429  speedup is 795.07
+gameconsole push process ended at Mon Apr 29 09:39:58 PDT 2013
+-------------------------------------------------------
+Push process for gameconsole commenced at Tue Apr 30 10:00:02 PDT 2013
+Tue Apr 30 10:06:57 PDT 2013 Waiting for rsyncs to complete...
+Tue Apr 30 10:06:57 PDT 2013 Done 
+10.34.4.51 2013/04/30 10:00:02 [29270]
+2013/04/30 10:00:03 [29273] building file list
+2013/04/30 10:02:12 [29273] 122189 files to consider
+2013/04/30 10:02:13 [29273] .d..t...... ./
+2013/04/30 10:02:18 [29273] <f.st...... push-gameconsole-all.log
+2013/04/30 10:02:18 [29273] <f..t...... push.gameconsole.log
+2013/04/30 10:02:18 [29273] <f.st...... push.to.10.34.240.66.log
+2013/04/30 10:02:18 [29273] <f.st...... push.to.10.34.240.71.log
+2013/04/30 10:02:18 [29273] <f.st...... push.to.10.34.4.51.log
+2013/04/30 10:02:18 [29273] <f.st...... push.to.10.34.4.52.log
+2013/04/30 10:02:35 [29273] <f..t...... realarcadev21/games/amg-3dmahjongdeluxe/amg-3dmahjongdeluxe.rga
+2013/04/30 10:02:49 [29273] <f..t...... realarcadev21/games/amg-aaroncranepaintingscomealive/amg-aaroncranepaintingscomealive.rga
+2013/04/30 10:03:02 [29273] <f..t...... realarcadev21/games/amg-dominiccrane2darkmysteryrevealed/amg-dominiccrane2darkmysteryrevealed.rga
+2013/04/30 10:03:15 [29273] <f..t...... realarcadev21/games/amg-eastereggztravaganza/amg-eastereggztravaganza.rga
+2013/04/30 10:03:17 [29273] <f..t...... realarcadev21/games/amg-echoesofsorrow/amg-echoesofsorrow.rga
+2013/04/30 10:03:48 [29273] <f..t...... realarcadev21/games/amg-entwinedstringsofdeception/amg-entwinedstringsofdeception.rga
+2013/04/30 10:03:59 [29273] <f..t...... realarcadev21/games/amg-ourworstfearsstainedskin/amg-ourworstfearsstainedskin.rga
+2013/04/30 10:04:03 [29273] sent 4212860 bytes  received 692927 bytes  20569.34 bytes/sec
+2013/04/30 10:04:03 [29273] total size is 893843546643  speedup is 182201.87
+10.34.4.52 2013/04/30 10:00:02 [29270]
+2013/04/30 10:04:04 [29711] building file list
+2013/04/30 10:04:04 [29711] 122189 files to consider
+2013/04/30 10:04:05 [29711] .d..t...... ./
+2013/04/30 10:04:10 [29711] <f.st...... push-gameconsole-all.log
+2013/04/30 10:04:10 [29711] <f..t...... push.gameconsole.log
+2013/04/30 10:04:10 [29711] <f.st...... push.to.10.34.240.66.log
+2013/04/30 10:04:10 [29711] <f.st...... push.to.10.34.240.71.log
+2013/04/30 10:04:10 [29711] <f.st...... push.to.10.34.4.51.log
+2013/04/30 10:04:10 [29711] <f.st...... push.to.10.34.4.52.log
+2013/04/30 10:04:25 [29711] <f..t...... realarcadev21/games/amg-3dmahjongdeluxe/amg-3dmahjongdeluxe.rga
+2013/04/30 10:04:30 [29711] <f..t...... realarcadev21/games/amg-aaroncranepaintingscomealive/amg-aaroncranepaintingscomealive.rga
+2013/04/30 10:04:33 [29711] <f..t...... realarcadev21/games/amg-dominiccrane2darkmysteryrevealed/amg-dominiccrane2darkmysteryrevealed.rga
+2013/04/30 10:04:38 [29711] <f..t...... realarcadev21/games/amg-eastereggztravaganza/amg-eastereggztravaganza.rga
+2013/04/30 10:05:16 [29711] <f..t...... realarcadev21/games/amg-echoesofsorrow/amg-echoesofsorrow.rga
+2013/04/30 10:05:19 [29711] <f..t...... realarcadev21/games/amg-entwinedstringsofdeception/amg-entwinedstringsofdeception.rga
+2013/04/30 10:05:20 [29711] <f..t...... realarcadev21/games/amg-ourworstfearsstainedskin/amg-ourworstfearsstainedskin.rga
+2013/04/30 10:06:07 [29711] sent 4213010 bytes  received 692933 bytes  48334.41 bytes/sec
+2013/04/30 10:06:07 [29711] total size is 893843546730  speedup is 182196.07
+10.34.240.71 2013/04/30 10:00:02 [29270]
+2013/04/30 10:06:08 [29956] building file list
+2013/04/30 10:06:09 [29956] 122189 files to consider
+2013/04/30 10:06:09 [29956] .d..t...... ./
+2013/04/30 10:06:10 [29956] <f.st...... push-gameconsole-all.log
+2013/04/30 10:06:10 [29956] <f..t...... push.gameconsole.log
+2013/04/30 10:06:10 [29956] <f.st...... push.to.10.34.240.66.log
+2013/04/30 10:06:10 [29956] <f.st...... push.to.10.34.240.71.log
+2013/04/30 10:06:10 [29956] <f.st...... push.to.10.34.4.51.log
+2013/04/30 10:06:10 [29956] <f.st...... push.to.10.34.4.52.log
+2013/04/30 10:06:11 [29956] <f..t...... realarcadev21/games/amg-3dmahjongdeluxe/amg-3dmahjongdeluxe.rga
+2013/04/30 10:06:14 [29956] <f..t...... realarcadev21/games/amg-aaroncranepaintingscomealive/amg-aaroncranepaintingscomealive.rga
+2013/04/30 10:06:15 [29956] <f..t...... realarcadev21/games/amg-dominiccrane2darkmysteryrevealed/amg-dominiccrane2darkmysteryrevealed.rga
+2013/04/30 10:06:18 [29956] <f..t...... realarcadev21/games/amg-eastereggztravaganza/amg-eastereggztravaganza.rga
+2013/04/30 10:06:23 [29956] <f..t...... realarcadev21/games/amg-echoesofsorrow/amg-echoesofsorrow.rga
+2013/04/30 10:06:28 [29956] <f..t...... realarcadev21/games/amg-entwinedstringsofdeception/amg-entwinedstringsofdeception.rga
+2013/04/30 10:06:29 [29956] <f..t...... realarcadev21/games/amg-ourworstfearsstainedskin/amg-ourworstfearsstainedskin.rga
+2013/04/30 10:06:31 [29956] sent 4212969 bytes  received 692939 bytes  208762.04 bytes/sec
+2013/04/30 10:06:31 [29956] total size is 893843546817  speedup is 182197.37
+10.34.240.66 2013/04/30 10:00:02 [29270]
+2013/04/30 10:06:31 [29958] building file list
+2013/04/30 10:06:32 [29958] 122189 files to consider
+2013/04/30 10:06:32 [29958] .d..t...... ./
+2013/04/30 10:06:33 [29958] <f.st...... push-gameconsole-all.log
+2013/04/30 10:06:33 [29958] <f..t...... push.gameconsole.log
+2013/04/30 10:06:33 [29958] <f.st...... push.to.10.34.240.66.log
+2013/04/30 10:06:33 [29958] <f.st...... push.to.10.34.240.71.log
+2013/04/30 10:06:33 [29958] <f.st...... push.to.10.34.4.51.log
+2013/04/30 10:06:33 [29958] <f.st...... push.to.10.34.4.52.log
+2013/04/30 10:06:35 [29958] <f..t...... realarcadev21/games/amg-3dmahjongdeluxe/amg-3dmahjongdeluxe.rga
+2013/04/30 10:06:39 [29958] <f..t...... realarcadev21/games/amg-aaroncranepaintingscomealive/amg-aaroncranepaintingscomealive.rga
+2013/04/30 10:06:40 [29958] <f..t...... realarcadev21/games/amg-dominiccrane2darkmysteryrevealed/amg-dominiccrane2darkmysteryrevealed.rga
+2013/04/30 10:06:42 [29958] <f..t...... realarcadev21/games/amg-eastereggztravaganza/amg-eastereggztravaganza.rga
+2013/04/30 10:06:47 [29958] <f..t...... realarcadev21/games/amg-echoesofsorrow/amg-echoesofsorrow.rga
+2013/04/30 10:06:55 [29958] <f..t...... realarcadev21/games/amg-entwinedstringsofdeception/amg-entwinedstringsofdeception.rga
+2013/04/30 10:06:56 [29958] <f..t...... realarcadev21/games/amg-ourworstfearsstainedskin/amg-ourworstfearsstainedskin.rga
+2013/04/30 10:06:57 [29958] sent 4212992 bytes  received 692945 bytes  192389.69 bytes/sec
+2013/04/30 10:06:57 [29958] total size is 893843546905  speedup is 182196.30
+gameconsole push process ended at Tue Apr 30 10:06:57 PDT 2013
+-------------------------------------------------------
+Push process for gameconsole commenced at Wed May  1 15:38:01 PDT 2013
+Wed May 1 15:42:34 PDT 2013 Waiting for rsyncs to complete...
+Wed May 1 15:42:34 PDT 2013 Done 
+10.34.4.51 2013/05/01 15:38:01 [22878]
+2013/05/01 15:38:01 [22886] building file list
+2013/05/01 15:39:41 [22886] 122197 files to consider
+2013/05/01 15:39:41 [22886] .d..t...... ./
+2013/05/01 15:39:46 [22886] <f.st...... push-gameconsole-all.log
+2013/05/01 15:39:46 [22886] <f..t...... push.gameconsole.log
+2013/05/01 15:39:46 [22886] <f.st...... push.to.10.34.240.66.log
+2013/05/01 15:39:46 [22886] <f.st...... push.to.10.34.240.71.log
+2013/05/01 15:39:46 [22886] <f.st...... push.to.10.34.4.51.log
+2013/05/01 15:39:46 [22886] <f.st...... push.to.10.34.4.52.log
+2013/05/01 15:39:46 [22886] .d..t...... gamehouse/pub/
+2013/05/01 15:40:01 [22886] <f+++++++++ gamehouse/pub/amac-nightmaresfromthedeepthecursedheart.dmg
+2013/05/01 15:40:09 [22886] <f+++++++++ gamehouse/pub/amac-outtathiskingdom.dmg
+2013/05/01 15:40:09 [22886] .d..t...... realarcadev21/games/dip/
+2013/05/01 15:40:09 [22886] cd+++++++++ realarcadev21/games/dip/kingdomchronicles/
+2013/05/01 15:40:22 [22886] <f+++++++++ realarcadev21/games/dip/kingdomchronicles/kingdomchronicles.rga
+2013/05/01 15:40:22 [22886] cd+++++++++ realarcadev21/games/dip/littleghost/
+2013/05/01 15:40:23 [22886] <f+++++++++ realarcadev21/games/dip/littleghost/littleghost.rga
+2013/05/01 15:40:23 [22886] cd+++++++++ realarcadev21/games/dip/treasureofthecaribbeanseas/
+2013/05/01 15:40:41 [22886] <f+++++++++ realarcadev21/games/dip/treasureofthecaribbeanseas/treasureofthecaribbeanseas.rga
+2013/05/01 15:40:42 [22886] sent 1100324490 bytes  received 407 bytes  6855606.83 bytes/sec
+2013/05/01 15:40:42 [22886] total size is 894939926177  speedup is 813.34
+10.34.4.52 2013/05/01 15:38:01 [22878]
+2013/05/01 15:40:42 [23206] building file list
+2013/05/01 15:40:43 [23206] 122197 files to consider
+2013/05/01 15:40:43 [23206] .d..t...... ./
+2013/05/01 15:40:47 [23206] <f.st...... push-gameconsole-all.log
+2013/05/01 15:40:47 [23206] <f..t...... push.gameconsole.log
+2013/05/01 15:40:47 [23206] <f.st...... push.to.10.34.240.66.log
+2013/05/01 15:40:48 [23206] <f.st...... push.to.10.34.240.71.log
+2013/05/01 15:40:48 [23206] <f.st...... push.to.10.34.4.51.log
+2013/05/01 15:40:48 [23206] <f.st...... push.to.10.34.4.52.log
+2013/05/01 15:40:48 [23206] .d..t...... gamehouse/pub/
+2013/05/01 15:40:58 [23206] <f+++++++++ gamehouse/pub/amac-nightmaresfromthedeepthecursedheart.dmg
+2013/05/01 15:41:05 [23206] <f+++++++++ gamehouse/pub/amac-outtathiskingdom.dmg
+2013/05/01 15:41:07 [23206] .d..t...... realarcadev21/games/dip/
+2013/05/01 15:41:12 [23206] cd+++++++++ realarcadev21/games/dip/kingdomchronicles/
+2013/05/01 15:41:15 [23206] <f+++++++++ realarcadev21/games/dip/kingdomchronicles/kingdomchronicles.rga
+2013/05/01 15:41:15 [23206] cd+++++++++ realarcadev21/games/dip/littleghost/
+2013/05/01 15:41:15 [23206] <f+++++++++ realarcadev21/games/dip/littleghost/littleghost.rga
+2013/05/01 15:41:15 [23206] cd+++++++++ realarcadev21/games/dip/treasureofthecaribbeanseas/
+2013/05/01 15:41:21 [23206] <f+++++++++ realarcadev21/games/dip/treasureofthecaribbeanseas/treasureofthecaribbeanseas.rga
+2013/05/01 15:41:30 [23206] sent 1100324585 bytes  received 407 bytes  23662903.05 bytes/sec
+2013/05/01 15:41:30 [23206] total size is 894939926209  speedup is 813.34
+10.34.240.71 2013/05/01 15:38:01 [22878]
+2013/05/01 15:41:31 [23305] building file list
+2013/05/01 15:41:32 [23305] 122197 files to consider
+2013/05/01 15:41:32 [23305] .d..t...... ./
+2013/05/01 15:41:32 [23305] <f.st...... push-gameconsole-all.log
+2013/05/01 15:41:32 [23305] <f..t...... push.gameconsole.log
+2013/05/01 15:41:32 [23305] <f.st...... push.to.10.34.240.66.log
+2013/05/01 15:41:32 [23305] <f.st...... push.to.10.34.240.71.log
+2013/05/01 15:41:32 [23305] <f.st...... push.to.10.34.4.51.log
+2013/05/01 15:41:32 [23305] <f.st...... push.to.10.34.4.52.log
+2013/05/01 15:41:32 [23305] .d..t...... gamehouse/pub/
+2013/05/01 15:41:43 [23305] <f+++++++++ gamehouse/pub/amac-nightmaresfromthedeepthecursedheart.dmg
+2013/05/01 15:41:52 [23305] <f+++++++++ gamehouse/pub/amac-outtathiskingdom.dmg
+2013/05/01 15:41:52 [23305] .d..t...... realarcadev21/games/dip/
+2013/05/01 15:41:52 [23305] cd+++++++++ realarcadev21/games/dip/kingdomchronicles/
+2013/05/01 15:41:55 [23305] <f+++++++++ realarcadev21/games/dip/kingdomchronicles/kingdomchronicles.rga
+2013/05/01 15:41:55 [23305] cd+++++++++ realarcadev21/games/dip/littleghost/
+2013/05/01 15:41:56 [23305] <f+++++++++ realarcadev21/games/dip/littleghost/littleghost.rga
+2013/05/01 15:41:56 [23305] cd+++++++++ realarcadev21/games/dip/treasureofthecaribbeanseas/
+2013/05/01 15:42:01 [23305] <f+++++++++ realarcadev21/games/dip/treasureofthecaribbeanseas/treasureofthecaribbeanseas.rga
+2013/05/01 15:42:02 [23305] sent 1100324489 bytes  received 407 bytes  34930949.08 bytes/sec
+2013/05/01 15:42:02 [23305] total size is 894939926241  speedup is 813.34
+10.34.240.66 2013/05/01 15:38:01 [22878]
+2013/05/01 15:42:03 [23340] building file list
+2013/05/01 15:42:03 [23340] 122197 files to consider
+2013/05/01 15:42:04 [23340] .d..t...... ./
+2013/05/01 15:42:04 [23340] <f.st...... push-gameconsole-all.log
+2013/05/01 15:42:04 [23340] <f..t...... push.gameconsole.log
+2013/05/01 15:42:04 [23340] <f.st...... push.to.10.34.240.66.log
+2013/05/01 15:42:04 [23340] <f.st...... push.to.10.34.240.71.log
+2013/05/01 15:42:04 [23340] <f.st...... push.to.10.34.4.51.log
+2013/05/01 15:42:04 [23340] <f.st...... push.to.10.34.4.52.log
+2013/05/01 15:42:04 [23340] .d..t...... gamehouse/pub/
+2013/05/01 15:42:15 [23340] <f+++++++++ gamehouse/pub/amac-nightmaresfromthedeepthecursedheart.dmg
+2013/05/01 15:42:24 [23340] <f+++++++++ gamehouse/pub/amac-outtathiskingdom.dmg
+2013/05/01 15:42:24 [23340] .d..t...... realarcadev21/games/dip/
+2013/05/01 15:42:24 [23340] cd+++++++++ realarcadev21/games/dip/kingdomchronicles/
+2013/05/01 15:42:27 [23340] <f+++++++++ realarcadev21/games/dip/kingdomchronicles/kingdomchronicles.rga
+2013/05/01 15:42:27 [23340] cd+++++++++ realarcadev21/games/dip/littleghost/
+2013/05/01 15:42:28 [23340] <f+++++++++ realarcadev21/games/dip/littleghost/littleghost.rga
+2013/05/01 15:42:28 [23340] cd+++++++++ realarcadev21/games/dip/treasureofthecaribbeanseas/
+2013/05/01 15:42:33 [23340] <f+++++++++ realarcadev21/games/dip/treasureofthecaribbeanseas/treasureofthecaribbeanseas.rga
+2013/05/01 15:42:34 [23340] sent 1100324456 bytes  received 407 bytes  34930948.03 bytes/sec
+2013/05/01 15:42:34 [23340] total size is 894939926273  speedup is 813.34
+gameconsole push process ended at Wed May  1 15:42:34 PDT 2013
+-------------------------------------------------------
+Push process for gameconsole commenced at Fri May  3 11:20:02 PDT 2013
+Fri May 3 11:23:29 PDT 2013 Waiting for rsyncs to complete...
+Fri May 3 11:23:29 PDT 2013 Done 
+10.34.4.51 2013/05/03 11:20:02 [28630]
+2013/05/03 11:20:03 [28644] building file list
+2013/05/03 11:21:51 [28644] 122197 files to consider
+2013/05/03 11:21:52 [28644] .d..t...... ./
+2013/05/03 11:21:57 [28644] <f.st...... push-gameconsole-all.log
+2013/05/03 11:21:57 [28644] <f..t...... push.gameconsole.log
+2013/05/03 11:21:57 [28644] <f.st...... push.to.10.34.240.66.log
+2013/05/03 11:21:57 [28644] <f.st...... push.to.10.34.240.71.log
+2013/05/03 11:21:57 [28644] <f.st...... push.to.10.34.4.51.log
+2013/05/03 11:21:57 [28644] <f.st...... push.to.10.34.4.52.log
+2013/05/03 11:22:04 [28644] <f..t...... installers/OpenCandy/config.lua
+2013/05/03 11:22:34 [28644] sent 3818296 bytes  received 380 bytes  25373.26 bytes/sec
+2013/05/03 11:22:34 [28644] total size is 894939932963  speedup is 234358.70
+10.34.4.52 2013/05/03 11:20:02 [28630]
+2013/05/03 11:22:35 [28935] building file list
+2013/05/03 11:22:36 [28935] 122197 files to consider
+2013/05/03 11:22:36 [28935] .d..t...... ./
+2013/05/03 11:22:41 [28935] <f.st...... push-gameconsole-all.log
+2013/05/03 11:22:41 [28935] <f..t...... push.gameconsole.log
+2013/05/03 11:22:41 [28935] <f.st...... push.to.10.34.240.66.log
+2013/05/03 11:22:41 [28935] <f.st...... push.to.10.34.240.71.log
+2013/05/03 11:22:41 [28935] <f.st...... push.to.10.34.4.51.log
+2013/05/03 11:22:41 [28935] <f.st...... push.to.10.34.4.52.log
+2013/05/03 11:22:50 [28935] <f..t...... installers/OpenCandy/config.lua
+2013/05/03 11:23:23 [28935] sent 3817559 bytes  received 380 bytes  80377.66 bytes/sec
+2013/05/03 11:23:23 [28935] total size is 894939932163  speedup is 234403.94
+10.34.240.71 2013/05/03 11:20:02 [28630]
+2013/05/03 11:23:24 [29028] building file list
+2013/05/03 11:23:24 [29028] 122197 files to consider
+2013/05/03 11:23:25 [29028] .d..t...... ./
+2013/05/03 11:23:25 [29028] <f.st...... push-gameconsole-all.log
+2013/05/03 11:23:25 [29028] <f..t...... push.gameconsole.log
+2013/05/03 11:23:25 [29028] <f.st...... push.to.10.34.240.66.log
+2013/05/03 11:23:25 [29028] <f.st...... push.to.10.34.240.71.log
+2013/05/03 11:23:25 [29028] <f.st...... push.to.10.34.4.51.log
+2013/05/03 11:23:25 [29028] <f.st...... push.to.10.34.4.52.log
+2013/05/03 11:23:25 [29028] <f..t...... installers/OpenCandy/config.lua
+2013/05/03 11:23:26 [29028] sent 3816631 bytes  received 380 bytes  1526804.40 bytes/sec
+2013/05/03 11:23:26 [29028] total size is 894939931363  speedup is 234460.93
+10.34.240.66 2013/05/03 11:20:02 [28630]
+2013/05/03 11:23:27 [29030] building file list
+2013/05/03 11:23:27 [29030] 122197 files to consider
+2013/05/03 11:23:28 [29030] .d..t...... ./
+2013/05/03 11:23:28 [29030] <f.st...... push-gameconsole-all.log
+2013/05/03 11:23:28 [29030] <f..t...... push.gameconsole.log
+2013/05/03 11:23:28 [29030] <f.st...... push.to.10.34.240.66.log
+2013/05/03 11:23:28 [29030] <f.st...... push.to.10.34.240.71.log
+2013/05/03 11:23:28 [29030] <f.st...... push.to.10.34.4.51.log
+2013/05/03 11:23:28 [29030] <f.st...... push.to.10.34.4.52.log
+2013/05/03 11:23:28 [29030] <f..t...... installers/OpenCandy/config.lua
+2013/05/03 11:23:29 [29030] sent 3815768 bytes  received 380 bytes  1526459.20 bytes/sec
+2013/05/03 11:23:29 [29030] total size is 894939930565  speedup is 234513.95
+gameconsole push process ended at Fri May  3 11:23:29 PDT 2013
+-------------------------------------------------------
+Push process for gameconsole commenced at Fri May  3 13:18:02 PDT 2013
+Fri May 3 13:24:38 PDT 2013 Waiting for rsyncs to complete...
+Fri May 3 13:24:38 PDT 2013 Done 
+10.34.4.51 2013/05/03 13:18:02 [10773]
+2013/05/03 13:18:03 [10776] building file list
+2013/05/03 13:19:58 [10776] 122201 files to consider
+2013/05/03 13:19:58 [10776] .d..t...... ./
+2013/05/03 13:20:03 [10776] <f.st...... push-gameconsole-all.log
+2013/05/03 13:20:03 [10776] <f..t...... push.gameconsole.log
+2013/05/03 13:20:03 [10776] <f.st...... push.to.10.34.240.66.log
+2013/05/03 13:20:03 [10776] <f.st...... push.to.10.34.240.71.log
+2013/05/03 13:20:03 [10776] <f.st...... push.to.10.34.4.51.log
+2013/05/03 13:20:03 [10776] <f.st...... push.to.10.34.4.52.log
+2013/05/03 13:20:20 [10776] .d..t...... realarcadev21/games/dip/
+2013/05/03 13:20:21 [10776] cd+++++++++ realarcadev21/games/dip/nightmaresfromthedeepthecursedheart/
+2013/05/03 13:21:19 [10776] <f+++++++++ realarcadev21/games/dip/nightmaresfromthedeepthecursedheart/nightmaresfromthedeepthecursedheart.rga
+2013/05/03 13:21:24 [10776] <f.st...... realarcadev21/games/dip/rescueteam3/rescueteam3.rga
+2013/05/03 13:21:24 [10776] cd+++++++++ realarcadev21/games/dip/sealegendsphantasmallightpremiumedition/
+2013/05/03 13:22:07 [10776] <f+++++++++ realarcadev21/games/dip/sealegendsphantasmallightpremiumedition/sealegendsphantasmallightpremiumedition.rga
+2013/05/03 13:22:09 [10776] sent 927464350 bytes  received 53111 bytes  3778075.20 bytes/sec
+2013/05/03 13:22:09 [10776] total size is 895857432538  speedup is 965.87
+10.34.4.52 2013/05/03 13:18:02 [10773]
+2013/05/03 13:22:10 [11222] building file list
+2013/05/03 13:22:10 [11222] 122201 files to consider
+2013/05/03 13:22:11 [11222] .d..t...... ./
+2013/05/03 13:22:16 [11222] <f.st...... push-gameconsole-all.log
+2013/05/03 13:22:16 [11222] <f..t...... push.gameconsole.log
+2013/05/03 13:22:16 [11222] <f.st...... push.to.10.34.240.66.log
+2013/05/03 13:22:16 [11222] <f.st...... push.to.10.34.240.71.log
+2013/05/03 13:22:16 [11222] <f.st...... push.to.10.34.4.51.log
+2013/05/03 13:22:16 [11222] <f.st...... push.to.10.34.4.52.log
+2013/05/03 13:22:31 [11222] .d..t...... realarcadev21/games/dip/
+2013/05/03 13:22:31 [11222] cd+++++++++ realarcadev21/games/dip/nightmaresfromthedeepthecursedheart/
+2013/05/03 13:23:28 [11222] <f+++++++++ realarcadev21/games/dip/nightmaresfromthedeepthecursedheart/nightmaresfromthedeepthecursedheart.rga
+2013/05/03 13:23:29 [11222] <f.st...... realarcadev21/games/dip/rescueteam3/rescueteam3.rga
+2013/05/03 13:23:29 [11222] cd+++++++++ realarcadev21/games/dip/sealegendsphantasmallightpremiumedition/
+2013/05/03 13:23:41 [11222] <f+++++++++ realarcadev21/games/dip/sealegendsphantasmallightpremiumedition/sealegendsphantasmallightpremiumedition.rga
+2013/05/03 13:23:43 [11222] sent 927464995 bytes  received 53105 bytes  10027222.70 bytes/sec
+2013/05/03 13:23:43 [11222] total size is 895857433120  speedup is 965.87
+10.34.240.71 2013/05/03 13:18:02 [10773]
+2013/05/03 13:23:43 [11403] building file list
+2013/05/03 13:23:44 [11403] 122201 files to consider
+2013/05/03 13:23:44 [11403] .d..t...... ./
+2013/05/03 13:23:44 [11403] <f.st...... push-gameconsole-all.log
+2013/05/03 13:23:44 [11403] <f..t...... push.gameconsole.log
+2013/05/03 13:23:44 [11403] <f.st...... push.to.10.34.240.66.log
+2013/05/03 13:23:44 [11403] <f.st...... push.to.10.34.240.71.log
+2013/05/03 13:23:44 [11403] <f.st...... push.to.10.34.4.51.log
+2013/05/03 13:23:44 [11403] <f.st...... push.to.10.34.4.52.log
+2013/05/03 13:23:44 [11403] .d..t...... realarcadev21/games/dip/
+2013/05/03 13:23:44 [11403] cd+++++++++ realarcadev21/games/dip/nightmaresfromthedeepthecursedheart/
+2013/05/03 13:23:56 [11403] <f+++++++++ realarcadev21/games/dip/nightmaresfromthedeepthecursedheart/nightmaresfromthedeepthecursedheart.rga
+2013/05/03 13:23:57 [11403] <f.st...... realarcadev21/games/dip/rescueteam3/rescueteam3.rga
+2013/05/03 13:23:57 [11403] cd+++++++++ realarcadev21/games/dip/sealegendsphantasmallightpremiumedition/
+2013/05/03 13:24:09 [11403] <f+++++++++ realarcadev21/games/dip/sealegendsphantasmallightpremiumedition/sealegendsphantasmallightpremiumedition.rga
+2013/05/03 13:24:10 [11403] sent 927465448 bytes  received 53099 bytes  35000699.89 bytes/sec
+2013/05/03 13:24:10 [11403] total size is 895857433701  speedup is 965.86
+10.34.240.66 2013/05/03 13:18:02 [10773]
+2013/05/03 13:24:11 [11439] building file list
+2013/05/03 13:24:11 [11439] 122201 files to consider
+2013/05/03 13:24:12 [11439] .d..t...... ./
+2013/05/03 13:24:12 [11439] <f.st...... push-gameconsole-all.log
+2013/05/03 13:24:12 [11439] <f..t...... push.gameconsole.log
+2013/05/03 13:24:12 [11439] <f.st...... push.to.10.34.240.66.log
+2013/05/03 13:24:12 [11439] <f.st...... push.to.10.34.240.71.log
+2013/05/03 13:24:12 [11439] <f.st...... push.to.10.34.4.51.log
+2013/05/03 13:24:12 [11439] <f.st...... push.to.10.34.4.52.log
+2013/05/03 13:24:12 [11439] .d..t...... realarcadev21/games/dip/
+2013/05/03 13:24:12 [11439] cd+++++++++ realarcadev21/games/dip/nightmaresfromthedeepthecursedheart/
+2013/05/03 13:24:24 [11439] <f+++++++++ realarcadev21/games/dip/nightmaresfromthedeepthecursedheart/nightmaresfromthedeepthecursedheart.rga
+2013/05/03 13:24:25 [11439] <f.st...... realarcadev21/games/dip/rescueteam3/rescueteam3.rga
+2013/05/03 13:24:25 [11439] cd+++++++++ realarcadev21/games/dip/sealegendsphantasmallightpremiumedition/
+2013/05/03 13:24:37 [11439] <f+++++++++ realarcadev21/games/dip/sealegendsphantasmallightpremiumedition/sealegendsphantasmallightpremiumedition.rga
+2013/05/03 13:24:38 [11439] sent 927465964 bytes  received 53093 bytes  33727965.71 bytes/sec
+2013/05/03 13:24:38 [11439] total size is 895857434282  speedup is 965.86
+gameconsole push process ended at Fri May  3 13:24:38 PDT 2013
+-------------------------------------------------------
+Push process for gameconsole commenced at Mon May  6 14:58:01 PDT 2013
+Mon May 6 15:01:43 PDT 2013 Waiting for rsyncs to complete...
+Mon May 6 15:01:43 PDT 2013 Done 
+10.34.4.51 2013/05/06 14:58:01 [15652]
+2013/05/06 14:58:02 [15655] building file list
+2013/05/06 14:59:52 [15655] 122202 files to consider
+2013/05/06 14:59:53 [15655] .d..t...... ./
+2013/05/06 14:59:58 [15655] <f.st...... push-gameconsole-all.log
+2013/05/06 14:59:58 [15655] <f..t...... push.gameconsole.log
+2013/05/06 14:59:58 [15655] <f.st...... push.to.10.34.240.66.log
+2013/05/06 14:59:58 [15655] <f.st...... push.to.10.34.240.71.log
+2013/05/06 14:59:58 [15655] <f.st...... push.to.10.34.4.51.log
+2013/05/06 14:59:58 [15655] <f.st...... push.to.10.34.4.52.log
+2013/05/06 14:59:58 [15655] <f+++++++++ recache-logfile.txt
+2013/05/06 15:00:36 [15655] <f.st...... realarcadev21/games/dip/treasureofthecaribbeanseas/treasureofthecaribbeanseas.rga
+2013/05/06 15:00:38 [15655] sent 64090047 bytes  received 102821 bytes  412815.87 bytes/sec
+2013/05/06 15:00:38 [15655] total size is 895857246871  speedup is 13955.71
+10.34.4.52 2013/05/06 14:58:01 [15652]
+2013/05/06 15:00:39 [15899] building file list
+2013/05/06 15:00:39 [15899] 122202 files to consider
+2013/05/06 15:00:39 [15899] .d..t...... ./
+2013/05/06 15:00:44 [15899] <f.st...... push-gameconsole-all.log
+2013/05/06 15:00:44 [15899] <f..t...... push.gameconsole.log
+2013/05/06 15:00:44 [15899] <f.st...... push.to.10.34.240.66.log
+2013/05/06 15:00:44 [15899] <f.st...... push.to.10.34.240.71.log
+2013/05/06 15:00:44 [15899] <f.st...... push.to.10.34.4.51.log
+2013/05/06 15:00:44 [15899] <f.st...... push.to.10.34.4.52.log
+2013/05/06 15:00:44 [15899] <f+++++++++ recache-logfile.txt
+2013/05/06 15:01:15 [15899] <f.st...... realarcadev21/games/dip/treasureofthecaribbeanseas/treasureofthecaribbeanseas.rga
+2013/05/06 15:01:30 [15899] sent 64089641 bytes  received 102821 bytes  1246455.57 bytes/sec
+2013/05/06 15:01:30 [15899] total size is 895857246402  speedup is 13955.80
+10.34.240.71 2013/05/06 14:58:01 [15652]
+2013/05/06 15:01:31 [16018] building file list
+2013/05/06 15:01:32 [16018] 122202 files to consider
+2013/05/06 15:01:32 [16018] .d..t...... ./
+2013/05/06 15:01:32 [16018] <f.st...... push-gameconsole-all.log
+2013/05/06 15:01:32 [16018] <f..t...... push.gameconsole.log
+2013/05/06 15:01:32 [16018] <f.st...... push.to.10.34.240.66.log
+2013/05/06 15:01:32 [16018] <f.st...... push.to.10.34.240.71.log
+2013/05/06 15:01:32 [16018] <f.st...... push.to.10.34.4.51.log
+2013/05/06 15:01:32 [16018] <f.st...... push.to.10.34.4.52.log
+2013/05/06 15:01:32 [16018] <f+++++++++ recache-logfile.txt
+2013/05/06 15:01:37 [16018] <f.st...... realarcadev21/games/dip/treasureofthecaribbeanseas/treasureofthecaribbeanseas.rga
+2013/05/06 15:01:37 [16018] sent 64089045 bytes  received 102821 bytes  8558915.47 bytes/sec
+2013/05/06 15:01:37 [16018] total size is 895857245934  speedup is 13955.93
+10.34.240.66 2013/05/06 14:58:01 [15652]
+2013/05/06 15:01:38 [16020] building file list
+2013/05/06 15:01:39 [16020] 122202 files to consider
+2013/05/06 15:01:39 [16020] .d..t...... ./
+2013/05/06 15:01:39 [16020] <f.st...... push-gameconsole-all.log
+2013/05/06 15:01:39 [16020] <f..t...... push.gameconsole.log
+2013/05/06 15:01:39 [16020] <f.st...... push.to.10.34.240.66.log
+2013/05/06 15:01:39 [16020] <f.st...... push.to.10.34.240.71.log
+2013/05/06 15:01:39 [16020] <f.st...... push.to.10.34.4.51.log
+2013/05/06 15:01:39 [16020] <f.st...... push.to.10.34.4.52.log
+2013/05/06 15:01:39 [16020] <f+++++++++ recache-logfile.txt
+2013/05/06 15:01:43 [16020] <f.st...... realarcadev21/games/dip/treasureofthecaribbeanseas/treasureofthecaribbeanseas.rga
+2013/05/06 15:01:43 [16020] sent 64088512 bytes  received 102821 bytes  9875589.69 bytes/sec
+2013/05/06 15:01:43 [16020] total size is 895857245466  speedup is 13956.05
+gameconsole push process ended at Mon May  6 15:01:43 PDT 2013
+-------------------------------------------------------
+Push process for gameconsole commenced at Thu May  9 16:48:02 PDT 2013
+Thu May 9 16:52:31 PDT 2013 Waiting for rsyncs to complete...
+Thu May 9 16:52:31 PDT 2013 Done 
+10.34.4.51 2013/05/09 16:48:02 [24834]
+2013/05/09 16:48:03 [24837] building file list
+2013/05/09 16:49:51 [24837] 122204 files to consider
+2013/05/09 16:49:52 [24837] .d..t...... ./
+2013/05/09 16:49:57 [24837] <f.st...... push-gameconsole-all.log
+2013/05/09 16:49:57 [24837] <f..t...... push.gameconsole.log
+2013/05/09 16:49:57 [24837] <f.st...... push.to.10.34.240.66.log
+2013/05/09 16:49:57 [24837] <f.st...... push.to.10.34.240.71.log
+2013/05/09 16:49:57 [24837] <f.st...... push.to.10.34.4.51.log
+2013/05/09 16:49:57 [24837] <f.st...... push.to.10.34.4.52.log
+2013/05/09 16:49:57 [24837] <f.st...... recache-logfile.txt
+2013/05/09 16:50:14 [24837] .d..t...... realarcadev21/games/dip/
+2013/05/09 16:50:19 [24837] cd+++++++++ realarcadev21/games/dip/sacraterrakissofdeath/
+2013/05/09 16:51:08 [24837] <f+++++++++ realarcadev21/games/dip/sacraterrakissofdeath/sacraterrakissofdeath.rga
+2013/05/09 16:51:10 [24837] sent 568550989 bytes  received 545 bytes  3048533.69 bytes/sec
+2013/05/09 16:51:10 [24837] total size is 896421917510  speedup is 1576.68
+10.34.4.52 2013/05/09 16:48:02 [24834]
+2013/05/09 16:51:11 [25201] building file list
+2013/05/09 16:51:11 [25201] 122204 files to consider
+2013/05/09 16:51:12 [25201] .d..t...... ./
+2013/05/09 16:51:17 [25201] <f.st...... push-gameconsole-all.log
+2013/05/09 16:51:17 [25201] <f..t...... push.gameconsole.log
+2013/05/09 16:51:17 [25201] <f.st...... push.to.10.34.240.66.log
+2013/05/09 16:51:17 [25201] <f.st...... push.to.10.34.240.71.log
+2013/05/09 16:51:17 [25201] <f.st...... push.to.10.34.4.51.log
+2013/05/09 16:51:17 [25201] <f.st...... push.to.10.34.4.52.log
+2013/05/09 16:51:17 [25201] <f.st...... recache-logfile.txt
+2013/05/09 16:51:32 [25201] .d..t...... realarcadev21/games/dip/
+2013/05/09 16:51:37 [25201] cd+++++++++ realarcadev21/games/dip/sacraterrakissofdeath/
+2013/05/09 16:51:50 [25201] <f+++++++++ realarcadev21/games/dip/sacraterrakissofdeath/sacraterrakissofdeath.rga
+2013/05/09 16:51:55 [25201] sent 568551191 bytes  received 545 bytes  13070154.85 bytes/sec
+2013/05/09 16:51:55 [25201] total size is 896421917649  speedup is 1576.68
+10.34.240.71 2013/05/09 16:48:02 [24834]
+2013/05/09 16:51:55 [25284] building file list
+2013/05/09 16:51:56 [25284] 122204 files to consider
+2013/05/09 16:51:56 [25284] .d..t...... ./
+2013/05/09 16:51:57 [25284] <f.st...... push-gameconsole-all.log
+2013/05/09 16:51:57 [25284] <f..t...... push.gameconsole.log
+2013/05/09 16:51:57 [25284] <f.st...... push.to.10.34.240.66.log
+2013/05/09 16:51:57 [25284] <f.st...... push.to.10.34.240.71.log
+2013/05/09 16:51:57 [25284] <f.st...... push.to.10.34.4.51.log
+2013/05/09 16:51:57 [25284] <f.st...... push.to.10.34.4.52.log
+2013/05/09 16:51:57 [25284] <f.st...... recache-logfile.txt
+2013/05/09 16:51:57 [25284] .d..t...... realarcadev21/games/dip/
+2013/05/09 16:51:57 [25284] cd+++++++++ realarcadev21/games/dip/sacraterrakissofdeath/
+2013/05/09 16:52:12 [25284] <f+++++++++ realarcadev21/games/dip/sacraterrakissofdeath/sacraterrakissofdeath.rga
+2013/05/09 16:52:13 [25284] sent 568551203 bytes  received 545 bytes  32488671.31 bytes/sec
+2013/05/09 16:52:13 [25284] total size is 896421917789  speedup is 1576.68
+10.34.240.66 2013/05/09 16:48:02 [24834]
+2013/05/09 16:52:14 [25322] building file list
+2013/05/09 16:52:14 [25322] 122204 files to consider
+2013/05/09 16:52:15 [25322] .d..t...... ./
+2013/05/09 16:52:15 [25322] <f.st...... push-gameconsole-all.log
+2013/05/09 16:52:15 [25322] <f..t...... push.gameconsole.log
+2013/05/09 16:52:15 [25322] <f.st...... push.to.10.34.240.66.log
+2013/05/09 16:52:15 [25322] <f.st...... push.to.10.34.240.71.log
+2013/05/09 16:52:15 [25322] <f.st...... push.to.10.34.4.51.log
+2013/05/09 16:52:15 [25322] <f.st...... push.to.10.34.4.52.log
+2013/05/09 16:52:15 [25322] <f.st...... recache-logfile.txt
+2013/05/09 16:52:15 [25322] .d..t...... realarcadev21/games/dip/
+2013/05/09 16:52:15 [25322] cd+++++++++ realarcadev21/games/dip/sacraterrakissofdeath/
+2013/05/09 16:52:30 [25322] <f+++++++++ realarcadev21/games/dip/sacraterrakissofdeath/sacraterrakissofdeath.rga
+2013/05/09 16:52:31 [25322] sent 568551278 bytes  received 545 bytes  32488675.60 bytes/sec
+2013/05/09 16:52:31 [25322] total size is 896421917929  speedup is 1576.68
+gameconsole push process ended at Thu May  9 16:52:31 PDT 2013
+-------------------------------------------------------
+Push process for gameconsole commenced at Mon May 20 09:00:01 PDT 2013
+Mon May 20 09:05:30 PDT 2013 Waiting for rsyncs to complete...
+Mon May 20 09:05:30 PDT 2013 Done 
+10.34.4.51 2013/05/20 09:00:01 [12252]
+2013/05/20 09:00:02 [12257] building file list
+2013/05/20 09:02:12 [12257] 122205 files to consider
+2013/05/20 09:02:13 [12257] .d..t...... ./
+2013/05/20 09:02:17 [12257] <f.st...... push-gameconsole-all.log
+2013/05/20 09:02:17 [12257] <f..t...... push.gameconsole.log
+2013/05/20 09:02:17 [12257] <f.st...... push.to.10.34.240.66.log
+2013/05/20 09:02:17 [12257] <f.st...... push.to.10.34.240.71.log
+2013/05/20 09:02:17 [12257] <f.st...... push.to.10.34.4.51.log
+2013/05/20 09:02:17 [12257] <f.st...... push.to.10.34.4.52.log
+2013/05/20 09:02:17 [12257] .d..t...... gamehouse/pub/
+2013/05/20 09:02:27 [12257] <f.st...... gamehouse/pub/amac-lettersfromnowhere.dmg
+2013/05/20 09:02:31 [12257] <f+++++++++ gamehouse/pub/amac-romanceofrome.dmg
+2013/05/20 09:02:32 [12257] <f.st...... gamehouse/pub/amac-sevenseassolitaire.dmg
+2013/05/20 09:03:16 [12257] <f.st...... realarcadev21/games/dip/aquascapespremiumedition/aquascapespremiumedition.rga
+2013/05/20 09:03:18 [12257] <f.st...... realarcadev21/games/dip/caribbeanjewel/caribbeanjewel.rga
+2013/05/20 09:03:29 [12257] <f.st...... realarcadev21/games/dip/sevenseassolitaire/sevenseassolitaire.rga
+2013/05/20 09:03:31 [12257] sent 325530954 bytes  received 393195 bytes  1555723.86 bytes/sec
+2013/05/20 09:03:31 [12257] total size is 896549562727  speedup is 2750.79
+10.34.4.52 2013/05/20 09:00:01 [12252]
+2013/05/20 09:03:32 [12697] building file list
+2013/05/20 09:03:33 [12697] 122205 files to consider
+2013/05/20 09:03:33 [12697] .d..t...... ./
+2013/05/20 09:03:37 [12697] <f.st...... push-gameconsole-all.log
+2013/05/20 09:03:37 [12697] <f..t...... push.gameconsole.log
+2013/05/20 09:03:37 [12697] <f.st...... push.to.10.34.240.66.log
+2013/05/20 09:03:37 [12697] <f.st...... push.to.10.34.240.71.log
+2013/05/20 09:03:37 [12697] <f.st...... push.to.10.34.4.51.log
+2013/05/20 09:03:37 [12697] <f.st...... push.to.10.34.4.52.log
+2013/05/20 09:03:37 [12697] .d..t...... gamehouse/pub/
+2013/05/20 09:03:48 [12697] <f.st...... gamehouse/pub/amac-lettersfromnowhere.dmg
+2013/05/20 09:03:52 [12697] <f+++++++++ gamehouse/pub/amac-romanceofrome.dmg
+2013/05/20 09:03:53 [12697] <f.st...... gamehouse/pub/amac-sevenseassolitaire.dmg
+2013/05/20 09:04:18 [12697] <f.st...... realarcadev21/games/dip/aquascapespremiumedition/aquascapespremiumedition.rga
+2013/05/20 09:04:21 [12697] <f.st...... realarcadev21/games/dip/caribbeanjewel/caribbeanjewel.rga
+2013/05/20 09:04:28 [12697] <f.st...... realarcadev21/games/dip/sevenseassolitaire/sevenseassolitaire.rga
+2013/05/20 09:04:51 [12697] sent 325531313 bytes  received 393195 bytes  4260451.08 bytes/sec
+2013/05/20 09:04:51 [12697] total size is 896549563023  speedup is 2750.79
+10.34.240.71 2013/05/20 09:00:01 [12252]
+2013/05/20 09:04:52 [12816] building file list
+2013/05/20 09:04:53 [12816] 122205 files to consider
+2013/05/20 09:04:53 [12816] .d..t...... ./
+2013/05/20 09:04:54 [12816] <f.st...... push-gameconsole-all.log
+2013/05/20 09:04:54 [12816] <f..t...... push.gameconsole.log
+2013/05/20 09:04:54 [12816] <f.st...... push.to.10.34.240.66.log
+2013/05/20 09:04:54 [12816] <f.st...... push.to.10.34.240.71.log
+2013/05/20 09:04:54 [12816] <f.st...... push.to.10.34.4.51.log
+2013/05/20 09:04:54 [12816] <f.st...... push.to.10.34.4.52.log
+2013/05/20 09:04:54 [12816] .d..t...... gamehouse/pub/
+2013/05/20 09:05:02 [12816] <f.st...... gamehouse/pub/amac-lettersfromnowhere.dmg
+2013/05/20 09:05:05 [12816] <f+++++++++ gamehouse/pub/amac-romanceofrome.dmg
+2013/05/20 09:05:06 [12816] <f.st...... gamehouse/pub/amac-sevenseassolitaire.dmg
+2013/05/20 09:05:09 [12816] <f.st...... realarcadev21/games/dip/aquascapespremiumedition/aquascapespremiumedition.rga
+2013/05/20 09:05:09 [12816] <f.st...... realarcadev21/games/dip/caribbeanjewel/caribbeanjewel.rga
+2013/05/20 09:05:10 [12816] <f.st...... realarcadev21/games/dip/sevenseassolitaire/sevenseassolitaire.rga
+2013/05/20 09:05:11 [12816] sent 325531481 bytes  received 393195 bytes  16714085.95 bytes/sec
+2013/05/20 09:05:11 [12816] total size is 896549563319  speedup is 2750.79
+10.34.240.66 2013/05/20 09:00:01 [12252]
+2013/05/20 09:05:12 [12945] building file list
+2013/05/20 09:05:13 [12945] 122205 files to consider
+2013/05/20 09:05:13 [12945] .d..t...... ./
+2013/05/20 09:05:13 [12945] <f.st...... push-gameconsole-all.log
+2013/05/20 09:05:13 [12945] <f..t...... push.gameconsole.log
+2013/05/20 09:05:13 [12945] <f.st...... push.to.10.34.240.66.log
+2013/05/20 09:05:13 [12945] <f.st...... push.to.10.34.240.71.log
+2013/05/20 09:05:13 [12945] <f.st...... push.to.10.34.4.51.log
+2013/05/20 09:05:13 [12945] <f.st...... push.to.10.34.4.52.log
+2013/05/20 09:05:13 [12945] .d..t...... gamehouse/pub/
+2013/05/20 09:05:21 [12945] <f.st...... gamehouse/pub/amac-lettersfromnowhere.dmg
+2013/05/20 09:05:24 [12945] <f+++++++++ gamehouse/pub/amac-romanceofrome.dmg
+2013/05/20 09:05:25 [12945] <f.st...... gamehouse/pub/amac-sevenseassolitaire.dmg
+2013/05/20 09:05:28 [12945] <f.st...... realarcadev21/games/dip/aquascapespremiumedition/aquascapespremiumedition.rga
+2013/05/20 09:05:28 [12945] <f.st...... realarcadev21/games/dip/caribbeanjewel/caribbeanjewel.rga
+2013/05/20 09:05:30 [12945] <f.st...... realarcadev21/games/dip/sevenseassolitaire/sevenseassolitaire.rga
+2013/05/20 09:05:30 [12945] sent 325531713 bytes  received 393195 bytes  16714097.85 bytes/sec
+2013/05/20 09:05:30 [12945] total size is 896549563616  speedup is 2750.79
+gameconsole push process ended at Mon May 20 09:05:31 PDT 2013
+-------------------------------------------------------
+Push process for gameconsole commenced at Mon May 20 09:40:01 PDT 2013
+Mon May 20 09:42:17 PDT 2013 Waiting for rsyncs to complete...
+Mon May 20 09:42:17 PDT 2013 Done 
+10.34.4.51 2013/05/20 09:40:01 [17430]
+2013/05/20 09:40:02 [17433] building file list
+2013/05/20 09:40:03 [17433] 122205 files to consider
+2013/05/20 09:40:03 [17433] .d..t...... ./
+2013/05/20 09:40:08 [17433] <f.st...... push-gameconsole-all.log
+2013/05/20 09:40:08 [17433] <f..t...... push.gameconsole.log
+2013/05/20 09:40:08 [17433] <f.st...... push.to.10.34.240.66.log
+2013/05/20 09:40:08 [17433] <f.st...... push.to.10.34.240.71.log
+2013/05/20 09:40:08 [17433] <f.st...... push.to.10.34.4.51.log
+2013/05/20 09:40:08 [17433] <f.st...... push.to.10.34.4.52.log
+2013/05/20 09:40:08 [17433] <f.st...... recache-logfile.txt
+2013/05/20 09:41:10 [17433] <f.st...... realarcadev21/games/dip/silentscreamiithebride/silentscreamiithebride.rga
+2013/05/20 09:41:11 [17433] sent 14360237 bytes  received 120177 bytes  208351.28 bytes/sec
+2013/05/20 09:41:11 [17433] total size is 896549557262  speedup is 61914.64
+10.34.4.52 2013/05/20 09:40:01 [17430]
+2013/05/20 09:41:12 [17632] building file list
+2013/05/20 09:41:12 [17632] 122205 files to consider
+2013/05/20 09:41:12 [17632] .d..t...... ./
+2013/05/20 09:41:17 [17632] <f.st...... push-gameconsole-all.log
+2013/05/20 09:41:17 [17632] <f..t...... push.gameconsole.log
+2013/05/20 09:41:17 [17632] <f.st...... push.to.10.34.240.66.log
+2013/05/20 09:41:17 [17632] <f.st...... push.to.10.34.240.71.log
+2013/05/20 09:41:17 [17632] <f.st...... push.to.10.34.4.51.log
+2013/05/20 09:41:17 [17632] <f.st...... push.to.10.34.4.52.log
+2013/05/20 09:41:17 [17632] <f.st...... recache-logfile.txt
+2013/05/20 09:41:46 [17632] <f.st...... realarcadev21/games/dip/silentscreamiithebride/silentscreamiithebride.rga
+2013/05/20 09:42:04 [17632] sent 14359855 bytes  received 120177 bytes  275810.13 bytes/sec
+2013/05/20 09:42:04 [17632] total size is 896549556817  speedup is 61916.27
+10.34.240.71 2013/05/20 09:40:01 [17430]
+2013/05/20 09:42:05 [17676] building file list
+2013/05/20 09:42:05 [17676] 122205 files to consider
+2013/05/20 09:42:06 [17676] .d..t...... ./
+2013/05/20 09:42:06 [17676] <f.st...... push-gameconsole-all.log
+2013/05/20 09:42:06 [17676] <f..t...... push.gameconsole.log
+2013/05/20 09:42:06 [17676] <f.st...... push.to.10.34.240.66.log
+2013/05/20 09:42:06 [17676] <f.st...... push.to.10.34.240.71.log
+2013/05/20 09:42:06 [17676] <f.st...... push.to.10.34.4.51.log
+2013/05/20 09:42:06 [17676] <f.st...... push.to.10.34.4.52.log
+2013/05/20 09:42:06 [17676] <f.st...... recache-logfile.txt
+2013/05/20 09:42:09 [17676] <f.st...... realarcadev21/games/dip/silentscreamiithebride/silentscreamiithebride.rga
+2013/05/20 09:42:10 [17676] sent 14359281 bytes  received 120177 bytes  2632628.73 bytes/sec
+2013/05/20 09:42:10 [17676] total size is 896549556371  speedup is 61918.72
+10.34.240.66 2013/05/20 09:40:01 [17430]
+2013/05/20 09:42:11 [17759] building file list
+2013/05/20 09:42:12 [17759] 122205 files to consider
+2013/05/20 09:42:12 [17759] .d..t...... ./
+2013/05/20 09:42:12 [17759] <f.st...... push-gameconsole-all.log
+2013/05/20 09:42:12 [17759] <f..t...... push.gameconsole.log
+2013/05/20 09:42:12 [17759] <f.st...... push.to.10.34.240.66.log
+2013/05/20 09:42:12 [17759] <f.st...... push.to.10.34.240.71.log
+2013/05/20 09:42:12 [17759] <f.st...... push.to.10.34.4.51.log
+2013/05/20 09:42:12 [17759] <f.st...... push.to.10.34.4.52.log
+2013/05/20 09:42:12 [17759] <f.st...... recache-logfile.txt
+2013/05/20 09:42:16 [17759] <f.st...... realarcadev21/games/dip/silentscreamiithebride/silentscreamiithebride.rga
+2013/05/20 09:42:17 [17759] sent 14358771 bytes  received 120177 bytes  2227530.46 bytes/sec
+2013/05/20 09:42:17 [17759] total size is 896549555926  speedup is 61920.90
+gameconsole push process ended at Mon May 20 09:42:17 PDT 2013
+-------------------------------------------------------
+Push process for gameconsole commenced at Tue May 21 10:22:02 PDT 2013
+Tue May 21 10:25:31 PDT 2013 Waiting for rsyncs to complete...
+Tue May 21 10:25:31 PDT 2013 Done 
+10.34.4.51 2013/05/21 10:22:02 [21249]
+2013/05/21 10:22:03 [21252] building file list
+2013/05/21 10:23:55 [21252] 122205 files to consider
+2013/05/21 10:23:55 [21252] .d..t...... ./
+2013/05/21 10:24:00 [21252] <f.st...... push-gameconsole-all.log
+2013/05/21 10:24:00 [21252] <f..t...... push.gameconsole.log
+2013/05/21 10:24:00 [21252] <f.st...... push.to.10.34.240.66.log
+2013/05/21 10:24:00 [21252] <f.st...... push.to.10.34.240.71.log
+2013/05/21 10:24:00 [21252] <f.st...... push.to.10.34.4.51.log
+2013/05/21 10:24:00 [21252] <f.st...... push.to.10.34.4.52.log
+2013/05/21 10:24:00 [21252] <f.st...... recache-logfile.txt
+2013/05/21 10:24:37 [21252] sent 3818387 bytes  received 904 bytes  24881.37 bytes/sec
+2013/05/21 10:24:37 [21252] total size is 896549563401  speedup is 234742.41
+10.34.4.52 2013/05/21 10:22:02 [21249]
+2013/05/21 10:24:38 [21564] building file list
+2013/05/21 10:24:39 [21564] 122205 files to consider
+2013/05/21 10:24:39 [21564] .d..t...... ./
+2013/05/21 10:24:44 [21564] <f.st...... push-gameconsole-all.log
+2013/05/21 10:24:44 [21564] <f..t...... push.gameconsole.log
+2013/05/21 10:24:44 [21564] <f.st...... push.to.10.34.240.66.log
+2013/05/21 10:24:44 [21564] <f.st...... push.to.10.34.240.71.log
+2013/05/21 10:24:44 [21564] <f.st...... push.to.10.34.4.51.log
+2013/05/21 10:24:44 [21564] <f.st...... push.to.10.34.4.52.log
+2013/05/21 10:24:44 [21564] <f.st...... recache-logfile.txt
+2013/05/21 10:25:25 [21564] sent 3818332 bytes  received 904 bytes  82134.11 bytes/sec
+2013/05/21 10:25:25 [21564] total size is 896549563283  speedup is 234745.79
+10.34.240.71 2013/05/21 10:22:02 [21249]
+2013/05/21 10:25:25 [21697] building file list
+2013/05/21 10:25:26 [21697] 122205 files to consider
+2013/05/21 10:25:27 [21697] .d..t...... ./
+2013/05/21 10:25:27 [21697] <f.st...... push-gameconsole-all.log
+2013/05/21 10:25:27 [21697] <f..t...... push.gameconsole.log
+2013/05/21 10:25:27 [21697] <f.st...... push.to.10.34.240.66.log
+2013/05/21 10:25:27 [21697] <f.st...... push.to.10.34.240.71.log
+2013/05/21 10:25:27 [21697] <f.st...... push.to.10.34.4.51.log
+2013/05/21 10:25:27 [21697] <f.st...... push.to.10.34.4.52.log
+2013/05/21 10:25:27 [21697] <f.st...... recache-logfile.txt
+2013/05/21 10:25:28 [21697] sent 3818085 bytes  received 904 bytes  1527595.60 bytes/sec
+2013/05/21 10:25:28 [21697] total size is 896549563164  speedup is 234760.97
+10.34.240.66 2013/05/21 10:22:02 [21249]
+2013/05/21 10:25:28 [21699] building file list
+2013/05/21 10:25:29 [21699] 122205 files to consider
+2013/05/21 10:25:29 [21699] .d..t...... ./
+2013/05/21 10:25:30 [21699] <f.st...... push-gameconsole-all.log
+2013/05/21 10:25:30 [21699] <f..t...... push.gameconsole.log
+2013/05/21 10:25:30 [21699] <f.st...... push.to.10.34.240.66.log
+2013/05/21 10:25:30 [21699] <f.st...... push.to.10.34.240.71.log
+2013/05/21 10:25:30 [21699] <f.st...... push.to.10.34.4.51.log
+2013/05/21 10:25:30 [21699] <f.st...... push.to.10.34.4.52.log
+2013/05/21 10:25:30 [21699] <f.st...... recache-logfile.txt
+2013/05/21 10:25:31 [21699] sent 3817903 bytes  received 904 bytes  1527522.80 bytes/sec
+2013/05/21 10:25:31 [21699] total size is 896549563047  speedup is 234772.16
+gameconsole push process ended at Tue May 21 10:25:31 PDT 2013
+-------------------------------------------------------
+Push process for gameconsole commenced at Tue May 21 13:04:01 PDT 2013
+Tue May 21 13:09:47 PDT 2013 Waiting for rsyncs to complete...
+Tue May 21 13:09:47 PDT 2013 Done 
+10.34.4.51 2013/05/21 13:04:01 [9771]
+2013/05/21 13:04:02 [9774] building file list
+2013/05/21 13:06:09 [9774] 122215 files to consider
+2013/05/21 13:06:09 [9774] .d..t...... ./
+2013/05/21 13:06:14 [9774] <f.st...... push-gameconsole-all.log
+2013/05/21 13:06:14 [9774] <f..t...... push.gameconsole.log
+2013/05/21 13:06:14 [9774] <f.st...... push.to.10.34.240.66.log
+2013/05/21 13:06:14 [9774] <f.st...... push.to.10.34.240.71.log
+2013/05/21 13:06:14 [9774] <f.st...... push.to.10.34.4.51.log
+2013/05/21 13:06:14 [9774] <f.st...... push.to.10.34.4.52.log
+2013/05/21 13:06:14 [9774] .d..t...... gamehouse/pub/
+2013/05/21 13:06:19 [9774] <f+++++++++ gamehouse/pub/amac-enchantedcavern.dmg
+2013/05/21 13:06:25 [9774] <f+++++++++ gamehouse/pub/amac-kingdomchroniclesplatinumedition.dmg
+2013/05/21 13:06:31 [9774] .d..t...... realarcadev21/games/dip/
+2013/05/21 13:06:36 [9774] cd+++++++++ realarcadev21/games/dip/crimeline/
+2013/05/21 13:06:43 [9774] <f+++++++++ realarcadev21/games/dip/crimeline/crimeline.rga
+2013/05/21 13:06:43 [9774] cd+++++++++ realarcadev21/games/dip/livinglegendsicerose/
+2013/05/21 13:07:36 [9774] <f+++++++++ realarcadev21/games/dip/livinglegendsicerose/livinglegendsicerose.rga
+2013/05/21 13:07:36 [9774] cd+++++++++ realarcadev21/games/dip/royalgems/
+2013/05/21 13:07:42 [9774] <f+++++++++ realarcadev21/games/dip/royalgems/royalgems.rga
+2013/05/21 13:07:42 [9774] cd+++++++++ realarcadev21/games/dip/thepathofhercules/
+2013/05/21 13:08:04 [9774] <f+++++++++ realarcadev21/games/dip/thepathofhercules/thepathofhercules.rga
+2013/05/21 13:08:06 [9774] sent 898758162 bytes  received 763 bytes  3691001.75 bytes/sec
+2013/05/21 13:08:06 [9774] total size is 897444401782  speedup is 998.54
+10.34.4.52 2013/05/21 13:04:01 [9771]
+2013/05/21 13:08:06 [10261] building file list
+2013/05/21 13:08:07 [10261] 122215 files to consider
+2013/05/21 13:08:07 [10261] .d..t...... ./
+2013/05/21 13:08:12 [10261] <f.st...... push-gameconsole-all.log
+2013/05/21 13:08:12 [10261] <f..t...... push.gameconsole.log
+2013/05/21 13:08:12 [10261] <f.st...... push.to.10.34.240.66.log
+2013/05/21 13:08:12 [10261] <f.st...... push.to.10.34.240.71.log
+2013/05/21 13:08:12 [10261] <f.st...... push.to.10.34.4.51.log
+2013/05/21 13:08:12 [10261] <f.st...... push.to.10.34.4.52.log
+2013/05/21 13:08:12 [10261] .d..t...... gamehouse/pub/
+2013/05/21 13:08:12 [10261] <f+++++++++ gamehouse/pub/amac-enchantedcavern.dmg
+2013/05/21 13:08:17 [10261] <f+++++++++ gamehouse/pub/amac-kingdomchroniclesplatinumedition.dmg
+2013/05/21 13:08:31 [10261] .d..t...... realarcadev21/games/dip/
+2013/05/21 13:08:35 [10261] cd+++++++++ realarcadev21/games/dip/crimeline/
+2013/05/21 13:08:37 [10261] <f+++++++++ realarcadev21/games/dip/crimeline/crimeline.rga
+2013/05/21 13:08:37 [10261] cd+++++++++ realarcadev21/games/dip/livinglegendsicerose/
+2013/05/21 13:08:47 [10261] <f+++++++++ realarcadev21/games/dip/livinglegendsicerose/livinglegendsicerose.rga
+2013/05/21 13:08:47 [10261] cd+++++++++ realarcadev21/games/dip/royalgems/
+2013/05/21 13:08:48 [10261] <f+++++++++ realarcadev21/games/dip/royalgems/royalgems.rga
+2013/05/21 13:08:48 [10261] cd+++++++++ realarcadev21/games/dip/thepathofhercules/
+2013/05/21 13:08:51 [10261] <f+++++++++ realarcadev21/games/dip/thepathofhercules/thepathofhercules.rga
+2013/05/21 13:08:53 [10261] sent 898759153 bytes  received 763 bytes  19752965.19 bytes/sec
+2013/05/21 13:08:53 [10261] total size is 897444402704  speedup is 998.54
+10.34.240.71 2013/05/21 13:04:01 [9771]
+2013/05/21 13:08:54 [10345] building file list
+2013/05/21 13:08:55 [10345] 122215 files to consider
+2013/05/21 13:08:55 [10345] .d..t...... ./
+2013/05/21 13:08:55 [10345] <f.st...... push-gameconsole-all.log
+2013/05/21 13:08:55 [10345] <f..t...... push.gameconsole.log
+2013/05/21 13:08:55 [10345] <f.st...... push.to.10.34.240.66.log
+2013/05/21 13:08:55 [10345] <f.st...... push.to.10.34.240.71.log
+2013/05/21 13:08:55 [10345] <f.st...... push.to.10.34.4.51.log
+2013/05/21 13:08:55 [10345] <f.st...... push.to.10.34.4.52.log
+2013/05/21 13:08:55 [10345] .d..t...... gamehouse/pub/
+2013/05/21 13:08:57 [10345] <f+++++++++ gamehouse/pub/amac-enchantedcavern.dmg
+2013/05/21 13:09:02 [10345] <f+++++++++ gamehouse/pub/amac-kingdomchroniclesplatinumedition.dmg
+2013/05/21 13:09:02 [10345] .d..t...... realarcadev21/games/dip/
+2013/05/21 13:09:02 [10345] cd+++++++++ realarcadev21/games/dip/crimeline/
+2013/05/21 13:09:04 [10345] <f+++++++++ realarcadev21/games/dip/crimeline/crimeline.rga
+2013/05/21 13:09:04 [10345] cd+++++++++ realarcadev21/games/dip/livinglegendsicerose/
+2013/05/21 13:09:15 [10345] <f+++++++++ realarcadev21/games/dip/livinglegendsicerose/livinglegendsicerose.rga
+2013/05/21 13:09:15 [10345] cd+++++++++ realarcadev21/games/dip/royalgems/
+2013/05/21 13:09:16 [10345] <f+++++++++ realarcadev21/games/dip/royalgems/royalgems.rga
+2013/05/21 13:09:16 [10345] cd+++++++++ realarcadev21/games/dip/thepathofhercules/
+2013/05/21 13:09:20 [10345] <f+++++++++ realarcadev21/games/dip/thepathofhercules/thepathofhercules.rga
+2013/05/21 13:09:20 [10345] sent 898759968 bytes  received 763 bytes  32682208.40 bytes/sec
+2013/05/21 13:09:20 [10345] total size is 897444403647  speedup is 998.54
+10.34.240.66 2013/05/21 13:04:01 [9771]
+2013/05/21 13:09:21 [10458] building file list
+2013/05/21 13:09:22 [10458] 122215 files to consider
+2013/05/21 13:09:22 [10458] .d..t...... ./
+2013/05/21 13:09:22 [10458] <f.st...... push-gameconsole-all.log
+2013/05/21 13:09:22 [10458] <f..t...... push.gameconsole.log
+2013/05/21 13:09:22 [10458] <f.st...... push.to.10.34.240.66.log
+2013/05/21 13:09:23 [10458] <f.st...... push.to.10.34.240.71.log
+2013/05/21 13:09:23 [10458] <f.st...... push.to.10.34.4.51.log
+2013/05/21 13:09:23 [10458] <f.st...... push.to.10.34.4.52.log
+2013/05/21 13:09:23 [10458] .d..t...... gamehouse/pub/
+2013/05/21 13:09:24 [10458] <f+++++++++ gamehouse/pub/amac-enchantedcavern.dmg
+2013/05/21 13:09:30 [10458] <f+++++++++ gamehouse/pub/amac-kingdomchroniclesplatinumedition.dmg
+2013/05/21 13:09:30 [10458] .d..t...... realarcadev21/games/dip/
+2013/05/21 13:09:30 [10458] cd+++++++++ realarcadev21/games/dip/crimeline/
+2013/05/21 13:09:32 [10458] <f+++++++++ realarcadev21/games/dip/crimeline/crimeline.rga
+2013/05/21 13:09:32 [10458] cd+++++++++ realarcadev21/games/dip/livinglegendsicerose/
+2013/05/21 13:09:42 [10458] <f+++++++++ realarcadev21/games/dip/livinglegendsicerose/livinglegendsicerose.rga
+2013/05/21 13:09:42 [10458] cd+++++++++ realarcadev21/games/dip/royalgems/
+2013/05/21 13:09:43 [10458] <f+++++++++ realarcadev21/games/dip/royalgems/royalgems.rga
+2013/05/21 13:09:43 [10458] cd+++++++++ realarcadev21/games/dip/thepathofhercules/
+2013/05/21 13:09:47 [10458] <f+++++++++ realarcadev21/games/dip/thepathofhercules/thepathofhercules.rga
+2013/05/21 13:09:47 [10458] sent 898760846 bytes  received 763 bytes  32682240.33 bytes/sec
+2013/05/21 13:09:47 [10458] total size is 897444404590  speedup is 998.53
+gameconsole push process ended at Tue May 21 13:09:48 PDT 2013
+-------------------------------------------------------
+Push process for gameconsole commenced at Wed May 22 09:00:01 PDT 2013
+Wed May 22 09:04:38 PDT 2013 Waiting for rsyncs to complete...
+Wed May 22 09:04:38 PDT 2013 Done 
+10.34.4.51 2013/05/22 09:00:01 [8969]
+2013/05/22 09:00:02 [8976] building file list
+2013/05/22 09:01:43 [8976] 122215 files to consider
+2013/05/22 09:01:43 [8976] .d..t...... ./
+2013/05/22 09:01:48 [8976] <f.st...... push-gameconsole-all.log
+2013/05/22 09:01:48 [8976] <f..t...... push.gameconsole.log
+2013/05/22 09:01:48 [8976] <f.st...... push.to.10.34.240.66.log
+2013/05/22 09:01:48 [8976] <f.st...... push.to.10.34.240.71.log
+2013/05/22 09:01:48 [8976] <f.st...... push.to.10.34.4.51.log
+2013/05/22 09:01:48 [8976] <f.st...... push.to.10.34.4.52.log
+2013/05/22 09:02:11 [8976] <f.st...... realarcadev21/games/dip/crimeline/crimeline.rga
+2013/05/22 09:02:31 [8976] sent 20296216 bytes  received 61414 bytes  136171.44 bytes/sec
+2013/05/22 09:02:31 [8976] total size is 897440368221  speedup is 44083.74
+10.34.4.52 2013/05/22 09:00:01 [8969]
+2013/05/22 09:02:32 [9305] building file list
+2013/05/22 09:02:33 [9305] 122215 files to consider
+2013/05/22 09:02:33 [9305] .d..t...... ./
+2013/05/22 09:02:38 [9305] <f.st...... push-gameconsole-all.log
+2013/05/22 09:02:38 [9305] <f..t...... push.gameconsole.log
+2013/05/22 09:02:38 [9305] <f.st...... push.to.10.34.240.66.log
+2013/05/22 09:02:38 [9305] <f.st...... push.to.10.34.240.71.log
+2013/05/22 09:02:38 [9305] <f.st...... push.to.10.34.4.51.log
+2013/05/22 09:02:38 [9305] <f.st...... push.to.10.34.4.52.log
+2013/05/22 09:03:10 [9305] <f.st...... realarcadev21/games/dip/crimeline/crimeline.rga
+2013/05/22 09:04:30 [9305] sent 20295351 bytes  received 61420 bytes  331004.41 bytes/sec
+2013/05/22 09:04:30 [9305] total size is 897440367294  speedup is 44085.60
+10.34.240.71 2013/05/22 09:00:01 [8969]
+2013/05/22 09:04:31 [9535] building file list
+2013/05/22 09:04:31 [9535] 122215 files to consider
+2013/05/22 09:04:32 [9535] .d..t...... ./
+2013/05/22 09:04:32 [9535] <f.st...... push-gameconsole-all.log
+2013/05/22 09:04:32 [9535] <f..t...... push.gameconsole.log
+2013/05/22 09:04:32 [9535] <f.st...... push.to.10.34.240.66.log
+2013/05/22 09:04:32 [9535] <f.st...... push.to.10.34.240.71.log
+2013/05/22 09:04:32 [9535] <f.st...... push.to.10.34.4.51.log
+2013/05/22 09:04:32 [9535] <f.st...... push.to.10.34.4.52.log
+2013/05/22 09:04:33 [9535] <f.st...... realarcadev21/games/dip/crimeline/crimeline.rga
+2013/05/22 09:04:34 [9535] sent 20294298 bytes  received 61426 bytes  5815921.14 bytes/sec
+2013/05/22 09:04:34 [9535] total size is 897440366367  speedup is 44087.86
+10.34.240.66 2013/05/22 09:00:01 [8969]
+2013/05/22 09:04:35 [9537] building file list
+2013/05/22 09:04:35 [9537] 122215 files to consider
+2013/05/22 09:04:36 [9537] .d..t...... ./
+2013/05/22 09:04:36 [9537] <f.st...... push-gameconsole-all.log
+2013/05/22 09:04:36 [9537] <f..t...... push.gameconsole.log
+2013/05/22 09:04:36 [9537] <f.st...... push.to.10.34.240.66.log
+2013/05/22 09:04:36 [9537] <f.st...... push.to.10.34.240.71.log
+2013/05/22 09:04:36 [9537] <f.st...... push.to.10.34.4.51.log
+2013/05/22 09:04:36 [9537] <f.st...... push.to.10.34.4.52.log
+2013/05/22 09:04:37 [9537] <f.st...... realarcadev21/games/dip/crimeline/crimeline.rga
+2013/05/22 09:04:38 [9537] sent 20293308 bytes  received 61432 bytes  5815640.00 bytes/sec
+2013/05/22 09:04:38 [9537] total size is 897440365441  speedup is 44089.99
+gameconsole push process ended at Wed May 22 09:04:38 PDT 2013
+-------------------------------------------------------
+Push process for gameconsole commenced at Wed May 22 09:14:01 PDT 2013
+Wed May 22 09:15:35 PDT 2013 Waiting for rsyncs to complete...
+Wed May 22 09:15:35 PDT 2013 Done 
+10.34.4.51 2013/05/22 09:14:01 [10782]
+2013/05/22 09:14:01 [10785] building file list
+2013/05/22 09:14:02 [10785] 122215 files to consider
+2013/05/22 09:14:02 [10785] .d..t...... ./
+2013/05/22 09:14:03 [10785] <f.st...... push-gameconsole-all.log
+2013/05/22 09:14:03 [10785] <f..t...... push.gameconsole.log
+2013/05/22 09:14:03 [10785] <f.st...... push.to.10.34.240.66.log
+2013/05/22 09:14:03 [10785] <f.st...... push.to.10.34.240.71.log
+2013/05/22 09:14:03 [10785] <f.st...... push.to.10.34.4.51.log
+2013/05/22 09:14:03 [10785] <f.st...... push.to.10.34.4.52.log
+2013/05/22 09:14:03 [10785] <f.st...... recache-logfile.txt
+2013/05/22 09:14:07 [10785] <f.st...... realarcadev21/games/dip/thepathofhercules/thepathofhercules.rga
+2013/05/22 09:14:36 [10785] sent 34738086 bytes  received 81804 bytes  5356906.15 bytes/sec
+2013/05/22 09:14:36 [10785] total size is 897441361946  speedup is 25773.81
+10.34.4.52 2013/05/22 09:14:01 [10782]
+2013/05/22 09:14:36 [10881] building file list
+2013/05/22 09:14:37 [10881] 122215 files to consider
+2013/05/22 09:14:37 [10881] .d..t...... ./
+2013/05/22 09:14:42 [10881] <f.st...... push-gameconsole-all.log
+2013/05/22 09:14:42 [10881] <f..t...... push.gameconsole.log
+2013/05/22 09:14:42 [10881] <f.st...... push.to.10.34.240.66.log
+2013/05/22 09:14:42 [10881] <f.st...... push.to.10.34.240.71.log
+2013/05/22 09:14:42 [10881] <f.st...... push.to.10.34.4.51.log
+2013/05/22 09:14:42 [10881] <f.st...... push.to.10.34.4.52.log
+2013/05/22 09:14:42 [10881] <f.st...... recache-logfile.txt
+2013/05/22 09:15:09 [10881] <f.st...... realarcadev21/games/dip/thepathofhercules/thepathofhercules.rga
+2013/05/22 09:15:25 [10881] sent 34738239 bytes  received 81798 bytes  748818.00 bytes/sec
+2013/05/22 09:15:25 [10881] total size is 897441362036  speedup is 25773.71
+10.34.240.71 2013/05/22 09:14:01 [10782]
+2013/05/22 09:15:25 [11021] building file list
+2013/05/22 09:15:26 [11021] 122215 files to consider
+2013/05/22 09:15:26 [11021] .d..t...... ./
+2013/05/22 09:15:26 [11021] <f.st...... push-gameconsole-all.log
+2013/05/22 09:15:26 [11021] <f..t...... push.gameconsole.log
+2013/05/22 09:15:26 [11021] <f.st...... push.to.10.34.240.66.log
+2013/05/22 09:15:26 [11021] <f.st...... push.to.10.34.240.71.log
+2013/05/22 09:15:26 [11021] <f.st...... push.to.10.34.4.51.log
+2013/05/22 09:15:26 [11021] <f.st...... push.to.10.34.4.52.log
+2013/05/22 09:15:26 [11021] <f.st...... recache-logfile.txt
+2013/05/22 09:15:29 [11021] <f.st...... realarcadev21/games/dip/thepathofhercules/thepathofhercules.rga
+2013/05/22 09:15:30 [11021] sent 34738199 bytes  received 81792 bytes  7737775.78 bytes/sec
+2013/05/22 09:15:30 [11021] total size is 897441362124  speedup is 25773.74
+10.34.240.66 2013/05/22 09:14:01 [10782]
+2013/05/22 09:15:30 [11023] building file list
+2013/05/22 09:15:31 [11023] 122215 files to consider
+2013/05/22 09:15:31 [11023] .d..t...... ./
+2013/05/22 09:15:32 [11023] <f.st...... push-gameconsole-all.log
+2013/05/22 09:15:32 [11023] <f..t...... push.gameconsole.log
+2013/05/22 09:15:32 [11023] <f.st...... push.to.10.34.240.66.log
+2013/05/22 09:15:32 [11023] <f.st...... push.to.10.34.240.71.log
+2013/05/22 09:15:32 [11023] <f.st...... push.to.10.34.4.51.log
+2013/05/22 09:15:32 [11023] <f.st...... push.to.10.34.4.52.log
+2013/05/22 09:15:32 [11023] <f.st...... recache-logfile.txt
+2013/05/22 09:15:34 [11023] <f.st...... realarcadev21/games/dip/thepathofhercules/thepathofhercules.rga
+2013/05/22 09:15:35 [11023] sent 34738223 bytes  received 81786 bytes  7737779.78 bytes/sec
+2013/05/22 09:15:35 [11023] total size is 897441362213  speedup is 25773.73
+gameconsole push process ended at Wed May 22 09:15:35 PDT 2013
+-------------------------------------------------------
+Push process for gameconsole commenced at Thu May 23 09:06:01 PDT 2013
+Thu May 23 09:10:26 PDT 2013 Waiting for rsyncs to complete...
+Thu May 23 09:10:26 PDT 2013 Done 
+10.34.4.51 2013/05/23 09:06:01 [8270]
+2013/05/23 09:06:02 [8275] building file list
+2013/05/23 09:07:48 [8275] 122217 files to consider
+2013/05/23 09:07:48 [8275] .d..t...... ./
+2013/05/23 09:07:53 [8275] <f.st...... push-gameconsole-all.log
+2013/05/23 09:07:53 [8275] <f..t...... push.gameconsole.log
+2013/05/23 09:07:53 [8275] <f.st...... push.to.10.34.240.66.log
+2013/05/23 09:07:53 [8275] <f.st...... push.to.10.34.240.71.log
+2013/05/23 09:07:53 [8275] <f.st...... push.to.10.34.4.51.log
+2013/05/23 09:07:53 [8275] <f.st...... push.to.10.34.4.52.log
+2013/05/23 09:07:53 [8275] <f.st...... recache-logfile.txt
+2013/05/23 09:08:09 [8275] .d..t...... realarcadev21/games/dip/
+2013/05/23 09:08:14 [8275] cd+++++++++ realarcadev21/games/dip/whispersrevelation/
+2013/05/23 09:08:58 [8275] <f+++++++++ realarcadev21/games/dip/whispersrevelation/whispersrevelation.rga
+2013/05/23 09:08:59 [8275] sent 587256756 bytes  received 1151 bytes  3308495.25 bytes/sec
+2013/05/23 09:08:59 [8275] total size is 898024736214  speedup is 1529.18
+10.34.4.52 2013/05/23 09:06:01 [8270]
+2013/05/23 09:09:00 [8579] building file list
+2013/05/23 09:09:01 [8579] 122217 files to consider
+2013/05/23 09:09:01 [8579] .d..t...... ./
+2013/05/23 09:09:06 [8579] <f.st...... push-gameconsole-all.log
+2013/05/23 09:09:06 [8579] <f..t...... push.gameconsole.log
+2013/05/23 09:09:06 [8579] <f.st...... push.to.10.34.240.66.log
+2013/05/23 09:09:06 [8579] <f.st...... push.to.10.34.240.71.log
+2013/05/23 09:09:06 [8579] <f.st...... push.to.10.34.4.51.log
+2013/05/23 09:09:06 [8579] <f.st...... push.to.10.34.4.52.log
+2013/05/23 09:09:06 [8579] <f.st...... recache-logfile.txt
+2013/05/23 09:09:25 [8579] .d..t...... realarcadev21/games/dip/
+2013/05/23 09:09:30 [8579] cd+++++++++ realarcadev21/games/dip/whispersrevelation/
+2013/05/23 09:09:44 [8579] <f+++++++++ realarcadev21/games/dip/whispersrevelation/whispersrevelation.rga
+2013/05/23 09:09:49 [8579] sent 587256953 bytes  received 1151 bytes  12108414.52 bytes/sec
+2013/05/23 09:09:49 [8579] total size is 898024736349  speedup is 1529.18
+10.34.240.71 2013/05/23 09:06:01 [8270]
+2013/05/23 09:09:50 [8694] building file list
+2013/05/23 09:09:50 [8694] 122217 files to consider
+2013/05/23 09:09:51 [8694] .d..t...... ./
+2013/05/23 09:09:51 [8694] <f.st...... push-gameconsole-all.log
+2013/05/23 09:09:51 [8694] <f..t...... push.gameconsole.log
+2013/05/23 09:09:51 [8694] <f.st...... push.to.10.34.240.66.log
+2013/05/23 09:09:51 [8694] <f.st...... push.to.10.34.240.71.log
+2013/05/23 09:09:51 [8694] <f.st...... push.to.10.34.4.51.log
+2013/05/23 09:09:51 [8694] <f.st...... push.to.10.34.4.52.log
+2013/05/23 09:09:51 [8694] <f.st...... recache-logfile.txt
+2013/05/23 09:09:51 [8694] .d..t...... realarcadev21/games/dip/
+2013/05/23 09:09:51 [8694] cd+++++++++ realarcadev21/games/dip/whispersrevelation/
+2013/05/23 09:10:07 [8694] <f+++++++++ realarcadev21/games/dip/whispersrevelation/whispersrevelation.rga
+2013/05/23 09:10:08 [8694] sent 587256962 bytes  received 1151 bytes  31743681.78 bytes/sec
+2013/05/23 09:10:08 [8694] total size is 898024736484  speedup is 1529.18
+10.34.240.66 2013/05/23 09:06:01 [8270]
+2013/05/23 09:10:08 [8754] building file list
+2013/05/23 09:10:09 [8754] 122217 files to consider
+2013/05/23 09:10:09 [8754] .d..t...... ./
+2013/05/23 09:10:10 [8754] <f.st...... push-gameconsole-all.log
+2013/05/23 09:10:10 [8754] <f..t...... push.gameconsole.log
+2013/05/23 09:10:10 [8754] <f.st...... push.to.10.34.240.66.log
+2013/05/23 09:10:10 [8754] <f.st...... push.to.10.34.240.71.log
+2013/05/23 09:10:10 [8754] <f.st...... push.to.10.34.4.51.log
+2013/05/23 09:10:10 [8754] <f.st...... push.to.10.34.4.52.log
+2013/05/23 09:10:10 [8754] <f.st...... recache-logfile.txt
+2013/05/23 09:10:10 [8754] .d..t...... realarcadev21/games/dip/
+2013/05/23 09:10:10 [8754] cd+++++++++ realarcadev21/games/dip/whispersrevelation/
+2013/05/23 09:10:26 [8754] <f+++++++++ realarcadev21/games/dip/whispersrevelation/whispersrevelation.rga
+2013/05/23 09:10:26 [8754] sent 587257033 bytes  received 1151 bytes  31743685.62 bytes/sec
+2013/05/23 09:10:26 [8754] total size is 898024736619  speedup is 1529.18
+gameconsole push process ended at Thu May 23 09:10:27 PDT 2013
+-------------------------------------------------------
+Push process for gameconsole commenced at Tue May 28 12:30:01 PDT 2013
+Tue May 28 12:33:21 PDT 2013 Waiting for rsyncs to complete...
+Tue May 28 12:33:21 PDT 2013 Done 
+10.34.4.51 2013/05/28 12:30:01 [26260]
+2013/05/28 12:30:02 [26265] building file list
+2013/05/28 12:31:07 [26265] 122220 files to consider
+2013/05/28 12:31:08 [26265] .d..t...... ./
+2013/05/28 12:31:13 [26265] <f+++++++++ go-ahead-push-gameconsole
+2013/05/28 12:31:13 [26265] <f.st...... push-gameconsole-all.log
+2013/05/28 12:31:13 [26265] <f..t...... push.gameconsole.log
+2013/05/28 12:31:13 [26265] <f.st...... push.to.10.34.240.66.log
+2013/05/28 12:31:13 [26265] <f.st...... push.to.10.34.240.71.log
+2013/05/28 12:31:13 [26265] <f.st...... push.to.10.34.4.51.log
+2013/05/28 12:31:13 [26265] <f.st...... push.to.10.34.4.52.log
+2013/05/28 12:31:13 [26265] .d..t...... gamehouse/pub/
+2013/05/28 12:31:20 [26265] <f+++++++++ gamehouse/pub/amac-balladofsolar.dmg
+2013/05/28 12:31:28 [26265] .d..t...... realarcadev21/games/dip/
+2013/05/28 12:31:33 [26265] cd+++++++++ realarcadev21/games/dip/mysteriesoftheundeadthecursedisland/
+2013/05/28 12:32:13 [26265] <f+++++++++ realarcadev21/games/dip/mysteriesoftheundeadthecursedisland/mysteriesoftheundeadthecursedisland.rga
+2013/05/28 12:32:13 [26265] *deleting   go-ahead-push-gameconsole.WhyIsThisHere-qmark
+2013/05/28 12:32:15 [26265] sent 569458092 bytes  received 847 bytes  4330486.23 bytes/sec
+2013/05/28 12:32:15 [26265] total size is 898590314640  speedup is 1577.97
+10.34.4.52 2013/05/28 12:30:01 [26260]
+2013/05/28 12:32:15 [26513] building file list
+2013/05/28 12:32:16 [26513] 122220 files to consider
+2013/05/28 12:32:16 [26513] .d..t...... ./
+2013/05/28 12:32:21 [26513] <f.st...... push-gameconsole-all.log
+2013/05/28 12:32:21 [26513] <f..t...... push.gameconsole.log
+2013/05/28 12:32:21 [26513] <f.st...... push.to.10.34.240.66.log
+2013/05/28 12:32:21 [26513] <f.st...... push.to.10.34.240.71.log
+2013/05/28 12:32:21 [26513] <f.st...... push.to.10.34.4.51.log
+2013/05/28 12:32:21 [26513] <f.st...... push.to.10.34.4.52.log
+2013/05/28 12:32:21 [26513] .d..t...... gamehouse/pub/
+2013/05/28 12:32:28 [26513] <f+++++++++ gamehouse/pub/amac-balladofsolar.dmg
+2013/05/28 12:32:31 [26513] .d..t...... realarcadev21/games/dip/
+2013/05/28 12:32:36 [26513] cd+++++++++ realarcadev21/games/dip/mysteriesoftheundeadthecursedisland/
+2013/05/28 12:32:43 [26513] <f+++++++++ realarcadev21/games/dip/mysteriesoftheundeadthecursedisland/mysteriesoftheundeadthecursedisland.rga
+2013/05/28 12:32:44 [26513] sent 569458339 bytes  received 828 bytes  19303700.58 bytes/sec
+2013/05/28 12:32:44 [26513] total size is 898590314929  speedup is 1577.97
+10.34.240.71 2013/05/28 12:30:01 [26260]
+2013/05/28 12:32:45 [26515] building file list
+2013/05/28 12:32:46 [26515] 122220 files to consider
+2013/05/28 12:32:46 [26515] .d..t...... ./
+2013/05/28 12:32:47 [26515] <f.st...... push-gameconsole-all.log
+2013/05/28 12:32:47 [26515] <f..t...... push.gameconsole.log
+2013/05/28 12:32:47 [26515] <f.st...... push.to.10.34.240.66.log
+2013/05/28 12:32:47 [26515] <f.st...... push.to.10.34.240.71.log
+2013/05/28 12:32:47 [26515] <f.st...... push.to.10.34.4.51.log
+2013/05/28 12:32:47 [26515] <f.st...... push.to.10.34.4.52.log
+2013/05/28 12:32:47 [26515] .d..t...... gamehouse/pub/
+2013/05/28 12:32:55 [26515] <f+++++++++ gamehouse/pub/amac-balladofsolar.dmg
+2013/05/28 12:32:55 [26515] .d..t...... realarcadev21/games/dip/
+2013/05/28 12:32:55 [26515] cd+++++++++ realarcadev21/games/dip/mysteriesoftheundeadthecursedisland/
+2013/05/28 12:33:02 [26515] <f+++++++++ realarcadev21/games/dip/mysteriesoftheundeadthecursedisland/mysteriesoftheundeadthecursedisland.rga
+2013/05/28 12:33:03 [26515] sent 569458349 bytes  received 828 bytes  32540524.40 bytes/sec
+2013/05/28 12:33:03 [26515] total size is 898590315067  speedup is 1577.97
+10.34.240.66 2013/05/28 12:30:01 [26260]
+2013/05/28 12:33:03 [26628] building file list
+2013/05/28 12:33:04 [26628] 122220 files to consider
+2013/05/28 12:33:04 [26628] .d..t...... ./
+2013/05/28 12:33:05 [26628] <f.st...... push-gameconsole-all.log
+2013/05/28 12:33:05 [26628] <f..t...... push.gameconsole.log
+2013/05/28 12:33:05 [26628] <f.st...... push.to.10.34.240.66.log
+2013/05/28 12:33:05 [26628] <f.st...... push.to.10.34.240.71.log
+2013/05/28 12:33:05 [26628] <f.st...... push.to.10.34.4.51.log
+2013/05/28 12:33:05 [26628] <f.st...... push.to.10.34.4.52.log
+2013/05/28 12:33:05 [26628] .d..t...... gamehouse/pub/
+2013/05/28 12:33:13 [26628] <f+++++++++ gamehouse/pub/amac-balladofsolar.dmg
+2013/05/28 12:33:13 [26628] .d..t...... realarcadev21/games/dip/
+2013/05/28 12:33:13 [26628] cd+++++++++ realarcadev21/games/dip/mysteriesoftheundeadthecursedisland/
+2013/05/28 12:33:20 [26628] <f+++++++++ realarcadev21/games/dip/mysteriesoftheundeadthecursedisland/mysteriesoftheundeadthecursedisland.rga
+2013/05/28 12:33:21 [26628] sent 569458422 bytes  received 828 bytes  30781581.08 bytes/sec
+2013/05/28 12:33:21 [26628] total size is 898590315205  speedup is 1577.97
+gameconsole push process ended at Tue May 28 12:33:21 PDT 2013
+-------------------------------------------------------
+Push process for gameconsole commenced at Fri Aug  2 16:44:28 PDT 2013
+Must run script as gamesync user.
+gameconsole push process ended at Fri Aug  2 16:44:28 PDT 2013
+-------------------------------------------------------

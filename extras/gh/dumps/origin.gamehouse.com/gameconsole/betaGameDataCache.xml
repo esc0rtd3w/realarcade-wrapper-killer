@@ -1,0 +1,915 @@
+<BUNDLERVALUES>
+	<game>
+		<gameID>beakingevaluation</gameID>
+		<gameName><![CDATA[Be a King Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>hiddenworldofartevaluation</gameID>
+		<gameName><![CDATA[Hidden World of Art  Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>lostinreefsevaluation</gameID>
+		<gameName><![CDATA[Lost in Reefs Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>nataliebrooksthetreasuresofthelostkingdomevaluation</gameID>
+		<gameName><![CDATA[Natalie Brooks - The Treasures of the Lost Kingdom Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>strikeball3evaluation</gameID>
+		<gameName><![CDATA[Strike Ball 3 Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>yumsters2aroundtheworldevaluation</gameID>
+		<gameName><![CDATA[Yumsters! 2 - Around the World Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>youdafarmerevaluation</gameID>
+		<gameName><![CDATA[Youda Farmer  Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>nowboardingevaluation</gameID>
+		<gameName><![CDATA[Now Boarding Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>nightshiftlegacythejaguarseyeevaluation</gameID>
+		<gameName><![CDATA[Nightshift Legacy - The Jaguar's Eye Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>liongthelostamuletsevaluation</gameID>
+		<gameName><![CDATA[Liong - The Lost Amulets Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>krissxevaluation</gameID>
+		<gameName><![CDATA[KrissX  Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>heartwildtmsolitaireevaluation</gameID>
+		<gameName><![CDATA[Heartwild(TM) Solitaire Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>elizabethfindmddiagnosismysteryevaluation</gameID>
+		<gameName><![CDATA[Elizabeth Find M.D. - Diagnosis Mystery  Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>burdalooevaluation</gameID>
+		<gameName><![CDATA[Burdaloo  Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>totemtribeevaluation</gameID>
+		<gameName><![CDATA[Totem Tribe Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>mastersofmysterycrimeoffashionevaluation</gameID>
+		<gameName><![CDATA[Masters Of Mystery - Crime Of Fashion Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>luminariaevaluation</gameID>
+		<gameName><![CDATA[Luminaria Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>westwardr3evaluation</gameID>
+		<gameName><![CDATA[Westward(R) 3 Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>dreamsdwellstoriesevaluation</gameID>
+		<gameName><![CDATA[Dreamsdwell Stories Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>adventurechroniclesevaluation</gameID>
+		<gameName><![CDATA[Adventure Chronicles Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>mysterypitmthenewyorkfortuneevaluation</gameID>
+		<gameName><![CDATA[Mystery P.I.(TM) - The New York Fortune Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-totemtribe</gameID>
+		<gameName><![CDATA[Totem Tribe]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-totemtribe</gameID>
+		<gameName><![CDATA[Totem Tribe]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-ashtonsfamilyresort</gameID>
+		<gameName><![CDATA[Ashtons - Family Resort]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-ashtonsfamilyresort</gameID>
+		<gameName><![CDATA[Ashtons - Family Resort]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-cakeshop</gameID>
+		<gameName><![CDATA[Cake Shop]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-cakeshop</gameID>
+		<gameName><![CDATA[Cake Shop]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-cinematycoon2moviemania</gameID>
+		<gameName><![CDATA[Cinema Tycoon 2 - Movie Mania]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-cinematycoon2moviemania</gameID>
+		<gameName><![CDATA[Cinema Tycoon 2 - Movie Mania]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-bobthebuildertmcandozoo</gameID>
+		<gameName><![CDATA[Bob the Builder(TM) - Can-do Zoo]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-bobthebuildertmcandozoo</gameID>
+		<gameName><![CDATA[Bob the Builder(TM) - Can-do Zoo]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-heartwildtmsolitaire</gameID>
+		<gameName><![CDATA[Heartwild(TM) Solitaire]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-heartwildtmsolitaire</gameID>
+		<gameName><![CDATA[Heartwild(TM) Solitaire]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-mytribe</gameID>
+		<gameName><![CDATA[My Tribe]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-mytribe</gameID>
+		<gameName><![CDATA[My Tribe]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-monkeymoney</gameID>
+		<gameName><![CDATA[Monkey Money]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-monkeymoney</gameID>
+		<gameName><![CDATA[Monkey Money]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-nightshiftlegacythejaguarseye</gameID>
+		<gameName><![CDATA[Nightshift Legacy - The Jaguar's Eye]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-nightshiftlegacythejaguarseye</gameID>
+		<gameName><![CDATA[Nightshift Legacy - The Jaguar's Eye]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-mastersofmysterycrimeoffashion</gameID>
+		<gameName><![CDATA[Masters Of Mystery - Crime Of Fashion]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-mastersofmysterycrimeoffashion</gameID>
+		<gameName><![CDATA[Masters Of Mystery - Crime Of Fashion]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-fairyisland</gameID>
+		<gameName><![CDATA[Fairy Island]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-fairyisland</gameID>
+		<gameName><![CDATA[Fairy Island]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-superjigsawbeachholiday2</gameID>
+		<gameName><![CDATA[Super Jigsaw Beach Holiday 2]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-superjigsawbeachholiday2</gameID>
+		<gameName><![CDATA[Super Jigsaw Beach Holiday 2]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-countyfair</gameID>
+		<gameName><![CDATA[County Fair]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-countyfair</gameID>
+		<gameName><![CDATA[County Fair]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-cradleofrome</gameID>
+		<gameName><![CDATA[Cradle of Rome]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-cradleofrome</gameID>
+		<gameName><![CDATA[Cradle of Rome]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-governorofpoker</gameID>
+		<gameName><![CDATA[Governor of Poker]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-governorofpoker</gameID>
+		<gameName><![CDATA[Governor of Poker]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-hospitalhustle</gameID>
+		<gameName><![CDATA[Hospital Hustle]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-hospitalhustle</gameID>
+		<gameName><![CDATA[Hospital Hustle]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-burgerislandr2themissingingredient</gameID>
+		<gameName><![CDATA[Burger Island(R) 2 - The Missing Ingredient]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-burgerislandr2themissingingredient</gameID>
+		<gameName><![CDATA[Burger Island(R) 2 - The Missing Ingredient]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-mysterypitmthenewyorkfortune</gameID>
+		<gameName><![CDATA[Mystery P.I.(TM) - The New York Fortune]]></gameName>
+		<productID>99999</productID>
+	</game><game>
+		<gameID>am-mysterypitmthenewyorkfortune</gameID>
+		<gameName><![CDATA[Mystery P.I.(TM) - The New York Fortune]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-magicencyclopedia</gameID>
+		<gameName><![CDATA[Magic Encyclopedia]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-magicencyclopedia</gameID>
+		<gameName><![CDATA[Magic Encyclopedia]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-dressuprush</gameID>
+		<gameName><![CDATA[Dress Up Rush]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-dressuprush</gameID>
+		<gameName><![CDATA[Dress Up Rush]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-nancydrewrthewhitewolfoficiclecreek</gameID>
+		<gameName><![CDATA[Nancy Drew(R) - The White Wolf of Icicle Creek]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-nancydrewrthewhitewolfoficiclecreek</gameID>
+		<gameName><![CDATA[Nancy Drew(R) - The White Wolf of Icicle Creek]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-interpol2mostwanted</gameID>
+		<gameName><![CDATA[Interpol 2 - Most Wanted]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-interpol2mostwanted</gameID>
+		<gameName><![CDATA[Interpol 2 - Most Wanted]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-nancydrewrthehauntingofcastlemalloy</gameID>
+		<gameName><![CDATA[Nancy Drew(R) - The Haunting of Castle Malloy]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-nancydrewrthehauntingofcastlemalloy</gameID>
+		<gameName><![CDATA[Nancy Drew(R) - The Haunting of Castle Malloy]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-canyouseewhatiseedreammachine</gameID>
+		<gameName><![CDATA[Can You See What I See - Dream Machine]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-canyouseewhatiseedreammachine</gameID>
+		<gameName><![CDATA[Can You See What I See - Dream Machine]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-westwardr3</gameID>
+		<gameName><![CDATA[Westward(R) 3]]></gameName>
+		<productID>99999</productID>
+	</game><game>
+		<gameID>amg-westwardr3</gameID>
+		<gameName><![CDATA[Westward(R) 3]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-leeloostalentagency</gameID>
+		<gameName><![CDATA[Leeloo's Talent Agency]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-leeloostalentagency</gameID>
+		<gameName><![CDATA[Leeloo's Talent Agency]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-leeloostalentagencyevaluation</gameID>
+		<gameName><![CDATA[Leeloo's Talent Agency]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-leeloostalentagencyevaluation</gameID>
+		<gameName><![CDATA[Leeloo's Talent Agency]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>mandragoraevaluation</gameID>
+		<gameName><![CDATA[Mandragora Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>gourmaniaevaluation</gameID>
+		<gameName><![CDATA[Gourmania Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>fixitupkatiesadventureevaluation</gameID>
+		<gameName><![CDATA[Fix-it-Up - Katie's Adventure Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>bookoflegendsevaluation</gameID>
+		<gameName><![CDATA[Book of Legends Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>ancientsecretsevaluation</gameID>
+		<gameName><![CDATA[Ancient Secrets Evaluation]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-bejeweledtwisttm</gameID>
+		<gameName><![CDATA[Bejeweled Twist(TM)]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-bejeweledtwisttm</gameID>
+		<gameName><![CDATA[Bejeweled Twist(TM)]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-mysterystoriesberlinnights</gameID>
+		<gameName><![CDATA[Mystery Stories - Berlin Nights]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-mysterystoriesberlinnights</gameID>
+		<gameName><![CDATA[Mystery Stories - Berlin Nights]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-fixitupkatesadventure</gameID>
+		<gameName><![CDATA[Fix-it-Up - Kate's Adventure]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-fixitupkatesadventure</gameID>
+		<gameName><![CDATA[Fix-it-Up - Kate's Adventure]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-wordslinger</gameID>
+		<gameName><![CDATA[Word Slinger]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-wordslinger</gameID>
+		<gameName><![CDATA[Word Slinger]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-detectivestorieshollywood</gameID>
+		<gameName><![CDATA[Detective Stories - Hollywood]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-detectivestorieshollywood</gameID>
+		<gameName><![CDATA[Detective Stories - Hollywood]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-thegreatchocolatechasetmachocolatierrtwist</gameID>
+		<gameName><![CDATA[The Great Chocolate Chase(TM) - A Chocolatier(R) Twist]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-thegreatchocolatechasetmachocolatierrtwist</gameID>
+		<gameName><![CDATA[The Great Chocolate Chase(TM) - A Chocolatier(R) Twist]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-gourmania</gameID>
+		<gameName><![CDATA[Gourmania]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-gourmania</gameID>
+		<gameName><![CDATA[Gourmania]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-farmcraft</gameID>
+		<gameName><![CDATA[Farm Craft]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-farmcraft</gameID>
+		<gameName><![CDATA[Farm Craft]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-pageantprincess</gameID>
+		<gameName><![CDATA[Pageant Princess]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-pageantprincess</gameID>
+		<gameName><![CDATA[Pageant Princess]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-parkingdashtm</gameID>
+		<gameName><![CDATA[Parking Dash(TM)]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-parkingdashtm</gameID>
+		<gameName><![CDATA[Parking Dash(TM)]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-escapefromparadise</gameID>
+		<gameName><![CDATA[Escape from Paradise]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-escapefromparadise</gameID>
+		<gameName><![CDATA[Escape from Paradise]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-7wonderstreasuresofseven</gameID>
+		<gameName><![CDATA[7 Wonders - Treasures of Seven]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-7wonderstreasuresofseven</gameID>
+		<gameName><![CDATA[7 Wonders - Treasures of Seven]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-petshowcraze</gameID>
+		<gameName><![CDATA[Pet Show Craze]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-petshowcraze</gameID>
+		<gameName><![CDATA[Pet Show Craze]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-buildalot3passporttoeurope</gameID>
+		<gameName><![CDATA[Build-a-lot 3 - Passport to Europe]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-buildalot3passporttoeurope</gameID>
+		<gameName><![CDATA[Build-a-lot 3 - Passport to Europe]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-escapethemuseum</gameID>
+		<gameName><![CDATA[Escape the Museum]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-escapethemuseum</gameID>
+		<gameName><![CDATA[Escape the Museum]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-ancientsecrets</gameID>
+		<gameName><![CDATA[Ancient Secrets]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-ancientsecrets</gameID>
+		<gameName><![CDATA[Ancient Secrets]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-fitnessdashtm</gameID>
+		<gameName><![CDATA[Fitness Dash(TM)]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-fitnessdashtm</gameID>
+		<gameName><![CDATA[Fitness Dash(TM)]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-nationalgeographicgamesherodslosttombc</gameID>
+		<gameName><![CDATA[National Geographic Games Herod's Lost Tomb(C)]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-hotelmahjongdeluxe</gameID>
+		<gameName><![CDATA[Hotel Mahjong Deluxe]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-hotelmahjongdeluxe</gameID>
+		<gameName><![CDATA[Hotel Mahjong Deluxe]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-tropix</gameID>
+		<gameName><![CDATA[Tropix]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-tropix</gameID>
+		<gameName><![CDATA[Tropix]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-supercollapse3</gameID>
+		<gameName><![CDATA[Super Collapse! 3]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-supercollapse3</gameID>
+		<gameName><![CDATA[Super Collapse! 3]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-alohasolitaire</gameID>
+		<gameName><![CDATA[Aloha Solitaire]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-alohasolitaire</gameID>
+		<gameName><![CDATA[Aloha Solitaire]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-supercollapsepuzzlegallery3</gameID>
+		<gameName><![CDATA[Super Collapse! Puzzle Gallery 3]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-supercollapsepuzzlegallery3</gameID>
+		<gameName><![CDATA[Super Collapse! Puzzle Gallery 3]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-supermarketmania</gameID>
+		<gameName><![CDATA[Supermarket Mania]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-supermarketmania</gameID>
+		<gameName><![CDATA[Supermarket Mania]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-alicegreenfingers2</gameID>
+		<gameName><![CDATA[Alice Greenfingers 2]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-alicegreenfingers2</gameID>
+		<gameName><![CDATA[Alice Greenfingers 2]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-supercollapseii</gameID>
+		<gameName><![CDATA[Super Collapse! II]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-supercollapseii</gameID>
+		<gameName><![CDATA[Super Collapse! II]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-mushroomage</gameID>
+		<gameName><![CDATA[Mushroom Age]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-nationalgeographicgamesherodslosttombc</gameID>
+		<gameName><![CDATA[National Geographic Games Herod's Lost Tomb(C)]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-luxor</gameID>
+		<gameName><![CDATA[Luxor]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-luxor</gameID>
+		<gameName><![CDATA[Luxor]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-mushroomage</gameID>
+		<gameName><![CDATA[Mushroom Age]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-zumadeluxe</gameID>
+		<gameName><![CDATA[Zuma Deluxe]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-zumadeluxe</gameID>
+		<gameName><![CDATA[Zuma Deluxe]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-mortimerbeckettandthetimeparadox</gameID>
+		<gameName><![CDATA[Mortimer Beckett and the Time Paradox]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-mortimerbeckettandthetimeparadox</gameID>
+		<gameName><![CDATA[Mortimer Beckett and the Time Paradox]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-goldrushtreasurehunt</gameID>
+		<gameName><![CDATA[Gold Rush - Treasure Hunt]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-goldrushtreasurehunt</gameID>
+		<gameName><![CDATA[Gold Rush - Treasure Hunt]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-littleshopcitylights</gameID>
+		<gameName><![CDATA[Little Shop - City Lights]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-littleshopcitylights</gameID>
+		<gameName><![CDATA[Little Shop - City Lights]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-dambeavers</gameID>
+		<gameName><![CDATA[Dam Beavers]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-dambeavers</gameID>
+		<gameName><![CDATA[Dam Beavers]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-textexpress2deluxe</gameID>
+		<gameName><![CDATA[Text Express 2 Deluxe]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-textexpress2deluxe</gameID>
+		<gameName><![CDATA[Text Express 2 Deluxe]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-sallysspa</gameID>
+		<gameName><![CDATA[Sally's Spa]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-sallysspa</gameID>
+		<gameName><![CDATA[Sally's Spa]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-texttwist2</gameID>
+		<gameName><![CDATA[TextTwist 2]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-luxorquestfortheafterlife</gameID>
+		<gameName><![CDATA[Luxor - Quest for the Afterlife]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-luxorquestfortheafterlife</gameID>
+		<gameName><![CDATA[Luxor - Quest for the Afterlife]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+	    <gameID>am-delicious2deluxe</gameID>
+		<gameName><![CDATA[Delicious 2 Deluxe]]></gameName>
+		<productID>99999</productID>
+	</game>
+    <game>
+	    <gameID>amg-delicious2deluxe</gameID>
+		<gameName><![CDATA[Delicious 2 Deluxe]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-themysteryofthecrystalportal</gameID>
+		<gameName><![CDATA[The Mystery of the Crystal Portal]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-thegameoflifetmbyhasbro</gameID>
+		<gameName><![CDATA[THE GAME OF LIFE(TM) by Hasbro]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-themysteryofthecrystalportal</gameID>
+		<gameName><![CDATA[The Mystery of the Crystal Portal]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-catewestthevanishinfiles</gameID>
+		<gameName><![CDATA[Cate West - The Vanishing Files]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-catewestthevanishinfiles</gameID>
+		<gameName><![CDATA[Cate West - The Vanishing Files]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-unorundercovertm</gameID>
+		<gameName><![CDATA[UNO(R) - Undercover(TM)]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-unorundercovertm</gameID>
+		<gameName><![CDATA[UNO(R) - Undercover(TM)]]></gameName>
+		<productID>99999</productID>
+	</game>
+    <game>
+		<gameID>amg-littleshoproadtrip</gameID>
+		<gameName><![CDATA[Little Shop - Road Trip]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-littleshoproadtrip</gameID>
+		<gameName><![CDATA[Little Shop - Road Trip]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-littleshopmemories</gameID>
+		<gameName><![CDATA[Little Shop - Memories]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-littleshopmemories</gameID>
+		<gameName><![CDATA[Little Shop - Memories]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-spiritofwanderingthelegend</gameID>
+		<gameName><![CDATA[Spirit of Wandering - The Legend]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-spiritofwanderingthelegend</gameID>
+		<gameName><![CDATA[Spirit of Wandering - The Legend]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-operationmania</gameID>
+		<gameName><![CDATA[Operation Mania]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-operationmania</gameID>
+		<gameName><![CDATA[Operation Mania]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-janesrealty</gameID>
+		<gameName><![CDATA[Jane's Realty]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-janesrealty</gameID>
+		<gameName><![CDATA[Jane's Realty]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-nancydrewrdossiertmlightscameracurses</gameID>
+		<gameName><![CDATA[Nancy Drew(R) - Dossier(TM) - Lights, Camera, Curses!]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-nancydrewrdossiertmlightscameracurses</gameID>
+		<gameName><![CDATA[Nancy Drew(R) - Dossier(TM) - Lights, Camera, Curses!]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-shoppingblocks</gameID>
+		<gameName><![CDATA[Shopping Blocks]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-shoppingblocks</gameID>
+		<gameName><![CDATA[Shopping Blocks]]></gameName>
+		<productID>99999</productID>
+	</game>
+    <game>
+		<gameID>amg-pakoombotm</gameID>
+		<gameName><![CDATA[Pakoombo(TM)]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-pakoombotm</gameID>
+		<gameName><![CDATA[Pakoombo(TM)]]></gameName>
+		<productID>99999</productID>
+	</game>
+    <game>
+		<gameID>amg-gamehousesolitairechallenge</gameID>
+		<gameName><![CDATA[GameHouse Solitaire Challenge]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-gamehousesolitairechallenge</gameID>
+		<gameName><![CDATA[GameHouse Solitaire Challenge]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-pastrypassion</gameID>
+		<gameName><![CDATA[Pastry Passion]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>am-pastrypassion</gameID>
+		<gameName><![CDATA[Pastry Passion]]></gameName>
+		<productID>99999</productID>
+	</game>
+	<game>
+		<gameID>amg-themysteryofthecrystalportal</gameID>
+		<gameName><![CDATA[The Mystery of the Crystal Portal]]></gameName>
+		<productID>99999</productID>
+	</game>
+</BUNDLERVALUES>

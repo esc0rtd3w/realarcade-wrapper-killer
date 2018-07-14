@@ -1,0 +1,20 @@
+building file list ... done
+./
+1
+push-gameconsolebetatest-all.log
+push.gameconsolebetatest.log
+push.to.nfs-dl01.real.com.log
+push.to.nfs-dl02.real.com.log
+push.to.nfs-dl03.real.com.log
+push.to.nfs-dl04.real.com.log
+push.to.origin-nfs01.gameco.biz.log
+push.to.origin-nfs02.gameco.biz.log
+files/v2/
+files/v2/betaGameDataCache.xml
+files/v2/eval-drwisemedicalmysteries/
+files/v2/eval-drwisemedicalmysteries/DRMConfigeval-drwisemedicalmysteries.rdc
+files/v2/eval-drwisemedicalmysteries/eval-drwisemedicalmysteries.rga
+files/v2/eval-drwisemedicalmysteries/eval-drwisemedicalmysteries.xml
+
+sent 246265780 bytes  received 53255 bytes  5535259.21 bytes/sec
+total size is 3073848209  speedup is 12.48

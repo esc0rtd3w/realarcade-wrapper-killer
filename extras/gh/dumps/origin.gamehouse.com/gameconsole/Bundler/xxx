@@ -1,0 +1,24 @@
+
+###########################
+# DISTCODE SECTION
+###########################
+
+[DISTCODE]
+Count=1
+Value1= TEST
+
+[TPS]
+TPS= TEST
+
+[AltConfiguration]
+Count=4
+Config1=catalog\arcade.cfg
+Config2=catalog\gameinfo.cfg
+Config3=catalog\sponinfo.cfg
+Config4=catalog\addons.cfg
+
+[DesktopShortcut]
+Label=RealOne Arcade
+
+[EREG]
+NoCancelButton=TRUE

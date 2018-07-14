@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArcadeBundle template="IPM" title="Diamond Mine" vendor="RealArcade" fullGameName="Diamond Mine">
+	<NextPageUrl id="rdxNextPageUrl" value="http://realonearcade.com/"/>
+	<OEM id="rdxOEM" value="&amp;oem=arcade-dl&amp;lang=FR&amp;game=diamondmine&amp;tps=ipm-fr_"/>
+	<Payloads id="rdxPayloadUrl">
+		<Payload>
+			<PayloadUrl>http://games-dl.real.com/gameconsole/Bundler/bundler.exe</PayloadUrl>
+			<PayloadFileName>RngcBundler.exe</PayloadFileName>
+			<Validate>
+				<Size min="100100" max="900900"/>
+			</Validate>
+		</Payload>
+		<Payload>
+			<PayloadUrl>http://games-dl.real.com/gameconsole/BundleFiles/bundleini_free.rxml?lang=FR&amp;template=IPM&amp;tps=ipm-fr_&amp;bundle=diamondmine&amp;fullname=Diamond Mine&amp;gameguid=&amp;wrapperversion=&amp;exitadname=diamondmine.cab</PayloadUrl>
+			<PayloadFileName>bundle.ini</PayloadFileName>
+			<Validate>
+				<Size min="64" max="66000"/>
+				<Content contains="[FILES]"/>
+			</Validate>
+		</Payload>
+		<Payload>
+			<PayloadUrl>http://games-dl.real.com/gameconsole/BundleFiles/RAC/FR/RealArcade.exe</PayloadUrl>
+			<PayloadFileName>RealOneArcade.exe</PayloadFileName>
+		</Payload>
+		<Payload>
+			<PayloadUrl>http://games-dl.real.com/gameconsole/BundleFiles/Images/installer/installer_diamondmine.bmp</PayloadUrl>
+			<PayloadFileName>Installer.bmp</PayloadFileName>
+		</Payload>
+		<Payload>
+			<PayloadUrl>http://games-dl.real.com/gameconsole/games/demo/mezzanines/diamondmine_free.mez</PayloadUrl>
+			<PayloadFileName>diamondmine_free.mez</PayloadFileName>
+		</Payload>
+		<Payload>
+			<PayloadUrl>http://games-dl.real.com/gameconsole/games/demorgses/exitads/diamondmine.cab</PayloadUrl>
+			<PayloadFileName>diamondmine.cab</PayloadFileName>
+		</Payload>
+		<Payload>
+			<PayloadUrl>http://games-dl.real.com/gameconsole/games/demorgses/diamondmine_free.rgs</PayloadUrl>
+			<PayloadFileName>diamondmine_free.rgs</PayloadFileName>
+		</Payload>
+		<Payload>
+			<PayloadUrl>http://games-dl.real.com/gameconsole/bundlescripts/GameBundleFiles/catalog_jpeg.xtr</PayloadUrl>
+			<PayloadFileName>Catalog.xtr</PayloadFileName>
+		</Payload>
+		<Payload>
+			<PayloadUrl>http://games-dl.real.com/gameconsole/bundlescripts/GameBundleFiles/R10/FR/html.xtr</PayloadUrl>
+			<PayloadFileName>HTML.xtr</PayloadFileName>
+		</Payload>
+		<Payload>
+			<PayloadUrl>http://games-dl.real.com/gameconsole/bundlescripts/GameBundleFiles/R10/FR/dailyupdate.xtr</PayloadUrl>
+			<PayloadFileName>HTMLupdate.xtr</PayloadFileName>
+		</Payload>
+		<Payload>
+			<PayloadUrl>http://games-dl.real.com/gameconsole/bundlescripts/GameBundleFiles/R10/FR/png.rgu</PayloadUrl>
+			<PayloadFileName>png.rgu</PayloadFileName>
+		</Payload>
+		<Payload>
+			<PayloadUrl>http://games-dl.real.com/gameconsole/bundlescripts/GameBundleFiles/R10/FR/preview01.png</PayloadUrl>
+			<PayloadFileName>Preview01.png</PayloadFileName>
+		</Payload>
+		<Payload>
+			<PayloadUrl>http://games-dl.real.com/gameconsole/bundlescripts/GameBundleFiles/R10/FR/preview02.png</PayloadUrl>
+			<PayloadFileName>Preview02.png</PayloadFileName>
+		</Payload>
+		<Payload>
+			<PayloadUrl>http://games-dl.real.com/gameconsole/bundlescripts/GameBundleFiles/R10/FR/preview04.png</PayloadUrl>
+			<PayloadFileName>Preview04.png</PayloadFileName>
+		</Payload>
+		<Payload>
+			<PayloadUrl>http://games-dl.real.com/gameconsole/bundlescripts/GameBundleFiles/R10/FR/myaccount.ini</PayloadUrl>
+			<PayloadFileName>myaccount.ini</PayloadFileName>
+		</Payload>
+		<Payload>
+			<PayloadUrl>http://games-dl.real.com/gameconsole/bundlescripts/GameBundleFiles/R10/FR/localisationFR.cfg</PayloadUrl>
+			<PayloadFileName>localisationFR.cfg</PayloadFileName>
+		</Payload>
+		
+		<Payload>
+			<PayloadUrl>
+				<Option name="LowBandwidth" maxBandwidth="72000" maxPercentage="10"></Option>
+				<Default>http://gamesdl.real.com/gameconsole/BundleFiles/Google.exe</Default>
+			</PayloadUrl>
+			<PayloadUrl>
+				<Option name="LowBandwidth">http://gamesdl.real.com/gameconsole/bundleini_free.rxml?NoGoogle</Option>
+				<Default>http://gamesdl.real.com/gameconsole/bundleini_free.rxml</Default>
+			</PayloadUrl>
+			<PayloadFileName>
+				bundle.ini
+			</PayloadFileName>
+			<Validate>
+				<Size min="64" max="66000"/>
+				<Content contains="[FILES]"/>
+			</Validate>
+		</Payload>
+		<Payload>
+			<PayloadUrl>http://games-dl.real.com/gameconsole/BundleFiles/CoreInfo/IPM/coreinfo.rxml?distcode=IF93&amp;lang=FR&amp;tps=ipm-fr_&amp;bundle=diamondmine</PayloadUrl>
+			<PayloadFileName>CoreInfo.cfg</PayloadFileName>
+			<Validate>
+				<Size min="64" max="66000"/>
+				<Content contains="[EREG]"/>
+			</Validate>
+		</Payload>
+	</Payloads>
+</ArcadeBundle>

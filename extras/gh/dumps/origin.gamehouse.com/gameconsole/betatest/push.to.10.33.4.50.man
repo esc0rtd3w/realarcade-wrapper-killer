@@ -1,0 +1,10 @@
+building file list ... done
+.d..t.... ./
+<f.st.... push-gameconsolebetatest-all.log
+<f..t.... push.gameconsolebetatest.log
+<f.st.... push.to.10.33.4.50.log
+<f.st.... push.to.10.33.4.51.log
+<f.st.... files/v2/betaGameDataCache.xml
+
+sent 44962 bytes  received 52296 bytes  64838.67 bytes/sec
+total size is 3183938834  speedup is 32737.04

@@ -1,0 +1,4 @@
+-i 7139
+
+-s shinobi_iii.exe
+

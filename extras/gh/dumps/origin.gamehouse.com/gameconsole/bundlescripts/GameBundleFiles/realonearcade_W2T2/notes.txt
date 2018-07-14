@@ -1,0 +1,2 @@
+germancatalog.xtr contains localized mezzes
+germanhtml.xtr contains localized "live" sections

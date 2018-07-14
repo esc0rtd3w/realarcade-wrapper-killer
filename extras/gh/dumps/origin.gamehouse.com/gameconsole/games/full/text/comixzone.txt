@@ -1,0 +1,3 @@
+-i 9648
+
+-s comixzone.exe

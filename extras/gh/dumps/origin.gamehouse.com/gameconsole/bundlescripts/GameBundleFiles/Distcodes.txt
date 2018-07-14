@@ -1,0 +1,13 @@
+W0S0 - Default US Builds
+W0T0 - Default Intl Builds
+W0P0 - Flipside Build
+
+W1A0 - Mexico
+W1B0 - Brazil
+W1C0 - Korea
+
+P010 - Cubis Gold for Marketing
+P020 - Mahjongg Towers for Marketing
+P030 - RollerCoasterTycoon for Marketing
+P040 - OEM for Marketing
+

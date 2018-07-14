@@ -1,0 +1,45 @@
+DE/localisationDE.cfg:Value2=http://germany.real.com/guide/rac.html?tps=<TPS>
+DE/localisationDE.cfg:Value2=http://germany.real.com/guide/pages/games/rac/gamepass.html?tps=<TPS>
+DE/localisationDE.cfg:Value2=http://germany.real.com/guide/pages/games/tour/index.html?src=rac&tps=<TPS>
+DE/localisationDE.cfg:Value2=http://germany.real.com/guide/rac.html?t=3level&p=games&sp=download&tps=<TPS>
+DE/localisationDE.cfg:Value2=http://germany.real.com/guide/rac.html?t=3level&p=games&sp=newgames&tps=<TPS>
+DE/localisationDE.cfg:Value2=http://germany.real.com/guide/rac.html?t=3level&p=games&sp=download2&tps=<TPS>
+DE/localisationDE.cfg:Value2=http://germany.real.com/guide/rac.html?t=3level&p=games&sp=webgames&tps=<TPS>
+DE/localisationDE.cfg:Value2=http://germany.real.com/guide/pages/games/rac_community.html?tps=<TPS>
+DE/localisationDE.cfg:Item1=http://ad.de.doubleclick.net/adi/_real.games.de/realarcade/infowindow/image-only;sect=games;sz=300x250;oem=0;guid=<CURRENTDL>;ord=<DATE part=yday><DATE part=minute><DATE part=second>
+ES/localisationES.cfg:Value2=http://spain.real.com/guide/rac.html?tps=<TPS>
+ES/localisationES.cfg:Value2=http://spain.real.com/guide/pages/games/rac/gamepass.html?tps=<TPS>
+ES/localisationES.cfg:#Value2=http://spain.real.com/guide/pages/games/tour/index.html?tps=<TPS>&src=rac
+ES/localisationES.cfg:Value2=http://spain.real.com/guide/rac.html?t=3level&p=games&sp=download&tps=<TPS>
+ES/localisationES.cfg:Value2=http://spain.real.com/guide/rac.html?t=3level&p=games&sp=newgames&tps=<TPS>
+ES/localisationES.cfg:Value2=http://spain.real.com/guide/rac.html?t=3level&p=games&sp=download2&tps=<TPS>
+ES/localisationES.cfg:Value2=http://spain.real.com/guide/rac.html?t=3level&p=games&sp=webgames&tps=<TPS>
+ES/localisationES.cfg:Value2=http://spain.real.com/guide/pages/games/rac_community.html&tps=<TPS>
+ES/localisationES.cfg:Item1=http://ad.de.doubleclick.net/adi/_real.games.es/realarcade/infowindow/image-only;sect=games;sz=300x250;oem=0;guid=<CURRENTDL>;ord=<DATE part=yday><DATE part=minute><DATE part=second>
+FR/localisationFR.cfg:Value2=http://france.real.com/guide/rac.html?tps=<TPS>
+FR/localisationFR.cfg:Value2=http://france.real.com/guide/pages/games/rac/gamepass.html?tps=<TPS>
+FR/localisationFR.cfg:#Value2=http://france.real.com/guide/pages/games/tour/index.html?tps=<TPS>&src=rac
+FR/localisationFR.cfg:Value2=http://france.real.com/guide/rac.html?t=3level&p=games&sp=download&tps=<TPS>
+FR/localisationFR.cfg:Value2=http://france.real.com/guide/rac.html?t=3level&p=games&sp=newgames&tps=<TPS>
+FR/localisationFR.cfg:Value2=http://france.real.com/guide/rac.html?t=3level&p=games&sp=download2&tps=<TPS>
+FR/localisationFR.cfg:Value2=http://france.real.com/guide/rac.html?t=3level&p=games&sp=webgames&tps=<TPS>
+FR/localisationFR.cfg:Value2=http://france.real.com/guide/pages/games/rac_community.html?tps=<TPS>
+FR/localisationFR.cfg:Item1=http://ad.de.doubleclick.net/adi/_real.games.fr/realarcade/infowindow/image-only;sect=games;sz=300x250;oem=0;guid=<CURRENTDL>;ord=<CURRENTDL>
+JP/localisationJP.cfg:Value2=http://japan.real.com/guide/rac.html?tps=<TPS>
+JP/localisationJP.cfg:Value2=http://japan.real.com/guide/pages/games/rac/gamepass.html?tps=<TPS>
+JP/localisationJP.cfg:Value2=http://japan.real.com/guide/pages/games/tour/index.html?tps=<TPS>&src=rac
+JP/localisationJP.cfg:Value2=http://japan.real.com/guide/rac.html?t=3level&p=games&sp=download&tps=<TPS>
+JP/localisationJP.cfg:Value2=http://japan.real.com/guide/rac.html?t=3level&p=games&sp=download2&tps=<TPS>
+JP/localisationJP.cfg:Value2=http://japan.real.com/guide/rac.html?t=3level&p=games&sp=webgames&tps=<TPS>
+JP/localisationJP.cfg:[GamePageURL] URL=http://switchboard.real.com/arcade/download.html?file=online/gamepage/<GAME_ID>?<GAME_STATE> 
+JP/localisationJP.cfg:Value2=http://realguide.real.com/friends/arcade.html?game=<GAMEID>&formemail=<EMAIL_ADDRESS>
+JP/localisationJP.cfg:Item1=http://ad.jp.doubleclick.net/adi/_real.games.jp/realarcade/infowindow/image-only;sect=games;sz=300x250;oem=0;guid=<CURRENTDL>;ord=<DATE part=yday><DATE part=minute><DATE part=second>
+MX/localisationMX.cfg:Value2=http://spain.real.com/guide/rac.html?tps=<TPS>
+MX/localisationMX.cfg:Value2=http://spain.real.com/guide/pages/games/rac/gamepass.html?tps=<TPS>
+MX/localisationMX.cfg:#Value2=http://spain.real.com/guide/pages/games/tour/index.html?tps=<TPS>&src=rac
+MX/localisationMX.cfg:Value2=http://spain.real.com/guide/rac.html?t=3level&p=games&sp=download&tps=<TPS>
+MX/localisationMX.cfg:Value2=http://spain.real.com/guide/rac.html?t=3level&p=games&sp=newgames&tps=<TPS>
+MX/localisationMX.cfg:Value2=http://spain.real.com/guide/rac.html?t=3level&p=games&sp=download&&tps=<TPS>
+MX/localisationMX.cfg:Value2=http://spain.real.com/guide/rac.html?t=3level&p=games&sp=webgames&tps=<TPS>
+MX/localisationMX.cfg:Value2=http://spain.real.com/guide/pages/games/rac_community.html?tps=<TPS>
+MX/localisationMX.cfg:Item1=http://ad.de.doubleclick.net/adi/_real.games.es/realarcade/infowindow/image-only;sect=games;sz=300x250;oem=0;guid=<CURRENTDL>;ord=<DATE part=yday><DATE part=minute><DATE part=second>

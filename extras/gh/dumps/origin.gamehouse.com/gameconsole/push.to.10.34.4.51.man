@@ -1,0 +1,3 @@
+10.34.4.51 2013/11/26 11:32:01 [16991]
+2013/11/26 11:35:10 [16994] rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+2013/11/26 11:35:10 [16994] rsync error: unexplained error (code 255) at io.c(600) [sender=3.0.6]

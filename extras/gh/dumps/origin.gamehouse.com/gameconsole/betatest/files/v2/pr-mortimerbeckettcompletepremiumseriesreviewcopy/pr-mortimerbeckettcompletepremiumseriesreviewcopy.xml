@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game creationDate="2010-06-15" gameID="pr-mortimerbeckettcompletepremiumseriesreviewcopy" xmlns="game" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="game http://games-preview.real.com/rnfeedgamesdl/XMLSchemas/game.xsd">
+	<gameTypeList>
+		<gameType>download</gameType>
+	</gameTypeList>
+	<downloadableGameData>
+		<gameName>Mortimer Beckett Complete Premium Series</gameName>
+		<images>
+<gameImage>pr-mortimerbeckettcompletepremiumseriesreviewcopy_240x135.jpg</gameImage>
+<thumbnailImage>pr-mortimerbeckettcompletepremiumseriesreviewcopy_80x45.jpg</thumbnailImage>
+<featureImage>pr-mortimerbeckettcompletepremiumseriesreviewcopy_146x110.jpg</featureImage>
+<squareImage>pr-mortimerbeckettcompletepremiumseriesreviewcopy_150x150.jpg</squareImage>
+<tinySquareImage>pr-mortimerbeckettcompletepremiumseriesreviewcopy_50x50.jpg</tinySquareImage>
+<promoPageImage>pr-mortimerbeckettcompletepremiumseriesreviewcopy_750x550.jpg</promoPageImage>
+		</images>
+		<sponsored>false</sponsored>
+		<productID>99999</productID>
+		<systemRequirements>
+			<processor>
+			<speed units="MHz">2100</speed>
+				<description>Pentium or equivalent</description>
+			</processor>
+			<operatingSystemList>
+				<operatingSystem description="Windows XP"/>
+				<operatingSystem description="Windows Vista"/>
+				<operatingSystem description="Windows Win7"/>
+			</operatingSystemList>
+			<ram units="MB">512</ram>
+			<diskSpaceRequired units="MB">161</diskSpaceRequired>
+			<graphics>
+				<minDirectXVersion>9.0c</minDirectXVersion>
+				<required3DVideoCard>false</required3DVideoCard>
+			</graphics>
+		</systemRequirements>
+	</downloadableGameData>
+</game>

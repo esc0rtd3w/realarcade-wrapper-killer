@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArcadeInstaller Tps="z_zlm_d2c" Lang="en"
+                 Src="" StoreFront="Zylom"
+                 GameId="48f516ebf380c710b27eabf56e878533" Country="NL"
+                 GameName="Governor of Poker 2"
+                 DefaultGamesRoot="c:\Zylom Games"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                 xsi:noNamespaceSchemaLocation="..\..\schema\ArcadeInstaller.xsd">
+
+    <OpenCandyOptions Key="0b7984c3f193a348f900325edc00ff05" Secret="9795a46e6751b257a436b7e4802b28e0"/>
+  
+    <URLParameters am_contentid="224CF4672C18B9B713E2A9B7A098C08A" offeringid="dip_nt_zy_en" affiliate="30000000000000000000000000000000" contentid=""
+                   otp="" tracking=""
+                   currency="455552000000" price=""
+                   timestamp="" />
+
+    <Uninstall Text="Governor of Poker 2" AddRemove="true" IncGame="true" Assoc="false" />
+    <SetEnv Key="tps" Val="z_zlm_d2c" />
+    <SetEnv Key="GameId" Val="48f516ebf380c710b27eabf56e878533" />
+
+    <ConditionDef Id="ShouldOfferCandy" Type="LuaBlock" Var="
+        local errHandler      = ErrorHandler()
+        local win32           = Win32Interop()
+        local nCount = 1
+
+        local offered = win32.GetRegKeyValue('HKEY_CLASSES_ROOT', g_constants[&quot;basekey&quot;] .. 'Zylom\\1.0\\Preferences', 'OpenCandyOffered')
+        if offered ~= nil and offered ~= &quot;&quot; then nCount = tonumber(offered) + 1 end
+        if nCount &gt;= 3 then nCount = 1 end
+        win32.CreateRegKey('HKEY_CLASSES_ROOT', g_constants[&quot;basekey&quot;] .. 'Zylom\\1.0\\Preferences', 'OpenCandyOffered', nCount, keyvaltype)
+        local mainDlg = luacom.CreateObject('InstallerDlg.InstallDlgCtl') 
+        mainDlg:InitializeCandy(g_env.tmpDir .. '\\OpenCandy\\OCSetupHlp.dll') 
+        if mainDlg:HasCandyOffer() then
+            return true
+        else
+            mainDlg:InstallOffer()
+            return false
+        end 
+    "/>
+    <ConditionDef Id="IsOfferedCandy" Type="Environment" Var="OfferedCandy" />
+    <ConditionDef Id="InstallCandyOffer" Type="LuaBlock" Var="
+        if CheckCondition('IsOfferedCandy', 'true') then
+            local mainDlg = luacom.CreateObject('InstallerDlg.InstallDlgCtl') 
+            local offerselection = mainDlg:CandyChosen()
+            local installerstarted = mainDlg:InstallOffer()
+            io.write(&quot;\n&quot;, os.date(&quot;%c &quot;),&quot;The OpenCandy installing state is &quot;, tostring(installerstarted))
+            if offerselection == true and installerstarted == true then
+                local errHandler      = ErrorHandler()
+                local win32           = Win32Interop()
+                local affiliatetag = main_env.affiliate
+                if affiliatetag == &quot;&quot; then affiliatetag = &quot;30000000000000000000000000000000&quot; end
+                local tablePingPairs  = CreatePingPairsTable(&quot;ocinstapp&quot;, &quot;installerstarted&quot;, &quot;oc&quot;, &quot;&quot;, affiliatetag)
+                errHandler.LogPing(tablePingPairs, true)
+            end
+        end
+        return true 
+    "/>
+    <ConditionDef Id="OpenCandyOfferPing" Type="LuaBlock" Var="
+        if g_env.offeredopencandyping ~= nil then
+            return true
+        else
+            local errHandler      = ErrorHandler()
+            local win32           = Win32Interop()
+            local affiliatetag = main_env.affiliate
+            if affiliatetag == &quot;&quot; then affiliatetag = &quot;30000000000000000000000000000000&quot; end
+            local tablePingPairs  = CreatePingPairsTable(&quot;ocinstapp&quot;, &quot;displayedoffer&quot;, &quot;oc&quot;, &quot;&quot;, affiliatetag)
+            g_env.offeredopencandyping = 'true'
+            errHandler.LogPing(tablePingPairs, true)
+            return true
+        end
+    "/>
+    <ConditionDef Id="OpenCandyAcceptedPing" Type="LuaBlock" Var="
+        if CheckCondition('IsOfferedCandy', 'true') then
+            local mainDlg = luacom.CreateObject('InstallerDlg.InstallDlgCtl')
+            local offerselection = mainDlg:CandyChosen()
+            io.write(&quot;\n&quot;, os.date(&quot;%c &quot;),&quot;The OpenCandy offer selection is &quot;, tostring(offerselection))
+            if offerselection == true then
+                local errHandler      = ErrorHandler()
+                local win32           = Win32Interop()
+                local affiliatetag = main_env.affiliate
+                if affiliatetag == &quot;&quot; then affiliatetag = &quot;30000000000000000000000000000000&quot; end
+                local tablePingPairs  = CreatePingPairsTable(&quot;ocinstapp&quot;, &quot;acceptedoffer&quot;, &quot;oc&quot;, &quot;&quot;, affiliatetag)
+                errHandler.LogPing(tablePingPairs, true)
+            end
+        end
+        return true
+    "/>
+    <ConditionDef Id="CheckForInstallerDll" Type="FileExists" Var="[installerDir]/CheckInst.dll" />
+    <ConditionDef Id="CheckForGamesRoot" Type="RegKeyVal" Var="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\1.0\Preferences\GamesRoot" />
+    <ConditionDef Id="CheckForStoreFront" Type="LuaBlock" Var="
+        if CheckCondition('CheckForGamesRoot', 'nil') then return false end
+        if CheckCondition('CheckForInstallerDll', 'false') then return false end
+        return true
+    "/>
+    <ConditionDef Id="CheckForResources" Type="FileExists" Var="[installerDir]/Zylom/resource/store.ico" />
+    <ConditionDef Id="CheckIfEULASlide" Type="LuaBlock" Var="if g_env.EULAPresented ~= nil and g_env.EULAPresented == 'true' then return true else return false end" />
+    <ConditionDef Id="CanInitGameShortcuts" Type="RegKeyVal" Var ="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\1.0\Preferences\GameDesktopShortcuts"/>
+    <ConditionDef Id="CheckForClean" Type="RegKeyVal" Var ="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\1.0\Preferences\Tps"/>
+    <ConditionDef Id="OfferedGoogle" Type="Environment"  Var="OfferedGoogle"/>
+    <ConditionDef Id="ShouldOfferGoogle" Type="LuaBlock" Var="
+        dofile('extensions\\CheckInstallGoogleToolbar.clf')
+        if CheckInstallGoogleToolbar() == true then -- true means not installed and can install
+            return true
+        else
+            return false
+        end
+    "/>
+    <ConditionDef Id="ReadytoCheckGoogleOffer" Type="LuaBlock" Var="
+        if g_env.readytocheckgoogleoffer ~= nil and g_env.readytocheckgoogleoffer ~= 3 then
+            g_env.readytocheckgoogleoffer = g_env.readytocheckgoogleoffer + 1
+            return false
+        else
+            if g_env.readytocheckgoogleoffer == nil then
+                g_env.readytocheckgoogleoffer = 1
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="OfferedChrome" Type="Environment"  Var="OfferedChrome"/>
+    <ConditionDef Id="ChromeNumtries" Type="RegKeyVal" Var="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\1.0\Preferences\ChromeNumtries"/>
+    <ConditionDef Id="GoogleTBOfferPing" Type="LuaBlock" Var="
+        local errHandler = ErrorHandler()
+        local win32 = Win32Interop()
+        if g_env.offeredgoogleping ~= nil then
+            return true
+        else
+            local affiliatetag = main_env.affiliate
+            if affiliatetag == &quot;&quot; then affiliatetag = &quot;30000000000000000000000000000000&quot; end
+            local tablePingPairs  = CreatePingPairsTable(&quot;googleinstapp&quot;, &quot;displayedoffer&quot;, &quot;gtb&quot;, g_strLocale, affiliatetag)
+            local brandcode = {&quot;brandcode&quot;, &quot;RNQZ&quot;}
+            table.insert(tablePingPairs,brandcode)
+            g_env.offeredgoogleping = 'true'
+            errHandler.LogPing(tablePingPairs, true)
+            return true
+        end
+    "/>
+    <ConditionDef Id="ChromeOfferPing" Type="LuaBlock" Var="
+        if g_env.offeredchromeping ~= nil then
+            return true
+        else
+            local errHandler      = ErrorHandler()
+            local win32           = Win32Interop()
+            local affiliatetag = main_env.affiliate
+            if affiliatetag == &quot;&quot; then affiliatetag = &quot;30000000000000000000000000000000&quot; end
+            local nCount          = 1
+            local offered         = win32.GetRegKeyValue('HKEY_CLASSES_ROOT', g_constants[&quot;basekey&quot;] .. 'Zylom\\1.0\\Preferences', 'GoogleChromeOffered')
+            local tablePingPairs  = CreatePingPairsTable(&quot;googleinstapp&quot;, &quot;displayedoffer&quot;, &quot;gc&quot;, g_strLocale, affiliatetag)
+            local brandcode = {&quot;brandcode&quot;, &quot;RNPZ&quot;}
+            table.insert(tablePingPairs,brandcode)
+            if offered ~= nil and offered ~= &quot;&quot; then nCount = tonumber(offered) + 1 end
+            win32.CreateRegKey('HKEY_CLASSES_ROOT', g_constants[&quot;basekey&quot;] .. 'Zylom\\1.0\\Preferences', 'GoogleChromeOffered', nCount, keyvaltype)
+            g_env.offeredchromeping = 'true'
+            errHandler.LogPing(tablePingPairs, true)
+            return true
+        end
+    "/>
+    <ConditionDef Id="ShouldOfferChrome" Type="LuaBlock" Var="
+        dofile('extensions\\CheckInstallChrome.clf')
+        if GoogleChromeCompatibilityCheck() == true then
+            return true
+        else 
+            return false
+        end
+    "/>
+    <ConditionDef Id="CheckIsInstallingChrome" Type="Environment" Var="IsInstallingChrome" />
+    <ConditionDef Id="IsSpecialGameForGoogleChrome" Type="LuaBlock" Var="return false"/>
+    <ConditionDef Id="ExecuteGoogleChrome" Type="LuaBlock" Var="
+        if CheckCondition('CheckIsInstallingChrome', 'true') then
+            local errHandler     = ErrorHandler()
+            local win32          = Win32Interop()                  
+            local affiliatetag = main_env.affiliate
+            if affiliatetag == &quot;&quot; then affiliatetag = &quot;30000000000000000000000000000000&quot; end
+            local tablePingPairs = CreatePingPairsTable(&quot;googleinstapp&quot;, &quot;launchedoffer&quot;, &quot;gc&quot;, g_strLocale, affiliatetag)
+            local brandcode = {&quot;brandcode&quot;, &quot;RNPZ&quot;}
+            table.insert(tablePingPairs,brandcode)
+            local shortLaunchCommand = g_env.sysDrive .. ':\\' .. g_env.programFolder .. '\\Google\\Chrome\\Application\\chrome.exe'
+            local shortLaunchCommandBase = g_env.sysDrive .. ':\\' .. g_env.programFolder .. '\\Google\\Chrome\\Application'
+            local procMgr        = luacom.CreateObject(&quot;StubbyUtil.ProcessMgr&quot;)
+            procMgr:Exec( shortLaunchCommand, &quot; &quot; ,false, false, shortLaunchCommandBase , &quot;createProc&quot; ) 
+            errHandler.LogPing(tablePingPairs, true)
+         end
+         return true
+    "/>
+    <ConditionDef Id="CheckInstallComplete" Type="LuaBlock" Var="return g_env.InstallComplete" />
+    <ConditionDef Id="CheckWrapperInterlock" Type="LuaBlock" Var="return g_env.wrapperLaunched" />
+    <ConditionDef Id="CheckLaunchComplete" Type="Environment" Var="launchComplete" />
+    <ConditionDef Id="CheckLaunchofWrapper" Type="LuaBlock" Var="
+        if CheckCondition('CheckWrapperInterlock', 'nil') and g_env.InstallComplete == 'inprogress' then
+            g_env.InstallComplete = 'true'
+            local j = 1
+            local errHandler = ErrorHandler()
+            local win32 = Win32Interop()
+            local procMgr = luacom.CreateObject(&quot;StubbyUtil.ProcessMgr&quot;)
+            local launchCommand = ''
+            local workDir = ''
+            launchCommand = g_env.myGamesRoot .. &quot;\\Governor of Poker 2\\&quot; .. g_env.myGameExe
+            workDir = g_env.myGamesRoot .. &quot;\\Governor of Poker 2&quot;
+            procMgr:CreateLUAProcess( launchCommand, &quot;&quot;, false, false, workDir , &quot;createProc&quot; )
+            g_env.wrapperLaunched = 'true'
+            return true
+        else
+            return false
+        end
+    "/>
+    <ConditionDef Id="CheckSaveStatus" Type="RegKeyVal" Var="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\1.0\Preferences\save" />
+    <ConditionDef Id="GamesShortcutsState" Type="RegKeyVal"  Var="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\1.0\Preferences\GameDesktopShortcuts"/>
+    <ConditionDef Id="CheckValidContentID" Type="LuaBlock" Var="
+            if g_env.ContentID == nil then
+                return false
+            else
+                return true
+            end
+    "/>
+    <ConditionDef Id="CheckValidExtraTracking" Type="LuaBlock" Var="
+            if main_env.extratracking == nil then
+                return false
+            else
+                return true
+            end
+    "/>
+    <ConditionDef Id="CheckValidAffiliateRGI" Type="LuaBlock" Var="
+        local parm = '30000000000000000000000000000000'
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.affiliate ~= nil and main_env.affiliate ~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidOTP" Type="LuaBlock" Var="
+        if main_env.otp == &quot;&quot; or string.find( main_env.otp, '00000000000000000000000000000000' ) ~= nil then
+            return false
+        else
+            return true
+        end
+    "/>
+    <ConditionDef Id="CheckValidOTPRGI" Type="LuaBlock" Var="
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '00000000000000000000000000000000') ~= nil then
+            return false
+        else
+            if main_env.otp ~= nil and main_env.otp ~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidAffiliate" Type="LuaBlock" Var="
+        if main_env.affiliate ~= nil and main_env.affiliate == &quot;&quot; then
+            return false
+        else
+            return true
+        end
+    "/>
+    <ConditionDef Id="CheckValidTrackingRGI" Type="LuaBlock" Var="
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.tracking ~= nil and main_env.tracking ~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidTracking" Type="LuaBlock" Var="
+        if main_env.tracking ~= nil and main_env.tracking == &quot;&quot; then
+            return false
+        else
+            return true
+        end
+    "/>
+    <ConditionDef Id="CheckValidCurrencyRGI" Type="LuaBlock" Var="
+        local parm = '455552000000'
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.currency ~= nil and main_env.currency ~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidCurrencyRGILegacy" Type="LuaBlock" Var="
+        if g_env.currency ~= nil and g_env.currency == 'USD' then
+            return false
+        else
+            return true
+        end
+    "/>
+    <ConditionDef Id="CheckValidCurrency" Type="LuaBlock" Var="
+        if main_env.currency ~= nil and main_env.currency == &quot;&quot; then
+            return false
+        else
+            return true
+        end
+    "/>
+    <ConditionDef Id="CheckValidPriceRGI" Type="LuaBlock" Var="
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.price ~= nil and main_env.price ~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidPrice" Type="LuaBlock" Var="
+        if main_env.price ~= nil and main_env.price == &quot;&quot; then
+            return false
+        else
+            return true
+        end
+    "/>
+    <ConditionDef Id="CheckValidTimestampRGI" Type="LuaBlock" Var="
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.timestamp ~= nil and main_env.timestamp ~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+    <ConditionDef Id="CheckValidTimestamp" Type="LuaBlock" Var="
+        if main_env.timestamp ~= nil and main_env.timestamp == &quot;&quot; then
+            return false
+        else
+            return true
+        end
+    "/>
+    <ConditionDef Id="CheckValidLanguage" Type="LuaBlock" Var="
+        if main_env.language ~= nil and main_env.language == &quot;&quot; then
+            return false
+        else
+            return true
+        end
+    "/>
+    <ConditionDef Id="CheckValidLanguageRGI" Type="LuaBlock" Var="
+        local parm = ''
+        if parm == &quot;&quot; or string.find( parm, '__BEGIN_TAG_') ~= nil then
+            return false
+        else
+            if main_env.language ~= nil and main_env.language ~= &quot;&quot; then
+                return false
+            else
+                return true
+            end
+        end
+    "/>
+
+    <SetGlobalEnv Key="affiliate" Val="z_zlm_d2c" >
+        <ConditionCheck Id="CheckValidAffiliateRGI" Val="true" />
+    </SetGlobalEnv>
+    <SetGlobalEnv Key="tracking" Val="" >
+        <ConditionCheck Id="CheckValidTrackingRGI" Val="true" />
+    </SetGlobalEnv>
+    <SetGlobalEnv Key="currency" Val="455552000000" >
+        <ConditionCheck Id="CheckValidCurrencyRGI" Val="true" />
+        <ConditionCheck Id="CheckValidCurrencyRGILegacy" Val="true" />
+    </SetGlobalEnv>
+    <SetGlobalEnv Key="price" Val="" >
+        <ConditionCheck Id="CheckValidPriceRGI" Val="true" />
+    </SetGlobalEnv>
+    <SetGlobalEnv Key="timestamp" Val="" >
+        <ConditionCheck Id="CheckValidTimestampRGI" Val="true" />
+    </SetGlobalEnv>
+    <SetGlobalEnv Key="otp" Val="" >
+        <ConditionCheck Id="CheckValidOTPRGI" Val="true" />
+    </SetGlobalEnv>
+    <SetGlobalEnv Key="language" Val="" >
+        <ConditionCheck Id="CheckValidLangaugeRGI" Val="true" />
+    </SetGlobalEnv>
+
+    <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\CurrentVersion" Subkey="" Val="1.0" NoRemove="true" />
+    <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\1.0\Preferences" Subkey="ArcadeVersion" Val="2.5.0.58" NoRemove="true"/>
+    <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\1.0\Preferences" Subkey="HtmlVersion" Val="2.6.0.306" NoRemove="true"/>
+    <SetGlobalEnv Key="programFilesFolder" Val="Zylom"/>
+    <Payload Target="[tmpDir]\Zylom\checkinst.rar" Src="http://cdn.media.zylom.com/images/activemark/installer/z_zlm_d2c/default/checkinst.rar" Persist="false" NoRemove="true">
+        <ConditionCheck Id="CheckForStoreFront" Val="false" />
+        <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\1.0\Preferences" Subkey="GameDesktopShortcuts" Val="off" NoRemove="true" NoOverwrite="true">
+            <ConditionCheck Id="CanInitGameShortcuts" Val="nil" />
+        </Regkey>
+        <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\1.0\Preferences" Subkey="GamesRoot" Val="[gamesRoot]" NoRemove="true"/>
+        <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\1.0\Preferences" Subkey="InstallDate" Val="[dateTime]" NoRemove="true"/>
+        <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\1.0\Preferences" Subkey="Tps" Val="z_zlm_d2c" NoRemove="true" NoOverwrite="true"/>
+        <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\1.0\Preferences" Subkey="channel" Val="z_zlm_d2c" NoRemove="true" NoOverwrite="true"/>
+        <Regkey Id="GameDrop" Key="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\1.0\Preferences" Subkey="GameDesktopShortcuts" Val="on" NoRemove="true" >
+            <ConditionCheck Id="CheckIfEULASlide" Val="true" />
+        </Regkey>
+    </Payload>
+
+    <Payload Target="[tmpDir]\Zylom\appresource\appresource.rar" Src="http://cdn.media.zylom.com/images/activemark/installer/z_zlm_d2c/appresource.rar" Persist="false" NoRemove="true" >
+        <ConditionCheck Id="CheckForResources" Val="false" />
+        <Shortcut Link="[commonStartMenu]\Programs\Zylom\Visit Zylom.url" Target="http://www.zylom.com/" Icon="[installerDir]\Zylom\resource\store.ico" NoRemove="true"/>
+        <Shortcut Link="[desktop]\Zylom.url" Target="http://www.zylom.com/" Icon="[installerDir]\Zylom\resource\store.ico" NoRemove="true"/>
+        <Bookmark Id="BookmarkDrop" Name="Zylom" Url="http://www.zylom.com/" NoRemove="true"></Bookmark>
+    </Payload>
+
+    <SetEnv Id="InstallChrome2" Key="IsDefaultChrome" Val="true" >
+        <ConditionCheck Id="OfferedChrome" Val="true"/>
+    </SetEnv>
+    <Payload FileSize="23234237" Id="InstallChrome" Target="InstallChromeZL.rar" Src="http://cdn.media.zylom.com/images/activemark/installer/z_zlm_d2c/InstallChromeZL12-0.rar" Persist="false" DisplayProgress="true">
+        <ConditionCheck Id="OfferedChrome" Val="true"/>
+        <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\1.0\Preferences" Subkey="ChromeNumtries" Val="3"></Regkey>
+        <SetEnv Key="IsInstallingChrome" Val="true" />
+    </Payload>
+
+    <Payload Id="GoogleToolbar" FileSize="244963" Target="GoogleTB9ZL.rar" Src="http://cdn.media.zylom.com/images/activemark/installer/GoogleTB9ZL.rar" Persist="false" DisplayProgress="true">
+        <PostProcess Script="googletb.lua"/>
+        <ConditionCheck Id="OfferedGoogle" Val="true"/>
+        <ConditionCheck Id="ShouldOfferGoogle" Val="true"/>
+    </Payload>
+    
+    <SetGlobalEnv Key="GameSource" Val="http://d.gamehouse.com/d/isioux/dip_nt_zy_en/z_zlm_d2c/GovernorofPoker2_EN.rga">
+        <ConditionCheck Id="CheckValidOTP" Val="false" />
+        <ConditionCheck Id="CheckValidOTPRGI" Val="false" />
+    </SetGlobalEnv>
+    <SetGlobalEnv Key="GameSource" Val="http://d.gamehouse.com/d/isioux/dip_nt_zy_en/z_zlm_d2c/[otp]/GovernorofPoker2_EN.rga">
+        <ConditionCheck Id="CheckValidOTP" Val="true" />
+    </SetGlobalEnv>
+    <SetGlobalEnv Key="GameSource" Val="http://d.gamehouse.com/d/isioux/dip_nt_zy_en/z_zlm_d2c/[otp]/GovernorofPoker2_EN.rga">
+        <ConditionCheck Id="CheckValidOTPRGI" Val="true" />
+    </SetGlobalEnv>
+    <Payload FileSize="113495772" Target="[gamesRoot]\Governor of Poker 2\GovernorofPoker2_EN.rga" Src="[GameSource]" Persist="false" DisplayProgress="true">
+        <SetGlobalEnv Key="myGameExe" Val="[gameExe]" />
+        <SetGlobalEnv Key="myGamesRoot" Val="[gamesRoot]" />
+        <SetGlobalEnv Key="myInstallDrive" Val="[installDrive]" />
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\224CF4672C18B9B713E2A9B7A098C08A" Subkey="affiliate" Type="BINARY" Val="[affiliate]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidAffiliate" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\224CF4672C18B9B713E2A9B7A098C08A" Subkey="affiliate" Type="BINARY" Val="[affiliate]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidAffiliateRGI" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\224CF4672C18B9B713E2A9B7A098C08A" Subkey="tracking" Type="BINARY" Val="[tracking]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidTracking" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\224CF4672C18B9B713E2A9B7A098C08A" Subkey="tracking" Type="BINARY" Val="[tracking]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidTrackingRGI" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\224CF4672C18B9B713E2A9B7A098C08A" Subkey="currency" Type="BINARY" Val="[currency]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidCurrency" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\224CF4672C18B9B713E2A9B7A098C08A" Subkey="currency" Type="BINARY" Val="[currency]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidCurrencyRGI" Val="true"/>
+            <ConditionCheck Id="CheckValidCurrencyRGILegacy" Val="true" />          
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\224CF4672C18B9B713E2A9B7A098C08A" Subkey="price" Type="BINARY" Val="[price]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidPrice" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\224CF4672C18B9B713E2A9B7A098C08A" Subkey="price" Type="BINARY" Val="[price]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidPriceRGI" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\224CF4672C18B9B713E2A9B7A098C08A" Subkey="timestamp" Type="BINARY" Val="[timestamp]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidTimestamp" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\224CF4672C18B9B713E2A9B7A098C08A" Subkey="timestamp" Type="BINARY" Val="[timestamp]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidTimestampRGI" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\224CF4672C18B9B713E2A9B7A098C08A" Subkey="onetimepop" Type="BINARY" Val="[otp]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidOTP" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\224CF4672C18B9B713E2A9B7A098C08A" Subkey="onetimepop" Type="BINARY" Val="[otp]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidOTPRGI" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\224CF4672C18B9B713E2A9B7A098C08A" Subkey="language" Val="[language]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidLanguage" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\224CF4672C18B9B713E2A9B7A098C08A" Subkey="language" Val="[language]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+            <ConditionCheck Id="CheckValidLanguageRGI" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\224CF4672C18B9B713E2A9B7A098C08A" Subkey="installation_time" Val="[dateTimeTM]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\224CF4672C18B9B713E2A9B7A098C08A" Subkey="path" Val="[gamesRoot]\Governor of Poker 2\[gameExe]" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\224CF4672C18B9B713E2A9B7A098C08A" Subkey="gameid" Val="48f516ebf380c710b27eabf56e878533" >
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_LOCAL_MACHINE\SOFTWARE\Trymedia Systems\ActiveMARK Software\224CF4672C18B9B713E2A9B7A098C08A" Subkey="extratracking" Type="BINARY" Val="[extratracking]" >
+            <ConditionCheck Id="CheckValidExtraTracking" Val="true"/>
+            <ConditionCheck Id="CheckValidContentID" Val="true"/>
+        </Regkey>
+        <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\Games\48f516ebf380c710b27eabf56e878533\1" Subkey="InstallPath" Val="[gamesRoot]\Governor of Poker 2"></Regkey>
+        <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\Games\48f516ebf380c710b27eabf56e878533\1" Subkey="GameName" Val="Governor of Poker 2"></Regkey>
+        <Regkey Key="HKEY_CLASSES_ROOT\SOFTWARE\Zylom\Games\48f516ebf380c710b27eabf56e878533\1" Subkey="UninstallPath" Val="[installerDir]\uninstall\48f516ebf380c710b27eabf56e878533.rguninst"></Regkey>
+        <Shortcut Id="GameDesktopShortcut" Link="[desktop]\Governor of Poker 2.lnk" Target="[gamesRoot]\Governor of Poker 2\[gameExe]" WorkDir="[gamesRoot]\Governor of Poker 2">
+            <ConditionCheck Id="GamesShortcutsState" Val="on"/>
+        </Shortcut>
+        <Shortcut Link="[commonStartMenu]\Programs\Zylom\Governor of Poker 2.lnk" Target="[gamesRoot]\Governor of Poker 2\[gameExe]" WorkDir="[gamesRoot]\Governor of Poker 2"/>
+    </Payload>
+
+    <DialogOptions CloseBtn="true" MinimizeBtn="true" Width="800" Height="660" Mode="2" >
+        <PreLoad ImagePack="http://cdn.media.zylom.com/images/activemark/installer/z_zlm_d2c/opencandy_resource.rar" TargetRar="opencandy_resource.rar" TargetFolder="[tmpDir]\OpenCandy\" DeleteRar="true" />
+        <Chrome ImagePack="http://cdn.media.zylom.com/images/activemark/installer/z_zlm_d2c/chrome.rar"/>
+        <OnBegin>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_zlm_d2c/eula.html?aff=z_zlm_d2c&amp;product_name=Governor+of+Poker+2&amp;contentid=224CF4672C18B9B713E2A9B7A098C08A&amp;offering=dip_nt_zy_en&amp;lang=&amp;sld=eula&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="block" StepBucket="1">
+                <ConditionCheck Id="CheckForClean" Val="nil"/>
+                <OnNavigate>
+                    <SetGlobalEnv Key="EULAPresented" Val="true" />
+                </OnNavigate>
+            </DialogUrl>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_zlm_d2c/eula.html?aff=z_zlm_d2c&amp;product_name=Governor+of+Poker+2&amp;contentid=224CF4672C18B9B713E2A9B7A098C08A&amp;offering=dip_nt_zy_en&amp;lang=&amp;sld=eula&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="block" StepBucket="1">
+                <ConditionCheck Id="CheckIfEULASlide" Val="false" />
+                <ConditionCheck Id="ShouldOfferGoogle" Val="true"/>
+                <OnNavigate>
+                    <SetGlobalEnv Key="EULAPresented" Val="true" />
+                </OnNavigate>
+            </DialogUrl>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_zlm_d2c/eula.html?aff=z_zlm_d2c&amp;product_name=Governor+of+Poker+2&amp;contentid=224CF4672C18B9B713E2A9B7A098C08A&amp;offering=dip_nt_zy_en&amp;lang=&amp;sld=eula&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="block" StepBucket="1">
+                <ConditionCheck Id="CheckIfEULASlide" Val="false" />
+                <ConditionCheck Id="ShouldOfferGoogle" Val="false"/>
+                <ConditionCheck Id="ShouldOfferChrome" Val="true" />
+                <OnNavigate>
+                    <SetGlobalEnv Key="EULAPresented" Val="true" />
+                </OnNavigate>
+            </DialogUrl>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_zlm_d2c/GTB.html?aff=z_zlm_d2c&amp;product_name=Governor+of+Poker+2&amp;contentid=224CF4672C18B9B713E2A9B7A098C08A&amp;offering=dip_nt_zy_en&amp;lang=&amp;sld=googlepromo&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="block" StepBucket="1">
+                <ConditionCheck Id="ReadytoCheckGoogleOffer" Val="true" />
+                <ConditionCheck Id="ShouldOfferGoogle" Val="true"/>
+                <ConditionCheck Id="GoogleTBOfferPing" Val="true"/>
+                <OnNavigate>
+                    <SetEnv Key="OfferedGoogle" Val="true"/>
+                </OnNavigate>
+            </DialogUrl>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_zlm_d2c/chrome.html?aff=z_zlm_d2c&amp;product_name=Governor+of+Poker+2&amp;contentid=224CF4672C18B9B713E2A9B7A098C08A&amp;offering=dip_nt_zy_en&amp;lang=&amp;sld=chromepromo&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="block" StepBucket="1">
+                <ConditionCheck Id="ReadytoCheckGoogleOffer" Val="true" />
+                <ConditionCheck Id="ShouldOfferGoogle" Val="false"/>
+                <ConditionCheck Id="ShouldOfferChrome" Val="true" />
+                <ConditionCheck Id="ChromeOfferPing" Val="true"/>
+                <OnNavigate>
+                    <SetEnv Key="OfferedChrome" Val="true"/>
+                </OnNavigate>
+            </DialogUrl>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_zlm_d2c/opencandy.html?aff=z_zlm_d2c&amp;product_name=Governor+of+Poker+2&amp;contentid=224CF4672C18B9B713E2A9B7A098C08A&amp;offering=dip_nt_zy_en&amp;lang=&amp;sld=chromepromo&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="block" StepBucket="1">
+                <ConditionCheck Id="ReadytoCheckGoogleOffer" Val="true" />
+                <ConditionCheck Id="ShouldOfferGoogle" Val="false"/>
+                <ConditionCheck Id="ShouldOfferChrome" Val="false" />
+                <ConditionCheck Id="ShouldOfferCandy" Val="true" />
+                <ConditionCheck Id="OpenCandyOfferPing" Val="true"/>
+                <OnNavigate>
+                    <SetEnv Key="OfferedCandy" Val="true"/>
+                </OnNavigate>              
+            </DialogUrl>
+        </OnBegin>
+        <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_zlm_d2c/installing.html?aff=z_zlm_d2c&amp;product_name=Governor+of+Poker+2&amp;contentid=224CF4672C18B9B713E2A9B7A098C08A&amp;offering=dip_nt_zy_en&amp;lang=&amp;sld=installing&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="inf" StepBucket="1" >
+            <ConditionCheck Id="OpenCandyAcceptedPing" Val="true"/>
+            <ConditionCheck Id="InstallCandyOffer" Val="true"/>
+            <OnNavigate>
+                <SetGlobalEnv Key="InstallComplete" Val="inprogress" />
+            </OnNavigate>
+        </DialogUrl>
+        <OnComplete>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_zlm_d2c/complete.html?aff=z_zlm_d2c&amp;product_name=Governor+of+Poker+2&amp;contentid=224CF4672C18B9B713E2A9B7A098C08A&amp;offering=dip_nt_zy_en&amp;lang=&amp;sld=installcomplete2&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="block" >
+                <ConditionCheck Id="CheckInstallComplete" Val="inprogress" />
+                <ConditionCheck Id="CheckLaunchofWrapper" Val="false" />
+                <OnNavigate>
+                    <SetEnv Key="IsInstallingChrome" Val="false" />
+                    <SetGlobalEnv Key="InstallComplete" Val="true" />
+                </OnNavigate>
+            </DialogUrl>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_zlm_d2c/complete.html?aff=z_zlm_d2c&amp;product_name=Governor+of+Poker+2&amp;contentid=224CF4672C18B9B713E2A9B7A098C08A&amp;offering=dip_nt_zy_en&amp;lang=&amp;sld=installcomplete2&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="block" >
+                <ConditionCheck Id="CheckInstallComplete" Val="inprogress" />              
+                <ConditionCheck Id="CheckLaunchofWrapper" Val="false" />
+                <OnNavigate>
+                    <SetEnv Key="IsInstallingChrome" Val="false" />
+                    <SetGlobalEnv Key="InstallComplete" Val="true" />
+                </OnNavigate>
+            </DialogUrl>
+            <DialogUrl Url="http://cdn.media.zylom.com/images/activemark/installer/z_zlm_d2c/complete.html?aff=z_zlm_d2c&amp;product_name=Governor+of+Poker+2&amp;contentid=224CF4672C18B9B713E2A9B7A098C08A&amp;offering=dip_nt_zy_en&amp;lang=&amp;sld=installcomplete2&amp;tracking=[tracking]&amp;extratracking=[extratracking]&amp;version=0020" Duration="4" >
+                <ConditionCheck Id="CheckInstallComplete" Val="true" />
+                <ConditionCheck Id="ExecuteGoogleChrome" Val="true" />
+            </DialogUrl>
+            <PlaySound ResourceId="2000"/>
+        </OnComplete>
+    </DialogOptions>
+</ArcadeInstaller>

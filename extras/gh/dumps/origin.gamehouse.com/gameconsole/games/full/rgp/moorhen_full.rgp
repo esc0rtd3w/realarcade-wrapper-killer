@@ -1,0 +1,49 @@
+
+<PACKAGE>
+    <TITLE></TITLE>
+    <APPLICATION>RealArcade</APPLICATION>
+    <ACTION>download</ACTION>
+    <TARGET>My Games</TARGET>
+    <EXP DATE>10/09/01 10:51</EXP DATE>
+    <PROVIDER>
+<AUTHOR>Kevin Collar</AUTHOR>
+<NAME>RealNetworks</NAME>
+<URL>http://www.realarcade.com</URL>
+<COPYRIGHT>CopyRight 2001, RealNetworks, Inc.</COPYRIGHT>
+<CONTACT>kcollar@real.com</CONTACT>
+    </PROVIDER>
+    <SERVER>
+        <NAME>RealArcade Game Servers</NAME>
+        <DESC>RealArcade Game Servers</DESC>
+        <NETNAME>games-dl.real.com</NETNAME>
+        <LOCATION>/gameconsole/games/full/%f</LOCATION>
+        <KEY>Not used in Beta1</KEY>
+    </SERVER>
+    <GAMELIST>
+        <GAME>
+            <ID></ID>
+            <NAME>Moorhen</NAME>
+            <GAMEID>04102902-2E5B-4B95-B1D4-13DEAC29F1D3</GAMEID>
+            <VERSION>Full RGP</VERSION>
+            <TYPE>full</TYPE>
+            <GENRE>puzzle</GENRE>
+            <FILENAME>moorhen_full.rgs</FILENAME>
+            <SIZE>2709359</SIZE>
+            <MEZZANINE>http://games-dl.real.com/gameconsole/games/full/mezzanines/moorhen_full.mez</MEZZANINE>
+            <METADATA>
+	                        <PROP name = "SystemRequirements" type = "group">
+            <PROP name = "OperatingSystem" type = "text" value = "Windows95, Windows98, WindowsME, Windows2000" />
+            <PROP name = "MinProcessorType" type = "text" value = "P-166" />
+            <PROP name = "MinDiskSpaceRun" type = "number" value = "4194304" />
+            <PROP name = "MinDiskSpaceInstall" type = "number" value = "6291456" />
+            <PROP name = "MinMemory" type = "number" value = "33554432" />
+            <PROP name = "Requires3DHardware" type = "flag" value = "0" />
+            <PROP name = "MinDirectXVersion" type = "number" value = "6.0" />
+            <PROP name = "SinglePlayerMinimumConnectionSpeed" type = "number" value = "0" />
+            <PROP name = "MultiPlayerMinimumConnectionSpeed" type = "number" value = "0" />
+        </PROP>
+            </METADATA>
+        </GAME>
+    </GAMELIST>
+    <SIG>14d0a01a97ad213c514f3fa86c34c159</SIG>
+</PACKAGE>

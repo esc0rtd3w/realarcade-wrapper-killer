@@ -1,0 +1,791 @@
+
+Push process for gameconsolebetatest commenced at Fri Oct 29 14:36:02 PDT 2010
+Fri Oct 29 14:36:02 PDT 2010 Waiting for rsyncs to complete...
+Fri Oct 29 14:36:06 PDT 2010 Done 
+building file list ... done
+.d..t.... ./
+<f.st.... push-gameconsolebetatest-all.log
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+.d..t.... files/v2/
+<f.st.... files/v2/betaGameDataCache.xml
+*deleting OldGames/youdamarinaevaluation/youdamarinaevaluation.xml
+*deleting OldGames/youdamarinaevaluation/youdamarinaevaluation.rga
+*deleting OldGames/youdamarinaevaluation/DRMConfigyoudamarinaevaluation.rdc
+*deleting OldGames/youdamarinaevaluation/
+*deleting OldGames/winemakerextraordinaireevaluation/winemakerextraordinaireevaluation.rga
+*deleting OldGames/winemakerextraordinaireevaluation/DRMConfigwinemakerextraordinaireevaluation.rdc
+*deleting OldGames/winemakerextraordinaireevaluation/
+*deleting OldGames/virtualfamiliesevaluation/virtualfamiliesevaluation.xml
+*deleting OldGames/virtualfamiliesevaluation/virtualfamiliesevaluation.rga
+*deleting OldGames/virtualfamiliesevaluation/DRMConfigvirtualfamiliesevaluation.rdc
+*deleting OldGames/virtualfamiliesevaluation/
+*deleting OldGames/tradewindsodysseytmevaluation/tradewindsodysseytmevaluation.xml
+*deleting OldGames/tradewindsodysseytmevaluation/tradewindsodysseytmevaluation.rga
+*deleting OldGames/tradewindsodysseytmevaluation/DRMConfigtradewindsodysseytmevaluation.rdc
+*deleting OldGames/tradewindsodysseytmevaluation/
+*deleting OldGames/supermarketmanagementevaluation/supermarketmanagementevaluation.xml
+*deleting OldGames/supermarketmanagementevaluation/supermarketmanagementevaluation.rga
+*deleting OldGames/supermarketmanagementevaluation/DRMConfigsupermarketmanagementevaluation.rdc
+*deleting OldGames/supermarketmanagementevaluation/
+*deleting OldGames/supercollapsepuzzlegallery5evaluation/supercollapsepuzzlegallery5evaluation.xml
+*deleting OldGames/supercollapsepuzzlegallery5evaluation/supercollapsepuzzlegallery5evaluation.rga
+*deleting OldGames/supercollapsepuzzlegallery5evaluation/DRMConfigsupercollapsepuzzlegallery5evaluation.rdc
+*deleting OldGames/supercollapsepuzzlegallery5evaluation/
+*deleting OldGames/skytaxievaluation/skytaxievaluation.xml
+*deleting OldGames/skytaxievaluation/skytaxievaluation.rga
+*deleting OldGames/skytaxievaluation/DRMConfigskytaxievaluation.rdc
+*deleting OldGames/skytaxievaluation/
+*deleting OldGames/skykingdomsevaluation/skykingdomsevaluation.xml
+*deleting OldGames/skykingdomsevaluation/skykingdomsevaluation.rga
+*deleting OldGames/skykingdomsevaluation/DRMConfigskykingdomsevaluation.rdc
+*deleting OldGames/skykingdomsevaluation/
+*deleting OldGames/plantsvszombiestmevaluation/plantsvszombiestmevaluation.xml
+*deleting OldGames/plantsvszombiestmevaluation/plantsvszombiestmevaluation.rga
+*deleting OldGames/plantsvszombiestmevaluation/DRMConfigplantsvszombiestmevaluation.rdc
+*deleting OldGames/plantsvszombiestmevaluation/
+*deleting OldGames/obulisevaluation/obulisevaluation.rga
+*deleting OldGames/obulisevaluation/
+*deleting OldGames/mysticemporiumevaluation/mysticemporiumevaluation.xml
+*deleting OldGames/mysticemporiumevaluation/mysticemporiumevaluation.rga
+*deleting OldGames/mysticemporiumevaluation/DRMConfigmysticemporiumevaluation.rdc
+*deleting OldGames/mysticemporiumevaluation/
+*deleting OldGames/mysteriousworldsthesecretofoakislandevaluation/mysteriousworldsthesecretofoakislandevaluation.xml
+*deleting OldGames/mysteriousworldsthesecretofoakislandevaluation/mysteriousworldsthesecretofoakislandevaluation.rga
+*deleting OldGames/mysteriousworldsthesecretofoakislandevaluation/DRMConfigmysteriousworldsthesecretofoakislandevaluation.rdc
+*deleting OldGames/mysteriousworldsthesecretofoakislandevaluation/
+*deleting OldGames/magicball4evaluation/magicball4evaluation.xml
+*deleting OldGames/magicball4evaluation/magicball4evaluation.rga
+*deleting OldGames/magicball4evaluation/DRMConfigmagicball4evaluation.rdc
+*deleting OldGames/magicball4evaluation/
+*deleting OldGames/lostfortunesevaluation/lostfortunesevaluation.xml
+*deleting OldGames/lostfortunesevaluation/lostfortunesevaluation.rga
+*deleting OldGames/lostfortunesevaluation/DRMConfiglostfortunesevaluation.rdc
+*deleting OldGames/lostfortunesevaluation/
+*deleting OldGames/keystothecityevaluation/keystothecityevaluation.xml
+*deleting OldGames/keystothecityevaluation/keystothecityevaluation.rga
+*deleting OldGames/keystothecityevaluation/DRMConfigkeystothecityevaluation.rdc
+*deleting OldGames/keystothecityevaluation/
+*deleting OldGames/hollywoodtycoonevaluation/hollywoodtycoonevaluation.xml
+*deleting OldGames/hollywoodtycoonevaluation/hollywoodtycoonevaluation.rga
+*deleting OldGames/hollywoodtycoonevaluation/DRMConfighollywoodtycoonevaluation.rdc
+*deleting OldGames/hollywoodtycoonevaluation/
+*deleting OldGames/flowerparadiseevaluation/flowerparadiseevaluation.xml
+*deleting OldGames/flowerparadiseevaluation/flowerparadiseevaluation.rga
+*deleting OldGames/flowerparadiseevaluation/DRMConfigflowerparadiseevaluation.rdc
+*deleting OldGames/flowerparadiseevaluation/
+*deleting OldGames/fashionfindersecretsoffashionevaluation/fashionfindersecretsoffashionevaluation.xml
+*deleting OldGames/fashionfindersecretsoffashionevaluation/fashionfindersecretsoffashionevaluation.rga
+*deleting OldGames/fashionfindersecretsoffashionevaluation/DRMConfigfashionfindersecretsoffashionevaluation.rdc
+*deleting OldGames/fashionfindersecretsoffashionevaluation/
+*deleting OldGames/dreamchroniclesrthechosenchildtmevaluation/dreamchroniclesrthechosenchildtmevaluation.xml
+*deleting OldGames/dreamchroniclesrthechosenchildtmevaluation/dreamchroniclesrthechosenchildtmevaluation.rga
+*deleting OldGames/dreamchroniclesrthechosenchildtmevaluation/DRMConfigdreamchroniclesrthechosenchildtmevaluation.rdc
+*deleting OldGames/dreamchroniclesrthechosenchildtmevaluation/
+*deleting OldGames/dinertowntycoontmevaluation/dinertowntycoontmevaluation.xml
+*deleting OldGames/dinertowntycoontmevaluation/dinertowntycoontmevaluation.rga
+*deleting OldGames/dinertowntycoontmevaluation/DRMConfigdinertowntycoontmevaluation.rdc
+*deleting OldGames/dinertowntycoontmevaluation/
+*deleting OldGames/deliciousemilystasteoffameevaluation/deliciousemilystasteoffameevaluation.xml
+*deleting OldGames/deliciousemilystasteoffameevaluation/deliciousemilystasteoffameevaluation.rga
+*deleting OldGames/deliciousemilystasteoffameevaluation/DRMConfigdeliciousemilystasteoffameevaluation.rdc
+*deleting OldGames/deliciousemilystasteoffameevaluation/
+*deleting OldGames/coffeerushevaluation/coffeerushevaluation.rga
+*deleting OldGames/coffeerushevaluation/DRMConfigcoffeerushevaluation.rdc
+*deleting OldGames/coffeerushevaluation/
+*deleting OldGames/catewestthevelvetkeystmevaluation/catewestthevelvetkeystmevaluation.xml
+*deleting OldGames/catewestthevelvetkeystmevaluation/catewestthevelvetkeystmevaluation.rga
+*deleting OldGames/catewestthevelvetkeystmevaluation/DRMConfigcatewestthevelvetkeystmevaluation.rdc
+*deleting OldGames/catewestthevelvetkeystmevaluation/
+*deleting OldGames/bumbletalesevaluation/bumbletalesevaluation.xml
+*deleting OldGames/bumbletalesevaluation/bumbletalesevaluation.rga
+*deleting OldGames/bumbletalesevaluation/DRMConfigbumbletalesevaluation.rdc
+*deleting OldGames/bumbletalesevaluation/
+*deleting OldGames/bigbrainwolfevaluation/bigbrainwolfevaluation.xml
+*deleting OldGames/bigbrainwolfevaluation/bigbrainwolfevaluation.rga
+*deleting OldGames/bigbrainwolfevaluation/DRMConfigbigbrainwolfevaluation.rdc
+*deleting OldGames/bigbrainwolfevaluation/
+*deleting OldGames/alchemistsapprenticeevaluation/alchemistsapprenticeevaluation.xml
+*deleting OldGames/alchemistsapprenticeevaluation/alchemistsapprenticeevaluation.rga
+*deleting OldGames/alchemistsapprenticeevaluation/DRMConfigalchemistsapprenticeevaluation.rdc
+*deleting OldGames/alchemistsapprenticeevaluation/
+*deleting OldGames/3dayszoomysteryevaluation/DRMConfig3dayszoomysteryevaluation.rdc
+*deleting OldGames/3dayszoomysteryevaluation/3dayszoomysteryevaluation.xml
+*deleting OldGames/3dayszoomysteryevaluation/3dayszoomysteryevaluation.rga
+*deleting OldGames/3dayszoomysteryevaluation/
+*deleting OldGames/10daysundertheseaevaluation/DRMConfig10daysundertheseaevaluation.rdc
+*deleting OldGames/10daysundertheseaevaluation/10daysundertheseaevaluation.xml
+*deleting OldGames/10daysundertheseaevaluation/10daysundertheseaevaluation.rga
+*deleting OldGames/10daysundertheseaevaluation/
+*deleting OldGames/gameeval_images.rar
+*deleting OldGames/betaGameDataCache_LAST_AM.xml
+*deleting OldGames/betaGameDataCache.xml
+*deleting OldGames/
+*deleting files/v2/preview-marooned2secretsoftheakonireviewcopy/preview-marooned2secretsoftheakonireviewcopy_images.rar
+*deleting files/v2/preview-marooned2secretsoftheakonireviewcopy/preview-marooned2secretsoftheakonireviewcopy.xml
+*deleting files/v2/preview-marooned2secretsoftheakonireviewcopy/preview-marooned2secretsoftheakonireviewcopy.rga
+*deleting files/v2/preview-marooned2secretsoftheakonireviewcopy/Version.txt
+*deleting files/v2/preview-marooned2secretsoftheakonireviewcopy/DRMConfigpreview-marooned2secretsoftheakonireviewcopy.rdc
+*deleting files/v2/preview-marooned2secretsoftheakonireviewcopy/
+*deleting files/v2/pr-theclockworkmanthehiddenworldreviewcopy/pr-theclockworkmanthehiddenworldreviewcopy_images.rar
+*deleting files/v2/pr-theclockworkmanthehiddenworldreviewcopy/pr-theclockworkmanthehiddenworldreviewcopy.xml
+*deleting files/v2/pr-theclockworkmanthehiddenworldreviewcopy/pr-theclockworkmanthehiddenworldreviewcopy.rga
+*deleting files/v2/pr-theclockworkmanthehiddenworldreviewcopy/DRMConfigpr-theclockworkmanthehiddenworldreviewcopy.rdc
+*deleting files/v2/pr-theclockworkmanthehiddenworldreviewcopy/
+*deleting files/v2/pr-theclockworkmanthehiddenworldpremiumeditionreviewcopy/pr-theclockworkmanthehiddenworldpremiumeditionreviewcopy_images.rar
+*deleting files/v2/pr-theclockworkmanthehiddenworldpremiumeditionreviewcopy/pr-theclockworkmanthehiddenworldpremiumeditionreviewcopy.xml
+*deleting files/v2/pr-theclockworkmanthehiddenworldpremiumeditionreviewcopy/pr-theclockworkmanthehiddenworldpremiumeditionreviewcopy.rga
+*deleting files/v2/pr-theclockworkmanthehiddenworldpremiumeditionreviewcopy/DRMConfigpr-theclockworkmanthehiddenworldpremiumeditionreviewcopy.rdc
+*deleting files/v2/pr-theclockworkmanthehiddenworldpremiumeditionreviewcopy/
+*deleting files/v2/pr-starcrossedlovereviewcopy/pr-starcrossedlovereviewcopy_images.rar
+*deleting files/v2/pr-starcrossedlovereviewcopy/pr-starcrossedlovereviewcopy.xml
+*deleting files/v2/pr-starcrossedlovereviewcopy/pr-starcrossedlovereviewcopy.rga
+*deleting files/v2/pr-starcrossedlovereviewcopy/DRMConfigpr-starcrossedlovereviewcopy.rdc
+*deleting files/v2/pr-starcrossedlovereviewcopy/
+*deleting files/v2/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy.xml
+*deleting files/v2/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy.rga
+*deleting files/v2/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy.rar
+*deleting files/v2/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy.exe
+*deleting files/v2/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy/DRMConfigpr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy.rdc
+*deleting files/v2/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy/
+*deleting files/v2/pr-drdespicablesdastardlydeedsreviewcopy/pr-drdespicablesdastardlydeedsreviewcopy_images.rar
+*deleting files/v2/pr-drdespicablesdastardlydeedsreviewcopy/pr-drdespicablesdastardlydeedsreviewcopy.xml
+*deleting files/v2/pr-drdespicablesdastardlydeedsreviewcopy/pr-drdespicablesdastardlydeedsreviewcopy.rga
+*deleting files/v2/pr-drdespicablesdastardlydeedsreviewcopy/pr-drdespicablesdastardlydeedsreviewcopy.exe
+*deleting files/v2/pr-drdespicablesdastardlydeedsreviewcopy/DRMConfigpr-drdespicablesdastardlydeedsreviewcopy.rdc
+*deleting files/v2/pr-drdespicablesdastardlydeedsreviewcopy/
+
+sent 7023 bytes  received 52306 bytes  23731.60 bytes/sec
+total size is 1268655914  speedup is 21383.40
+building file list ... done
+.d..t.... ./
+<f.st.... push-gameconsolebetatest-all.log
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+.d..t.... files/v2/
+<f.st.... files/v2/betaGameDataCache.xml
+*deleting OldGames/youdamarinaevaluation/youdamarinaevaluation.xml
+*deleting OldGames/youdamarinaevaluation/youdamarinaevaluation.rga
+*deleting OldGames/youdamarinaevaluation/DRMConfigyoudamarinaevaluation.rdc
+*deleting OldGames/youdamarinaevaluation/
+*deleting OldGames/winemakerextraordinaireevaluation/winemakerextraordinaireevaluation.rga
+*deleting OldGames/winemakerextraordinaireevaluation/DRMConfigwinemakerextraordinaireevaluation.rdc
+*deleting OldGames/winemakerextraordinaireevaluation/
+*deleting OldGames/virtualfamiliesevaluation/virtualfamiliesevaluation.xml
+*deleting OldGames/virtualfamiliesevaluation/virtualfamiliesevaluation.rga
+*deleting OldGames/virtualfamiliesevaluation/DRMConfigvirtualfamiliesevaluation.rdc
+*deleting OldGames/virtualfamiliesevaluation/
+*deleting OldGames/tradewindsodysseytmevaluation/tradewindsodysseytmevaluation.xml
+*deleting OldGames/tradewindsodysseytmevaluation/tradewindsodysseytmevaluation.rga
+*deleting OldGames/tradewindsodysseytmevaluation/DRMConfigtradewindsodysseytmevaluation.rdc
+*deleting OldGames/tradewindsodysseytmevaluation/
+*deleting OldGames/supermarketmanagementevaluation/supermarketmanagementevaluation.xml
+*deleting OldGames/supermarketmanagementevaluation/supermarketmanagementevaluation.rga
+*deleting OldGames/supermarketmanagementevaluation/DRMConfigsupermarketmanagementevaluation.rdc
+*deleting OldGames/supermarketmanagementevaluation/
+*deleting OldGames/supercollapsepuzzlegallery5evaluation/supercollapsepuzzlegallery5evaluation.xml
+*deleting OldGames/supercollapsepuzzlegallery5evaluation/supercollapsepuzzlegallery5evaluation.rga
+*deleting OldGames/supercollapsepuzzlegallery5evaluation/DRMConfigsupercollapsepuzzlegallery5evaluation.rdc
+*deleting OldGames/supercollapsepuzzlegallery5evaluation/
+*deleting OldGames/skytaxievaluation/skytaxievaluation.xml
+*deleting OldGames/skytaxievaluation/skytaxievaluation.rga
+*deleting OldGames/skytaxievaluation/DRMConfigskytaxievaluation.rdc
+*deleting OldGames/skytaxievaluation/
+*deleting OldGames/skykingdomsevaluation/skykingdomsevaluation.xml
+*deleting OldGames/skykingdomsevaluation/skykingdomsevaluation.rga
+*deleting OldGames/skykingdomsevaluation/DRMConfigskykingdomsevaluation.rdc
+*deleting OldGames/skykingdomsevaluation/
+*deleting OldGames/plantsvszombiestmevaluation/plantsvszombiestmevaluation.xml
+*deleting OldGames/plantsvszombiestmevaluation/plantsvszombiestmevaluation.rga
+*deleting OldGames/plantsvszombiestmevaluation/DRMConfigplantsvszombiestmevaluation.rdc
+*deleting OldGames/plantsvszombiestmevaluation/
+*deleting OldGames/obulisevaluation/obulisevaluation.rga
+*deleting OldGames/obulisevaluation/
+*deleting OldGames/mysticemporiumevaluation/mysticemporiumevaluation.xml
+*deleting OldGames/mysticemporiumevaluation/mysticemporiumevaluation.rga
+*deleting OldGames/mysticemporiumevaluation/DRMConfigmysticemporiumevaluation.rdc
+*deleting OldGames/mysticemporiumevaluation/
+*deleting OldGames/mysteriousworldsthesecretofoakislandevaluation/mysteriousworldsthesecretofoakislandevaluation.xml
+*deleting OldGames/mysteriousworldsthesecretofoakislandevaluation/mysteriousworldsthesecretofoakislandevaluation.rga
+*deleting OldGames/mysteriousworldsthesecretofoakislandevaluation/DRMConfigmysteriousworldsthesecretofoakislandevaluation.rdc
+*deleting OldGames/mysteriousworldsthesecretofoakislandevaluation/
+*deleting OldGames/magicball4evaluation/magicball4evaluation.xml
+*deleting OldGames/magicball4evaluation/magicball4evaluation.rga
+*deleting OldGames/magicball4evaluation/DRMConfigmagicball4evaluation.rdc
+*deleting OldGames/magicball4evaluation/
+*deleting OldGames/lostfortunesevaluation/lostfortunesevaluation.xml
+*deleting OldGames/lostfortunesevaluation/lostfortunesevaluation.rga
+*deleting OldGames/lostfortunesevaluation/DRMConfiglostfortunesevaluation.rdc
+*deleting OldGames/lostfortunesevaluation/
+*deleting OldGames/keystothecityevaluation/keystothecityevaluation.xml
+*deleting OldGames/keystothecityevaluation/keystothecityevaluation.rga
+*deleting OldGames/keystothecityevaluation/DRMConfigkeystothecityevaluation.rdc
+*deleting OldGames/keystothecityevaluation/
+*deleting OldGames/hollywoodtycoonevaluation/hollywoodtycoonevaluation.xml
+*deleting OldGames/hollywoodtycoonevaluation/hollywoodtycoonevaluation.rga
+*deleting OldGames/hollywoodtycoonevaluation/DRMConfighollywoodtycoonevaluation.rdc
+*deleting OldGames/hollywoodtycoonevaluation/
+*deleting OldGames/flowerparadiseevaluation/flowerparadiseevaluation.xml
+*deleting OldGames/flowerparadiseevaluation/flowerparadiseevaluation.rga
+*deleting OldGames/flowerparadiseevaluation/DRMConfigflowerparadiseevaluation.rdc
+*deleting OldGames/flowerparadiseevaluation/
+*deleting OldGames/fashionfindersecretsoffashionevaluation/fashionfindersecretsoffashionevaluation.xml
+*deleting OldGames/fashionfindersecretsoffashionevaluation/fashionfindersecretsoffashionevaluation.rga
+*deleting OldGames/fashionfindersecretsoffashionevaluation/DRMConfigfashionfindersecretsoffashionevaluation.rdc
+*deleting OldGames/fashionfindersecretsoffashionevaluation/
+*deleting OldGames/dreamchroniclesrthechosenchildtmevaluation/dreamchroniclesrthechosenchildtmevaluation.xml
+*deleting OldGames/dreamchroniclesrthechosenchildtmevaluation/dreamchroniclesrthechosenchildtmevaluation.rga
+*deleting OldGames/dreamchroniclesrthechosenchildtmevaluation/DRMConfigdreamchroniclesrthechosenchildtmevaluation.rdc
+*deleting OldGames/dreamchroniclesrthechosenchildtmevaluation/
+*deleting OldGames/dinertowntycoontmevaluation/dinertowntycoontmevaluation.xml
+*deleting OldGames/dinertowntycoontmevaluation/dinertowntycoontmevaluation.rga
+*deleting OldGames/dinertowntycoontmevaluation/DRMConfigdinertowntycoontmevaluation.rdc
+*deleting OldGames/dinertowntycoontmevaluation/
+*deleting OldGames/deliciousemilystasteoffameevaluation/deliciousemilystasteoffameevaluation.xml
+*deleting OldGames/deliciousemilystasteoffameevaluation/deliciousemilystasteoffameevaluation.rga
+*deleting OldGames/deliciousemilystasteoffameevaluation/DRMConfigdeliciousemilystasteoffameevaluation.rdc
+*deleting OldGames/deliciousemilystasteoffameevaluation/
+*deleting OldGames/coffeerushevaluation/coffeerushevaluation.rga
+*deleting OldGames/coffeerushevaluation/DRMConfigcoffeerushevaluation.rdc
+*deleting OldGames/coffeerushevaluation/
+*deleting OldGames/catewestthevelvetkeystmevaluation/catewestthevelvetkeystmevaluation.xml
+*deleting OldGames/catewestthevelvetkeystmevaluation/catewestthevelvetkeystmevaluation.rga
+*deleting OldGames/catewestthevelvetkeystmevaluation/DRMConfigcatewestthevelvetkeystmevaluation.rdc
+*deleting OldGames/catewestthevelvetkeystmevaluation/
+*deleting OldGames/bumbletalesevaluation/bumbletalesevaluation.xml
+*deleting OldGames/bumbletalesevaluation/bumbletalesevaluation.rga
+*deleting OldGames/bumbletalesevaluation/DRMConfigbumbletalesevaluation.rdc
+*deleting OldGames/bumbletalesevaluation/
+*deleting OldGames/bigbrainwolfevaluation/bigbrainwolfevaluation.xml
+*deleting OldGames/bigbrainwolfevaluation/bigbrainwolfevaluation.rga
+*deleting OldGames/bigbrainwolfevaluation/DRMConfigbigbrainwolfevaluation.rdc
+*deleting OldGames/bigbrainwolfevaluation/
+*deleting OldGames/alchemistsapprenticeevaluation/alchemistsapprenticeevaluation.xml
+*deleting OldGames/alchemistsapprenticeevaluation/alchemistsapprenticeevaluation.rga
+*deleting OldGames/alchemistsapprenticeevaluation/DRMConfigalchemistsapprenticeevaluation.rdc
+*deleting OldGames/alchemistsapprenticeevaluation/
+*deleting OldGames/3dayszoomysteryevaluation/DRMConfig3dayszoomysteryevaluation.rdc
+*deleting OldGames/3dayszoomysteryevaluation/3dayszoomysteryevaluation.xml
+*deleting OldGames/3dayszoomysteryevaluation/3dayszoomysteryevaluation.rga
+*deleting OldGames/3dayszoomysteryevaluation/
+*deleting OldGames/10daysundertheseaevaluation/DRMConfig10daysundertheseaevaluation.rdc
+*deleting OldGames/10daysundertheseaevaluation/10daysundertheseaevaluation.xml
+*deleting OldGames/10daysundertheseaevaluation/10daysundertheseaevaluation.rga
+*deleting OldGames/10daysundertheseaevaluation/
+*deleting OldGames/gameeval_images.rar
+*deleting OldGames/betaGameDataCache_LAST_AM.xml
+*deleting OldGames/betaGameDataCache.xml
+*deleting OldGames/
+*deleting files/v2/preview-marooned2secretsoftheakonireviewcopy/preview-marooned2secretsoftheakonireviewcopy_images.rar
+*deleting files/v2/preview-marooned2secretsoftheakonireviewcopy/preview-marooned2secretsoftheakonireviewcopy.xml
+*deleting files/v2/preview-marooned2secretsoftheakonireviewcopy/preview-marooned2secretsoftheakonireviewcopy.rga
+*deleting files/v2/preview-marooned2secretsoftheakonireviewcopy/Version.txt
+*deleting files/v2/preview-marooned2secretsoftheakonireviewcopy/DRMConfigpreview-marooned2secretsoftheakonireviewcopy.rdc
+*deleting files/v2/preview-marooned2secretsoftheakonireviewcopy/
+*deleting files/v2/pr-theclockworkmanthehiddenworldreviewcopy/pr-theclockworkmanthehiddenworldreviewcopy_images.rar
+*deleting files/v2/pr-theclockworkmanthehiddenworldreviewcopy/pr-theclockworkmanthehiddenworldreviewcopy.xml
+*deleting files/v2/pr-theclockworkmanthehiddenworldreviewcopy/pr-theclockworkmanthehiddenworldreviewcopy.rga
+*deleting files/v2/pr-theclockworkmanthehiddenworldreviewcopy/DRMConfigpr-theclockworkmanthehiddenworldreviewcopy.rdc
+*deleting files/v2/pr-theclockworkmanthehiddenworldreviewcopy/
+*deleting files/v2/pr-theclockworkmanthehiddenworldpremiumeditionreviewcopy/pr-theclockworkmanthehiddenworldpremiumeditionreviewcopy_images.rar
+*deleting files/v2/pr-theclockworkmanthehiddenworldpremiumeditionreviewcopy/pr-theclockworkmanthehiddenworldpremiumeditionreviewcopy.xml
+*deleting files/v2/pr-theclockworkmanthehiddenworldpremiumeditionreviewcopy/pr-theclockworkmanthehiddenworldpremiumeditionreviewcopy.rga
+*deleting files/v2/pr-theclockworkmanthehiddenworldpremiumeditionreviewcopy/DRMConfigpr-theclockworkmanthehiddenworldpremiumeditionreviewcopy.rdc
+*deleting files/v2/pr-theclockworkmanthehiddenworldpremiumeditionreviewcopy/
+*deleting files/v2/pr-starcrossedlovereviewcopy/pr-starcrossedlovereviewcopy_images.rar
+*deleting files/v2/pr-starcrossedlovereviewcopy/pr-starcrossedlovereviewcopy.xml
+*deleting files/v2/pr-starcrossedlovereviewcopy/pr-starcrossedlovereviewcopy.rga
+*deleting files/v2/pr-starcrossedlovereviewcopy/DRMConfigpr-starcrossedlovereviewcopy.rdc
+*deleting files/v2/pr-starcrossedlovereviewcopy/
+*deleting files/v2/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy.xml
+*deleting files/v2/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy.rga
+*deleting files/v2/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy.rar
+*deleting files/v2/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy.exe
+*deleting files/v2/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy/DRMConfigpr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy.rdc
+*deleting files/v2/pr-fictionfixersadventuresinwonderlandpremiumeditionreviewcopy/
+*deleting files/v2/pr-drdespicablesdastardlydeedsreviewcopy/pr-drdespicablesdastardlydeedsreviewcopy_images.rar
+*deleting files/v2/pr-drdespicablesdastardlydeedsreviewcopy/pr-drdespicablesdastardlydeedsreviewcopy.xml
+*deleting files/v2/pr-drdespicablesdastardlydeedsreviewcopy/pr-drdespicablesdastardlydeedsreviewcopy.rga
+*deleting files/v2/pr-drdespicablesdastardlydeedsreviewcopy/pr-drdespicablesdastardlydeedsreviewcopy.exe
+*deleting files/v2/pr-drdespicablesdastardlydeedsreviewcopy/DRMConfigpr-drdespicablesdastardlydeedsreviewcopy.rdc
+*deleting files/v2/pr-drdespicablesdastardlydeedsreviewcopy/
+
+sent 7332 bytes  received 52306 bytes  17039.43 bytes/sec
+total size is 1268655955  speedup is 21272.61
+gameconsolebetatest push process ended at Fri Oct 29 14:36:06 PDT 2010
+-------------------------------------------------------
+Push process for gameconsolebetatest commenced at Wed Nov  3 12:18:01 PDT 2010
+Wed Nov 3 12:18:01 PDT 2010 Waiting for rsyncs to complete...
+Wed Nov 3 12:18:21 PDT 2010 Done 
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+.d..t.... files/v2/
+<f.st.... files/v2/betaGameDataCache.xml
+cd+++++++ files/v2/pr-masterthiefskyscraperstingreviewcopy/
+<f+++++++ files/v2/pr-masterthiefskyscraperstingreviewcopy/DRMConfigpr-masterthiefskyscraperstingreviewcopy.rdc
+<f+++++++ files/v2/pr-masterthiefskyscraperstingreviewcopy/Version.txt
+<f+++++++ files/v2/pr-masterthiefskyscraperstingreviewcopy/pr-masterthiefskyscraperstingreviewcopy.rga
+<f+++++++ files/v2/pr-masterthiefskyscraperstingreviewcopy/pr-masterthiefskyscraperstingreviewcopy.xml
+<f+++++++ files/v2/pr-masterthiefskyscraperstingreviewcopy/pr-masterthiefskyscraperstingreviewcopy_images.rar
+
+sent 98751227 bytes  received 680 bytes  4817166.20 bytes/sec
+total size is 1367412460  speedup is 13.85
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+.d..t.... files/v2/
+<f.st.... files/v2/betaGameDataCache.xml
+cd+++++++ files/v2/pr-masterthiefskyscraperstingreviewcopy/
+<f+++++++ files/v2/pr-masterthiefskyscraperstingreviewcopy/DRMConfigpr-masterthiefskyscraperstingreviewcopy.rdc
+<f+++++++ files/v2/pr-masterthiefskyscraperstingreviewcopy/Version.txt
+<f+++++++ files/v2/pr-masterthiefskyscraperstingreviewcopy/pr-masterthiefskyscraperstingreviewcopy.rga
+<f+++++++ files/v2/pr-masterthiefskyscraperstingreviewcopy/pr-masterthiefskyscraperstingreviewcopy.xml
+<f+++++++ files/v2/pr-masterthiefskyscraperstingreviewcopy/pr-masterthiefskyscraperstingreviewcopy_images.rar
+
+sent 98751817 bytes  received 680 bytes  5337972.81 bytes/sec
+total size is 1367413013  speedup is 13.85
+gameconsolebetatest push process ended at Wed Nov  3 12:18:21 PDT 2010
+-------------------------------------------------------
+Push process for gameconsolebetatest commenced at Mon Nov  8 14:29:10 PST 2010
+Mon Nov 8 14:29:10 PST 2010 Waiting for rsyncs to complete...
+Mon Nov 8 14:29:11 PST 2010 Done 
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 6990 bytes  received 134 bytes  4749.33 bytes/sec
+total size is 1367414794  speedup is 191944.81
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 6735 bytes  received 134 bytes  4579.33 bytes/sec
+total size is 1367414510  speedup is 199070.39
+gameconsolebetatest push process ended at Mon Nov  8 14:29:11 PST 2010
+-------------------------------------------------------
+Push process for gameconsolebetatest commenced at Fri Nov 12 09:41:21 PST 2010
+Fri Nov 12 09:41:21 PST 2010 Waiting for rsyncs to complete...
+Fri Nov 12 09:41:22 PST 2010 Done 
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 7016 bytes  received 116 bytes  4754.67 bytes/sec
+total size is 1576674666  speedup is 221070.48
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 6760 bytes  received 116 bytes  13752.00 bytes/sec
+total size is 1576674381  speedup is 229301.10
+gameconsolebetatest push process ended at Fri Nov 12 09:41:22 PST 2010
+-------------------------------------------------------
+Push process for gameconsolebetatest commenced at Mon Jan 10 11:18:40 PST 2011
+Mon Jan 10 11:18:40 PST 2011 Waiting for rsyncs to complete...
+Mon Jan 10 11:18:41 PST 2011 Done 
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f..t.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 7330 bytes  received 116 bytes  4964.00 bytes/sec
+total size is 1894706876  speedup is 254459.69
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 7074 bytes  received 116 bytes  14380.00 bytes/sec
+total size is 1894706591  speedup is 263519.69
+gameconsolebetatest push process ended at Mon Jan 10 11:18:41 PST 2011
+-------------------------------------------------------
+Push process for gameconsolebetatest commenced at Mon Jan 10 16:07:22 PST 2011
+Mon Jan 10 16:07:22 PST 2011 Waiting for rsyncs to complete...
+Mon Jan 10 16:07:22 PST 2011 Done 
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 7125 bytes  received 116 bytes  14482.00 bytes/sec
+total size is 1894707464  speedup is 261663.78
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 7224 bytes  received 116 bytes  14680.00 bytes/sec
+total size is 1894707492  speedup is 258134.54
+gameconsolebetatest push process ended at Mon Jan 10 16:07:22 PST 2011
+-------------------------------------------------------
+Push process for gameconsolebetatest commenced at Fri Jan 14 16:02:02 PST 2011
+Fri Jan 14 16:02:02 PST 2011 Waiting for rsyncs to complete...
+Fri Jan 14 16:02:03 PST 2011 Done 
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+<f.st.... files/v2/betaGameDataCache.xml
+
+sent 7830 bytes  received 150 bytes  5320.00 bytes/sec
+total size is 1894708352  speedup is 237432.12
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+<f.st.... files/v2/betaGameDataCache.xml
+
+sent 7717 bytes  received 150 bytes  5244.67 bytes/sec
+total size is 1894708380  speedup is 240842.55
+gameconsolebetatest push process ended at Fri Jan 14 16:02:03 PST 2011
+-------------------------------------------------------
+Push process for gameconsolebetatest commenced at Mon Jan 17 11:19:19 PST 2011
+Mon Jan 17 11:19:19 PST 2011 Waiting for rsyncs to complete...
+Mon Jan 17 11:19:20 PST 2011 Done 
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 7440 bytes  received 116 bytes  5037.33 bytes/sec
+total size is 2216970131  speedup is 293405.26
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 7658 bytes  received 116 bytes  5182.67 bytes/sec
+total size is 2216970277  speedup is 285177.55
+gameconsolebetatest push process ended at Mon Jan 17 11:19:20 PST 2011
+-------------------------------------------------------
+Push process for gameconsolebetatest commenced at Mon Jan 17 12:14:50 PST 2011
+Mon Jan 17 12:14:50 PST 2011 Waiting for rsyncs to complete...
+Mon Jan 17 12:14:50 PST 2011 Done 
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 7472 bytes  received 116 bytes  15176.00 bytes/sec
+total size is 2216971003  speedup is 292168.03
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 7658 bytes  received 116 bytes  15548.00 bytes/sec
+total size is 2216971083  speedup is 285177.65
+gameconsolebetatest push process ended at Mon Jan 17 12:14:50 PST 2011
+-------------------------------------------------------
+Push process for gameconsolebetatest commenced at Tue Feb 15 14:27:45 PST 2011
+Tue Feb 15 14:27:45 PST 2011 Waiting for rsyncs to complete...
+Tue Feb 15 14:27:46 PST 2011 Done 
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 7880 bytes  received 116 bytes  5330.67 bytes/sec
+total size is 2558725246  speedup is 320000.66
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 8053 bytes  received 116 bytes  5446.00 bytes/sec
+total size is 2558725326  speedup is 313223.81
+gameconsolebetatest push process ended at Tue Feb 15 14:27:46 PST 2011
+-------------------------------------------------------
+Push process for gameconsolebetatest commenced at Tue Feb 15 14:54:11 PST 2011
+Tue Feb 15 14:54:11 PST 2011 Waiting for rsyncs to complete...
+Tue Feb 15 14:54:11 PST 2011 Done 
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 7880 bytes  received 116 bytes  15992.00 bytes/sec
+total size is 2558726122  speedup is 320000.77
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 8053 bytes  received 116 bytes  16338.00 bytes/sec
+total size is 2558726150  speedup is 313223.91
+gameconsolebetatest push process ended at Tue Feb 15 14:54:11 PST 2011
+-------------------------------------------------------
+Push process for gameconsolebetatest commenced at Tue Feb 15 15:33:06 PST 2011
+Tue Feb 15 15:33:06 PST 2011 Waiting for rsyncs to complete...
+Tue Feb 15 15:33:06 PST 2011 Done 
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 7835 bytes  received 116 bytes  15902.00 bytes/sec
+total size is 2558727226  speedup is 321812.00
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 8053 bytes  received 116 bytes  16338.00 bytes/sec
+total size is 2558727407  speedup is 313224.07
+gameconsolebetatest push process ended at Tue Feb 15 15:33:06 PST 2011
+-------------------------------------------------------
+Push process for gameconsolebetatest commenced at Tue Feb 15 17:01:00 PST 2011
+Tue Feb 15 17:01:00 PST 2011 Waiting for rsyncs to complete...
+Tue Feb 15 17:01:01 PST 2011 Done 
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 8017 bytes  received 116 bytes  5422.00 bytes/sec
+total size is 2558728281  speedup is 314610.63
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 7865 bytes  received 116 bytes  5320.67 bytes/sec
+total size is 2558728100  speedup is 320602.44
+gameconsolebetatest push process ended at Tue Feb 15 17:01:01 PST 2011
+-------------------------------------------------------
+Push process for gameconsolebetatest commenced at Tue Feb 15 17:02:01 PST 2011
+Tue Feb 15 17:02:01 PST 2011 Waiting for rsyncs to complete...
+Tue Feb 15 17:02:01 PST 2011 Done 
+building file list ... done
+.d..t.... ./
+<f.st.... push-gameconsolebetatest-all.log
+<f..t.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+
+sent 9409 bytes  received 438 bytes  19694.00 bytes/sec
+total size is 2558728972  speedup is 259848.58
+building file list ... done
+.d..t.... ./
+<f.st.... push-gameconsolebetatest-all.log
+<f..t.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+
+sent 9508 bytes  received 432 bytes  19880.00 bytes/sec
+total size is 2558729000  speedup is 257417.40
+gameconsolebetatest push process ended at Tue Feb 15 17:02:01 PST 2011
+-------------------------------------------------------
+Push process for gameconsolebetatest commenced at Wed Mar  9 10:27:40 PST 2011
+Wed Mar 9 10:27:40 PST 2011 Waiting for rsyncs to complete...
+Wed Mar 9 10:27:41 PST 2011 Done 
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 8159 bytes  received 116 bytes  16550.00 bytes/sec
+total size is 2650766411  speedup is 320334.31
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 8481 bytes  received 116 bytes  5731.33 bytes/sec
+total size is 2650766696  speedup is 308336.24
+gameconsolebetatest push process ended at Wed Mar  9 10:27:41 PST 2011
+-------------------------------------------------------
+Push process for gameconsolebetatest commenced at Thu Mar 10 10:31:31 PST 2011
+Thu Mar 10 10:31:31 PST 2011 Waiting for rsyncs to complete...
+Thu Mar 10 10:31:31 PST 2011 Done 
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 8387 bytes  received 116 bytes  17006.00 bytes/sec
+total size is 2422293931  speedup is 284875.21
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+*deleting push-gameconsolebetatest
+
+sent 8280 bytes  received 116 bytes  16792.00 bytes/sec
+total size is 2422293926  speedup is 288505.71
+gameconsolebetatest push process ended at Thu Mar 10 10:31:31 PST 2011
+-------------------------------------------------------
+Push process for gameconsolebetatest commenced at Thu Mar 10 10:48:01 PST 2011
+Thu Mar 10 10:48:01 PST 2011 Waiting for rsyncs to complete...
+Thu Mar 10 10:48:18 PST 2011 Done 
+building file list ... done
+.d..t.... ./
+<f.st.... push-gameconsolebetatest-all.log
+<f..t.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+.d..t.... files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/
+<f..t.... files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/Version.txt
+<f.st.... files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/pr-guardiansofmagicamandasawakeningreviewcopy.rga
+
+sent 1276334 bytes  received 67648 bytes  76798.97 bytes/sec
+total size is 2419743010  speedup is 1800.43
+building file list ... done
+.d..t.... ./
+<f.st.... push-gameconsolebetatest-all.log
+<f..t.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+.d..t.... files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/
+<f..t.... files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/Version.txt
+<f.st.... files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/pr-guardiansofmagicamandasawakeningreviewcopy.rga
+
+sent 1276031 bytes  received 67648 bytes  141439.89 bytes/sec
+total size is 2419742678  speedup is 1800.83
+gameconsolebetatest push process ended at Thu Mar 10 10:48:18 PST 2011
+-------------------------------------------------------
+Push process for gameconsolebetatest commenced at Fri Mar 18 14:52:02 PDT 2011
+Fri Mar 18 14:52:02 PDT 2011 Waiting for rsyncs to complete...
+Fri Mar 18 14:52:02 PDT 2011 Done 
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+.d..t.... files/v2/
+*deleting files/v2/pr-marooned2secretsoftheakonireviewcopy/pr-marooned2secretsoftheakonireviewcopy_images.rar
+*deleting files/v2/pr-marooned2secretsoftheakonireviewcopy/
+*deleting files/v2/pr-heartsmedicineseasononereviewcopy/pr-heartsmedicineseasononereviewcopy_images.rar
+*deleting files/v2/pr-heartsmedicineseasononereviewcopy/pr-heartsmedicineseasononereviewcopy.xml
+*deleting files/v2/pr-heartsmedicineseasononereviewcopy/pr-heartsmedicineseasononereviewcopy.rga
+*deleting files/v2/pr-heartsmedicineseasononereviewcopy/Version.txt
+*deleting files/v2/pr-heartsmedicineseasononereviewcopy/DRMConfigpr-heartsmedicineseasononereviewcopy.rdc
+*deleting files/v2/pr-heartsmedicineseasononereviewcopy/
+*deleting files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/pr-guardiansofmagicamandasawakeningreviewcopy_images.rar
+*deleting files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/pr-guardiansofmagicamandasawakeningreviewcopy.xml
+*deleting files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/pr-guardiansofmagicamandasawakeningreviewcopy.rga
+*deleting files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/Version.txt
+*deleting files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/DRMConfigpr-guardiansofmagicamandasawakeningreviewcopy.rdc
+*deleting files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/
+*deleting files/v2/pr-dreammysteriescaseoftheredfoxreviewcopy/pr-guardiansofmagicamandasawakeningreviewcopy.rga
+*deleting files/v2/pr-dreammysteriescaseoftheredfoxreviewcopy/pr-dreammysteriescaseoftheredfoxreviewcopy_images.rar
+*deleting files/v2/pr-dreammysteriescaseoftheredfoxreviewcopy/pr-dreammysteriescaseoftheredfoxreviewcopy.xml
+*deleting files/v2/pr-dreammysteriescaseoftheredfoxreviewcopy/Version.txt
+*deleting files/v2/pr-dreammysteriescaseoftheredfoxreviewcopy/DRMConfigpr-dreammysteriescaseoftheredfoxreviewcopy.rdc
+*deleting files/v2/pr-dreammysteriescaseoftheredfoxreviewcopy/
+*deleting files/v2/pr-campfirelegendsthebabysitterreviewcopy/pr-campfirelegendsthebabysitterreviewcopy_images.rar
+*deleting files/v2/pr-campfirelegendsthebabysitterreviewcopy/pr-campfirelegendsthebabysitterreviewcopy.xml
+*deleting files/v2/pr-campfirelegendsthebabysitterreviewcopy/pr-campfirelegendsthebabysitterreviewcopy.rga
+*deleting files/v2/pr-campfirelegendsthebabysitterreviewcopy/DRMConfigpr-campfirelegendsthebabysitterreviewcopy.rdc
+*deleting files/v2/pr-campfirelegendsthebabysitterreviewcopy/
+*deleting files/v2/pr-ancientsecretsmysteryofthevanishingbridereviewcopy/pr-ancientsecretsmysteryofthevanishingbridereviewcopy_images.rar
+*deleting files/v2/pr-ancientsecretsmysteryofthevanishingbridereviewcopy/pr-ancientsecretsmysteryofthevanishingbridereviewcopy.xml
+*deleting files/v2/pr-ancientsecretsmysteryofthevanishingbridereviewcopy/pr-ancientsecretsmysteryofthevanishingbridereviewcopy.rga
+*deleting files/v2/pr-ancientsecretsmysteryofthevanishingbridereviewcopy/Version.txt
+*deleting files/v2/pr-ancientsecretsmysteryofthevanishingbridereviewcopy/DRMConfigpr-ancientsecretsmysteryofthevanishingbridereviewcopy.rdc
+*deleting files/v2/pr-ancientsecretsmysteryofthevanishingbridereviewcopy/
+
+sent 5325 bytes  received 128 bytes  10906.00 bytes/sec
+total size is 117937968  speedup is 21628.09
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+.d..t.... files/v2/
+*deleting files/v2/pr-marooned2secretsoftheakonireviewcopy/pr-marooned2secretsoftheakonireviewcopy_images.rar
+*deleting files/v2/pr-marooned2secretsoftheakonireviewcopy/
+*deleting files/v2/pr-heartsmedicineseasononereviewcopy/pr-heartsmedicineseasononereviewcopy_images.rar
+*deleting files/v2/pr-heartsmedicineseasononereviewcopy/pr-heartsmedicineseasononereviewcopy.xml
+*deleting files/v2/pr-heartsmedicineseasononereviewcopy/pr-heartsmedicineseasononereviewcopy.rga
+*deleting files/v2/pr-heartsmedicineseasononereviewcopy/Version.txt
+*deleting files/v2/pr-heartsmedicineseasononereviewcopy/DRMConfigpr-heartsmedicineseasononereviewcopy.rdc
+*deleting files/v2/pr-heartsmedicineseasononereviewcopy/
+*deleting files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/pr-guardiansofmagicamandasawakeningreviewcopy_images.rar
+*deleting files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/pr-guardiansofmagicamandasawakeningreviewcopy.xml
+*deleting files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/pr-guardiansofmagicamandasawakeningreviewcopy.rga
+*deleting files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/Version.txt
+*deleting files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/DRMConfigpr-guardiansofmagicamandasawakeningreviewcopy.rdc
+*deleting files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/
+*deleting files/v2/pr-dreammysteriescaseoftheredfoxreviewcopy/pr-guardiansofmagicamandasawakeningreviewcopy.rga
+*deleting files/v2/pr-dreammysteriescaseoftheredfoxreviewcopy/pr-dreammysteriescaseoftheredfoxreviewcopy_images.rar
+*deleting files/v2/pr-dreammysteriescaseoftheredfoxreviewcopy/pr-dreammysteriescaseoftheredfoxreviewcopy.xml
+*deleting files/v2/pr-dreammysteriescaseoftheredfoxreviewcopy/Version.txt
+*deleting files/v2/pr-dreammysteriescaseoftheredfoxreviewcopy/DRMConfigpr-dreammysteriescaseoftheredfoxreviewcopy.rdc
+*deleting files/v2/pr-dreammysteriescaseoftheredfoxreviewcopy/
+*deleting files/v2/pr-campfirelegendsthebabysitterreviewcopy/pr-campfirelegendsthebabysitterreviewcopy_images.rar
+*deleting files/v2/pr-campfirelegendsthebabysitterreviewcopy/pr-campfirelegendsthebabysitterreviewcopy.xml
+*deleting files/v2/pr-campfirelegendsthebabysitterreviewcopy/pr-campfirelegendsthebabysitterreviewcopy.rga
+*deleting files/v2/pr-campfirelegendsthebabysitterreviewcopy/DRMConfigpr-campfirelegendsthebabysitterreviewcopy.rdc
+*deleting files/v2/pr-campfirelegendsthebabysitterreviewcopy/
+*deleting files/v2/pr-ancientsecretsmysteryofthevanishingbridereviewcopy/pr-ancientsecretsmysteryofthevanishingbridereviewcopy_images.rar
+*deleting files/v2/pr-ancientsecretsmysteryofthevanishingbridereviewcopy/pr-ancientsecretsmysteryofthevanishingbridereviewcopy.xml
+*deleting files/v2/pr-ancientsecretsmysteryofthevanishingbridereviewcopy/pr-ancientsecretsmysteryofthevanishingbridereviewcopy.rga
+*deleting files/v2/pr-ancientsecretsmysteryofthevanishingbridereviewcopy/Version.txt
+*deleting files/v2/pr-ancientsecretsmysteryofthevanishingbridereviewcopy/DRMConfigpr-ancientsecretsmysteryofthevanishingbridereviewcopy.rdc
+*deleting files/v2/pr-ancientsecretsmysteryofthevanishingbridereviewcopy/
+
+sent 5593 bytes  received 128 bytes  11442.00 bytes/sec
+total size is 117938009  speedup is 20614.93
+gameconsolebetatest push process ended at Fri Mar 18 14:52:02 PDT 2011
+-------------------------------------------------------

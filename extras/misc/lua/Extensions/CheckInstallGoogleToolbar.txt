@@ -1,0 +1,523 @@
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: CheckInstallGoogleToolbar.clf
+                         ** global header start **
+0000  1B4C7561           header signature: "\27Lua"
+0004  50                 version (major:minor hex digits)
+0005  01                 endianness (1=little endian)
+0006  04                 size of int (bytes)
+0007  04                 size of size_t (bytes)
+0008  04                 size of Instruction (bytes)
+0009  06                 size of OP (bits)
+000A  08                 size of A (bits)
+000B  09                 size of B (bits)
+000C  09                 size of C (bits)
+000D  08                 size of number (bytes)
+000E  B6099368E7F57D41   sample number (double)
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+                         
+0016                     ** function [0] definition (level 1)
+                         ** start of function **
+0016  2F000000           string size (47)
+001A  402E5C437573746F+  "@.\\Custo"
+0022  6D53637269707473+  "mScripts"
+002A  5C436865636B496E+  "\\CheckIn"
+0032  7374616C6C476F6F+  "stallGoo"
+003A  676C65546F6F6C62+  "gleToolb"
+0042  61722E6C756100     "ar.lua\0"
+                         source name: @.\\CustomScripts\\CheckInstallGoogleToolbar.lua
+0049  00000000           line defined (0)
+004D  00                 nups (0)
+004E  00                 numparams (0)
+004F  00                 is_vararg (0)
+0050  02                 maxstacksize (2)
+                         * lines:
+0051  03000000           sizelineinfo (3)
+                         [pc] (line)
+0055  31000000           [1] (49)
+0059  0B000000           [2] (11)
+005D  31000000           [3] (49)
+                         * locals:
+0061  00000000           sizelocvars (0)
+                         * upvalues:
+0065  00000000           sizeupvalues (0)
+                         * constants:
+0069  01000000           sizek (1)
+006D  04                 const type 4
+006E  1A000000           string size (26)
+0072  436865636B496E73+  "CheckIns"
+007A  74616C6C476F6F67+  "tallGoog"
+0082  6C65546F6F6C6261+  "leToolba"
+008A  7200               "r\0"
+                         const [0]: "CheckInstallGoogleToolbar"
+                         * functions:
+008C  01000000           sizep (1)
+                         
+0090                     ** function [0] definition (level 2)
+                         ** start of function **
+0090  00000000           string size (0)
+                         source name: (none)
+0094  0B000000           line defined (11)
+0098  00                 nups (0)
+0099  00                 numparams (0)
+009A  00                 is_vararg (0)
+009B  0D                 maxstacksize (13)
+                         * lines:
+009C  7B000000           sizelineinfo (123)
+                         [pc] (line)
+00A0  0C000000           [001] (12)
+00A4  0C000000           [002] (12)
+00A8  0C000000           [003] (12)
+00AC  0E000000           [004] (14)
+00B0  0E000000           [005] (14)
+00B4  0E000000           [006] (14)
+00B8  0E000000           [007] (14)
+00BC  0E000000           [008] (14)
+00C0  0E000000           [009] (14)
+00C4  0E000000           [010] (14)
+00C8  0E000000           [011] (14)
+00CC  0E000000           [012] (14)
+00D0  0E000000           [013] (14)
+00D4  0E000000           [014] (14)
+00D8  0E000000           [015] (14)
+00DC  0F000000           [016] (15)
+00E0  0F000000           [017] (15)
+00E4  0F000000           [018] (15)
+00E8  0F000000           [019] (15)
+00EC  0F000000           [020] (15)
+00F0  0F000000           [021] (15)
+00F4  12000000           [022] (18)
+00F8  13000000           [023] (19)
+00FC  13000000           [024] (19)
+0100  13000000           [025] (19)
+0104  13000000           [026] (19)
+0108  14000000           [027] (20)
+010C  15000000           [028] (21)
+0110  15000000           [029] (21)
+0114  16000000           [030] (22)
+0118  16000000           [031] (22)
+011C  17000000           [032] (23)
+0120  18000000           [033] (24)
+0124  18000000           [034] (24)
+0128  19000000           [035] (25)
+012C  19000000           [036] (25)
+0130  19000000           [037] (25)
+0134  19000000           [038] (25)
+0138  19000000           [039] (25)
+013C  19000000           [040] (25)
+0140  19000000           [041] (25)
+0144  19000000           [042] (25)
+0148  1B000000           [043] (27)
+014C  1B000000           [044] (27)
+0150  1B000000           [045] (27)
+0154  1B000000           [046] (27)
+0158  1B000000           [047] (27)
+015C  1C000000           [048] (28)
+0160  1C000000           [049] (28)
+0164  1D000000           [050] (29)
+0168  1D000000           [051] (29)
+016C  1D000000           [052] (29)
+0170  1D000000           [053] (29)
+0174  1D000000           [054] (29)
+0178  1D000000           [055] (29)
+017C  1D000000           [056] (29)
+0180  1D000000           [057] (29)
+0184  1D000000           [058] (29)
+0188  1D000000           [059] (29)
+018C  1D000000           [060] (29)
+0190  1D000000           [061] (29)
+0194  1E000000           [062] (30)
+0198  1E000000           [063] (30)
+019C  21000000           [064] (33)
+01A0  21000000           [065] (33)
+01A4  22000000           [066] (34)
+01A8  23000000           [067] (35)
+01AC  24000000           [068] (36)
+01B0  24000000           [069] (36)
+01B4  24000000           [070] (36)
+01B8  24000000           [071] (36)
+01BC  24000000           [072] (36)
+01C0  24000000           [073] (36)
+01C4  25000000           [074] (37)
+01C8  25000000           [075] (37)
+01CC  25000000           [076] (37)
+01D0  26000000           [077] (38)
+01D4  26000000           [078] (38)
+01D8  26000000           [079] (38)
+01DC  26000000           [080] (38)
+01E0  26000000           [081] (38)
+01E4  26000000           [082] (38)
+01E8  26000000           [083] (38)
+01EC  26000000           [084] (38)
+01F0  26000000           [085] (38)
+01F4  26000000           [086] (38)
+01F8  28000000           [087] (40)
+01FC  28000000           [088] (40)
+0200  28000000           [089] (40)
+0204  28000000           [090] (40)
+0208  28000000           [091] (40)
+020C  28000000           [092] (40)
+0210  28000000           [093] (40)
+0214  28000000           [094] (40)
+0218  28000000           [095] (40)
+021C  28000000           [096] (40)
+0220  28000000           [097] (40)
+0224  28000000           [098] (40)
+0228  28000000           [099] (40)
+022C  28000000           [100] (40)
+0230  28000000           [101] (40)
+0234  28000000           [102] (40)
+0238  28000000           [103] (40)
+023C  29000000           [104] (41)
+0240  2A000000           [105] (42)
+0244  2A000000           [106] (42)
+0248  2B000000           [107] (43)
+024C  2B000000           [108] (43)
+0250  2F000000           [109] (47)
+0254  2F000000           [110] (47)
+0258  2F000000           [111] (47)
+025C  2F000000           [112] (47)
+0260  2F000000           [113] (47)
+0264  2F000000           [114] (47)
+0268  2F000000           [115] (47)
+026C  2F000000           [116] (47)
+0270  2F000000           [117] (47)
+0274  2F000000           [118] (47)
+0278  2F000000           [119] (47)
+027C  2F000000           [120] (47)
+0280  30000000           [121] (48)
+0284  30000000           [122] (48)
+0288  31000000           [123] (49)
+                         * locals:
+028C  08000000           sizelocvars (8)
+0290  07000000           string size (7)
+0294  70726F67496400     "progId"
+                         local [0]: progId
+029B  16000000             startpc (22)
+029F  7A000000             endpc   (122)
+02A3  07000000           string size (7)
+02A7  677462436F6D00     "gtbCom"
+                         local [1]: gtbCom
+02AE  1A000000             startpc (26)
+02B2  7A000000             endpc   (122)
+02B6  07000000           string size (7)
+02BA  726561736F6E00     "reason"
+                         local [2]: reason
+02C1  1B000000             startpc (27)
+02C5  7A000000             endpc   (122)
+02C9  06000000           string size (6)
+02CD  77696E333200       "win32"
+                         local [3]: win32
+02D3  1F000000             startpc (31)
+02D7  3F000000             endpc   (63)
+02DB  08000000           string size (8)
+02DF  646C6C5061746800   "dllPath"
+                         local [4]: dllPath
+02E7  20000000             startpc (32)
+02EB  3F000000             endpc   (63)
+02EF  08000000           string size (8)
+02F3  7265675061746800   "regPath"
+                         local [5]: regPath
+02FB  22000000             startpc (34)
+02FF  3F000000             endpc   (63)
+0303  0C000000           string size (12)
+0307  7265636F72644F66+  "recordOf"
+030F  66657200           "fer\0"
+                         local [6]: recordOffer
+0313  42000000             startpc (66)
+0317  6C000000             endpc   (108)
+031B  10000000           string size (16)
+031F  646F6E745265636F+  "dontReco"
+0327  72644F6666657200   "rdOffer\0"
+                         local [7]: dontRecordOffer
+032F  43000000             startpc (67)
+0333  6C000000             endpc   (108)
+                         * upvalues:
+0337  00000000           sizeupvalues (0)
+                         * constants:
+033B  1F000000           sizek (31)
+033F  04                 const type 4
+0340  1A000000           string size (26)
+0344  675F636865636B47+  "g_checkG"
+034C  6F6F676C65546F6F+  "oogleToo"
+0354  6C62617253746174+  "lbarStat"
+035C  6500               "e\0"
+                         const [0]: "g_checkGoogleToolbarState"
+035E  03                 const type 3
+035F  000000000000F03F   const [1]: (1)
+0367  03                 const type 3
+0368  000000000000F0BF   const [2]: (-1)
+0370  04                 const type 4
+0371  03000000           string size (3)
+0375  696F00             "io"
+                         const [3]: "io"
+0378  04                 const type 4
+0379  06000000           string size (6)
+037D  777269746500       "write"
+                         const [4]: "write"
+0383  04                 const type 4
+0384  02000000           string size (2)
+0388  0A00               "\n"
+                         const [5]: "\n"
+038A  04                 const type 4
+038B  03000000           string size (3)
+038F  6F7300             "os"
+                         const [6]: "os"
+0392  04                 const type 4
+0393  05000000           string size (5)
+0397  6461746500         "date"
+                         const [7]: "date"
+039C  04                 const type 4
+039D  04000000           string size (4)
+03A1  25632000           "%c "
+                         const [8]: "%c "
+03A5  04                 const type 4
+03A6  31000000           string size (49)
+03AA  436865636B496E73+  "CheckIns"
+03B2  74616C6C476F6F67+  "tallGoog"
+03BA  6C65546F6F6C6261+  "leToolba"
+03C2  722072657475726E+  "r return"
+03CA  696E672063616368+  "ing cach"
+03D2  6564207265707920+  "ed repy "
+03DA  00                 "\0"
+                         const [9]: "CheckInstallGoogleToolbar returning cached repy "
+03DB  04                 const type 4
+03DC  09000000           string size (9)
+03E0  746F737472696E67+  "tostring"
+03E8  00                 "\0"
+                         const [10]: "tostring"
+03E9  03                 const type 3
+03EA  0000000000000000   const [11]: (0)
+03F2  04                 const type 4
+03F3  0B000000           string size (11)
+03F7  677462436F6D2E67+  "gtbCom.g"
+03FF  746200             "tb\0"
+                         const [12]: "gtbCom.gtb"
+0402  04                 const type 4
+0403  07000000           string size (7)
+0407  6C7561636F6D00     "luacom"
+                         const [13]: "luacom"
+040E  04                 const type 4
+040F  0D000000           string size (13)
+0413  4372656174654F62+  "CreateOb"
+041B  6A65637400         "ject\0"
+                         const [14]: "CreateObject"
+0420  04                 const type 4
+0421  0D000000           string size (13)
+0425  57696E3332496E74+  "Win32Int"
+042D  65726F7000         "erop\0"
+                         const [15]: "Win32Interop"
+0432  04                 const type 4
+0433  0F000000           string size (15)
+0437  62696E5C67746243+  "bin\\gtbC"
+043F  6F6D2E646C6C00     "om.dll\0"
+                         const [16]: "bin\\gtbCom.dll"
+0446  04                 const type 4
+0447  0B000000           string size (11)
+044B  434F4D5265675061+  "COMRegPa"
+0453  746800             "th\0"
+                         const [17]: "COMRegPath"
+0456  04                 const type 4
+0457  0E000000           string size (14)
+045B  4C61756E63685072+  "LaunchPr"
+0463  6F6365737300       "ocess\0"
+                         const [18]: "LaunchProcess"
+0469  04                 const type 4
+046A  06000000           string size (6)
+046E  202F73202200       " /s \""
+                         const [19]: " /s \""
+0474  04                 const type 4
+0475  02000000           string size (2)
+0479  2200               "\""
+                         const [20]: "\""
+047B  04                 const type 4
+047C  13000000           string size (19)
+0480  4641494C45442054+  "FAILED T"
+0488  4F20437265617465+  "O Create"
+0490  642000             "d \0"
+                         const [21]: "FAILED TO Created "
+0493  04                 const type 4
+0494  07000000           string size (7)
+0498  2066726F6D2000     " from "
+                         const [22]: " from "
+049F  04                 const type 4
+04A0  02000000           string size (2)
+04A4  7300               "s"
+                         const [23]: "s"
+04A6  04                 const type 4
+04A7  06000000           string size (6)
+04AB  7063616C6C00       "pcall"
+                         const [24]: "pcall"
+04B1  04                 const type 4
+04B2  0C000000           string size (12)
+04B6  73686F756C644F66+  "shouldOf"
+04BE  66657200           "fer\0"
+                         const [25]: "shouldOffer"
+04C2  04                 const type 4
+04C3  29000000           string size (41)
+04C7  4641494C45442054+  "FAILED T"
+04CF  4F2063616C6C2073+  "O call s"
+04D7  686F756C644F6666+  "houldOff"
+04DF  6572206F6E206774+  "er on gt"
+04E7  62436F6D2E646C6C+  "bCom.dll"
+04EF  00                 "\0"
+                         const [26]: "FAILED TO call shouldOffer on gtbCom.dll"
+04F0  04                 const type 4
+04F1  0E000000           string size (14)
+04F5  73686F756C644F66+  "shouldOf"
+04FD  666572202800       "fer (\0"
+                         const [27]: "shouldOffer ("
+0503  04                 const type 4
+0504  0D000000           string size (13)
+0508  292072657475726E+  ") return"
+0510  6564202800         "ed (\0"
+                         const [28]: ") returned ("
+0515  04                 const type 4
+0516  02000000           string size (2)
+051A  2900               ")"
+                         const [29]: ")"
+051C  04                 const type 4
+051D  20000000           string size (32)
+0521  444F204E4F54206F+  "DO NOT o"
+0529  6666657220746F6F+  "ffer too"
+0531  6C6261722E205265+  "lbar. Re"
+0539  61736F6E203D2000   "ason = \0"
+                         const [30]: "DO NOT offer toolbar. Reason = "
+                         * functions:
+0541  00000000           sizep (0)
+                         * code:
+0545  7B000000           sizecode (123)
+0549  05000000           [001] getglobal  0   0        ; g_checkGoogleToolbarState
+054D  153F0001           [002] eq         1   0   252  ; -1, to [4] if false
+0551  54048000           [003] jmp        18           ; to [22]
+0555  C5000000           [004] getglobal  0   3        ; io
+0559  863F0000           [005] gettable   0   0   254  ; "write"
+055D  41010001           [006] loadk      1   5        ; "\n"
+0561  85010002           [007] getglobal  2   6        ; os
+0565  46400102           [008] gettable   2   2   257  ; "date"
+0569  01020003           [009] loadk      3   8        ; "%c "
+056D  99000102           [010] call       2   2   2  
+0571  41020003           [011] loadk      3   9        ; "CheckInstallGoogleToolbar returning cached repy "
+0575  85020004           [012] getglobal  4   10       ; tostring
+0579  05000005           [013] getglobal  5   0        ; g_checkGoogleToolbarState
+057D  19000104           [014] call       4   2   0  
+0581  59000000           [015] call       0   0   1  
+0585  05000000           [016] getglobal  0   0        ; g_checkGoogleToolbarState
+0589  55410001           [017] eq         1   0   261  ; 0, to [19] if false
+058D  14008000           [018] jmp        1            ; to [20]
+0591  42000000           [019] loadbool   0   0   1    ; false, to [21]
+0595  02800000           [020] loadbool   0   1   0    ; true
+0599  1B000100           [021] return     0   2      
+059D  01030000           [022] loadk      0   12       ; "gtbCom.gtb"
+05A1  45030001           [023] getglobal  1   13       ; luacom
+05A5  06C20001           [024] gettable   1   1   264  ; "CreateObject"
+05A9  00000002           [025] move       2   0      
+05AD  99000101           [026] call       1   2   2  
+05B1  81000002           [027] loadk      2   2        ; -1
+05B5  58800001           [028] test       1   1   1    ; to [30] if false
+05B9  54088000           [029] jmp        34           ; to [64]
+05BD  C5030003           [030] getglobal  3   15       ; Win32Interop
+05C1  99800003           [031] call       3   1   2  
+05C5  01040004           [032] loadk      4   16       ; "bin\\gtbCom.dll"
+05C9  C6C20105           [033] gettable   5   3   267  ; "COMRegPath"
+05CD  99800005           [034] call       5   1   2  
+05D1  06C30106           [035] gettable   6   3   268  ; "LaunchProcess"
+05D5  00800207           [036] move       7   5      
+05D9  C1040008           [037] loadk      8   19       ; " /s \""
+05DD  00000209           [038] move       9   4      
+05E1  0105000A           [039] loadk      10  20       ; "\""
+05E5  93020408           [040] concat     8   8   10 
+05E9  02800009           [041] loadbool   9   1   0    ; true
+05ED  59000206           [042] call       6   4   1  
+05F1  45030006           [043] getglobal  6   13       ; luacom
+05F5  06420306           [044] gettable   6   6   264  ; "CreateObject"
+05F9  00000007           [045] move       7   0      
+05FD  99000106           [046] call       6   2   2  
+0601  00000301           [047] move       1   6      
+0605  58800001           [048] test       1   1   1    ; to [50] if false
+0609  54038000           [049] jmp        14           ; to [64]
+060D  C5000006           [050] getglobal  6   3        ; io
+0611  863F0306           [051] gettable   6   6   254  ; "write"
+0615  41010007           [052] loadk      7   5        ; "\n"
+0619  85010008           [053] getglobal  8   6        ; os
+061D  46400408           [054] gettable   8   8   257  ; "date"
+0621  01020009           [055] loadk      9   8        ; "%c "
+0625  99000108           [056] call       8   2   2  
+0629  41050009           [057] loadk      9   21       ; "FAILED TO Created "
+062D  0000000A           [058] move       10  0      
+0631  8105000B           [059] loadk      11  22       ; " from "
+0635  0000020C           [060] move       12  4      
+0639  59800306           [061] call       6   7   1  
+063D  02000006           [062] loadbool   6   0   0    ; false
+0641  1B000106           [063] return     6   2      
+0645  18800001           [064] test       1   1   0    ; to [66] if true
+0649  940A8000           [065] jmp        43           ; to [109]
+064D  02800003           [066] loadbool   3   1   0    ; true
+0651  C1020004           [067] loadk      4   11       ; 0
+0655  05060005           [068] getglobal  5   24       ; pcall
+0659  C6C40006           [069] gettable   6   1   275  ; "shouldOffer"
+065D  00800107           [070] move       7   3      
+0661  D9800105           [071] call       5   3   3  
+0665  00000302           [072] move       2   6      
+0669  C7050005           [073] setglobal  5   23       ; s
+066D  C5050005           [074] getglobal  5   23       ; s
+0671  58800205           [075] test       5   5   1    ; to [77] if false
+0675  54028000           [076] jmp        10           ; to [87]
+0679  C5000005           [077] getglobal  5   3        ; io
+067D  86BF0205           [078] gettable   5   5   254  ; "write"
+0681  41010006           [079] loadk      6   5        ; "\n"
+0685  85010007           [080] getglobal  7   6        ; os
+0689  46C00307           [081] gettable   7   7   257  ; "date"
+068D  01020008           [082] loadk      8   8        ; "%c "
+0691  99000107           [083] call       7   2   2  
+0695  81060008           [084] loadk      8   26       ; "FAILED TO call shouldOffer on gtbCom.dll"
+0699  59000205           [085] call       5   4   1  
+069D  54058000           [086] jmp        22           ; to [109]
+06A1  C5000005           [087] getglobal  5   3        ; io
+06A5  86BF0205           [088] gettable   5   5   254  ; "write"
+06A9  41010006           [089] loadk      6   5        ; "\n"
+06AD  85010007           [090] getglobal  7   6        ; os
+06B1  46C00307           [091] gettable   7   7   257  ; "date"
+06B5  01020008           [092] loadk      8   8        ; "%c "
+06B9  99000107           [093] call       7   2   2  
+06BD  C1060008           [094] loadk      8   27       ; "shouldOffer ("
+06C1  85020009           [095] getglobal  9   10       ; tostring
+06C5  0080010A           [096] move       10  3      
+06C9  99000109           [097] call       9   2   2  
+06CD  0107000A           [098] loadk      10  28       ; ") returned ("
+06D1  8502000B           [099] getglobal  11  10       ; tostring
+06D5  0000010C           [100] move       12  2      
+06D9  9900010B           [101] call       11  2   2  
+06DD  4107000C           [102] loadk      12  29       ; ")"
+06E1  59000405           [103] call       5   8   1  
+06E5  07000002           [104] setglobal  2   0        ; g_checkGoogleToolbarState
+06E9  95808200           [105] eq         0   261 2    ; 0, to [107] if true
+06ED  54008000           [106] jmp        2            ; to [109]
+06F1  02800005           [107] loadbool   5   1   0    ; true
+06F5  1B000105           [108] return     5   2      
+06F9  C5000003           [109] getglobal  3   3        ; io
+06FD  86BF0103           [110] gettable   3   3   254  ; "write"
+0701  41010004           [111] loadk      4   5        ; "\n"
+0705  85010005           [112] getglobal  5   6        ; os
+0709  46C00205           [113] gettable   5   5   257  ; "date"
+070D  01020006           [114] loadk      6   8        ; "%c "
+0711  99000105           [115] call       5   2   2  
+0715  81070006           [116] loadk      6   30       ; "DO NOT offer toolbar. Reason = "
+0719  85020007           [117] getglobal  7   10       ; tostring
+071D  00000108           [118] move       8   2      
+0721  19000107           [119] call       7   2   0  
+0725  59000003           [120] call       3   0   1  
+0729  02000003           [121] loadbool   3   0   0    ; false
+072D  1B000103           [122] return     3   2      
+0731  1B800000           [123] return     0   1      
+                         ** end of function **
+
+                         * code:
+0735  03000000           sizecode (3)
+0739  22000000           [1] closure    0   0        ; 0 upvalues
+073D  07000000           [2] setglobal  0   0        ; CheckInstallGoogleToolbar
+0741  1B800000           [3] return     0   1      
+                         ** end of function **
+
+0745                     ** end of chunk **

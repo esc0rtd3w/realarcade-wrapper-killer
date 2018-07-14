@@ -1,0 +1,1719 @@
+#### file to recache: /gameconsole/realarcadev21/games/dip/rescueteam3/rescueteam3.rga at Fri May  3 13:26:01 PDT 2013
+running purge/recache on origin-cache01.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 339328674</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.22 (Ubuntu)
+Last-Modified: Thu, 02 May 2013 08:06:10 GMT
+ETag: "35ded8a-4dbb7b50f0080"
+Cache-Control: max-age=33696000
+Expires: Wed, 28 May 2014 20:26:06 GMT
+Content-Length: 56487306
+Accept-Ranges: bytes
+Date: Fri, 03 May 2013 20:26:19 GMT
+X-Varnish: 339328679 339328675
+Age: 13
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache02.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 300468258</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Thu, 02 May 2013 08:06:10 GMT
+ETag: "35ded8a-4dbb7b50f0080"
+Cache-Control: max-age=33696000
+Expires: Wed, 28 May 2014 20:26:16 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 56487306
+Accept-Ranges: bytes
+Date: Fri, 03 May 2013 20:27:09 GMT
+X-Varnish: 300468262 300468260
+Age: 2
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache03.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 319306435</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Thu, 02 May 2013 08:06:10 GMT
+ETag: "35ded8a-4dbb7b50f0080"
+Cache-Control: max-age=33696000
+Expires: Wed, 28 May 2014 20:26:19 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 56487306
+Accept-Ranges: bytes
+Date: Fri, 03 May 2013 20:26:27 GMT
+X-Varnish: 319306444 319306437
+Age: 5
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache04.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1829281112</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Thu, 02 May 2013 08:06:10 GMT
+ETag: "35ded8a-4dbb7b50f0080"
+Cache-Control: max-age=33696000
+Expires: Wed, 28 May 2014 20:26:25 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 56487306
+Accept-Ranges: bytes
+Date: Fri, 03 May 2013 20:27:29 GMT
+X-Varnish: 1829281124 1829281114
+Age: 13
+Via: 1.1 varnish
+Connection: keep-alive
+
+#### file to recache: /gameconsole/realarcadev21/games/dip/treasureofthecaribbeanseas/treasureofthecaribbeanseas.rga at Mon May  6 15:03:02 PDT 2013
+running purge/recache on origin-cache01.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 339506654</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.22 (Ubuntu)
+Last-Modified: Mon, 06 May 2013 14:36:15 GMT
+ETag: "cba6124-4dc0d9f7875c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 31 May 2014 22:03:06 GMT
+Content-Length: 213541156
+Accept-Ranges: bytes
+Date: Mon, 06 May 2013 22:03:48 GMT
+X-Varnish: 339506728 339506656
+Age: 40
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache02.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 300631413</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Mon, 06 May 2013 14:36:15 GMT
+ETag: "cba6124-4dc0d9f7875c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 31 May 2014 22:03:45 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 213541156
+Accept-Ranges: bytes
+Date: Mon, 06 May 2013 22:04:44 GMT
+X-Varnish: 300631422 300631414
+Age: 7
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache03.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 565523668</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+#### file to recache: /gameconsole/realarcadev21/games/dip/treasureofthecaribbeanseas/treasureofthecaribbeanseas.rga at Mon May  6 15:04:01 PDT 2013
+running purge/recache on origin-cache01.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 339506739</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.22 (Ubuntu)
+Last-Modified: Mon, 06 May 2013 14:36:15 GMT
+ETag: "cba6124-4dc0d9f7875c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 31 May 2014 22:03:06 GMT
+Content-Length: 213541156
+Accept-Ranges: bytes
+Date: Mon, 06 May 2013 22:04:14 GMT
+X-Varnish: 339506746 339506656
+Age: 66
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache02.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 300631431</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Mon, 06 May 2013 14:36:15 GMT
+ETag: "cba6124-4dc0d9f7875c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 31 May 2014 22:03:45 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 213541156
+Accept-Ranges: bytes
+Date: Mon, 06 May 2013 22:05:09 GMT
+X-Varnish: 300631436 300631414
+Age: 32
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache03.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 565523684</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Mon, 06 May 2013 14:36:15 GMT
+ETag: "cba6124-4dc0d9f7875c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 31 May 2014 22:03:53 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 213541156
+Accept-Ranges: bytes
+Date: Mon, 06 May 2013 22:04:56 GMT
+X-Varnish: 565523700 565523670
+Age: 59
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache04.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1829451617</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+#### file to recache: /gameconsole/realarcadev21/games/dip/treasureofthecaribbeanseas/treasureofthecaribbeanseas.rga at Mon May  6 15:05:01 PDT 2013
+running purge/recache on origin-cache01.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 339506801</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Mon, 06 May 2013 14:36:15 GMT
+ETag: "cba6124-4dc0d9f7875c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 31 May 2014 22:03:53 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 213541156
+Accept-Ranges: bytes
+Date: Mon, 06 May 2013 22:05:07 GMT
+X-Varnish: 565523709 565523670
+Age: 70
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache04.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1829451625</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Mon, 06 May 2013 14:36:15 GMT
+ETag: "cba6124-4dc0d9f7875c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 31 May 2014 22:04:53 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 213541156
+Accept-Ranges: bytes
+Date: Mon, 06 May 2013 22:05:59 GMT
+X-Varnish: 1829451628 1829451619
+Age: 14
+Via: 1.1 varnish
+Connection: keep-alive
+
+HTTP/1.1 200 OK
+Server: Apache/2.2.22 (Ubuntu)
+Last-Modified: Mon, 06 May 2013 14:36:15 GMT
+ETag: "cba6124-4dc0d9f7875c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 31 May 2014 22:03:06 GMT
+Content-Length: 213541156
+Accept-Ranges: bytes
+Date: Mon, 06 May 2013 22:05:19 GMT
+X-Varnish: 339506807 339506656
+Age: 131
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache02.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 300631495</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Mon, 06 May 2013 14:36:15 GMT
+ETag: "cba6124-4dc0d9f7875c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 31 May 2014 22:04:53 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 213541156
+Accept-Ranges: bytes
+Date: Mon, 06 May 2013 22:06:08 GMT
+X-Varnish: 1829451634 1829451619
+Age: 23
+Via: 1.1 varnish
+Connection: keep-alive
+
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Mon, 06 May 2013 14:36:15 GMT
+ETag: "cba6124-4dc0d9f7875c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 31 May 2014 22:03:45 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 213541156
+Accept-Ranges: bytes
+Date: Mon, 06 May 2013 22:06:13 GMT
+X-Varnish: 300631502 300631414
+Age: 97
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache03.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 565523713</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Mon, 06 May 2013 14:36:15 GMT
+ETag: "cba6124-4dc0d9f7875c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 31 May 2014 22:03:53 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 213541156
+Accept-Ranges: bytes
+Date: Mon, 06 May 2013 22:05:51 GMT
+X-Varnish: 565523720 565523670
+Age: 114
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache04.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1829451665</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Mon, 06 May 2013 14:36:15 GMT
+ETag: "cba6124-4dc0d9f7875c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 31 May 2014 22:04:53 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 213541156
+Accept-Ranges: bytes
+Date: Mon, 06 May 2013 22:06:46 GMT
+X-Varnish: 1829451689 1829451619
+Age: 60
+Via: 1.1 varnish
+Connection: keep-alive
+
+#### file to recache: /gameconsole/realarcadev21/games/dip/treasureofthecaribbeanseas/treasureofthecaribbeanseas.rga at Mon May  6 15:25:01 PDT 2013
+running purge/recache on origin-cache01.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 339507595</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.22 (Ubuntu)
+Last-Modified: Mon, 06 May 2013 14:36:15 GMT
+ETag: "cba6124-4dc0d9f7875c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 31 May 2014 22:03:06 GMT
+Content-Length: 213541156
+Accept-Ranges: bytes
+Date: Mon, 06 May 2013 22:25:13 GMT
+X-Varnish: 339507599 339506656
+Age: 1325
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache02.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 300632051</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Mon, 06 May 2013 14:36:15 GMT
+ETag: "cba6124-4dc0d9f7875c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 31 May 2014 22:03:45 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 213541156
+Accept-Ranges: bytes
+Date: Mon, 06 May 2013 22:26:07 GMT
+X-Varnish: 300632056 300631414
+Age: 1290
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache03.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 565524313</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Mon, 06 May 2013 14:36:15 GMT
+ETag: "cba6124-4dc0d9f7875c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 31 May 2014 22:03:53 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 213541156
+Accept-Ranges: bytes
+Date: Mon, 06 May 2013 22:25:40 GMT
+X-Varnish: 565524330 565523670
+Age: 1304
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache04.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1829452178</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Mon, 06 May 2013 14:36:15 GMT
+ETag: "cba6124-4dc0d9f7875c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 31 May 2014 22:04:53 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 213541156
+Accept-Ranges: bytes
+Date: Mon, 06 May 2013 22:26:35 GMT
+X-Varnish: 1829452184 1829451619
+Age: 1250
+Via: 1.1 varnish
+Connection: keep-alive
+
+#### file to recache: /gameconsole/gamehouse/pub/amac-lettersfromnowhere.dmg at Mon May 20 09:08:01 PDT 2013
+running purge/recache on origin-cache01.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 340087942</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Tue, 07 May 2013 15:20:15 GMT
+ETag: "a33467a-4dc225aab09c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:08:03 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 171132538
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:08:50 GMT
+X-Varnish: 340087977 340087944
+Age: 37
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache02.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 301186645</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.22 (Ubuntu)
+Last-Modified: Tue, 07 May 2013 15:20:15 GMT
+ETag: "a33467a-4dc225aab09c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:08:51 GMT
+Content-Type: application/x-apple-diskimage
+Content-Length: 171132538
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:09:43 GMT
+X-Varnish: 301186649 301186647
+Age: 5
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache03.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1677566844</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Tue, 07 May 2013 15:20:15 GMT
+ETag: "a33467a-4dc225aab09c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:08:47 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 171132538
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:09:25 GMT
+X-Varnish: 1677566862 1677566845
+Age: 30
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache04.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1830014425</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Tue, 07 May 2013 15:20:15 GMT
+ETag: "a33467a-4dc225aab09c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:09:17 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 171132538
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:10:20 GMT
+X-Varnish: 1830014431 1830014427
+Age: 5
+Via: 1.1 varnish
+Connection: keep-alive
+
+#### file to recache: /gameconsole/gamehouse/pub/amac-sevenseassolitaire.dmg at Mon May 20 09:08:01 PDT 2013
+running purge/recache on origin-cache01.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 340087998</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Wed, 08 May 2013 11:53:02 GMT
+ETag: "6b7b67a-4dc339371e380"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:09:24 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 112703098
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:10:05 GMT
+X-Varnish: 340088028 340088000
+Age: 31
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache02.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 301186664</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.22 (Ubuntu)
+Last-Modified: Wed, 08 May 2013 11:53:02 GMT
+ETag: "6b7b67a-4dc339371e380"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:10:04 GMT
+Content-Type: application/x-apple-diskimage
+Content-Length: 112703098
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:10:56 GMT
+X-Varnish: 301186667 301186665
+Age: 3
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache03.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1677566875</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Wed, 08 May 2013 11:53:02 GMT
+ETag: "6b7b67a-4dc339371e380"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:10:00 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 112703098
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:10:27 GMT
+X-Varnish: 1677566885 1677566877
+Age: 18
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache04.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1830014449</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Wed, 08 May 2013 11:53:02 GMT
+ETag: "6b7b67a-4dc339371e380"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:10:19 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 112703098
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:11:20 GMT
+X-Varnish: 1830014461 1830014451
+Age: 4
+Via: 1.1 varnish
+Connection: keep-alive
+
+#### file to recache: /gameconsole/realarcadev21/games/dip/aquascapespremiumedition/aquascapespremiumedition.rga at Mon May 20 09:08:01 PDT 2013
+running purge/recache on origin-cache01.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 340088054</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Tue, 14 May 2013 09:35:37 GMT
+ETag: "158f8ee5-4dcaa5b0d6c40"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:10:24 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 361729765
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:11:46 GMT
+X-Varnish: 340088089 340088055
+Age: 72
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache02.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 301186716</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Tue, 14 May 2013 09:35:37 GMT
+ETag: "158f8ee5-4dcaa5b0d6c40"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:11:37 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 361729765
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:13:33 GMT
+X-Varnish: 301186757 301186718
+Age: 59
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache03.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1677567008</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Tue, 14 May 2013 09:35:37 GMT
+ETag: "158f8ee5-4dcaa5b0d6c40"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:12:37 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 361729765
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:13:57 GMT
+X-Varnish: 1677567054 1677567010
+Age: 71
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache04.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1830014532</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Tue, 14 May 2013 09:35:37 GMT
+ETag: "158f8ee5-4dcaa5b0d6c40"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:13:49 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 361729765
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:15:52 GMT
+X-Varnish: 1830014549 1830014534
+Age: 66
+Via: 1.1 varnish
+Connection: keep-alive
+
+#### file to recache: /gameconsole/realarcadev21/games/dip/caribbeanjewel/caribbeanjewel.rga at Mon May 20 09:08:01 PDT 2013
+running purge/recache on origin-cache01.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 340088172</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.22 (Ubuntu)
+Last-Modified: Tue, 07 May 2013 10:36:19 GMT
+ETag: "11d0030-4dc1e633e4ec0"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:15:06 GMT
+Content-Length: 18677808
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:15:09 GMT
+X-Varnish: 340088175 340088173
+Age: 3
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache02.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 301186820</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.22 (Ubuntu)
+Last-Modified: Tue, 07 May 2013 10:36:19 GMT
+ETag: "11d0030-4dc1e633e4ec0"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:15:11 GMT
+Content-Length: 18677808
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:15:58 GMT
+X-Varnish: 301186824 301186823
+Age: 1
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache03.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1677567137</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Tue, 07 May 2013 10:36:19 GMT
+ETag: "11d0030-4dc1e633e4ec0"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:15:02 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 18677808
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:15:16 GMT
+X-Varnish: 1677567144 1677567141
+Age: 5
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache04.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1830014552</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Tue, 07 May 2013 10:36:19 GMT
+ETag: "11d0030-4dc1e633e4ec0"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:15:08 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 18677808
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:16:06 GMT
+X-Varnish: 1830014554 1830014553
+Age: 1
+Via: 1.1 varnish
+Connection: keep-alive
+
+#### file to recache: /gameconsole/realarcadev21/games/dip/sevenseassolitaire/sevenseassolitaire.rga at Mon May 20 09:08:01 PDT 2013
+running purge/recache on origin-cache01.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 340088177</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.22 (Ubuntu)
+Last-Modified: Wed, 08 May 2013 11:21:15 GMT
+ETag: "5b2721e-4dc3321c760c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:15:18 GMT
+Content-Length: 95580702
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:15:36 GMT
+X-Varnish: 340088183 340088179
+Age: 16
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache02.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 301186836</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Wed, 08 May 2013 11:21:15 GMT
+ETag: "5b2721e-4dc3321c760c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:15:27 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 95580702
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:16:27 GMT
+X-Varnish: 301186839 301186837
+Age: 3
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache03.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1677567155</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Wed, 08 May 2013 11:21:15 GMT
+ETag: "5b2721e-4dc3321c760c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:15:31 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 95580702
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:16:01 GMT
+X-Varnish: 1677567191 1677567156
+Age: 22
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache04.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1830014567</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Wed, 08 May 2013 11:21:15 GMT
+ETag: "5b2721e-4dc3321c760c0"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:15:54 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 95580702
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:16:54 GMT
+X-Varnish: 1830014571 1830014568
+Age: 3
+Via: 1.1 varnish
+Connection: keep-alive
+
+#### file to recache: /gameconsole/realarcadev21/games/dip/silentscreamiithebride/silentscreamiithebride.rga at Mon May 20 09:51:01 PDT 2013
+running purge/recache on origin-cache01.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 340089114</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.22 (Ubuntu)
+Last-Modified: Tue, 07 May 2013 14:24:29 GMT
+ETag: "1156384e-4dc21933b2140"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:51:12 GMT
+Content-Length: 290863182
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:52:06 GMT
+X-Varnish: 340089129 340089115
+Age: 54
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache02.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 301187961</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Tue, 07 May 2013 14:24:29 GMT
+ETag: "1156384e-4dc21933b2140"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:51:57 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 290863182
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:53:44 GMT
+X-Varnish: 301188002 301187964
+Age: 50
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache03.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1677568354</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Tue, 07 May 2013 14:24:29 GMT
+ETag: "1156384e-4dc21933b2140"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:52:48 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 290863182
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:53:57 GMT
+X-Varnish: 1677568380 1677568356
+Age: 60
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache04.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1830015579</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Tue, 07 May 2013 14:24:29 GMT
+ETag: "1156384e-4dc21933b2140"
+Cache-Control: max-age=33696000
+Expires: Sat, 14 Jun 2014 16:53:49 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 290863182
+Accept-Ranges: bytes
+Date: Mon, 20 May 2013 16:55:39 GMT
+X-Varnish: 1830015598 1830015580
+Age: 53
+Via: 1.1 varnish
+Connection: keep-alive
+
+#### file to recache: /gameconsole/realarcadev21/games/dip/crimeline/crimeline.rga at Wed May 22 09:11:01 PDT 2013
+running purge/recache on origin-cache01.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 340190729</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Wed, 22 May 2013 09:37:17 GMT
+ETag: "43d7047-4dd4b4fbe4d40"
+Cache-Control: max-age=33696000
+Expires: Mon, 16 Jun 2014 16:11:02 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 71135303
+Accept-Ranges: bytes
+Date: Wed, 22 May 2013 16:11:32 GMT
+X-Varnish: 340190735 340190730
+Age: 19
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache02.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 301281631</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Wed, 22 May 2013 09:37:17 GMT
+ETag: "43d7047-4dd4b4fbe4d40"
+Cache-Control: max-age=33696000
+Expires: Mon, 16 Jun 2014 16:11:23 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 71135303
+Accept-Ranges: bytes
+Date: Wed, 22 May 2013 16:12:23 GMT
+X-Varnish: 301281633 301281632
+Age: 2
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache03.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1677663285</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Wed, 22 May 2013 09:37:17 GMT
+ETag: "43d7047-4dd4b4fbe4d40"
+Cache-Control: max-age=33696000
+Expires: Mon, 16 Jun 2014 16:11:26 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 71135303
+Accept-Ranges: bytes
+Date: Wed, 22 May 2013 16:11:48 GMT
+X-Varnish: 1677663290 1677663286
+Age: 12
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache04.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1830114684</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Wed, 22 May 2013 09:37:17 GMT
+ETag: "43d7047-4dd4b4fbe4d40"
+Cache-Control: max-age=33696000
+Expires: Mon, 16 Jun 2014 16:11:39 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 71135303
+Accept-Ranges: bytes
+Date: Wed, 22 May 2013 16:12:39 GMT
+X-Varnish: 1830114687 1830114685
+Age: 2
+Via: 1.1 varnish
+Connection: keep-alive
+
+#### file to recache: /gameconsole/realarcadev21/games/dip/thepathofhercules/thepathofhercules.rga at Wed May 22 09:18:01 PDT 2013
+running purge/recache on origin-cache01.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 340190953</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Wed, 22 May 2013 10:24:49 GMT
+ETag: "7fb0ea2-4dd4bf9bc5e40"
+Cache-Control: max-age=33696000
+Expires: Mon, 16 Jun 2014 16:18:02 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 133893794
+Accept-Ranges: bytes
+Date: Wed, 22 May 2013 16:18:24 GMT
+X-Varnish: 340190957 340190954
+Age: 11
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache02.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 301281858</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.22 (Ubuntu)
+Last-Modified: Wed, 22 May 2013 10:24:49 GMT
+ETag: "7fb0ea2-4dd4bf9bc5e40"
+Cache-Control: max-age=33696000
+Expires: Mon, 16 Jun 2014 16:18:23 GMT
+Content-Length: 133893794
+Accept-Ranges: bytes
+Date: Wed, 22 May 2013 16:19:17 GMT
+X-Varnish: 301281861 301281860
+Age: 4
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache03.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1677663796</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.11 (CentOS)
+Last-Modified: Wed, 22 May 2013 10:24:49 GMT
+ETag: "7fb0ea2-4dd4bf9bc5e40"
+Cache-Control: max-age=33696000
+Expires: Mon, 16 Jun 2014 16:18:19 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 133893794
+Accept-Ranges: bytes
+Date: Wed, 22 May 2013 16:18:39 GMT
+X-Varnish: 1677663803 1677663797
+Age: 10
+Via: 1.1 varnish
+Connection: keep-alive
+
+running purge/recache on origin-cache04.prod.tuk.gameco.biz now.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>200 Purged.</title>
+  </head>
+  <body>
+    <h1>Error 200 Purged.</h1>
+    <p>Purged.</p>
+    <h3>Guru Meditation:</h3>
+    <p>XID: 1830115095</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Wed, 22 May 2013 10:24:49 GMT
+ETag: "7fb0ea2-4dd4bf9bc5e40"
+Cache-Control: max-age=33696000
+Expires: Mon, 16 Jun 2014 16:18:30 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 133893794
+Accept-Ranges: bytes
+Date: Wed, 22 May 2013 16:19:32 GMT
+X-Varnish: 1830115102 1830115097
+Age: 4
+Via: 1.1 varnish
+Connection: keep-alive
+

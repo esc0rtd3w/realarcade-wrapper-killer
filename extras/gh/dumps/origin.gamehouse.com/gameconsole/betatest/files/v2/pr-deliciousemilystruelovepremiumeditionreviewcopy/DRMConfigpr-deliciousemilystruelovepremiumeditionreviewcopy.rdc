@@ -1,0 +1,11 @@
+This is a sample DRMConfig file. 
+action: full		always	game		none 				none
+action: minutes		pass		game		none				none
+action: date		pass		game		none				none
+
+gameid: pr-deliciousemilystruelovepremiumeditionreviewcopy.rga
+adsOn: False
+adsOnMaxMinutes: -1
+adsOffMaxMinutes: 60
+
+HMAC: APWYLu702SaYkd89N3geX3feT7g=

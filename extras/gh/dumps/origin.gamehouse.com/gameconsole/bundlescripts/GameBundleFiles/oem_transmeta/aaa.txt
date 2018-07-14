@@ -1,0 +1,2587 @@
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:49 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6OCN:280; expires=Sun, 05 Dec 2004 22:38:49 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard04-0EypXa:280; expires=Sun, 05 Dec 2004 22:38:49 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:49 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Set-Cookie: RNsites=switchboard02-0E0Pjj:280; expires=Sun, 05 Dec 2004 22:38:50 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:38:50 GMT
+Server: Unknown
+Connection: close
+location: http://www.realarcade.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+MIME-Version: 1.0
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:38:51 GMT
+Set-Cookie: RNsites=switchboard06-0Ensbb:280; expires=Sun, 05 Dec 2004 22:38:51 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Date: Wed, 06 Oct 2004 22:38:49 GMT
+Server: Unknown
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+Connection: close
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWIrL:280; expires=Sun, 05 Dec 2004 22:38:50 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:38:50 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWIrM:280; expires=Sun, 05 Dec 2004 22:38:50 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:38:50 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard05-02sDOt:280; expires=Sun, 05 Dec 2004 22:38:49 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:49 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard04-0EypXl:280; expires=Sun, 05 Dec 2004 22:38:50 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:50 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vwa:280; expires=Sun, 05 Dec 2004 22:38:51 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:51 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWIrP:280; expires=Sun, 05 Dec 2004 22:38:50 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:38:50 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vwd:280; expires=Sun, 05 Dec 2004 22:38:51 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:51 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:52 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard09-0DlyKc:280; expires=Sun, 05 Dec 2004 22:38:52 GMT; path=/; domain=real.com
+Server: Unknown
+Connection: close
+Content-type: text/html
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:50 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6OCU:280; expires=Sun, 05 Dec 2004 22:38:50 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard03-0CMK8U:280; expires=Sun, 05 Dec 2004 22:38:50 GMT; path=/; domain=real.com
+Connection: close
+Server: Unknown
+Content-type: text/html
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:50 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard03-0CMK8V:280; expires=Sun, 05 Dec 2004 22:38:50 GMT; path=/; domain=real.com
+Connection: close
+Server: Unknown
+Content-type: text/html
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:50 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard04-0EypXq:280; expires=Sun, 05 Dec 2004 22:38:51 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:51 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+Set-Cookie: RNsites=switchboard12-0EL7Xi:280; expires=Sun, 05 Dec 2004 22:38:50 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:50 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:38:52 GMT
+Set-Cookie: RNsites=switchboard06-0Ensbp:280; expires=Sun, 05 Dec 2004 22:38:52 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:53 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard09-0DlyKe:280; expires=Sun, 05 Dec 2004 22:38:53 GMT; path=/; domain=real.com
+Server: Unknown
+Connection: close
+Content-type: text/html
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:51 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard08-0ERyqz:280; expires=Sun, 05 Dec 2004 22:38:51 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+Set-Cookie: RNsites=switchboard12-0EL7Xl:280; expires=Sun, 05 Dec 2004 22:38:51 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:51 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard04-0EypXx:280; expires=Sun, 05 Dec 2004 22:38:51 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:51 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Set-Cookie: RNsites=switchboard02-0E0Pjr:280; expires=Sun, 05 Dec 2004 22:38:52 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:38:52 GMT
+Server: Unknown
+Connection: close
+location: http://www.realarcade.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+MIME-Version: 1.0
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWIrW:280; expires=Sun, 05 Dec 2004 22:38:52 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:38:52 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Set-Cookie: RNsites=switchboard02-0E0Pjt:280; expires=Sun, 05 Dec 2004 22:38:52 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:38:52 GMT
+Server: Unknown
+Connection: close
+location: http://www.realarcade.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+MIME-Version: 1.0
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vwk:280; expires=Sun, 05 Dec 2004 22:38:53 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:53 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard05-02sDPE:280; expires=Sun, 05 Dec 2004 22:38:51 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:51 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Date: Wed, 06 Oct 2004 22:38:52 GMT
+Server: Unknown
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+Connection: close
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard03-0CMK8b:280; expires=Sun, 05 Dec 2004 22:38:52 GMT; path=/; domain=real.com
+Connection: close
+Server: Unknown
+Content-type: text/html
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:52 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vwn:280; expires=Sun, 05 Dec 2004 22:38:53 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:53 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:38:54 GMT
+Set-Cookie: RNsites=switchboard06-0Ensc3:280; expires=Sun, 05 Dec 2004 22:38:54 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard04-0EypY3:280; expires=Sun, 05 Dec 2004 22:38:53 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:53 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vwq:280; expires=Sun, 05 Dec 2004 22:38:54 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:54 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Set-Cookie: RNsites=switchboard02-0E0Pjy:280; expires=Sun, 05 Dec 2004 22:38:53 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:38:53 GMT
+Server: Unknown
+Connection: close
+location: http://www.realarcade.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+MIME-Version: 1.0
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vws:280; expires=Sun, 05 Dec 2004 22:38:54 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:54 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:55 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard09-0DlyKs:280; expires=Sun, 05 Dec 2004 22:38:55 GMT; path=/; domain=real.com
+Server: Unknown
+Connection: close
+Content-type: text/html
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:53 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard08-0ERyrA:280; expires=Sun, 05 Dec 2004 22:38:53 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWIrd:280; expires=Sun, 05 Dec 2004 22:38:53 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:38:53 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard04-0EypY9:280; expires=Sun, 05 Dec 2004 22:38:53 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:53 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+Set-Cookie: RNsites=switchboard12-0EL7Y1:280; expires=Sun, 05 Dec 2004 22:38:53 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:53 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:54 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6OCr:280; expires=Sun, 05 Dec 2004 22:38:54 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWIrg:280; expires=Sun, 05 Dec 2004 22:38:54 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:38:54 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:38:55 GMT
+Set-Cookie: RNsites=switchboard06-0EnscG:280; expires=Sun, 05 Dec 2004 22:38:55 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vwy:280; expires=Sun, 05 Dec 2004 22:38:55 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:55 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard03-0CMK8l:280; expires=Sun, 05 Dec 2004 22:38:54 GMT; path=/; domain=real.com
+Connection: close
+Server: Unknown
+Content-type: text/html
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:54 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:38:56 GMT
+Set-Cookie: RNsites=switchboard06-0EnscI:280; expires=Sun, 05 Dec 2004 22:38:56 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:54 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard08-0ERyrG:280; expires=Sun, 05 Dec 2004 22:38:54 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:54 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6OCw:280; expires=Sun, 05 Dec 2004 22:38:54 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:57 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard09-0DlyL0:280; expires=Sun, 05 Dec 2004 22:38:57 GMT; path=/; domain=real.com
+Server: Unknown
+Connection: close
+Content-type: text/html
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Set-Cookie: RNsites=switchboard02-0E0Pk5:280; expires=Sun, 05 Dec 2004 22:38:55 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:38:55 GMT
+Server: Unknown
+Connection: close
+location: http://www.realarcade.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+MIME-Version: 1.0
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:55 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6OCz:280; expires=Sun, 05 Dec 2004 22:38:55 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:57 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard09-0DlyL3:280; expires=Sun, 05 Dec 2004 22:38:57 GMT; path=/; domain=real.com
+Server: Unknown
+Connection: close
+Content-type: text/html
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard04-0EypYI:280; expires=Sun, 05 Dec 2004 22:38:55 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:55 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:55 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard08-0ERyrJ:280; expires=Sun, 05 Dec 2004 22:38:55 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:55 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard08-0ERyrK:280; expires=Sun, 05 Dec 2004 22:38:55 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard04-0EypYJ:280; expires=Sun, 05 Dec 2004 22:38:55 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:55 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard03-0CMK8t:280; expires=Sun, 05 Dec 2004 22:38:55 GMT; path=/; domain=real.com
+Connection: close
+Server: Unknown
+Content-type: text/html
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:55 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:55 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard08-0ERyrM:280; expires=Sun, 05 Dec 2004 22:38:55 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:55 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard08-0ERyrN:280; expires=Sun, 05 Dec 2004 22:38:55 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Set-Cookie: RNsites=switchboard02-0E0PkC:280; expires=Sun, 05 Dec 2004 22:38:56 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:38:56 GMT
+Server: Unknown
+Connection: close
+location: http://www.realarcade.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+MIME-Version: 1.0
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard05-02sDPW:280; expires=Sun, 05 Dec 2004 22:38:55 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:55 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:58 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard09-0DlyL9:280; expires=Sun, 05 Dec 2004 22:38:58 GMT; path=/; domain=real.com
+Server: Unknown
+Connection: close
+Content-type: text/html
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:58 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard09-0DlyLA:280; expires=Sun, 05 Dec 2004 22:38:58 GMT; path=/; domain=real.com
+Server: Unknown
+Connection: close
+Content-type: text/html
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard04-0EypYP:280; expires=Sun, 05 Dec 2004 22:38:56 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:56 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:56 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard08-0ERyrU:280; expires=Sun, 05 Dec 2004 22:38:56 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:38:58 GMT
+Set-Cookie: RNsites=switchboard06-0EnscV:280; expires=Sun, 05 Dec 2004 22:38:58 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWIrx:280; expires=Sun, 05 Dec 2004 22:38:57 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:38:57 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vxG:280; expires=Sun, 05 Dec 2004 22:38:57 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:57 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vxI:280; expires=Sun, 05 Dec 2004 22:38:58 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:58 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:59 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard09-0DlyLI:280; expires=Sun, 05 Dec 2004 22:38:59 GMT; path=/; domain=real.com
+Server: Unknown
+Connection: close
+Content-type: text/html
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard04-0EypYY:280; expires=Sun, 05 Dec 2004 22:38:57 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:57 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:38:58 GMT
+Set-Cookie: RNsites=switchboard06-0EnscY:280; expires=Sun, 05 Dec 2004 22:38:58 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+Set-Cookie: RNsites=switchboard12-0EL7YL:280; expires=Sun, 05 Dec 2004 22:38:56 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:56 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+Set-Cookie: RNsites=switchboard12-0EL7YM:280; expires=Sun, 05 Dec 2004 22:38:56 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:56 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:57 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard08-0ERyrZ:280; expires=Sun, 05 Dec 2004 22:38:57 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Set-Cookie: RNsites=switchboard02-0E0PkM:280; expires=Sun, 05 Dec 2004 22:38:58 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:38:58 GMT
+Server: Unknown
+Connection: close
+location: http://www.realarcade.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+MIME-Version: 1.0
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard04-0EypYe:280; expires=Sun, 05 Dec 2004 22:38:57 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:57 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:00 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard09-0DlyLQ:280; expires=Sun, 05 Dec 2004 22:39:00 GMT; path=/; domain=real.com
+Server: Unknown
+Connection: close
+Content-type: text/html
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard05-02sDPe:280; expires=Sun, 05 Dec 2004 22:38:57 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:57 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:00 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard09-0DlyLS:280; expires=Sun, 05 Dec 2004 22:39:00 GMT; path=/; domain=real.com
+Server: Unknown
+Connection: close
+Content-type: text/html
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard03-0CMK9C:280; expires=Sun, 05 Dec 2004 22:38:58 GMT; path=/; domain=real.com
+Connection: close
+Server: Unknown
+Content-type: text/html
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:58 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Date: Wed, 06 Oct 2004 22:38:58 GMT
+Server: Unknown
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+Connection: close
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard03-0CMK9E:280; expires=Sun, 05 Dec 2004 22:38:58 GMT; path=/; domain=real.com
+Connection: close
+Server: Unknown
+Content-type: text/html
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:58 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:39:00 GMT
+Set-Cookie: RNsites=switchboard06-0Ensch:280; expires=Sun, 05 Dec 2004 22:39:00 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vxS:280; expires=Sun, 05 Dec 2004 22:38:59 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:59 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:58 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6ODP:280; expires=Sun, 05 Dec 2004 22:38:58 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Set-Cookie: RNsites=switchboard02-0E0PkQ:280; expires=Sun, 05 Dec 2004 22:38:59 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:38:59 GMT
+Server: Unknown
+Connection: close
+location: http://www.realarcade.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+MIME-Version: 1.0
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:39:00 GMT
+Set-Cookie: RNsites=switchboard06-0Enscm:280; expires=Sun, 05 Dec 2004 22:39:00 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard05-02sDPk:280; expires=Sun, 05 Dec 2004 22:38:58 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:58 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard05-02sDPl:280; expires=Sun, 05 Dec 2004 22:38:58 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:58 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:59 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6ODU:280; expires=Sun, 05 Dec 2004 22:38:59 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:39:01 GMT
+Set-Cookie: RNsites=switchboard06-0Ensco:280; expires=Sun, 05 Dec 2004 22:39:01 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard04-0EypYr:280; expires=Sun, 05 Dec 2004 22:38:59 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:59 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard04-0EypYt:280; expires=Sun, 05 Dec 2004 22:38:59 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:38:59 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:59 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6ODZ:280; expires=Sun, 05 Dec 2004 22:38:59 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard03-0CMK9R:280; expires=Sun, 05 Dec 2004 22:38:59 GMT; path=/; domain=real.com
+Connection: close
+Server: Unknown
+Content-type: text/html
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:38:59 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:39:01 GMT
+Set-Cookie: RNsites=switchboard06-0Enscu:280; expires=Sun, 05 Dec 2004 22:39:01 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:02 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard09-0DlyLc:280; expires=Sun, 05 Dec 2004 22:39:02 GMT; path=/; domain=real.com
+Server: Unknown
+Connection: close
+Content-type: text/html
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Date: Wed, 06 Oct 2004 22:39:00 GMT
+Server: Unknown
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+Connection: close
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Date: Wed, 06 Oct 2004 22:39:00 GMT
+Server: Unknown
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+Connection: close
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Set-Cookie: RNsites=switchboard02-0E0Pkd:280; expires=Sun, 05 Dec 2004 22:39:01 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:01 GMT
+Server: Unknown
+Connection: close
+location: http://www.realarcade.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+MIME-Version: 1.0
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWIsO:280; expires=Sun, 05 Dec 2004 22:39:00 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:00 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:00 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6ODb:280; expires=Sun, 05 Dec 2004 22:39:00 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:03 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard09-0DlyLh:280; expires=Sun, 05 Dec 2004 22:39:03 GMT; path=/; domain=real.com
+Server: Unknown
+Connection: close
+Content-type: text/html
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard05-02sDPx:280; expires=Sun, 05 Dec 2004 22:39:00 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:39:00 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:01 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6ODd:280; expires=Sun, 05 Dec 2004 22:39:01 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vxg:280; expires=Sun, 05 Dec 2004 22:39:02 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:02 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Date: Wed, 06 Oct 2004 22:39:01 GMT
+Server: Unknown
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+Connection: close
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard04-0EypZC:280; expires=Sun, 05 Dec 2004 22:39:01 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:39:01 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Date: Wed, 06 Oct 2004 22:39:01 GMT
+Server: Unknown
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+Connection: close
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:39:03 GMT
+Set-Cookie: RNsites=switchboard06-0Ensd4:280; expires=Sun, 05 Dec 2004 22:39:03 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWIsU:280; expires=Sun, 05 Dec 2004 22:39:02 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:02 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWIsW:280; expires=Sun, 05 Dec 2004 22:39:02 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:02 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:39:03 GMT
+Set-Cookie: RNsites=switchboard06-0Ensd7:280; expires=Sun, 05 Dec 2004 22:39:03 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vxo:280; expires=Sun, 05 Dec 2004 22:39:03 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:03 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWIsa:280; expires=Sun, 05 Dec 2004 22:39:02 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:02 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard04-0EypZJ:280; expires=Sun, 05 Dec 2004 22:39:02 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:39:02 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:39:03 GMT
+Set-Cookie: RNsites=switchboard06-0EnsdA:280; expires=Sun, 05 Dec 2004 22:39:03 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:02 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6ODp:280; expires=Sun, 05 Dec 2004 22:39:02 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+Set-Cookie: RNsites=switchboard12-0EL7Yl:280; expires=Sun, 05 Dec 2004 22:39:02 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:02 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Date: Wed, 06 Oct 2004 22:39:02 GMT
+Server: Unknown
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+Connection: close
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:02 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6ODr:280; expires=Sun, 05 Dec 2004 22:39:02 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+Set-Cookie: RNsites=switchboard12-0EL7Yn:280; expires=Sun, 05 Dec 2004 22:39:02 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:02 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vxv:280; expires=Sun, 05 Dec 2004 22:39:04 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:04 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Set-Cookie: RNsites=switchboard02-0E0Pkn:280; expires=Sun, 05 Dec 2004 22:39:03 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:03 GMT
+Server: Unknown
+Connection: close
+location: http://www.realarcade.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+MIME-Version: 1.0
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard05-02sDQB:280; expires=Sun, 05 Dec 2004 22:39:02 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:39:02 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vxx:280; expires=Sun, 05 Dec 2004 22:39:04 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:04 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:03 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard08-0ERys4:280; expires=Sun, 05 Dec 2004 22:39:03 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard05-02sDQF:280; expires=Sun, 05 Dec 2004 22:39:02 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:39:02 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Set-Cookie: RNsites=switchboard02-0E0Pkp:280; expires=Sun, 05 Dec 2004 22:39:04 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:04 GMT
+Server: Unknown
+Connection: close
+location: http://www.realarcade.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+MIME-Version: 1.0
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:03 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6ODy:280; expires=Sun, 05 Dec 2004 22:39:03 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWIsl:280; expires=Sun, 05 Dec 2004 22:39:04 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:04 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Date: Wed, 06 Oct 2004 22:39:04 GMT
+Server: Unknown
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+Connection: close
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWIsp:280; expires=Sun, 05 Dec 2004 22:39:04 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:04 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard05-02sDQL:280; expires=Sun, 05 Dec 2004 22:39:03 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:39:03 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:04 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard08-0ERysB:280; expires=Sun, 05 Dec 2004 22:39:04 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Date: Wed, 06 Oct 2004 22:39:04 GMT
+Server: Unknown
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+Connection: close
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard05-02sDQS:280; expires=Sun, 05 Dec 2004 22:39:03 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:39:03 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:06 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard09-0DlyM4:280; expires=Sun, 05 Dec 2004 22:39:06 GMT; path=/; domain=real.com
+Server: Unknown
+Connection: close
+Content-type: text/html
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWIst:280; expires=Sun, 05 Dec 2004 22:39:05 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:05 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vy4:280; expires=Sun, 05 Dec 2004 22:39:05 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:05 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+Set-Cookie: RNsites=switchboard12-0EL7Z0:280; expires=Sun, 05 Dec 2004 22:39:04 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:04 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vy8:280; expires=Sun, 05 Dec 2004 22:39:06 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:06 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vy9:280; expires=Sun, 05 Dec 2004 22:39:06 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:06 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:05 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard08-0ERysJ:280; expires=Sun, 05 Dec 2004 22:39:05 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard03-0CMK9t:280; expires=Sun, 05 Dec 2004 22:39:05 GMT; path=/; domain=real.com
+Connection: close
+Server: Unknown
+Content-type: text/html
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:05 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+Set-Cookie: RNsites=switchboard12-0EL7ZA:280; expires=Sun, 05 Dec 2004 22:39:05 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:05 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vyC:280; expires=Sun, 05 Dec 2004 22:39:06 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:06 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard03-0CMK9x:280; expires=Sun, 05 Dec 2004 22:39:05 GMT; path=/; domain=real.com
+Connection: close
+Server: Unknown
+Content-type: text/html
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:05 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard04-0EypZb:280; expires=Sun, 05 Dec 2004 22:39:06 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:39:06 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard03-0CMK9y:280; expires=Sun, 05 Dec 2004 22:39:05 GMT; path=/; domain=real.com
+Connection: close
+Server: Unknown
+Content-type: text/html
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:05 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:39:07 GMT
+Set-Cookie: RNsites=switchboard06-0Ensda:280; expires=Sun, 05 Dec 2004 22:39:07 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard03-0CMK9z:280; expires=Sun, 05 Dec 2004 22:39:06 GMT; path=/; domain=real.com
+Connection: close
+Server: Unknown
+Content-type: text/html
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:06 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:06 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard08-0ERysM:280; expires=Sun, 05 Dec 2004 22:39:06 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard03-0CMKA1:280; expires=Sun, 05 Dec 2004 22:39:06 GMT; path=/; domain=real.com
+Connection: close
+Server: Unknown
+Content-type: text/html
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:06 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+Set-Cookie: RNsites=switchboard12-0EL7ZI:280; expires=Sun, 05 Dec 2004 22:39:05 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:05 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWIt6:280; expires=Sun, 05 Dec 2004 22:39:07 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:06 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Set-Cookie: RNsites=switchboard02-0E0Pl8:280; expires=Sun, 05 Dec 2004 22:39:07 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:07 GMT
+Server: Unknown
+Connection: close
+location: http://www.realarcade.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+MIME-Version: 1.0
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Date: Wed, 06 Oct 2004 22:39:06 GMT
+Server: Unknown
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+Connection: close
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard03-0CMKA4:280; expires=Sun, 05 Dec 2004 22:39:06 GMT; path=/; domain=real.com
+Connection: close
+Server: Unknown
+Content-type: text/html
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:06 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Set-Cookie: RNsites=switchboard02-0E0PlA:280; expires=Sun, 05 Dec 2004 22:39:07 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:07 GMT
+Server: Unknown
+Connection: close
+location: http://www.realarcade.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+MIME-Version: 1.0
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Set-Cookie: RNsites=switchboard02-0E0PlD:280; expires=Sun, 05 Dec 2004 22:39:07 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:07 GMT
+Server: Unknown
+Connection: close
+location: http://www.realarcade.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+MIME-Version: 1.0
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWItC:280; expires=Sun, 05 Dec 2004 22:39:07 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:07 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Date: Wed, 06 Oct 2004 22:39:07 GMT
+Server: Unknown
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+Connection: close
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:07 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard08-0ERysV:280; expires=Sun, 05 Dec 2004 22:39:07 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWItF:280; expires=Sun, 05 Dec 2004 22:39:08 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:08 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard03-0CMKA7:280; expires=Sun, 05 Dec 2004 22:39:07 GMT; path=/; domain=real.com
+Connection: close
+Server: Unknown
+Content-type: text/html
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:07 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+Set-Cookie: RNsites=switchboard12-0EL7ZS:280; expires=Sun, 05 Dec 2004 22:39:07 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:07 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:08 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6OEM:280; expires=Sun, 05 Dec 2004 22:39:08 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard03-0CMKAA:280; expires=Sun, 05 Dec 2004 22:39:08 GMT; path=/; domain=real.com
+Connection: close
+Server: Unknown
+Content-type: text/html
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:08 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:08 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6OEO:280; expires=Sun, 05 Dec 2004 22:39:08 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:39:09 GMT
+Set-Cookie: RNsites=switchboard06-0Ensdq:280; expires=Sun, 05 Dec 2004 22:39:09 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:08 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6OEP:280; expires=Sun, 05 Dec 2004 22:39:08 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Set-Cookie: RNsites=switchboard02-0E0PlM:280; expires=Sun, 05 Dec 2004 22:39:08 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:08 GMT
+Server: Unknown
+Connection: close
+location: http://www.realarcade.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+MIME-Version: 1.0
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:39:10 GMT
+Set-Cookie: RNsites=switchboard06-0Ensdu:280; expires=Sun, 05 Dec 2004 22:39:10 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:39:10 GMT
+Set-Cookie: RNsites=switchboard06-0Ensdv:280; expires=Sun, 05 Dec 2004 22:39:10 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWItP:280; expires=Sun, 05 Dec 2004 22:39:09 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:09 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard05-02sDQt:280; expires=Sun, 05 Dec 2004 22:39:08 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:39:08 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:09 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard08-0ERysc:280; expires=Sun, 05 Dec 2004 22:39:09 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:11 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard09-0DlyMT:280; expires=Sun, 05 Dec 2004 22:39:11 GMT; path=/; domain=real.com
+Server: Unknown
+Connection: close
+Content-type: text/html
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:39:10 GMT
+Set-Cookie: RNsites=switchboard06-0Ensdz:280; expires=Sun, 05 Dec 2004 22:39:10 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:09 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6OEa:280; expires=Sun, 05 Dec 2004 22:39:09 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:39:11 GMT
+Set-Cookie: RNsites=switchboard06-0Ense0:280; expires=Sun, 05 Dec 2004 22:39:11 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vyd:280; expires=Sun, 05 Dec 2004 22:39:10 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:10 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Date: Wed, 06 Oct 2004 22:39:09 GMT
+Server: Unknown
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+Connection: close
+location: http://www.realarcade.com
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+MIME-Version: 1.0
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+Last-Modified: Wed, 22 Sep 2004 18:15:01 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard11-0CWItY:280; expires=Sun, 05 Dec 2004 22:39:10 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:10 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:10 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6OEb:280; expires=Sun, 05 Dec 2004 22:39:10 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:10 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6OEc:280; expires=Sun, 05 Dec 2004 22:39:10 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vyi:280; expires=Sun, 05 Dec 2004 22:39:11 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:11 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:10 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard08-0ERysi:280; expires=Sun, 05 Dec 2004 22:39:10 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:12 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard09-0DlyMa:280; expires=Sun, 05 Dec 2004 22:39:12 GMT; path=/; domain=real.com
+Server: Unknown
+Connection: close
+Content-type: text/html
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:10 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6OEi:280; expires=Sun, 05 Dec 2004 22:39:10 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+location: http://www.realarcade.com
+Content-type: text/html
+MIME-Version: 1.0
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Set-Cookie: RNsites=switchboard10-0E9vym:280; expires=Sun, 05 Dec 2004 22:39:11 GMT; path=/; domain=real.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:11 GMT
+Server: Unknown
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:13 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard09-0DlyMd:280; expires=Sun, 05 Dec 2004 22:39:13 GMT; path=/; domain=real.com
+Server: Unknown
+Connection: close
+Content-type: text/html
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Set-Cookie: RNsites=switchboard02-0E0Pll:280; expires=Sun, 05 Dec 2004 22:39:11 GMT; path=/; domain=real.com
+Date: Wed, 06 Oct 2004 22:39:11 GMT
+Server: Unknown
+Connection: close
+location: http://www.realarcade.com
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+MIME-Version: 1.0
+Accept-Ranges: bytes
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Date: Wed, 06 Oct 2004 22:39:12 GMT
+Set-Cookie: RNsites=switchboard06-0EnseG:280; expires=Sun, 05 Dec 2004 22:39:12 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Accept-Ranges: bytes
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Connection: close
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Connection: close
+Accept-Ranges: bytes
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:11 GMT
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard07-0F6OEk:280; expires=Sun, 05 Dec 2004 22:39:11 GMT; path=/; domain=real.com
+MIME-Version: 1.0
+Server: Unknown
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Date: Wed, 06 Oct 2004 22:39:13 GMT
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+location: http://www.realarcade.com
+Set-Cookie: RNsites=switchboard09-0DlyMg:280; expires=Sun, 05 Dec 2004 22:39:13 GMT; path=/; domain=real.com
+Server: Unknown
+Connection: close
+Content-type: text/html
+Content-length: 22
+
+HTTP/1.0 302 Temporary Relocation
+Content-type: text/html
+P3P: CP="CAO DSP NID ADM DEV PSA OUR STP UNI PUR COM NAV INT STA"
+Last-Modified: Wed, 06 Oct 2004 21:15:01 GMT
+Set-Cookie: RNsites=switchboard05-02sDRB:280; expires=Sun, 05 Dec 2004 22:39:11 GMT; path=/; domain=real.com
+location: http://www.realarcade.com
+Date: Wed, 06 Oct 2004 22:39:11 GMT
+Connection: close
+Server: Unknown
+Accept-Ranges: bytes
+MIME-Version: 1.0
+Content-length: 22
+

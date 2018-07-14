@@ -1,0 +1,68 @@
+<PACKAGE>
+	<TITLE></TITLE>
+    	<APPLICATION>RealArcade</APPLICATION>
+	<ACTION>download</ACTION>
+	<TARGET>My Games</TARGET>
+	<EXP_DATE>06/13/2001 10:51</EXP_DATE>
+	<PROVIDER>
+		<AUTHOR>RealArcade</AUTHOR>
+		<NAME>RealNetworks</NAME>
+		<URL>http://www.real.com</URL>
+		<COPYRIGHT>Copyright 2001, RealNetworks</COPYRIGHT>
+		<CONTACT>RealArcade@real.com</CONTACT>
+	</PROVIDER>	
+	<SERVER>		
+                <!---
+		    =================================================== 
+
+		    =================================================== 
+                -->
+		<NAME>Games Test Server </NAME>
+		<DESC>RealGames Server</DESC>
+		<NETNAME>robin.real.com</NETNAME>
+		<LOCATION>/games/downloadables/%f</LOCATION> <!-- %f = filename, %fid=Track  id, %lid = TrackList ID, %pid= package id -->
+		<KEY>Not used in Beta1</KEY>
+	</SERVER>
+	<GAMELIST>
+		<GAME>
+			<ID></ID>
+			<!-- THIS IS THE TITLE OF THE GAME THAT SHOWS UP DURING THE DOWNLOAD OF THE GAME-->
+			<NAME>Kayak Extreme</NAME>
+			<!-- 
+			    =================================================== 
+			    THE GAME ID FOR THIS GAME
+			    ===================================================
+			-->
+			<GAMEID>79F5F313-E536-417d-8A46-81EC50B1B58E</GAMEID>
+			<VERSION>Demo RGP</VERSION>
+			<TYPE>demo</TYPE>
+			<GENRE>Racing</GENRE>
+			<FILENAME>kayak_free.rgs</FILENAME>
+			<SIZE>20472923</SIZE>
+			<!-- 
+			    =================================================== 
+			    THIS IS THE LOCATION TO DOWNLOAD THE MEZZANINE FROM 
+			    ===================================================
+			-->
+			<MEZZANINE>http://games-dl.real.com/gameconsole/games/demo/mezzanines/kayakextreme_free.mez</MEZZANINE>
+			<!--
+			    =================================================== 
+			    THIS IS THE GAME FIND DATA FOR THE GAME THAT YOU ARE DOWNLOADING
+			    IT SHOULD HAVE ALL THE INFO NEEDED TO FIND THE GAME AFTER INSTALL.
+			    =================================================== 
+			-->
+			<METADATA>
+			<PROP name = "SystemRequirements" type = "group">
+    	    <PROP name = "OperatingSystem" type = "text" value = "Windows95, Windows98, WindowsME, Windows2000" />
+            <PROP name = "MinProcessorType" type = "text" value = "P-233" />
+            <PROP name = "MinDiskSpaceRun" type = "number" value = "104857600" />
+            <PROP name = "MinDiskSpaceInstall" type = "number" value = "157286400" />
+            <PROP name = "MinMemory" type = "number" value = "67108864" />
+            <PROP name = "Requires3DHardware" type = "flag" value = "1" />
+            <PROP name = "MinDirectXVersion" type = "number" value = "7.0" />
+    				</PROP>
+			</METADATA>
+		</GAME>
+	</GAMELIST>
+	<SIG>14d0a01a97ad213c514f3fa86c34c159</SIG>
+</PACKAGE>

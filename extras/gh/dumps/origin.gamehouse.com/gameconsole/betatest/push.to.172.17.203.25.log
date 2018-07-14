@@ -1,0 +1,41 @@
+building file list ... done
+./
+files/v2/Copy (2) of betaGameDataCache.xml
+files/v2/bejeweledtwisttmevaluation/
+files/v2/bejeweledtwisttmevaluation/DRMConfigbejeweledtwisttmevaluation.rdc
+files/v2/bejeweledtwisttmevaluation/bejeweledtwisttmevaluation.rga
+files/v2/bejeweledtwisttmevaluation/bejeweledtwisttmevaluation.xml
+files/v2/betaGameDataCache.xml
+files/v2/callofatlantisevaluation/
+files/v2/callofatlantisevaluation/DRMConfigcallofatlantisevaluation.rdc
+files/v2/callofatlantisevaluation/callofatlantisevaluation.rga
+files/v2/callofatlantisevaluation/callofatlantisevaluation.xml
+files/v2/luxorquestfortheafterlifeevaluation/DRMConfigluxorquestfortheafterlifeevaluation.rdc
+files/v2/luxorquestfortheafterlifeevaluation/luxorquestfortheafterlifeevaluation.rga
+files/v2/luxorquestfortheafterlifeevaluation/luxorquestfortheafterlifeevaluation.xml
+files/v2/nationalgeographicgamesherodslosttombcevaluation/DRMConfignationalgeographicgamesherodslosttombcevaluation.rdc
+files/v2/nationalgeographicgamesherodslosttombcevaluation/nationalgeographicgamesherodslosttombcevaluation.rga
+files/v2/nationalgeographicgamesherodslosttombcevaluation/nationalgeographicgamesherodslosttombcevaluation.xml
+files/v2/texttwist2evaluation/
+files/v2/texttwist2evaluation/DRMConfigtexttwist2evaluation.rdc
+files/v2/texttwist2evaluation/texttwist2evaluation.rga
+files/v2/texttwist2evaluation/texttwist2evaluation.xml
+push.gameconsolebetatest.log
+push.to.172.17.203.25.log
+push.to.nfs-dl01.real.com.log
+push.to.nfs-dl02.real.com.log
+push.to.nfs-dl03.log
+push.to.nfs-dl04.real.com.log
+wrote 394348150 bytes  read 532 bytes  2503801.16 bytes/sec
+total size is 1282460898  speedup is 3.25
+building file list ... done
+deleting files/v2/Copy of betaGameDataCache.xml
+files/v2/
+push.gameconsolebetatest.log
+push.to.172.17.203.25.log
+push.to.nfs-dl01.real.com.log
+push.to.nfs-dl02.real.com.log
+push.to.nfs-dl03.log
+push.to.nfs-dl04.real.com.log
+wrote 12061 bytes  read 206 bytes  24534.00 bytes/sec
+total size is 1282469659  speedup is 104546.32

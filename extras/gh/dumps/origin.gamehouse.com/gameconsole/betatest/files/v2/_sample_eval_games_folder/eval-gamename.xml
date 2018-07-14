@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game creationDate="2007-02-08" gameID="eval-gamename" xmlns="game" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="game http://games-preview.real.com/rnfeedgamesdl/XMLSchemas/game.xsd">
+	<gameTypeList>
+		<gameType>download</gameType>
+	</gameTypeList>
+	<downloadableGameData>
+		<gameName>GAMENAME GOES HERE</gameName>
+		<images>
+			<gameImage>evalgame_240x135.jpg</gameImage>
+			<thumbnailImage>evalgame_80x45.jpg</thumbnailImage>
+			<featureImage>evalgame_146x110.jpg</featureImage>
+			<squareImage>evalgame_150x150.jpg</squareImage>
+			<tinySquareImage>evalgame_50x50.jpg</tinySquareImage>
+			<promoPageImage>evalgame_750x550.jpg</promoPageImage>
+		</images>
+		<sponsored>false</sponsored>
+		<productID>99999</productID>
+		<systemRequirements>
+			<processor>
+			<speed units="MHz">1000</speed>
+				<description>Pentium or equivalent</description>
+			</processor>
+			<operatingSystemList>
+				<operatingSystem description="Windows XP"/>
+				<operatingSystem description="Windows Vista"/>
+				<operatingSystem description="Windows 7"/>
+			</operatingSystemList>
+			<ram units="MB">512</ram>
+			<diskSpaceRequired units="MB">253</diskSpaceRequired>
+			<graphics>
+				<minDirectXVersion>9</minDirectXVersion>
+				<required3DVideoCard>false</required3DVideoCard>
+			</graphics>
+		</systemRequirements>
+	</downloadableGameData>
+</game>

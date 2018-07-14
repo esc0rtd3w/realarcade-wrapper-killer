@@ -1,0 +1,4 @@
+-i 1177
+-r "Software\Pyrogon\Letter Linker\" "disableLinks" "1" 
+-r "HKEY_CURRENT_USER\Software\Pyrogon\Letter Linker;Fullscreen" "REG_BINARY" "00010000" 
+

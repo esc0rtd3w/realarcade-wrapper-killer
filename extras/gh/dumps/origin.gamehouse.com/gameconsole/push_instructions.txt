@@ -1,0 +1,6 @@
+1. copy your files to the right place
+2. make copy of "go ahead and push-gameconsole"
+3. rename copy to "push-gameconsole" -- this is the push
+3. wait until it disappears. this means that the poosh process has begun
+4. 10-15 minutes later, it should be complete.
+5. watch push.log to monitor progress.

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game creationDate="2010-06-15" gameID="pr-deliciousemilystruelovepremiumeditionreviewcopy" xmlns="game" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="game http://games-preview.real.com/rnfeedgamesdl/XMLSchemas/game.xsd">
+	<gameTypeList>
+		<gameType>download</gameType>
+	</gameTypeList>
+	<downloadableGameData>
+		<gameName>Delicious - Emily's True Love - Premium Edition</gameName>
+		<images>
+<gameImage>pr-deliciousemilystruelovepremiumeditionreviewcopy_240x135.jpg</gameImage>
+<thumbnailImage>pr-deliciousemilystruelovepremiumeditionreviewcopy_80x45.jpg</thumbnailImage>
+<featureImage>pr-deliciousemilystruelovepremiumeditionreviewcopy_146x110.jpg</featureImage>
+<squareImage>pr-deliciousemilystruelovepremiumeditionreviewcopy_150x150.jpg</squareImage>
+<tinySquareImage>pr-deliciousemilystruelovepremiumeditionreviewcopy_50x50.jpg</tinySquareImage>
+<promoPageImage>pr-deliciousemilystruelovepremiumeditionreviewcopy_750x550.jpg</promoPageImage>
+		</images>
+		<sponsored>false</sponsored>
+		<productID>99999</productID>
+		<systemRequirements>
+			<processor>
+			<speed units="MHz">2100</speed>
+				<description>Pentium or equivalent</description>
+			</processor>
+			<operatingSystemList>
+				<operatingSystem description="Windows XP"/>
+				<operatingSystem description="Windows Vista"/>
+				<operatingSystem description="Windows Win7"/>
+			</operatingSystemList>
+			<ram units="MB">512</ram>
+			<diskSpaceRequired units="MB">161</diskSpaceRequired>
+			<graphics>
+				<minDirectXVersion>9.0c</minDirectXVersion>
+				<required3DVideoCard>false</required3DVideoCard>
+			</graphics>
+		</systemRequirements>
+	</downloadableGameData>
+</game>

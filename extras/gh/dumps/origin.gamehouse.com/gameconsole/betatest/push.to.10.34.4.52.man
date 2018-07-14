@@ -1,0 +1,40 @@
+building file list ... done
+.d..t.... ./
+<f.st.... push.gameconsolebetatest.log
+<f.st.... push.to.10.34.4.51.log
+<f.st.... push.to.10.34.4.52.log
+.d..t.... files/v2/
+*deleting files/v2/pr-marooned2secretsoftheakonireviewcopy/pr-marooned2secretsoftheakonireviewcopy_images.rar
+*deleting files/v2/pr-marooned2secretsoftheakonireviewcopy/
+*deleting files/v2/pr-heartsmedicineseasononereviewcopy/pr-heartsmedicineseasononereviewcopy_images.rar
+*deleting files/v2/pr-heartsmedicineseasononereviewcopy/pr-heartsmedicineseasononereviewcopy.xml
+*deleting files/v2/pr-heartsmedicineseasononereviewcopy/pr-heartsmedicineseasononereviewcopy.rga
+*deleting files/v2/pr-heartsmedicineseasononereviewcopy/Version.txt
+*deleting files/v2/pr-heartsmedicineseasononereviewcopy/DRMConfigpr-heartsmedicineseasononereviewcopy.rdc
+*deleting files/v2/pr-heartsmedicineseasononereviewcopy/
+*deleting files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/pr-guardiansofmagicamandasawakeningreviewcopy_images.rar
+*deleting files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/pr-guardiansofmagicamandasawakeningreviewcopy.xml
+*deleting files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/pr-guardiansofmagicamandasawakeningreviewcopy.rga
+*deleting files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/Version.txt
+*deleting files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/DRMConfigpr-guardiansofmagicamandasawakeningreviewcopy.rdc
+*deleting files/v2/pr-guardiansofmagicamandasawakeningreviewcopy/
+*deleting files/v2/pr-dreammysteriescaseoftheredfoxreviewcopy/pr-guardiansofmagicamandasawakeningreviewcopy.rga
+*deleting files/v2/pr-dreammysteriescaseoftheredfoxreviewcopy/pr-dreammysteriescaseoftheredfoxreviewcopy_images.rar
+*deleting files/v2/pr-dreammysteriescaseoftheredfoxreviewcopy/pr-dreammysteriescaseoftheredfoxreviewcopy.xml
+*deleting files/v2/pr-dreammysteriescaseoftheredfoxreviewcopy/Version.txt
+*deleting files/v2/pr-dreammysteriescaseoftheredfoxreviewcopy/DRMConfigpr-dreammysteriescaseoftheredfoxreviewcopy.rdc
+*deleting files/v2/pr-dreammysteriescaseoftheredfoxreviewcopy/
+*deleting files/v2/pr-campfirelegendsthebabysitterreviewcopy/pr-campfirelegendsthebabysitterreviewcopy_images.rar
+*deleting files/v2/pr-campfirelegendsthebabysitterreviewcopy/pr-campfirelegendsthebabysitterreviewcopy.xml
+*deleting files/v2/pr-campfirelegendsthebabysitterreviewcopy/pr-campfirelegendsthebabysitterreviewcopy.rga
+*deleting files/v2/pr-campfirelegendsthebabysitterreviewcopy/DRMConfigpr-campfirelegendsthebabysitterreviewcopy.rdc
+*deleting files/v2/pr-campfirelegendsthebabysitterreviewcopy/
+*deleting files/v2/pr-ancientsecretsmysteryofthevanishingbridereviewcopy/pr-ancientsecretsmysteryofthevanishingbridereviewcopy_images.rar
+*deleting files/v2/pr-ancientsecretsmysteryofthevanishingbridereviewcopy/pr-ancientsecretsmysteryofthevanishingbridereviewcopy.xml
+*deleting files/v2/pr-ancientsecretsmysteryofthevanishingbridereviewcopy/pr-ancientsecretsmysteryofthevanishingbridereviewcopy.rga
+*deleting files/v2/pr-ancientsecretsmysteryofthevanishingbridereviewcopy/Version.txt
+*deleting files/v2/pr-ancientsecretsmysteryofthevanishingbridereviewcopy/DRMConfigpr-ancientsecretsmysteryofthevanishingbridereviewcopy.rdc
+*deleting files/v2/pr-ancientsecretsmysteryofthevanishingbridereviewcopy/
+
+sent 5593 bytes  received 128 bytes  11442.00 bytes/sec
+total size is 117938009  speedup is 20614.93

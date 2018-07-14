@@ -1,0 +1,384 @@
+.powered
+{
+    MARGIN-TOP: -16px;
+    FONT-SIZE: 0.8em;
+    COLOR: #96989d
+}
+BODY.playgames DL.tab-set
+{
+    WIDTH: 340px
+}
+BODY.playgames DL.tab-set DT
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    BORDER-LEFT: medium none;
+    BORDER-BOTTOM: medium none
+}
+BODY.playgames DL.tab-set DD
+{
+    PADDING-RIGHT: 0px! important;
+    PADDING-LEFT: 0px! important;
+    PADDING-BOTTOM: 0px! important;
+    WIDTH: 340px;
+    PADDING-TOP: 30px! important
+}
+#m-playabletop DL DD DIV.dd-content
+{
+    PADDING-RIGHT: 5px;
+    PADDING-LEFT: 20px;
+    PADDING-BOTTOM: 15px;
+    PADDING-TOP: 0px
+}
+#m-playabletop IMG.featured
+{
+    FLOAT: left
+}
+#m-playabletop DIV.right
+{
+    MARGIN-LEFT: 180px
+}
+#m-playabletop A
+{
+    FONT-SIZE: 0.9em! important
+}
+#m-playabletop DIV.column-container
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    MARGIN-BOTTOM: 10px;
+    PADDING-BOTTOM: 10px;
+    MARGIN-RIGHT: 15px;
+    PADDING-TOP: 20px;
+    BORDER-BOTTOM: #ccc 1px dotted
+}
+#m-playabletop DIV.column-container IMG
+{
+    MARGIN-BOTTOM: 10px
+}
+#m-playabletop DIV.column
+{
+    DISPLAY: block;
+    FLOAT: left;
+    OVERFLOW: hidden;
+    WIDTH: 92px
+}
+#m-playabletop DIV.last-column
+{
+    DISPLAY: block;
+    FLOAT: left;
+    OVERFLOW: hidden;
+    WIDTH: 92px
+}
+#m-playabletop DIV.column
+{
+    MARGIN-RIGHT: 10px
+}
+#m-playabletop DIV.column IMG
+{
+    DISPLAY: block
+}
+#m-playabletop DIV.last-column IMG
+{
+    DISPLAY: block
+}
+#m-playabletop
+{
+    PADDING-BOTTOM: 18px
+}
+#m-browsegames IMG
+{
+    BORDER-RIGHT: #000 1px solid;
+    BORDER-TOP: #000 1px solid;
+    BORDER-LEFT: #000 1px solid;
+    BORDER-BOTTOM: #000 1px solid
+}
+#m-browsegames IMG
+{
+    BORDER-RIGHT: #000 1px solid;
+    BORDER-TOP: #000 1px solid;
+    BORDER-LEFT: #000 1px solid;
+    BORDER-BOTTOM: #000 1px solid
+}
+#m-playabletop IMG
+{
+    BORDER-RIGHT: #000 1px solid;
+    BORDER-TOP: #000 1px solid;
+    BORDER-LEFT: #000 1px solid;
+    BORDER-BOTTOM: #000 1px solid
+}
+#m-specialoffers IMG
+{
+    BORDER-RIGHT: #000 1px solid;
+    BORDER-TOP: #000 1px solid;
+    BORDER-LEFT: #000 1px solid;
+    BORDER-BOTTOM: #000 1px solid
+}
+.divider
+{
+    BORDER-TOP: #b5b5b5 1px dotted;
+    MARGIN-TOP: 5px;
+    FLOAT: left;
+    MARGIN-BOTTOM: 5px;
+    WIDTH: 340px;
+    HEIGHT: 1px
+}
+.spacer
+{
+    MARGIN-TOP: 20px! important;
+    MARGIN-BOTTOM: 20px! important
+}
+BODY.playgames DIV#m-browsegames
+{
+    PADDING-RIGHT: 0px! important;
+    PADDING-LEFT: 0px! important;
+    PADDING-BOTTOM: 20px! important;
+    PADDING-TOP: 20px! important
+}
+DIV.genrediv
+{
+    FLOAT: left;
+    WIDTH: 105px
+}
+DIV.lastgenrediv
+{
+    FLOAT: left;
+    WIDTH: 105px
+}
+DIV.genrediv
+{
+    MARGIN-RIGHT: 9px
+}
+DIV.genrediv UL
+{
+    MARGIN: 20px 0px 10px
+}
+DIV.lastgenrediv UL
+{
+    MARGIN: 20px 0px 10px
+}
+BODY.playgames #m-kidsgames IMG
+{
+    BORDER-RIGHT: #000 1px solid;
+    BORDER-TOP: #000 1px solid;
+    MARGIN-BOTTOM: 20px;
+    BORDER-LEFT: #000 1px solid;
+    BORDER-BOTTOM: #000 1px solid
+}
+BODY.playgames #m-wildgames IMG
+{
+    BORDER-RIGHT: #000 1px solid;
+    BORDER-TOP: #000 1px solid;
+    MARGIN-BOTTOM: 20px;
+    BORDER-LEFT: #000 1px solid;
+    BORDER-BOTTOM: #000 1px solid
+}
+BODY.playgames #m-morekids UL
+{
+    MARGIN-TOP: 20px
+}
+#m-playgamedetails
+{
+    PADDING-BOTTOM: 18px
+}
+#m-playgamedetails H5
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 2em;
+    MARGIN: 0px 0px 12px;
+    TEXT-TRANSFORM: none;
+    LINE-HEIGHT: 1.2em;
+    FONT-FAMILY: georgia, times, serif;
+    HEIGHT: auto
+}
+#m-playgamedetails IMG.featured
+{
+    BORDER-RIGHT: #000 1px solid;
+    BORDER-TOP: #000 1px solid;
+    MARGIN-TOP: 4px;
+    FLOAT: left;
+    BORDER-LEFT: #000 1px solid;
+    MARGIN-RIGHT: 20px;
+    BORDER-BOTTOM: #000 1px solid
+}
+#m-playgamedetails TABLE
+{
+    BORDER-RIGHT: #eaeaeb 1px solid;
+    BORDER-TOP: #eaeaeb 1px solid;
+    MARGIN: 10px 0px 20px;
+    BORDER-LEFT: #eaeaeb 1px solid;
+    WIDTH: 340px;
+    BORDER-BOTTOM: #eaeaeb 1px solid;
+    BORDER-COLLAPSE: collapse
+}
+#m-playgamedetails TR.highlight
+{
+}
+#m-playgamedetails TD
+{
+    PADDING-RIGHT: 5px;
+    PADDING-LEFT: 5px;
+    PADDING-BOTTOM: 5px;
+    PADDING-TOP: 5px
+}
+#m-playgamedetails TD.data
+{
+    TEXT-ALIGN: right
+}
+#m-playgamedetails DIV.buttons P
+{
+    MARGIN-BOTTOM: 8px
+}
+#m-playgamedetails DIV.buttons P.last
+{
+    MARGIN-BOTTOM: 0px
+}
+DIV.browse-wide
+{
+    PADDING-BOTTOM: 1px;
+    MARGIN: 0px 20px;
+    BORDER-BOTTOM: #dfddde 1px solid
+}
+DIV.browse-wide DIV.genre
+{
+    PADDING-BOTTOM: 8px;
+    MARGIN: 20px 0px -1px;
+    BORDER-BOTTOM: #dfddde 1px dotted
+}
+DIV.genre-column
+{
+    FLOAT: left;
+    WIDTH: 160px;
+    MARGIN-RIGHT: 30px
+}
+DIV.third
+{
+    MARGIN-RIGHT: 0px! important
+}
+DIV.browse-wide IMG
+{
+    BORDER-RIGHT: #000 1px solid;
+    BORDER-TOP: #000 1px solid;
+    BORDER-LEFT: #000 1px solid;
+    BORDER-BOTTOM: #000 1px solid
+}
+DIV.genre-column UL
+{
+    MARGIN: 0px;
+    LIST-STYLE-TYPE: none
+}
+DIV.genre-column UL LI
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px 0px 10px;
+    PADDING-TOP: 0px
+}
+BODY.playgames .module H3
+{
+    BACKGROUND-IMAGE: url(images/playgames-h3.gif);
+    TEXT-INDENT: -9999px;
+    BACKGROUND-REPEAT: no-repeat
+}
+BODY.playgames H3#h-playablegames
+{
+    BACKGROUND-POSITION: 0px 0px
+}
+BODY.playgames H3#h-gotoinvasion
+{
+    BACKGROUND-POSITION: 0px -7px
+}
+BODY.playgames H3#h-specialoffers
+{
+    BACKGROUND-POSITION: 0px -14px
+}
+BODY.playgames H3#h-offer
+{
+    BACKGROUND-POSITION: 0px -14px
+}
+BODY.playgames H3#h-kidsgames
+{
+    BACKGROUND-POSITION: 0px -21px
+}
+BODY.playgames H3#h-wildgames
+{
+    BACKGROUND-POSITION: 0px -28px
+}
+BODY.playgames H3#h-promotions
+{
+    BACKGROUND-POSITION: 0px -35px
+}
+BODY.playgames H3#h-poll
+{
+    BACKGROUND-POSITION: 0px -91px
+}
+BODY.playgames H3#h-browsegames
+{
+    BACKGROUND-POSITION: 0px -49px
+}
+BODY.playgames H3#h-webplayable
+{
+    BACKGROUND-POSITION: 0px -56px
+}
+BODY.playgames H3#h-browsedownloadable
+{
+    BACKGROUND-POSITION: 0px -63px
+}
+BODY.playgames H3#h-genre
+{
+    BACKGROUND-POSITION: 0px -70px
+}
+BODY.playgames H3#h-gamerating
+{
+    BACKGROUND-POSITION: 0px -77px
+}
+BODY.playgames H3#h-moregames
+{
+    BACKGROUND-POSITION: 0px -84px
+}
+BODY.playgames .module H4
+{
+    MARGIN-BOTTOM: 10px;
+    OVERFLOW: hidden;
+    COLOR: #308290;
+    BACKGROUND-REPEAT: no-repeat
+}
+BODY.playgames H4#h-morekids
+{
+    PADDING-RIGHT: 0px! important;
+    BACKGROUND-POSITION: 0px -89px;
+    PADDING-LEFT: 0px! important;
+    FONT-SIZE: 0.8em;
+    BACKGROUND-IMAGE: url(images/playgames-h4.gif);
+    MARGIN-BOTTOM: 10px;
+    PADDING-BOTTOM: 0px! important;
+    OVERFLOW: hidden;
+    TEXT-TRANSFORM: uppercase;
+    COLOR: #308290;
+    TEXT-INDENT: -9999px;
+    PADDING-TOP: 0px! important;
+    BACKGROUND-REPEAT: no-repeat;
+    HEIGHT: 7px;
+    BACKGROUND-COLOR: transparent
+}
+BODY.playgames H4#h-fullversion
+{
+    BACKGROUND-POSITION: 0px -103px
+}
+BODY.playgames H4#h-systemreqs
+{
+    BACKGROUND-POSITION: 0px -110px
+}
+BODY.games H2#h2-playgames
+{
+    BACKGROUND-POSITION: 0px -57px
+}
+BODY.games H2#h2-downloadable
+{
+    BACKGROUND-POSITION: 0px -76px
+}
+BODY.games H2#h2-webplayable
+{
+    BACKGROUND-POSITION: 0px -95px
+}

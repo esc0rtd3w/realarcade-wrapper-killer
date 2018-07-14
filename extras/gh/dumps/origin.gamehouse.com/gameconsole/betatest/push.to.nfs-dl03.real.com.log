@@ -1,0 +1,12 @@
+building file list ... done
+./
+push.gameconsolebetatest.log
+push.to.10.33.4.50.log
+push.to.10.33.4.51.log
+push.to.nfs-dl01.real.com.log
+push.to.nfs-dl02.real.com.log
+push.to.nfs-dl03.real.com.log
+push.to.nfs-dl04.real.com.log
+
+sent 10891 bytes  received 528 bytes  7612.67 bytes/sec
+total size is 1671827452  speedup is 146407.52
