@@ -1,0 +1,2802 @@
+<comment>###################################################################
+# Name: 	:game_info.rx
+# Purpose:	Game Info
+#
+#
+#     This file is a part of the RealNetworks software library.
+#     Copyright (C) 2004 RealNetworks, Inc.
+#     All rights reserved.
+#
+##################################################################</comment>
+
+<comment>note: this text is not localized</comment>
+
+<if variable="game is aliensky">
+	<set variable="game_name" value="Alien Sky">
+	<set variable="lst_upd_day" value="16">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes a variety of bugs:<br><br>
+	Increased compatibility with Intel, 3DFX, and ATI video cards<br>
+	Performance increase<br>
+	Hall of Fame bug fixed<br>
+	Fixed a slow moving ship bug when using the mouse<br>
+	Fixed a memory allocation crash
+	</define>
+</if>
+
+<if variable="game is astrobatics">
+	<set variable="game_name" value="Astrobatics">
+	<set variable="lst_upd_day" value="16">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes a variety of bugs:<br><br>
+	Decreased overall difficulty<br>
+	Fixed sounds not playing on some machines<br>
+	Memory allocation crash fixed<br><br>
+	Previous Updates:<br>
+	November 6, 2003 - Update fixes a variety of bugs
+	</define>
+</if>
+
+<if variable="game is atomaders">
+	<set variable="game_name" value="Atomaders">
+	<set variable="lst_upd_day" value="16">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes a variety of game bugs including memory allocation, issues with the scoring, and compatibility with low-memory Metrox and 3DFX video cards<br><br>
+
+	Previous Updates:<br>
+	09/23/03 - Update fixes a variety of game bugs, increases video card compatibility and game performance<br><br>
+
+	Previous Updates:<br>
+	06/12/03 - Update adds a new campaign with 60 more levels 
+	</define>
+</if>
+
+<if variable="game is axis">
+	<set variable="game_name" value="Axis">
+	<set variable="lst_upd_day" value="19">
+	<define name="lst_upd_month"><insert variable="m_7"></define>
+	<set variable="lst_upd_year" value="2002">
+	<define name="fixes">
+	 Update adds support for U.S. multiplayer server
+	</define>
+</if>
+
+<if variable="game is ballsofsteelcreatureattack">
+	<set variable="game_name" value="Balls of Steel - Creature Attack!">
+	<set variable="lst_upd_day" value="20">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update adds in-game Tell A Friend feature.
+	</define>
+</if>
+
+<if variable="game is birdsonawire">
+	<set variable="game_name" value="Birds on a Wire">
+	<set variable="lst_upd_day" value="22">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Balanced the gameplay more and reduced extreme difficulty of some levels.<br />
+	<br />
+	Previous Updates:<br />
+	08/25/06 - A "Clear" button now appears on the high score list.<br />
+	08/25/06 - Level balance has been tweaked to fix a few overly-difficult levels.<br />
+	08/04/06 - Five new musical themes have been added so that each new area now has its own theme.
+	</define>
+</if>
+
+<if variable="game is bookwormdeluxe">
+	<set variable="game_name" value="BookWorm Deluxe">
+	<set variable="lst_upd_day" value="30">
+	<define name="lst_upd_month"><insert variable="m_7"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	 Update changes letter tiles from white to off-white
+	</define>
+</if>
+
+<if variable="game is burstingbubbles">
+	<set variable="game_name" value="Bursting Bubbles">
+	<set variable="lst_upd_day" value="05">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Updated with new artwork, new sounds, and improved user interface.
+	</define>
+</if>
+
+<if variable="game is candee">
+	<set variable="game_name" value="Candee">
+	<set variable="lst_upd_day" value="13">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2002">
+	<define name="fixes">
+	Update lowers DirectX requirement to 3.0
+	</define>
+</if>
+
+<if variable="game is centipede">
+	<set variable="game_name" value="Centipede">
+	<set variable="lst_upd_day" value="14">
+	<define name="lst_upd_month"><insert variable="m_11"></define>
+	<set variable="lst_upd_year" value="2002">
+	<define name="fixes">
+	 Update fixes bug that occurs if game is installed in drive other than c:\ 
+	</define>
+</if>
+
+<if variable="game is chainz">
+	<set variable="game_name" value="Chainz">
+	<set variable="lst_upd_day" value="13">
+	<define name="lst_upd_month"><insert variable="m_2"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes an issue with Intel video chipsets
+	<b>Previous Updates</b><br><br>
+	December 4, 2003 - Update fixed Windows XP performance issues
+	</define>
+</if>
+
+<if variable="game is columnsiii">
+	<set variable="game_name" value="Columns III">
+	<set variable="lst_upd_day" value="12">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update added mouse controls 
+	</define>
+</if>
+
+<if variable="game is combochaos">
+	<set variable="game_name" value="Combo Chaos">
+	<set variable="lst_upd_day" value="1">
+	<define name="lst_upd_month"><insert variable="m_7"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes a number of minor bugs
+	</define>
+</if>
+
+<if variable="game is comixzone">
+	<set variable="game_name" value="Comix Zone">
+	<set variable="lst_upd_day" value="12">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update added mouse controls
+	</define>
+</if>
+
+<if variable="game is congocube">
+	<set variable="game_name" value="Congo Cube">
+	<set variable="lst_upd_day" value="26">
+	<define name="lst_upd_month"><insert variable="m_6"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes a bug that occurs when a large user name is entered.
+	</define>
+</if>
+
+<if variable="game is crimsonland">
+	<set variable="game_name" value="Crimsonland">
+	<set variable="lst_upd_day" value="04">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update adds 10 new levels, 3 new weapons, 6 new perks and mod support. 
+	</define>
+</if>
+
+<if variable="game is cubisgold">
+	<set variable="game_name" value="Cubis Gold">
+	<set variable="lst_upd_day" value="11">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes a variety of game bugs<br><br>
+	<b>Previous Updates</b><br><br>
+	September 27, 2002 - Update fixed Windows XP performance issues
+	</define>
+</if>
+
+<if variable="game is cycles">
+	<set variable="game_name" value="Cycles">
+	<set variable="lst_upd_day" value="25">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update to the readme
+	</define>
+</if>
+
+<if variable="game is diamondmine">
+	<set variable="game_name" value="Diamond Mine">
+	<set variable="lst_upd_day" value="22">
+	<define name="lst_upd_month"><insert variable="m_4"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes a variety of game bugs
+	</define>
+</if>
+
+<if variable="game is digbysdonuts">
+	<set variable="game_name" value="Digby's Donuts">
+	<set variable="lst_upd_day" value="14">
+	<define name="lst_upd_month"><insert variable="m_4"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update adds improved visuals and graphics in 32 bit color.<br>
+	Update adds much-requested save game feature.<br>
+	Update removes annoying click-to-continue sequences<br>
+	Update adds streamlined help tips as well as the ability to able or disable tips.<br>
+	<b>Previous Updates</b><br><br>
+	January 16, 2004 - Improves gameplay, based on feedback<br>
+	</define>
+</if>
+
+<if variable="game is drrobotniksmeanbeanmachine">
+	<set variable="game_name" value="Dr. Robotnik's Mean Bean Machine">
+	<set variable="lst_upd_day" value="12">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update added mouse controls<br><br>
+	Previous Updates:<br>
+	January 3, 2003 - Update adds in-game hints
+	</define>
+</if>
+
+<if variable="game is dynomite">
+	<set variable="game_name" value="Dynomite">
+	<set variable="lst_upd_day" value="15">
+	<define name="lst_upd_month"><insert variable="m_8"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes a variety of game bugs
+	</define>
+</if>
+
+<if variable="game is eccothedolphin">
+	<set variable="game_name" value="Ecco the Dolphin">
+	<set variable="lst_upd_day" value="22">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update added mouse controls<br><br>
+	Previous Updates:<br>
+	January 3, 2003 - Update adds in-game hints 
+	</define>
+</if>
+
+<if variable="game is enigram3">
+	<set variable="game_name" value="Enigram 3">
+	<set variable="lst_upd_day" value="24">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update adds new music 
+	</define>
+</if>
+
+<if variable="game is equilibria">
+	<set variable="game_name" value="Equilibria">
+	<set variable="lst_upd_day" value="04">
+	<define name="lst_upd_month"><insert variable="m_11"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes issues with S3 chipsets and issues with DirectX 9.0b
+	</define>
+</if>
+
+<if variable="game is fatethecarnivalegame">
+	<set variable="game_name" value="FATE: The Carnivale Game">
+	<set variable="lst_upd_day" value="13">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	- Update adds a quick score button (along with an 'always quick score' preference below it).  This enhancement makes a huge difference in the feel of the game <br>
+	- Update adjusts the AI to make the game easier to win at the beginning <br>
+	- Update adds the ability to alternate who plays first at the beginnning of each round <br><br>
+	Previous Updates:<br>
+	Nov 25, 2003 - Update fixes a variety of bugs
+	</define>
+</if>
+
+<if variable="game is fitznik">
+	<set variable="game_name" value="Fitznik">
+	<set variable="lst_upd_day" value="17">
+	<define name="lst_upd_month"><insert variable="m_7"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes crash that occurs at level 13 on Windows XP<br><br>
+	Previous Updates:<br>
+	04/22/03 - Update fixes a variety of bugs 
+	</define>
+</if>
+
+<if variable="game is froggycastle">
+	<set variable="game_name" value="Froggy Castle">
+	<set variable="lst_upd_day" value="16">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update added gamepad/joystick support, new cheats, ability to save progress
+	</define>
+</if>
+
+<if variable="game is getmedieval">
+	<set variable="game_name" value="Get Medieval">
+	<set variable="lst_upd_day" value="26">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2002">
+	<define name="fixes">
+	Update adds Windows XP support
+	</define>
+</if>
+
+<if variable="game is gravity">
+	<set variable="game_name" value="Gravity">
+	<set variable="lst_upd_day" value="13">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2002">
+	<define name="fixes">
+	Update lowers DirectX requirement to 3.0
+	</define>
+</if>
+
+<if variable="game is gutterball3d">
+	<set variable="game_name" value="Gutterball 3D">
+	<set variable="lst_upd_day" value="30">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update adds 3 new ball textures, fixes a variety of bugs, and adds one cool feature to the Cosmic Alley 
+	</define>
+</if>
+
+<if variable="game is highroller">
+	<set variable="game_name" value="High Roller">
+	<set variable="lst_upd_day" value="04">
+	<define name="lst_upd_month"><insert variable="m_11"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes minimized launching issue with XP 
+	</define>
+</if>
+
+<if variable="game is jammedagain">
+	<set variable="game_name" value="Jammed Again">
+	<set variable="lst_upd_day" value="13">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes a variety of game bugs
+	</define>
+</if>
+
+<if variable="game is kokoarena">
+	<set variable="game_name" value="Koko Arena">
+	<set variable="lst_upd_day" value="07">
+	<define name="lst_upd_month"><insert variable="m_2"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes a variety of bugs, including the game hanging on Windows 2000
+	</define>
+</if>
+
+<if variable="game is kyodaimahjongg">
+	<set variable="game_name" value="Kyodai Mahjongg">
+	<set variable="lst_upd_day" value="30">
+	<define name="lst_upd_month"><insert variable="m_7"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes a variety of bugs
+	</define>
+</if>
+
+<if variable="game is mahjonggtowers">
+	<set variable="game_name" value="Mahjongg Towers">
+	<set variable="lst_upd_day" value="29">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2002">
+	<define name="fixes">
+	Update fixes a variety of bugs
+	</define>
+</if>
+
+<if variable="game is mahjonggtowersii">
+	<set variable="game_name" value="Mahjongg Towers II">
+	<set variable="lst_upd_day" value="18">
+	<define name="lst_upd_month"><insert variable="m_12"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes a variety of bugs
+	fixes scripting errors<br>
+	fixes an issue that didn't allow some levels to be completed<br>
+	fixes an issue with the board editor and the X button that closes the game in windowed mode<br>
+	</define>
+</if>
+
+<if variable="game is monopoly">
+	<set variable="game_name" value="Monopoly">
+	<set variable="lst_upd_day" value="21">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes bugs that occurs when the user installs to a drive other than c:\ 
+	</define>
+</if>
+
+<if variable="game is moontycoon">
+	<set variable="game_name" value="Moon Tycoon">
+	<set variable="lst_upd_day" value="22">
+	<define name="lst_upd_month"><insert variable="m_4"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes a variety of bugs and improves artwork
+	</define>
+</if>
+
+<if variable="game is penguinpuzzle">
+	<set variable="game_name" value="Penguin Puzzle">
+	<set variable="lst_upd_day" value="17">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update adds a few in-game features.<br>
+	<b>Note:</b> This update also changes the RAM requirement from 16MB to 32MB
+	</define>
+</if>
+
+<if variable="game is phantasystarii">
+	<set variable="game_name" value="Phantasy Star II">
+	<set variable="lst_upd_day" value="22">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update added mouse controls<br><br>
+	Previous Updates:<br>
+	January 1, 2003 - Update adds in-game hints
+	</define>
+</if>
+
+<if variable="game is planetarydefense">
+	<set variable="game_name" value="Planetary Defense">
+	<set variable="lst_upd_day" value="02">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update adds new game features 
+	</define>
+</if>
+
+<if variable="game is playtoniumjigsawgarfieldgoestopieces">
+	<set variable="game_name" value="Playtonium Jigsaw Garfield Goes to Pieces">
+	<set variable="lst_upd_day" value="17">
+	<define name="lst_upd_month"><insert variable="m_7"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes a display bug in the Main Menu
+	</define>
+</if>
+
+<if variable="game is playtoniumjigsawwinterholidays">
+	<set variable="game_name" value="Playtonium Jigsaw Winter Holidays">
+	<set variable="lst_upd_day" value="04">
+	<define name="lst_upd_month"><insert variable="m_11"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Updates the user interface
+	</define>
+</if>
+
+<if variable="game is pokersuperstarsinvitationaltournamenttm">
+	<set variable="game_name" value="Poker Superstars Invitational Tournament (tm)">
+	<set variable="lst_upd_day" value="07">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update adds some minor fixes and tweaks.<br>
+	Previous Updates:<br>
+	June 28, 2005 - Update fixes issues when restoring the saved games it causes some odd split pots.
+	</define>
+</if>
+
+<if variable="game is powerchips">
+	<set variable="game_name" value="Power Chips">
+	<set variable="lst_upd_day" value="04">
+	<define name="lst_upd_month"><insert variable="m_11"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes minimized launching issue with XP
+	</define>
+</if>
+
+<if variable="game is puzzix">
+	<set variable="game_name" value="Puzzix">
+	<set variable="lst_upd_day" value="13">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2002">
+	<define name="fixes">
+	Update lowers DirectX requirement to 3.0
+	</define>
+</if>
+
+<if variable="game is puzzleinlay">
+	<set variable="game_name" value="Puzzle Inlay">
+	<set variable="lst_upd_day" value="30">
+	<define name="lst_upd_month"><insert variable="m_6"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update adds 40 levels to give it a total of 100 levels<br><br>
+	Previous Updates:<br>
+	May 15, 2003 - Update fixes a bug that prevented users from playing the demo when running Windows XP 
+	</define>
+	
+</if>
+
+<if variable="game is reinerkniziassamurai">
+	<set variable="game_name" value="Reiner Knizia's Samurai">
+	<set variable="lst_upd_day" value="04">
+	<define name="lst_upd_month"><insert variable="m_12"></define>
+	<set variable="lst_upd_year" value="2002">
+	<define name="fixes">
+	 Update fixes a variety of bugs
+	</define>
+</if>
+
+<if variable="game is rocketmania">
+	<set variable="game_name" value="Rocket Mania">
+	<set variable="lst_upd_day" value="13">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes an issue with the game music
+	</define>
+</if>
+
+<if variable="game is shinobiiiitreturnofnijnamaster">
+	<set variable="game_name" value="Shinobi III - Return of Ninja Master">
+	<set variable="lst_upd_day" value="12">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update added mouse controls<br><br>
+	Previous Updates:<br>
+	January 3, 2003 - Update adds in-game hints
+	</define>
+</if>
+
+<if variable="game is snood">
+	<set variable="game_name" value="Snood">
+	<set variable="lst_upd_day" value="07">
+	<define name="lst_upd_month"><insert variable="m_8"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	New Version 3.0 - Adds support for XP and improved graphics and gameplay
+	</define>
+</if>
+
+<if variable="game is sonic3dblast">
+	<set variable="game_name" value="Sonic 3D Blast">
+	<set variable="lst_upd_day" value="24">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update added mouse controls
+	</define>
+</if>
+
+<if variable="game is sonicandknuckles">
+	<set variable="game_name" value="Sonic & Knuckles">
+	<set variable="lst_upd_day" value="24">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update added mouse controls
+	</define>
+</if>
+
+<if variable="game is sonicthehedgehog">
+	<set variable="game_name" value="Sonic the Hedgehog">
+	<set variable="lst_upd_day" value="24">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update added mouse controls<br><br>
+	Previous Updates:<br>
+	January 3, 2003 - Update adds in-game hints
+	</define>
+</if>
+
+<if variable="game is sonicthehedgehog2">
+	<set variable="game_name" value="Sonic the Hedgehog 2">
+	<set variable="lst_upd_day" value="24">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update added mouse controls<br><br>
+	Previous Updates:<br>
+	January 3, 2003 - Update adds in-game hints 
+	</define>
+</if>
+
+<if variable="game is sonicthehedgehog3">
+	<set variable="game_name" value="Sonic the Hedgehog 3">
+	<set variable="lst_upd_day" value="24">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update added mouse controls
+	</define>
+</if>
+
+<if variable="game is sonicspinball">
+	<set variable="game_name" value="Sonic Spinball">
+	<set variable="lst_upd_day" value="24">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update added mouse controls
+	</define>
+</if>
+
+<if variable="game is spelvin">
+	<set variable="game_name" value="Spelvin">
+	<set variable="lst_upd_day" value="26">
+	<define name="lst_upd_month"><insert variable="m_6"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes a scoring bug that appears after level 20
+	</define>
+</if>
+
+<if variable="game is supercandycruncher">
+	<set variable="game_name" value="Super Candy Cruncher">
+	<set variable="lst_upd_day" value="19">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2002">
+	<define name="fixes">
+	Update allows users to unlock the full version of the game when installed on a drive other than C:\ 
+	</define>
+</if>
+
+<if variable="game is supercollapseii">
+	<set variable="game_name" value="Super Collapse II">
+	<set variable="lst_upd_day" value="21">
+	<define name="lst_upd_month"><insert variable="m_5"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update allows support for additional puzzle packs<br><br>
+	Previous Updates:<br>
+	May 15, 2003 - New version supports additional puzzles published by GameHouse
+	</define>
+</if>
+
+<if variable="game is supercollapseiiplatinum">
+	<set variable="game_name" value="Super Collapse! II Platinum">
+	<set variable="lst_upd_day" value="28">
+	<define name="lst_upd_month"><insert variable="m_6"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes high score display bug.
+	</define>
+</if>
+
+
+<if variable="game is supergamehousesolitaire">
+	<set variable="game_name" value="Super GameHouse Solitaire">
+	<set variable="lst_upd_day" value="22">
+	<define name="lst_upd_month"><insert variable="m_4"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes a variety of bugs and adds a few new features
+	</define>
+</if>
+
+<if variable="game is supergroovy">
+	<set variable="game_name" value="Super Groovy">
+	<set variable="lst_upd_day" value="04">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update adds a new game mode - Arcade!
+	</define>
+</if>
+
+<if variable="game is superpopdrop">
+	<set variable="game_name" value="Super Pop & Drop">
+	<set variable="lst_upd_day" value="25">
+	<define name="lst_upd_month"><insert variable="m_6"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes a bug where users were not able to continue after losing<br><br>
+	Previous Updates:<br>
+	May 21, 2004 - Update fixes Action mode, now has different patterns in each level and the start level is now saved between sessions
+	</define>
+</if>
+
+<if variable="game is supertexttwist">
+	<set variable="game_name" value="Super TextTwist">
+	<set variable="lst_upd_day" value="06">
+	<define name="lst_upd_month"><insert variable="m_5"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update adds a 'Save Game' feature and the word list has been updated<br><br>
+	Previous Updates:<br>
+	October 2, 2002 - Update adds words to game dictionary
+	</define>
+</if>
+
+<if variable="game is toejamandearl">
+	<set variable="game_name" value="ToeJam & Earl">
+	<set variable="lst_upd_day" value="23">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update added mouse controls<br><br>
+	Previous Updates:<br>
+	January 3, 2003 - Update adds in-game hints
+	</define>
+</if>
+
+<if variable="game is thetreasureonbingbongisland">
+	<set variable="game_name" value="The Treasure on Bing Bong Island">
+	<set variable="lst_upd_day" value="12">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes a variety of bugs
+	</define>
+</if>
+
+
+<if variable="game is triclops">
+	<set variable="game_name" value="Triclops">
+	<set variable="lst_upd_day" value="17">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes a variety of bugs
+	</define>
+</if>
+
+<if variable="game is typersharkdeluxe">
+	<set variable="game_name" value="Typer Shark Deluxe">
+	<set variable="lst_upd_day" value="16">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update fixes a variety of bugs
+	</define>
+</if>
+
+<if variable="game is vectorman">
+	<set variable="game_name" value="Vectorman">
+	<set variable="lst_upd_day" value="23">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update added mouse controls<br><br>
+	Previous Updates:<br>
+	January 3, 2003 - Update adds in-game hints 
+	</define>
+</if>
+
+<if variable="game is virtuafighter2">
+	<set variable="game_name" value="Virtua Fighter 2">
+	<set variable="lst_upd_day" value="23">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update added mouse controls<br><br>
+	Previous Updates:<br>
+	January 3, 2003 - Update adds in-game hints 
+	</define>
+</if>
+
+<if variable="game is wordjolt">
+	<set variable="game_name" value="Word Jolt">
+	<set variable="lst_upd_day" value="23">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2003">
+	<define name="fixes">
+	Update to the DirectX requirements and word library
+	</define>
+</if>
+
+<if variable="game is feedingfrenzy">
+	<set variable="game_name" value="Feeding Frenzy">
+	<set variable="lst_upd_day" value="10">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes a variety of bugs: <br>
+	-  The game no longer crashes if you're eaten just as you eat something that makes you grow <br>
+	-  The game no longer crashes if the screensaver kicks on while the game is running <br><br>
+	Previous Updates:<br>
+	July 2, 2004 -  Adds FAQ to readme.txt <br>
+		-  Width of high score name entry field increased to support long names, and added periods between names and scores due to increased width <br>
+		-  Fixes one-pixel jump of main menu screen <br>
+		-  Adds text to stage 4 to warn players that oysters can close on them <br>
+	        -  Fixes bug where some settings such as the food bank would reset if player closed the game during the loading screen<br>
+	April 4, 2004 - Fixes crash if user has no sound card<br>
+	        -  Fixes crash if you get eaten just as you eat a fish that makes you grow<br>
+		-  Fixes problem of entering high score names on some machines<br>
+		-  No longer crashes in rare circumstances when encountering poison fish<br>
+		-  Lost City screen saver now loads<br>
+	March 22, 2004 - Update fixes a variety of bugs:<br>
+		-  Fix for crash when player encounters poison minnow on left edge of screen swimming to right in some circumstances<br>
+		-  Fix for crash if player double-clicks 'continue' at end of game<br>
+		-  Fix for crash in rare situation when player gets eaten just as player is eating a smaller fish that causes player to grow<br>
+		-  Handfull of typo and formatting changes to pre-level text<br>
+	February 27, 2004 - Update fixes a variety of bugs<br>
+	February 24, 2004 - Update fixes issues with full screen mode on 16-bit displays<br>
+	February 12, 2004 - Update installs the screen saver
+	</define>
+</if>
+
+<if variable="game is candycrisis">
+	<set variable="game_name" value="Candy Crisis">
+	<set variable="lst_upd_day" value="27">
+	<define name="lst_upd_month"><insert variable="m_2"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes a variety of bugs<br><br>
+	</define>
+</if>
+
+<if variable="game is pinhighcountryclubgolf">
+	<set variable="game_name" value="Pin High Country Club Golf">
+	<set variable="lst_upd_day" value="27">
+	<define name="lst_upd_month"><insert variable="m_2"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	This update fixes the right mouse click quitting the game
+	</define>
+</if>
+
+<if variable="game is wordchallenger">
+	<set variable="game_name" value="Word Challenger">
+	<set variable="lst_upd_day" value="01">
+	<define name="lst_upd_month"><insert variable="m_4"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes scripting error message<br><br>
+	Previous Updates:<br>
+	March 11, 2004 - Update fixes a variety of bugs
+	</define>
+</if>
+
+<if variable="game is 5spotsii">
+	<set variable="game_name" value="5 Spots II">
+	<set variable="lst_upd_day" value="11">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes a variety of bugs<br><br>
+	</define>
+</if>
+
+<if variable="game is supertapajam">
+	<set variable="game_name" value="Super Tap a Jam">
+	<set variable="lst_upd_day" value="11">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes the More Music feature
+	</define>
+</if>
+
+<if variable="game is magicinlay">
+	<set variable="game_name" value="Magic Inlay">
+	<set variable="lst_upd_day" value="11">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes a variety of bugs, overlapping tile problem, and issues with Fantasy Valley
+	</define>
+</if>
+
+<if variable="game is libraryoftheages">
+	<set variable="game_name" value="Library of the Ages">
+	<set variable="lst_upd_day" value="17">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update allows players to play past level 29
+	</define>
+</if>
+
+
+<if variable="game is scrabbledownloadedition">
+	<set variable="game_name" value="Scrabble - Download Edition">
+	<set variable="lst_upd_day" value="03">
+	<define name="lst_upd_month"><insert variable="m_6"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes bugs on Windows 98 and ME<br><br>
+	Previous Updates:<br>
+	March 25, 2004 - Update fixes a variety of bugs:<br>
+	-  Compatibility improved on W98 SE machines<br>
+	-  Fixed lap chip bug crash bug<br>
+	-  Added 'how to play' button<br>
+	-  Fixed perfect mode hang on maven
+	</define>
+</if>
+
+
+<if variable="game is scrabbleblast">
+	<set variable="game_name" value="Scrabble Blast!">
+	<set variable="lst_upd_day" value="03">
+	<define name="lst_upd_month"><insert variable="m_6"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes bugs on Windows 98 and ME<br><br>
+	Previous Updates:<br>
+	March 25, 2004 - Update fixes a variety of bugs:<br>
+	-  Compatibility improved on W98 SE machines<br>
+	-  Fixed lap chip bug crash bug<br>
+	-  Added 'how to play' button<br>
+	-  Fixed perfect mode hang on maven
+	</define>
+</if>
+
+<if variable="game is scrabblerackattack">
+	<set variable="game_name" value="Scrabble Rack Attack">
+	<set variable="lst_upd_day" value="03">
+	<define name="lst_upd_month"><insert variable="m_6"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes bugs on Windows 98 and ME<br>
+	</define>
+</if>
+
+
+<if variable="game is inspectorparker">
+	<set variable="game_name" value="Inspector Parker">
+	<set variable="lst_upd_day" value="25">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes a misspelling of Misanthorpe (was Misanthrope) in the readme
+	</define>
+</if>
+
+
+<if variable="game is hello">
+	<set variable="game_name" value="Hello!">
+	<set variable="lst_upd_day" value="25">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes some graphics bugs, a problem with the 'Continue' option, and other minor bugs
+	</define>
+</if>
+
+
+<if variable="game is atomicpongling">
+	<set variable="game_name" value="Atomic Pongling">
+	<set variable="lst_upd_day" value="07">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes issue with the Jan 1, 2005 lock<br><br>
+	Previous Updates:<br>
+	Mar 30, 2004 - Update fixes a variety of bugs:<br>
+	-  Faster, more challenging play<br>
+	-  Many of the early levels have been revised for more excitement<br>
+	-  Adjusted the minimum scores to advance in 'Bowl to Advance' mode
+	</define>
+</if>
+
+
+<if variable="game is beeslysbuzzwords">
+	<set variable="game_name" value="Beesly's Buzzwords">
+	<set variable="lst_upd_day" value="30">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes a variety of bugs:<br>
+	-  Now requires DirectX7 (previously required DX5); this fixes initialization problems on some older machines<br>
+	-  Fixed game input hang after Game Over<br>
+	-  Disabled windowed mode on 8- and 24-bit desktops<br>
+	-  Some new content and tweaks to existing (most prominently a new title song)
+	</define>
+</if>
+
+
+<if variable="game is infinitecrosswords">
+	<set variable="game_name" value="Infinite Crosswords">
+	<set variable="lst_upd_day" value="11">
+	<define name="lst_upd_month"><insert variable="m_4"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes a problem where new high scores are not being recorded to the high score list properly.<br><br>
+	Previous Updates:<br>
+	Mar 30, 2004 - Update fixes a variety of bugs:<br>
+	-  New clue display (above the puzzle grid)<br>
+	-  Clue 'bubbles' as you mouse over different squares<br>
+	-  TAB key goes to the next empty letter<br>
+	-  'Clipboard friendly' print mode (more blank space at the top of the page)
+	</define>
+</if>
+
+<if variable="game is flipwords">
+	<set variable="game_name" value="Flip Words">
+	<set variable="lst_upd_day" value="08">
+	<define name="lst_upd_month"><insert variable="m_4"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update adds a Save Game feature<br>
+	</define>
+</if>
+
+<if variable="game is varmintz">
+	<set variable="game_name" value="Varmintz">
+	<set variable="lst_upd_day" value="09">
+	<define name="lst_upd_month"><insert variable="m_4"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes issue with the game freezing when you minimize a window without pausing<br>
+	</define>
+</if>
+
+<if variable="game is bounceoutblitz">
+	<set variable="game_name" value="Bounce Out Blitz">
+	<set variable="lst_upd_day" value="16">
+	<define name="lst_upd_month"><insert variable="m_7"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes a variety of bugs:<br>
+	-  The sparkly clear balls can now be cleared out in the later levels<br>
+	-  Pause music no longer plays when minimized<br>
+	-  Sound FX slider now matches actual volume when moved<br>
+	-  Fixed jerky animation in Slider when sliding while balls are shaking<br>
+	-  Multiple multipliers in a row now score correctly<br><br>
+	Previous Updates:<br>
+	June 18, 2004 - Update fixes the new ball introduced on level 20 being able to be matched in a row <br>
+	April 13, 2004 - Update fixes a support link in the readme
+	</define>
+	</define>
+</if>
+
+
+<if variable="game is superpool">
+	<set variable="game_name" value="Super Pool">
+	<set variable="lst_upd_day" value="13">
+	<define name="lst_upd_month"><insert variable="m_4"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes a variety of bugs<br>
+	Keyboard support added <br>
+	</define>
+</if>
+
+
+<if variable="game is sveerz">
+	<set variable="game_name" value="Sveerz">
+	<set variable="lst_upd_day" value="13">
+	<define name="lst_upd_month"><insert variable="m_4"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes sound related bug issues<br>
+	Update adds feature enhancements<br>
+	</define>
+</if>
+
+<if variable="game is magicball">
+	<set variable="game_name" value="Magic Ball">
+	<set variable="lst_upd_day" value="04">
+	<define name="lst_upd_month"><insert variable="m_2"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update adds Bonus Packs 1, 2, and 3<br><br>
+	Previous Updates:<br>
+	July 28, 2004 - Update fixes an Alt-Tab/Focus issue with the first level<br>
+	Update adds extra levels<br><br>
+	May 6, 2004 - Update fixes an issue with unsupported screen resolutions<br>
+	</define>
+</if>
+
+<if variable="game is snowythebearsadventures">
+	<set variable="game_name" value="Snowy - The Bear's Adventures">
+	<set variable="lst_upd_day" value="21">
+	<define name="lst_upd_month"><insert variable="m_5"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes the losing focus on launch issue<br>
+	</define>
+</if>
+
+<if variable="game is superpileup">
+	<set variable="game_name" value="Super PileUp!">
+	<set variable="lst_upd_day" value="21">
+	<define name="lst_upd_month"><insert variable="m_5"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update lets the user start on higher levels<br>
+	Update fixes a variety of minor bugs<br>
+	</define>
+</if>
+
+<if variable="game is 5cardslingodeluxe">
+	<set variable="game_name" value="5 Card Slingo Deluxe">
+	<set variable="lst_upd_day" value="03">
+	<define name="lst_upd_month"><insert variable="m_6"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes bugs on Windows 98 and ME <br>
+	</define>
+</if>
+
+<if variable="game is puzzlemyth">
+	<set variable="game_name" value="Puzzle Myth">
+	<set variable="lst_upd_day" value="03">
+	<define name="lst_upd_month"><insert variable="m_6"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes a hang and serveral other bugs <br>
+	</define>
+</if>
+
+<if variable="game is slingodeluxe">
+	<set variable="game_name" value="Slingo Deluxe">
+	<set variable="lst_upd_day" value="11">
+	<define name="lst_upd_month"><insert variable="m_11"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes issue in Pattern Mode because the cherub was not coming out to defeat the devils<br><br>
+	Previous Updates:<br>
+	August 12, 2004 - Update fixes bug that upon finishing level 30, it would not put score in top ten<br>
+	- Update fixes bug that sometimes would not let you continue or exit out of a pattern mode game<br>
+	June 3, 2004 - Update fixes bugs on Windows 98 and ME
+	</define>
+</if>
+
+<if variable="game is turtlebay">
+	<set variable="game_name" value="Turtle Bay">
+	<set variable="lst_upd_day" value="18">
+	<define name="lst_upd_month"><insert variable="m_6"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes an issue on one of the bonus levels <br>
+	</define>
+</if>
+
+<if variable="game is hamsterball">
+	<set variable="game_name" value="Hamsterball">
+	<set variable="lst_upd_day" value="10">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	- Update fixes a variety of bugs
+	Previous Updates:<br>
+	July 2, 2004 - Update fixes a variety of bugs <br>
+	- Update switches game to Bass 2.0 <br>
+	- Update comprehensive bug tracking <br>
+	- Update adds two player races, and up to four player battle games (in Party Games) <br>
+	- Update changes some settings so that users can remap their keyboard <br>
+	- Update adds an option for users to turn off right-click menus <br>
+	</define>
+</if>
+
+<if variable="game is reboundlostworlds">
+	<set variable="game_name" value="Rebound Lost Worlds">
+	<set variable="lst_upd_day" value="02">
+	<define name="lst_upd_month"><insert variable="m_7"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes a variety of bugs: <br>
+	-  Adjusts column widths in Round Set Select window so scroll bar won't cover the last column <br>
+	-  A fix to prevent crashing when move along path used on polygon with 0 points  <br>
+	-  Fixes a bug that causes a message of 'Only x rings collected' even if they were all collected. This would happen with round groups (checkpoints) with less than 10 rounds <br>
+	-  Fixes the 'normal ball' power-up to not remove your starfish from your ball <br>
+	-  Adds 'Copy', 'Copy All', and 'Paste' options to the Round Set Editor. Now it is easy to copy rounds from one set to another or append two sets together <br>
+	</define>
+</if>
+
+<if variable="game is wwiipacificheroes">
+	<set variable="game_name" value="WWII Pacific Heroes">
+	<set variable="lst_upd_day" value="02">
+	<define name="lst_upd_month"><insert variable="m_7"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update adds a second progress bar so the installer doesn't look like it hangs at 16 and 81% <br>
+	Update fixes video card issues with the ATI Radeon 8500 and ATI Rage 128 GL chipset <br>
+	</define>
+</if>
+
+<if variable="game is superjigsawpuzzle">
+	<set variable="game_name" value="Super Jigsaw Puzzle">
+	<set variable="lst_upd_day" value="16">
+	<define name="lst_upd_month"><insert variable="m_7"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Save As Desktop Picture feature has been removed<br>
+	One of the pictures has been swapped out <br>
+	</define>
+</if>
+
+<if variable="game is platypus">
+	<set variable="game_name" value="Platypus">
+	<set variable="lst_upd_day" value="11">
+	<define name="lst_upd_month"><insert variable="m_8"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update adds cheat codes.  See the new .doc file in the game's install folder for a list of the codes.
+	Previous Updates:<br>
+	July 16, 2004 - Update fixes various bugs and changes the 'X' on the world map<br>
+	</define>
+</if>
+
+<if variable="game is icebreaker">
+	<set variable="game_name" value="Ice Breaker">
+	<set variable="lst_upd_day" value="19">
+	<define name="lst_upd_month"><insert variable="m_8"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes one spelling error<br>
+	Update doubles the number of levels in Story mode (now 24 levels)<br>
+	</define>
+</if>
+
+<if variable="game is weavewords">
+	<set variable="game_name" value="Weave Words">
+	<set variable="lst_upd_day" value="10">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	New Features Added:
+		- "Relax Mode" added <br>
+		- "Time Challenge Mode" added <br>
+		-  4 new music tracks (6 tracks in total) <br>
+		-  Player can now choose which music to include in their game <br>
+	- Update fixes a bug which would cause the game to crash if a previously saved game was resumed after resetting the game statistics <br>
+	- Update fixes a bug which would cause a high score to be incorrectly saved as zero and the round number incorrectly saved as one <br>
+	- Update fixes the letter selection not being displayed properly after resuming a saved game <br>
+	- Update fixes the player not being awarded a high score when they beat the lowest score in the table <br><br>
+	Previous Updates:<br>
+	August 20, 2004 - Update fixes game exe icon that was not being displayed properly<br>
+	</define>
+</if>
+
+<if variable="game is snowypuzzleislands">
+	<set variable="game_name" value="Snowy - Puzzle Islands">
+	<set variable="lst_upd_day" value="20">
+	<define name="lst_upd_month"><insert variable="m_8"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes 'ERROR_NO3DDEVICE' message that appeared when user tried to change screen quality from 16-bit in Options menu<br>
+	Update fixes Level 5 Standard: level progression bug (Snowy did not move correctly to go to Exit)<br>
+	Update fixes issue with character not exiting level when they walked over the Exit panel<br>
+	</define>
+</if>
+
+<if variable="game is puzzleblast">
+	<set variable="game_name" value="Puzzle Blast">
+	<set variable="lst_upd_day" value="20">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update adds 'Fast' button for quicker ring drops, new ring shapes, and 'Combo' bar that multiplies score if you remove gems from the game screen in quick session <br><br>
+	Previous Updates:<br>
+	Oct 14, 2004 - Update fixes an issue with the new shapes that can cause the game to change levels or crash <br><br>
+	Aug 20, 2004 - Update adds a variety of bonuses:<br>
+	Speed has been increased<br>
+	There are now 7 backgrounds<br>
+	Word collection bonus<br>
+	3 levels of difficulty<br>
+	At normal difficulty - 4 colors of gems<br>
+	Gem shine<br>
+	Fixed 'music stop' bug<br>
+	21 complex forms of rings<br>
+	</define>
+</if>
+
+<if variable="game is madcaps">
+	<set variable="game_name" value="Mad Caps">
+	<set variable="lst_upd_day" value="20">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes issue with WindowsXP SP2<br>
+	</define>
+</if>
+
+<if variable="game is frescowizard">
+	<set variable="game_name" value="Fresco Wizard">
+	<set variable="lst_upd_day" value="08">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	The language translations were fixed<br>
+	</define>
+</if>
+
+<if variable="game is megamonty">
+	<set variable="game_name" value="Mega Monty">
+	<set variable="lst_upd_day" value="13">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update removes the in-game lock-out feature<br>
+	</define>
+</if>
+
+<if variable="game is hyperballoid">
+	<set variable="game_name" value="Hyperballoid">
+	<set variable="lst_upd_day" value="22">
+	<define name="lst_upd_month"><insert variable="m_4"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update adds 50 new 'Extreme' levels and adds new brick types in 'Extreme' levels<br><br>
+	Previous Updates:<br>
+	Oct 29, 2004 - Update adds support to older video cards<br>
+	- Update fixes bug so the paddle doesn't freeze when a player picks up a 'Skull' bonus<br>
+	</define>
+</if>
+
+<if variable="game is usatodayinfinitecrosswords">
+	<set variable="game_name" value="USA Today - Infinite Crosswords">
+	<set variable="lst_upd_day" value="21">
+	<define name="lst_upd_month"><insert variable="m_4"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes a problem where new high scores are not being recorded to the high score list properly.<br><br>
+	Previous Updates:<br>
+	Nov 11, 2004 - Update fixes the issue with the ambient sound bug<br>
+	</define>
+</if>
+
+<if variable="game is cubisgold2">
+	<set variable="game_name" value="Cubis Gold 2">
+	<set variable="lst_upd_day" value="11">
+	<define name="lst_upd_month"><insert variable="m_11"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes issue on a load crashing OS or game on certain video drivers<br>
+	Update fixes issue with saving a Morph-Fun game<br>
+	</define>
+</if>
+
+<if variable="game is supergamehousesolitairevolume3">
+	<set variable="game_name" value="Super GameHouse Solitaire Volume 3">
+	<set variable="lst_upd_day" value="23">
+	<define name="lst_upd_month"><insert variable="m_11"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes 'Forty Thieves' bug where right bank does not give 5 points per card<br>
+	
+	</define>
+</if>
+
+<if variable="game is ballistik">
+	<set variable="game_name" value="Ballistik">
+	<set variable="lst_upd_day" value="23">
+	<define name="lst_upd_month"><insert variable="m_11"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Updated for greater 3D card compatability<br>
+	</define>
+</if>
+
+<if variable="game is gutterball2">
+	<set variable="game_name" value="Gutterball 2">
+	<set variable="lst_upd_day" value="02">
+	<define name="lst_upd_month"><insert variable="m_12"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Updated fixes a hang when downloading high scores<br>
+	</define>
+</if>
+
+<if variable="game is holidayexpress">
+	<set variable="game_name" value="Holiday Express">
+	<set variable="lst_upd_day" value="06">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes a random crash problem that some users have experienced when downloading new pictures<br><br>
+	Previous Updates:<br>
+	Dec 03, 2004 - Update fixes a bug where the game would freeze while the music changed<br>
+	</define>
+</if>
+
+<if variable="game is rocketbowl">
+	<set variable="game_name" value="RocketBowl">
+	<set variable="lst_upd_day" value="13">
+	<define name="lst_upd_month"><insert variable="m_5"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update adds 3 levels <br><br>
+	Previous Updates:<br>
+	Jan 20, 2005
+	Update fixes problem when trying to play the game with AC 97 audio drivers and VIA Unichrome IGP graphics controller associated with many VIA chipsets<br>
+	Update adds improved messaging to get players using the rocket boost balls sooner <br><br>
+	Dec 07, 2004 - Update fixes a save file bug<br>
+	</define>
+</if>
+
+<if variable="game is igglepop">
+	<set variable="game_name" value="Iggle Pop!">
+	<set variable="lst_upd_day" value="10">
+	<define name="lst_upd_month"><insert variable="m_12"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes a variety of issues:<br>
+	- Level 30 in Retro Mode is now beatable <br>
+	- Issue with DirectX 8.1 and 'can't load bonus levels' has been fixed <br>
+	- Game can now be played without sound hardware <br>
+	- The High Scores screen now accomodates up to 4-digit scores <br>
+	- The game no longer crashes while viewing online scores when it has a lot of data <br>
+	- Issue with posting a high score online in Retro Mode has been fixed <br>
+	</define>
+</if>
+
+<if variable="game is lemonadetycoon2">
+	<set variable="game_name" value="Lemonade Tycoon 2">
+	<set variable="lst_upd_day" value="17">
+	<define name="lst_upd_month"><insert variable="m_12"></define>
+	<set variable="lst_upd_year" value="2004">
+	<define name="fixes">
+	Update fixes issue with the game hanging after selling a lemonade stand<br>
+	Update fixes issue with getting back to the game after minimizing in Windows98<br>
+	</define>
+</if>
+
+<if variable="game is adventureinlay">
+	<set variable="game_name" value="Adventure Inlay">
+	<set variable="lst_upd_day" value="10">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes a bug in level 18 that made it appear as though the level was hung<br><br>
+	Previous Updates:<br>
+	Jan 03, 2005 - Update fixes issue with the game launching incorrectly<br>
+	</define>
+</if>
+
+<if variable="game is triviamachine">
+	<set variable="game_name" value="Trivia Machine">
+	<set variable="lst_upd_day" value="06">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update makes edits and corrections to some of the questions<br>
+	</define>
+</if>
+
+<if variable="game is magicvines">
+	<set variable="game_name" value="Magic Vines">
+	<set variable="lst_upd_day" value="06">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update to turn off the timer and play it untimed<br>
+	</define>
+</if>
+
+<if variable="game is alchemy">
+	<set variable="game_name" value="Alchemy">
+	<set variable="lst_upd_day" value="10">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update adds Save Game feature<br>
+	</define>
+</if>
+
+<if variable="game is spellunker">
+	<set variable="game_name" value="Spellunker">
+	<set variable="lst_upd_day" value="01">
+	<define name="lst_upd_month"><insert variable="m_4"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes minor bugs<br><br>
+	Previous Updates:<br>
+	March 8, 2005 - Update fixes multiple bugs encountered at levels higher than 30<br>
+	Jan 26, 2005 - Update fixes issue that causes the game to only play in Challenger mode<br>
+	Jan 20, 2005 - Update fixes a hang that sometimes occurs after level 24
+	</define>
+</if>
+
+<if variable="game is smallballfootball">
+	<set variable="game_name" value="SmallBall Football">
+	<set variable="lst_upd_day" value="24">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes issue with server that didn't allow players online<br>
+	</define>
+</if>
+
+<if variable="game is mahjongquest">
+	<set variable="game_name" value="Mah Jong Quest">
+	<set variable="lst_upd_day" value="30">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes freezing when shuffling a few specific puzzles within Kwazi's Quest<br><br>
+	Previous Updates:<br>
+	May 27, 2005 - Update fixes freezing when shuffling a few specific puzzles within Kwazi's Quest<br>
+	January 27, 2005 - Update fixes issue with third board 'Chess With The Green Dragon' where game does not progress to the next level despite clearing out all tiles<br>
+	</define>
+</if>
+
+<if variable="game is jewelquest">
+	<set variable="game_name" value="Jewel Quest">
+	<set variable="lst_upd_day" value="04">
+	<define name="lst_upd_month"><insert variable="m_2"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes horizontal cursed items in the late stages of the game <br>
+	Update fixes issue where player who completes the game cannot replay older levels <br>
+	</define>
+</if>
+
+<if variable="game is snailmail">
+	<set variable="game_name" value="Snail Mail">
+	<set variable="lst_upd_day" value="11">
+	<define name="lst_upd_month"><insert variable="m_2"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes the texture problems <br>
+	</define>
+</if>
+
+<if variable="game is kasparovchessmate">
+	<set variable="game_name" value="Kasparov Chessmate">
+	<set variable="lst_upd_day" value="11">
+	<define name="lst_upd_month"><insert variable="m_2"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes the DirectPlay lobby problem <br>
+	</define>
+</if>
+
+<if variable="game is pizzafrenzy">
+	<set variable="game_name" value="Pizza Frenzy">
+	<set variable="lst_upd_day" value="18">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+        Update fixes pressing Esc key no longer exits full screen so it doesn't interfere with skipping the story<br>
+        Update removes message about being able to pick up two pizzas at once has been removed from Memory Mode<br>
+        Update fixes navagation in Global Scores submission display<br><br>
+	Previous Updates:<br>
+	February 11, 2005 - Update fixes the game so it will run on a computer without a sound card<br>
+	</define>
+</if>
+
+<if variable="game is bricksofegypt">
+	<set variable="game_name" value="Bricks of Egypt">
+	<set variable="lst_upd_day" value="08">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update adds save games feature<br>
+	Updates to the latest build<br>
+	</define>
+</if>
+
+<if variable="game is luxor">
+	<set variable="game_name" value="Luxor">
+	<set variable="lst_upd_day" value="03">
+	<define name="lst_upd_month"><insert variable="m_5"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+        Update fixes bug where game may stop progressing after level fail state.<br>
+	Update also tunes gameplay for Khufu's Revenge Levels.<br><br>
+	Previous Updates:<br>
+	March 3, 2005 - Update fixes several crashing bugs<br>
+	</define>
+</if>
+
+<if variable="game is charmtale">
+	<set variable="game_name" value="Charm Tale">
+	<set variable="lst_upd_day" value="09">
+	<define name="lst_upd_month"><insert variable="m_6"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+        Update fix adds help information when saving games.<br>
+	Update fixes high score saves.<br><br>
+	Previous Updates:<br>
+	April 4, 2005 - Update fixes several crashing bugs<br>
+	</define>
+</if>
+
+<if variable="game is cosmicbugs">
+	<set variable="game_name" value="Cosmic Bugs">
+	<set variable="lst_upd_day" value="12">
+	<define name="lst_upd_month"><insert variable="m_5"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes problems with using the Sweeper powerup <br>
+	Update allows users to select the starting level in increments of 1 (rather than 5 in previous versions)<br><br>
+	Previous Updates:<br><br>
+	April 1, 2005 - Update fixes random crashes and improves overall game performance<br>
+	April 27, 2005 - Update fixes another random crashe in higher levels of the game
+	</define>
+</if>
+
+<if variable="game is magicball2">
+	<set variable="game_name" value="Magic Ball 2">
+	<set variable="lst_upd_day" value="27">
+	<define name="lst_upd_month"><insert variable="m_4"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes a few punctuation errors.<br>
+	Update also fixes a bug where some antivirus programs think Magic Ball 2's launch is virus activity.<br>
+	Previous Updates:<br><br>
+	April 1, 2005 - Update fixes any possible incompatibilities with Win98SE English and Win98SE Japanese.<br>
+	</define>
+</if>
+
+<if variable="game is chips">
+	<set variable="game_name" value="ChipS">
+	<set variable="lst_upd_day" value="18">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes a minor graphics bug caused when the user switches from hardware to software mode.<br>
+	Previous Updates:<br><br>
+	March 18, 2005 - Update adds last brand art<br>
+	</define>
+</if>
+
+<if variable="game is wordjongtmtogo">
+	<set variable="game_name" value="WordJong (TM) To Go">
+	<set variable="lst_upd_day" value="18">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update removes URL on the splash screen<br>
+	</define>
+</if>
+
+<if variable="game is texasholdem">
+	<set variable="game_name" value="Texas Hold Em">
+	<set variable="lst_upd_day" value="03">
+	<define name="lst_upd_month"><insert variable="m_5"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes WinMe bug where game stops responding after first dealt hand.<br>
+	</define>
+</if>
+
+<if variable="game is mauiwowee">
+	<set variable="game_name" value="Maui Wowee">
+	<set variable="lst_upd_day" value="12">
+	<define name="lst_upd_month"><insert variable="m_8"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update removes URL in splash screen<br>
+	Previous Updates:<br><br>
+	Update fixes issue with the screensaver<br>
+	</define>
+</if>
+
+<if variable="game is pandacrazegold">
+	<set variable="game_name" value="Panda Craze Gold">
+	<set variable="lst_upd_day" value="06">
+	<define name="lst_upd_month"><insert variable="m_5"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes minor bugs<br>
+	</define>
+</if>
+
+<if variable="game is puzzaz">
+	<set variable="game_name" value="Puzzaz">
+	<set variable="lst_upd_day" value="13">
+	<define name="lst_upd_month"><insert variable="m_5"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update adds new version plus<br>
+	</define>
+</if>
+
+<if variable="game is tennistitans">
+	<set variable="game_name" value="Tennis Titans">
+	<set variable="lst_upd_day" value="13">
+	<define name="lst_upd_month"><insert variable="m_5"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes Tell A Friend<br>
+	Update fixes issue with Full Screen and switching to Windowed Mode<br>
+	Update made to the How To Play <br>
+	Update fixes flicker issue after losing a match in Classic mode <br>
+	</define>
+</if>
+
+<if variable="game is breakquest">
+	<set variable="game_name" value="BreakQuest">
+	<set variable="lst_upd_day" value="20">
+	<define name="lst_upd_month"><insert variable="m_5"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update rearranges first 6 levels to make game begin a little easier<br>
+	</define>
+</if>
+
+<if variable="game is tumblebugs">
+	<set variable="game_name" value="TumbleBugs">
+	<set variable="lst_upd_day" value="23">
+	<define name="lst_upd_month"><insert variable="m_5"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update resolves menu problems caused when clicking on menu during the level select menu scroll at an end of stage section<br>
+	Update fixes issue with Windows 98 machines without Opengl not able to run the game even when using only DirectX<br>
+	Update fixes random crashing caused by Task switching<br>
+	Update fixes Fallback renderer, resolution and refresh rates to work correctly<br>
+	</define>
+</if>
+
+<if variable="game is wildwestwendy">
+	<set variable="game_name" value="Wild West Wendy">
+	<set variable="lst_upd_day" value="02">
+	<define name="lst_upd_month"><insert variable="m_6"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes unlock problems and slows the overall game speed.<br>
+	</define>
+</if>
+
+<if variable="game is tradewinds2">
+	<set variable="game_name" value="Tradewinds 2">
+	<set variable="lst_upd_day" value="09">
+	<define name="lst_upd_month"><insert variable="m_6"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes bug in story line.<br>
+	</define>
+</if>
+
+<if variable="game is rebound">
+	<set variable="game_name" value="Rebound">
+	<set variable="lst_upd_day" value="15">
+	<define name="lst_upd_month"><insert variable="m_7"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update adds Round 5 expansion levels<br>
+	</define>
+</if>
+
+<if variable="game is alohasolitaire">
+	<set variable="game_name" value="Aloha Solitaire">
+	<set variable="lst_upd_day" value="08">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Finishing level 12-6 (Easy Mode) now pops up a dialog that asks user if they want to start over in Hard Mode, taking you to level 1-1 (Hard Mode).<br>
+	Finishing level 12-6 in Hard Mode prompts the player to either replay any level or start back at 1-1 in Hard Mode.<br>
+	Update makes it clearer to the player that they have successfully finished a particular mode.<br><br>
+	Previous Updates:<br>
+	July 22, 2005<br>
+	Update adds feature to save difficulty mode<br>
+	Update fixes unplayable state after choosing No after 12-16 Normal.<br>
+	Update fixes empty reserve pile holders no longer have hand cursor rollovers<br>
+	</define>
+</if>
+
+
+<if variable="game is glowworm">
+	<set variable="game_name" value="Glow Worm">
+	<set variable="lst_upd_day" value="22">
+	<define name="lst_upd_month"><insert variable="m_7"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update upgrades minimum specs for the game<br>
+	</define>
+</if>
+
+
+<if variable="game is ancientheartsandspades">
+	<set variable="game_name" value="Ancient Hearts and Spades">
+	<set variable="lst_upd_day" value="29">
+	<define name="lst_upd_month"><insert variable="m_7"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes bug where player is always "Player 1" on main menu and in high scores.<br>
+	</define>
+</if>
+
+
+<if variable="game is astroavenger">
+	<set variable="game_name" value="AstroAvenger">
+	<set variable="lst_upd_day" value="18">
+	<define name="lst_upd_month"><insert variable="m_8"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes mouse issues.<br>
+	Update adds on/off render shadows option to improve performance on older systems.<br>
+	Update fixes some bugs found on ATI Radeon cards.<br>
+	Update fixes bugs with Intel Integrated cards.<br>
+	Update fixes bugs with shadows and specular in game.<br>
+	</define>
+</if>
+
+
+<if variable="game is mahjongtheendlessjourney">
+	<set variable="game_name" value="Mahjong The Endless Journey">
+	<set variable="lst_upd_day" value="30">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes a dialog issue where it is drawn over the mouse cursor in free play mode.<br>
+	Previous Updates:<br><br>
+	August 18, 2005 - Update now clarifies that unlocked items can be found in Free Play Mode.<br>
+	</define>
+</if>
+
+
+<if variable="game is bubblefishbob">
+	<set variable="game_name" value="Bubblefish Bob">
+	<set variable="lst_upd_day" value="09">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes english text and some minor bugs.<br>
+	</define>
+</if>
+
+
+<if variable="game is crimepuzzle">
+	<set variable="game_name" value="Crime Puzzle">
+	<set variable="lst_upd_day" value="09">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes Windows ME bug where games doesn't resume when going from fullscreen to windowed mode.<br>
+	Update fixes generic bug when the player starts the game, goes directly to Classic mode, pauses game, unpauses and could not do anything until the time is ran out.<br>
+	</define>
+</if>
+
+
+<if variable="game is academyofmagicwordspells">
+	<set variable="game_name" value="Academy of Magic - Word Spells">
+	<set variable="lst_upd_day" value="31">
+	<define name="lst_upd_month"><insert variable="m_7"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update changes algorithm for score calculation.<br>
+	Update fixes spell-dragging bug:  Sometimes the row wouldn't stop dragging.<br>
+	Previous Updates:<br>
+	November 23, 2005 <br>
+	Update adds Live HighScores functionality (submit your score - view higscores)<br>
+	Update adds a few more words to the dictionary<br>
+	Update adds a couple of extra usability features<br>
+	Update adds a feedback form feature<br><br>
+	October 27, 2005 <br>
+	Update allows custom mouse cursor to enable only when the user's machine is capable of handling it smoothly<br>
+	Update adds some missing words to the dictionary.<br>
+	Update ads improved speed for both fast and slow machines<br><br>
+	September 20, 2005 <br>
+	Update Fixes savegames bug (savegames wouldn't load when "Show Help on game start" was selected)<br>
+	Update fixes "Don't show help on start" bug<br>
+	Update Adds "Restore fullscreen mode on application focus" feature<br>
+	Update shortens the fade out time for game music and splash music<br>
+	Updates the word dictionary with some missing common words<br>
+	Updates adds easy fullscreen mode toggle switch (Ctrl+F on keyboard).<br>
+	Updates fixes timer blink display bug.<br>
+	Updates fixes bug related to resuming a game in Time Trial Mode.<br>
+	</define>
+</if>
+
+
+<if variable="game is readersdigestsuperwordpower">
+	<set variable="game_name" value="Reader's Digest Super Word Power">
+	<set variable="lst_upd_day" value="06">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update Fixes some miscellaneous bugs<br>
+	</define>
+</if>
+
+<if variable="game is chainz2relinked">
+	<set variable="game_name" value="Chainz 2 Relinked">
+	<set variable="lst_upd_day" value="14">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update Fixes some random reported crashing<br>
+	</define>
+</if>
+
+<if variable="game is alohatripeaks">
+	<set variable="game_name" value="Aloha TriPeaks">
+	<set variable="lst_upd_day" value="27">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes an issue with level 13-16<br>
+	Update fixes art positioning in Challenge mode.<br>
+	</define>
+</if>
+
+<if variable="game is stardefender2">
+	<set variable="game_name" value="Star Defender 2">
+	<set variable="lst_upd_day" value="03">
+	<define name="lst_upd_month"><insert variable="m_11"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update adds Save/Load Game Option - now you can suspend the game whenever you want <br>
+	Update adds one more mission (9th) <br>
+	</define>
+</if>
+
+<if variable="game is thomasandthemagicalwords">
+	<set variable="game_name" value="Thomas and the Magical Words">
+	<set variable="lst_upd_day" value="11">
+	<define name="lst_upd_month"><insert variable="m_11"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	A bug in the obscene words filter was fixed.<br>
+	Adds additional tips on how to use the hammer and picking up items.<br>
+	Disables disabling of hints.<br>
+	Fixes a bug where if the player submitted the word "tilde" and possibily a
+	few other words which have special characters in their meaning the game
+	would shut down.<br>
+	Fixes a rarely occurring bug that could cause an error when progressing to
+	the next world.<br>
+	Fixes a rare bug in which if the player pressed pageup or pagedown in the
+	first map of the game, the game would shut down.<br>
+	Fixes a rare bug when showing a tip on the first level.<br>
+	Fixes a rare bug when showing message boxes.<br>
+	Modifies some map descriptions to include tips for the player.<br>
+	</define>
+</if>
+
+<if variable="game is chickenattack">
+	<set variable="game_name" value="Chicken Attack">
+	<set variable="lst_upd_day" value="11">
+	<define name="lst_upd_month"><insert variable="m_11"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update fixes in-game text spelling and grammer issues.<br>
+	</define>
+</if>
+
+<if variable="game is greedywords">
+	<set variable="game_name" value="Greedy Words">
+	<set variable="lst_upd_day" value="06">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update improves saving of games<br>
+	Update fixes a few rare script errors<br><br>
+	Previous Updates:<br>
+	November 29, 2005<br>
+	Update fixes script error<br>
+	Update adds a few harder levels and fixes a few popups<br><br>
+	November 17, 2005 <br>
+	Update fixes numerous bugs and includes some UI changes.<br>
+	</define>
+</if>
+
+<if variable="game is rainbowweb">
+	<set variable="game_name" value="Rainbow Web">
+	<set variable="lst_upd_day" value="09">
+	<define name="lst_upd_month"><insert variable="m_12"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update corrects the name of level 3-3 to "Stonehenge", and also adds a "Show Hints" toggle in the Options menu.<br>
+	</define>
+</if>
+
+<if variable="game is actionball">
+	<set variable="game_name" value="Action Ball">
+	<set variable="lst_upd_day" value="09">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes the game to now record the correct player name and correct difficulty level in the high score screen.<br><br>
+	Previous Updates:<br>	
+	December 16, 2006<br>
+	Update provides new kinds of bricks, four new bonuses, 110 new Deluxe levels (210 levels in all), and three new bosses (eight total).<br>
+	</define>
+</if>
+
+<if variable="game is patsajaksluckyletters">
+	<set variable="game_name" value="Pat Sajak's Lucky Letters">
+	<set variable="lst_upd_day" value="28">
+	<define name="lst_upd_month"><insert variable="m_12"></define>
+	<set variable="lst_upd_year" value="2005">
+	<define name="fixes">
+	Update adds new feature to shut off Pat's First Time Tips.<br>
+	</define>
+</if>
+
+<if variable="game is acropolis">
+	<set variable="game_name" value="Acropolis">
+	<set variable="lst_upd_day" value="13">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes various bugs.<br>
+	Update fixes a memory leak issue.<br>
+	Update fixes full screen problem.<br>
+	Update fixes issue when the "More Games" button appears for new profiles.<br>
+	</define>
+</if>
+
+<if variable="game is arcticquest">
+	<set variable="game_name" value="Arctic Quest">
+	<set variable="lst_upd_day" value="20">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update clarifies some text and changes some user interface options for easier use.<br>
+	</define>
+</if>
+
+<if variable="game is flyingleo">
+	<set variable="game_name" value="Flying Leo">
+	<set variable="lst_upd_day" value="20">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes a bug that kept players from finishing the game.<br>
+	</define>
+</if>
+
+<if variable="game is adventureball">
+	<set variable="game_name" value="Adventure Ball">
+	<set variable="lst_upd_day" value="20">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes a rare bug with some Radeon 9x00 cards where the water effect would lock up the game with these cards.<br>
+	</define>
+</if>
+
+<if variable="game is karu">
+	<set variable="game_name" value="Karu">
+	<set variable="lst_upd_day" value="16">
+	<define name="lst_upd_month"><insert variable="m_2"></define>
+	<set variable="lst_upd_year" value="2007">
+	<define name="fixes">
+	In this update, the game is rebalanced to lower the difficulty.<br>
+	The ball strip generator now gives you more of the same colored balls in a row.<br>
+	Powerups now appear when you make a match three times in a row.<br>
+	Previously, the game itself would determine your performance and give you powerups based on when you needed them.<br>
+	A few new graphical effects added.<br><br>
+        Previous Updates:<br>
+	February 6, 2006<br>
+	Update hides the menu button in "Level Completed" screen.<br>
+	Update optimizes the main menu performance.<br><br>
+	January 27, 2006<br>
+	Update fixes critical Windows 98 bug that causes the game to crash.<br>
+	</define>
+</if>
+
+<if variable="game is qbeez2">
+	<set variable="game_name" value="QBeez2">
+	<set variable="lst_upd_day" value="27">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes shooting a cannon while an Infinity is active should no longer make the moves display disappear.<br>
+	If a user completes the game (end of level 17-6), then quits and saves, they now get the final animation rather than being kicked back to the beginning of the map.<br>
+	Update fixes a bug that allowed users to keep playing past the final level.<br><br>
+	Previous Updates:<br>
+	February 14, 2006<br>
+	Update fixes script error in Puzzle Maker.<br>
+	Update fixes problems going from High Scores to Tell A Friend to Main navigation.<br>
+	Update fixed double-overflow animation on Game Over water timer (classic).<br>
+	Clicking "NO" on clear scores now returns to scores list.<br>
+	Scores of 0 no longer get submitted to high scores lists.<br>
+	In-game menu in Puzzles mode now has "Main Menu" button.<br>
+	Game now auto-pauses when leaving focus.<br>
+	Puzzle Maker control buttons no longer blocked when making a 4x4 puzzle.<br>
+	Finishing personal puzzles now shows correct end-of-level message.<br>
+	Your non-zero score after getting a zero score now displays correctly at the end of the game.<br>
+	Your zero score after getting a non-zero score no longer results in your non-zero score getting re-sent to the scores lists.<br><br>
+	February 10, 2006<br>
+        Update fixes game-hanging shark bugs.<br>
+	Fullscreen now works on older Windows 98 machines.<br>
+        Map sequences now play faster at 15fps.<br>
+	</define>
+</if>
+
+<if variable="game is bravedwarves2deluxe">
+	<set variable="game_name" value="Brave Dwarves 2 Deluxe">
+	<set variable="lst_upd_day" value="22">
+	<define name="lst_upd_month"><insert variable="m_2"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes a player's menu bug.<br>
+	</define>
+</if>
+
+<if variable="game is templeofbricks">
+	<set variable="game_name" value="Temple of Bricks">
+	<set variable="lst_upd_day" value="02">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update changes the color of the ball to help keep track of it.<br>
+	Update changes "Easy" mode to be significantly slower and with more lives.<br>
+	Update changes "Normal" mode was made a little slower with one extra life.<br>
+	Update causes game to pause after switching between open applications.<br>
+	Update changes particles to be lighter to provide more clarity.<br><br>
+	Previous Updates:<br>
+	February 24, 2006<br>
+	Update converts Cyrillic (Russian) text to Latin so that it displays properly on the online high score screen.<br>
+	</define>
+</if>
+
+<if variable="game is gardendreams">
+	<set variable="game_name" value="Garden Dreams">
+	<set variable="lst_upd_day" value="02">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes a script error and an unlockable image display on one of the summary screens.<br>
+	</define>
+</if>
+
+<if variable="game is sudokuquest">
+	<set variable="game_name" value="Sudoku Quest">
+	<set variable="lst_upd_day" value="10">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes a problem with the game not printing puzzles to the printer correctly.<br>
+	</define>
+</if>
+
+<if variable="game is theapprentice">
+	<set variable="game_name" value="The Apprentice">
+	<set variable="lst_upd_day" value="20">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update allows game's users to play past level 4.<br>
+	</define>
+</if>
+
+<if variable="game is geneforge2">
+	<set variable="game_name" value="Geneforge 2">
+	<set variable="lst_upd_day" value="27">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes a rare crashing bug on the title screen if the mouse pointer is moved for machines running Windows XP.<br>
+	</define>
+</if>
+
+<if variable="game is impact">
+	<set variable="game_name" value="Impact">
+	<set variable="lst_upd_day" value="31">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes the bug with international versions of Windows, as well as a bug when no sound card is detected.<br>  
+	</define>
+</if>
+
+<if variable="game is cakemania">
+	<set variable="game_name" value="Cake Mania">
+	<set variable="lst_upd_day" value="07">
+	<define name="lst_upd_month"><insert variable="m_4"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes some crashes and hangs, as well as some problems that could cause the game to run slowly.<br>  
+	</define>
+</if>
+
+<if variable="game is treasureisland">
+	<set variable="game_name" value="Treasure Island">
+	<set variable="lst_upd_day" value="17">
+	<define name="lst_upd_month"><insert variable="m_4"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes incorrect spelling of "treasure."<br>  
+	</define>
+</if>
+
+<if variable="game is mahjongcentury">
+	<set variable="game_name" value="Mahjong Century">
+	<set variable="lst_upd_day" value="17">
+	<define name="lst_upd_month"><insert variable="m_4"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes a bug preventing matches from being made, which in turn prevented the player from proceeding in the game.<br>  
+	</define>
+</if>
+
+<if variable="game is tropix">
+	<set variable="game_name" value="Tropix">
+	<set variable="lst_upd_day" value="05">
+	<define name="lst_upd_month"><insert variable="m_5"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes overly difficult levels in Cascade stage 5.<br>
+	Update adds a more robust graphics engine, which should fix some reported bugs.<br>
+	Update adds postcard form error handling for email address formats.<br>
+	Previous Updates:<br>
+	April 28, 2006<br>
+	Update fixes issues with the screensaver not working properly.<br>
+	</define>
+</if>
+
+<if variable="game is cosmicstacker">
+	<set variable="game_name" value="Cosmic Stacker">
+	<set variable="lst_upd_day" value="19">
+	<define name="lst_upd_month"><insert variable="m_5"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update allows the player to have their high score in the game immediately, even when quitting out of the first level.<br>
+	Previous Updates:<br>
+	April 28, 2006<br>
+	Update fixes a typo in the Strategic Mode's Help text.<br>
+	Update fixes issue where scores list labels seemed to be backwards.<br>
+	Update fixes the problem with the "Clear Scores" button not working properly.<br> 
+	Update fixes issue with the whole board being cleared by doubling 1 powerup.<br>
+	Update fixes a problem where the full-screen version of the game sometimes failed to return when actived.<br>
+	Update fixes a problem with the Dragon power-up disappearing without being used.<br>
+	</define>
+</if>
+
+<if variable="game is thedavincicode">
+	<set variable="game_name" value="The Da Vinci Code">
+	<set variable="lst_upd_day" value="22">
+	<define name="lst_upd_month"><insert variable="m_5"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes issue with computer's resolution changing to 800x600 in Win 98/ME.<br>
+	</define>
+</if>
+
+<if variable="game is bengalgameofgods">
+	<set variable="game_name" value="Bengal - Game of Gods">
+	<set variable="lst_upd_day" value="02">
+	<define name="lst_upd_month"><insert variable="m_6"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	The game now pauses when the window is minimized in full-screen mode.
+	</define>
+</if>
+
+<if variable="game is davincissecret">
+	<set variable="game_name" value="Da Vinci's Secret">
+	<set variable="lst_upd_day" value="22">
+	<define name="lst_upd_month"><insert variable="m_6"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update allows hints to be toggled on/off.<br>
+	Update allows game to use an externalized logo file.<br>
+	<b>IMPORTANT:</b>  In order to prevent a loss of in-game progress, copy the settings.dat file from the game folder 
+	before applying the update.  After the update is complete, copy the file back into the game folder.
+	</define>
+</if>
+
+<if variable="game is fortunetilesgold">
+	<set variable="game_name" value="Fortune Tiles Gold">
+	<set variable="lst_upd_day" value="24">
+	<define name="lst_upd_month"><insert variable="m_7"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes issue with certain levels being reached and the game opening back up to a higher level from that point forward<br>
+	</define>
+</if>
+
+<if variable="game is scarabsofpharaoh">
+	<set variable="game_name" value="Scarabs of Pharaoh">
+	<set variable="lst_upd_day" value="4">
+	<define name="lst_upd_month"><insert variable="m_8"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes English text errors.<br>
+	Previous Updates:<br>
+	April 28, 2006<br>
+	Update fixes music issues<br>
+	Update fixes issue with creating and deleting players.  Creating a new player after deleting the first player will now delete the saved data.<br>
+	</define>
+</if>
+
+<if variable="game is bunnybouncedeluxe">
+	<set variable="game_name" value="Bunny Bounce Deluxe">
+	<set variable="lst_upd_day" value="31">
+	<define name="lst_upd_month"><insert variable="m_7"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Added "dummy" WAV files that are 0 bytes in size.  This allows installer to remove the (generated) WAV files at uninstall time.<br>
+	</define>
+</if>
+
+<if variable="game is glyphtm">
+	<set variable="game_name" value="Glyph(TM)">
+	<set variable="lst_upd_day" value="31">
+	<define name="lst_upd_month"><insert variable="m_7"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	The SLG Client Services redistributable included with the game has been updated.<br>
+	</define>
+</if>
+
+<if variable="game is luckcharmdeluxe">
+	<set variable="game_name" value="Luck Charm Deluxe">
+	<set variable="lst_upd_day" value="19">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2007">
+	<define name="fixes">
+	This update fixes minor bugs and problems with selecting and grabbing pieces.
+	<br>
+	Previous Updates:<br>
+	Auguest 7, 2006<br>
+	Update fixes a variety of bugs:<br><br>
+	The Windows mouse cursor will no longer overlap the in-game mouse cursor.<br>
+	Minor performance bugs have been fixed.<br>
+	Small typos have been fixed.<br>
+	The game should now work with Windows 98SE and Windows 95.<br>
+	</define>
+</if>
+
+<if variable="game is stonesofkhufu">
+	<set variable="game_name" value="Stones of Khufu">
+	<set variable="lst_upd_day" value="11">
+	<define name="lst_upd_month"><insert variable="m_8"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes minor bugs.<br>
+	</define>
+</if>
+
+<if variable="game is goldminervegas">
+	<set variable="game_name" value="Gold Miner Vegas">
+	<set variable="lst_upd_day" value="25">
+	<define name="lst_upd_month"><insert variable="m_8"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes a bug that prevented the game from running if the user had Flash 9 installed on their computer.<br>
+	</define>
+</if>
+
+<if variable="game is wordmonaco">
+	<set variable="game_name" value="Word Monaco">
+	<set variable="lst_upd_day" value="25">
+	<define name="lst_upd_month"><insert variable="m_8"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	The game's dictionary file has been revised to remove any potential bad words.<br>
+	</define>
+</if>
+
+<if variable="game is mysteriesofhorus">
+	<set variable="game_name" value="Mysteries of Horus">
+	<set variable="lst_upd_day" value="06">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	This update contains the following changes:<br>
+	-Fixes a serious issue that occurs if the users clicks too quickly on the Next Level button at the end of a level.
+	<br/>
+	Previous Updates:<br/>
+	<br/>
+	9/1/2006:<br>	
+	-The scoring bug at the end of the level has been fixed.<br>
+	-The sparkle powerup text has been corrected.<br>
+	-Autopause now works correctly when Alt-Tab is used.<br>
+	</define>
+</if>
+
+<if variable="game is sudokumayagold">
+	<set variable="game_name" value="Sudoku Maya Gold">
+	<set variable="lst_upd_day" value="2">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Fixes the bug that occurs when a user creates a new player, then clicks to play Traditional mode and skips the tutorial, then Quest mode begins.<br/>
+	<br/>
+	Previous Updates:<br/>
+	9/1/2006 - This update fixes a bug that caused the game to lock when quest mode was started with the Hard setting.<br>
+	</define>
+</if>
+
+<if variable="game is pokersuperstars2">
+	<set variable="game_name" value="Poker Superstars 2">
+	<set variable="lst_upd_day" value="15">
+	<define name="lst_upd_month"><insert variable="m_9"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Moving the mouse while clicking on chips no longer crashes the game.<br>
+	</define>
+</if>
+
+<if variable="game is ancienttripeaks2">
+	<set variable="game_name" value="Ancient Tripeaks 2">
+	<set variable="lst_upd_day" value="16">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	This update fixes an issue where the game would ask you to pick a new name when it couldn't connect online during the previous session.<br>
+	</define>
+</if>
+
+<if variable="game is aquapark">
+	<set variable="game_name" value="AquaPark">
+	<set variable="lst_upd_day" value="16">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	This update fixes a bug when changin to windowed mode.<br>
+	</define>
+</if>
+
+<if variable="game is babeldeluxe">
+	<set variable="game_name" value="Babel Deluxe">
+	<set variable="lst_upd_day" value="16">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	This update removed offensive words.<br>
+	</define>
+</if>
+
+<if variable="game is runic">
+	<set variable="game_name" value="Runic">
+	<set variable="lst_upd_day" value="16">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	This update fixes volume levels and a minor text display problem in the high scores list.<br>
+	</define>
+</if>
+
+<if variable="game is shangriladeluxe">
+	<set variable="game_name" value="Shangri La Deluxe">
+	<set variable="lst_upd_day" value="16">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	This update removed offensive words.<br>
+	</define>
+</if>
+
+<if variable="game is invadazoid">
+	<set variable="game_name" value="Invadazoid">
+	<set variable="lst_upd_day" value="19">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	This update adds an online global high score system.<br>
+	</define>
+</if>
+
+<if variable="game is flowerquest">
+	<set variable="game_name" value="Flower Quest">
+	<set variable="lst_upd_day" value="19">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	This update fixes a problem where a player's score could be displayed as 0 in the high scores list.<br>
+	</define>
+</if>
+
+<if variable="game is luxor2">
+	<set variable="game_name" value="Luxor 2">
+	<set variable="lst_upd_day" value="20">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	This update fixes issues that may arise for customers using nVidia video cards with older drivers.<br>
+	</define>
+</if>
+
+<if variable="game is riskii">
+	<set variable="game_name" value="Risk II">
+	<set variable="lst_upd_day" value="24">
+	<define name="lst_upd_month"><insert variable="m_10"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	This update fixes a problem with the save game feature not working and fixes the link on the Preferences page.<br>
+	</define>
+</if>
+
+<if variable="game is bugatronworlds">
+	<set variable="game_name" value="Bugatron Worlds">
+	<set variable="lst_upd_day" value="03">
+	<define name="lst_upd_month"><insert variable="m_11"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	This update allows the player to proceed from level 31 to 32.<br>
+	</define>
+</if>
+
+<if variable="game is mahjongfortuna2">
+	<set variable="game_name" value="Mahjong Fortuna 2">
+	<set variable="lst_upd_day" value="06">
+	<define name="lst_upd_month"><insert variable="m_11"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	The game now remembers full screen settings upon relaunch.<br>
+	</define>
+</if>
+
+<if variable="game is abundante">
+	<set variable="game_name" value="Abundante!">
+	<set variable="lst_upd_day" value="06">
+	<define name="lst_upd_month"><insert variable="m_11"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	This update implements the following changes:<br />
+	-Adjusted the difficulty of several levels (including stage 13 and 19).<br />
+	-Added an Expert Difficulty level that is unlocked when you complete the game.<br />
+	-Fixed a bug that might enable you to find amulet pieces in the Secret Tomb of Makoprisk.<br />
+	-Fixed a refresh rate bug that caused game to use lower than optimal refresh rate when switching applications during the game.<br />
+	</define>
+</if>
+
+<if variable="game is patsajakstriviagems">
+	<set variable="game_name" value="Pat Sajak's Trivia Gems">
+	<set variable="lst_upd_day" value="05">
+	<define name="lst_upd_month"><insert variable="m_2"></define>
+	<set variable="lst_upd_year" value="2007">
+	<define name="fixes">
+	This update fixes splash graphic so that it no longer interferes with the loading screen bar.<br><br>
+	Previous Updates:<br>
+	Update fixes bug where Butterfly icon disappears when choosing token for Player 3 in Trivia Players mode.<br>
+	</define>
+</if>
+
+<if variable="game is wordspiral">
+	<set variable="game_name" value="Word Spiral">
+	<set variable="lst_upd_day" value="28">
+	<define name="lst_upd_month"><insert variable="m_11"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	The update adds better level balancing, and more beaches and items to win.<br>
+	</define>
+</if>
+
+<if variable="game is realmsofgold">
+	<set variable="game_name" value="Realms of Gold">
+	<set variable="lst_upd_day" value="28">
+	<define name="lst_upd_month"><insert variable="m_11"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update adds better logic for Odysseus's movements, as well as better sound.<br>
+	</define>
+</if>
+
+<if variable="game is paparazzi">
+	<set variable="game_name" value="Paparazzi">
+	<set variable="lst_upd_day" value="30">
+	<define name="lst_upd_month"><insert variable="m_11"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	This update fixes the following problems:<br />
+	-Hint prices were disappearing too quickly.<br>
+	-The wrapper would quit the game without saving the game.<br>
+	-There was a missing photoshoot subject.<br>
+	-The "Handkerchief" was unfindable.<br>
+	-Pressing Alt-Tab or Control-Alt-Delete caused the game timer and camera cursor to stop functioning<br>
+	</define>
+</if>
+
+<if variable="game is pantheon">
+	<set variable="game_name" value="Pantheon">
+	<set variable="lst_upd_day" value="22">
+	<define name="lst_upd_month"><insert variable="m_12"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	Update fixes a bug where the game name was incorrectly displayed in the window's title bar.<br>
+	</define>
+</if>
+
+<if variable="game is supergranny3">
+	<set variable="game_name" value="Super Granny 3">
+	<set variable="lst_upd_day" value="22">
+	<define name="lst_upd_month"><insert variable="m_12"></define>
+	<set variable="lst_upd_year" value="2006">
+	<define name="fixes">
+	This update balances the difficulty of some tough levels more properly, mainly Mt. Vertigo (level 36) and Future World (level 15).<br>
+	</define>
+</if>
+
+<if variable="game is hoylesolitairemiamibeach">
+	<set variable="game_name" value="Hoyle Solitaire - Miami Beach">
+	<set variable="lst_upd_day" value="19">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2007">
+	<define name="fixes">
+	This update fixes minor bugs found post-release, and fixes difficulty of level 85 so that it is easier to beat.<br>
+	</define>
+</if>
+
+<if variable="game is puzzlesolitaire">
+	<set variable="game_name" value="Puzzle Solitaire">
+	<set variable="lst_upd_day" value="19">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2007">
+	<define name="fixes">
+	This update fixes the game such that it now works with systems with no sound card.<br>
+	</define>
+</if>
+
+<if variable="game is mysteryville">
+	<set variable="game_name" value="Mysteryville">
+	<set variable="lst_upd_day" value="29">
+	<define name="lst_upd_month"><insert variable="m_1"></define>
+	<set variable="lst_upd_year" value="2007">
+	<define name="fixes">
+	This update fixes a game progress issue and now properly saves the game progress after a game crash or computer shutdown.<br>
+	</define>
+</if>
+<if variable="game is greatwallofwords">
+	<set variable="game_name" value="Great Wall of Words">
+	<set variable="lst_upd_day" value="16">
+	<define name="lst_upd_month"><insert variable="m_2"></define>
+	<set variable="lst_upd_year" value="2007">
+	<define name="fixes">
+	This update improves the words in the dictionary.<br>
+	</define>
+</if>
+
+<if variable="game is turtleodyssey2">
+	<set variable="game_name" value="Turtle Odyssey 2">
+	<set variable="lst_upd_day" value="23">
+	<define name="lst_upd_month"><insert variable="m_2"></define>
+	<set variable="lst_upd_year" value="2007">
+	<define name="fixes">
+	This update fixes an issue where player would not be able to finish a level and proceed.<br>
+	This update fixes fixes minor performance issues..<br>
+	</define>
+</if>
+
+<if variable="game is cannonblast">
+	<set variable="game_name" value="Cannon Blast!">
+	<set variable="lst_upd_day" value="26">
+	<define name="lst_upd_month"><insert variable="m_2"></define>
+	<set variable="lst_upd_year" value="2007">
+	<define name="fixes">
+	Cursor now restores properly when exiting from the main game.<br>
+      - Fixes garbled characters in some player's names.<br>
+      - Game now pauses when focus is taken away from the game to the main Windows screen (example: Alt-Tab, or clicking outside of a windowed game onto the desktop).  Game resumes now only when the player clicks on pause in the game.<br>
+      - Rebalances appearance of items in the shop so that more items are available sooner.
+	</define>
+</if>
+
+<if variable="game is treasuresofmontezuma">
+	<set variable="game_name" value="Treasures of Montezuma">
+	<set variable="lst_upd_day" value="26">
+	<define name="lst_upd_month"><insert variable="m_2"></define>
+	<set variable="lst_upd_year" value="2007">
+	<define name="fixes">
+	Update fixes minor performance issues and bugs.
+	</define>
+</if>
+
+
+<if variable="game is supercollapsepuzzlegallery">
+	<set variable="game_name" value="Super Collapse! Puzzle Gallery">
+	<set variable="lst_upd_day" value="26">
+	<define name="lst_upd_month"><insert variable="m_2"></define>
+	<set variable="lst_upd_year" value="2007">
+	<define name="fixes">
+	Fixed the solution on a puzzle that was not working.
+	</define>
+</if>
+
+<if variable="game is standofood">
+	<set variable="game_name" value="Stand O' Food">
+	<set variable="lst_upd_day" value="19">
+	<define name="lst_upd_month"><insert variable="m_3"></define>
+	<set variable="lst_upd_year" value="2007">
+	<define name="fixes">
+	Update fixes all major gameplay issues and windowed mode.  This update improves performace of the game loading.
+	</define>
+</if>
+
+<comment>
+academyofmagicwordspells
+aliensky
+alohasolitaire
+alohatripeaks
+ancientheartsandspades 
+astrobatics
+astroavenger
+atomaders
+axis
+ballsofsteelcreatureattack
+bookwormdeluxe
+bubbfishbob
+burstingbubbles
+breakquest
+candee
+cannonblast
+centipede
+chainz
+chainz2relinked
+chips
+columnsiii
+combochaos
+comixzone
+congocube
+crimepuzzle
+crimsonland
+cubisgold
+cycles
+diamondmine
+digbysdonuts
+drrobotniksmeanbeanmachine
+dynomite
+eccothedolphin
+enigram3
+equilibria
+fatethecarnivalegame
+feedingfrenzy
+fitznik
+flyordiegemjam
+froggycastle
+getmedieval
+glowworm
+gravity
+gutterball3d
+highroller
+hyperballoid
+jammedagain
+kokoarena
+kyodaimahjongg
+luxor
+mahjongtheendlessjourney
+mahjonggtowers
+mahjonggtowersii
+monopoly
+moontycoon
+pandacrazegold
+penguinpuzzle
+phantasystarii
+planetarydefense
+playtoniumjigsawgarfieldgoestopieces
+playtoniumjigsawwinterholidays
+powerchips
+puzzix
+puzzleinlay
+queue
+readersdigestsuperwordpower
+rebound
+reinerkniziassamurai
+rocketmania
+scrabble
+shapemaniac
+shinobiiiitreturnofnijnamaster
+snood
+sonic3dblast
+sonicandknuckles
+sonicspinball
+sonicthehedgehog
+sonicthehedgehog2
+sonicthehedgehog3
+spelvin
+supercandycruncher
+supercollapseii
+supercollapsepuzzlegallery
+supergamehousesolitaire
+supergroovy
+supertexttwist
+texasholdem
+thetreasureonbingbongisland
+toejamandearl
+tradewinds2
+treasuresofmontezuma
+triclops
+tumblebugs
+typersharkdeluxe
+vectorman
+virtuafighter2
+wildwestwendy
+wordjolt
+wordjongtmtogo
+</comment>

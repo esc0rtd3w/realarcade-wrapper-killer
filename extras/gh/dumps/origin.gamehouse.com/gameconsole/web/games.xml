@@ -1,0 +1,59 @@
+<?xml version="1.0" ?> 
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<channel>
+
+<title>Featured Games</title>
+<description>RealArcade Featured Games</description>
+<link>http://www.realarcade.com/gameguide</link>
+
+<item>
+<title>Casino Island</title>
+<link>http://www.realarcade.com/game?gameid=casinoislandtogo&tps=ambient_</link>
+
+<description>
+<![CDATA[ 
+<a href="http://www.realarcade.com/game?gameid=casinoislandtogo&tps=ambient_"><img src="http://i.realone.com/assets/rn/img/4/9/8/1/7241894.jpg" width="240" height="135" border="1"></a>
+<p>Satisfy your casino craving with island versions of classic casino fun.</p>
+]]> 
+</description>
+<dc:creator>Vishal Anand</dc:creator> 
+<dc:date>2005-05-04T16:57Z</dc:date> 
+</item>
+
+
+
+<item>
+<title>Spring Sprang Sprung</title>
+<link>http://www.realarcade.com/game?gameid=springsprangsprung&tps=ambient_</link>
+
+<description>
+<![CDATA[ 
+<a href="http://www.realarcade.com/game?gameid=springsprangsprung&tps=ambient_"><img src="http://i.realone.com/assets/rn/img/4/7/9/6/7266974.jpg" width="240" height="135" border="1"></a>
+<p>Spring into puzzle action with this outstanding hit.</p>
+]]> 
+</description>
+<dc:creator>Vishal Anand</dc:creator> 
+<dc:date>2005-05-04T16:57Z</dc:date> 
+</item>
+
+
+<item>
+<title>Mahjong Garden To Go</title>
+<link>http://www.realarcade.com/game?gameid=mahjonggardentogo&tps=ambient_</link>
+
+<description>
+<![CDATA[ 
+<a href="http://www.realarcade.com/game?gameid=mahjonggardentogo&tps=ambient_"><img src="http://i.realone.com/assets/rn/img/6/4/9/6/7266946.jpg" width="240" height="135" border="1"></a>
+<p>A relaxing and beautiful version of an ancient classic.</p>
+]]> 
+</description>
+<dc:creator>Vishal Anand</dc:creator> 
+<dc:date>2005-05-04T16:57Z</dc:date> 
+</item>
+
+
+
+</channel>
+
+</rss>

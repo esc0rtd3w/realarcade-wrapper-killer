@@ -1,0 +1,437 @@
+body{
+margin:0;
+padding: 0;
+font-family: Verdana, sans-serif;
+font-size: small;
+background: #fff;
+}
+h2{
+font-size:130%;
+}
+h3{
+font-size:110%;
+}
+#container {
+width: 760px;
+margin:0 auto;
+font-size:95%;
+border:0px solid #000
+}
+p {
+margin: 0;
+padding: 0 0 10px 0;
+}
+br{
+clear:both;
+}
+.left{
+float:left;
+display:inline;
+}
+a:link {
+color: #467bb1;
+text-decoration:underline;
+}
+a:visited {
+color: #551a8b;
+text-decoration:underline;
+}
+a:hover {
+color: #467bb1;
+text-decoration:underline;
+}
+a img {
+border: 1px solid #467bb1;
+}
+.bold {
+font-weight:bold;
+}
+#header a img {
+border: 0px;
+}
+h1{
+font-size:10px;
+}
+/* topbar */
+#topbar{
+width:100%;
+background-color:#999999;
+color:#ffffff;
+font-size:80%;
+}
+#topbar .playercount{
+float:left;
+padding:4px 8px;
+}
+#topbar .accountlinks{
+float:right;
+padding:4px 8px;
+}
+/* header */
+#header{
+width:758px;
+border: 1px solid #000;
+border-top:none;
+border-bottom:none;
+}
+#header-logo{
+margin:8px;
+float:left;
+}
+#header-links{
+border:0px solid #000;
+margin:8px;
+float:right;
+}
+#header-links div{
+border:0px solid #cccccc;
+float:left;
+height:20px;
+padding:10px;
+margin:0 5px;
+font-size:80%;
+}
+/* search bar */
+#searchbar{
+float:right;
+margin:0 8px 0 0;
+padding:0;
+border:0px solid #000;
+text-align:center;
+width:250px;
+}
+#searchbar form{
+margin:0;
+padding:0;
+}
+#searchbar .textfield{
+width:150px;
+height:22px;
+padding:0;
+margin:3px 0 0 0;
+}
+.curved-top{
+border: 0px solid #000;
+width:760px;
+margin: 0 auto;
+height:9px;
+background: #fff;
+background: url(images/footer_top.gif) no-repeat bottom left;
+line-height:0;
+}
+.curved-bottom{
+width:760px;
+margin: 0 auto;
+height:9px;
+margin-bottom:6px;
+background: #fff;
+background: url(images/header_bottom.gif) no-repeat top left;
+line-height:0;
+}
+/* content */
+#content{
+border: 1px solid #000;
+border-top:none;
+border-bottom:none;
+}
+#content .gutter {
+padding: 4px 6px;
+}
+.section {
+border: 0px solid #000;
+margin:0;
+padding:0;
+clear:both;
+}
+.featured_ad {
+float:left;
+}
+/* product page */
+.page_title{
+margin:10px 0 0 8px;
+}
+#download_section{
+float:left;
+width:438px;
+margin:10px 5px 5px 0;
+}
+.download_section_padding{
+padding:10px;
+}
+.list_price{
+padding:10px;
+line-height:1.2em;
+}
+#productpage_tab1 .screenshots{
+float:left;
+width:130px;
+border:0px solid #000;
+}
+#productpage_tab1 .descriptions{
+float:left;
+width:370px;
+border:0px solid #000;
+margin:0 12px 0 8px;
+}
+#productpage_tab1 .details{
+float:left;
+width:200px;
+border:0px solid #000;
+font-size:90%;
+}
+#productpage_tab1 .div_padding{
+margin-bottom:10px;
+}
+/* end of product page */
+#sidebar {
+float: right;
+width: 185px;
+margin:0;
+border:0px solid #000;
+}
+#sidebar img {
+margin:0 0 4px 0;
+}
+/* set the image to use and establish the lower-right position */ 
+.module, .module_body, .module_head, .module_head h2 { 
+background: transparent url(images/samplebox1.png) no-repeat bottom right; 
+} 
+.module { 
+width: 180px; /* intended total box width - padding-right(next) */ 
+/*width: 180px; /* IE Win = width - padding */ 
+padding-right: 0px; /* the gap on the right edge of the image (not content padding) */ 
+margin:0 5px 5px 0px; /* use to position the box */ 
+float:left;
+border:0px solid #000;
+} 
+/* set the top-right image */ 
+.module_head { 
+background-position: top right; 
+margin-right: -0px; /* pull the right image over on top of border */ 
+padding-right: 10px; /* right-image-gap + right-inside padding */ 
+border:0px solid #000;
+} 
+/* set the top-left image */ 
+.module_head h2 { 
+background-position: top left; 
+margin: 0; /* reset main site styles*/ 
+border: 0; /* ditto */ 
+padding: 5px 0 5px 7px; /* padding-left = image gap + interior padding ... no padding-right */ 
+height: auto !important; height: 1%; /* IE Holly Hack */ 
+border:0px solid #000;
+font-size:105%;
+} 
+/* set the lower-left corner image */ 
+.module_body { 
+background-position: bottom left; 
+margin-right: 10px; /* interior-padding right */ 
+padding: 5px 0 8px 7px; /* mirror .cssbox_head right/left */ 
+border:0px solid #000;
+}
+.whole_page_span{
+width:746px;
+margin:0 auto;
+}
+a.buttons-Small{
+font-size:11px;
+border:3px solid #FFF;
+text-decoration:none;
+display:block;
+line-height:16px;
+padding:6px 0;
+text-align:center;
+background:url(images/button_image_sheet.gif) no-repeat 0 0;
+width:81px;
+background-position:0px -28px;
+}
+a.buttons-Small.click{
+background-position:-81px -28px;
+}
+a.buttons-Large{
+font-size:11px;
+border:3px solid #FFF;
+text-decoration:none;
+display:block;
+line-height:16px;
+padding:6px 0;
+text-align:center;
+background:url(images/button_image_sheet.gif) no-repeat 0 0;
+width:168px;
+background-position:0px 0px;
+}
+a.buttons-Large.click{
+background-position:-168px 0px;
+}
+.feature_width {
+width:440px;
+}
+.feature_height {
+height:210px;
+}
+.module ul {
+margin: 0;
+padding: 5px;
+border:0px solid #000;
+list-style: none;
+}
+.module li {
+margin: 0 0 4px 0; 
+padding: 0;
+} 
+.game-list{
+height:54px;
+font-size:80%;
+line-height:1.2em;
+border:0px solid #000;
+}
+#topten .game-list{
+height:59px;
+}
+.game-list img{
+float:left;
+margin-right:4px;
+}
+/* Games Table */
+#games_table_filter{
+width: 100%;
+border: 0px solid #999;
+background: #e6e6e6;
+font-size:80%;
+}
+#games_table_filter .left{
+margin:8px;
+float:left;
+}
+#games_table_filter .left div{
+padding:4px 0;
+}
+#games_table_filter .right{
+margin:8px;
+float:right;
+}
+#games_table_filter .right div{
+padding:4px 0;
+}
+#games_table {
+line-height: 1.5em;
+background: #919191;
+}
+table {
+width: 100%;
+border: 1px solid #999;
+background: #fff;
+}
+table th, table td {
+margin: 0;
+padding: 6px 20px;
+text-align: center;
+border-bottom: 1px solid #b5b5b5;
+}
+table th {
+color: #000;
+}
+table .name {
+text-align: left;
+}
+table tr {
+background: #e6e6e6;
+}
+table tr.alt {
+background: #f1f1f1;
+}
+table td a {
+display: block;
+font-weight: bold;
+}
+#games_table .thumbnail{
+margin-right:5px;
+border:0;
+}
+#games_table_pagination{
+text-align:right;
+padding:4px 30px 4px 0;
+font-size:80%;
+}
+/* Box */
+.box {
+  float: left;
+  margin: 0 0 5px 0;
+  padding: 0;
+  background: url(images/rounded-right.gif) top right no-repeat;
+  } 
+.desc {
+  margin: 0;
+  padding: 8px 9px 0 9px;
+  background: url(images/rounded-left.gif) top left no-repeat;
+  }
+.link {
+  text-align:center;
+  margin: 0;
+  padding: 0 0 0 9px;
+  background: url(images/rounded-left.gif) bottom left no-repeat;
+  }
+.link em {
+  display: block;
+  padding: 0 9px 8px 0;
+  font-style: normal;
+  background: url(images/rounded-right.gif) bottom right no-repeat;
+  }
+  
+/* footer */
+#footer {
+width:758px;
+border: 1px solid #000;
+border-bottom:0;
+border-top:0;
+margin:0;
+}
+#footer ul{
+display:inline;
+list-style:none;
+float:left;
+font-size:80%;
+width:160px;
+margin:0;
+padding:0 0 0 20px;
+}
+#footerdata{
+font-size:70%;
+padding:10px 10px 0 10px;
+border: 0px solid #000;
+}
+#footer-desc{
+border: 0px solid #000;
+width:440px;
+margin:0px;
+float:left;
+}
+#footer-bbb{
+border: 0px solid #000;
+width:230px;
+margin:0px;
+float:right;
+}
+#footer-bbb img{
+float:right;
+}
+#footerbar{
+background-color:#999999;
+text-align:center;
+color:#ffffff;
+font-size:80%;
+margin:2px 0 0 0;
+padding:3px;
+}
+
+.clearfix:after {
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: inline-block;}
+/* End hide from IE-mac */

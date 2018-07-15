@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NonRewrapGames>
+   <game>
+       <gameID><![CDATA[passage3]]></gameID>
+       <gameName><![CDATA[Passage 3]]></gameName>
+       <productID><![CDATA[6020]]></productID>
+   </game>
+   <game>
+       <gameID><![CDATA[riskii]]></gameID>
+       <gameName><![CDATA[Risk II]]></gameName>
+       <productID><![CDATA[18362]]></productID>
+   </game>
+   <game>
+       <gameID><![CDATA[crimsonland]]></gameID>
+       <gameName><![CDATA[Crimsonland]]></gameName>
+       <productID><![CDATA[14174]]></productID>
+   </game>
+   <game>
+       <gameID><![CDATA[jewelquest]]></gameID> 
+       <productID><![CDATA[15044]]></productID> 
+       <gameName><![CDATA[Jewel Quest]]></gameName> 
+   </game>
+   <game>
+       <gameID><![CDATA[jewelquestii]]></gameID> 
+       <productID><![CDATA[18952]]></productID> 
+       <gameName><![CDATA[Jewel Quest II]]></gameName> 
+   </game>   
+</NonRewrapGames>

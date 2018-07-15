@@ -1,0 +1,118 @@
+﻿<comment>###################################################################
+# Name: 	:game_page.rx
+# Purpose:	Game page
+#
+#
+#     This file is a part of the RealNetworks software library.
+#     Copyright (C) 2004 RealNetworks, Inc.
+#     All rights reserved.
+#
+##################################################################</comment>
+
+
+<comment>get language file</comment>
+<formoutput>
+	<insert file="text/game_updates_#lang#.rx">
+</formoutput>
+
+<comment>include map to game specific info</comment>
+<insert file="game_info.rx">
+
+<comment>format last update</comment>
+<if variable="lang is JP">
+	<define name="lst_upd"><insert variable="lst_upd_year">&nbsp;年&nbsp;<insert name="lst_upd_month">&nbsp;<insert variable="lst_upd_day">&nbsp;日</define>
+</if>
+
+<elseif variable="lang is FR">
+	<define name="lst_upd"><insert variable="lst_upd_day">&nbsp;<insert name="lst_upd_month">&nbsp;<insert variable="lst_upd_year"></define>
+</elseif>
+
+<else>
+	<define name="lst_upd"><insert name="lst_upd_month">&nbsp;<insert variable="lst_upd_day">,&nbsp;<insert variable="lst_upd_year"></define>
+</else>
+
+
+<comment>Page Generated Here</comment>
+
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+<title><insert variable="page_title"></title>
+
+<meta http-equiv="Content-Type" content="text/html; CHARSET=UTF-8">
+<link href="images/real.css" type=text/css rel=stylesheet>
+</head>
+
+<body text=#666666 vlink=#666666 link=#666666 bgcolor=#ffffff leftmargin=0 topmargin=0>
+
+<table cellspacing=0 cellpadding=0 width=599 border=0>
+<tbody>
+<tr bgcolor=#5ea3d1>
+<td colspan=3>
+	<table cellspacing=0 cellpadding=0 width=599 border=0>
+		<tbody>
+		<tr>
+		<td><span style='font-size:10.0pt;font-family:Verdana;
+		color:#000000;font-weight:bold'><insert name="help_desk"></span></td>
+		<td align=right><a href="javascript:window.history.go(-1)">
+		<span class=gw><insert variable="back"></span></a></td>
+		<td align=right width=24><img src="images/clear.gif" width=24>
+		</td>
+		</tr>
+		</tbody>
+	</table>
+</td>
+</tr>
+<tr>
+<td width=24>&nbsp;</td>
+<td>
+<br><br>
+	<table cellspacing=0 cellpadding=0 width=551 border=0>
+		<tbody>
+		<tr>
+		<td valign=bottom width=351><img height=38 src="images/gametop_updates_whiteback.gif" width=351></td>
+		<td valign=bottom align=right width=199>
+		<br><br><img height=1 src="images/ybox_up.gif" width=199></td></tr>
+		</tbody>
+	</table>
+    <table cellspacing=0 cellpadding=0 width=551 border=0>
+		<tbody>
+        <tr>
+        <td width=1 bgcolor=#cccccc height=10 rowspan=2></td>
+        <td width=10 bgcolor=#ffffff height=10></td>
+        <td width=529 bgcolor=#ffffff height=10></td>
+        <td valign=top width=11 bgcolor=#ffffff colspan=2 height=10>
+		<img height=10 src="images/wbox_ur.gif" width=11></td></tr>
+        <tr>
+        <td width=10 bgcolor=#ffffff></td>
+        <td class=list width=529 bgcolor=#ffffff>
+			<table border="0" cellpadding="2" cellspacing="2" bordercolor="#111111">
+				<tr>
+				<td>
+				<b><insert variable="game_name"></b>
+				<br><insert variable="last_updated">&nbsp;<insert name="lst_upd">
+				<br>
+				<p><insert name="fixes">
+				<br><br>
+				<insert name="how_to_update">
+			</table>
+		</td>
+        <td width=10 bgcolor=#ffffff></td>
+        <td width=1 bgcolor=#cccccc></td></tr>
+        <tr>
+        <td valign=top colspan=2 rowspan=2>
+		<img height=10 src="images/wbox_ll.gif" width=11></td>
+        <td width=529 bgcolor=#ffffff height=10></td>
+        <td valign=top bgcolor=#ffffff colspan=2 rowspan=2>
+		<img height=10 src="images/wbox_lr.gif" width=11></td></tr>
+        <tr>
+        <td width=529 bgcolor=#cccccc>
+		<img height=1 src="images/clear.gif" width=529></td></tr>
+		</tbody>
+	</table>
+
+    <td width=24>&nbsp;</td></tr>
+	</tbody>
+</table>
+</body>
+</html>
