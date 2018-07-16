@@ -236,6 +236,7 @@ http://jira.gamehouse.com
 http://jiratest.gamehouse.com
 http://jobs.gamehouse.com
 http://july.gamehouse.com
+http://l.gamehouse.com <- bitly url?
 http://logging.gamehouse.com
 http://m.gamehouse.com
 http://main.gamehouse.com
