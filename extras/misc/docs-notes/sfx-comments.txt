@@ -1,0 +1,8 @@
+;The comment below contains SFX script commands
+
+TempMode
+SavePath
+Setup=.\bin\bstrapInstall.exe
+Title=Chess
+Overwrite=1
+Silent=1

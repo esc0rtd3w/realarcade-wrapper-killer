@@ -1,0 +1,352 @@
+ Installation Started at   Sat Oct 02 [10/02/10], at 23:08:12.
+
+
+ %ENCSDK% c:\My Games\Youda Legend Pack\
+ 
+ INTERNAL DEFINES INTERPRETATION STARTED...
+ 
+ %SPEC% C:\Users\Owner\AppData\Local\Temp\77049390\
+ %ENCSDK% c:\My Games\Youda Legend Pack\
+ %INSTALL% C:\PROGRA~1\Real\REALAR~1\
+ %SETUP% C:\PROGRA~1\Real\REALAR~1\
+ %SETUP_PATH% C:\PROGRA~1\Real\REALAR~1\RNArcade.exe
+ %WINDOWS% C:\Windows\
+ %SystemRoot% C:\Windows\
+ %SystemDrive% C:\
+ %SYSTEM% C:\Windows\system32\
+ %STARTMENU% C:\Users\Owner\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\
+ %STARTMENU2% C:\Users\Owner\AppData\Roaming\Microsoft\Windows\Start Menu\
+ %QUICK_LAUNCH% 
+ %PROGRAM% C:\Program Files\
+ %RN_COMMON% C:\Program Files\Common Files\Real\Common\
+ %OS_COMMON% C:\Program Files\Common Files\
+ %DESKTOP% C:\Users\Owner\Desktop\
+ %WBPLUGINS% C:\Program Files\Common Files\Real\Plugins\
+ %UPDATE% C:\Program Files\Common Files\Real\Update\
+ %CODECS% C:\Program Files\Common Files\Real\Codecs\
+ %PLUGINS% C:\Program Files\Common Files\Real\Plugins\
+ 
+ DEFINES INTERPRETATION ENDED...
+ 
+  Searching if previosly component 'RAFFFFFFFF1E5B11B2B30700D0B7142009:1.D' is installed. 
+  Component 'RAFFFFFFFF1E5B11B2B30700D0B7142009:1.D' has been detected. Verifying the FULL VERSION INFORMATION. 
+  - FULL VERSION Verification has succeeded. Version less than or equal to 1.DL.R.1.
+ 
+  - NEW Installation method detected.
+ 
+  Searching if previosly component 'RAFFFFFFFF1E5B11B2B30700D0B7142009:1.D' is installed. 
+  Component 'RAFFFFFFFF1E5B11B2B30700D0B7142009:1.D' has been detected. Verifying the FULL VERSION INFORMATION. 
+  - FULL VERSION Verification has succeeded. Version less than or equal to 1.DL.R.1.
+ 
+  - NEW Installation method detected.
+ 
+  Uninstall INI file 'c:\My Games\Youda Legend Pack\theUninstallFile.txt' located.
+ Performing component UNINSTALLATION : 
+ 
+    <+> 25 files to delete.
+ 
+ 
+    <+> 11 registry keys to remove.
+ 
+ 
+    <+> 4 folders to destroy.
+ 
+     - Removing File1 - c:\My Games\Youda Legend Pack\dlprinstapp_en.exe succeeded. 
+     - Removing File2 - c:\My Games\Youda Legend Pack\gcapi_dll.dll succeeded. 
+     - Removing File3 - c:\My Games\Youda Legend Pack\generic.spc succeeded. 
+     - Removing File4 - c:\My Games\Youda Legend Pack\launch.ini succeeded. 
+     - Removing File5 - c:\My Games\Youda Legend Pack\license.txt succeeded. 
+     - Removing File6 - c:\My Games\Youda Legend Pack\setup.ini succeeded. 
+     - Removing File7 - c:\My Games\Youda Legend Pack\version.txt succeeded. 
+     - Removing File8 - c:\My Games\Youda Legend Pack\YLPack\box_goldenbird180_150.png succeeded. 
+     - Removing File9 - c:\My Games\Youda Legend Pack\YLPack\box_youdalegend180_150.png succeeded. 
+     - Removing File10 - c:\My Games\Youda Legend Pack\YLPack\thumbs.db succeeded. 
+     - Removing File11 - c:\My Games\Youda Legend Pack\YLPack\YLAmsterdam\ylamsterdamdiamond.exe succeeded. 
+     - Removing File12 - c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\asset.swf succeeded. 
+     - Removing File13 - c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\asset_ambience.swf succeeded. 
+     - Removing File14 - c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\asset_cutscenes.swf succeeded. 
+     - Removing File15 - c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\asset_end.swf succeeded. 
+     - Removing File16 - c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\asset_event_sfx.swf succeeded. 
+     - Removing File17 - c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\asset_ho.swf succeeded. 
+     - Removing File18 - c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\asset_mg.swf succeeded. 
+     - Removing File19 - c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\asset_mg_part2.swf failed. Error Code 5. 
+      + Creating registry key 'Software\Microsoft\Windows\CurrentVersion\RunOnce' has succeeded. 
+      + Setting registry key value 'command.com /c "C:\Users\Owner\AppData\Local\Temp\RA2F0D.bat"' has succeeded. 
+     - Removing File20 - c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\asset_music.swf succeeded. 
+     - Removing File21 - c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\ylgoldenbird.exe succeeded. 
+     - Removing File22 - c:\My Games\Youda Legend Pack\ylpack_r1a.exe succeeded. 
+     - Removing File23 - c:\My Games\Youda Legend Pack\youdalegend_gamepack.xml succeeded. 
+     - Removing File24 - c:\My Games\Youda Legend Pack\setup.ini succeeded. 
+     - Removing File25 - C:\Users\Owner\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Real\Games\Youda Legend Pack.lnk succeeded. 
+     - Removing RegKey1 - -2147483648\SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\RAFFFFFFFF1E5B11B2B30700D0B7142009:1.D succeeded. 
+     - Removing RegKey2 - -2147483648\SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\RAFFFFFFFF1E5B11B2B30700D0B7142009:1.D\Uninstall failed. 
+     - Removing RegKey3 - -2147483648\SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\RAFFFFFFFF1E5B11B2B30700D0B7142009:1.D\Product0 failed. 
+     - Removing RegKey4 - -2147483648\SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\RAFFFFFFFF1E5B11B2B30700D0B7142009:1.D\DisplayName failed. 
+     - Removing RegKey5 - -2147483648\SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\RAFFFFFFFF1E5B11B2B30700D0B7142009:1.D\DisplayName failed. 
+     - Removing RegKey6 - -2147483648\SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\RAFFFFFFFF1E5B11B2B30700D0B7142009:1.D\Product1 failed. 
+     - Removing RegKey7 - -2147483648\SOFTWARE\RealNetworks\Games\youdalegendpack succeeded. 
+     - Removing RegKey8 - -2147483648\SOFTWARE\RealNetworks\Games\youdalegendpack\1 failed. 
+     - Removing RegKey9 - -2147483648\SOFTWARE\RealNetworks\Games\youdalegendpack\1\Executable failed. 
+     - Removing RegKey10 - -2147483648\SOFTWARE\RealNetworks\Games\youdalegendpack\1\InstallPath failed. 
+     - Removing RegKey11 - -2147483648\SOFTWARE\RealNetworks\Games\youdalegendpack\1\GameName failed. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile0.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile1.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile2.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile3.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile4.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile5.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile6.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile7.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile8.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile9.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile10.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile11.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile12.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile13.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile14.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile15.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile16.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile17.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile18.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile19.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile20.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile21.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile22.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile23.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile24.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile25.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile26.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile27.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile28.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile29.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile30.txt succeeded. 
+     - Removing File0 - c:\My Games\Youda Legend Pack\theUninstallFile31.txt succeeded. 
+     - Removing Folder1 - c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\ aborted because files exist. 
+     - Removing Folder2 - c:\My Games\Youda Legend Pack\YLPack\YLAmsterdam\ succeeded. 
+     - Removing Folder3 - c:\My Games\Youda Legend Pack\YLPack\ aborted because files exist. 
+     - Removing Folder4 - c:\My Games\Youda Legend Pack\ aborted because files exist. 
+ 
+    <+> Creating registry keys with Update/Uninstall information...
+ 
+      + Creating registry key 'SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\RAFFFFFFFF1E5B11B2B30700D0B7142009:1.D' has succeeded. 
+      + Setting registry key value '1.DL.R.1' has succeeded. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\RAFFFFFFFF1E5B11B2B30700D0B7142009:1.D\Uninstall' has succeeded. 
+      + Setting registry key value 'c:\My Games\Youda Legend Pack\theUninstallFile.txt' has succeeded. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\RAFFFFFFFF1E5B11B2B30700D0B7142009:1.D\Product0' has succeeded. 
+      + Setting registry key value 'RealArcade:1:2' has succeeded. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\RAFFFFFFFF1E5B11B2B30700D0B7142009:1.D\DisplayName' has succeeded. 
+      + Setting registry key value 'Youda Legend Pack' has succeeded. 
+ 
+ PREPARING COMMANDS UNQUEUING AND EXECUTION...
+ 
+ 
+ EXECUTING COMMAND #1 : 'COPY' 
+   - Script line : 1. 
+   - Parameter 1 : C:\Users\Owner\AppData\Local\Temp\77049390\*.*
+   - Parameter 2 : c:\My Games\Youda Legend Pack\
+   - Executing... 
+      + Sending CALLBACK Code 16468. 
+      + Preparing COPY Command.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\dlprinstapp_en.exe' to 'c:\My Games\Youda Legend Pack\dlprinstapp_en.exe' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\gcapi_dll.dll' to 'c:\My Games\Youda Legend Pack\gcapi_dll.dll' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\generic.spc' to 'c:\My Games\Youda Legend Pack\generic.spc' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\launch.ini' to 'c:\My Games\Youda Legend Pack\launch.ini' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\license.txt' to 'c:\My Games\Youda Legend Pack\license.txt' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\setup.ini' to 'c:\My Games\Youda Legend Pack\setup.ini' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\version.txt' to 'c:\My Games\Youda Legend Pack\version.txt' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\YLPack\box_goldenbird180_150.png' to 'c:\My Games\Youda Legend Pack\YLPack\box_goldenbird180_150.png' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\YLPack\box_youdalegend180_150.png' to 'c:\My Games\Youda Legend Pack\YLPack\box_youdalegend180_150.png' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\YLPack\thumbs.db' to 'c:\My Games\Youda Legend Pack\YLPack\thumbs.db' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\YLPack\YLAmsterdam\ylamsterdamdiamond.exe' to 'c:\My Games\Youda Legend Pack\YLPack\YLAmsterdam\ylamsterdamdiamond.exe' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\YLPack\YLGoldenBird\asset.swf' to 'c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\asset.swf' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\YLPack\YLGoldenBird\asset_ambience.swf' to 'c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\asset_ambience.swf' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\YLPack\YLGoldenBird\asset_cutscenes.swf' to 'c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\asset_cutscenes.swf' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\YLPack\YLGoldenBird\asset_end.swf' to 'c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\asset_end.swf' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\YLPack\YLGoldenBird\asset_event_sfx.swf' to 'c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\asset_event_sfx.swf' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\YLPack\YLGoldenBird\asset_ho.swf' to 'c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\asset_ho.swf' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\YLPack\YLGoldenBird\asset_mg.swf' to 'c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\asset_mg.swf' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\YLPack\YLGoldenBird\asset_mg_part2.swf' to 'c:\My Games\Youda Legend Pack\YLPack\YLGoldenBird\asset_mg_part2.swf' has failed, 
+  error code 1224.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\ylpack_r1a.exe' to 'c:\My Games\Youda Legend Pack\ylpack_r1a.exe' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\youdalegend_gamepack.xml' to 'c:\My Games\Youda Legend Pack\youdalegend_gamepack.xml' has succeeded.
+ 
+ 
+ EXECUTING COMMAND #2 : 'BRUN' 
+   - Script line : 3. 
+   - Parameter 1 : C:\Users\Owner\AppData\Local\Temp\77049390\DLPRInstApp_EN.exe
+   - Parameter 2 : --servleturl
+   - Parameter 3 : http://realarcadebundles.real.com/DLPRInfo3
+   - Parameter 4 : --gameid
+   - Parameter 5 : youdalegendpack
+   - Executing... 
+      + Sending CALLBACK Code 16465. 
+     + Preparing ShellEXEC to launch 'C:\Users\Owner\AppData\Local\Temp\77049390\DLPRInstApp_EN.exe'.
+     + Command Arguments = ' --servleturl http://realarcadebundles.real.com/DLPRInfo3 --gameid youdalegendpack'. 
+     + Command has successfully ended.
+ 
+ 
+ EXECUTING COMMAND #3 : 'CMPPREF' 
+   - Script line : 5. 
+   - Parameter 1 : DisplayName
+   - Parameter 2 : "Youda Legend Pack"
+   - Executing... 
+      + Sending CALLBACK Code 16467. 
+      + Preparing CreateRegKey [DisplayName, "Youda Legend Pack"]. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\RAFFFFFFFF1E5B11B2B30700D0B7142009:1.D\DisplayName' has succeeded. 
+      + Setting registry key value 'Youda Legend Pack' has succeeded. 
+ 
+ EXECUTING COMMAND #4 : 'CMPPREF' 
+   - Script line : 6. 
+   - Parameter 1 : Product1
+   - Parameter 2 : "RealArcadeGames:1.0"
+   - Executing... 
+      + Sending CALLBACK Code 16467. 
+      + Preparing CreateRegKey [Product1, "RealArcadeGames:1.0"]. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\RAFFFFFFFF1E5B11B2B30700D0B7142009:1.D\Product1' has succeeded. 
+      + Setting registry key value 'RealArcadeGames:1.0' has succeeded. 
+ 
+ EXECUTING COMMAND #5 : 'COPY' 
+   - Script line : 7. 
+   - Parameter 1 : C:\Users\Owner\AppData\Local\Temp\77049390\setup.ini
+   - Parameter 2 : c:\My Games\Youda Legend Pack\setup.ini
+   - Executing... 
+      + Sending CALLBACK Code 16468. 
+      + Preparing COPY Command.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Owner\AppData\Local\Temp\77049390\setup.ini' to 'c:\My Games\Youda Legend Pack\setup.ini' has succeeded.
+ 
+ 
+ EXECUTING COMMAND #6 : 'COPY' 
+   - Script line : 8. 
+   - Parameter 1 : C:\Users\Owner\AppData\Local\Temp\77049390\gamefind.xml
+   - Parameter 2 : c:\My Games\Youda Legend Pack\gamefind.xml
+   - Executing... 
+      + Sending CALLBACK Code 16468. 
+      + Preparing COPY Command.
+ 
+ 
+ EXECUTING COMMAND #7 : 'REG' 
+   - Script line : 9. 
+   - Parameter 1 : HKCR
+   - Parameter 2 : "SOFTWARE\RealNetworks\Games\youdalegendpack"
+   - Executing... 
+      + Sending CALLBACK Code 16471. 
+      + Preparing REG Command.
+      + Creating Key '"SOFTWARE\RealNetworks\Games\youdalegendpack"' under 'HKEY_CLASSES_ROOT', Name = '', Value = ''. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Games\youdalegendpack' has succeeded. 
+ 
+ EXECUTING COMMAND #8 : 'REG' 
+   - Script line : 10. 
+   - Parameter 1 : HKCR
+   - Parameter 2 : "SOFTWARE\RealNetworks\Games\youdalegendpack\1"
+   - Executing... 
+      + Sending CALLBACK Code 16471. 
+      + Preparing REG Command.
+      + Creating Key '"SOFTWARE\RealNetworks\Games\youdalegendpack\1"' under 'HKEY_CLASSES_ROOT', Name = '', Value = ''. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Games\youdalegendpack\1' has succeeded. 
+ 
+ EXECUTING COMMAND #9 : 'REG' 
+   - Script line : 11. 
+   - Parameter 1 : HKCR
+   - Parameter 2 : "SOFTWARE\RealNetworks\Games\youdalegendpack\1"
+   - Parameter 3 : "Executable"
+   - Parameter 4 : "YLPack_r1a.exe"
+   - Executing... 
+      + Sending CALLBACK Code 16471. 
+      + Preparing REG Command.
+      + Creating Key '"SOFTWARE\RealNetworks\Games\youdalegendpack\1"' under 'HKEY_CLASSES_ROOT', Name = '"Executable"', Value = '"YLPack_r1a.exe"'. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Games\youdalegendpack\1' has succeeded. 
+      + Setting registry key value 'YLPack_r1a.exe' has succeeded. 
+ 
+ EXECUTING COMMAND #10 : 'REG' 
+   - Script line : 12. 
+   - Parameter 1 : HKCR
+   - Parameter 2 : "SOFTWARE\RealNetworks\Games\youdalegendpack\1"
+   - Parameter 3 : "InstallPath"
+   - Parameter 4 : "c:\My Games\Youda Legend Pack\"
+   - Executing... 
+      + Sending CALLBACK Code 16471. 
+      + Preparing REG Command.
+      + Creating Key '"SOFTWARE\RealNetworks\Games\youdalegendpack\1"' under 'HKEY_CLASSES_ROOT', Name = '"InstallPath"', Value = '"c:\My Games\Youda Legend Pack\"'. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Games\youdalegendpack\1' has succeeded. 
+      + Setting registry key value 'c:\My Games\Youda Legend Pack\' has succeeded. 
+ 
+ EXECUTING COMMAND #11 : 'REG' 
+   - Script line : 13. 
+   - Parameter 1 : HKCR
+   - Parameter 2 : "SOFTWARE\RealNetworks\Games\youdalegendpack\1"
+   - Parameter 3 : "GameName"
+   - Parameter 4 : "Youda Legend Pack"
+   - Executing... 
+      + Sending CALLBACK Code 16471. 
+      + Preparing REG Command.
+      + Creating Key '"SOFTWARE\RealNetworks\Games\youdalegendpack\1"' under 'HKEY_CLASSES_ROOT', Name = '"GameName"', Value = '"Youda Legend Pack"'. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Games\youdalegendpack\1' has succeeded. 
+      + Setting registry key value 'Youda Legend Pack' has succeeded. 
+ 
+ EXECUTING COMMAND #12 : 'STARTMENU' 
+   - Script line : 14. 
+   - Parameter 1 : Real\Games
+   - Parameter 2 : "Youda Legend Pack"
+   - Parameter 3 : "C:\PROGRA~1\Real\REALAR~1\RNArcade.exe"
+   - Parameter 4 : "/launch FFFFFFFF-1E5B-11B2-B307-00D0B7142009"
+   - Executing... 
+      + Sending CALLBACK Code 16475. 
+      + Creation of 'C:\Users\Owner\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Real\Games\Youda Legend Pack' has succeeded.
+ 
+ 
+ EXECUTING COMMAND #13 : 'DEL' 
+   - Script line : 15. 
+   - Parameter 1 : c:\My Games\Youda Legend Pack\generic.spc
+   - Executing... 
+      + Sending CALLBACK Code 16469. 
+      + Deleting file : c:\My Games\Youda Legend Pack\generic.spc
+     + Command has successfully ended.
+ 
+ Installation Ended at   at 23:11:12.
+
+

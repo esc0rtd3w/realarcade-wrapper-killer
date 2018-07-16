@@ -1,0 +1,55 @@
+207.188.5.190
+
+207.188.5.210
+
+207.188.9.32
+
+209.85.171.100
+
+216.127.40.150
+
+cool.gamehouse.com  <-- hmmmmm
+
+
+
+
+
+207.188.5.190     <-- Trymedia Server (Responsible for Downloading License Only)
+
+70.42.13.100      <-- GameHouse Server?? (Causes a blank page on stub if blocked)
+
+138.108.6.20      <-- Currently Unknown (Safe to block, no problems found so far)
+
+138.108.7.20      <-- Currently Unknown (Safe to block, no problems found so far)
+
+
+
+
+Ads:
+
+72.21.81.253      <-- Currently Unknown (Safe to block, no problems found so far)
+
+74.125.225.124    <-- Currently Unknown (Safe to block, no problems found so far)
+
+74.217.78.140     <-- Currently Unknown (Safe to block, no problems found so far)
+
+208.44.23.107     <-- Currently Unknown (Safe to block, no problems found so far)
+
+216.52.92.3       <-- Currently Unknown (Safe to block, no problems found so far)
+
+
+
+
+spotxchange.com   <-- Currently Unknown (Safe to block, no problems found so far)
+
+ord08s08-in-f28.1e100.net (74.125.225.124) <-- Currently Unknown 
+(Causes temp freezing at load with old stub when blocked with firewall)
+(No effect on new stub)
+
+
+
+
+
+
+
+

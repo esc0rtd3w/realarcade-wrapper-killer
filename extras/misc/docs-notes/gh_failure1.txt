@@ -1,0 +1,25 @@
+04/03/12 13:27:53 *************** Local Metadata Environment *******************
+racRoot -> 
+racVersion -> 2.0
+racApp -> 
+workDir -> C:\Users\Hacker\AppData\Local\Temp\RarSFX0
+osVersion -> 6
+licenseRoot -> 
+databasePath -> 
+gamesRoot -> C:\GameHouse Games
+v1MainApp -> 
+
+04/03/12 13:27:53 Returning instance of MetadataInterp
+04/03/12 13:27:53 GetRegKeyValue hive = HKEY_LOCAL_MACHINE, path = SOFTWARE\GameInstaller\Installer, key = Location
+04/03/12 13:27:53 installerLoc =  C:\Program Files\RealArcade\Installer
+04/03/12 13:27:53 6080=> installerLoc =  C:\Program Files\RealArcade\Installer
+04/03/12 13:27:53 6080=> workDir =  C:\Users\Hacker\AppData\Local\Temp\RarSFX0
+04/03/12 13:27:53 6080=> gamehouse This storefront does not support parallel downloads
+04/03/12 13:27:53 6080=> AreSerialDownloadsRequired returning true
+04/03/12 13:27:53 6080=> Overwriting installer at C:\Program Files\RealArcade\Installer with C:\Users\Hacker\AppData\Local\Temp\RarSFX0
+04/03/12 13:27:53 CreatePath path = C:\Program Files\RealArcade\Installer
+04/03/12 13:27:53 LocalCopy Error: COM exception:(.\src\library\tLuaCOM.cpp,398): on C:\Users\Hacker\AppData\Local\Temp\RarSFX0 TO C:\Program Files\RealArcade\Installer
+04/03/12 13:27:53 CreatePath path = C:\Program Files\RealArcade\Installer\bin\gamewrapper.exe
+04/03/12 13:27:53 6080=> Restarting Installer...C:\Program Files\RealArcade\Installer\bin\bstrapInstall.exe cmdAgs: sfx:"C:\GameHouse-Installer_am-luxorevolved_gamehouse_.exe"
+04/03/12 13:27:53 6080=> Wait 20 seconds for launched process to come up
+04/03/12 13:27:55 6080=> exiting first-stage Installer

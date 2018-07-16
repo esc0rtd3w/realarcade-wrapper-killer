@@ -223,5 +223,61 @@ Proxy-Connection: Keep-Alive
 
 
 
+From AM Server when loading stub
+
+
+http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/eula.html?aff=z_syn_gh_g12&product_name=Jewel+Legends+-+Magical+Kingdom&contentid=33ED650E2CBFBC5935E97BF77CC224C7&offering=jewellegendsmagicalkingdom&lang=en-us&sld=eula&tracking=89C04534A4B5C5777B48962344406600&extratracking=[extratracking]&version=0020&locale=en-us&curpage=1&maxpage=2&locale=en-us&racversion=&installerversion=3.1.10&htmlversion=
+
+http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/images/game-eval_image.jpg
+
+http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/installing.html
+
+http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/js/jquery.min.js
+
+http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/js/installer.js
+
+http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/js/localization.js
+
+http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/js/properties.js
+
+http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/css/style.css
+
+http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/images/slide_background.jpg
+
+http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/images/slide_progress-bar.png
+
+http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/images/slide_loader.gif
+
+http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/images/buttonsm_right.png
+
+http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/images/buttonsm_left.png
+
+http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/_build.js?_=1382858038270
+
+http://activemark.zylom.com/ping/installerstart?contentID=&lang=en&offering=&systemID=&tracking=&extratracking=
+
+http://activemark.zylom.com/ping/downloadstart?contentID=&lang=en&offering=&systemID=&tracking=&extratracking=
+
+http://cdn.media.zylom.com/images/activemark/ors//50x50.jpg
+
+http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/images/game-eval_image.jpg
+
+http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/images/50x50_border.png
+
+http://cdn.media.zylom.com/favicon.ico
+
+
+http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/images/installerProgRight.gif
+
+http://cdn.media.zylom.com/images/activemark/installer_ui/z_syn_gh/images/installerProgLeft.gif
+
+http://activemark.zylom.com/ping/downloadstart?contentID=33ED650E2CBFBC5935E97BF77CC224C7&lang=en&offering=jewellegendsmagicalkingdom&systemID=2CDA2525A0BD6E9AB5664C373D96D15D&tracking=89C04534A4B5C5777B48962344406600&extratracking=[extratracking]
+
+
+
+
+
+
+
 
 
