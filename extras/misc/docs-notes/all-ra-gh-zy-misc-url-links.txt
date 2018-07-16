@@ -255,6 +255,10 @@ http://report.gamehouse.com
 http://reviews.gamehouse.com
 http://rewards.gamehouse.com
 http://search.gamehouse.com
+http://stage.gamehouse.com
+http://stage-boom.gamehouse.com
+http://stage-store.gamehouse.com
+http://stage-www.gamehouse.com
 http://super4.gamehouse.com
 http://support.gamehouse.com
 http://talent.gamehouse.com
@@ -263,6 +267,9 @@ http://www.gamehouse.com
 http://www.stage.gamehouse.com
 
 http://cdn.ghstatic.com
+
+http://cool.gamehouse.com:80/gamefrme.jsp?game=tank
+http://cool.gamehouse.com/gamedetails/?game=lavendersb&navpage=downloadgames
 
 
 MISC SUBDOMAINS ZYLOM:
