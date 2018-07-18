@@ -6,5 +6,6 @@ https://web.archive.org/web/20080602055455/http://ftp.gamehouse.com:80/pub/mac/
 https://web.archive.org/web/20080602055501/http://ftp.gamehouse.com:80/pub/nextgame/
 https://web.archive.org/web/20080602055506/http://ftp.gamehouse.com:80/pub/palm/
 
+https://web.archive.org/web/*/http://games-dl2.real.com/gameconsole/realarcadev21/games/am-deliciousemilyswonderwedding//*
 
 

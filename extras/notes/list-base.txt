@@ -1,5 +1,6 @@
 
 gamehouse
+gamehousebeta
 ghstatic
 mobinozer
 prognet
@@ -8,4 +9,8 @@ realarcade
 realnetworks
 realone
 realplay
+trymedia
 zylom
+zylomgames
+zylomlocal
+zylomtest
