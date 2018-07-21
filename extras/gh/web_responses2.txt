@@ -1,0 +1,32 @@
+
+default "load more" games request
+http://www.gamehouse.com/categorypage_more?gametype=download&genre=all&sorting=launchdate&count=20&filterType=new-games&listView=true&start=20
+
+GET /categorypage_more?gametype=download&genre=all&sorting=launchdate&count=20&filterType=new-games&listView=true&start=20 HTTP/1.1
+Host: www.gamehouse.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.gamehouse.com/new-games?platform=pc-games
+X-Requested-With: XMLHttpRequest
+Cookie: gamehouseuser=true
+Connection: keep-alive
+
+
+Get all games (20180718)
+http://www.gamehouse.com/categorypage_more?gametype=download&genre=all&sorting=launchdate&count=3475&filterType=new-games&listView=true&start=0
+
+GET /categorypage_more?gametype=download&genre=all&sorting=launchdate&count=3475&filterType=new-games&listView=true&start=0 HTTP/1.1
+Host: www.gamehouse.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.gamehouse.com/new-games?platform=pc-games
+X-Requested-With: XMLHttpRequest
+Cookie: gamehouseuser=true
+Connection: keep-alive
+
+
+
