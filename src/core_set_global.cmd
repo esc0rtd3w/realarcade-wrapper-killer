@@ -295,6 +295,7 @@ if not exist "%windir%\SysWOW64" set bits=x86
 if "%PROCESSOR_ARCHITECTURE%"=="AMD64" set bits=x64
 
 :: Check common OS versions
+goto osCheckTempFix
 ver | find "5.1"
 if %errorlevel%==0 set os=xp
 ver | find "6.0"
@@ -332,8 +333,9 @@ if %errorlevel%==0 set os=win10
 ver | find "10.9"
 if %errorlevel%==0 set os=win10
 
-ver | find "Version 5.1" >nul
-if errorlevel 0 set os=XP
+:osCheckTempFix
+set os=XP
+ver | find "5.1"
 if errorlevel 1 set os=VISTA
 
 ::-----------------------------------------------------------------------------------

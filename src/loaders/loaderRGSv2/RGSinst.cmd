@@ -9,9 +9,8 @@ set PATH=C:\Program Files\unRealArcade\rawk\dump\{sys};C:\Program Files\unRealAr
 ::-----------------------------------------------------------------------------------
 :: Set Windows OS Version
 ::-----------------------------------------------------------------------------------
-
-ver | find "Version 5.1" >nul
-if errorlevel 0 set os=XP
+set os=XP
+ver | find "5.1"
 if errorlevel 1 set os=VISTA
 
 

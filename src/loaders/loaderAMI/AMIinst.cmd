@@ -11,9 +11,8 @@ set forceExit=0
 ::-----------------------------------------------------------------------------------
 :: Set Windows OS Version
 ::-----------------------------------------------------------------------------------
-
-ver | find "Version 5.1" >nul
-if errorlevel 0 set os=XP
+set os=XP
+ver | find "5.1"
 if errorlevel 1 set os=VISTA
 
 :: Only checking XP. Anything else will be considered VISTA compatible
