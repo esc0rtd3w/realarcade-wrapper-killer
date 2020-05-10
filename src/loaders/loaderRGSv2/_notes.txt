@@ -14,6 +14,11 @@ RGSInst.exe
 
 
 
+**CALL TO MOMENT OF EXTRACTION**
+004038CD | FF 50 24                 | call dword ptr ds:[eax+24]              | ;extracts rgs
+
+
+
 
 004088CC  |.  E8 F3B2FFFF   CALL 00403BC4                            ; \RGSinst.00403BC4
 
@@ -34,21 +39,12 @@ RGSInst.exe
 
 
 
-**CALL TO MOMENT OF EXTRACTION**
 
 00404C2B  |.  E8 E9E6FFFF   CALL 00403319
 
-
-
 0040BCE6  |. /74 17         JE SHORT 0040BCFF
 
-
-**MOMENT OF EXTRACTION**
 0040BD03  |. /75 21         JNZ SHORT 0040BD26
-
-
-
-
 
 
 
@@ -77,4 +73,97 @@ RGSInst.exe
 00404AD8  |>  C785 8CEAFFFF>MOV DWORD PTR SS:[EBP-1574],0
 00404AE2  |.  C785 7CE8FFFF>MOV DWORD PTR SS:[EBP-1784],0042A758     ;  ASCII "html.xtr"
 00404AEC  |.  C785 80E8FFFF>MOV DWORD PTR SS:[EBP-1780],0042A764     ;  ASCII "catalog.xtr"
+
+
+
+
+
+FORCE JUMP HERE added 20200509
+
+00403D7C | 74 64                    | je rgsinst.403DE2                       | ;SOFTWARE\\RealNetworks\\RealArcade   Registry Check. Fails with blank msgbox if not exist
+
+
+
+
+
+** rngcinstallengine.dll **
+
+003A24E9 | E8 A2 27 01 00           | call rngcinstallengine.3B4C90           |
+
+
+004551F6 | E8 15 FF FF FF           | call rngcinstallengine.455110           | ;call to extraction
+
+
+00455145 | FF 15 64 A0 45 00        | call dword ptr ds:[<&OpenFile>]         | ;open rgs file
+
+
+0045716B | FF 15 60 A0 45 00        | call dword ptr ds:[<&ReadFile>]         | ;read rgs file
+
+
+00457173 | 74 42                    | je rngcinstallengine.4571B7             | ;check header for XZip2.0 jump if fail
+
+
+005E6CFD | E8 0E FF FF FF           | call rngcinstallengine.5E6C10           | ;last call to extract
+
+
+
+
+
+005E6C84 | E8 37 EC FF FF           | call rngcinstallengine.5E58C0           | ;copy a file
+
+
+005E6D02 | 83 F8 01                 | cmp eax,1                               | ;return from copy a file
+
+
+
+
+004038D0 | C7 85 B8 F9 FF FF 00 00  | mov dword ptr ss:[ebp-648],0            | ;jumps back here after extraction
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+** BREAKPOINTS **
+
+Software  Name                              Module/Label                      State     Comment                                                                                                                                                                                   
+00015145                                    rngcinstallengine.dll             Enabled   eax:BaseThreadInitThunk
+000151F6                                    rngcinstallengine.dll             Enabled   eax:BaseThreadInitThunk
+00016C26                                    rngcinstallengine.dll             Enabled   eax:BaseThreadInitThunk
+00016C84                                    rngcinstallengine.dll             Enabled   eax:BaseThreadInitThunk
+00016CFD                                    rngcinstallengine.dll             Enabled   eax:BaseThreadInitThunk
+00016D02                                    rngcinstallengine.dll             Enabled   eax:BaseThreadInitThunk
+0001716B                                    rngcinstallengine.dll             Enabled   eax:BaseThreadInitThunk
+0040334B                                    rgsinst.exe                       Disabled  
+0040334F                                    rgsinst.exe                       Disabled  
+00403546                                    rgsinst.exe                       Disabled  
+00403639                                    rgsinst.exe                       Disabled  
+004037C9                                    rgsinst.exe                       Disabled  gamename shows here
+004038CD                                    rgsinst.exe                       Enabled   extracts rgs
+004038D0                                    rgsinst.exe                       Enabled   jumps back here after extraction
+00403998                                    rgsinst.exe                       Disabled  
+00403A1F                                    rgsinst.exe                       Disabled  delete or dont delete
+00403A35                                    rgsinst.exe                       Disabled  
+00403AAA                                    rgsinst.exe                       Disabled  
+00403D7C                                    rgsinst.exe                       Enabled   SOFTWARE\\RealNetworks\\RealArcade   Registry Check. Fails with blank msgbox if not exist
+00403ED5                                    rgsinst.exe                       Disabled  
+00404068                                    rgsinst.exe                       Disabled  
+00404BF7                                    rgsinst.exe                       Disabled  
+00404C37                                    rgsinst.exe                       Disabled  
+00404D4A                                    rgsinst.exe                       Disabled  
+0040BD03                                    rgsinst.exe                       Disabled  
 
