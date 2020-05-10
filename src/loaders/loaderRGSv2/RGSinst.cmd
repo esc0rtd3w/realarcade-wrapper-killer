@@ -108,31 +108,31 @@ echo.
 
 if exist "%root%\_tmp.rgs" (
 
-goto launch
+	goto launch
 
 )
 
 
 if not exist "%root%\_tmp.rgs" (
 
-color 4f
+	color 4f
 
-cls
-echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
-echo.
-echo.
-echo.
-echo RGS Game Installer Failed To Copy!
-echo.
-echo.
-echo Force Retry? [Recommended] [Y/N]
-echo.
+	cls
+	echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
+	echo.
+	echo.
+	echo.
+	echo RGS Game Installer Failed To Copy!
+	echo.
+	echo.
+	echo Force Retry? [Recommended] [Y/N]
+	echo.
 
-if %os%==XP choice /c:yn /n
-if %os%==VISTA choice /c yn /n
-if errorlevel 2 goto end
+	if %os%==XP choice /c:yn /n
+	if %os%==VISTA choice /c yn /n
+	if errorlevel 2 goto end
 
-goto skiptmp
+	goto skiptmp
 
 )
 
@@ -187,62 +187,62 @@ goto chkxerr
 
 if not exist "%root%\_tmp\*.exe" (
 
-color 4f
+	color 4f
 
-cls
-echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
-echo.
-echo.
-echo.
-echo Corrupted Extraction Folder Detected!
-echo.
-echo.
-echo Force v1.x Loader? [Recommended] [Y/N]
-echo.
+	cls
+	echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
+	echo.
+	echo.
+	echo.
+	echo Corrupted Extraction Folder Detected!
+	echo.
+	echo.
+	echo Force v1.x Loader? [Recommended] [Y/N]
+	echo.
 
-if %os%==XP choice /c:yn /n
-if %os%==VISTA choice /c yn /n
-if errorlevel 2 exit
-
-
-cls
-echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
-echo.
-echo.
-echo.
-echo After the game is finished installing, do the following:
-echo.
-echo.
-echo 1. Click OK on ALL dialog boxes
-echo.
-echo 2. Right-Click on the RGS Loader icon in the taskbar and click CLOSE
-echo.
-echo.
+	if %os%==XP choice /c:yn /n
+	if %os%==VISTA choice /c yn /n
+	if errorlevel 2 exit
 
 
-
-regedit /s "%ProgramFiles%\unRealArcade\loaderRGSv2\setRGS.reg"
-
-wait 5
-
-%stubname%
-
-cls
-echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
-echo.
-echo.
-echo.
-echo If the game did not complete sucessfully, then please try re-downloading
-echo the original game installer "RGS File" from the internet.
-echo.
-
-wait 5
-
-regedit /s "%ProgramFiles%\unRealArcade\loaderRGSv2\setRGS.reg"
+	cls
+	echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
+	echo.
+	echo.
+	echo.
+	echo After the game is finished installing, do the following:
+	echo.
+	echo.
+	echo 1. Click OK on ALL dialog boxes
+	echo.
+	echo 2. Right-Click on the RGS Loader icon in the taskbar and click CLOSE
+	echo.
+	echo.
 
 
 
-exit
+	regedit /s "%ProgramFiles%\unRealArcade\loaderRGSv2\setRGS.reg"
+
+	wait 5
+
+	%stubname%
+
+	cls
+	echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
+	echo.
+	echo.
+	echo.
+	echo If the game did not complete sucessfully, then please try re-downloading
+	echo the original game installer "RGS File" from the internet.
+	echo.
+
+	wait 5
+
+	regedit /s "%ProgramFiles%\unRealArcade\loaderRGSv2\setRGS.reg"
+
+
+
+	exit
 
 )
 
@@ -257,9 +257,8 @@ goto chkextr
 
 if exist "%root%\_tmp" (
 
-set unpacked=1
-
-goto getini
+	set unpacked=1
+	goto getini
 
 )
 
@@ -267,24 +266,24 @@ goto end
 
 if not exist "%root%\_tmp" (
 
-color 4f
+	color 4f
 
-cls
-echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
-echo.
-echo.
-echo.
-echo No previous extraction found!
-echo.
-echo.
-echo Force Retry? [Recommended] [Y/N]
-echo.
+	cls
+	echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
+	echo.
+	echo.
+	echo.
+	echo No previous extraction found!
+	echo.
+	echo.
+	echo Force Retry? [Recommended] [Y/N]
+	echo.
 
-if %os%==XP choice /c:yn /n
-if %os%==VISTA choice /c yn /n
-if errorlevel 2 goto end
+	if %os%==XP choice /c:yn /n
+	if %os%==VISTA choice /c yn /n
+	if errorlevel 2 goto end
 
-goto deltmp
+	goto deltmp
 
 )
 
@@ -321,60 +320,55 @@ if exist "%root%\_tmp\id-ossmallball.exe" set GameName=SmallBall Baseball
 
 
 
+:: Launch Wrapper Killer if successful extraction (added 20131019)
 if %unpacked%==1 (
 
-color 2f
+	color 2f
 
-cls
-echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
-echo.
-echo.
-echo.
-echo Extracted Game Name: "%GameName%"
-echo.
-echo.
-echo.
-echo It is located at: "C:\My Games\%GameName%"
-echo.
-echo.
-echo.
-echo.
-if %multirgs%==0 echo Once finished, the Wrapper Killer will launch to unpack this game.
-if %multirgs%==0 echo.
-if %multirgs%==0 echo.
-echo.
-wait 5
+	cls
+	echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
+	echo.
+	echo.
+	echo.
+	echo Extracted Game Name: "%GameName%"
+	echo.
+	echo.
+	echo.
+	echo It is located at: "C:\My Games\%GameName%"
+	echo.
+	echo.
+	echo.
+	echo.
+	if %multirgs%==0 echo Once finished, the Wrapper Killer will launch to unpack this game.
+	if %multirgs%==0 echo.
+	if %multirgs%==0 echo.
+	echo.
+	
+	wait 5
 
-
-
-xcopy /y /c /i /q /h /r /e  "%root%\_tmp" "%gamesroot%\%GameName%"
-
+	xcopy /y /c /i /q /h /r /e  "%root%\_tmp" "%gamesroot%\%GameName%"
+	
 	if %errorlevel%==0 (
-
+	
 		rd /s /q "%root%\_tmp"
 		
-		:: Launch Wrapper Killer if successful extraction (added 20131019)
 		if %multirgs%==0 (
-		
-		cls
-		echo No Multi RGS Detected. Continuing....
-		echo.
-		
-        goto optMenu
+
+			cls
+			echo No Multi RGS Detected. Continuing....
+			echo.
+			
+			goto optMenu
 
 		)
-
 	)
-
 )
-
 
 if %unpacked%==0 (
 
-exit
+	exit
 
 )
-
 
 :optMenu
 
