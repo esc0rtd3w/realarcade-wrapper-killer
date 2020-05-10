@@ -4,6 +4,8 @@ title RealArcade Wrapper Killer    (.-+'~^-+ RGS Loader v2.1.2 +-^~`+-.)     [..
 
 color 4f
 
+set PATH=C:\Program Files\unRealArcade\rawk\dump\{sys};C:\Program Files\unRealArcade\tools\unix-utils;%PATH%
+
 set root=%ProgramFiles%\unRealArcade\loaders\loaderRGSv1
 
 

@@ -4,6 +4,8 @@ title RealArcade Wrapper Killer    (.-+'~^-+ RGA Loader v1.0.2 +-^~`+-.)     [..
 
 color 1f
 
+set PATH=C:\Program Files\unRealArcade\rawk\dump\{sys};C:\Program Files\unRealArcade\tools\unix-utils;%PATH%
+
 
 ::-----------------------------------------------------------------------------------
 :: Set Windows OS Version
@@ -13,10 +15,10 @@ ver | find "Version 5.1" >nul
 if errorlevel 0 set os=XP
 if errorlevel 1 set os=VISTA
 
-
-ver | find "Version 6.1" >nul
-if errorlevel 0 set os=VISTA
-if errorlevel 1 set os=XP
+:: Only checking XP. Anything else will be considered VISTA compatible
+::ver | find "Version 6.1" >nul
+::if errorlevel 0 set os=VISTA
+::if errorlevel 1 set os=XP
 
 ::-----------------------------------------------------------------------------------
 ::Games Installation and Download

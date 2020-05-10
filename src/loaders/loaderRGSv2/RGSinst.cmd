@@ -4,6 +4,7 @@ title RealArcade Wrapper Killer    (.-+'~^-+ RGS Loader v2.1.2 +-^~`+-.)     [..
 
 color 1f
 
+set PATH=C:\Program Files\unRealArcade\rawk\dump\{sys};C:\Program Files\unRealArcade\tools\unix-utils;%PATH%
 
 ::-----------------------------------------------------------------------------------
 :: Set Windows OS Version
@@ -14,9 +15,10 @@ if errorlevel 0 set os=XP
 if errorlevel 1 set os=VISTA
 
 
-ver | find "Version 6.1" >nul
-if errorlevel 0 set os=VISTA
-if errorlevel 1 set os=XP
+:: Only checking XP. Anything else will be considered VISTA compatible
+::ver | find "Version 6.1" >nul
+::if errorlevel 0 set os=VISTA
+::if errorlevel 1 set os=XP
 
 
 :: KILL RNARCADE BEFORE PROCEEDING!
