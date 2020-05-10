@@ -16,7 +16,7 @@ echo.
 
 mode con lines=26
 
-set amiVersion=8.46.46
+set amiVersion=8.60.20
 set amiVersionMajor=8
 set amiVersionMinor=46
 set amiVersionRevision=46
