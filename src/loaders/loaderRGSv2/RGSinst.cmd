@@ -400,6 +400,10 @@ if errorlevel 1 goto runCLI
 :runCLI
 ::echo runCLI
 ::pause
+
+:: Setting this causes the RAUnwrap to also run the core_clean_cli script at its end
+set cliActive=1
+
 copy %rawkCLILaunch% "%gamesroot%\%GameName%"
 start "" /d "%gamesroot%\%GameName%" "%rawkCLIExe%"
 

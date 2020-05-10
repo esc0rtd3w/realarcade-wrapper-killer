@@ -78,6 +78,7 @@ Source: ..\core_dlc.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinst
 Source: ..\core_dupe_check.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_errorhandling.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_cheats.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_clean_cli.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_clean_exe.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_clean_gh.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_clean_reg_hacks.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly

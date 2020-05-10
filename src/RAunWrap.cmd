@@ -741,7 +741,9 @@ call "core_no_game_found.cmd"
 :: Comment Out next line for release version
 :: Only writing if the game is an RGS variant (added 20131128)
 if %forceExit%==0 call "core_ini_output.cmd"
-if %forceExit%==0 exit
+
+:: Exiting here causing issues with CLI? [20200510]
+::if %forceExit%==0 exit
 
 :: Only triggered by a Gamehouse or Zylom game
 if %ghFlag%==1 call "core_gamehouse_main.cmd"
@@ -755,7 +757,8 @@ if %zyFlag%==1 call "core_zylom_main.cmd"
 
 :: Needed for CLI launch Only
 ::call "core_rawk_cleanup_loader.cmd"
-if %forceExit%==1 call "core_rawk_cleanup_root.cmd"
+::if %forceExit%==1 call "core_rawk_cleanup_root.cmd"
+if %cliActive%==1 call "core_clean_cli.cmd"
 
 exit
 
