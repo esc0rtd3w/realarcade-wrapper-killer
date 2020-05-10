@@ -83,6 +83,9 @@ FORCE JUMP HERE added 20200509
 00403D7C | 74 64                    | je rgsinst.403DE2                       | ;SOFTWARE\\RealNetworks\\RealArcade   Registry Check. Fails with blank msgbox if not exist
 
 
+004038D0 | C7 85 B8 F9 FF FF 00 00  | mov dword ptr ss:[ebp-648],0            | ;jumps back here after extraction
+
+
 
 
 
@@ -117,7 +120,6 @@ FORCE JUMP HERE added 20200509
 
 
 
-004038D0 | C7 85 B8 F9 FF FF 00 00  | mov dword ptr ss:[ebp-648],0            | ;jumps back here after extraction
 
 
 
