@@ -250,7 +250,7 @@ Source: ..\sys32\unix-utils.exe; DestDir: "C:\Program Files\unRealArcade\temp"; 
 
 
 ; External System Files (Local)
-;Source: ..\sys32\choice.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
+;Source: ..\sys32\choicexp.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 ;Source: ..\sys32\color.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 ;Source: ..\sys32\cocolor.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 ;Source: ..\sys32\ctext.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
@@ -288,7 +288,7 @@ Source: ..\sys32\unix-utils.exe; DestDir: "C:\Program Files\unRealArcade\temp"; 
 ;Source: ..\sys32\quiet.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 
 ; External System Files (System)
-Source: ..\sys32\choice.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
+Source: ..\sys32\choicexp.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
 Source: ..\sys32\color.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
 Source: ..\sys32\cocolor.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
 Source: ..\sys32\ctext.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
