@@ -1,6 +1,6 @@
 @echo off
 
-title RealArcade Wrapper Killer    (.-+'~^-+ RGS Loader v2.1.2 +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer    (.-+'~^-+ RGS Loader v2.1.3 +-^~`+-.)     [...cRypTiCwaRe 2o16...]
 
 color 1f
 
@@ -47,7 +47,7 @@ set rawkExe=rawk.exe
 set rawkLaunch="C:\Program Files\unRealArcade\rawk.exe"
 
 set rawkCLIPath=C:\Program Files\unRealArcade\rawk\dump\{app}
-set rawkCLIExe=RAUnwrap.bat
+set rawkCLIExe=RAUnwrap.cmd
 set rawkCLILaunch="C:\Program Files\unRealArcade\rawk\dump\{app}\*"
 
 set multirgs=0
