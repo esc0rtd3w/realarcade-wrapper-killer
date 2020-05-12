@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 4a unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [demo4a : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 ::Demo Type 4a has a different text on the 2nd demo window.
 ::OLD = RealOne Arcade Game Demo

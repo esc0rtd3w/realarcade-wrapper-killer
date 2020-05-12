@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RGA Stub Creator +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_rga_stub_creator : loaded]
+	pause>nul
+)
+
 
 color 0e
 

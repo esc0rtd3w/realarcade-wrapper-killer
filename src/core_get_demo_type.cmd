@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Getting Demo Type +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_get_demo_type : loaded]
+	pause>nul
+)
+
 echo -----------------------------------------------------------------------------
 
 sfk find %wrapped%.exe RacNotRunning

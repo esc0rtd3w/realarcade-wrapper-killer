@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Getting Info From Stub +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_rga_stub_info : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 :: Added 20131117
 ::-----------------------------------------------------------------------------------

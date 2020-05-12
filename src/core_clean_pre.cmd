@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Pre-Clean Files +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_clean_pre : loaded]
+	pause>nul
+)
+
 
 :: Sonic The Hedgehog Multi Fix
 if exist "sonic.exe" call "core_sonic_multi_fix.cmd"

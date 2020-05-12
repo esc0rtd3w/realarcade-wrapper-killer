@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ PDF SG Fix +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_pdf_fix : loaded]
+	pause>nul
+)
+
 
 :: Samantha Swift and the Fountains of Fate Strategy Guide
 if exist "samantha swift 4 - se strategy guide.pdf" (

@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Checking Override Flags +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_zylom_override : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 :: Zylom Main Override Menu
 ::-----------------------------------------------------------------------------------

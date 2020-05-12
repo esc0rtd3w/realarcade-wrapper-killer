@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 4 unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [demo4 : loaded]
+	pause>nul
+)
+
 
 ::temp fix added 11-04-2010
 ::call "core_config_ra_player.cmd"

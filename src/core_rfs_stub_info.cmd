@@ -1,4 +1,10 @@
 @echo off
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RFS Stub Info +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
+
+if %testmode%==1 (
+	echo [core_rfs_stub_info : loaded]
+	pause>nul
+)
 
 title GameHouse Stub Installation ID Extractor                   cRypTiC / esc0rtd3w 2016
 

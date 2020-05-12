@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ INI File Version Check +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_check_ini_ver : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 :: Checking INI version numbers and copying from \temp folder to rawk root if
 :: installed version is lower

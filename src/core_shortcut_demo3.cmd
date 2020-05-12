@@ -2,6 +2,11 @@
 
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Shortcut Maker +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_shortcut_demo3 : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 ::Check For Fixes
 ::-----------------------------------------------------------------------------------

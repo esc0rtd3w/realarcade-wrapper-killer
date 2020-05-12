@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Advanced Load Options +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_advanced_load_options : loaded]
+	pause>nul
+)
+
 
 ::-----------------------------------------------------------------------------------
 :: Advanced Load Options

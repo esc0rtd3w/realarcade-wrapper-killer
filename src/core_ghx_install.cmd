@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer          (.-+'~^-+ GH Game Installer +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_ghx_install : loaded]
+	pause>nul
+)
+
 color 0e
 
 

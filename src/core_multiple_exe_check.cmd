@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Multiple EXE Check +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_multiple_exe_check : loaded]
+	pause>nul
+)
+
 
 if exist "primalprey.exe" goto ppfix
 

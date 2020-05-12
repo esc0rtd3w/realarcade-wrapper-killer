@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Patch RA Database +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_patch_ra_db : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 ::THIS FILE IS FOR THE CUSTOM RGS LOADER ONLY!!!!
 ::-----------------------------------------------------------------------------------

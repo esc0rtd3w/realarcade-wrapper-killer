@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Game Already Unwrapped +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_game_unpacked_ok : loaded]
+	pause>nul
+)
+
 color 0a
 set vertext=Not Verified
 call "core_clean_main.cmd"

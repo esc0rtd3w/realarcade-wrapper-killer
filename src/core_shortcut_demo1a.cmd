@@ -2,6 +2,11 @@
 
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Shortcut Maker +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_shortcut_demo1a : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 ::Checking for a 0.exe or a screwed up unwrapped variable
 ::-----------------------------------------------------------------------------------

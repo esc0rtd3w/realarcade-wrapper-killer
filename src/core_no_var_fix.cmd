@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Checking For Empty Variables +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_no_var_fix : loaded]
+	pause>nul
+)
+
 :stat0
 cls
 find "verified=0" status.cmd

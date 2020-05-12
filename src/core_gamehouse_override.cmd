@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Checking Override Flags +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_gamehouse_override : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 :: Gamehouse Main Override Menu
 ::-----------------------------------------------------------------------------------

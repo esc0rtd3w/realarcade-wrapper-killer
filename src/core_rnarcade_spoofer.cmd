@@ -2,6 +2,11 @@
 
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RNArcade Spoofer +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_rnarcade_spoofer : loaded]
+	pause>nul
+)
+
 
 cls
 echo Spoofing RealArcade Player....

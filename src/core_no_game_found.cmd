@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Unknown Unpacking Error +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_no_game_found : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 ::Attempting to kill RNArcade process
 ::-----------------------------------------------------------------------------------

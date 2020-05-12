@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Special Situation Handling +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_handler : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 :: Special situation handling
 ::-----------------------------------------------------------------------------------

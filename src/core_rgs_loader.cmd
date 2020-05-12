@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Custom RGS Loader +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_rgs_loader : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 ::This is the MAIN CUSTOM RGS LOADER silent installer
 ::-----------------------------------------------------------------------------------

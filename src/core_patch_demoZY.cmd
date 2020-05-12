@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Zylom File Patcher +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_patch_demoZY : loaded]
+	pause>nul
+)
+
 color 02
 
 -------------------------------------

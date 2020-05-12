@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Sonic Multi Fix +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_sonic_multi_fix : loaded]
+	pause>nul
+)
+
 
 :: Sonic The Hedgehog Fix
 :sonic1

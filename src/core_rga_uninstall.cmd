@@ -1,4 +1,10 @@
 @echo off
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RGA Uninstall +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
+
+if %testmode%==1 (
+	echo [core_rga_uninstall : loaded]
+	pause>nul
+)
 
 :loop
 

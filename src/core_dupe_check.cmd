@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Dupe Filename Checking +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_dupe_check : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 :: EXE filenames that are shared across multiple games
 ::-----------------------------------------------------------------------------------

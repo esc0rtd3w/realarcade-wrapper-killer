@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Delete Backups +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_delete_backups : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 :: Deleting RAWK Generated Backups
 ::-----------------------------------------------------------------------------------

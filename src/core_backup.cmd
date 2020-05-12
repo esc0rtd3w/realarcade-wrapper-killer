@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Backing Up Original EXE +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_backup : loaded]
+	pause>nul
+)
+
 cls
 echo Creating Backup of ORIGINAL wrapped EXE....
 echo.

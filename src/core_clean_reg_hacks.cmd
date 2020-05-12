@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Reg Block Hack Reset +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_clean_reg_hacks : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 :: Checking for older NON-WORKING v4.5 reg id
 ::-----------------------------------------------------------------------------------

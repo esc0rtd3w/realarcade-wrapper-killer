@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_show_stats : loaded]
+	pause>nul
+)
+
 if %verified%==0 goto ver0
 if %verified%==1 goto ver1
 if %verified%==2 goto ver2

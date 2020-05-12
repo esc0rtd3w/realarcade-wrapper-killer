@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Verifying Local Files +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_check_local_rawk : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 :: This is used for checking rawk.exe for local installer
 ::-----------------------------------------------------------------------------------

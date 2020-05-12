@@ -2,6 +2,11 @@
 
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Manual Mode +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [demoM : loaded]
+	pause>nul
+)
+
 
 color 0D
 

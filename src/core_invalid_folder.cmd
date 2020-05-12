@@ -1,6 +1,11 @@
 @ echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ INVALID FOLDER +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_invalid_folder : loaded]
+	pause>nul
+)
+
 color 0e
 
 :reset

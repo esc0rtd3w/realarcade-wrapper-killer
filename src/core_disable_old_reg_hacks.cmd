@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Disabling Old Reg Hacks +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_disable_old_reg_hacks : loaded]
+	pause>nul
+)
+
 cls
 echo Removing Old Registry Block Entries....
 echo.

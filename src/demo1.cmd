@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 1 unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [demo1 : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 ::Demo 1 Games DO NOT have Demo Windows and DO NOT have a gameart.jpg file
 ::-----------------------------------------------------------------------------------

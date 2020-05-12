@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer          (.-+'~^-+ GH Timer Reset +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_ghx_reset : loaded]
+	pause>nul
+)
+
 color 0e
 
 :initVariables

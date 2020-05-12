@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Setting Default Variables +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_set_def_ini : loaded]
+	pause>nul
+)
+
 set verified=0
 set demotype=0
 set version=0

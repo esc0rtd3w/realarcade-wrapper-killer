@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo Type Override +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_demo_type_override : loaded]
+	pause>nul
+)
+
 
 ::-----------------------------------------------------------------------------------
 :: Forcing the CMD window to focus on top!!

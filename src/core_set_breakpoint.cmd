@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Breakpoint on Execution +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_set_breakpoint : loaded]
+	pause>nul
+)
+
 
 :: Use below 4 lines to force a pause and outputted display
 :: Copy and Paste to another module

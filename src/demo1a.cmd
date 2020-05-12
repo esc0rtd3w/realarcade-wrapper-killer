@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 1a unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [demo1a : loaded]
+	pause>nul
+)
+
 :: Demo 1a is OBSOLETE as of 20101109
 goto end
 

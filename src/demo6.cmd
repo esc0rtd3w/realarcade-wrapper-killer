@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 6 unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [demo6 : loaded]
+	pause>nul
+)
+
 color 02
 ::-----------------------------------------------------------------------------------
 ::Bypass Demo Windows Launch Hack

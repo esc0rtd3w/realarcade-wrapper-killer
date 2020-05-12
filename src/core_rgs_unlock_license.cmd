@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RGS Unlock License Check +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_rgs_unlock_license : loaded]
+	pause>nul
+)
+
 color 0e
 
 if %devmode%==1 goto skpchk

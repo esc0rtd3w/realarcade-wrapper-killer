@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Checking For Old Registry Flags +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_reg_check : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 :: This disables ALL known/tested demo windows for ALL demo types. (use with launch.ini hack)
 :: Also allows launching games from any directory without errors.

@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RAWK Cleanup +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_rawk_cleanup_loader : loaded]
+	pause>nul
+)
+
 
 ::-----------------------------------------------------------------------------------------
 :: Cleaning up RAWK after game install and RAWK launch/unpack finished

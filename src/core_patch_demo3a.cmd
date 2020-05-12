@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 3a File Patcher +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_patch_demo3a : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 ::This file is for Demo 3a Files ONLY!!!!
 ::-----------------------------------------------------------------------------------

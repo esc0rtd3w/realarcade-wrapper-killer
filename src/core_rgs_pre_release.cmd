@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RGS Pre-Release and Unlisted Installer +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_rgs_pre_release : loaded]
+	pause>nul
+)
+
 
 ::-----------------------------------------------------------------------------------
 :: Set Paths

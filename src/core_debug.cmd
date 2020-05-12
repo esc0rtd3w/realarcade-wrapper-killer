@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Debug Output +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_debug : loaded]
+	pause>nul
+)
+
 
 color 0e
 ::-----------------------------------------------------------------------------------

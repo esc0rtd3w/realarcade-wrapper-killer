@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ EXE Pre-Cleaner +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_clean_exe : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 :: Deleting ALL known not needed EXE files from game root folder.
 :: Helps in setting the correct unpacked exe name for shortcut.

@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo Type Checker +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_demo_type_check : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 :: Demo Type 1 - r1a games
 ::-----------------------------------------------------------------------------------

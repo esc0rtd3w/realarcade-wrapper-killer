@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Gamehouse File Patcher +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_patch_demoGH : loaded]
+	pause>nul
+)
+
 color 02
 
 -------------------------------------

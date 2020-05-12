@@ -1,4 +1,10 @@
 @echo off
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ OGM Service +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
+
+if %testmode%==1 (
+	echo [core_ogm_service : loaded]
+	pause>nul
+)
 
 set runDirectory=%uraServicesRoot%\ogm
 

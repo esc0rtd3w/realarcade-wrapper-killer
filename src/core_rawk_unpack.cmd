@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RAWK Inno Unpacker +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_rawk_unpack : loaded]
+	pause>nul
+)
+
 
 ::-----------------------------------------------------------------------------------------
 :: Unpacking the RealArcade Wrapper Killer main exe to launch for RGS installs and others

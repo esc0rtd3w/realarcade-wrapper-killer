@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Writing INI Output +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_ini_output : loaded]
+	pause>nul
+)
+
 echo [%wrapped%] > "%wrapped%.ini"
 echo GameName=%GameName% >> "%wrapped%.ini"
 echo verified=%verified% >> "%wrapped%.ini"

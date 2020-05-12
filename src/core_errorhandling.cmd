@@ -2,6 +2,11 @@
 
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Error Handling +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_errorhandling : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 :: Checks for known errors and tries to correct them
 ::-----------------------------------------------------------------------------------

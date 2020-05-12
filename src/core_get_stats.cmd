@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Reading INI File +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_get_stats : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 :: Using INI file instead of verify.cmd file to organize stats
 ::-----------------------------------------------------------------------------------

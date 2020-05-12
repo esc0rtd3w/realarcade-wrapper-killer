@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Gamehouse Main Landing Page +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_gamehouse_main : loaded]
+	pause>nul
+)
+
 
 :: Also referenced in RAUnwrap.cmd
 set gh_core_ver=1.0.0

@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Gamehouse File Cleaner +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_clean_gh : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 :: Checking For and Deleting Junk Files, if exist
 ::-----------------------------------------------------------------------------------

@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Unsupported Game +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_unsupported : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 ::Attempting to kill RNArcade process
 ::-----------------------------------------------------------------------------------

@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Checking Hotkey Flags +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_gamehouse_hotkey : loaded]
+	pause>nul
+)
+
 ::-----------------------------------------------------------------------------------
 :: Disable/Enable Debug Mode (0 disabled, 1 enabled)
 ::-----------------------------------------------------------------------------------

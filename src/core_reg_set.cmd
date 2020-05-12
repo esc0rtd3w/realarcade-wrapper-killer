@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Checking Game Registry Flags +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_reg_set : loaded]
+	pause>nul
+)
+
 
 :: REGBLOCKS DISABLED ON 08-02-2011
 goto end

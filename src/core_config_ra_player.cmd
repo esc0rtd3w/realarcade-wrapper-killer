@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Configuring RA Player +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_config_ra_player : loaded]
+	pause>nul
+)
+
 
 :: Added 20110819
 ::

@@ -2,6 +2,11 @@
 
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Auto-Launch Full Game +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_autolaunch : loaded]
+	pause>nul
+)
+
 
 ::-----------------------------------------------------------------------------------
 :: Checking for additional game patches
