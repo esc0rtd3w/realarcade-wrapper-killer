@@ -47,7 +47,7 @@ echo.
 ::%talk% "This game has multiple games in one. Would you like to make separate shorcuts for these as well?" -2
 
 if %os%==XP goto xpS3
-if %os%==VISTA goto vistaS3
+if not %os%==XP goto vistaS3
 :xpS3
 choice /c:yn /t:n,10 /n
 if errorlevel 2 goto sc

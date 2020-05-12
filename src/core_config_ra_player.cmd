@@ -44,7 +44,7 @@ echo.
 echo.
 
 if %os%==XP choice /c:nura /t:n,10 /n
-if %os%==VISTA choice /c nura /d n /n /t 10
+if not %os%==XP choice /c nura /d n /n /t 10
 if errorlevel 4 goto modRNA
 if errorlevel 3 goto restoreRNA
 if errorlevel 2 goto removeRNA
@@ -69,7 +69,7 @@ echo.
 echo.
 
 if %os%==XP choice /c:cn /t:n,6 /n
-if %os%==VISTA choice /c cn /d n /n /t 6
+if not %os%==XP choice /c cn /d n /n /t 6
 if errorlevel 2 goto doitnow
 ::if errorlevel 1 goto end
 goto end

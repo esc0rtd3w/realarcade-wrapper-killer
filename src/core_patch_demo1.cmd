@@ -22,7 +22,7 @@ echo.
 echo.
 
 if %os%==XP choice /c:nc /t:n,5 /n
-if %os%==VISTA choice /c nc /d n /n /t 5
+if not %os%==XP choice /c nc /d n /n /t 5
 if errorlevel 2 goto custompatch
 if errorlevel 1 goto nocustom
 

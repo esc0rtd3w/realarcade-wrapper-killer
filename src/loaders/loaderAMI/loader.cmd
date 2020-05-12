@@ -223,48 +223,42 @@ set zcat="%unix%\zcat.exe"
 ::-----------------------------------------------------------------------------------
 ::Set Windows OS Version
 ::-----------------------------------------------------------------------------------
-
-:: Check common OS versions
+:: Only checking XP. Anything else will be considered VISTA compatible
 ver | find "5.1"
-if %errorlevel%==0 set os=xp
+if %errorlevel%==0 set os=XP&&goto osCheckDone
 ver | find "6.0"
-if %errorlevel%==0 set os=vista
+if %errorlevel%==0 set os=VISTA&&goto osCheckDone
 ver | find "6.1"
-if %errorlevel%==0 set os=win7
+if %errorlevel%==0 set os=WIN7&&goto osCheckDone
 ver | find "6.2"
-if %errorlevel%==0 set os=win8
+if %errorlevel%==0 set os=WIN8&&goto osCheckDone
 ver | find "6.3"
-if %errorlevel%==0 set os=win81
+if %errorlevel%==0 set os=WIN81&&goto osCheckDone
 ver | find "6.4"
-if %errorlevel%==0 set os=win10
-
-:: This is the new versioning for Windows 10 (Started sometime in 2015/2016)
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
 ver | find "10."
-if %errorlevel%==0 set os=win10
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
 ver | find "10.0"
-if %errorlevel%==0 set os=win10
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
 ver | find "10.1"
-if %errorlevel%==0 set os=win10
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
 ver | find "10.2"
-if %errorlevel%==0 set os=win10
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
 ver | find "10.3"
-if %errorlevel%==0 set os=win10
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
 ver | find "10.4"
-if %errorlevel%==0 set os=win10
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
 ver | find "10.5"
-if %errorlevel%==0 set os=win10
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
 ver | find "10.6"
-if %errorlevel%==0 set os=win10
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
 ver | find "10.7"
-if %errorlevel%==0 set os=win10
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
 ver | find "10.8"
-if %errorlevel%==0 set os=win10
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
 ver | find "10.9"
-if %errorlevel%==0 set os=win10
-
-ver | find "Version 5.1" >nul
-if errorlevel 0 set os=XP
-if errorlevel 1 set os=VISTA
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+:osCheckDone
 
 
 ::-----------------------------------------------------------------------------------
@@ -828,7 +822,7 @@ echo.
 ::echo.
 ::echo.
 ::if %os%==XP choice /c:nr /n /t:5 /d:n
-::if %os%==VISTA choice /c nr /n /t 5 /d n
+::if not %os%==XP choice /c nr /n /t 5 /d n
 ::if errorlevel 2 goto recovery
 ::if errorlevel 1 set nothing=0
 
@@ -1450,7 +1444,7 @@ echo.
 echo.
 
 if %os%==XP choice /c:12345x /n
-if %os%==VISTA choice /c 12345x /n
+if not %os%==XP choice /c 12345x /n
 if errorlevel 6 goto end
 if errorlevel 5 goto liteBuild
 if errorlevel 4 goto liteDlAmi

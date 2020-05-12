@@ -11,14 +11,42 @@ set forceExit=0
 ::-----------------------------------------------------------------------------------
 :: Set Windows OS Version
 ::-----------------------------------------------------------------------------------
-set os=XP
-ver | find "5.1"
-if errorlevel 1 set os=VISTA
-
 :: Only checking XP. Anything else will be considered VISTA compatible
-::ver | find "Version 6.1" >nul
-::if errorlevel 0 set os=VISTA
-::if errorlevel 1 set os=XP
+ver | find "5.1"
+if %errorlevel%==0 set os=XP&&goto osCheckDone
+ver | find "6.0"
+if %errorlevel%==0 set os=VISTA&&goto osCheckDone
+ver | find "6.1"
+if %errorlevel%==0 set os=WIN7&&goto osCheckDone
+ver | find "6.2"
+if %errorlevel%==0 set os=WIN8&&goto osCheckDone
+ver | find "6.3"
+if %errorlevel%==0 set os=WIN81&&goto osCheckDone
+ver | find "6.4"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10."
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.0"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.1"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.2"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.3"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.4"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.5"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.6"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.7"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.8"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.9"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+:osCheckDone
 
 ::-----------------------------------------------------------------------------------
 ::Games Installation and Download
@@ -140,7 +168,7 @@ echo Force Retry? [Recommended] [Y/N]
 echo.
 
 if %os%==XP choice /c:yn /n
-if %os%==VISTA choice /c yn /n
+if not %os%==XP choice /c yn /n
 if errorlevel 2 goto end
 
 goto skiptmp
@@ -196,7 +224,7 @@ echo Force Retry? [Recommended] [Y/N]
 echo.
 
 if %os%==XP choice /c:yn /n
-if %os%==VISTA choice /c yn /n
+if not %os%==XP choice /c yn /n
 if errorlevel 2 exit
 
 
@@ -241,7 +269,7 @@ echo Force Retry? [Recommended] [Y/N]
 echo.
 
 if %os%==XP choice /c:yn /n
-if %os%==VISTA choice /c yn /n
+if not %os%==XP choice /c yn /n
 if errorlevel 2 goto end
 
 goto deltmp
@@ -352,7 +380,7 @@ echo.
 echo.
 
 if %os%==XP choice /c:x /t:x,5 /n
-if %os%==VISTA choice /c x /d x /n /t 5
+if not %os%==XP choice /c x /d x /n /t 5
 if errorlevel 1 goto end
 
 

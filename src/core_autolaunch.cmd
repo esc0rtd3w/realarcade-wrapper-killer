@@ -29,7 +29,7 @@ echo.
 echo.
 echo.
 if %os%==XP choice /c:yn /t:n,5 /n
-if %os%==VISTA choice /c yn /d n /n /t 5
+if not %os%==XP choice /c yn /d n /n /t 5
 if errorlevel 2 goto goauto
 goto dokill
 
@@ -50,7 +50,7 @@ echo.
 echo.
 
 if %os%==XP choice /c:ny /t:n,5 /n
-if %os%==VISTA choice /c ny /d n /n /t 5
+if not %os%==XP choice /c ny /d n /n /t 5
 if errorlevel 2 goto loadon
 if errorlevel 1 goto loadoff
 

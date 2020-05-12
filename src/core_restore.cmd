@@ -11,7 +11,7 @@ echo.
 echo.
 
 if %os%==XP choice /c:cr /t:r,3 /n
-if %os%==VISTA choice /c cr /d r /n /t 3
+if not %os%==XP choice /c cr /d r /n /t 3
 if errorlevel 2 goto restore
 if errorlevel 1 goto end
 

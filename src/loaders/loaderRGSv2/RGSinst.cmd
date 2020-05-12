@@ -9,20 +9,49 @@ set PATH=C:\Program Files\unRealArcade\rawk\dump\{sys};C:\Program Files\unRealAr
 ::-----------------------------------------------------------------------------------
 :: Set Windows OS Version
 ::-----------------------------------------------------------------------------------
-set os=XP
-ver | find "5.1"
-if errorlevel 1 set os=VISTA
-
-
 :: Only checking XP. Anything else will be considered VISTA compatible
-::ver | find "Version 6.1" >nul
-::if errorlevel 0 set os=VISTA
-::if errorlevel 1 set os=XP
+ver | find "5.1"
+if %errorlevel%==0 set os=XP&&goto osCheckDone
+ver | find "6.0"
+if %errorlevel%==0 set os=VISTA&&goto osCheckDone
+ver | find "6.1"
+if %errorlevel%==0 set os=WIN7&&goto osCheckDone
+ver | find "6.2"
+if %errorlevel%==0 set os=WIN8&&goto osCheckDone
+ver | find "6.3"
+if %errorlevel%==0 set os=WIN81&&goto osCheckDone
+ver | find "6.4"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10."
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.0"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.1"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.2"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.3"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.4"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.5"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.6"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.7"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.8"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.9"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+:osCheckDone
 
 
+::-----------------------------------------------------------------------------------
 :: KILL RNARCADE BEFORE PROCEEDING!
 :: added 20131102
 taskkill /f /t /im "RNArcade.exe"
+::-----------------------------------------------------------------------------------
 
 
 ::-----------------------------------------------------------------------------------
@@ -129,7 +158,7 @@ if not exist "%root%\_tmp.rgs" (
 	echo.
 
 	if %os%==XP choice /c:yn /n
-	if %os%==VISTA choice /c yn /n
+	if not %os%==XP choice /c yn /n
 	if errorlevel 2 goto end
 
 	goto skiptmp
@@ -201,7 +230,7 @@ if not exist "%root%\_tmp\*.exe" (
 	echo.
 
 	if %os%==XP choice /c:yn /n
-	if %os%==VISTA choice /c yn /n
+	if not %os%==XP choice /c yn /n
 	if errorlevel 2 exit
 
 
@@ -280,7 +309,7 @@ if not exist "%root%\_tmp" (
 	echo.
 
 	if %os%==XP choice /c:yn /n
-	if %os%==VISTA choice /c yn /n
+	if not %os%==XP choice /c yn /n
 	if errorlevel 2 goto end
 
 	goto deltmp
@@ -391,7 +420,7 @@ echo.
 echo.
 
 if %os%==XP choice /c:dgx /t:d,5 /n
-if %os%==VISTA choice /c dgx /d d /n /t 5
+if not %os%==XP choice /c dgx /d d /n /t 5
 if errorlevel 3 goto end
 if errorlevel 2 goto runGUI
 if errorlevel 1 goto runCLI

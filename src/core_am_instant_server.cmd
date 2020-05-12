@@ -277,7 +277,7 @@ echo X) Exit
 echo.
 
 if %os%==XP choice /c:1234567x /n
-if %os%==VISTA choice /c 1234567x /n
+if not %os%==XP choice /c 1234567x /n
 if errorlevel 8 goto forceExit
 if errorlevel 7 goto amiMenu2
 if errorlevel 6 goto launch
@@ -325,7 +325,7 @@ echo B) Go Back
 echo.
 
 if %os%==XP choice /c:1234567b /n
-if %os%==VISTA choice /c 123456b /n
+if not %os%==XP choice /c 123456b /n
 if errorlevel 8 goto amiMenu
 if errorlevel 7 goto watchLog
 if errorlevel 6 goto testing
@@ -374,7 +374,7 @@ echo B) Go Back
 echo.
 
 if %os%==XP choice /c:12b /n
-if %os%==VISTA choice /c 12b /n
+if not %os%==XP choice /c 12b /n
 if errorlevel 3 set testMode=0&&goto amiMenu2
 if errorlevel 2 goto cleanAmFull
 if errorlevel 1 goto test1
@@ -751,7 +751,7 @@ echo.
 echo.
 
 if %os%==XP choice /c:rs /n /d:s /t:5
-if %os%==VISTA choice /c rs /n /d s /t 5
+if not %os%==XP choice /c rs /n /d s /t 5
 if errorlevel 2 set doNothing=true
 
 if errorlevel 1 (
@@ -989,7 +989,7 @@ echo B) Go Back
 echo.
 
 if %os%==XP choice /c:1234b /n
-if %os%==VISTA choice /c 1234b /n
+if not %os%==XP choice /c 1234b /n
 if errorlevel 5 goto amiMenu
 ::if errorlevel 4 goto downloadMulti2
 if errorlevel 4 goto buildMenu
@@ -1860,7 +1860,7 @@ echo B) Go Back
 echo.
 
 if %os%==XP choice /c:123456b /n
-if %os%==VISTA choice /c 123456b /n
+if not %os%==XP choice /c 123456b /n
 if errorlevel 7 goto amiMenu2
 if errorlevel 6 goto svcOpen
 if errorlevel 5 goto svcStop
@@ -2009,7 +2009,7 @@ exit
 ::echo.
 
 ::if %os%==XP choice /c:123456789 /n
-::if %os%==VISTA choice /c 123456789 /n
+::if not %os%==XP choice /c 123456789 /n
 ::if errorlevel 9 goto version
 ::if errorlevel 8 goto btt
 ::if errorlevel 7 goto upgradeq

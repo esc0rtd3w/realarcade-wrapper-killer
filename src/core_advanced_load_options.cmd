@@ -52,7 +52,7 @@ if %invalidFolder%==1 echo Press (X) to Exit this menu
 echo.
 
 if %os%==XP choice /c:zdgimcpx /n
-if %os%==VISTA choice /c zdgimcpx /n
+if not %os%==XP choice /c zdgimcpx /n
 if errorlevel 8 goto end
 if errorlevel 7 goto patches
 if errorlevel 6 goto cheats

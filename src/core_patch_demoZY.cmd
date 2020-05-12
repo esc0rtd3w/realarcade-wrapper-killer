@@ -26,7 +26,7 @@ echo.
 pause
 
 if %os%==XP choice /c:ne /t:n,5 /n
-if %os%==VISTA choice /c ne /d n /n /t 5
+if not %os%==XP choice /c ne /d n /n /t 5
 if errorlevel 2 goto extractGHInstall
 if errorlevel 1 goto runTimerHack
 

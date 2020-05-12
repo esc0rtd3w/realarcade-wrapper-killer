@@ -13,7 +13,7 @@ echo.
 echo Would you like to view more information? [Y/N]
 
 if %os%==XP goto xpdlc
-if %os%==VISTA goto vistadlc
+if not %os%==XP goto vistadlc
 :xpdlc
 choice /c:yn /t:n,30 /n
 if errorlevel 2 goto end

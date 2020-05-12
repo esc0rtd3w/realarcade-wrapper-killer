@@ -10,7 +10,7 @@ echo.
 echo.
 
 if %os%==XP choice /c:cb /t:b,3 /n
-if %os%==VISTA choice /c cb /d b /n /t 3
+if not %os%==XP choice /c cb /d b /n /t 3
 if errorlevel 2 goto backup
 if errorlevel 1 goto end
 

@@ -36,7 +36,7 @@ echo Press (D) to Enable Debug Output To Text File
 echo.
 
 if %os%==XP choice /c:nqocsaduw /t:n,5 /n
-if %os%==VISTA choice /c nqocsaduw /d n /n /t 5
+if not %os%==XP choice /c nqocsaduw /d n /n /t 5
 if errorlevel 9 goto uradl
 if errorlevel 8 goto NEWOPTION
 if errorlevel 7 goto dbgon

@@ -136,7 +136,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RGS Pre-Release and Unli
 ::goto bypassc
 
 if %os%==XP goto raxp
-if %os%==VISTA goto ravista
+if not %os%==XP goto ravista
 
 ::-----------------------------------------------------------------------------------
 ::Loading Menu For Windows XP
@@ -416,7 +416,7 @@ cls
 echo Is the game finished installing? [Y/N]
 
 if %os%==XP choice /c:yn /t:n,5 /n
-if %os%==VISTA choice /c yn /d n /n /t 5
+if not %os%==XP choice /c yn /d n /n /t 5
 if errorlevel 2 goto click5
 if errorlevel 1 goto end
 

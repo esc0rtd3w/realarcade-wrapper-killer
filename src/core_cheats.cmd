@@ -14,7 +14,7 @@ echo.
 echo Would you like to view more information? [Y/N]
 
 if %os%==XP choice /c:yn /t:n,30 /n
-if %os%==VISTA choice /c yn /d n /n /t 30
+if not %os%==XP choice /c yn /d n /n /t 30
 if errorlevel 2 goto end
 goto chtstart
 
