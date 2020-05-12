@@ -573,5 +573,7 @@ set sys32RawkPath="C:\Program Files\unRealArcade\rawk\dump\{sys}"
 set unixToolsInstall="C:\Program Files\unRealArcade\temp\unix-utils.exe"
 set unixToolsPath="C:\Program Files\unRealArcade\tools\unix-utils"
 
+if %debuglog%
+
 
 :end

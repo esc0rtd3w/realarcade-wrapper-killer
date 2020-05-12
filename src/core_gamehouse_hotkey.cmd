@@ -5,7 +5,8 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Checking Hotkey Flags +-
 :: Disable/Enable Debug Mode (0 disabled, 1 enabled)
 ::-----------------------------------------------------------------------------------
 
-set debug=0
+:: Default value set in RAUnwrap [20200511]
+::set debug=0
 
 ::-----------------------------------------------------------------------------------
 :: Set "Debug On" Switch Manually with file (useful for quick testing)

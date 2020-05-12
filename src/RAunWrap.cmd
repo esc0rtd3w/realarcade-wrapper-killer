@@ -8,7 +8,11 @@ title RealArcade Wrapper Killer [Getting Version Info...]    (.-+'~^-+ Demo unWr
 
 set rawkver=5.7.1
 
+:: Setting Debug Flag To 1 Will Force Extra Output and Logging using core_debug script
+set debug=0
 
+:: Setting TestMode Flag To 1 Will Print Out Navigation Info and Other Extra Info On CLI Screens
+set testmode=0
 
 ::-----------------------------------------------------------------------------------
 :: This is the MAIN CUSTOM LOADER SECTION silent installer (added 20110106)
