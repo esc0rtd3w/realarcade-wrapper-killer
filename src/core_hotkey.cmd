@@ -12,7 +12,8 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Checking Hotkey Flags +-
 :: Set "Debug On" Switch Manually with file (useful for quick testing)
 ::-----------------------------------------------------------------------------------
 
-if exist "debug.on" set debug=1
+:: Default value set in RAUnwrap [20200511]
+::if exist "debug.on" set debug=1
 
 ::-----------------------------------------------------------------------------------
 :: Disable/Enable Registry Reset (0 disabled, 1 enabled)

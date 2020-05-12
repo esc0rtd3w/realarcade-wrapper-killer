@@ -10,9 +10,11 @@ set rawkver=5.7.1
 
 :: Setting Debug Flag To 1 Will Force Extra Output and Logging using core_debug script
 set debug=0
+if exist "debug.on" set debug=1
 
 :: Setting TestMode Flag To 1 Will Print Out Navigation Info and Other Extra Info On CLI Screens
 set testmode=0
+if exist "testmode.on" set testmode=1
 
 ::-----------------------------------------------------------------------------------
 :: This is the MAIN CUSTOM LOADER SECTION silent installer (added 20110106)
