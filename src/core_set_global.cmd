@@ -1,6 +1,11 @@
 @echo off
 title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Setting Global Variables +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
+if %testmode%==1 (
+	echo [core_set_global : loaded]
+	pause
+)
+
 ::-----------------------------------------------------------------------------------
 :: Sample RNArcade.exe switch (this loads the game by GUID, which happens to be
 :: Hole In One Golf).
@@ -10,6 +15,55 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Setting Global Variables
 :: Cycling through starting at /launch 1 gives some interesting results.
 ::%raexec% /launch 6ADE04C1-B67D-11D5-B743-00D0B74C4519
 ::-----------------------------------------------------------------------------------
+
+::-----------------------------------------------------------------------------------
+::Set Windows OS Version
+::-----------------------------------------------------------------------------------
+
+:: Check Architecture Bits
+set bits=x86
+if not exist "C:\Program Files (x86)" set bits=x86
+if exist "C:\Program Files (x86)" set bits=x64
+if not exist "%windir%\SysWOW64" set bits=x86
+if "%PROCESSOR_ARCHITECTURE%"=="AMD64" set bits=x64
+
+:: Check common OS versions
+:: Only checking XP. Anything else will be considered VISTA compatible
+ver | find "5.1"
+if %errorlevel%==0 set os=XP&&goto osCheckDone
+ver | find "6.0"
+if %errorlevel%==0 set os=VISTA&&goto osCheckDone
+ver | find "6.1"
+if %errorlevel%==0 set os=WIN7&&goto osCheckDone
+ver | find "6.2"
+if %errorlevel%==0 set os=WIN8&&goto osCheckDone
+ver | find "6.3"
+if %errorlevel%==0 set os=WIN81&&goto osCheckDone
+ver | find "6.4"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10."
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.0"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.1"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.2"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.3"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.4"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.5"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.6"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.7"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.8"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+ver | find "10.9"
+if %errorlevel%==0 set os=WIN10&&goto osCheckDone
+:osCheckDone
 
 ::-----------------------------------------------------------------------------------
 ::System Paths
@@ -284,55 +338,6 @@ set savepathad=%adr%
 set savepathpd=%pd%
 
 ::-----------------------------------------------------------------------------------
-::Set Windows OS Version
-::-----------------------------------------------------------------------------------
-
-:: Check Architecture Bits
-set bits=x86
-if not exist "C:\Program Files (x86)" set bits=x86
-if exist "C:\Program Files (x86)" set bits=x64
-if not exist "%windir%\SysWOW64" set bits=x86
-if "%PROCESSOR_ARCHITECTURE%"=="AMD64" set bits=x64
-
-:: Check common OS versions
-:: Only checking XP. Anything else will be considered VISTA compatible
-ver | find "5.1"
-if %errorlevel%==0 set os=XP&&goto osCheckDone
-ver | find "6.0"
-if %errorlevel%==0 set os=VISTA&&goto osCheckDone
-ver | find "6.1"
-if %errorlevel%==0 set os=WIN7&&goto osCheckDone
-ver | find "6.2"
-if %errorlevel%==0 set os=WIN8&&goto osCheckDone
-ver | find "6.3"
-if %errorlevel%==0 set os=WIN81&&goto osCheckDone
-ver | find "6.4"
-if %errorlevel%==0 set os=WIN10&&goto osCheckDone
-ver | find "10."
-if %errorlevel%==0 set os=WIN10&&goto osCheckDone
-ver | find "10.0"
-if %errorlevel%==0 set os=WIN10&&goto osCheckDone
-ver | find "10.1"
-if %errorlevel%==0 set os=WIN10&&goto osCheckDone
-ver | find "10.2"
-if %errorlevel%==0 set os=WIN10&&goto osCheckDone
-ver | find "10.3"
-if %errorlevel%==0 set os=WIN10&&goto osCheckDone
-ver | find "10.4"
-if %errorlevel%==0 set os=WIN10&&goto osCheckDone
-ver | find "10.5"
-if %errorlevel%==0 set os=WIN10&&goto osCheckDone
-ver | find "10.6"
-if %errorlevel%==0 set os=WIN10&&goto osCheckDone
-ver | find "10.7"
-if %errorlevel%==0 set os=WIN10&&goto osCheckDone
-ver | find "10.8"
-if %errorlevel%==0 set os=WIN10&&goto osCheckDone
-ver | find "10.9"
-if %errorlevel%==0 set os=WIN10&&goto osCheckDone
-:osCheckDone
-
-::-----------------------------------------------------------------------------------
 ::Setting Misc Flags
 ::-----------------------------------------------------------------------------------
 
@@ -573,7 +578,10 @@ set sys32RawkPath="C:\Program Files\unRealArcade\rawk\dump\{sys}"
 set unixToolsInstall="C:\Program Files\unRealArcade\temp\unix-utils.exe"
 set unixToolsPath="C:\Program Files\unRealArcade\tools\unix-utils"
 
-if %debuglog%
-
 
 :end
+
+if %testmode%==1 (
+	echo [core_set_global : finished]
+	pause
+)
