@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Custom RFS Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Custom RFS Loader +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 ::-----------------------------------------------------------------------------------
 ::This is the MAIN CUSTOM RFS LOADER silent installer

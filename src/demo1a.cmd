@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 1a unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 1a unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 :: Demo 1a is OBSOLETE as of 20101109
 goto end

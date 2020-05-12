@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Unsupported Game +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Unsupported Game +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 ::-----------------------------------------------------------------------------------
 ::Attempting to kill RNArcade process

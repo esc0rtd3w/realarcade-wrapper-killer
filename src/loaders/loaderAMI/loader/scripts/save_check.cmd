@@ -1,5 +1,5 @@
 @echo off
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 
 :reset

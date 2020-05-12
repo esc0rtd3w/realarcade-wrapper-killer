@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RFS/RGA Stub Builder +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RFS/RGA Stub Builder +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 set chunk1=stub-chunk1.bin
 set chunk2=stub-chunk2-installation-id.bin

@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Patch RA Database +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Patch RA Database +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 ::-----------------------------------------------------------------------------------
 ::THIS FILE IS FOR THE CUSTOM RGS LOADER ONLY!!!!

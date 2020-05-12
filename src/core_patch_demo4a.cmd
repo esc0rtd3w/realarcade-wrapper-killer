@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 4a File Patcher +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 4a File Patcher +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 ::-----------------------------------------------------------------------------------
 ::This file is for Demo 4a Files ONLY!!!!

@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Mode +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Mode +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 
 cls
@@ -65,7 +65,7 @@ set rdb_core_installed=%rdb_core%
 if %rdb_core_available%==0 goto rawkdb4
 
 :rawkdb3
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info rawkdb.ini +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info rawkdb.ini +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 cls
 echo File: rawkdb.ini
 echo.
@@ -88,7 +88,7 @@ pause>nul
 goto dlc1
 
 :rawkdb4
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info rawkdb.ini +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info rawkdb.ini +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 cls
 echo File: rawkdb.ini
 echo.
@@ -128,7 +128,7 @@ set d_core_installed=%d_core%
 if %d_core_available%==0 goto dlc4
 
 :dlc3
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info dlc.ini +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info dlc.ini +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 cls
 echo File: dlc.ini
 echo.
@@ -151,7 +151,7 @@ pause>nul
 goto patch1
 
 :dlc4
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info dlc.ini +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info dlc.ini +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 cls
 echo File: dlc.ini
 echo.
@@ -191,7 +191,7 @@ set p_core_installed=%p_core%
 if %p_core_available%==0 goto patch4
 
 :patch3
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info patch.ini +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info patch.ini +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 cls
 echo File: patch.ini
 echo.
@@ -214,7 +214,7 @@ pause>nul
 goto rna1
 
 :patch4
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info patch.ini +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info patch.ini +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 cls
 echo File: patch.ini
 echo.
@@ -254,7 +254,7 @@ set rna_core_installed=%rna_core%
 if %rna_core_available%==0 goto rna4
 
 :rna3
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info rnarcade.ini +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info rnarcade.ini +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 cls
 echo File: rnarcade.ini
 echo.
@@ -277,7 +277,7 @@ pause>nul
 goto servers1
 
 :rna4
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info rnarcade.ini +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info rnarcade.ini +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 cls
 echo File: rnarcade.ini
 echo.
@@ -317,7 +317,7 @@ set s_core_installed=%s_core%
 if %s_core_available%==0 goto servers4
 
 :servers3
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info servers.ini +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info servers.ini +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 cls
 echo File: servers.ini
 echo.
@@ -340,7 +340,7 @@ pause>nul
 goto finished
 
 :servers4
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info servers.ini +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info servers.ini +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 cls
 echo File: servers.ini
 echo.
@@ -381,7 +381,7 @@ set stub_core_installed=%stub_core%
 if %stub_core_available%==0 goto stub4
 
 :stub3
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info servers.ini +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info servers.ini +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 cls
 echo File: stub.ini
 echo.
@@ -404,7 +404,7 @@ pause>nul
 goto finished
 
 :stub4
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info servers.ini +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info servers.ini +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 cls
 echo File: stub.ini
 echo.

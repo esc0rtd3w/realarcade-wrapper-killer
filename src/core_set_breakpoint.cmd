@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Breakpoint on Execution +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Breakpoint on Execution +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 
 :: Use below 4 lines to force a pause and outputted display

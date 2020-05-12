@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RGS Pre-Release and Unlisted Installer +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RGS Pre-Release and Unlisted Installer +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 
 ::-----------------------------------------------------------------------------------
@@ -130,7 +130,7 @@ goto phase1
 
 
 :phase1
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RGS Pre-Release and Unlisted Installer +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ RGS Pre-Release and Unlisted Installer +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 :: TEMP BYPASS CUSTOM LOADER
 ::goto bypassc

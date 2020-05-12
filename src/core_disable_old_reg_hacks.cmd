@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Disabling Old Reg Hacks +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Disabling Old Reg Hacks +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 cls
 echo Removing Old Registry Block Entries....

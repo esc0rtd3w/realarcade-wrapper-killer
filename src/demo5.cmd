@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 5 unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 5 unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 color 03
 
@@ -35,9 +35,9 @@ goto start
 :start
 %waitfor% 2000
 
-%show% "[...cRypTiCwaRe 2o16...]"
+%show% "[...cRypTiCwaRe 2o2o...]"
 %waitfor% 1000
-%show% "[...cRypTiCwaRe 2o16...]"
+%show% "[...cRypTiCwaRe 2o2o...]"
 
 ::-----------------------------------------------------------------------------------
 ::Splash

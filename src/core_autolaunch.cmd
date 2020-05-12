@@ -1,6 +1,6 @@
 @echo off
 
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Auto-Launch Full Game +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Auto-Launch Full Game +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 
 ::-----------------------------------------------------------------------------------

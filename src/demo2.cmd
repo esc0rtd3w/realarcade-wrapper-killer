@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 2 unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo 2 unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 
 color 03

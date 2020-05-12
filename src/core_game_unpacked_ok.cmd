@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Game Already Unwrapped +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Game Already Unwrapped +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 color 0a
 set vertext=Not Verified

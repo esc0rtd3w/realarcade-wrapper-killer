@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Configuring RA Player +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Configuring RA Player +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 
 :: Added 20110819

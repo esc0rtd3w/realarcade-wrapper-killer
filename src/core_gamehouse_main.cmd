@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Gamehouse Main Landing Page +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Gamehouse Main Landing Page +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 
 :: Also referenced in RAUnwrap.cmd

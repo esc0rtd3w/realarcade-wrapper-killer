@@ -1,6 +1,6 @@
 @echo off
 
-title RealArcade Wrapper Killer    (.-+'~^-+ DMG Loader v1.0.1 +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer    (.-+'~^-+ DMG Loader v1.0.1 +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 color 1f
 

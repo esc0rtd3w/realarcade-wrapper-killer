@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 if %verified%==0 goto ver0
 if %verified%==1 goto ver1
@@ -14,7 +14,7 @@ if %verified%==9 call "demoM.cmd"
 
 
 :ver0
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 color 0e
 set vertext=Not Verified
@@ -45,7 +45,7 @@ echo.
 goto end
 
 :ver1
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 color 0a
 cls
@@ -75,7 +75,7 @@ echo %xp32%
 goto end
 
 :ver2
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 color 0a
 cls
@@ -105,7 +105,7 @@ echo %vista32%
 goto end
 
 :ver3
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 color 0a
 cls
@@ -135,7 +135,7 @@ echo %vista64%
 goto end
 
 :ver4
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 color 0a
 cls
@@ -167,7 +167,7 @@ echo %vista64%
 goto end
 
 :ver5
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 color 0a
 cls
@@ -199,7 +199,7 @@ echo %vista64%
 goto end
 
 :ver6
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 color 0a
 cls
@@ -231,7 +231,7 @@ echo %vista32%
 goto end
 
 :ver7
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Demo unWrapper +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 color 0a
 cls

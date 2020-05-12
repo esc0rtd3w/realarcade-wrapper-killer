@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Sonic Multi Fix +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Sonic Multi Fix +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 
 :: Sonic The Hedgehog Fix

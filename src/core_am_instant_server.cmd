@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 
 :reset
@@ -240,7 +240,7 @@ set returnTo=amiMenu
 
 :: New Menu with working options only (20160515)
 cls
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 %laqua%
 echo Content ID: %cid%
 echo Name: %gameNameDashes%
@@ -296,7 +296,7 @@ attrib -h -s -r "%root%\data"
 set returnTo=amiMenu2
 
 cls
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 %laqua%
 echo Content ID: %cid%
 echo Name: %gameNameDashes%
@@ -347,7 +347,7 @@ set returnto=amiMenu2
 set testMode=1
 
 cls
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 %laqua%
 echo Content ID: %cid%
 echo Name: %gameNameDashes%
@@ -941,7 +941,7 @@ goto %returnTo%
 set returnTo=menuGameSelect
 
 cls
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 %laqua%
 echo Content ID: %cid%
 echo Name: %gameNameDashes%
@@ -1823,7 +1823,7 @@ goto %returnTo%
 :svcOptions
 
 cls
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ AM Instant Server +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 %laqua%
 echo Content ID: %cid%
 echo Name: %gameNameDashes%

@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Full Game Patcher +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Full Game Patcher +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 goto end
 

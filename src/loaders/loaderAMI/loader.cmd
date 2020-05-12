@@ -1,10 +1,10 @@
 @echo off
-title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 
 :reset
 
-set windowTitle=title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+set windowTitle=title (.-+'~^-+ AMI Game Loader +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 color 0e
 

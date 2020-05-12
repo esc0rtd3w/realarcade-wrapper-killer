@@ -1,5 +1,5 @@
 @echo off
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Zylom File Patcher +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Zylom File Patcher +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 color 02
 

@@ -1,6 +1,6 @@
 @echo off
 
-title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Shortcut Maker +-^~`+-.)     [...cRypTiCwaRe 2o16...]
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Shortcut Maker +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
 
 ::-----------------------------------------------------------------------------------
 ::Checking for a 0.exe or a screwed up unwrapped variable
@@ -144,7 +144,7 @@ if exist "*.hold" ren "*.hold" "*.exe"
 :: Force CMD Window to be on top
 ::-----------------------------------------------------------------------------------
 
-%show% "[...cRypTiCwaRe 2o16...]"
+%show% "[...cRypTiCwaRe 2o2o...]"
 
 ::-----------------------------------------------------------------------------------
 :: Create shortcuts based on variables
