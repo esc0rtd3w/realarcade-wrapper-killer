@@ -51,3 +51,7 @@ goto start
 
 :end
 
+if %testmode%==1 (
+	echo [core_ghx_install : finished]
+	pause>nul
+)

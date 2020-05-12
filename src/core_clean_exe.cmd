@@ -20,3 +20,8 @@ if exist "unins000.*" del "unins000.*"
 ::if exist "fashionassistant - cheats.exe" del "fashionassistant - cheats.exe"
 
 :end
+
+if %testmode%==1 (
+	echo [core_clean_exe : finished]
+	pause>nul
+)

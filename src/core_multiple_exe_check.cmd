@@ -39,5 +39,9 @@ ren "regid.exe" "regid.hold"
 goto end
 
 
-
 :end
+
+if %testmode%==1 (
+	echo [core_multiple_exe_check : finished]
+	pause>nul
+)

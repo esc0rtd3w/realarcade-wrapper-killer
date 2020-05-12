@@ -81,5 +81,7 @@ cls
 
 :end
 
-
-
+if %testmode%==1 (
+	echo [demoZY : finished]
+	pause>nul
+)

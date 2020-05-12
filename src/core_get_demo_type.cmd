@@ -50,4 +50,7 @@ pause>nul
 
 :end
 
-
+if %testmode%==1 (
+	echo [core_get_demo_type : finished]
+	pause>nul
+)

@@ -14,3 +14,8 @@ if exist "GDFUninstall.exe" del "GDFUninstall.exe"
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_clean_gh : finished]
+	pause>nul
+)

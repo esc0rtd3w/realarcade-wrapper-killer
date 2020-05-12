@@ -175,3 +175,7 @@ color 0a
 :: Reset "handle" flag
 ::set handle=0
 
+if %testmode%==1 (
+	echo [core_handler : finished]
+	pause>nul
+)

@@ -148,3 +148,8 @@ del /s /q /f "%gamesroot%\%GameName%\core_rawk_cleanup_loader.cmd"
 del /s /q /f "%gamesroot%\%GameName%\core_rawk_cleanup_root.cmd"
 
 :end
+
+if %testmode%==1 (
+	echo [core_rawk_cleanup_loader : finished]
+	pause>nul
+)

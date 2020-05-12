@@ -54,4 +54,7 @@ call "core_ghx_reset.cmd"
 
 call "core_clean_ini.cmd"
 
-
+if %testmode%==1 (
+	echo [core_patch_demoGH : finished]
+	pause>nul
+)

@@ -207,3 +207,8 @@ cls
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_clean_main : finished]
+	pause>nul
+)

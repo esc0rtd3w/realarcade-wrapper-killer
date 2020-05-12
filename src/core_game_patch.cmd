@@ -153,3 +153,8 @@ if not %splash%==0 del /f /q "%splash%"
 goto end
 
 :end
+
+if %testmode%==1 (
+	echo [core_game_patch : finished]
+	pause>nul
+)

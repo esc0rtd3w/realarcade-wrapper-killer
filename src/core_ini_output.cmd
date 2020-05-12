@@ -37,3 +37,8 @@ echo comments=%comments% >> "%wrapped%.ini"
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_ini_output : finished]
+	pause>nul
+)

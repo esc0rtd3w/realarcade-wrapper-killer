@@ -448,6 +448,12 @@ goto end
 
 :end
 %kill% RNArcade.exe >nul
+
+if %testmode%==1 (
+	echo [core_rgs_pre_release : finished]
+	pause>nul
+)
+
 exit
 
 

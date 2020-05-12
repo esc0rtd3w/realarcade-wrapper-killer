@@ -68,4 +68,10 @@ call "core_shortcut_demo6.cmd"
 
 
 :end
+
+if %testmode%==1 (
+	echo [demo6 : finished]
+	pause>nul
+)
+
 exit

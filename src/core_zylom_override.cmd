@@ -95,4 +95,7 @@ goto end
 :: FORCE DEBUG MODE (USED ONLY FOR DEBUG RELEASE)
 ::set debug=1
 
-
+if %testmode%==1 (
+	echo [core_zylom_override : finished]
+	pause>nul
+)

@@ -48,4 +48,7 @@ echo.
 
 :end
 
-
+if %testmode%==1 (
+	echo [core_check_local_rawk : finished]
+	pause>nul
+)

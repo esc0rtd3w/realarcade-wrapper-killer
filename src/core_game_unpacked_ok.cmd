@@ -30,4 +30,10 @@ explorer %cd%
 goto end
 
 :end
+
+if %testmode%==1 (
+	echo [core_game_unpacked_ok : finished]
+	pause>nul
+)
+
 exit

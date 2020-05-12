@@ -93,4 +93,10 @@ call "core_shortcut_demo5.cmd"
 
 
 :end
+
+if %testmode%==1 (
+	echo [demo5 : finished]
+	pause>nul
+)
+
 exit

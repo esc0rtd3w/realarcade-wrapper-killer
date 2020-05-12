@@ -165,3 +165,8 @@ xcopy /e /q /y "%rawkroot%\temp\zydb.ini" "%rawkroot%"
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_check_ini_ver : finished]
+	pause>nul
+)

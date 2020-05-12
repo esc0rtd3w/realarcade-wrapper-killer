@@ -166,5 +166,11 @@ goto end
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_rgs_game_patcher : finished]
+	pause>nul
+)
+
 exit
 

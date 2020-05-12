@@ -33,3 +33,8 @@ if exist %systemroot%\system32\rawkreg.ok del %systemroot%\system32\rawkreg.ok
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_clean_reg_hacks : finished]
+	pause>nul
+)

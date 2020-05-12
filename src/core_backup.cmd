@@ -49,3 +49,8 @@ goto end
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_backup : finished]
+	pause>nul
+)

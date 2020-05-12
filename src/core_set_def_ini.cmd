@@ -43,3 +43,8 @@ set vista32=Windows Vista/7 (32-bit)
 set vista64=Windows Vista/7 (64-bit)
 
 :end
+
+if %testmode%==1 (
+	echo [core_set_def_ini : finished]
+	pause>nul
+)

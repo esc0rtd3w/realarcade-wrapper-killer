@@ -45,4 +45,10 @@ if %debug%==1 call "core_debug.cmd"
 goto end
 
 :end
+
+if %testmode%==1 (
+	echo [core_unsupported : finished]
+	pause>nul
+)
+
 exit

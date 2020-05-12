@@ -78,4 +78,10 @@ echo.
 goto end
 
 :end
+
+if %testmode%==1 (
+	echo [core_invalid_folder_zylom : finished]
+	pause>nul
+)
+
 exit

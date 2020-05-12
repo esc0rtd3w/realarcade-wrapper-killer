@@ -59,3 +59,8 @@ set clearcache=0
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_hotkey : finished]
+	pause>nul
+)

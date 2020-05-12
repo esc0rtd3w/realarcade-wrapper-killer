@@ -238,3 +238,7 @@ set rip=0
 :: added 20131103
 set rauninstalled=0
 
+if %testmode%==1 (
+	echo [core_config_ra_player : finished]
+	pause>nul
+)

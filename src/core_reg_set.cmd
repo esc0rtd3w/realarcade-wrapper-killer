@@ -38,3 +38,8 @@ goto end
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_reg_set : finished]
+	pause>nul
+)

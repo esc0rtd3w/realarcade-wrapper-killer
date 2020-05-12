@@ -10,3 +10,8 @@ rmdir /s /q cheats
 rmdir /s /q patches
 
 :end
+
+if %testmode%==1 (
+	echo [core_clean_ini : finished]
+	pause>nul
+)

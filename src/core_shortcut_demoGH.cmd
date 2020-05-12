@@ -32,9 +32,7 @@ call "core_clean_ini.cmd"
 ::if %unpackfail%==0 call "core_autolaunch.cmd"
 ::if %unpackfail%==1 call "demoGH.cmd"
 
-
-
-
-
-
-
+if %testmode%==1 (
+	echo [core_shortcut_demoGH : finished]
+	pause>nul
+)

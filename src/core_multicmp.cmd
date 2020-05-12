@@ -157,3 +157,8 @@ goto end
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_multicmp : finished]
+	pause>nul
+)

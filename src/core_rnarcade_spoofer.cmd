@@ -35,4 +35,7 @@ set spoofed=1
 
 :end
 
-
+if %testmode%==1 (
+	echo [core_rnarcade_spoofer : finished]
+	pause>nul
+)

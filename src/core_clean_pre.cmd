@@ -60,3 +60,8 @@ if exist "zydb_core_running_ver.cmd" del "zydb_core_running_ver.cmd"
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_clean_pre : finished]
+	pause>nul
+)

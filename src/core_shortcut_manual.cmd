@@ -97,3 +97,7 @@ call "core_clean_main.cmd"
 
 :end3
 
+if %testmode%==1 (
+	echo [core_shortcut_manual : finished]
+	pause>nul
+)

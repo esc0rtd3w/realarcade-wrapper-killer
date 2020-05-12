@@ -51,3 +51,8 @@ goto end
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_demo_type_override : finished]
+	pause>nul
+)

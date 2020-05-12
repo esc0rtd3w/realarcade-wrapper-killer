@@ -21,19 +21,9 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Error Handling +-^~`+-.)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 :end
 
+if %testmode%==1 (
+	echo [core_errorhandling : finished]
+	pause>nul
+)

@@ -7,7 +7,12 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Zylom File Cleaner +-^~`
 :cleanme
 
 cls
-
+:: such empty :O
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_clean_zy : finished]
+	pause>nul
+)

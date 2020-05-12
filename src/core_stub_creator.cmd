@@ -53,3 +53,7 @@ copy /b /y "%stubPath%\%chunk1%"+"%stubPath%\%chunk2%"+"%stubPath%\%chunk3%"+"%s
 
 :end
 
+if %testmode%==1 (
+	echo [core_stub_creator : finished]
+	pause>nul
+)

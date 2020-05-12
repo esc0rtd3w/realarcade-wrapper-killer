@@ -185,4 +185,10 @@ call "core_shortcut_demo1a.cmd"
 
 
 :end
+
+if %testmode%==1 (
+	echo [demo1a : finished]
+	pause>nul
+)
+
 ::exit

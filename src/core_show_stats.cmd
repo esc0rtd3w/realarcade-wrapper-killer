@@ -266,3 +266,8 @@ goto end
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_show_stats : finished]
+	pause>nul
+)

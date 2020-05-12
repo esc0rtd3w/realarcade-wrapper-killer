@@ -148,3 +148,10 @@ if exist "stub-chunk6.bin" del /f /q "stub-chunk6.bin"
 
 :: Remove yourself
 if exist "core_clean_cli.cmd" del /f /q "core_clean_cli.cmd"
+
+:end
+
+if %testmode%==1 (
+	echo [core_clean_cli : finished]
+	pause>nul
+)

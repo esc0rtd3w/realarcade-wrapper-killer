@@ -306,4 +306,10 @@ call "core_shortcut_demo3.cmd"
 
 
 :end
+
+if %testmode%==1 (
+	echo [demo3 : finished]
+	pause>nul
+)
+
 ::exit

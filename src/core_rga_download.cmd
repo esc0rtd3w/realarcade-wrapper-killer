@@ -126,7 +126,7 @@ goto end
 
 :end
 
-
-
-
-
+if %testmode%==1 (
+	echo [core_rga_download : finished]
+	pause>nul
+)

@@ -67,8 +67,7 @@ call "core_autolaunch.cmd"
 ::if set %unpackfail%==0 call "core_autolaunch.cmd"
 ::if set %unpackfail%==1 goto end3
 
-
-
-
-
-
+if %testmode%==1 (
+	echo [core_shortcut_demo6 : finished]
+	pause>nul
+)

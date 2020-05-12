@@ -31,3 +31,8 @@ nircmd dlg "RGSinst.exe" "" click yes
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_rgs_loader : finished]
+	pause>nul
+)

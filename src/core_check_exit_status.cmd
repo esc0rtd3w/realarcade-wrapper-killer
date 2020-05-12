@@ -17,3 +17,8 @@ goto end
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_check_exit_status : finished]
+	pause>nul
+)

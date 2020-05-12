@@ -42,3 +42,8 @@ inifile "%rawkroot%\rawkdb.ini" [%wrapped%] unwrapped >> status.cmd
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_get_stats : finished]
+	pause>nul
+)

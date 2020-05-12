@@ -137,3 +137,8 @@ pause>nul
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_set_breakpoint : finished]
+	pause>nul
+)

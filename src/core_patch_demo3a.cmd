@@ -92,3 +92,8 @@ copy "%wrapped%.exe" "%wrapped%_extract_only.exe.bak" >nul
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_patch_demo3a : finished]
+	pause>nul
+)

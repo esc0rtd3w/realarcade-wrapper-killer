@@ -98,4 +98,10 @@ goto end
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_no_game_found : finished]
+	pause>nul
+)
+
 exit

@@ -64,4 +64,7 @@ goto end
 
 :end
 
-
+if %testmode%==1 (
+	echo [core_sonic_multi_fix : finished]
+	pause>nul
+)

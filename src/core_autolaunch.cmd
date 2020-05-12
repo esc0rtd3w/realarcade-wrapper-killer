@@ -95,3 +95,8 @@ attrib -h *.*
 
 cls
 call "core_clean_main.cmd"
+
+if %testmode%==1 (
+	echo [core_autolaunch : finished]
+	pause>nul
+)

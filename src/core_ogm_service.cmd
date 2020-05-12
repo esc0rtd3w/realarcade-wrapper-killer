@@ -30,3 +30,10 @@ pause>nul
 
 net stop %serviceName%
 sc delete "%serviceName%"
+
+:end
+
+if %testmode%==1 (
+	echo [core_ogm_service : finished]
+	pause>nul
+)

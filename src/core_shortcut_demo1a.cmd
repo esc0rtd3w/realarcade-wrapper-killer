@@ -373,6 +373,7 @@ if %unpackfail%==1 call "demoM.cmd"
 
 :end3
 
-
-
-
+if %testmode%==1 (
+	echo [core_shortcut_demo1a : finished]
+	pause>nul
+)

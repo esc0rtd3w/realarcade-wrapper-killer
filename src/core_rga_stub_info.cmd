@@ -83,3 +83,7 @@ goto end
 
 del "%temp%\rawk_stub_tmp.cmd"
 
+if %testmode%==1 (
+	echo [core_rga_stub_info : finished]
+	pause>nul
+)

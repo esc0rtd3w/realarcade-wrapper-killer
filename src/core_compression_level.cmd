@@ -6,3 +6,10 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Calculating EXE Size +-^
 ::-----------------------------------------------------------------------------------
 
 :: NOT USED ::
+
+:end
+
+if %testmode%==1 (
+	echo [core_compression_level : finished]
+	pause>nul
+)

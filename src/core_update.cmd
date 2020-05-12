@@ -433,3 +433,8 @@ echo Press any key to continue the unwrapping process....
 pause>nul
 
 :end
+
+if %testmode%==1 (
+	echo [core_update : finished]
+	pause>nul
+)

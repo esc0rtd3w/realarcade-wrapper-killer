@@ -503,3 +503,8 @@ echo.
 copy "delete.exe" "%wrapped%_extract_only.exe.bak" >nul
 
 :end
+
+if %testmode%==1 (
+	echo [core_patch_demo1 : finished]
+	pause>nul
+)

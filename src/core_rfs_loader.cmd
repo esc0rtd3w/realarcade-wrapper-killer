@@ -21,3 +21,8 @@ pause>nul
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_rfs_loader : finished]
+	pause>nul
+)

@@ -323,3 +323,7 @@ goto loopMain
 
 :end
 
+if %testmode%==1 (
+	echo [core_ghx_reset : finished]
+	pause>nul
+)

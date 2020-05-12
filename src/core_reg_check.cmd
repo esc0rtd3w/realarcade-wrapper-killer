@@ -36,3 +36,8 @@ if exist %systemroot%\system32\rawk4.id del %systemroot%\system32\rawk4.id
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_reg_check : finished]
+	pause>nul
+)

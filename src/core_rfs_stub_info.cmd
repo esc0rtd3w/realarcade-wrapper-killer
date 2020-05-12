@@ -125,3 +125,8 @@ goto %return%
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_rfs_stub_info : finished]
+	pause>nul
+)

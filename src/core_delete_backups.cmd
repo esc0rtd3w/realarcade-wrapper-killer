@@ -31,3 +31,8 @@ del *.bak
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_delete_backups : finished]
+	pause>nul
+)

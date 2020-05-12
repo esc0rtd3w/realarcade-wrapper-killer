@@ -29,3 +29,8 @@ echo.
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_rawk_unpack : finished]
+	pause>nul
+)

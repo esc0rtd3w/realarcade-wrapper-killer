@@ -41,3 +41,7 @@ goto end
 
 :end
 
+if %testmode%==1 (
+	echo [core_cheats : finished]
+	pause>nul
+)

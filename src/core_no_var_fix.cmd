@@ -77,3 +77,8 @@ call status.cmd
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_no_var_fix : finished]
+	pause>nul
+)

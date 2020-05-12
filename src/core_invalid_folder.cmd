@@ -159,4 +159,10 @@ call "core_rawk_cleanup_root.cmd"
 ::del /f /q "%temp%\rawkEnv.cmd"
 ::del /f /q "%temp%\rawkEnvTemp.cmd"
 
+if %testmode%==1 (
+	echo [core_invalid_folder : finished]
+	pause>nul
+)
+
+
 exit

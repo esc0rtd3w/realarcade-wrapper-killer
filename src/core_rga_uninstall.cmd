@@ -22,3 +22,7 @@ goto loop
 
 :end
 
+if %testmode%==1 (
+	echo [core_rga_uninstall : finished]
+	pause>nul
+)

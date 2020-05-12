@@ -20,3 +20,8 @@ goto end
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_check_dependencies : finished]
+	pause>nul
+)

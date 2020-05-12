@@ -10,4 +10,7 @@ if %zyFlag%==1 call "core_zylom_main.cmd"
 
 :end
 
-
+if %testmode%==1 (
+	echo [core_check_non_rgs : finished]
+	pause>nul
+)

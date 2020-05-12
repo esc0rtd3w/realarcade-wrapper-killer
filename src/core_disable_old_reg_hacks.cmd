@@ -33,3 +33,8 @@ regedit /s "rawk_prefs.reg">nul
 ::echo ALL BLOCK-BASED reg hacks removed! - RAWK v4.7 BETA 2 > %systemroot%\system32\rawkreg.ok
 
 :end
+
+if %testmode%==1 (
+	echo [core_disable_old_reg_hacks : finished]
+	pause>nul
+)

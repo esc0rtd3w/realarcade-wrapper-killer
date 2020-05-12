@@ -105,3 +105,8 @@ if %ampfix%==2 set GameName=Saints &^ Sinners Bingo
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_file_rename : finished]
+	pause>nul
+)

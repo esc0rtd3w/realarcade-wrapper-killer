@@ -3,7 +3,7 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Setting Global Variables
 
 if %testmode%==1 (
 	echo [core_set_global : loaded]
-	pause
+	pause>nul
 )
 
 ::-----------------------------------------------------------------------------------
@@ -583,5 +583,5 @@ set unixToolsPath="C:\Program Files\unRealArcade\tools\unix-utils"
 
 if %testmode%==1 (
 	echo [core_set_global : finished]
-	pause
+	pause>nul
 )

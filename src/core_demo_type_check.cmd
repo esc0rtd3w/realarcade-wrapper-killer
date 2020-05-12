@@ -210,3 +210,8 @@ if exist "GameuxInstallHelper.dll" call demoGH
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_demo_type_check : finished]
+	pause>nul
+)

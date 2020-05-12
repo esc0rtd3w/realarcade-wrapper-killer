@@ -106,3 +106,7 @@ color 0e
 if exist *.rar color 0a
 if not exist *.exe color 08
 
+if %testmode%==1 (
+	echo [core_advanced_load_options : finished]
+	pause>nul
+)

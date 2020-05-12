@@ -300,4 +300,10 @@ echo Comments: %comments% >> "output_%GameName%.txt"
 start %systemroot%\notepad.exe "output_%GameName%.txt"
 
 :end
+
+if %testmode%==1 (
+	echo [core_debug : finished]
+	pause>nul
+)
+
 exit

@@ -35,8 +35,9 @@ call "core_gamehouse_override.cmd"
 goto end
 
 
-
-
-
-
 :end
+
+if %testmode%==1 (
+	echo [core_gamehouse_main : finished]
+	pause>nul
+)

@@ -12,3 +12,8 @@ copy "%rawkroot%\temp\*.ini" "%rawkroot%\"
 set restartcore=1
 
 :end
+
+if %testmode%==1 (
+	echo [core_clear_cache : finished]
+	pause>nul
+)

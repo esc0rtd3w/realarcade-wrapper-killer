@@ -14,6 +14,9 @@ color 0e
 goto end
 
 
-
-
 :end
+
+if %testmode%==1 (
+	echo [core_gh_web_scraper : finished]
+	pause>nul
+)

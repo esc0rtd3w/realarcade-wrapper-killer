@@ -20,9 +20,9 @@ gpatch "%uraroot%\loaderRGSv1\db\GAMEFIND.DBF" /nologo /i"322" /s"%guid%""
 ::gpatch "%uraroot%\loaderRGSv1\db\MYGAMES.DBF" /nologo /i"" /s"%guid%""
 ::gpatch "%uraroot%\loaderRGSv1\db\MYGAMES.FPT" /nologo /i"" /s"%guid%""
 
+:end
 
-
-
-
-
-
+if %testmode%==1 (
+	echo [core_patch_ra_db : finished]
+	pause>nul
+)

@@ -252,5 +252,7 @@ goto end
 
 :end
 
-
-
+if %testmode%==1 (
+	echo [core_rgs_unlock_license : finished]
+	pause>nul
+)

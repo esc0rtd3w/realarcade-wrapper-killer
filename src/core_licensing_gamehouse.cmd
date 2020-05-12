@@ -4,7 +4,12 @@ title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Licensing :: Gamehouse +
 
 
 cls
-
+:: such empty :O
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_licensing_gamehouse : finished]
+	pause>nul
+)

@@ -153,3 +153,8 @@ del /s /q /f "core_rawk_cleanup_root.cmd"
 
 
 :end
+
+if %testmode%==1 (
+	echo [core_rawk_cleanup_root : finished]
+	pause>nul
+)

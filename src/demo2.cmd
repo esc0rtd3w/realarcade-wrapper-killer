@@ -16,4 +16,10 @@ cls
 call demo1
 
 :end
+
+if %testmode%==1 (
+	echo [demo2 : finished]
+	pause>nul
+)
+
 exit

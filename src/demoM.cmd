@@ -299,4 +299,10 @@ call "core_shortcut_manual.cmd"
 
 
 :end
+
+if %testmode%==1 (
+	echo [demoM : finished]
+	pause>nul
+)
+
 exit
