@@ -7,7 +7,8 @@ if %testmode%==1 (
 )
 
 :: Check for Full RGS (make this better!)
-if exist regid.exe call demoF
+::if exist regid.hold call demoF
+if %check_rgsfull%==1 goto isfull
 
 ::-----------------------------------------------------------------------------------
 :: Demo Type 1 - r1a games
@@ -215,6 +216,14 @@ if exist "wordmojogold.exe" call demo6
 if exist "GameuxInstallHelper.dll" call demoGH
 ::if exist "GDF.dll" call demoGH
 ::if exist "GDFUninstall.exe" call demoGH
+
+goto end
+
+::-----------------------------------------------------------------------------------
+:: Demo Type F - Full RGS Counterparts
+::-----------------------------------------------------------------------------------
+:isfull
+if exist "bookworm.exe" call demoF
 
 
 :end

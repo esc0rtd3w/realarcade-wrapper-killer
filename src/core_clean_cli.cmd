@@ -80,6 +80,7 @@ if exist "core_patch_demo3.cmd" del /f /q "core_patch_demo3.cmd"
 if exist "core_patch_demo3a.cmd" del /f /q "core_patch_demo3a.cmd"
 if exist "core_patch_demo4.cmd" del /f /q "core_patch_demo4.cmd"
 if exist "core_patch_demo4a.cmd" del /f /q "core_patch_demo4a.cmd"
+if exist "core_patch_full.cmd" del /f /q "core_patch_full.cmd"
 if exist "core_patch_demoGH.cmd" del /f /q "core_patch_demoGH.cmd"
 if exist "core_patch_demoZY.cmd" del /f /q "core_patch_demoZY.cmd"
 if exist "core_patch_ra_db.cmd" del /f /q "core_patch_ra_db.cmd"
@@ -111,6 +112,7 @@ if exist "core_shortcut_demo5.cmd" del /f /q "core_shortcut_demo5.cmd"
 if exist "core_shortcut_demo6.cmd" del /f /q "core_shortcut_demo6.cmd"
 if exist "core_shortcut_demoGH.cmd" del /f /q "core_shortcut_demoGH.cmd"
 if exist "core_shortcut_demoZY.cmd" del /f /q "core_shortcut_demoZY.cmd"
+if exist "core_shortcut_full.cmd" del /f /q "core_shortcut_full.cmd"
 if exist "core_shortcut_manual.cmd" del /f /q "core_shortcut_manual.cmd"
 if exist "core_show_stats.cmd" del /f /q "core_show_stats.cmd"
 if exist "core_sonic_multi_fix.cmd" del /f /q "core_sonic_multi_fix.cmd"
@@ -129,6 +131,7 @@ if exist "demo4.cmd" del /f /q "demo4.cmd"
 if exist "demo4a.cmd" del /f /q "demo4a.cmd"
 if exist "demo5.cmd" del /f /q "demo5.cmd"
 if exist "demo6.cmd" del /f /q "demo6.cmd"
+if exist "demoF.cmd" del /f /q "demoF.cmd"
 if exist "demoGH.cmd" del /f /q "demoGH.cmd"
 if exist "demoM.cmd" del /f /q "demoM.cmd"
 if exist "demoZY.cmd" del /f /q "demoZY.cmd"
@@ -149,6 +152,12 @@ if exist "stub-chunk4-filler.bin" del /f /q "stub-chunk4-filler.bin"
 if exist "stub-chunk5-language-country.bin" del /f /q "stub-chunk5-language-country.bin"
 if exist "stub-chunk6.bin" del /f /q "stub-chunk6.bin"
 
+:: Remove main script
+if exist "RAunWrap.cmd" del /f /q "RAunWrap.cmd"
+
+:: Remove yourself
+if exist "core_clean_cli.cmd" del /f /q "core_clean_cli.cmd"
+
 
 :end
 
@@ -156,9 +165,3 @@ if %testmode%==1 (
 	echo [core_clean_cli : finished]
 	pause>nul
 )
-
-:: Remove yourself
-if exist "core_clean_cli.cmd" del /f /q "core_clean_cli.cmd"
-
-:: Remove main script
-if exist "RAunWrap.cmd" del /f /q "RAunWrap.cmd"

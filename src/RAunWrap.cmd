@@ -712,8 +712,6 @@ if %demotype%==g call demoGH
 if %demotype%==G call demoGH
 if %demotype%==f call demoF
 if %demotype%==F call demoF
-if %demotype%==f goto fixmain
-if %demotype%==F goto fixmain
 
 goto lasttwo
 
@@ -721,10 +719,11 @@ goto lasttwo
 :oldstyle
 call "core_demo_type_check.cmd"
 
+
 :lasttwo
 :: If RGS if full version
-::if %check_rgsfull%==1 call demoF
-::if %check_rgsfull%==1 goto fixmain
+if %demotype%==f goto fixmain
+if %demotype%==F goto fixmain
 
 if exist "*_r1a.exe" call demo1
 if exist "delete.exe" call demo1

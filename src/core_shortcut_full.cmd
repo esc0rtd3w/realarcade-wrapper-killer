@@ -21,7 +21,9 @@ if not defined unwrapped (
 :start
 
 :: Full RGS Check Revert Fix
-if exist "regid.hold" ren "regid.hold" "regid.exe"
+::if exist "regid.hold" ren "regid.hold" "regid.exe"
+:: Just remove it. It's useless for end user (added 20200517)
+if exist "regid.hold" del /f /q "regid.hold"
 
 %show% "[...cRypTiCwaRe 2o2o...]"
 cls
