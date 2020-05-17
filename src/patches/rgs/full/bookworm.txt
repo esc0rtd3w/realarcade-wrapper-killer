@@ -1,0 +1,12 @@
+VA Address		Length	Original bytes		Patched bytes
+0040182E		0x1		74 					EB 
+004018D1		0x1		75 					EB 
+00401CF3		0x6		FF 15 94 70 40 00 	90 90 90 90 90 90 
+00401D82		0x6		FF 15 94 70 40 00 	90 90 90 90 90 90 
+
+
+Hex Address		Length	Original bytes		Patched bytes
+0000182E		0x1		74 					EB 
+000018D1		0x1		75 					EB 
+00001CF3		0x6		FF 15 94 70 40 00 	90 90 90 90 90 90 
+00001D82		0x6		FF 15 94 70 40 00 	90 90 90 90 90 90 
