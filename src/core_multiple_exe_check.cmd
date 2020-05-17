@@ -47,9 +47,9 @@ goto end
 :end
 
 :: Full RGS Check Fix
-if exist "regid.exe" (
+if exist "regid.hold" (
 	set check_rgsfull=1
-	ren "regid.exe" "regid.hold"
+	set demotype=f
 )
 
 if %testmode%==1 (

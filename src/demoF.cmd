@@ -18,6 +18,7 @@ set demotype=f
 
 ::if exist ".exe" set wrapped=& set unwrapped=
 if exist "bookworm.exe" set wrapped=bookworm& set unwrapped=bookdlx
+if exist "gutterball3d.exe" set wrapped=gutterball3d& set unwrapped=gut
 
 goto start
 

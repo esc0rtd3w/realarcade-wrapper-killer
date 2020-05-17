@@ -7,7 +7,8 @@ if %testmode%==1 (
 )
 
 :: Check for Full RGS (make this better!)
-::if exist regid.hold call demoF
+if exist regid.exe goto isfull
+if exist regid.hold goto isfull
 if %check_rgsfull%==1 goto isfull
 
 ::-----------------------------------------------------------------------------------
@@ -223,7 +224,26 @@ goto end
 :: Demo Type F - Full RGS Counterparts
 ::-----------------------------------------------------------------------------------
 :isfull
-if exist "bookworm.exe" call demoF
+::if exist "adventureinlay_r1a.exe" call demoF
+::if exist "aironix.exe" call demoF
+::if exist "bookworm.exe" call demoF
+::if exist "collapse.exe" call demoF
+::if exist "feedingfrenzy.exe" call demoF
+
+:: Fiber Twig
+::if exist "connector_r1a.exe" call demoF
+
+::if exist "gutterball 2_r1a.exe" call demoF
+::if exist "gutterball3d.exe" call demoF
+::if exist "relapse.exe" call demoF
+::if exist "shape_r1a.exe" call demoF
+::if exist "solitaire.exe" call demoF
+::if exist "ghsol2.exe" call demoF
+::if exist "ghsol3_r1a.exe" call demoF
+::if exist "zuma.exe" call demoF
+
+:: Catchall for full demo
+call demoF
 
 
 :end

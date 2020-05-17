@@ -202,7 +202,9 @@ echo ---------------------------------------------------------------------------
 echo DO NOT click any buttons or press any keys until the extraction is finished!
 echo ----------------------------------------------------------------------------
 echo.
-echo Executing Patch 1: Please Wait....
+echo Executing Patch 1: %patch1_name%
+echo.
+echo Please Wait....
 echo.
 echo.
 echo.
@@ -216,7 +218,9 @@ echo ---------------------------------------------------------------------------
 echo DO NOT click any buttons or press any keys until the extraction is finished!
 echo ----------------------------------------------------------------------------
 echo.
-echo Executing Patch 2: Please Wait....
+echo Executing Patch 2: %patch2_name%
+echo.
+echo Please Wait....
 echo.
 echo.
 echo.
@@ -230,7 +234,9 @@ echo ---------------------------------------------------------------------------
 echo DO NOT click any buttons or press any keys until the extraction is finished!
 echo ----------------------------------------------------------------------------
 echo.
-echo Executing Patch 3: Please Wait....
+echo Executing Patch 3: %patch3_name%
+echo.
+echo Please Wait....
 echo.
 echo.
 echo.
@@ -244,7 +250,9 @@ echo ---------------------------------------------------------------------------
 echo DO NOT click any buttons or press any keys until the extraction is finished!
 echo ----------------------------------------------------------------------------
 echo.
-echo Executing Patch 4: Please Wait....
+echo Executing Patch 4: %patch4_name%
+echo.
+echo Please Wait....
 echo.
 echo.
 echo.
@@ -258,7 +266,9 @@ echo ---------------------------------------------------------------------------
 echo DO NOT click any buttons or press any keys until the extraction is finished!
 echo ----------------------------------------------------------------------------
 echo.
-echo Executing Patch 5: Please Wait....
+echo Executing Patch 5: %patch5_name%
+echo.
+echo Please Wait....
 echo.
 echo.
 echo.
@@ -272,7 +282,9 @@ echo ---------------------------------------------------------------------------
 echo DO NOT click any buttons or press any keys until the extraction is finished!
 echo ----------------------------------------------------------------------------
 echo.
-echo Executing Patch 6: Please Wait....
+echo Executing Patch 6: %patch6_name%
+echo.
+echo Please Wait....
 echo.
 echo.
 echo.
@@ -282,6 +294,7 @@ if %patch6_index% gtr 0 gpatch "%wrapped%.exe" /nologo /i%patch6_index% /h"%patc
 
 
 :done
+:: Make a backup patched exe
 copy "%wrapped%.exe" "%wrapped%_extract_only.exe.bak" >nul
 
 goto end
