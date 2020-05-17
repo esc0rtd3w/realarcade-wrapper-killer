@@ -10,8 +10,9 @@ if %testmode%==1 (
 ::-----------------------------------------------------------------------------------
 ::Setting Unwrapped Game EXE name (must delete all other EXEs prior)
 ::-----------------------------------------------------------------------------------
-
-for %%* in (*.exe) do set unwrapped=%%~n*
+if not defined unwrapped (
+	for %%* in (*.exe) do set unwrapped=%%~n*
+)
 
 ::-----------------------------------------------------------------------------------
 ::Renaming back any HOLD files back to EXE
