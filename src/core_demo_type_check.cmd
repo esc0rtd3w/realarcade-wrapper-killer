@@ -7,8 +7,8 @@ if %testmode%==1 (
 )
 
 :: Check for Full RGS (make this better!)
-if exist regid.exe goto isfull
-if exist regid.hold goto isfull
+::if exist regid.exe goto isfull
+::if exist regid.hold goto isfull
 if %check_rgsfull%==1 goto isfull
 
 ::-----------------------------------------------------------------------------------

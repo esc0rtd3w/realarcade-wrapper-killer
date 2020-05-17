@@ -52,9 +52,6 @@ echo.
 if %demotype%==m set manualdto=1
 if %demotype%==M set manualdto=1
 
-::if %demotype%==f set check_rgsfull=1
-::if %demotype%==F set check_rgsfull=1
-
 goto end
 
 

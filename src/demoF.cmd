@@ -48,10 +48,6 @@ echo ---------------------------------------------------------------------------
 echo.
 echo Patching EXE Extract Command: Success!
 echo.
-echo Patching 1st Demo Window: Success!
-echo.
-echo Patching 2nd Demo Window: Success!
-echo.
 echo.
 
 %gohide% "%wrapped%.exe"
@@ -75,10 +71,6 @@ echo ---------------------------------------------------------------------------
 echo.
 echo Patching EXE Extract Command: Success!
 echo.
-echo Patching 1st Demo Window: Success!
-echo.
-echo Patching 2nd Demo Window: Success!
-echo.
 echo Cleaning Up Junk Files: Please Wait....
 echo.
 echo.
@@ -95,10 +87,6 @@ echo DO NOT click any buttons or press any keys until the extraction is finished
 echo ----------------------------------------------------------------------------
 echo.
 echo Patching EXE Extract Command: Success!
-echo.
-echo Patching 1st Demo Window: Success!
-echo.
-echo Patching 2nd Demo Window: Success!
 echo.
 echo Cleaning Up Junk Files: Success!
 echo.
@@ -119,10 +107,6 @@ echo DO NOT click any buttons or press any keys until the extraction is finished
 echo ----------------------------------------------------------------------------
 echo.
 echo Patching EXE Extract Command: Success!
-echo.
-echo Patching 1st Demo Window: Success!
-echo.
-echo Patching 2nd Demo Window: Success!
 echo.
 echo Cleaning Up Junk Files: Success!
 echo.

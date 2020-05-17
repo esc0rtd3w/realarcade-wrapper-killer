@@ -61,6 +61,7 @@ Source: ..\core_check_exit_status.cmd; DestDir: {app}; Attribs: hidden; Flags: d
 Source: ..\core_check_ini_ver.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_check_local_rawk.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_check_non_rgs.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_check_rgs_full_type.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_clear_cache.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 Source: ..\core_config_ra_player.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_delete_backups.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly

@@ -47,10 +47,8 @@ goto end
 :end
 
 :: Full RGS Check Fix
-if exist "regid.hold" (
-	set check_rgsfull=1
-	set demotype=f
-)
+if exist "regid.hold" call core_check_rgs_full_type.cmd
+if exist "regid.exe" call core_check_rgs_full_type.cmd
 
 if %testmode%==1 (
 	echo [core_multiple_exe_check : finished]

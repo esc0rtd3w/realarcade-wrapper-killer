@@ -684,7 +684,7 @@ if %dtor%==1 call "core_demo_type_override.cmd"
 :: Only triggered by a Gamehouse or Zylom game
 ::if %forceExit%==1 goto end
 
-goto demoCheckMain
+goto checkDemoTypeFromIni
 
 
 ::-----------------------------------------------------------------------------------
@@ -694,9 +694,9 @@ goto demoCheckMain
 :: protection and/or naming scheme
 ::-----------------------------------------------------------------------------------
 
-:demoCheckMain
-
-if %demotype%==0 goto oldstyle
+:checkDemoTypeFromIni
+:: These values only read from INI if exist (rawkdb.ini or rgsfull.ini)
+if %demotype%==0 goto noPresetValues
 if %demotype%==1 call demo1
 if %demotype%==1a call demo1a
 if %demotype%==2 call demo2
@@ -713,14 +713,14 @@ if %demotype%==G call demoGH
 if %demotype%==f call demoF
 if %demotype%==F call demoF
 
-goto lasttwo
+goto skipDemoTypeCheck
 
 
-:oldstyle
+:noPresetValues
 call "core_demo_type_check.cmd"
 
 
-:lasttwo
+:skipDemoTypeCheck
 :: If RGS if full version
 if %demotype%==f goto fixmain
 if %demotype%==F goto fixmain
