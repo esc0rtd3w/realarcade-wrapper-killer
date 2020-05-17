@@ -22,6 +22,23 @@ set RNRhex=9090
 set d2index=6252
 set d2hex=909090909090
 
+:: Temp Fix to patch Orbz with default DemoF patches
+if "%wrapped%.exe"=="orbz.exe" (
+	set patch1_index=6190
+	set patch1_hex=EB
+	set patch2_index=6353
+	set patch2_hex=EB
+	set patch3_index=7411
+	set patch3_hex=909090909090
+	set patch4_index=7554
+	set patch4_hex=909090909090
+	gpatch "%wrapped%.exe" /nologo /i%patch1_index% /h"%patch1_hex%"
+	gpatch "%wrapped%.exe" /nologo /i%patch2_index% /h"%patch2_hex%"
+	gpatch "%wrapped%.exe" /nologo /i%patch3_index% /h"%patch3_hex%"
+	gpatch "%wrapped%.exe" /nologo /i%patch4_index% /h"%patch4_hex%"
+	goto done
+)
+
 
 cls
 echo ----------------------------------------------------------------------------
@@ -84,6 +101,7 @@ echo.
 
 ::if %quw%==0 %waitfor% %timerfix%
 
+:done
 copy "%wrapped%.exe" "%wrapped%_extract_only.exe.bak" >nul
 
 
