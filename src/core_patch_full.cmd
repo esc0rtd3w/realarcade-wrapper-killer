@@ -154,12 +154,40 @@ goto autopatch
 ::if "%GameName%"=="Some Game" goto somewhere
 
 :: Check for blank indexes
-if %patch1_index%==0 goto nopatch
+if %patch1_index%==0 goto defaultpatch
 if %patch2_index%==0 goto autopatch
 if %patch3_index%==0 goto autopatch
 if %patch4_index%==0 goto autopatch
 if %patch5_index%==0 goto autopatch
 if %patch6_index%==0 goto autopatch
+
+goto defaultpatch
+
+::-----------------------------------------------------------------------------------
+::Setting variables for patching
+::-----------------------------------------------------------------------------------
+
+:: Land here if there is no value set in INI
+:defaultpatch
+set patch1_name="Force registry regkey write"
+set patch1_index=6190
+set patch1_hex=EB
+set patch2_name="Force loading exe"
+set patch2_index=6353
+set patch2_hex=EB
+set patch3_name="Do not delete extracted exe 1"
+set patch3_index=7411
+set patch3_hex=909090909090
+set patch4_name="Do not delete extracted exe 2"
+set patch4_index=7554
+set patch4_hex=909090909090
+set patch5_name=None
+set patch5_index=0
+set patch5_hex=0
+set patch6_name=None
+set patch6_index=0
+set patch6_hex=0
+set patch_extension=0
 
 
 ::-----------------------------------------------------------------------------------
@@ -179,7 +207,7 @@ echo.
 echo.
 echo.
 
-if %patch1_index%==0 goto patch2
+if %patch1_index%==0 goto nopatch
 if %patch1_index% gtr 0 gpatch "%wrapped%.exe" /nologo /i%patch1_index% /h"%patch1_hex%"
 
 :patch2
