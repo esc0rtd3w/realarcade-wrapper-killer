@@ -154,27 +154,12 @@ goto autopatch
 ::if "%GameName%"=="Some Game" goto somewhere
 
 :: Check for blank indexes
-if %patch1_index%==0 goto autopatch
+if %patch1_index%==0 goto nopatch
 if %patch2_index%==0 goto autopatch
 if %patch3_index%==0 goto autopatch
 if %patch4_index%==0 goto autopatch
 if %patch5_index%==0 goto autopatch
 if %patch6_index%==0 goto autopatch
-
-goto defaultpatch
-
-::-----------------------------------------------------------------------------------
-::Setting variables for patching
-::-----------------------------------------------------------------------------------
-
-::goto autopatch
-
-
-
-:defaultpatch
-
-
-::goto autopatch
 
 
 ::-----------------------------------------------------------------------------------
@@ -265,10 +250,21 @@ echo.
 echo.
 
 if %patch6_index%==0 goto done
-if %patch6_index% gtr 0 gpatch "delete.exe" /nologo /i%patch6_index% /h"%patch6_hex%"
+if %patch6_index% gtr 0 gpatch "%wrapped%.exe" /nologo /i%patch6_index% /h"%patch6_hex%"
+
 
 :done
 copy "%wrapped%.exe" "%wrapped%_extract_only.exe.bak" >nul
+
+goto end
+
+
+:nopatch
+echo Something went wrong!
+echo Patch 1 has a 0 index value
+echo.
+pause
+goto end
 
 
 :end
