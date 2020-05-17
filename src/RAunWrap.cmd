@@ -705,6 +705,7 @@ if %demotype%==m call demoM
 if %demotype%==M call demoM
 if %demotype%==g call demoGH
 if %demotype%==G call demoGH
+if %demotype%==full call demoF
 
 goto lasttwo
 

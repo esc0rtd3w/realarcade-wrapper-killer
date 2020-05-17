@@ -71,6 +71,7 @@ Source: ..\core_patch_demo4.cmd; DestDir: {app}; Attribs: hidden; Flags: deletea
 Source: ..\core_patch_demo4a.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_patch_demoGH.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_patch_demoZY.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
+Source: ..\core_patch_full.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_demo_type_check.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_demo_type_override.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_disable_old_reg_hacks.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
@@ -152,6 +153,7 @@ Source: ..\core_shortcut_demo3.cmd; DestDir: {app}; Flags: deleteafterinstall ov
 Source: ..\core_shortcut_demo4.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 Source: ..\core_shortcut_demo5.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 Source: ..\core_shortcut_demo6.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\core_shortcut_full.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 Source: ..\core_shortcut_manual.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 Source: ..\core_shortcut_demoGH.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 Source: ..\core_shortcut_demoZY.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
@@ -171,6 +173,7 @@ Source: ..\demo4.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonl
 Source: ..\demo4a.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\demo5.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
 Source: ..\demo6.cmd; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
+Source: ..\demoF.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\demoM.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\demoGH.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\demoZY.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
@@ -426,6 +429,7 @@ Source: ..\config\launch.ini; DestDir: {app}; Flags: deleteafterinstall overwrit
 Source: ..\config\rawkdb.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
 Source: ..\config\dlc.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
 Source: ..\config\patch.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
+Source: ..\config\rgsfull.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
 Source: ..\config\rnarcade.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
 Source: ..\config\servers.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
 Source: ..\config\stub.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall

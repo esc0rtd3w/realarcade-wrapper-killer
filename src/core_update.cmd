@@ -234,6 +234,69 @@ pause>nul
 
 
 ::-----------------------------------------------------------------------------------
+:: RealArcade RGS Full Database (rgsfull.ini)
+::-----------------------------------------------------------------------------------
+
+cls
+:full1
+wget -p -P"%rawkroot%\update" -N -k "%server1%/rgsfull.ini"
+
+if not exist "%rawkroot%\update\rgsfull.ini" (
+set rgsfull_core_available=0
+goto full2
+)
+
+inifile "%rawkroot%\update\rgsfull.ini" [core] rgsfull_core > "rgsfull_core_available_ver.cmd"
+call "rgsfull_core_available_ver.cmd"
+set rgsfull_core_available=%rgsfull_core%
+
+:full2
+cls
+inifile "%rawkroot%\rgsfull.ini" [core] rgsfull_core > "rgsfull_core_installed_ver.cmd"
+call "rgsfull_core_installed_ver.cmd"
+set rgsfull_core_installed=%rgsfull_core%
+
+if %rgsfull_core_available%==0 goto full4
+
+:full3
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info rgsfull.ini +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
+cls
+echo File: rgsfull.ini
+echo.
+echo.
+echo Installed Version: %rgsfull_core_installed%
+echo.
+echo Available Version: %rgsfull_core_available%
+echo.
+echo.
+if %rgsfull_core_installed% equ %rgsfull_core_available% echo You Have The Latest Version.
+echo.
+if %rgsfull_core_installed% lss %rgsfull_core_available% xcopy /e /q /y "%rawkroot%\update\rgsfull.ini" "%rawkroot%"
+if %rgsfull_core_installed% lss %rgsfull_core_available% echo You Have Been Updated To The Latest Version.
+echo.
+if %rgsfull_core_installed% gtr %rgsfull_core_available% echo You Have An Early BETA Release or Unreleased Version.
+echo.
+echo.
+echo Press any key to check next file....
+pause>nul
+goto servers1
+
+:full4
+title RealArcade Wrapper Killer v%rawkver%    (.-+'~^-+ Update Info rgsfull.ini +-^~`+-.)     [...cRypTiCwaRe 2o2o...]
+cls
+echo File: rgsfull.ini
+echo.
+echo.
+echo Installed Version: %rgsfull_core_installed%
+echo.
+echo Available Version: No Update File Found!
+echo.
+echo.
+echo Press any key to check next file....
+pause>nul
+
+
+::-----------------------------------------------------------------------------------
 :: RealArcade v1.4 Player Custom Settings Database (rnarcade.ini)
 ::-----------------------------------------------------------------------------------
 

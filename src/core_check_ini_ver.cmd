@@ -80,6 +80,28 @@ xcopy /e /q /y "%rawkroot%\temp\patch.ini" "%rawkroot%"
 )
 
 ::-----------------------------------------------------------------------------------
+:: rgsfull.ini
+::-----------------------------------------------------------------------------------
+
+if not exist "%rawkroot%\rgsfull.ini" (
+xcopy /e /q /y "%rawkroot%\temp\rgsfull.ini" "%rawkroot%" 
+)
+
+cls
+inifile "%rawkroot%\rgsfull.ini" [core] rgsfull_core > "rgsfull_core_installed_ver.cmd"
+call "rgsfull_core_installed_ver.cmd"
+set rgsfull_core_installed=%rgsfull_core%
+
+cls
+inifile "%rawkroot%\temp\rgsfull.ini" [core] rgsfull_core > "rgsfull_core_running_ver.cmd"
+call "rna_core_running_ver.cmd"
+set rgsfull_core_running=%rgsfull_core%
+
+if %rgsfull_core_installed% lss %rgsfull_core_running% (
+xcopy /e /q /y "%rawkroot%\temp\rgsfull.ini" "%rawkroot%" 
+)
+
+::-----------------------------------------------------------------------------------
 :: rnarcade.ini
 ::-----------------------------------------------------------------------------------
 
