@@ -7,7 +7,7 @@ if %testmode%==1 (
 )
 
 :: Check for Full RGS (make this better!)
-if exist regid.exe set demotype=full
+if exist regid.exe call demoF
 
 ::-----------------------------------------------------------------------------------
 :: Demo Type 1 - r1a games

@@ -30,6 +30,7 @@ goto end
 
 
 :start
+
 %show% "[...cRypTiCwaRe 2o2o...]"
 cls
 nircmd shortcut "%cd%\%unwrapped%.exe" "~$folder.desktop$" "%GameName%"

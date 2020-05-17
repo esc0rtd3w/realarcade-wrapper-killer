@@ -46,6 +46,12 @@ goto end
 
 :end
 
+:: Full RGS Check Fix
+if exist "regid.exe" (
+	set check_rgsfull=1
+	ren "regid.exe" "regid.hold"
+)
+
 if %testmode%==1 (
 	echo [core_multiple_exe_check : finished]
 	pause>nul

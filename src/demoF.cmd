@@ -9,7 +9,7 @@ if %testmode%==1 (
 
 color 0b
 
-set demotype=full
+set demotype=f
 
 
 ::-----------------------------------------------------------------------------------
@@ -17,7 +17,7 @@ set demotype=full
 ::-----------------------------------------------------------------------------------
 
 ::if exist ".exe" set wrapped=& set unwrapped=
-if exist "bookworm.exe" set wrapped=bookworm& set unwrapped=bkwm
+if exist "bookworm.exe" set wrapped=bookworm& set unwrapped=bookdlx
 
 goto start
 

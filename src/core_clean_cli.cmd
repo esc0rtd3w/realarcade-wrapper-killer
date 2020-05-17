@@ -136,7 +136,6 @@ if exist "filesize.vbs" del /f /q "filesize.vbs"
 if exist "fix1.tmp" del /f /q "fix1.tmp"
 if exist "fix2.tmp" del /f /q "fix2.tmp"
 if exist "fix3.tmp" del /f /q "fix3.tmp"
-if exist "RAunWrap.cmd" del /f /q "RAunWrap.cmd"
 if exist "rawk_licensekeys.reg" del /f /q "rawk_licensekeys.reg"
 if exist "rawk_prefs.reg" del /f /q "rawk_prefs.reg"
 if exist "rawk_reset.reg" del /f /q "rawk_reset.reg"
@@ -151,12 +150,15 @@ if exist "stub-chunk5-language-country.bin" del /f /q "stub-chunk5-language-coun
 if exist "stub-chunk6.bin" del /f /q "stub-chunk6.bin"
 
 
-:: Remove yourself
-if exist "core_clean_cli.cmd" del /f /q "core_clean_cli.cmd"
-
 :end
 
 if %testmode%==1 (
 	echo [core_clean_cli : finished]
 	pause>nul
 )
+
+:: Remove yourself
+if exist "core_clean_cli.cmd" del /f /q "core_clean_cli.cmd"
+
+:: Remove main script
+if exist "RAunWrap.cmd" del /f /q "RAunWrap.cmd"

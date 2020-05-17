@@ -17,6 +17,11 @@ set testmode=0
 if exist "testmode.on" set testmode=1
 
 ::-----------------------------------------------------------------------------------
+:: Set default full demotype flag (added 20200517)
+::-----------------------------------------------------------------------------------
+set check_rgsfull=0
+
+::-----------------------------------------------------------------------------------
 :: This is the MAIN CUSTOM LOADER SECTION silent installer (added 20110106)
 ::-----------------------------------------------------------------------------------
 
@@ -705,7 +710,10 @@ if %demotype%==m call demoM
 if %demotype%==M call demoM
 if %demotype%==g call demoGH
 if %demotype%==G call demoGH
-if %demotype%==full call demoF
+if %demotype%==f call demoF
+if %demotype%==F call demoF
+if %demotype%==f goto fixmain
+if %demotype%==F goto fixmain
 
 goto lasttwo
 
@@ -713,12 +721,13 @@ goto lasttwo
 :oldstyle
 call "core_demo_type_check.cmd"
 
-
 :lasttwo
+:: If RGS if full version
+::if %check_rgsfull%==1 call demoF
+::if %check_rgsfull%==1 goto fixmain
+
 if exist "*_r1a.exe" call demo1
 if exist "delete.exe" call demo1
-
-
 
 
 :fixmain
@@ -761,11 +770,11 @@ if %zyFlag%==1 call "core_zylom_main.cmd"
 ::if %zyFlag%==1 call "core_zylom_hotkey.cmd"
 ::if %zyFlag%==1 call "core_zylom_override.cmd"
 
-
 :: Needed for CLI launch Only
 ::call "core_rawk_cleanup_loader.cmd"
 ::if %forceExit%==1 call "core_rawk_cleanup_root.cmd"
 if %cliActive%==1 call "core_clean_cli.cmd"
+
 
 exit
 

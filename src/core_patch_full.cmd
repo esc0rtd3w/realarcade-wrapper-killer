@@ -154,12 +154,12 @@ goto autopatch
 ::if "%GameName%"=="Some Game" goto somewhere
 
 :: Check for blank indexes
-if not %patch1_index%==0 goto autopatch
-if not %patch2_index%==0 goto autopatch
-if not %patch3_index%==0 goto autopatch
-if not %patch4_index%==0 goto autopatch
-if not %patch5_index%==0 goto autopatch
-if not %patch6_index%==0 goto autopatch
+if %patch1_index%==0 goto autopatch
+if %patch2_index%==0 goto autopatch
+if %patch3_index%==0 goto autopatch
+if %patch4_index%==0 goto autopatch
+if %patch5_index%==0 goto autopatch
+if %patch6_index%==0 goto autopatch
 
 goto defaultpatch
 
@@ -195,7 +195,7 @@ echo.
 echo.
 
 if %patch1_index%==0 goto patch2
-if %patch1_index% gtr 0 gpatch "delete.exe" /nologo /i%patch1_index% /h"%patch1_hex%"
+if %patch1_index% gtr 0 gpatch "%wrapped%.exe" /nologo /i%patch1_index% /h"%patch1_hex%"
 
 :patch2
 cls
@@ -209,7 +209,7 @@ echo.
 echo.
 
 if %patch2_index%==0 goto patch3
-if %patch2_index% gtr 0 gpatch "delete.exe" /nologo /i%patch2_index% /h"%patch2_hex%"
+if %patch2_index% gtr 0 gpatch "%wrapped%.exe" /nologo /i%patch2_index% /h"%patch2_hex%"
 
 :patch3
 cls
@@ -223,7 +223,7 @@ echo.
 echo.
 
 if %patch3_index%==0 goto patch4
-if %patch3_index% gtr 0 gpatch "delete.exe" /nologo /i%patch3_index% /h"%patch3_hex%"
+if %patch3_index% gtr 0 gpatch "%wrapped%.exe" /nologo /i%patch3_index% /h"%patch3_hex%"
 
 :patch4
 cls
@@ -237,7 +237,7 @@ echo.
 echo.
 
 if %patch4_index%==0 goto patch5
-if %patch4_index% gtr 0 gpatch "delete.exe" /nologo /i%patch4_index% /h"%patch4_hex%"
+if %patch4_index% gtr 0 gpatch "%wrapped%.exe" /nologo /i%patch4_index% /h"%patch4_hex%"
 
 :patch5
 cls
@@ -251,7 +251,7 @@ echo.
 echo.
 
 if %patch5_index%==0 goto patch6
-if %patch5_index% gtr 0 gpatch "delete.exe" /nologo /i%patch5_index% /h"%patch5_hex%"
+if %patch5_index% gtr 0 gpatch "%wrapped%.exe" /nologo /i%patch5_index% /h"%patch5_hex%"
 
 :patch6
 cls
@@ -264,11 +264,11 @@ echo.
 echo.
 echo.
 
-if %patch6_index%==0 goto patch6
+if %patch6_index%==0 goto done
 if %patch6_index% gtr 0 gpatch "delete.exe" /nologo /i%patch6_index% /h"%patch6_hex%"
 
-
-copy "delete.exe" "%wrapped%_extract_only.exe.bak" >nul
+:done
+copy "%wrapped%.exe" "%wrapped%_extract_only.exe.bak" >nul
 
 
 :end
