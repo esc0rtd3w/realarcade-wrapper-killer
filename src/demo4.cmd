@@ -219,7 +219,7 @@ echo.
 ::-----------------------------------------------------------------------------------
 
 cls
-call "core_shortcut_demo3.cmd"
+call "core_shortcut_demo4.cmd"
 
 
 :end
