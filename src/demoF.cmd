@@ -17,8 +17,13 @@ set demotype=f
 ::-----------------------------------------------------------------------------------
 
 ::if exist ".exe" set wrapped=& set unwrapped=
+
 if exist "bookworm.exe" set wrapped=bookworm& set unwrapped=bookdlx
+if exist "collapse.exe" set wrapped=collapse& set unwrapped=cst
 if exist "gutterball3d.exe" set wrapped=gutterball3d& set unwrapped=gut
+
+:: Super Collapse II
+if exist "relapse.exe" set wrapped=relapse& set unwrapped=scii
 
 goto start
 
