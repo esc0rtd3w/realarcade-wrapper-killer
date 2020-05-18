@@ -293,6 +293,8 @@ xcopy *.ura *.exe /q /r /y >nul
 ::echo.
 ::%waitfor% %timerfix%
 
+call "core_clean_main.cmd"
+
 
 :sc
 ::-----------------------------------------------------------------------------------
