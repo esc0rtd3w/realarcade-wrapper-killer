@@ -65,6 +65,23 @@ if exist "zydb_core_available_ver.cmd" del "zydb_core_available_ver.cmd"
 if exist "ghdb_core_running_ver.cmd" del "ghdb_core_running_ver.cmd"
 if exist "zydb_core_running_ver.cmd" del "zydb_core_running_ver.cmd"
 
+:: Extra generic.spc backup file
+if exist "generic.spc.bak" del "generic.spc.bak"
+
+:: Eyeblaster and EB Ad Serving Files (Added 20200517)
+if exist "Eyeblaster" rd "Eyeblaster"
+if exist "buy.gif" del "buy.gif"
+if exist "ebadservingt25.dll" del "ebadservingt25.dll"
+if exist "frame_blank.gif" del "frame_blank.gif"
+if exist "frame_footer.gif" del "frame_footer.gif"
+if exist "frame_footer_skip.gif" del "frame_footer_skip.gif"
+if exist "frame_reminder.gif" del "frame_reminder.gif"
+if exist "fromfullscreen.gif" del "fromfullscreen.gif"
+if exist "js32t.dll" del "js32t.dll"
+if exist "nspr4t.dll" del "nspr4t.dll"
+if exist "skip.gif" del "skip.gif"
+if exist "tofullscreen.gif" del "tofullscreen.gif"
+
 
 
 :end
