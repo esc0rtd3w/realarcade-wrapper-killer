@@ -215,17 +215,19 @@ if exist "stub" rd /s /q "stub"
 :: Found in Rainforest Adventure [Unlimited rainforestadventureep_free.rgs]
 :: These cannot be removed and game still loads. Leave here for historical purposes
 ::if exist "%cd%\Eyeblaster" rd /s /q "%cd%\Eyeblaster"
-::if exist "buy.gif" del "buy.gif"
 ::if exist "ebadservingt25.dll" del "ebadservingt25.dll"
-::if exist "frame_blank.gif" del "frame_blank.gif"
-::if exist "frame_footer.gif" del "frame_footer.gif"
-::if exist "frame_footer_skip.gif" del "frame_footer_skip.gif"
-::if exist "frame_reminder.gif" del "frame_reminder.gif"
-::if exist "fromfullscreen.gif" del "fromfullscreen.gif"
 ::if exist "js32t.dll" del "js32t.dll"
 ::if exist "nspr4t.dll" del "nspr4t.dll"
-::if exist "skip.gif" del "skip.gif"
-::if exist "tofullscreen.gif" del "tofullscreen.gif"
+
+:: Can remove these and game loads fine
+if exist "buy.gif" del "buy.gif"
+if exist "frame_blank.gif" del "frame_blank.gif"
+if exist "frame_footer.gif" del "frame_footer.gif"
+if exist "frame_footer_skip.gif" del "frame_footer_skip.gif"
+if exist "frame_reminder.gif" del "frame_reminder.gif"
+if exist "fromfullscreen.gif" del "fromfullscreen.gif"
+if exist "skip.gif" del "skip.gif"
+if exist "tofullscreen.gif" del "tofullscreen.gif"
 
 cls
 
