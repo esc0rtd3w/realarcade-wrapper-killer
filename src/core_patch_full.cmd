@@ -293,8 +293,10 @@ if %patch6_index%==0 goto done
 if %patch6_index% gtr 0 gpatch "%wrapped%.exe" /nologo /i%patch6_index% /h"%patch6_hex%"
 
 
+
 :done
-:: Make a backup patched exe
+:: Wait a few seconds after patch before copy
+wait 3
 copy "%wrapped%.exe" "%wrapped%_extract_only.exe.bak" >nul
 
 goto end

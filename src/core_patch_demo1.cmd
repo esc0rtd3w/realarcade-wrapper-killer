@@ -505,6 +505,9 @@ echo.
 
 ::if %quw%==0 %waitfor% %timerfix%
 
+:done
+:: Wait a few seconds after patch before copy
+wait 3
 copy "delete.exe" "%wrapped%_extract_only.exe.bak" >nul
 
 :end
