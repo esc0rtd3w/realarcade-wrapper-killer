@@ -264,6 +264,7 @@ if not exist "%root%\_tmp\*.exe" (
 	
 
 	color 4f
+	echo [INFO] Fallback to v1 loader START>>%log%
 
 	cls
 	echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
@@ -281,8 +282,6 @@ if not exist "%root%\_tmp\*.exe" (
 	if %os%==VISTA choice /c yn /n
 	if errorlevel 2 goto end
 
-	echo [INFO] Fallback to v1 loader START>>%log%
-
 
 	cls
 	echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
@@ -299,11 +298,12 @@ if not exist "%root%\_tmp\*.exe" (
 	echo.
 
 
-
+	echo [INFO] v1 loader set registry>>%log%
 	regedit /s "%ProgramFiles%\unRealArcade\loaderRGSv2\setRGS.reg"
 
 	wait 5
 
+	echo [INFO] v1 loader launch exe>>%log%
 	%stubname%
 
 	cls
@@ -317,6 +317,7 @@ if not exist "%root%\_tmp\*.exe" (
 
 	wait 5
 
+	echo [INFO] v1 loader set registry>>%log%
 	regedit /s "%ProgramFiles%\unRealArcade\loaderRGSv2\setRGS.reg"
 
 	echo [INFO] Fallback to v1 loader COMPLETE>>%log%
@@ -427,10 +428,12 @@ if %unpacked%==1 (
 	echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
 	echo.
 	echo.
+	echo Copying files to default games location...
+	echo.
+	echo.
+	echo.
 	echo.
 	echo Extracted Game Name: "%GameName%"
-	echo.
-	echo.
 	echo.
 	echo It is located at: "C:\My Games\%GameName%"
 	echo.
@@ -474,7 +477,7 @@ if %unpacked%==0 (
 	echo.
 	echo Source: "%root%\_tmp"
 	echo.
-	echo No "_tmp"folder detected.
+	echo No "_tmp" folder detected.
 	echo.
 	pause
 	goto end
