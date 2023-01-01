@@ -1,6 +1,6 @@
 @echo off
 
-title RealArcade Wrapper Killer    (.-+'~^-+ RGS Multi Installer +-^~`+-.)     [...cRypTiCwaRe 2o12...]
+title RealArcade Wrapper Killer    (.-+'~^-+ RGS Multi Installer +-^~`+-.)     [...cRypTiCwaRe 2o22...]
 
 color 1f
 
