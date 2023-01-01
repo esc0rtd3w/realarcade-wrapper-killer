@@ -73,6 +73,8 @@ set downloadroot=C:\My Download Files
 set root=%ProgramFiles%\unRealArcade\loaders\loaderRGSv2
 set sys=%ProgramFiles%\unRealArcade\rawk\dump\{sys}
 
+:: Some games do not have an EXE in its root. This flag is for that.
+set altPath=0
 
 set unpacked=0
 
@@ -92,7 +94,7 @@ set rawkCLIPath=C:\Program Files\unRealArcade\rawk\dump\{app}
 set rawkCLIExe=RAUnwrap.cmd
 set rawkCLILaunch="C:\Program Files\unRealArcade\rawk\dump\{app}\*"
 
-set log=%temp%\loaderRGSv2.log
+set log="%root%\loaderRGSv2.log"
 
 set multirgs=0
 
@@ -248,6 +250,18 @@ goto chkxerr
 
 if not exist "%root%\_tmp\*.exe" (
 	echo [ERROR] Game EXE Not Exist>>%log%
+	
+	echo [INFO] Checking alternate paths>>%log%
+	
+	if exist "%root%\_tmp\Gamefiles\hoyleboard.exe" echo [INFO] Alternate Path: Gamefiles\hoyleboard.exe>>%log%
+	if exist "%root%\_tmp\Gamefiles\hoyleboard.exe" set altPath=1&&goto chkextr
+	
+	if exist "%root%\_tmp\Gamefiles\hoylecard.exe" echo [INFO] Alternate Path: Gamefiles\hoylecard.exe>>%log%
+	if exist "%root%\_tmp\Gamefiles\hoylecard.exe" set altPath=1&&goto chkextr
+	
+	if exist "%root%\_tmp\Engine\lithtech.exe" echo [INFO] Alternate Path: Engine\lithtech.exe>>%log%
+	if exist "%root%\_tmp\Engine\lithtech.exe" set altPath=1&&goto chkextr
+	
 
 	color 4f
 
@@ -320,6 +334,9 @@ goto chkextr
 :: Check _tmp folder again for successful extraction
 ::-----------------------------------------------------------------------------------
 
+::echo altPath: %altPath%
+::pause
+	
 if exist "%root%\_tmp" (
 	echo [INFO] Game Extraction Folder Detected>>%log%
 
@@ -385,11 +402,14 @@ if exist "%root%\_tmp\ds.exe" set GameName=DemonStar
 if exist "%root%\_tmp\windm.exe" set GameName=Diamond Mine
 if exist "%root%\_tmp\escapefromlostisland_r1a.exe" set GameName=Escape From Lost Island
 if exist "%root%\_tmp\fortunetiles_r1a.exe" set GameName=Fortune Tiles Gold
+if exist "%root%\_tmp\Gamefiles\hoyleboard.exe" set GameName=Hoyle Board Games
+if exist "%root%\_tmp\Gamefiles\hoylecard.exe" set GameName=Hoyle Card Games
 if exist "%root%\_tmp\jetsetter_r1a.exe" set GameName=Jet Setter
 if exist "%root%\_tmp\earth day_r1a.exe" set GameName=National Geographic Earth Day Pack
 if exist "%root%\_tmp\p3.exe" set GameName=Passage 3
 if exist "%root%\_tmp\p3tool.exe" set GameName=Passage 3
 if exist "%root%\_tmp\id-ossmallball.exe" set GameName=SmallBall Baseball
+if exist "%root%\_tmp\Engine\lithtech.exe" set GameName=Tex Atomic's Big Bot Battles
 if exist "%root%\_tmp\wobblybobbly_r1a.exe" set GameName=Wobbly Bobbly
 
 echo [INFO] Setting GameName for games that have issues getting correct value COMPLETE>>%log%
@@ -505,7 +525,7 @@ echo [INFO] Run CLI Wrapper Killer START>>%log%
 set cliActive=1
 
 copy %rawkCLILaunch% "%gamesroot%\%GameName%"
-start "" /d "%gamesroot%\%GameName%" "%rawkCLIExe%"
+start "" /d "%gamesroot%\%GameName%" "%rawkCLIPath%\%rawkCLIExe%"
 
 echo [INFO] CLI Params - %rawkCLILaunch% "%gamesroot%\%GameName%">>%log%
 echo [INFO] Run CLI Wrapper Killer END>>%log%
