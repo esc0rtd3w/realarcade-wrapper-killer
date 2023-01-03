@@ -42,7 +42,7 @@ Filename: {app}\RAunWrap.cmd; WorkingDir: {app}
 
 ; Embed the Wrapper Killer itself (this is so it can be launched after game extraction locally)
 ; This must be built without embed and then place that built file in \embed\ and rebuild with embed on
-;Source: ..\_release\embed\rawk.exe; DestDir: "C:\Program Files\unRealArcade"; Flags: overwritereadonly
+;Source: ..\_release\embed\rawk.exe; DestDir: "C:\unRealArcade"; Flags: overwritereadonly
 
 
 ; Copy the source EXE to unRealArcade folder (this obsoletes the above EMBED duplication)
@@ -129,9 +129,9 @@ Source: ..\core_rfs_stub_info.cmd; DestDir: {app}; Attribs: hidden; Flags: delet
 Source: ..\core_rga_download.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 Source: ..\core_stub_creator.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 ;Source: ..\core_rga_stub_creator.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-;Source: ..\core_rga_stub_creator.cmd; DestDir: "C:\Program Files\unRealArcade\rga\"; Flags: overwritereadonly
+;Source: ..\core_rga_stub_creator.cmd; DestDir: "C:\unRealArcade\rga\"; Flags: overwritereadonly
 Source: ..\core_rga_stub_info.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-;Source: ..\core_rga_stub_info.cmd; DestDir: "C:\Program Files\unRealArcade\rga\"; Flags: overwritereadonly
+;Source: ..\core_rga_stub_info.cmd; DestDir: "C:\unRealArcade\rga\"; Flags: overwritereadonly
 
 ; Mac OSX DMG Support
 Source: ..\core_dmg_loader.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
@@ -184,74 +184,74 @@ Source: ..\demoZY.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstal
 ; All Loaders
 
 ; RGS Loader v1.0
-Source: ..\loaders\loaderRGSv1.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\loaders\loaderRGSv1.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
 
 ; RGS Loader v2.0
-Source: ..\loaders\loaderRGSv2.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\loaders\loaderRGSv2.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
 
 ; RGA Loader Files
-Source: ..\loaders\loaderRGA.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\loaders\loaderRGA.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
 
 ; DMG Loader Files
-Source: ..\loaders\loaderDMG.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\loaders\loaderDMG.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
 
 ; RFS Loader Files
-Source: ..\loaders\loaderRFS.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\loaders\loaderRFS.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
 
 ; AMI Loader Files
-Source: ..\loaders\loaderAMI.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\loaders\loaderAMI.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
 
 
 
 ;RealArcade Spoofer
-Source: ..\rna\rnaspoof.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\rna\rnaspoof.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
 
 ;RealArcade Mods
-Source: ..\rna\rnamod.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
-Source: ..\rna\rnamod-x64.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\rna\rnamod.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\rna\rnamod-x64.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
 
 ;RealArcade Restore RA Player
-Source: ..\rna\rnarestore.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
-Source: ..\rna\rnarestore-x64.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\rna\rnarestore.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\rna\rnarestore-x64.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
 
 ;RealArcade Uninstaller
-Source: ..\rna\rnuninst.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\rna\rnuninst.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
 
 ;RealArcade Downloader (Default) (Will Load on Both x86 and x64 Platforms)
-Source: ..\gui\uradl.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\gui\uradl.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
 
 ;RealArcade Downloader (64-bit) (Obsoleted 20160526)
-;Source: ..\gui\uradl-x64.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+;Source: ..\gui\uradl-x64.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
 
 
 ; AM Instant Server
-Source: ..\services\ami\aminstantservice.exe; DestDir: "C:\Program Files\unRealArcade\services\ami"; Flags: overwritereadonly
+Source: ..\services\ami\aminstantservice.exe; DestDir: "C:\unRealArcade\services\ami"; Flags: overwritereadonly
 
 ; GH Web Scraper
-Source: ..\tools\GHWebScraper\bin\Release\GHWebScraper.exe; DestDir: "C:\Program Files\unRealArcade\tools"; Flags: overwritereadonly
+Source: ..\tools\GHWebScraper\bin\Release\GHWebScraper.exe; DestDir: "C:\unRealArcade\tools"; Flags: overwritereadonly
 
 ; URA Web Browser
-Source: ..\tools\URABrowser\Debug\URABrowser.exe; DestDir: "C:\Program Files\unRealArcade\tools"; Flags: overwritereadonly
+Source: ..\tools\URABrowser\Debug\URABrowser.exe; DestDir: "C:\unRealArcade\tools"; Flags: overwritereadonly
 
 ; AM Instant Injector
-Source: ..\tools\AMInjector\Debug\AMInjector.exe; DestDir: "C:\Program Files\unRealArcade\tools"; Flags: overwritereadonly
+Source: ..\tools\AMInjector\Debug\AMInjector.exe; DestDir: "C:\unRealArcade\tools"; Flags: overwritereadonly
 
 ; AM Game Monitor
-Source: ..\tools\AMI_Game_Monitor\Debug\AMI_Game_Monitor.exe; DestDir: "C:\Program Files\unRealArcade\tools"; Flags: overwritereadonly
+Source: ..\tools\AMI_Game_Monitor\Debug\AMI_Game_Monitor.exe; DestDir: "C:\unRealArcade\tools"; Flags: overwritereadonly
 
 ; Game Lists
-Source: ..\gamelist\am-instant.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
-Source: ..\gamelist\content-id.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
-Source: ..\gamelist\names-DE.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
-Source: ..\gamelist\names-EN.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
-Source: ..\gamelist\names-ES.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
-Source: ..\gamelist\names-FR.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
-Source: ..\gamelist\names-IT.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
-Source: ..\gamelist\names-JP.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
-Source: ..\gamelist\names-NL.txt; DestDir: "C:\Program Files\unRealArcade\gamelist"; Flags: overwritereadonly
+Source: ..\gamelist\am-instant.txt; DestDir: "C:\unRealArcade\gamelist"; Flags: overwritereadonly
+Source: ..\gamelist\content-id.txt; DestDir: "C:\unRealArcade\gamelist"; Flags: overwritereadonly
+Source: ..\gamelist\names-DE.txt; DestDir: "C:\unRealArcade\gamelist"; Flags: overwritereadonly
+Source: ..\gamelist\names-EN.txt; DestDir: "C:\unRealArcade\gamelist"; Flags: overwritereadonly
+Source: ..\gamelist\names-ES.txt; DestDir: "C:\unRealArcade\gamelist"; Flags: overwritereadonly
+Source: ..\gamelist\names-FR.txt; DestDir: "C:\unRealArcade\gamelist"; Flags: overwritereadonly
+Source: ..\gamelist\names-IT.txt; DestDir: "C:\unRealArcade\gamelist"; Flags: overwritereadonly
+Source: ..\gamelist\names-JP.txt; DestDir: "C:\unRealArcade\gamelist"; Flags: overwritereadonly
+Source: ..\gamelist\names-NL.txt; DestDir: "C:\unRealArcade\gamelist"; Flags: overwritereadonly
 
 ; Unix Utilities
-Source: ..\sys32\unix-utils.exe; DestDir: "C:\Program Files\unRealArcade\temp"; Flags: overwritereadonly
+Source: ..\sys32\unix-utils.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
 
 
 ; External System Files (Local)
@@ -293,44 +293,44 @@ Source: ..\sys32\unix-utils.exe; DestDir: "C:\Program Files\unRealArcade\temp"; 
 ;Source: ..\sys32\quiet.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 
 ; External System Files (System)
-Source: ..\sys32\choicexp.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
-Source: ..\sys32\color.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
-Source: ..\sys32\cocolor.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
-Source: ..\sys32\ctext.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
-Source: ..\sys32\filver32.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
-Source: ..\sys32\wait.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
-Source: ..\sys32\gpatch.exe; DestDir: {sys}; Flags: overwritereadonly
-Source: ..\sys32\bspatch.exe; DestDir: {sys}; Flags: overwritereadonly
-Source: ..\sys32\fsum.exe; DestDir: {sys}; Flags: overwritereadonly
-Source: ..\sys32\inifile.exe; DestDir: {sys}; Attribs: hidden; Flags: overwritereadonly
-Source: ..\sys32\nircmd.exe; DestDir: {sys}; Flags: onlyifdoesntexist; Attribs: system
-Source: ..\sys32\rar.exe; DestDir: {sys}; Flags: overwritereadonly
-Source: ..\sys32\xtimer.exe; DestDir: {sys}; Flags: overwritereadonly
-Source: ..\sys32\GPInstaller.dll; DestDir: {sys}; Flags: overwritereadonly
-Source: ..\sys32\XZipSfx.dll; DestDir: {sys}; Flags: overwritereadonly
-Source: ..\sys32\subfile.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\inject.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\nop.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\now.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\dummy.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\setlevel.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\gcfextr.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\sfk.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\qgrep.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\tail.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\Unlocker.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\UnlockerCOM.dll; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\UnlockerDriver5.sys; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\wun.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\innounp.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\wget.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-;Source: ..\sys32\lua\luac.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-;Source: ..\sys32\lua\luadec.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\uniq.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-;Source: ..\sys32\hidecon.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-;Source: ..\sys32\hideexec.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\quiet.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-Source: ..\sys32\sevenZ.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\choicexp.exe; DestDir: "C:\unRealArcade\sys"; Flags: onlyifdoesntexist; Attribs: system
+Source: ..\sys32\color.exe; DestDir: "C:\unRealArcade\sys"; Flags: onlyifdoesntexist; Attribs: system
+Source: ..\sys32\cocolor.exe; DestDir: "C:\unRealArcade\sys"; Flags: onlyifdoesntexist; Attribs: system
+Source: ..\sys32\ctext.exe; DestDir: "C:\unRealArcade\sys"; Flags: onlyifdoesntexist; Attribs: system
+Source: ..\sys32\filver32.exe; DestDir: "C:\unRealArcade\sys"; Flags: onlyifdoesntexist; Attribs: system
+Source: ..\sys32\wait.exe; DestDir: "C:\unRealArcade\sys"; Flags: onlyifdoesntexist; Attribs: system
+Source: ..\sys32\gpatch.exe; DestDir: "C:\unRealArcade\sys"; Flags: overwritereadonly
+Source: ..\sys32\bspatch.exe; DestDir: "C:\unRealArcade\sys"; Flags: overwritereadonly
+Source: ..\sys32\fsum.exe; DestDir: "C:\unRealArcade\sys"; Flags: overwritereadonly
+Source: ..\sys32\inifile.exe; DestDir: "C:\unRealArcade\sys"; Attribs: hidden; Flags: overwritereadonly
+Source: ..\sys32\nircmd.exe; DestDir: "C:\unRealArcade\sys"; Flags: onlyifdoesntexist; Attribs: system
+Source: ..\sys32\rar.exe; DestDir: "C:\unRealArcade\sys"; Flags: overwritereadonly
+Source: ..\sys32\xtimer.exe; DestDir: "C:\unRealArcade\sys"; Flags: overwritereadonly
+Source: ..\sys32\GPInstaller.dll; DestDir: "C:\unRealArcade\sys"; Flags: overwritereadonly
+Source: ..\sys32\XZipSfx.dll; DestDir: "C:\unRealArcade\sys"; Flags: overwritereadonly
+Source: ..\sys32\subfile.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\inject.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\nop.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\now.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\dummy.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\setlevel.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\gcfextr.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\sfk.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\qgrep.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\tail.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\Unlocker.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\UnlockerCOM.dll; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\UnlockerDriver5.sys; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\wun.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\innounp.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\wget.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\lua\luac.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\lua\luadec.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\uniq.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\hidecon.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\hideexec.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\quiet.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+Source: ..\sys32\sevenZ.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
 
 ; Tasklist and Taskkill (Local)
 ; Fixes game termination problems for an OS like Windows XP Home Edition
@@ -339,8 +339,8 @@ Source: ..\sys32\sevenZ.exe; DestDir: {sys}; Attribs: System; Flags: overwritere
 
 ; Tasklist and Taskkill (System)
 ; Fixes game termination problems for an OS like Windows XP Home Edition
-Source: ..\sys32\taskkill.exe; DestDir: {sys}; Attribs: System; Flags: onlyifdoesntexist
-Source: ..\sys32\tasklist.exe; DestDir: {sys}; Attribs: System; Flags: onlyifdoesntexist
+Source: ..\sys32\taskkill.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: onlyifdoesntexist
+Source: ..\sys32\tasklist.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: onlyifdoesntexist
 
 ; FireCMD Utilities (Local)
 ;Source: ..\sys32\fcmd\getdecimal.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
@@ -354,23 +354,23 @@ Source: ..\sys32\tasklist.exe; DestDir: {sys}; Attribs: System; Flags: onlyifdoe
 ;Source: ..\sys32\fcmd\savefile.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 
 ; FireCMD Utilities (System)
-;Source: ..\sys32\fcmd\getdecimal.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-;Source: ..\sys32\fcmd\getdir.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-;Source: ..\sys32\fcmd\getint.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-;Source: ..\sys32\fcmd\getpassword.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-;Source: ..\sys32\fcmd\gettext.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-;Source: ..\sys32\fcmd\fckill.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-;Source: ..\sys32\fcmd\openfile.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-;Source: ..\sys32\fcmd\pathc.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
-;Source: ..\sys32\fcmd\savefile.exe; DestDir: {sys}; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\fcmd\getdecimal.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\fcmd\getdir.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\fcmd\getint.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\fcmd\getpassword.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\fcmd\gettext.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\fcmd\fckill.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\fcmd\openfile.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\fcmd\pathc.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+;Source: ..\sys32\fcmd\savefile.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
 
 ; QT DLL's (Local)
 ;Source: ..\sys32\fcmd\QtCore4.dll; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 ;Source: ..\sys32\fcmd\QtGui4.dll; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
 
 ; QT DLL's (System)
-;Source: ..\sys32\fcmd\QtCore4.dll; DestDir: {sys}; Attribs: System; Flags: onlyifdoesntexist
-;Source: ..\sys32\fcmd\QtGui4.dll; DestDir: {sys}; Attribs: System; Flags: onlyifdoesntexist
+;Source: ..\sys32\fcmd\QtCore4.dll; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: onlyifdoesntexist
+;Source: ..\sys32\fcmd\QtGui4.dll; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: onlyifdoesntexist
 
 
 
@@ -427,15 +427,15 @@ Source: ..\registry\ami-remove-licensing.reg; DestDir: {app}; Attribs: hidden; F
 
 ; Config Files
 Source: ..\config\launch.ini; DestDir: {app}; Flags: deleteafterinstall overwritereadonly
-Source: ..\config\rawkdb.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
-Source: ..\config\dlc.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
-Source: ..\config\patch.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
-Source: ..\config\rgsfull.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
-Source: ..\config\rnarcade.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
-Source: ..\config\servers.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
-Source: ..\config\stub.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
-Source: ..\config\ghdb.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
-Source: ..\config\zydb.ini; DestDir: "C:\Program Files\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
+Source: ..\config\rawkdb.ini; DestDir: "C:\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
+Source: ..\config\dlc.ini; DestDir: "C:\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
+Source: ..\config\patch.ini; DestDir: "C:\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
+Source: ..\config\rgsfull.ini; DestDir: "C:\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
+Source: ..\config\rnarcade.ini; DestDir: "C:\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
+Source: ..\config\servers.ini; DestDir: "C:\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
+Source: ..\config\stub.ini; DestDir: "C:\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
+Source: ..\config\ghdb.ini; DestDir: "C:\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
+Source: ..\config\zydb.ini; DestDir: "C:\unRealArcade\rawk\temp"; Flags: overwritereadonly deleteafterinstall
 
 ; External VBS Scripts
 Source: ..\scripts\filesize.vbs; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
@@ -450,7 +450,7 @@ Source: ..\cheats\stj.ini; DestDir: {app}\cheats\; Flags: deleteafterinstall ove
 Source: ..\patches\windows\hegames.ini; DestDir: {win}; Flags: overwritereadonly
 
 ; Mods / Patches (System32)
-;Source: ..\patches\system32\.ini; DestDir: {sys}; Flags: overwritereadonly
+;Source: ..\patches\system32\.ini; DestDir: "C:\unRealArcade\sys"; Flags: overwritereadonly
 
 ; Mods / Patches (Game)
 Source: ..\patches\Puzzler World 2.ini; DestDir: {app}\patches\; Flags: deleteafterinstall overwritereadonly
@@ -462,13 +462,13 @@ Source: ..\ghx\n7-89-o9-3r-4t-r9\profile.ini; DestDir: {commonappdata}\n7-89-o9-
 Source: ..\ghx\92-75-56-55-p5-r9\profile.ini; DestDir: {commonappdata}\92-75-56-55-p5-r9; Flags: overwritereadonly
 ;Source: ..\ghx\ghx_reset.cmd; DestDir: {commonappdata}\n7-89-o9-3r-4t-r9\; Flags: overwritereadonly
 ;Source: ..\ghx\ghx_reset.cmd; DestDir: {commonappdata}\92-75-56-55-p5-r9\; Flags: overwritereadonly
-Source: ..\ghx\ghx_reset.cmd; DestDir: "C:\Program Files\unRealArcade\ghx\"; Flags: overwritereadonly
-Source: ..\ghx\ghx_reset_dev.cmd; DestDir: "C:\Program Files\unRealArcade\ghx\"; Flags: overwritereadonly
-Source: ..\ghx\ghx_install.cmd; DestDir: "C:\Program Files\unRealArcade\ghx\"; Flags: overwritereadonly
+Source: ..\ghx\ghx_reset.cmd; DestDir: "C:\unRealArcade\ghx\"; Flags: overwritereadonly
+Source: ..\ghx\ghx_reset_dev.cmd; DestDir: "C:\unRealArcade\ghx\"; Flags: overwritereadonly
+Source: ..\ghx\ghx_install.cmd; DestDir: "C:\unRealArcade\ghx\"; Flags: overwritereadonly
 Source: ..\ghx\WINDOWS\win.ini; DestDir: {win}; Flags: overwritereadonly
-Source: ..\ghx\ghx_countdown.txt; DestDir: "C:\Program Files\unRealArcade\ghx\"; Flags: overwritereadonly
-Source: ..\ghx\ghx_countdown_minutes_values.txt; DestDir: "C:\Program Files\unRealArcade\ghx\"; Flags: overwritereadonly
-Source: ..\ghx\ghx_countdown_values_only.txt; DestDir: "C:\Program Files\unRealArcade\ghx\"; Flags: overwritereadonly
+Source: ..\ghx\ghx_countdown.txt; DestDir: "C:\unRealArcade\ghx\"; Flags: overwritereadonly
+Source: ..\ghx\ghx_countdown_minutes_values.txt; DestDir: "C:\unRealArcade\ghx\"; Flags: overwritereadonly
+Source: ..\ghx\ghx_countdown_values_only.txt; DestDir: "C:\unRealArcade\ghx\"; Flags: overwritereadonly
 
 ; Misc Files
 Source: ..\fixes\all\cliptemp.txt; DestDir: {app}; Flags: deleteafterinstall overwritereadonly; Attribs: hidden
@@ -493,9 +493,9 @@ Source: ..\stub\stub-chunk6.bin; DestDir: {app}; Attribs: hidden; Flags: deletea
 
 ; OGM Service
 Source: ..\core_ogm_service.cmd; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly
-Source: ..\services\ogm\ogmservice.exe; DestDir: "C:\Program Files\unRealArcade\services\ogm"; Flags: overwritereadonly
-Source: ..\services\ogm\rgaQuery.url; DestDir: "C:\Program Files\unRealArcade\services\ogm"; Flags: overwritereadonly
-Source: ..\services\ogm\rgaQuery.json; DestDir: "C:\Program Files\unRealArcade\services\ogm"; Flags: overwritereadonly
+Source: ..\services\ogm\ogmservice.exe; DestDir: "C:\unRealArcade\services\ogm"; Flags: overwritereadonly
+Source: ..\services\ogm\rgaQuery.url; DestDir: "C:\unRealArcade\services\ogm"; Flags: overwritereadonly
+Source: ..\services\ogm\rgaQuery.json; DestDir: "C:\unRealArcade\services\ogm"; Flags: overwritereadonly
 
 
 [Dirs]
@@ -503,9 +503,9 @@ Name: {app}\cheats; Attribs: hidden; Flags: deleteafterinstall
 Name: {app}\patches; Attribs: hidden; Flags: deleteafterinstall
 Name: {commonappdata}\n7-89-o9-3r-4t-r9
 Name: {commonappdata}\92-75-56-55-p5-r9
-;Name: "C:\Program Files\unRealArcade\ghx"
-;Name: "C:\Program Files\unRealArcade\ghx\timer"
-;Name: "C:\Program Files\unRealArcade\rga"
+;Name: "C:\unRealArcade\ghx"
+;Name: "C:\unRealArcade\ghx\timer"
+;Name: "C:\unRealArcade\rga"
 
 
 [Registry]
@@ -514,16 +514,16 @@ Name: {commonappdata}\92-75-56-55-p5-r9
 ; The 2.0 loader can load this version from itself if issues arise
 ;Root: HKCR; SubKey: RealArcade.rgs.1; ValueType: string; ValueName: ; ValueData: RealArcade Secured Installer
 ;Root: HKCR; SubKey: RealArcade.rgs.1; ValueType: binary; ValueName: EditFlags; ValueData: 00 00 01 00
-;Root: HKCR; SubKey: RealArcade.rgs.1\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER~4\RGSinst.exe,0
-;Root: HKCR; SubKey: RealArcade.rgs.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER~4\RGSinst.exe /m application/vnd.rn-rn_secured_installer %1
+;Root: HKCR; SubKey: RealArcade.rgs.1\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\UNREAL~1\LOADER~4\RGSinst.exe,0
+;Root: HKCR; SubKey: RealArcade.rgs.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\UNREAL~1\LOADER~4\RGSinst.exe /m application/vnd.rn-rn_secured_installer %1
 
 ; RGS Loader v2.0
 Root: HKCR; SubKey: RealArcade.rgs.1; ValueName: @; ValueData: """RGS Loader Install Package"""; ValueType: string
 Root: HKCR; SubKey: RealArcade.rgs.1; ValueName: EditFlags; ValueData: 00 00 01 00; ValueType: binary
-Root: HKCR; SubKey: RealArcade.rgs.1\DefaultIcon; ValueName: @; ValueData: C:\\PROGRA~1\\UNREAL~1\\LOADER~2\\RGSinst.exe,0; ValueType: string
-Root: HKCR; SubKey: RealArcade.rgs.1\shell\open\command; ValueName: @; ValueData: """C:\\PROGRA~1\\UNREAL~1\\LOADER~2\\RGSinst.cmd %1"""; ValueType: string
-Root: HKCR; SubKey: realarcade\DefaultIcon; ValueName: @; ValueData: C:\\PROGRA~1\\UNREAL~1\\LOADER~2\\RGSinst.exe,0; ValueType: string
-Root: HKCR; SubKey: realarcade\shell\open\command; ValueName: @; ValueData: """C:\\PROGRA~1\\UNREAL~1\\LOADER~2\\RGSinst.cmd %1"""; ValueType: string
+Root: HKCR; SubKey: RealArcade.rgs.1\DefaultIcon; ValueName: @; ValueData: C:\\UNREAL~1\\LOADER~2\\RGSinst.exe,0; ValueType: string
+Root: HKCR; SubKey: RealArcade.rgs.1\shell\open\command; ValueName: @; ValueData: """C:\\UNREAL~1\\LOADER~2\\RGSinst.cmd %1"""; ValueType: string
+Root: HKCR; SubKey: realarcade\DefaultIcon; ValueName: @; ValueData: C:\\UNREAL~1\\LOADER~2\\RGSinst.exe,0; ValueType: string
+Root: HKCR; SubKey: realarcade\shell\open\command; ValueName: @; ValueData: """C:\\UNREAL~1\\LOADER~2\\RGSinst.cmd %1"""; ValueType: string
 Root: HKCR; SubKey: .rgs; ValueName: Content Type; ValueData: application/vnd.rn-rn_secured_installer; ValueType: string
 Root: HKCR; SubKey: .rgs; ValueName: Content Type; ValueData: application/vnd.rn-rn_secured_installer; ValueType: string
 Root: HKCR; SubKey: .mez; ValueName: Content Type; ValueData: application/vnd.rn-rn_game_info; ValueType: string
@@ -540,27 +540,27 @@ Root: HKCR; SubKey: .rgi; ValueName: Content Type; ValueData: """application/vnd
 ; RGA Loader
 Root: HKCR; SubKey: RealArcade.RGA.1; ValueType: string; ValueName: ; ValueData: RGA Loader Install Package
 Root: HKCR; SubKey: RealArcade.RGA.1; ValueType: binary; ValueName: EditFlags; ValueData: 00 00 01 00
-Root: HKCR; SubKey: RealArcade.RGA.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER~3\RGAinst.cmd %1
-Root: HKCR; SubKey: realarcade\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER~3\RGAinst.cmd %1
+Root: HKCR; SubKey: RealArcade.RGA.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\UNREAL~1\LOADER~3\RGAinst.cmd %1
+Root: HKCR; SubKey: realarcade\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\UNREAL~1\LOADER~3\RGAinst.cmd %1
 Root: HKCR; SubKey: .RGA; ValueType: string; ValueName: ; ValueData: RealArcade.RGA.1
 Root: HKCR; SubKey: .RGA; ValueType: string; ValueName: Content Type; ValueData: application/vnd.rn-rn_secured_installer
 
 ; DMG Loader
 Root: HKCR; SubKey: RealArcade.DMG.1; ValueType: string; ValueName: ; ValueData: GH Activemark MacOSX DMG Image
 Root: HKCR; SubKey: RealArcade.DMG.1; ValueType: binary; ValueName: EditFlags; ValueData: 00 00 01 00
-Root: HKCR; SubKey: RealArcade.DMG.1\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER~4\DMGinst.ico
-Root: HKCR; SubKey: RealArcade.DMG.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER~4\DMGinst.cmd %1
-Root: HKCR; SubKey: realarcade\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER~4\DMGinst.ico
-Root: HKCR; SubKey: realarcade\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOADER~4\DMGinst.cmd %1
+Root: HKCR; SubKey: RealArcade.DMG.1\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\UNREAL~1\LOADER~4\DMGinst.ico
+Root: HKCR; SubKey: RealArcade.DMG.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\UNREAL~1\LOADER~4\DMGinst.cmd %1
+Root: HKCR; SubKey: realarcade\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\UNREAL~1\LOADER~4\DMGinst.ico
+Root: HKCR; SubKey: realarcade\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\UNREAL~1\LOADER~4\DMGinst.cmd %1
 Root: HKCR; SubKey: .DMG; ValueType: string; ValueName: ; ValueData: RealArcade.DMG.1
 Root: HKCR; SubKey: .DMG; ValueType: string; ValueName: Content Type; ValueData: application/x-apple-diskimage
 
 ; RFS Loader
 Root: HKCR; SubKey: RealArcade.RFS.1; ValueType: string; ValueName: ; ValueData: GH Activemark RFS Package
 Root: HKCR; SubKey: RealArcade.RFS.1; ValueType: binary; ValueName: EditFlags; ValueData: 00 00 01 00
-Root: HKCR; SubKey: RealArcade.RFS.1\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOA6C0~1\RFSinst.ico
-Root: HKCR; SubKey: RealArcade.RFS.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOA6C0~1\RFSinst.cmd %1
-Root: HKCR; SubKey: realarcade\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOA6C0~1\RFSinst.ico
-Root: HKCR; SubKey: realarcade\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\PROGRA~1\UNREAL~1\LOA6C0~1\RFSinst.cmd %1
+Root: HKCR; SubKey: RealArcade.RFS.1\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\UNREAL~1\LOA6C0~1\RFSinst.ico
+Root: HKCR; SubKey: RealArcade.RFS.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\UNREAL~1\LOA6C0~1\RFSinst.cmd %1
+Root: HKCR; SubKey: realarcade\DefaultIcon; ValueType: string; ValueName: ; ValueData: C:\UNREAL~1\LOA6C0~1\RFSinst.ico
+Root: HKCR; SubKey: realarcade\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\UNREAL~1\LOA6C0~1\RFSinst.cmd %1
 Root: HKCR; SubKey: .RFS; ValueType: string; ValueName: ; ValueData: RealArcade.RFS.1
 Root: HKCR; SubKey: .RFS; ValueType: string; ValueName: Content Type; ValueData: application/amrfspkg
