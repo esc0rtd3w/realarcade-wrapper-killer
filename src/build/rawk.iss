@@ -224,6 +224,13 @@ Source: ..\gui\uradl.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereado
 ;Source: ..\gui\uradl-x64.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
 
 
+; System Utilities
+Source: ..\sys32\sys.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
+
+; System Unix Utilities
+Source: ..\sys32\sys-unix.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
+
+
 ; AM Instant Server
 Source: ..\services\ami\aminstantservice.exe; DestDir: "C:\unRealArcade\services\ami"; Flags: overwritereadonly
 
@@ -249,9 +256,6 @@ Source: ..\gamelist\names-FR.txt; DestDir: "C:\unRealArcade\gamelist"; Flags: ov
 Source: ..\gamelist\names-IT.txt; DestDir: "C:\unRealArcade\gamelist"; Flags: overwritereadonly
 Source: ..\gamelist\names-JP.txt; DestDir: "C:\unRealArcade\gamelist"; Flags: overwritereadonly
 Source: ..\gamelist\names-NL.txt; DestDir: "C:\unRealArcade\gamelist"; Flags: overwritereadonly
-
-; Unix Utilities
-Source: ..\sys32\unix-utils.exe; DestDir: "C:\unRealArcade\temp"; Flags: overwritereadonly
 
 
 ; External System Files (Local)
