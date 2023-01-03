@@ -27,43 +27,43 @@ set check_rgsfull=0
 
 :: Old v1.0 RGS Loader
 ::%rgsloader%
-"C:\Program Files\unRealArcade\temp\loaderRGSv1.exe"
-::regedit /s "C:\Program Files\unRealArcade\loaderRGSv1\setRGS.reg"
+"C:\unRealArcade\temp\loaderRGSv1.exe"
+::regedit /s "C:\unRealArcade\loaderRGSv1\setRGS.reg"
 
 :: New v2.0 RGS Loader
 ::%rgsloader2%
-"C:\Program Files\unRealArcade\temp\loaderRGSv2.exe"
-regedit /s "C:\Program Files\unRealArcade\loaders\loaderRGSv2\setRGS.reg"
+"C:\unRealArcade\temp\loaderRGSv2.exe"
+regedit /s "C:\unRealArcade\loaders\loaderRGSv2\setRGS.reg"
 
 :: New RGA Loader
 ::%rgsloader3%
-"C:\Program Files\unRealArcade\temp\loaderRGA.exe"
-regedit /s "C:\Program Files\unRealArcade\loaders\loaderRGA\setRGA.reg"
+"C:\unRealArcade\temp\loaderRGA.exe"
+regedit /s "C:\unRealArcade\loaders\loaderRGA\setRGA.reg"
 
 :: New DMG Loader
 ::%rgsloader4%
-"C:\Program Files\unRealArcade\temp\loaderDMG.exe"
-regedit /s "C:\Program Files\unRealArcade\loaders\loaderDMG\setDMG.reg"
+"C:\unRealArcade\temp\loaderDMG.exe"
+regedit /s "C:\unRealArcade\loaders\loaderDMG\setDMG.reg"
 
 :: New RFS Loader
 ::%rgsloader5%
-"C:\Program Files\unRealArcade\temp\loaderRFS.exe"
-regedit /s "C:\Program Files\unRealArcade\loaders\loaderRFS\setRFS.reg"
+"C:\unRealArcade\temp\loaderRFS.exe"
+regedit /s "C:\unRealArcade\loaders\loaderRFS\setRFS.reg"
 
 :: New AMI Loader (activeMARK Instant Server)
 ::%rgsloader6%
-"C:\Program Files\unRealArcade\temp\loaderAMI.exe"
-regedit /s "C:\Program Files\unRealArcade\loaders\loaderAMI\setAMI.reg"
+"C:\unRealArcade\temp\loaderAMI.exe"
+regedit /s "C:\unRealArcade\loaders\loaderAMI\setAMI.reg"
 
 ::-----------------------------------------------------------------------------------
 :: Using ORIGINAL RealArcade Uninstaller (added 20110221)
 ::--------------------------------------------------------
 
 :: Unix Utilities
-"C:\Program Files\unRealArcade\temp\unix-utils.exe"
+"C:\unRealArcade\temp\sys-unix.exe"
 
 :: RealArcade Uninstaller (SFX Loader)
-"C:\Program Files\unRealArcade\temp\rnuninst.exe"
+"C:\unRealArcade\temp\rnuninst.exe"
 
 
 :: RA uninstall set to "0" before restart0 
@@ -219,7 +219,7 @@ if exist "C:\Program Files\Real\RealArcade\RNArcade.exe" (
 cls
 %kill% "RNArcade.exe"
 cls
-"C:\Program Files\unRealArcade\temp\rnamod.exe"
+"C:\unRealArcade\temp\rnamod.exe"
 cls
 )
 
@@ -227,7 +227,7 @@ if exist "%ProgramFiles(x86)%\Real\RealArcade\RNArcade.exe" (
 cls
 %kill% "RNArcade.exe"
 cls
-"C:\Program Files\unRealArcade\temp\rnamod-x64.exe"
+"C:\unRealArcade\temp\rnamod-x64.exe"
 cls
 )
 
