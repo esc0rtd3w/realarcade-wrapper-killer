@@ -17,7 +17,7 @@ echo.
 cls
 echo Spoofing RealArcade Player....
 echo.
-start "" /d "C:\Program Files\unRealArcade\temp" "rnaspoof.exe"
+start "" /d "C:\unRealArcade\temp" "rnaspoof.exe"
 
 
 cls

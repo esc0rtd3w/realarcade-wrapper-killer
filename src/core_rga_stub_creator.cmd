@@ -211,8 +211,8 @@ wget -O "rgaQuery.json" "%urlBase%%bytesChar%%urlTail%"
 
 del /f /q "%queryNew%"
 
-if not exist "C:\Program Files\unRealArcade\stubs\acid" md "C:\Program Files\unRealArcade\stubs\acid"
-copy %stub% "C:\Program Files\unRealArcade\stubs\acid"
+if not exist "C:\unRealArcade\stubs\acid" md "C:\unRealArcade\stubs\acid"
+copy %stub% "C:\unRealArcade\stubs\acid"
 del /f /q %stub%
 
 

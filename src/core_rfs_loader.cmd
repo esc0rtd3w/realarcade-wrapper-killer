@@ -10,7 +10,7 @@ if %testmode%==1 (
 ::This is the MAIN CUSTOM RFS LOADER silent installer
 ::-----------------------------------------------------------------------------------
 
-"C:\Program Files\unRealArcade\temp\loaderRFS.exe"
+"C:\unRealArcade\temp\loaderRFS.exe"
 
 ::-----------------------------------------------------------------------------------
 ::This is the MAIN CUSTOM RGS LOADER MENU

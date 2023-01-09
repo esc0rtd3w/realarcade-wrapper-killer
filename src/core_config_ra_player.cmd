@@ -91,7 +91,7 @@ set rip=1
 
 ::%rauninst%
 ::"C:\Program Files\Real\RealArcade\Update\rnuninst.exe" "RealNetworks|RealArcade|1.2"
-"C:\Program Files\unRealArcade\rnuninst\dokill.lnk"
+"C:\unRealArcade\rnuninst\dokill.lnk"
 
 
 :: Auto click through below
@@ -111,7 +111,7 @@ goto end
 
 :restoreRNA
 
-"C:\Program Files\unRealArcade\temp\rnarestore.exe"
+"C:\unRealArcade\temp\rnarestore.exe"
 
 goto end
 
@@ -119,7 +119,7 @@ goto end
 
 :modRNA
 
-"C:\Program Files\unRealArcade\temp\rnamod.exe"
+"C:\unRealArcade\temp\rnamod.exe"
 
 goto end
 
