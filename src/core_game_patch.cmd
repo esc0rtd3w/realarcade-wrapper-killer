@@ -30,16 +30,16 @@ goto end
 echo @echo off > patch01.cmd
 echo. >> patch01.cmd
 if %patch%==1 (
-inifile "patches\%unwrapped%.ini" [1] file > patch01.cmd
-inifile "patches\%unwrapped%.ini" [1] type > patch01.cmd
-inifile "patches\%unwrapped%.ini" [1] address > patch01.cmd
-inifile "patches\%unwrapped%.ini" [1] oldcmd > patch01.cmd
-inifile "patches\%unwrapped%.ini" [1] newcmd > patch01.cmd
-inifile "patches\%unwrapped%.ini" [1] oldbytes > patch01.cmd
-inifile "patches\%unwrapped%.ini" [1] newbytes > patch01.cmd
-inifile "patches\%unwrapped%.ini" [1] index > patch01.cmd
-inifile "patches\%unwrapped%.ini" [1] hex > patch01.cmd
-inifile "patches\%unwrapped%.ini" [1] comment > patch01.cmd
+%inifile% "patches\%unwrapped%.ini" [1] file > patch01.cmd
+%inifile% "patches\%unwrapped%.ini" [1] type > patch01.cmd
+%inifile% "patches\%unwrapped%.ini" [1] address > patch01.cmd
+%inifile% "patches\%unwrapped%.ini" [1] oldcmd > patch01.cmd
+%inifile% "patches\%unwrapped%.ini" [1] newcmd > patch01.cmd
+%inifile% "patches\%unwrapped%.ini" [1] oldbytes > patch01.cmd
+%inifile% "patches\%unwrapped%.ini" [1] newbytes > patch01.cmd
+%inifile% "patches\%unwrapped%.ini" [1] index > patch01.cmd
+%inifile% "patches\%unwrapped%.ini" [1] hex > patch01.cmd
+%inifile% "patches\%unwrapped%.ini" [1] comment > patch01.cmd
 )
 
 if exist "cheats\%unwrapped%.ini" goto gocheat
@@ -51,31 +51,31 @@ goto end
 echo @echo off > cheat01.cmd
 echo. >> cheat01.cmd
 if %cheats%==1 (
-inifile "cheats\%unwrapped%.ini" [1] file > cheat01.cmd
-inifile "cheats\%unwrapped%.ini" [1] type > cheat01.cmd
-inifile "cheats\%unwrapped%.ini" [1] address > cheat01.cmd
-inifile "cheats\%unwrapped%.ini" [1] oldcmd > cheat01.cmd
-inifile "cheats\%unwrapped%.ini" [1] newcmd > cheat01.cmd
-inifile "cheats\%unwrapped%.ini" [1] oldbytes > cheat01.cmd
-inifile "cheats\%unwrapped%.ini" [1] newbytes > cheat01.cmd
-inifile "cheats\%unwrapped%.ini" [1] index > cheat01.cmd
-inifile "cheats\%unwrapped%.ini" [1] hex > cheat01.cmd
-inifile "cheats\%unwrapped%.ini" [1] comment > cheat01.cmd
+%inifile% "cheats\%unwrapped%.ini" [1] file > cheat01.cmd
+%inifile% "cheats\%unwrapped%.ini" [1] type > cheat01.cmd
+%inifile% "cheats\%unwrapped%.ini" [1] address > cheat01.cmd
+%inifile% "cheats\%unwrapped%.ini" [1] oldcmd > cheat01.cmd
+%inifile% "cheats\%unwrapped%.ini" [1] newcmd > cheat01.cmd
+%inifile% "cheats\%unwrapped%.ini" [1] oldbytes > cheat01.cmd
+%inifile% "cheats\%unwrapped%.ini" [1] newbytes > cheat01.cmd
+%inifile% "cheats\%unwrapped%.ini" [1] index > cheat01.cmd
+%inifile% "cheats\%unwrapped%.ini" [1] hex > cheat01.cmd
+%inifile% "cheats\%unwrapped%.ini" [1] comment > cheat01.cmd
 )
 
 echo @echo off > cheat02.cmd
 echo. >> cheat02.cmd
 if %cheats%==1 (
-inifile "cheats\%unwrapped%.ini" [2] file > cheat02.cmd
-inifile "cheats\%unwrapped%.ini" [2] type > cheat02.cmd
-inifile "cheats\%unwrapped%.ini" [2] address > cheat02.cmd
-inifile "cheats\%unwrapped%.ini" [2] oldcmd > cheat02.cmd
-inifile "cheats\%unwrapped%.ini" [2] newcmd > cheat02.cmd
-inifile "cheats\%unwrapped%.ini" [2] oldbytes > cheat02.cmd
-inifile "cheats\%unwrapped%.ini" [2] newbytes > cheat02.cmd
-inifile "cheats\%unwrapped%.ini" [2] index > cheat02.cmd
-inifile "cheats\%unwrapped%.ini" [2] hex > cheat02.cmd
-inifile "cheats\%unwrapped%.ini" [2] comment > cheat02.cmd
+%inifile% "cheats\%unwrapped%.ini" [2] file > cheat02.cmd
+%inifile% "cheats\%unwrapped%.ini" [2] type > cheat02.cmd
+%inifile% "cheats\%unwrapped%.ini" [2] address > cheat02.cmd
+%inifile% "cheats\%unwrapped%.ini" [2] oldcmd > cheat02.cmd
+%inifile% "cheats\%unwrapped%.ini" [2] newcmd > cheat02.cmd
+%inifile% "cheats\%unwrapped%.ini" [2] oldbytes > cheat02.cmd
+%inifile% "cheats\%unwrapped%.ini" [2] newbytes > cheat02.cmd
+%inifile% "cheats\%unwrapped%.ini" [2] index > cheat02.cmd
+%inifile% "cheats\%unwrapped%.ini" [2] hex > cheat02.cmd
+%inifile% "cheats\%unwrapped%.ini" [2] comment > cheat02.cmd
 )
 
 

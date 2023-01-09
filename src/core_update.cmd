@@ -27,10 +27,10 @@ if not exist "%systemroot%\system32\wget.exe" "%rawkroot%\wget_apply.exe"
 ::-----------------------------------------------------------------------------------
 
 cls
-inifile "%rawkroot%\servers.ini" [server1] url > "tmp_servers.cmd"
-::inifile "%rawkroot%\servers.ini" [server1] filepath >> "tmp_servers.cmd"
-::inifile "%rawkroot%\servers.ini" [server2] url >> "tmp_servers.cmd"
-::inifile "%rawkroot%\servers.ini" [server2] filepath >> "tmp_servers.cmd"
+%inifile% "%rawkroot%\servers.ini" [server1] url > "tmp_servers.cmd"
+::%inifile% "%rawkroot%\servers.ini" [server1] filepath >> "tmp_servers.cmd"
+::%inifile% "%rawkroot%\servers.ini" [server2] url >> "tmp_servers.cmd"
+::%inifile% "%rawkroot%\servers.ini" [server2] filepath >> "tmp_servers.cmd"
 call "tmp_servers.cmd"
 set server1=%url%
 
@@ -57,13 +57,13 @@ set rdb_core_available=0
 goto rawkdb2
 )
 
-inifile "%rawkroot%\update\rawkdb.ini" [core] rdb_core > "rdb_core_available_ver.cmd"
+%inifile% "%rawkroot%\update\rawkdb.ini" [core] rdb_core > "rdb_core_available_ver.cmd"
 call "rdb_core_available_ver.cmd"
 set rdb_core_available=%rdb_core%
 
 :rawkdb2
 cls
-inifile "%rawkroot%\rawkdb.ini" [core] rdb_core > "rdb_core_installed_ver.cmd"
+%inifile% "%rawkroot%\rawkdb.ini" [core] rdb_core > "rdb_core_installed_ver.cmd"
 call "rdb_core_installed_ver.cmd"
 set rdb_core_installed=%rdb_core%
 
@@ -120,13 +120,13 @@ set d_core_available=0
 goto dlc2
 )
 
-inifile "%rawkroot%\update\dlc.ini" [core] d_core > "d_core_available_ver.cmd"
+%inifile% "%rawkroot%\update\dlc.ini" [core] d_core > "d_core_available_ver.cmd"
 call "d_core_available_ver.cmd"
 set d_core_available=%d_core%
 
 :dlc2
 cls
-inifile "%rawkroot%\dlc.ini" [core] d_core > "d_core_installed_ver.cmd"
+%inifile% "%rawkroot%\dlc.ini" [core] d_core > "d_core_installed_ver.cmd"
 call "d_core_installed_ver.cmd"
 set d_core_installed=%d_core%
 
@@ -183,13 +183,13 @@ set p_core_available=0
 goto patch2
 )
 
-inifile "%rawkroot%\update\patch.ini" [core] p_core > "p_core_available_ver.cmd"
+%inifile% "%rawkroot%\update\patch.ini" [core] p_core > "p_core_available_ver.cmd"
 call "p_core_available_ver.cmd"
 set p_core_available=%p_core%
 
 :patch2
 cls
-inifile "%rawkroot%\patch.ini" [core] p_core > "p_core_installed_ver.cmd"
+%inifile% "%rawkroot%\patch.ini" [core] p_core > "p_core_installed_ver.cmd"
 call "p_core_installed_ver.cmd"
 set p_core_installed=%p_core%
 
@@ -246,13 +246,13 @@ set rgsfull_core_available=0
 goto full2
 )
 
-inifile "%rawkroot%\update\rgsfull.ini" [core] rgsfull_core > "rgsfull_core_available_ver.cmd"
+%inifile% "%rawkroot%\update\rgsfull.ini" [core] rgsfull_core > "rgsfull_core_available_ver.cmd"
 call "rgsfull_core_available_ver.cmd"
 set rgsfull_core_available=%rgsfull_core%
 
 :full2
 cls
-inifile "%rawkroot%\rgsfull.ini" [core] rgsfull_core > "rgsfull_core_installed_ver.cmd"
+%inifile% "%rawkroot%\rgsfull.ini" [core] rgsfull_core > "rgsfull_core_installed_ver.cmd"
 call "rgsfull_core_installed_ver.cmd"
 set rgsfull_core_installed=%rgsfull_core%
 
@@ -309,13 +309,13 @@ set rna_core_available=0
 goto rna2
 )
 
-inifile "%rawkroot%\update\rnarcade.ini" [core] rna_core > "rna_core_available_ver.cmd"
+%inifile% "%rawkroot%\update\rnarcade.ini" [core] rna_core > "rna_core_available_ver.cmd"
 call "rna_core_available_ver.cmd"
 set rna_core_available=%rna_core%
 
 :rna2
 cls
-inifile "%rawkroot%\rnarcade.ini" [core] rna_core > "rna_core_installed_ver.cmd"
+%inifile% "%rawkroot%\rnarcade.ini" [core] rna_core > "rna_core_installed_ver.cmd"
 call "rna_core_installed_ver.cmd"
 set rna_core_installed=%rna_core%
 
@@ -372,13 +372,13 @@ set s_core_available=0
 goto servers2
 )
 
-inifile "%rawkroot%\update\servers.ini" [core] s_core > "s_core_available_ver.cmd"
+%inifile% "%rawkroot%\update\servers.ini" [core] s_core > "s_core_available_ver.cmd"
 call "s_core_available_ver.cmd"
 set s_core_available=%s_core%
 
 :servers2
 cls
-inifile "%rawkroot%\servers.ini" [core] s_core > "s_core_installed_ver.cmd"
+%inifile% "%rawkroot%\servers.ini" [core] s_core > "s_core_installed_ver.cmd"
 call "s_core_installed_ver.cmd"
 set s_core_installed=%s_core%
 
@@ -436,13 +436,13 @@ set stub_core_available=0
 goto stub2
 )
 
-inifile "%rawkroot%\update\stub.ini" [core] stub_core > "stub_core_available_ver.cmd"
+%inifile% "%rawkroot%\update\stub.ini" [core] stub_core > "stub_core_available_ver.cmd"
 call "stub_core_available_ver.cmd"
 set stub_core_available=%stub_core%
 
 :stub2
 cls
-inifile "%rawkroot%\stub.ini" [core] stub_core > "stub_core_installed_ver.cmd"
+%inifile% "%rawkroot%\stub.ini" [core] stub_core > "stub_core_installed_ver.cmd"
 call "stub_core_installed_ver.cmd"
 set stub_core_installed=%stub_core%
 

@@ -4,7 +4,7 @@ title RealArcade Wrapper Killer    (.-+'~^-+ RGS Multi Installer +-^~`+-.)     [
 
 color 1f
 
-set PATH=C:\Program Files\unRealArcade\rawk\dump\{sys};C:\Program Files\unRealArcade\tools\unix-utils;%PATH%
+set PATH=%PATH%;"C:\unRealArcade\sys\;"C:\unRealArcade\sys\unix"
 
 set show=nircmd win activate ititle
 

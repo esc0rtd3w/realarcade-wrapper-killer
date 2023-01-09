@@ -18,7 +18,7 @@ color 0e
 :: Getting Database Core Version
 ::-----------------------------------------------------------------------------------
 
-inifile "%rawkroot%\zydb.ini" [core] zydb_core > zydbtemp.cmd
+%inifile% "%rawkroot%\zydb.ini" [core] zydb_core > zydbtemp.cmd
 call zydbtemp.cmd
 
 

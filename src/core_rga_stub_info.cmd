@@ -41,14 +41,14 @@ goto loadINI
 :loadINI
 echo @echo off > "%temp%\rawk_stub_tmp.cmd"
 echo. >> "%temp%\rawk_stub_tmp.cmd"
-inifile "%cd%\stub.ini" [StubInfo] contentid >> "%temp%\rawk_stub_tmp.cmd"
-inifile "%cd%\stub.ini" [StubInfo] OTP >> "%temp%\rawk_stub_tmp.cmd"
-inifile "%cd%\stub.ini" [StubInfo] tracking >> "%temp%\rawk_stub_tmp.cmd"
-inifile "%cd%\stub.ini" [StubInfo] affiliate >> "%temp%\rawk_stub_tmp.cmd"
-inifile "%cd%\stub.ini" [StubInfo] currency >> "%temp%\rawk_stub_tmp.cmd"
-inifile "%cd%\stub.ini" [StubInfo] price >> "%temp%\rawk_stub_tmp.cmd"
-inifile "%cd%\stub.ini" [StubInfo] timestamp >> "%temp%\rawk_stub_tmp.cmd"
-inifile "%cd%\stub.ini" [StubInfo] language >> "%temp%\rawk_stub_tmp.cmd"
+%inifile% "%cd%\stub.ini" [StubInfo] contentid >> "%temp%\rawk_stub_tmp.cmd"
+%inifile% "%cd%\stub.ini" [StubInfo] OTP >> "%temp%\rawk_stub_tmp.cmd"
+%inifile% "%cd%\stub.ini" [StubInfo] tracking >> "%temp%\rawk_stub_tmp.cmd"
+%inifile% "%cd%\stub.ini" [StubInfo] affiliate >> "%temp%\rawk_stub_tmp.cmd"
+%inifile% "%cd%\stub.ini" [StubInfo] currency >> "%temp%\rawk_stub_tmp.cmd"
+%inifile% "%cd%\stub.ini" [StubInfo] price >> "%temp%\rawk_stub_tmp.cmd"
+%inifile% "%cd%\stub.ini" [StubInfo] timestamp >> "%temp%\rawk_stub_tmp.cmd"
+%inifile% "%cd%\stub.ini" [StubInfo] language >> "%temp%\rawk_stub_tmp.cmd"
 
 goto patchEXE
 

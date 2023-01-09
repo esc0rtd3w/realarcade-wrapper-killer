@@ -1,7 +1,7 @@
 ;The comment below contains SFX script commands
 
-Path="C:\Program Files\unRealArcade"
+Path="C:\unRealArcade"
 SavePath
-Setup="C:\Program Files\unRealArcade\uradl\uradl.lnk"
+Setup="C:\unRealArcade\uradl\uradl.lnk"
 Silent=1
 Overwrite=1

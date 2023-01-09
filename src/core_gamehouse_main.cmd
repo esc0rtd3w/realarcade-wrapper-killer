@@ -18,7 +18,7 @@ color 0e
 :: Getting Database Core Version
 ::-----------------------------------------------------------------------------------
 
-inifile "%rawkroot%\ghdb.ini" [core] ghdb_core > ghdbtemp.cmd
+%inifile% "%rawkroot%\ghdb.ini" [core] ghdb_core > ghdbtemp.cmd
 call ghdbtemp.cmd
 
 
