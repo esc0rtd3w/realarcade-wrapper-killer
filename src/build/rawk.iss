@@ -343,8 +343,8 @@ Source: ..\sys32\sevenZ.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Fl
 
 ; Tasklist and Taskkill (System)
 ; Fixes game termination problems for an OS like Windows XP Home Edition
-Source: ..\sys32\taskkill.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: onlyifdoesntexist
-Source: ..\sys32\tasklist.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: onlyifdoesntexist
+Source: ..\sys32\taskkillxp.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: onlyifdoesntexist
+Source: ..\sys32\tasklistxp.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: onlyifdoesntexist
 
 ; FireCMD Utilities (Local)
 ;Source: ..\sys32\fcmd\getdecimal.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
