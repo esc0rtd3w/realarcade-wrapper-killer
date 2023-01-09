@@ -177,46 +177,82 @@ set sysUserMusic=%windir%\system32\config\systemprofile\Music
 set sysUserPictures=%windir%\system32\config\systemprofile\Pictures
 set sysUserVideos=%windir%\system32\config\systemprofile\Videos
 
+:: unRealArcade Paths
+set uraRoot=C:\unRealArcade
+set uraToolsRoot=C:\unRealArcade\tools
+set uraServicesRoot=C:\unRealArcade\services
+set uraStubRoot=C:\unRealArcade\stubs
+set uraTempRoot=C:\unRealArcade\temp
+set rawkRoot=C:\unRealArcade\rawk
+set uraSysRoot=C:\unRealArcade\sys
+set uraSysRootUnix=C:\unRealArcade\sys\unix
 
-set uraRoot=C:\Program Files\unRealArcade
-set uraToolsRoot=C:\Program Files\unRealArcade\tools
-set uraServicesRoot=C:\Program Files\unRealArcade\services
-set uraStubRoot=C:\Program Files\unRealArcade\stubs
-set uraTempRoot=C:\Program Files\unRealArcade\temp
-set rawkRoot=C:\Program Files\unRealArcade\rawk
+:: URA System Paths
+set choicexp="%uraSysRoot%\choicexp.exe"
+set color="%uraSysRoot%\color.exe"
+set cocolor="%uraSysRoot%\cocolor.exe"
+set ctext="%uraSysRoot%\ctext.exe"
+set filver32="%uraSysRoot%\filver32.exe"
+set wait="%uraSysRoot%\wait.exe"
+set gpatch="%uraSysRoot%\gpatch.exe"
+set bspatch="%uraSysRoot%\bspatch.exe"
+set fsum="%uraSysRoot%\fsum.exe"
+set inifile="%uraSysRoot%\inifile.exe"
+set nircmd="%uraSysRoot%\nircmd.exe"
+set rar="%uraSysRoot%\rar.exe"
+set xtimer="%uraSysRoot%\xtimer.exe"
+set subfile="%uraSysRoot%\subfile.exe"
+set inject="%uraSysRoot%\inject.exe"
+set nop="%uraSysRoot%\nop.exe"
+set now="%uraSysRoot%\now.exe"
+set dummy="%uraSysRoot%\dummy.exe"
+set setlevel="%uraSysRoot%\setlevel.exe"
+set gcfextr="%uraSysRoot%\gcfextr.exe"
+set sfk="%uraSysRoot%\sfk.exe"
+set qgrep="%uraSysRoot%\qgrep.exe"
+::set tail="%uraSysRoot%\tail.exe"
+set Unlocker="%uraSysRoot%\Unlocker.exe"
+set wun="%uraSysRoot%\wun.exe"
+set innounp="%uraSysRoot%\innounp.exe"
+set wget="%uraSysRoot%\wget.exe"
+set luac="%uraSysRoot%\lua\luac.exe"
+set luadec="%uraSysRoot%\lua\luadec.exe"
+set uniq="%uraSysRoot%\uniq.exe"
+set hidecon="%uraSysRoot%\hidecon.exe"
+set hideexec="%uraSysRoot%\hideexec.exe"
+set quiet="%uraSysRoot%\quiet.exe"
+set sevenZ="%uraSysRoot%\sevenZ.exe"
 
-:: Unix Utilities
-set unix=C:\Program Files\unRealArcade\tools\unix-utils
-
-set agrep="%unix%\agrep.exe"
-set bunzip2="%unix%\bunzip2.exe"
-set bzip2="%unix%\bzip2.exe"
-set bzip2recover="%unix%\bzip2recover.exe"
-set cat="%unix%\cat.exe"
-set cmp="%unix%\cmp.exe"
-set dd="%unix%\dd.exe"
-set diff="%unix%\diff.exe"
-set diff3="%unix%\diff3.exe"
-set du="%unix%\du.exe"
-set egrep="%unix%\egrep.exe"
-set env="%unix%\env.exe"
-set fgrep="%unix%\fgrep.exe"
-set gawk="%unix%\gawk.exe"
-set grep="%unix%\grep.exe"
-set gunzip="%unix%\gunzip.exe"
-set gzip="%unix%\gzip.exe"
-set head="%unix%\head.exe"
-set ls="%unix%\ls.exe"
-set printenv="%unix%\printenv.exe"
-set mkdir="%unix%\mkdir.exe"
-set sdiff="%unix%\sdiff.exe"
-set sed="%unix%\sed.exe"
-set tail="%unix%\tail.exe"
-::set unrar="%unix%\unrar.exe"
-set uudecode="%unix%\uudecode.exe"
-set uuencode="%unix%\uuencode.exe"
-set zcat="%unix%\zcat.exe"
-::set zip="%unix%\zip.exe"
+:: URA Unix Utilities
+set agrep="%uraSysRootUnix%\agrep.exe"
+set bunzip2="%uraSysRootUnix%\bunzip2.exe"
+set bzip2="%uraSysRootUnix%\bzip2.exe"
+set bzip2recover="%uraSysRootUnix%\bzip2recover.exe"
+set cat="%uraSysRootUnix%\cat.exe"
+set cmp="%uraSysRootUnix%\cmp.exe"
+set dd="%uraSysRootUnix%\dd.exe"
+set diff="%uraSysRootUnix%\diff.exe"
+set diff3="%uraSysRootUnix%\diff3.exe"
+set du="%uraSysRootUnix%\du.exe"
+set egrep="%uraSysRootUnix%\egrep.exe"
+set env="%uraSysRootUnix%\env.exe"
+set fgrep="%uraSysRootUnix%\fgrep.exe"
+set gawk="%uraSysRootUnix%\gawk.exe"
+set grep="%uraSysRootUnix%\grep.exe"
+set gunzip="%uraSysRootUnix%\gunzip.exe"
+set gzip="%uraSysRootUnix%\gzip.exe"
+set head="%uraSysRootUnix%\head.exe"
+set ls="%uraSysRootUnix%\ls.exe"
+set printenv="%uraSysRootUnix%\printenv.exe"
+set mkdir="%uraSysRootUnix%\mkdir.exe"
+set sdiff="%uraSysRootUnix%\sdiff.exe"
+set sed="%uraSysRootUnix%\sed.exe"
+set tail="%uraSysRootUnix%\tail.exe"
+::set unrar="%uraSysRootUnix%\unrar.exe"
+set uudecode="%uraSysRootUnix%\uudecode.exe"
+set uuencode="%uraSysRootUnix%\uuencode.exe"
+set zcat="%uraSysRootUnix%\zcat.exe"
+::set zip="%uraSysRootUnix%\zip.exe"
 
 
 
@@ -301,7 +337,7 @@ set amInstantPath=%pd%\activeMARK\instant
 set amInstantAppPath=%pd%\activeMARK\instant\apps
 
 :: AMI Game List Local
-set amiGameList="C:\Program Files\unRealArcade\gamelist\am-instant.txt"
+set amiGameList="C:\unRealArcade\gamelist\am-instant.txt"
 
 :: AMI Log Local
 set amInstantLog="%amInstantPath%\aminstant.log"
@@ -416,7 +452,7 @@ set serviceDescription=Enhances gaming experience from the web browsers
 set serviceStartupType=demand
 set errorType=ignore
 
-set servicePathLocal=%SystemDrive%\Program Files\unRealArcade\services\ami
+set servicePathLocal=%SystemDrive%\unRealArcade\services\ami
 set servicePathEmbedded=%loaderPathBin%
 set servicePathRemote=0
 
