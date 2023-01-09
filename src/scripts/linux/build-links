@@ -129,15 +129,15 @@ dumpWebToJSON(){
 	case "$1" in
 
 		"all")
-		wget --quiet --header="Cookie: gamehouseuser=true" -O "$jsonAll" "http://www.gamehouse.com/games.json?gametype=null&genre=all&sorting=name&count=4000&filterType=null"
+		wget --quiet --header="Cookie: gamehouseuser=true" -O "$jsonAll" "http://www.gamehouse.com/games.json?gametype=null&genre=all&sorting=name&count=10000&filterType=null"
 		;;
 
 		"online")
-		wget --quiet --header="Cookie: gamehouseuser=true" -O "$jsonOnline" "http://www.gamehouse.com/games.json?gametype=online&genre=all&sorting=name&count=4000&filterType=null"
+		wget --quiet --header="Cookie: gamehouseuser=true" -O "$jsonOnline" "http://www.gamehouse.com/games.json?gametype=online&genre=all&sorting=name&count=10000&filterType=null"
 		;;
 
 		"windows")
-		wget --quiet --header="Cookie: gamehouseuser=true"  -O "$jsonWindows" "http://www.gamehouse.com/games.json?gametype=download&genre=all&sorting=name&count=4000&filterType=null"
+		wget --quiet --header="Cookie: gamehouseuser=true"  -O "$jsonWindows" "http://www.gamehouse.com/games.json?gametype=download&genre=all&sorting=name&count=10000&filterType=null"
 		;;
 
 
