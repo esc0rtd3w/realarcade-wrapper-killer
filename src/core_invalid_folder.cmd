@@ -29,12 +29,12 @@ set invalidFolder=1
 :: Dump current environment out to text
 set>"%temp%\rawkEnvTemp.cmd"
 
-cocolor 0c
+%cocolor% 0c
 echo Game Loaded: Not Available!
 echo.
 echo.
 echo.
-cocolor 0e
+%cocolor% 0e
 echo -----------------------------------------
 echo YOU HAVE SELECTED THE "MY GAMES" FOLDER!
 echo -----------------------------------------

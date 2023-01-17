@@ -13,45 +13,45 @@ if %testmode%==1 (
 
 
 cls
-cocolor 0e
+%cocolor% 0e
 echo -------------------------------------------------------
 echo Press one of the keys to select a new option
 echo.
-cocolor 0c
+%cocolor% 0c
 echo * Not currently active
-cocolor 0e
+%cocolor% 0e
 echo -------------------------------------------------------
 echo.
-cocolor 0e
+%cocolor% 0e
 echo Press (Z) to Configure the RealArcade Player Software
-cocolor 0e
+%cocolor% 0e
 echo.
-cocolor 0e
+%cocolor% 0e
 echo Press (D) to manually set Demo Type
-cocolor 0e
+%cocolor% 0e
 echo.
-cocolor 0c
+%cocolor% 0c
 echo Press (G) to manually set GUID for current game*
-cocolor 0e
+%cocolor% 0e
 echo.
-cocolor 0c
+%cocolor% 0c
 echo Press (I) to use options in Custom INI File*
-cocolor 0e
+%cocolor% 0e
 echo.
-cocolor 0c
+%cocolor% 0c
 echo Press (M) to set Custom Mods for current game*
-cocolor 0e
+%cocolor% 0e
 echo.
-cocolor 0c
+%cocolor% 0c
 echo Press (C) to set Custom Cheats for current game*
-cocolor 0e
+%cocolor% 0e
 echo.
-cocolor 0c
+%cocolor% 0c
 echo Press (P) to set Custom Patches for current game*
-cocolor 0e
+%cocolor% 0e
 echo.
 echo.
-cocolor 0e
+%cocolor% 0e
 if %invalidFolder%==0 echo Press (X) to Exit this menu and continue unpacking
 if %invalidFolder%==1 echo Press (X) to Exit this menu
 echo.

@@ -277,7 +277,7 @@ set devmode=1
 :: Getting Database Core Version
 ::-----------------------------------------------------------------------------------
 
-inifile "%rawkroot%\rawkdb.ini" [core] rdb_core > dbtemp.cmd
+%inifile% "%rawkroot%\rawkdb.ini" [core] rdb_core > dbtemp.cmd
 call dbtemp.cmd
 
 ::-----------------------------------------------------------------------------------
@@ -288,7 +288,8 @@ call dbtemp.cmd
 ::-----------------------------------------------------------------------------------
 :: Cleaning unused or already used temp batch files
 ::-----------------------------------------------------------------------------------
-
+set
+pause
 call "core_clean_pre.cmd"
 
 
@@ -572,7 +573,7 @@ for %%* in (*.rar) do set wrapped2=%%~n*
 ::-----------------------------------------------------------------------------------
 
 cls
-inifile "%rawkroot%\rawkdb.ini" [%wrapped2%] unwrapped > unwrapcheck.cmd
+%inifile% "%rawkroot%\rawkdb.ini" [%wrapped2%] unwrapped > unwrapcheck.cmd
 call "unwrapcheck.cmd"
 if exist "%unwrapped%.exe" call "core_game_unpacked_ok.cmd"
 
