@@ -4,8 +4,7 @@ title RealArcade Wrapper Killer    (.-+'~^-+ RGS Loader v2.1.4 +-^~`+-.)     [..
 
 color 1f
 
-:: Set System Paths
-set PATH=%PATH%;"C:\unRealArcade\sys\;"C:\unRealArcade\sys\unix"
+set debug=0
 
 :: Check Architecture
 set bits=32
@@ -108,13 +107,13 @@ set sysUserVideos=%windir%\system32\config\systemprofile\Videos
 
 :: unRealArcade Paths
 set uraRoot=C:\unRealArcade
-set uraToolsRoot=C:\unRealArcade\tools
-set uraServicesRoot=C:\unRealArcade\services
-set uraStubRoot=C:\unRealArcade\stubs
-set uraTempRoot=C:\unRealArcade\temp
-set rawkRoot=C:\unRealArcade\rawk
-set uraSysRoot=C:\unRealArcade\sys
-set uraSysRootUnix=C:\unRealArcade\sys\unix
+set uraToolsRoot=%uraRoot%\tools
+set uraServicesRoot=%uraRoot%\services
+set uraStubRoot=%uraRoot%\stubs
+set uraTempRoot=%uraRoot%\temp
+set rawkRoot=%uraRoot%\rawk
+set uraSysRoot=%uraRoot%\sys
+set uraSysRootUnix=%uraRoot%\sys\unix
 
 :: URA System Paths
 set choicexp="%uraSysRoot%\choicexp.exe"
@@ -185,27 +184,30 @@ set uuencode="%uraSysRootUnix%\uuencode.exe"
 set zcat="%uraSysRootUnix%\zcat.exe"
 ::set zip="%uraSysRootUnix%\zip.exe"
 
+:: Set System Paths
+set PATH=%PATH%;"%uraSysRoot%;"%uraSysRootUnix%"
+
 
 ::-----------------------------------------------------------------------------------
 :: Color Control Crap
 ::-----------------------------------------------------------------------------------
 
-set black=cocolor 00
-set blue=cocolor 01
-set green=cocolor 02
-set aqua=cocolor 03
-set red=cocolor 04
-set purple=cocolor 05
-set yellow=cocolor 06
-set white=cocolor 07
-set gray=cocolor 08
-set lblue=cocolor 09
-set lgreen=cocolor 0A
-set laqua=cocolor 0B
-set lred=cocolor 0C
-set lpurple=cocolor 0D
-set lyellow=cocolor 0E
-set lwhite=cocolor 0F
+set black=%cocolor% 00
+set blue=%cocolor% 01
+set green=%cocolor% 02
+set aqua=%cocolor% 03
+set red=%cocolor% 04
+set purple=%cocolor% 05
+set yellow=%cocolor% 06
+set white=%cocolor% 07
+set gray=%cocolor% 08
+set lblue=%cocolor% 09
+set lgreen=%cocolor% 0A
+set laqua=%cocolor% 0B
+set lred=%cocolor% 0C
+set lpurple=%cocolor% 0D
+set lyellow=%cocolor% 0E
+set lwhite=%cocolor% 0F
 
 
 :: External CMD Options
@@ -305,9 +307,16 @@ set log="%root%\loaderRGSv2.log"
 
 set multirgs=0
 
+:: This flag is for the extracted game name
+set GameNameFail=0
+
+:: Check Debug File
+if exist "%root%\debug.on" set debug=1
+
 
 :start
 echo [INFO] loaderRGSv2 start>>%log%
+echo [INFO] DEBUG MODE %debug%>>%log%
 ::time>>%log%
 ::-----------------------------------------------------------------------------------
 :: Check for a multi RGS installation (added 20131026)
@@ -317,7 +326,14 @@ if exist "%temp%\ura_multi_install.tmp" set multirgs=1
 
 ::echo %multirgs%
 ::pause
-
+ 
+if %debug%==1 (
+echo Dump RAWK Environment Variables
+echo.
+set
+echo.
+pause
+)
 
 ::-----------------------------------------------------------------------------------
 :: Delete old "_tmp" folder
@@ -427,7 +443,7 @@ echo.
 echo.
 echo.
 echo.
-cocolor 1e
+%cocolor% 1e
 echo If a blank empty dialog box pops up, you can hit OK to close it.
 echo.
 echo This is a known problem for certain games in specific scenarios.
@@ -445,7 +461,7 @@ echo [INFO] Launching Game Installer START>>%log%
 "%root%\RGSInst.exe"
 echo [INFO] Closing Game Installer COMPLETE>>%log%
 
-cocolor 1f
+%cocolor% 1f
 
 goto chkxerr
 
@@ -621,8 +637,9 @@ if exist "%root%\_tmp\Engine\lithtech.exe" set GameName=Tex Atomic's Big Bot Bat
 if exist "%root%\_tmp\wobblybobbly_r1a.exe" set GameName=Wobbly Bobbly
 
 echo [INFO] Setting GameName for games that have issues getting correct value COMPLETE>>%log%
-echo [INFO] Extracted Game Name: "%GameName%">>%log%
 
+echo [INFO] Extracted Game Name: "%GameName%">>%log%
+if "%GameName%"=="" set GameNameFail=1&&goto errName
 
 echo [INFO] RGS Unpack START>>%log%
 :: Launch Wrapper Killer if successful extraction (added 20131019)
@@ -685,6 +702,27 @@ if %unpacked%==0 (
 	echo Source: "%root%\_tmp"
 	echo.
 	echo No "_tmp" folder detected.
+	echo.
+	pause
+	goto end
+
+)
+goto end
+
+:errName
+if %GameNameFail%==1 (
+	echo [ERROR] Extracted Game Name Is BLANK>>%log%
+	color 4f
+	cls
+	echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
+	echo.
+	echo.
+	echo The game name extraction FAILED!
+	echo.
+	echo.
+	echo Source: "C:\My Games\[GameName]"
+	echo.
+	echo Extracted Game Name Is BLANK.
 	echo.
 	pause
 	goto end
