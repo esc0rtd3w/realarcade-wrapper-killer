@@ -522,18 +522,22 @@ Name: {commonappdata}\92-75-56-55-p5-r9
 ;Root: HKCR; SubKey: RealArcade.rgs.1\shell\open\command; ValueType: string; ValueName: ; ValueData: C:\UNREAL~1\LOADER~4\RGSinst.exe /m application/vnd.rn-rn_secured_installer %1
 
 ; RGS Loader v2.0
+; .rgs
 Root: HKCR; SubKey: RealArcade.rgs.1; ValueName: @; ValueData: """RGS Loader Install Package"""; ValueType: string
 Root: HKCR; SubKey: RealArcade.rgs.1; ValueName: EditFlags; ValueData: 00 00 01 00; ValueType: binary
 Root: HKCR; SubKey: RealArcade.rgs.1\DefaultIcon; ValueName: @; ValueData: C:\\UNREAL~1\\LOADER~2\\RGSinst.exe,0; ValueType: string
 Root: HKCR; SubKey: RealArcade.rgs.1\shell\open\command; ValueName: @; ValueData: """C:\\UNREAL~1\\LOADER~2\\RGSinst.cmd %1"""; ValueType: string
 Root: HKCR; SubKey: realarcade\DefaultIcon; ValueName: @; ValueData: C:\\UNREAL~1\\LOADER~2\\RGSinst.exe,0; ValueType: string
 Root: HKCR; SubKey: realarcade\shell\open\command; ValueName: @; ValueData: """C:\\UNREAL~1\\LOADER~2\\RGSinst.cmd %1"""; ValueType: string
+;Root: HKCR; SubKey: .rgs; ValueName: @; ValueData: """RealArcade.rgs.1"""; ValueType: string
 Root: HKCR; SubKey: .rgs; ValueName: Content Type; ValueData: application/vnd.rn-rn_secured_installer; ValueType: string
-Root: HKCR; SubKey: .rgs; ValueName: Content Type; ValueData: application/vnd.rn-rn_secured_installer; ValueType: string
+
+; .mez
+Root: HKCR; SubKey: .mez; ValueName: @; ValueData: """RealArcade.mez.1"""; ValueType: string
 Root: HKCR; SubKey: .mez; ValueName: Content Type; ValueData: application/vnd.rn-rn_game_info; ValueType: string
-Root: HKCR; SubKey: .mez; ValueName: Content Type; ValueData: application/vnd.rn-rn_game_info; ValueType: string
-Root: HKCR; SubKey: .rgp; ValueName: Content Type; ValueData: application/vnd.rn-rn_game_package; ValueType: string
-Root: HKCR; SubKey: .rgp; ValueName: Content Type; ValueData: application/vnd.rn-rn_game_package; ValueType: string
+
+; .rgp
+Root: HKCR; SubKey: .rgp; ValueName: @; ValueData: """RealArcade.rgp.1"""; ValueType: string
 Root: HKCR; SubKey: .rgp; ValueName: Content Type; ValueData: application/vnd.rn-rn_game_package; ValueType: string
 
 ; NEW RGI Entry added to fix empty error dialog box upon initial run
