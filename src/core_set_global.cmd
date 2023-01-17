@@ -149,23 +149,6 @@ set sysUserMusic=%windir%\system32\config\systemprofile\Music
 set sysUserPictures=%windir%\system32\config\systemprofile\Pictures
 set sysUserVideos=%windir%\system32\config\systemprofile\Videos
 
-
-::-----------------------------------------------------------------------------------
-::RA Player Folder
-::-----------------------------------------------------------------------------------
-
-set raroot=C:\Program Files\Real\RealArcade
-set catroot=C:\Program Files\Real\RealArcade\catalog
-set dbroot=C:\Program Files\Real\RealArcade\db
-set htmlroot=C:\Program Files\Real\RealArcade\Html
-set rashort=C:\Program Files\Real\RealArcade\rawk_unwrapped
-set raexec="C:\Program Files\Real\RealArcade\RNArcade.exe"
-set raexec2=RNArcade.exe
-::set rauninst="C:\Program Files\Real\RealArcade\Update\rnuninst.exe" "RealNetworks|RealArcade|1.2"
-::set rauninst="C:\unRealArcade\rnuninst\rnuninst.exe" "RealNetworks|RealArcade|1.2"
-set rauninst="C:\unRealArcade\rnuninst\dokill.lnk"
-set rasetup="C:\Program Files\Real\RealArcade\Setup\setup_rac.exe"
-
 ::-----------------------------------------------------------------------------------
 ::Catalog Specific 
 ::-----------------------------------------------------------------------------------
@@ -199,13 +182,13 @@ set rgsroot=http://games-dl2.real.com/gameconsole/games/demorgses
 
 :: unRealArcade Paths
 set uraRoot=C:\unRealArcade
-set uraToolsRoot=C:\unRealArcade\tools
-set uraServicesRoot=C:\unRealArcade\services
-set uraStubRoot=C:\unRealArcade\stubs
-set uraTempRoot=C:\unRealArcade\temp
-set rawkRoot=C:\unRealArcade\rawk
-set uraSysRoot=C:\unRealArcade\sys
-set uraSysRootUnix=C:\unRealArcade\sys\unix
+set uraToolsRoot=%uraRoot%\tools
+set uraServicesRoot=%uraRoot%\services
+set uraStubRoot=%uraRoot%\stubs
+set uraTempRoot=%uraRoot%\temp
+set rawkRoot=%uraRoot%\rawk
+set uraSysRoot=%uraRoot%\sys
+set uraSysRootUnix=%uraRoot%\sys\unix
 
 :: URA System Paths
 set choicexp="%uraSysRoot%\choicexp.exe"
@@ -276,6 +259,9 @@ set uuencode="%uraSysRootUnix%\uuencode.exe"
 set zcat="%uraSysRootUnix%\zcat.exe"
 ::set zip="%uraSysRootUnix%\zip.exe"
 
+:: Set System Paths
+set PATH=%PATH%;"%uraSysRoot%;"%uraSysRootUnix%"
+
 
 ::-----------------------------------------------------------------------------------
 ::Portable RGS Loader Specific
@@ -290,8 +276,25 @@ set rgsloader3="%uraRoot%\temp\loaderRGA.exe"
 set rgsloader4="%uraRoot%\temp\loaderDMG.exe"
 set rgsloader5="%uraRoot%\temp\loaderRFS.exe"
 set rnaspoof="%uraRoot%\temp\rnaspoof.exe"
-::set rnaspoof=start "" /d "C:\unRealArcade\temp" "rnaspoof.exe"
+::set rnaspoof=start "" /d "%uraRoot%\temp" "rnaspoof.exe"
 set rnamod="%uraRoot%\temp\rnamod.exe"
+
+
+::-----------------------------------------------------------------------------------
+::RA Player Folder
+::-----------------------------------------------------------------------------------
+
+set raroot=C:\Program Files\Real\RealArcade
+set catroot=C:\Program Files\Real\RealArcade\catalog
+set dbroot=C:\Program Files\Real\RealArcade\db
+set htmlroot=C:\Program Files\Real\RealArcade\Html
+set rashort=C:\Program Files\Real\RealArcade\rawk_unwrapped
+set raexec="C:\Program Files\Real\RealArcade\RNArcade.exe"
+set raexec2=RNArcade.exe
+::set rauninst="C:\Program Files\Real\RealArcade\Update\rnuninst.exe" "RealNetworks|RealArcade|1.2"
+::set rauninst="%uraRoot%\rnuninst\rnuninst.exe" "RealNetworks|RealArcade|1.2"
+set rauninst="%uraRoot%\rnuninst\dokill.lnk"
+set rasetup="C:\Program Files\Real\RealArcade\Setup\setup_rac.exe"
 
 
 ::-----------------------------------------------------------------------------------
@@ -308,10 +311,10 @@ set rauninstall=0
 set launchwebdl=0
 
 :: Link to loader with autolaunch
-set webdlpath="C:\unRealArcade\temp\uradl.exe"
+set webdlpath="%uraRoot%\temp\uradl.exe"
 
 :: Link to actual web downloader exe
-set webdlpath_loader="C:\unRealArcade\uradl\uradl.exe"
+set webdlpath_loader="%uraRoot%\uradl\uradl.exe"
 
 
 ::-----------------------------------------------------------------------------------
@@ -328,22 +331,22 @@ set webdlpath_loader="C:\unRealArcade\uradl\uradl.exe"
 ::Often Used Commands
 ::-----------------------------------------------------------------------------------
 
-set show=nircmd win activate ititle
-set hide=nircmd win hide class
-set hide2=nircmd win hide ititle
+set show=%nircmd% win activate ititle
+set hide=%nircmd% win hide class
+set hide2=%nircmd% win hide ititle
 set hide3=%sys32%\hidecon.exe
 set hide4=%sys32%\hideexec.exe
 set hide5=%sys32%\quiet.exe
-set gohide=nircmd exec hide
-set gohide2=nircmd exec2 hide
-set goshow=nircmd exec show
+set gohide=%nircmd% exec hide
+set gohide2=%nircmd% exec2 hide
+set goshow=%nircmd% exec show
 set kill=taskkill /f /t /im
-set min=nircmd win min title
-set waitfor=nircmd wait
-set talk=nircmd speak text
+set min=%nircmd% win min title
+set waitfor=%nircmd% wait
+set talk=%nircmd% speak text
 set remove=del /s /q
 
-set popup=nircmd trayballoon "RealArcade Wrapper Killer"
+set popup=%nircmd% trayballoon "RealArcade Wrapper Killer"
 
 set wait=%sys32%\wait.exe
 
@@ -405,22 +408,22 @@ set advancedloadoptions=0
 :: Color Control Crap
 ::-----------------------------------------------------------------------------------
 
-set black=cocolor 00
-set blue=cocolor 01
-set green=cocolor 02
-set aqua=cocolor 03
-set red=cocolor 04
-set purple=cocolor 05
-set yellow=cocolor 06
-set white=cocolor 07
-set gray=cocolor 08
-set lblue=cocolor 09
-set lgreen=cocolor 0A
-set laqua=cocolor 0B
-set lred=cocolor 0C
-set lpurple=cocolor 0D
-set lyellow=cocolor 0E
-set lwhite=cocolor 0F
+set black=%cocolor% 00
+set blue=%cocolor% 01
+set green=%cocolor% 02
+set aqua=%cocolor% 03
+set red=%cocolor% 04
+set purple=%cocolor% 05
+set yellow=%cocolor% 06
+set white=%cocolor% 07
+set gray=%cocolor% 08
+set lblue=%cocolor% 09
+set lgreen=%cocolor% 0A
+set laqua=%cocolor% 0B
+set lred=%cocolor% 0C
+set lpurple=%cocolor% 0D
+set lyellow=%cocolor% 0E
+set lwhite=%cocolor% 0F
 
 
 ::-----------------------------------------------------------------------------------
@@ -479,11 +482,12 @@ set custom_patches=0
 :: Set local Wrapper Killer variables (added 20131019)
 ::-----------------------------------------------------------------------------------
 
-::set rawkLaunch="C:\unRealArcade\rawk.exe"
-set rawkLaunch="C:\unRealArcade\rawk.exe"
-set rawkDump="C:\unRealArcade\rawk\dump"
-set rawkLaunchCLI="C:\unRealArcade\rawk\dump\{app}\*"
-set rawkDumpSys="C:\unRealArcade\rawk\dump\{sys}"
+::set rawkLaunch="%uraRoot%\rawk.exe"
+set rawkLaunch="%uraRoot%\rawk.exe"
+set rawkDump="%uraRoot%\rawk\dump"
+set rawkLaunchCLI="%uraRoot%\rawk\dump\{app}\*"
+set rawkDumpSys="%uraRoot%\sys"
+set rawkDumpSysUnix="%uraRoot%\sys\unix"
 
 :: BEGIN OLD NON-WORKING CRAP -------------------------------------------------------------------------------------------------------
 
@@ -535,11 +539,15 @@ set /p rawkInnoLaunchPathTemp1=
 
 set rawkInnoLaunchPathTemp2=%rawkInnoLaunchPathTemp1:~15%
 
-
-echo %rawkInnoLaunchPathTemp2%
-::pause
+if %testmode%==1 (
+	echo [rawkInnoLaunchPathTemp2 : %rawkInnoLaunchPathTemp2%]
+)
 
 set rawkInnoLaunchPath="%rawkInnoLaunchPathTemp2%"
+
+if %testmode%==1 (
+	echo [rawkInnoLaunchPath : %rawkInnoLaunchPath%]
+)
 
 del /f /q "%temp%\ura_find_rawk.tmp"
 
@@ -589,8 +597,8 @@ set amInstantPath=%pd%\activeMARK\instant
 set amInstantAppPath=%pd%\activeMARK\instant\apps
 
 :: AMI Game List
-set amiGameList="C:\unRealArcade\gamelist\am-instant.txt"
-set amiGameListCID="C:\unRealArcade\gamelist\content-id.txt"
+set amiGameList="%uraRoot%\gamelist\am-instant.txt"
+set amiGameListCID="%uraRoot%\gamelist\content-id.txt"
 
 :: AMI Log
 set amInstantLog="%amInstantPath%\aminstant.log"
@@ -599,16 +607,16 @@ set amInstantLog="%amInstantPath%\aminstant.log"
 set amInstantRemotePlayer=http://games-dl.gamehouse.com/gamehouse/activemark/aminstantservice/GameHouse_GamePlayer.exe
 
 :: GH Web Scraper
-set ghWebScraper="C:\unRealArcade\tools\GHWebScraper.exe"
+set ghWebScraper="%uraRoot%\tools\GHWebScraper.exe"
 
 
 
 :: System Files Dependencies
-set sys32RawkPath="C:\unRealArcade\rawk\dump\{sys}"
+set sys32RawkPath="%uraSysRoot%"
 
 :: Unix Utilities
-set unixToolsInstall="C:\unRealArcade\temp\unix-utils.exe"
-set unixToolsPath="C:\unRealArcade\tools\unix-utils"
+set unixToolsInstall="%uraRoot%\temp\unix-utils.exe"
+set unixToolsPath="%uraSysRootUnix%"
 
 
 :end
