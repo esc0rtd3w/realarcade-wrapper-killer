@@ -83,7 +83,7 @@ echo.
 
 :done
 :: Wait a few seconds after patch before copy
-wait 3
+%wait% 3
 copy "%wrapped%.exe" "%wrapped%_extract_only.exe.bak" >nul
 
 

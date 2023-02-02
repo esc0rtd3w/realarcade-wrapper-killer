@@ -30,7 +30,7 @@ echo placeholder > "%temp%\ura_multi_install.tmp"
 
 explorer "%downloadroot%"
 
-wait 2
+%wait% 2
 
 %show% "RGS Multi Installer"
 

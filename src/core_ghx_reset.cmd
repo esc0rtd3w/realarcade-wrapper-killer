@@ -78,7 +78,7 @@ goto initLaunchStub
 
 start "" ""%wrappedEXE%""
 
-::wait 5
+::%wait% 5
 
 goto initPrepareTimerHack
 
@@ -97,7 +97,7 @@ echo Preparing GH Timer Hack....
 echo.
 echo.
 
-wait 4
+%wait% 4
 
 goto initGoLaunch
 
@@ -319,7 +319,7 @@ echo Current Data from INI: %iniDataString%
 echo.
 echo.
 
-wait 60
+%wait% 60
 
 
 goto loopMain

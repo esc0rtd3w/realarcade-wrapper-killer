@@ -524,7 +524,7 @@ if not exist "%root%\_tmp\*.exe" (
 	echo [INFO] v1 loader set registry>>%log%
 	regedit /s "%root%\setRGS.reg"
 
-	wait 5
+	%wait% 5
 
 	echo [INFO] v1 loader launch exe>>%log%
 	%stubname%
@@ -538,7 +538,7 @@ if not exist "%root%\_tmp\*.exe" (
 	echo the original game installer "RGS File" from the internet.
 	echo.
 
-	wait 5
+	%wait% 5
 
 	echo [INFO] v1 loader set registry>>%log%
 	regedit /s "%root%\setRGS.reg"
@@ -608,14 +608,14 @@ echo.
 echo Extracting Game Name From launch.ini....
 echo.
 
-wait 2
+%wait% 2
 
 echo [INFO] Extracting Game Name From launch.ini START>>%log%
 
 :: Getting Game Name from launch.ini
-inifile "%root%\_tmp\launch.ini" [Main] GameName
+%inifile% "%root%\_tmp\launch.ini" [Main] GameName
 
-for /f "delims=" %%a in ('inifile.exe "%root%\_tmp\launch.ini" [Main] GameName') do %%a
+for /f "delims=" %%a in ('%inifile% "%root%\_tmp\launch.ini" [Main] GameName') do %%a
 
 echo [INFO] Extracting Game Name From launch.ini COMPLETE>>%log%
 
@@ -669,7 +669,7 @@ if %unpacked%==1 (
 	if %multirgs%==0 echo.
 	echo.
 	
-	wait 5
+	%wait% 5
 
 	xcopy /y /c /i /q /h /r /e  "%root%\_tmp" "%gamesroot%\%GameName%"
 	

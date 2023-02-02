@@ -523,7 +523,7 @@ echo.
 echo Extracting Game Name From version.txt....
 echo.
 
-wait 2
+%wait% 2
 
 :: Getting Game Name from launch.ini
 
@@ -555,7 +555,7 @@ if %multiRFS%==0 echo Once finished, the Wrapper Killer will launch to unpack th
 if %multiRFS%==0 echo.
 if %multiRFS%==0 echo.
 echo.
-wait 5
+%wait% 5
 
 
 

@@ -267,13 +267,13 @@ set root=%uraRoot%\loaders\loaderRGSv1
 
 %nircmd% exec hide "RGSinst.exe" /m application/vnd.rn-rn_secured_installer %1
 
-%nircmd% wait 1000
+%nircmd% %wait% 1000
 
 %nircmd% dlg "RGSinst.exe" "unRealArcade RGS Loader" click yes 
 
 ::pause>nul
 
-%nircmd% wait 5000
+%nircmd% %wait% 5000
 
 
 :reloop

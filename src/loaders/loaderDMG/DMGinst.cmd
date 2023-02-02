@@ -466,7 +466,7 @@ if exist "%root%\_tmp\4.hfs" (
 "%root%\7z.exe" x "%root%\_tmp\4.hfs" -o"%root%\_tmp\"
 )
 
-wait 3
+%wait% 3
 
 :: Cleanup Leftover Files
 del /f /s /q "%root%\_tmp\0.hfs"
@@ -549,7 +549,7 @@ echo.
 echo Extracting Game Name....
 echo.
 
-wait 2
+%wait% 2
 
 
 if %unpacked%==1 (
@@ -571,7 +571,7 @@ echo.
 echo.
 echo.
 echo.
-wait 5
+%wait% 5
 
 
 
