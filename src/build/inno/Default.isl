@@ -93,7 +93,7 @@ SelectLanguageLabel=Select the language to use during the installation:
 
 ; *** Common wizard text
 ClickNext=Click [ > > > ] to proceed or [ -X- ] to leave!
-BeveledLabel=RealArcade Wrapper Killer v5.7.1                     unWrap The Fun!                    cRypTiCwaRe 2o22
+BeveledLabel=RealArcade Wrapper Killer v5.7.1                     unWrap The Fun!                    cRypTiCwaRe 2o23
 BrowseDialogTitle=DOUBLE CLICK THE MY GAMES FOLDER AND SELECT GAME
 BrowseDialogLabel=DOUBLE CLICK THE MY GAMES FOLDER AND SELECT GAME
 NewFolderName=
