@@ -152,6 +152,7 @@ set hidecon="%uraSysRoot%\hidecon.exe"
 set hideexec="%uraSysRoot%\hideexec.exe"
 set quiet="%uraSysRoot%\quiet.exe"
 set sevenZ="%uraSysRoot%\sevenZ.exe"
+set initool="%uraSysRoot%\initool.exe"
 
 :: URA Unix Utilities
 set agrep="%uraSysRootUnix%\agrep.exe"
@@ -292,8 +293,15 @@ set unpacked=0
 set stubnameRaw="%1 %2 %3 %4 %5 %6 %7 %8"
 set stubname=%stubnameRaw: =%
 
-::echo stubname: %stubname%
-::pause
+
+if %debug%==1 (
+	echo Check Stub Name Variables
+	echo.
+	echo stubnameRaw: %stubnameRaw%
+	echo stubname: %stubname%
+	echo.
+	pause
+)
 
 set rawkPath=%uraRoot%
 set rawkExe=rawk.exe
@@ -328,11 +336,12 @@ if exist "%temp%\ura_multi_install.tmp" set multirgs=1
 ::pause
  
 if %debug%==1 (
-echo Dump RAWK Environment Variables
-echo.
-set
-echo.
-pause
+	echo Dump RAWK Environment Variables
+	echo.
+	set
+	echo.
+	pause
+	echo.
 )
 
 ::-----------------------------------------------------------------------------------
@@ -613,9 +622,20 @@ echo.
 echo [INFO] Extracting Game Name From launch.ini START>>%log%
 
 :: Getting Game Name from launch.ini
-%inifile% "%root%\_tmp\launch.ini" [Main] GameName
+::%inifile% "%root%\_tmp\launch.ini" [Main] GameName
+%initool% g "%root%\_tmp\launch.ini" Main GameName --value-only>"%temp%\ura_gamename.tmp"
 
-for /f "delims=" %%a in ('%inifile% "%root%\_tmp\launch.ini" [Main] GameName') do %%a
+::for /f "delims=" %%a in (^"%initool% g "%root%\_tmp\launch.ini" Main GameName --value-only) do %%a
+set /p GameName=<%temp%\ura_gamename.tmp"
+
+if %debug%==1 (
+	echo Dump GameName From INI
+	echo.
+	echo GameName: %GameName%
+	echo.
+	pause
+	echo.
+)
 
 echo [INFO] Extracting Game Name From launch.ini COMPLETE>>%log%
 
@@ -639,6 +659,16 @@ if exist "%root%\_tmp\wobblybobbly_r1a.exe" set GameName=Wobbly Bobbly
 echo [INFO] Setting GameName for games that have issues getting correct value COMPLETE>>%log%
 
 echo [INFO] Extracted Game Name: "%GameName%">>%log%
+ 
+if %debug%==1 (
+	echo Dump GameName From INI
+	echo.
+	echo GameName: %GameName%
+	echo.
+	pause
+	echo.
+)
+
 if "%GameName%"=="" set GameNameFail=1&&goto errName
 
 echo [INFO] RGS Unpack START>>%log%
