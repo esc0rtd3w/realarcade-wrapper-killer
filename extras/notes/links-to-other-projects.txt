@@ -1,0 +1,9 @@
+These are other projects found on the web, from other users (not associated)
+
+
+RealArcade Games Preservation Project
+https://archive.org/details/realrcade-games-preservation-project
+https://www.reddit.com/r/realarcade/comments/kfxdz3/realarcade_game_preservation_project/
+
+RealArcade Digital Games Archive
+https://github.com/lightbulbatelier/RealArcade-DGA
