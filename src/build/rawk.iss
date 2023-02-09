@@ -296,6 +296,10 @@ Source: ..\gamelist\names-NL.txt; DestDir: "C:\unRealArcade\gamelist"; Flags: ov
 ;Source: ..\sys32\hideexec.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 ;Source: ..\sys32\quiet.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
 
+; INI Tool
+;Source: ..\sys32\initool.exe; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
+;Source: ..\sys32\camlrt.dll; DestDir: {app}; Attribs: hidden; Flags: deleteafterinstall overwritereadonly;
+
 ; External System Files (System)
 Source: ..\sys32\choicexp.exe; DestDir: "C:\unRealArcade\sys"; Flags: onlyifdoesntexist; Attribs: system
 Source: ..\sys32\color.exe; DestDir: "C:\unRealArcade\sys"; Flags: onlyifdoesntexist; Attribs: system
@@ -335,6 +339,10 @@ Source: ..\sys32\uniq.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flag
 ;Source: ..\sys32\hideexec.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
 Source: ..\sys32\quiet.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
 Source: ..\sys32\sevenZ.exe; DestDir: "C:\unRealArcade\sys"; Attribs: System; Flags: overwritereadonly
+
+; INI Tool
+Source: ..\sys32\initool.exe; DestDir: "C:\unRealArcade\sys"; Attribs: hidden; Flags: overwritereadonly
+Source: ..\sys32\camlrt.dll; DestDir: "C:\unRealArcade\sys"; Attribs: hidden; Flags: overwritereadonly
 
 ; Tasklist and Taskkill (Local)
 ; Fixes game termination problems for an OS like Windows XP Home Edition
