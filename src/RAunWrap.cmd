@@ -288,10 +288,11 @@ call dbtemp.cmd
 ::-----------------------------------------------------------------------------------
 :: Cleaning unused or already used temp batch files
 ::-----------------------------------------------------------------------------------
-set
-pause
-call "core_clean_pre.cmd"
 
+::set
+::pause
+
+call "core_clean_pre.cmd"
 
 :: Only triggered by a Gamehouse or Zylom game
 if %forceExit%==1 goto end
