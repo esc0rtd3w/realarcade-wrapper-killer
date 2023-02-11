@@ -834,7 +834,7 @@ echo [INFO] Run GUI Wrapper Killer START>>%log%
 
 ::copy %rawkCLILaunch% "%gamesroot%\%GameName%"
 ::start "" /d "%rawkPath%" "%rawkExe%"
-start "" /d "%rawkPath%" "%rawkExe%" /dir="C:\My Games\%GameName%"
+start "" /d "%rawkPath%" "%rawkExe%" /dir="C:\My Games\%GameName%" /silent
 
 echo [INFO] Run GUI Wrapper Killer END>>%log%
 echo [INFO] Launch Wrapper Killer END>>%log%
