@@ -622,10 +622,15 @@ echo.
 echo [INFO] Extracting Game Name From launch.ini START>>%log%
 
 :: Getting Game Name from launch.ini
-::%inifile% "%root%\_tmp\launch.ini" [Main] GameName
-%initool% g "%root%\_tmp\launch.ini" Main GameName --value-only>"%temp%\ura_gamename.tmp"
 
-::for /f "delims=" %%a in (^"%initool% g "%root%\_tmp\launch.ini" Main GameName --value-only) do %%a
+:: inifile method
+::%inifile% "%root%\_tmp\launch.ini" [Main] GameName
+::%inifile% "%root%\launch.ini" [Main] GameName > "%temp%\ura_gamename.cmd"
+::call "%temp%\ura_gamename.cmd"
+
+:: initool method
+::%initool% g "%root%\_tmp\launch.ini" Main GameName --value-only
+%initool% g "%root%\_tmp\launch.ini" Main GameName --value-only>"%temp%\ura_gamename.tmp"
 set /p GameName=<%temp%\ura_gamename.tmp"
 
 if %debug%==1 (
@@ -771,20 +776,20 @@ echo Ready to unpack the Demo Protection on this game!
 echo.
 echo.
 echo.
-echo The default is to run the CLI version silently.
+echo The default is to run the GUI version using current Game Path.
 echo.
 echo If you would like to change this, please see below.
 echo.
 echo.
 echo.
-echo Press (G) to run GUI unpacking setup or (X) to exit
+echo Press (C) to run CLI unpacking setup or (X) to exit
 echo.
 echo This option will disappear in 5 seconds and load default settings....
 echo.
 echo.
 
-if %os%==XP choicexp /c:dgx /t:d,5 /n
-if not %os%==XP choice /c dgx /d d /n /t 5
+if %os%==XP choicexp /c:gcx /t:g,5 /n
+if not %os%==XP choice /c gcx /d g /n /t 5
  
 if %debug%==1 (
 	echo Game Unpacked. Ready For Patching.
@@ -801,8 +806,8 @@ if %debug%==1 (
 )
 
 if errorlevel 3 goto end
-if errorlevel 2 goto runGUI
-if errorlevel 1 goto runCLI
+if errorlevel 2 goto runCLI
+if errorlevel 1 goto runGUI
 
 
 :runCLI
@@ -828,7 +833,8 @@ echo [INFO] Run GUI Wrapper Killer START>>%log%
 ::pause
 
 ::copy %rawkCLILaunch% "%gamesroot%\%GameName%"
-start "" /d "%rawkPath%" "%rawkExe%"
+::start "" /d "%rawkPath%" "%rawkExe%"
+start "" /d "%rawkPath%" "%rawkExe%" /dir="C:\My Games\%GameName%"
 
 echo [INFO] Run GUI Wrapper Killer END>>%log%
 echo [INFO] Launch Wrapper Killer END>>%log%
