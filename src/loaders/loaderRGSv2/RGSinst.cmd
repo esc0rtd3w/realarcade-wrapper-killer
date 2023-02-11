@@ -290,9 +290,9 @@ set unpacked=0
 
 :: This method works, but causes a path with NO SPACES to have a space as the suffix
 :: Everything seems to copy ok still.
+:: TODO Properly fix the spaces being removed in paths. Currently only loads paths with no spaces
 set stubnameRaw="%1 %2 %3 %4 %5 %6 %7 %8"
 set stubname=%stubnameRaw: =%
-
 
 if %debug%==1 (
 	echo Check Stub Name Variables
@@ -419,7 +419,7 @@ if not exist "%root%\_tmp.rgs" (
 	echo.
 
 	if %os%==XP choicexp /c:yn /n
-	if %os%==VISTA choice /c yn /n
+	if not %os%==XP choice /c yn /n
 	if errorlevel 2 goto end
 	
 	pause
@@ -511,7 +511,7 @@ if not exist "%root%\_tmp\*.exe" (
 	echo.
 
 	if %os%==XP choicexp /c:yn /n
-	if %os%==VISTA choice /c yn /n
+	if not %os%==XP choice /c yn /n
 	if errorlevel 2 goto end
 
 
@@ -597,7 +597,7 @@ if not exist "%root%\_tmp" (
 	echo.
 
 	if %os%==XP choicexp /c:yn /n
-	if %os%==VISTA choice /c yn /n
+	if not %os%==XP choice /c yn /n
 	if errorlevel 2 goto end
 
 	goto deltmp
@@ -784,10 +784,21 @@ echo.
 echo.
 
 if %os%==XP choicexp /c:dgx /t:d,5 /n
-if %os%==VISTA choice /c dgx /d d /n /t 5
-
-::echo %errorlevel%
-::pause
+if not %os%==XP choice /c dgx /d d /n /t 5
+ 
+if %debug%==1 (
+	echo Game Unpacked. Ready For Patching.
+	echo.
+	echo errorlevel: %errorlevel%
+	echo os: %os%
+	echo.
+	echo GameName: %GameName%
+	echo.
+	echo It is located at: "C:\My Games\%GameName%"
+	echo.
+	pause
+	echo.
+)
 
 if errorlevel 3 goto end
 if errorlevel 2 goto runGUI
