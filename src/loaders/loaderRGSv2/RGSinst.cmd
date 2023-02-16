@@ -161,6 +161,7 @@ set bzip2="%uraSysRootUnix%\bzip2.exe"
 set bzip2recover="%uraSysRootUnix%\bzip2recover.exe"
 set cat="%uraSysRootUnix%\cat.exe"
 set cmp="%uraSysRootUnix%\cmp.exe"
+set cut="%uraSysRootUnix%\cut.exe"
 set dd="%uraSysRootUnix%\dd.exe"
 set diff="%uraSysRootUnix%\diff.exe"
 set diff3="%uraSysRootUnix%\diff3.exe"
@@ -287,11 +288,13 @@ set root=%uraRoot%\loaders\loaderRGSv2
 set altPath=0
 
 set unpacked=0
+set noLaunchINI=0
 
 :: This method works, but causes a path with NO SPACES to have a space as the suffix
 :: Everything seems to copy ok still.
 :: TODO Properly fix the spaces being removed in paths. Currently only loads paths with no spaces
 set stubnameRaw="%1 %2 %3 %4 %5 %6 %7 %8"
+::set stubname="%stubnameRaw%"
 set stubname=%stubnameRaw: =%
 
 if %debug%==1 (
@@ -494,6 +497,18 @@ if not exist "%root%\_tmp\*.exe" (
 	if exist "%root%\_tmp\Engine\lithtech.exe" echo [INFO] Alternate Path: Engine\lithtech.exe>>%log%
 	if exist "%root%\_tmp\Engine\lithtech.exe" set altPath=1&&goto chkextr
 	
+	if exist "%root%\_tmp\EuchreClassic\euchreclassic.exe" echo [INFO] Alternate Path: EuchreClassic\euchreclassic.exe>>%log%
+	if exist "%root%\_tmp\EuchreClassic\euchreclassic.exe" set altPath=1&&goto chkextr
+	
+	if exist "%root%\_tmp\HeartsClassic\heartsclassic.exe" echo [INFO] Alternate Path: HeartsClassic\heartsclassic.exe>>%log%
+	if exist "%root%\_tmp\HeartsClassic\heartsclassic.exe" set altPath=1&&goto chkextr
+	
+	if exist "%root%\_tmp\SpadesClassic\spadesclassic.exe" echo [INFO] Alternate Path: SpadesClassic\spadesclassic.exe>>%log%
+	if exist "%root%\_tmp\SpadesClassic\spadesclassic.exe" set altPath=1&&goto chkextr
+	
+	if exist "%root%\_tmp\GameFiles\launcher.exe" echo [INFO] Alternate Path: GameFiles\launcher.exe>>%log%
+	if exist "%root%\_tmp\GameFiles\launcher.exe" set altPath=1&&goto chkextr
+	
 
 	color 4f
 	echo [INFO] Fallback to v1 loader START>>%log%
@@ -613,14 +628,17 @@ cls
 echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
 echo.
 echo.
-echo.
-echo Extracting Game Name From launch.ini....
-echo.
 
 %wait% 2
 
-echo [INFO] Extracting Game Name From launch.ini START>>%log%
+:: If launch.ini is missing, check setup.ini and set flag
+if not exist "%root%\_tmp\launch.ini" goto s_ini
 
+:i_ini
+echo.
+echo Extracting Game Name From launch.ini....
+echo.
+echo [INFO] Extracting Game Name From launch.ini START>>%log%
 :: Getting Game Name from launch.ini
 
 :: inifile method
@@ -632,9 +650,24 @@ echo [INFO] Extracting Game Name From launch.ini START>>%log%
 ::%initool% g "%root%\_tmp\launch.ini" Main GameName --value-only
 %initool% g "%root%\_tmp\launch.ini" Main GameName --value-only>"%temp%\ura_gamename.tmp"
 set /p GameName=<%temp%\ura_gamename.tmp"
+goto inidone
+
+:s_ini
+echo.
+echo Extracting Game Name From setup.ini....
+echo.
+set noLaunchINI=1
+echo [INFO] Extracting Game Name From setup.ini START>>%log%
+%initool% g "%root%\_tmp\setup.ini" SETUP APPTITLE --value-only>"%temp%\ura_gamename.tmp"
+set /p GameName=<%temp%\ura_gamename.tmp"
+goto inidone
+
+
+:inidone
 
 if %debug%==1 (
-	echo Dump GameName From INI
+	if %noLaunchINI%==0 echo Dump GameName From INI [launch.ini]
+	if %noLaunchINI%==1 echo Dump GameName From INI [setup.ini]
 	echo.
 	echo GameName: %GameName%
 	echo.
@@ -642,7 +675,8 @@ if %debug%==1 (
 	echo.
 )
 
-echo [INFO] Extracting Game Name From launch.ini COMPLETE>>%log%
+if %noLaunchINI%==0 echo [INFO] Extracting Game Name From launch.ini COMPLETE>>%log%
+if %noLaunchINI%==1 echo [INFO] Extracting Game Name From setup.ini COMPLETE>>%log%
 
 echo [INFO] Setting GameName for games that have issues getting correct value START>>%log%
 
@@ -666,7 +700,7 @@ echo [INFO] Setting GameName for games that have issues getting correct value CO
 echo [INFO] Extracted Game Name: "%GameName%">>%log%
  
 if %debug%==1 (
-	echo Dump GameName From INI
+	echo Dump GameName From INI [Post Name Fix Check]
 	echo.
 	echo GameName: %GameName%
 	echo.
@@ -687,14 +721,14 @@ if %unpacked%==1 (
 	echo DO NOT CLOSE THIS WINDOW!! IT WILL CLOSE WHEN FINISHED!!
 	echo.
 	echo.
-	echo Copying files to default games location...
-	echo.
-	echo.
-	echo.
+	echo RGS Unpack SUCCESS
 	echo.
 	echo Extracted Game Name: "%GameName%"
 	echo.
-	echo It is located at: "C:\My Games\%GameName%"
+	echo.
+	echo Copying files to "C:\My Games\%GameName%"...
+	echo.
+	echo.
 	echo.
 	echo.
 	echo.
@@ -707,6 +741,8 @@ if %unpacked%==1 (
 	%wait% 5
 
 	xcopy /y /c /i /q /h /r /e  "%root%\_tmp" "%gamesroot%\%GameName%"
+	
+	%wait% 2
 	
 	if %errorlevel%==0 (
 	
