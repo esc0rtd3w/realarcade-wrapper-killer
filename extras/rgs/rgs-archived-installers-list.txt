@@ -16,6 +16,7 @@ English
 0-9\3daysamuletsecret_free.rgs
 0-9\3dayszoomystery_free.rgs
 0-9\3dknifflis_free.rgs
+0-9\3dultrapinballthrillride_free.rgs
 0-9\3starsofdestiny_free.rgs
 0-9\4elements_free.rgs
 0-9\5cardslingodeluxe_free.rgs
@@ -25,6 +26,7 @@ English
 0-9\7wondersmagicalmysterytour_free.rgs
 0-9\7wonderstreasuresofseven_free.rgs
 0-9\7wonders_free.rgs
+a\aargondeluxe_free.rgs
 a\aaroncranepaintingscomealive_free.rgs
 a\abigailandthekingdomoffairs_free.rgs
 a\abundante_free.rgs
@@ -106,10 +108,13 @@ a\arcticquest_free.rgs
 a\aroundtheworldin80days_free.rgs
 a\artstories_free.rgs
 a\ashtonsfamilyresort_free.rgs
+a\assimilation_free.rgs
+a\asteroids_free.rgs
 a\astroavenger_free.rgs
 a\astrobatics_free.rgs
 a\astropopdeluxe_free.rgs
 a\astroslugs_free.rgs
+a\atariarcadeclassics_free.rgs
 a\atariarcadehits_free.rgs
 a\atlanticquest_free.rgs
 a\atlantisquest_free.rgs
@@ -165,6 +170,7 @@ b\bigkahunareef2chainreaction_free.rgs
 b\bigkahunareef_free.rgs
 b\bigkahunawords_free.rgs
 b\bigmoney_free.rgs
+b\bingobonusslots_free.rgs
 b\bingoslots_free.rgs
 b\birdsonawire_free.rgs
 b\birdstown_free.rgs
@@ -185,6 +191,7 @@ b\bookwormdeluxe_free.rgs
 b\bookwormtmadventuresastoundingplanet_free.rgs
 b\bookwormtmadventuresfracturedfairytales_free.rgs
 b\bookwormtmadventuresthemonkeyking_free.rgs
+b\boorpsballs_free.rgs
 b\bornintodarkness_free.rgs
 b\bots_free.rgs
 b\bounceoutblitz_free.rgs
@@ -213,6 +220,7 @@ b\buildintime_free.rgs
 b\builditmiamibeachresort_free.rgs
 b\bumblebeejewelthesearchforthelostcolors_free.rgs
 b\bunnybouncedeluxe_free.rgs
+b\bunnymoneyslots_free.rgs
 b\burgerbustle_free.rgs
 b\burgerisland_free.rgs
 b\burgerrush_free.rgs
@@ -244,6 +252,8 @@ c\captainbubblebeardstreasure_free.rgs
 c\carambadeluxe_free.rgs
 c\caribbeanmahjong_free.rgs
 c\casinoislandtogo_free.rgs
+c\casinoonnet_free.rgs
+c\castrolhondasuperbike2000_free.rgs
 c\catewestthevanishingfiles_free.rgs
 c\catewestthevelvetkeystm_free.rgs
 c\catwalkcountdown_free.rgs
@@ -254,6 +264,9 @@ c\chainz2relinked_free.rgs
 c\chainzgalaxy_free.rgs
 c\chainz_free.rgs
 c\chameleongems_free.rgs
+c\championshipeuchreclassic_free.rgs
+c\championshipheartsclassic_free.rgs
+c\championshipspadesclassic_free.rgs
 c\charma_free.rgs
 c\charmsolitaire_free.rgs
 c\charmtale2mermaidlagoon_free.rgs
@@ -283,6 +296,8 @@ c\cinematycoon_free.rgs
 c\citysightshelloseattle_free.rgs
 c\clashnslash_free.rgs
 c\classicadventuresthegreatgatsby_free.rgs
+c\classicheartsspadesandeuchre_free.rgs
+c\claw_free.rgs
 c\clubcontrol2_free.rgs
 c\clubvegascasinovideopoker_free.rgs
 c\clueclassic_free.rgs
@@ -293,9 +308,11 @@ c\coffeerush3_free.rgs
 c\coffeerush_free.rgs
 c\collapsecrunch_free.rgs
 c\collapse_free.rgs
+c\coloredeggsdeluxe_free.rgs
 c\colorharmony_free.rgs
 c\columnofthemaya_free.rgs
 c\combochaos_free.rgs
+c\comixzone_free.rgs
 c\compulsivesolitaire_free.rgs
 c\congocube_free.rgs
 c\contraptions_free.rgs
@@ -317,6 +334,7 @@ c\crimeandpunishmentwhoframedraskolnikov_free.rgs
 c\crimepuzzle_free.rgs
 c\criminalminds_free.rgs
 c\crimsonland_free.rgs
+c\criticalmass_free.rgs
 c\cropbusters_free.rgs
 c\cruisecluestmcaribbeanadventure_free.rgs
 c\crystalix_free.rgs
@@ -332,9 +350,11 @@ d\dachinko_free.rgs
 d\dairydashtm_free.rgs
 d\dambeavers_free.rgs
 d\dancingcraze_free.rgs
+d\daredevilpinball_free.rgs
 d\darkparablescurseofbriarrose_free.rgs
 d\davincissecret_free.rgs
 d\deadtimestories_free.rgs
+d\dealerschoicecollection_free.rgs
 d\deepbluesea2theamuletoflight_free.rgs
 d\deepseatycoon2_free.rgs
 d\deepseatycoon_free.rgs
@@ -404,11 +424,15 @@ d\dressuppups_free.rgs
 d\dressuprush_free.rgs
 d\drlynchgravesecrets_free.rgs
 d\dropheads_free.rgs
+d\drop_free.rgs
+d\drrobotniksmeanbeanmachine_free.rgs
 d\drwisemedicalmysteries_free.rgs
 d\dungeonscroll_free.rgs
+d\dweep_free.rgs
 d\dyingfordaylight_free.rgs
 d\dynomite_free.rgs
 e\eastereggztravaganza_free.rgs
+e\eccothedolphin_free.rgs
 e\echoesofsorrow_free.rgs
 e\ecomatch_free.rgs
 e\ecorescueprojectrainforest_free.rgs
@@ -425,6 +449,7 @@ e\emeraldtale_free.rgs
 e\emperorsmahjong_free.rgs
 e\empressofthedeepthedarkestsecret_free.rgs
 e\enchantedcavern2_free.rgs
+e\enigram3_free.rgs
 e\enlightenus_free.rgs
 e\epicadventureslajangada_free.rgs
 e\equilibria_free.rgs
@@ -512,6 +537,7 @@ f\fixitupkatesadventure_free.rgs
 f\fizzball_free.rgs
 f\flashdating_free.rgs
 f\fliporflop_free.rgs
+f\fliptrip_free.rgs
 f\flipwit_free.rgs
 f\flipwords_free.rgs
 f\flowerofimmortality_free.rgs
@@ -540,6 +566,7 @@ f\fullcircle_free.rgs
 f\funkiballadventure_free.rgs
 f\funnyhell_free.rgs
 f\funparkbeachblast_free.rgs
+f\fusion_free.rgs
 g\gamehousesolitairechallenge_free.rgs
 g\gamehousesudoku_free.rgs
 g\gamehousewordcollection_free.rgs
@@ -576,8 +603,6 @@ g\goldrushklondike_free.rgs
 g\goldrushtreasurehunt_free.rgs
 g\goldrush_free.rgs
 g\golfadventuregalaxy_free.rgs
-g\golfmountaincoursejp_free.rgs
-g\golfseasidecoursejp_free.rgs
 g\gonefishin_free.rgs
 g\gotchacelebritysecretstm_free.rgs
 g\gourmania2greatexpectations_free.rgs
@@ -655,6 +680,7 @@ h\hoylesolitairemiamibeach_free.rgs
 h\hyperballoid2timerider_free.rgs
 h\hyperballoidthenextchallenge_free.rgs
 h\hyperballoid_free.rgs
+h\hyperspacedeliveryboy_free.rgs
 i\icarlyisockittoem_free.rgs
 i\icebreaker_free.rgs
 i\icecreamcrazenaturalhero_free.rgs
@@ -690,6 +716,7 @@ i\ispytreasurehunt_free.rgs
 j\jackofalltribes_free.rgs
 j\jackpotpinball_free.rgs
 j\jaderousseauthefallofsantantonio_free.rgs
+j\jammedagain_free.rgs
 j\janeangeltemplarmystery_free.rgs
 j\janelucky_free.rgs
 j\janeshotelfamilyhero_free.rgs
@@ -746,12 +773,14 @@ k\kayakextreme_free.rgs
 k\kelliestanfordturnoffate_free.rgs
 k\kellygreengardenqueen_free.rgs
 k\keystomanhattantm_free.rgs
+k\kidchameleon_free.rgs
 k\kingdomofsevenseals_free.rgs
 k\kingkongskullislandadventure_free.rgs
 k\kingssmith2_free.rgs
 k\kitchenbrigade_free.rgs
 k\kittensanctuary_free.rgs
 k\koisolitaire_free.rgs
+k\kokoarena_free.rgs
 k\kurostm_free.rgs
 k\kyodaimahjongg_free.rgs
 l\laby_free.rgs
@@ -770,6 +799,7 @@ l\lemonadetycoon2_free.rgs
 l\lemonadetycoon_free.rgs
 l\lettersfromnowhere2_free.rgs
 l\lettersfromnowhere_free.rgs
+l\libraryoftheages_free.rgs
 l\lifetimersvp_free.rgs
 l\lillywuandtheterracottamystery_free.rgs
 l\linkscoursechallengechateauwhistleredition_free.rgs
@@ -788,6 +818,7 @@ l\lostcityofgold_free.rgs
 l\lostfortunes_free.rgs
 l\lostinreefs_free.rgs
 l\lostlagoonthetrailofdestiny_free.rgs
+l\losttombslots_free.rgs
 l\lotusdeluxe_free.rgs
 l\loveahoy_free.rgs
 l\lovedeathtmbittentm_free.rgs
@@ -809,6 +840,7 @@ l\luxormahjong_free.rgs
 l\luxorquestfortheafterlife_free.rgs
 l\luxor_free.rgs
 m\madcaps_free.rgs
+m\madglobalthermonuclearwarfare_free.rgs
 m\magicacademy2_free.rgs
 m\magicacademy_free.rgs
 m\magicalmysteriespathofthesorceress_free.rgs
@@ -838,6 +870,7 @@ m\mahjonggartifacts2_free.rgs
 m\mahjonggartifacts_free.rgs
 m\mahjonggdimensionsdeluxetilesintime_free.rgs
 m\mahjonggdimensionsdeluxe_free.rgs
+m\mahjonggeaster_free.rgs
 m\mahjonggfortuna_free.rgs
 m\mahjongginvestigationsundersuspicion_free.rgs
 m\mahjonggtowersii_free.rgs
@@ -880,6 +913,7 @@ m\milliondollarquest_free.rgs
 m\mindmachine_free.rgs
 m\mindmedley_free.rgs
 m\mindseyesecretsoftheforgotten_free.rgs
+m\mindyourmarbles_free.rgs
 m\minigolfgold_free.rgs
 m\minigolfmegaworld_free.rgs
 m\mirielsenchantedmystery_free.rgs
@@ -890,8 +924,10 @@ m\mishapanaccidentalhaunting_free.rgs
 m\missteritale_free.rgs
 m\monarchthebutterflyking_free.rgs
 m\moneytree_free.rgs
+m\monkeybrains_free.rgs
 m\monopoly3_free.rgs
 m\monopolybyparkerbrothers_free.rgs
+m\monopolycasinovegasedition_free.rgs
 m\monopolyherenowedition_free.rgs
 m\monopolyspongebobsquarepantsedition_free.rgs
 m\monopolytmbuildalottmedition_free.rgs
@@ -899,11 +935,13 @@ m\monopolytycoon_free.rgs
 m\monstermash_free.rgs
 m\monumentbuilderseiffeltower_free.rgs
 m\moontycoon_free.rgs
+m\moorhen_free.rgs
 m\mortimerbeckettandthelostking_free.rgs
 m\mortimerbeckettandthesecretsofspookymanor_free.rgs
 m\mortimerbeckettandthetimeparadox_free.rgs
 m\mortimerbeckettdoublepack_free.rgs
 m\mosaictombofmystery_free.rgs
+m\mozpongdx_free.rgs
 m\mummymazedeluxe_free.rgs
 m\mummystreasure_free.rgs
 m\murderislandsecretoftantalus_free.rgs
@@ -965,6 +1003,7 @@ n\natgeogamesmysteryofcleopatra_free.rgs
 n\nationalgeographicadventurelostcityofz_free.rgs
 n\nationalgeographicgamesherodslosttombc_free.rgs
 n\nationalgeographicgreatmigrations_free.rgs
+n\needforeat_free.rgs
 n\neoball_free.rgs
 n\neptunessecret_free.rgs
 n\newyankeeinkingarthurscourt_free.rgs
@@ -1013,6 +1052,7 @@ p\pennydreadfulstmsweeneytodd_free.rgs
 p\petshophoptm_free.rgs
 p\petshowcraze_free.rgs
 p\pgsq_free.rgs
+p\phantasystarii_free.rgs
 p\pharaohsarrows_free.rgs
 p\pharaohssecret_free.rgs
 p\phlinxtogo_free.rgs
@@ -1024,11 +1064,13 @@ p\pipsoh_free.rgs
 p\piratemysteriesataleofmonkeysmasksandhiddenobjects_free.rgs
 p\piratepoppers_free.rgs
 p\pirateville_free.rgs
+p\pitfallthemayanadventure_free.rgs
 p\pixelusdeluxe_free.rgs
 p\pizzachef2_free.rgs
 p\pizzachef_free.rgs
 p\pizzafrenzy_free.rgs
 p\pjpridepetdetective_free.rgs
+p\planetarydefense_free.rgs
 p\planethorse_free.rgs
 p\planitgreenc_free.rgs
 p\plannplant_free.rgs
@@ -1043,6 +1085,7 @@ p\playtoniumjigsawcelebrationofamerica_free.rgs
 p\playtoniumjigsawenchantedforest_free.rgs
 p\playtoniumjigsawgarfieldgoestopieces_free.rgs
 p\playtoniumjigsawpatternsinnature_free.rgs
+p\playtoniumjigsawwinterholidays_free.rgs
 p\pokerpoptm_free.rgs
 p\pokersuperstars2_free.rgs
 p\pollypridepetdetective_free.rgs
@@ -1054,11 +1097,13 @@ p\potionbar_free.rgs
 p\powerchips_free.rgs
 p\prettygoodsolitairequestedition_free.rgs
 p\prettyinpink_free.rgs
+p\primalprey_free.rgs
 p\privateeyegreatestunsolvedmysteries_free.rgs
 p\profitville_free.rgs
 p\projectrescueafrica_free.rgs
 p\puppysanctuary_free.rgs
 p\puzzaz_free.rgs
+p\puzzix_free.rgs
 p\puzzleblast_free.rgs
 p\puzzledetective_free.rgs
 p\puzzleexpress_free.rgs
@@ -1082,6 +1127,7 @@ r\rainbowweb3_free.rgs
 r\rainbowweb_free.rgs
 r\raindrops_free.rgs
 r\rainforestadventure_free.rgs
+r\rainforestcascade_free.rgs
 r\ranchrushr2_free.rgs
 r\ranchrush_free.rgs
 r\raretreasuresdinnerwaretradingco_free.rgs
@@ -1096,7 +1142,8 @@ r\reboundlostworldsrecharged_free.rgs
 r\reboundlostworlds_free.rgs
 r\rebound_free.rgs
 r\redacesquadron_free.rgs
-r\redace_free2.rgs
+r\redace_free.rgs
+r\reinerkniziassamurai_free.rgs
 r\relichunt_free.rgs
 r\renovaterelocateboston_free.rgs
 r\rescuefrenzy_free.rgs
@@ -1207,6 +1254,7 @@ s\snailmail_free.rgs
 s\snapshotadventuressecretofbirdisland_free.rgs
 s\snarkbusters2allrevvedup_free.rgs
 s\snarkbusterswelcometotheclub_free.rgs
+s\snood_free.rgs
 s\snowballrun_free.rgs
 s\snowylunchrush_free.rgs
 s\snowypuzzleislands_free.rgs
@@ -1220,11 +1268,15 @@ s\solitairecruise_free.rgs
 s\solitairekingdomquest_free.rgs
 s\solitairekingdomsupreme_free.rgs
 s\solitairemysterystolenpowertm_free.rgs
+s\sonic3dblast_free.rgs
+s\sonicandknuckles_free.rgs
 s\sonicspinball_free.rgs
+s\sonicthehedgehog2_free.rgs
 s\sonicthehedgehog3_free.rgs
 s\sonicthehedgehog_free.rgs
 s\souljourney_free.rgs
 s\spacebound_free.rgs
+s\spaceinvaders_free.rgs
 s\sparkle_free.rgs
 s\specialenquirydetailengagedtokill_free.rgs
 s\spellagories_free.rgs
@@ -1254,11 +1306,12 @@ s\stardefender2_free.rgs
 s\stardefender3_free.rgs
 s\starlinesinc_free.rgs
 s\starmonkey_free.rgs
+s\stickylinky_free.rgs
 s\stonesofkhufu_free.rgs
+s\strangeadventuresininfinitespace_free.rgs
 s\straysoulsdollhousestory_free.rgs
 s\strikeball2_free.rgs
 s\strimko_free.rgs
-s\sudokulatinsquaresgoldde_free.rgs
 s\sudokulatinsquaresgold_free.rgs
 s\sudokumayagold_free.rgs
 s\sudokuquest_free.rgs
@@ -1267,6 +1320,7 @@ s\sunsetstudiodeluxe_free.rgs
 s\sunsetstudioloveonthehighseas_free.rgs
 s\sunshineacres_free.rgs
 s\super5lineslots_free.rgs
+s\superblackjack_free.rgs
 s\superbounceout_free.rgs
 s\superbubblepop_free.rgs
 s\supercandycruncher_free.rgs
@@ -1315,6 +1369,7 @@ s\superjigsawretro_free.rgs
 s\superjigsawsafari_free.rgs
 s\superjigsawspongebobsquarepants_free.rgs
 s\superjigsawwyland_free.rgs
+s\superletterlinker_free.rgs
 s\supermahjong_free.rgs
 s\supermarketmanagement2_free.rgs
 s\supermarketmanagement_free.rgs
@@ -1342,9 +1397,11 @@ t\tennistitans_free.rgs
 t\tenpinchampionshipbowlingpro_free.rgs
 t\terrafarmers_free.rgs
 t\texasholdem_free.rgs
+t\texatomicsbigbotbattles_free.rgs
 t\textexpress2deluxe_free.rgs
 t\textexpress_free.rgs
 t\texttwist2_free.rgs
+t\texttwist_free.rgs
 t\theadventuresofaladdinandthemagicskull_free.rgs
 t\theapprenticelosangeles_free.rgs
 t\theapprentice_free.rgs
@@ -1372,6 +1429,7 @@ t\theislandcastaway2_free.rgs
 t\theislandcastaway_free.rgs
 t\thejollygangsmisadventuresinafrica_free.rgs
 t\thejoyoffarming_free.rgs
+t\thelabyrinth_free.rgs
 t\thelastairbender_free.rgs
 t\thelegendofcrystalvalley_free.rgs
 t\thelegendofeldorado_free.rgs
@@ -1423,10 +1481,13 @@ t\timemachineroguepilot_free.rgs
 t\timetohurrynicolesstory_free.rgs
 t\tinseltowndreamsthe50s_free.rgs
 t\tiptop_free.rgs
+t\toejamearl_free.rgs
+t\tonkaconstruction2_free.rgs
 t\toptensolitaire_free.rgs
 t\totemtribegoldextendededition_free.rgs
 t\totemtribe_free.rgs
 t\touchdownmadness_free.rgs
+t\toweroftheancients_free.rgs
 t\toygolf_free.rgs
 t\trademania_free.rgs
 t\tradewinds2_free.rgs
@@ -1552,6 +1613,7 @@ w\wordtravels_free.rgs
 w\wordup_free.rgs
 w\wordwizard_free.rgs
 w\wordwonders_free.rgs
+w\wordzap_free.rgs
 w\wordzenmahjonggreinvented_free.rgs
 w\worldmosaics4_free.rgs
 w\worldmosaics_free.rgs
