@@ -6,6 +6,49 @@ RealArcade Wrapper Killer Version History From NFO Files
 
 
 
+v5.7.1
+----------
+
+	* UPDATED: RAWK Core to v3.1.2
+
+                   * Updated AMI Server Binaries to v8.60.20
+                   * Added script to clean files after CLI runs from RGS Loader
+                   * Updated RAUnwrap script to fix issues if cliActive flag is set to 1
+
+
+
+        * UPDATED: RGS Loader to v2.1.3
+
+                   * Updated OS Version Check and PATH to use added URA values when running
+                   * Patched to skip error if reg check fails
+                   * Updated CLI support to fix some issues on Windows 7 and higher, after game extracts
+
+
+
+        * UPDATED: RGA Loader to v1.0.2
+
+                   * Updated OS Version Check and PATH to use added URA values when running
+
+
+
+        * UPDATED: RFS Loader v1.0.2
+
+                   * Updated OS Version Check and PATH to use added URA values when running
+
+
+
+        * UPDATED: DMG Loader v1.0.1
+
+                   * Updated OS Version Check and PATH to use added URA values when running
+
+
+
+        * UPDATED: AMI Loader v1.1.2
+
+                   * Updated OS Version Check and PATH to use added URA values when running
+
+
+
 v5.7.0
 ----------
 
