@@ -284,6 +284,9 @@ set downloadroot=C:\My Download Files
 
 set root=%uraRoot%\loaders\loaderRGSv2
 
+:: Check Debug File
+if exist "%root%\debug.on" set debug=1
+
 :: Some games do not have an EXE in its root. This flag is for that.
 set altPath=0
 
@@ -294,8 +297,11 @@ set noLaunchINI=0
 :: Everything seems to copy ok still.
 :: TODO Properly fix the spaces being removed in paths. Currently only loads paths with no spaces
 set stubnameRaw="%1 %2 %3 %4 %5 %6 %7 %8"
-::set stubname="%stubnameRaw%"
-set stubname=%stubnameRaw: =%
+set stubname=%stubnameRaw%
+::set stubname=%stubnameRaw: =%
+
+::for /f "tokens=* delims= " %%a in ('echo %stubnameRaw% ') do set stubname=%%a
+::set stubname=%stubname:~0,-7%
 
 if %debug%==1 (
 	echo Check Stub Name Variables
@@ -320,9 +326,6 @@ set multirgs=0
 
 :: This flag is for the extracted game name
 set GameNameFail=0
-
-:: Check Debug File
-if exist "%root%\debug.on" set debug=1
 
 
 :start
