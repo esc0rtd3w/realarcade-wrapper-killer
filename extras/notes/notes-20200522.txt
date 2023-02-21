@@ -1,0 +1,67 @@
+
+
+https://web.archive.org/web/*/ftp://ftp.gamehouse.com/pub/*
+https://web.archive.org/web/2008*/http://ftp.gamehouse.com:80/pub/legacy/
+https://web.archive.org/web/2008*/http://ftp.gamehouse.com:80/pub/nextgame/
+https://web.archive.org/web/2008*/http://ftp.gamehouse.com:80/pub/palm/
+
+https://web.archive.org/web/20080602055450/http://ftp.gamehouse.com:80/pub/legacy/
+https://web.archive.org/web/20080602055501/http://ftp.gamehouse.com:80/pub/nextgame/
+https://web.archive.org/web/20080602055506/http://ftp.gamehouse.com:80/pub/palm/
+
+
+
+https://web.archive.org/web/20000816002930/http://www.gamehouse.com:80/
+
+
+
+
+
+instant:
+
+Load webpage
+
+GET /games/ecomahjong HTTP/1.1
+Host: www.gamehouse.com
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cookie: gamehouseuser=true; ghvid=2020-5-4_f09dbe63-ad62-485f-9856-51a860c3ae49; abtest=; _ga=GA1.2.1163140542.1588578458; _fbp=fb.1.1588578459164.1121154376; _gu=cdf202df-3bfb-48a0-8f6f-c20fb94010a0; _gw=2.294580(sc~2v%2Cs~qalpbf)451082(sc~1%2Cs~q9sr1p)u%5B%2C%2C%2C%2C%5Dv%5B~frylq%2C~0%2C~1%5Da(); gamehouse.privacy=GDPR-2018.05; gamehouse.welcome=true; __gads=ID=43535b23795bc810:T=1588581036:S=ALNI_MZf9pZwv39xX028oIysfUivEMFC1A; gzid="20200521:8f608de0756bcdf1a3a66f6e4d205855"; rks=9*6000; cid=222; lid=1; hasFunpass=false; dastuttt=true; gamehouse.sid=s%3AXFOf5b_3RfXZvfqjfbtNnvAOTxAyLRfW%3Aanonymous.i5gKDYiYNoJsnFf6ULmQsP4tTRpt%2BuRLCe7kS5aG08I; _gs=2.s(src%3Dhttps%3A%2F%2Fwww.gamehouse.com%2F)c%5BDesktop%2CFirefox%2C233%3A766%3A67695%3A%2CWindows%2C162.224.210.93%5D; deviceId=f423b9c0a38388babfb5208be0b10d98c60ad370; ts_gh=aWQ9MjcxYmI4MiUzQTE3MjM4ODgyODJjJTNBLTRmNWMmZ2FtZVNldElEPTYwMDAmcGxheWVySUQ9LTEmdmlzaXRvcklEPTIwMjAwNTIxJTNBOGY2MDhkZTA3NTZiY2RmMWEzYTY2ZjZlNGQyMDU4NTU%3D; ets_gh=61149ad1993e96f3660028a187c4d71a268f41f99cd9d481d1c22db927f8938bc69ba0a1f19d4e92234b2b0e0faf04624a89e53a9161e52a5ca9678513d4014e887f37e21845f691f4755017df3384180664c402fdf05b0b74b519adcc047e968a0acdf39301f563485ea8a375820fdad898badcadbfa74bbaddafcb1ef66f6b; tks=9*6000; gsid=6000
+Upgrade-Insecure-Requests: 1
+
+
+
+
+
+Launch Game
+
+GET /v1/play.json?content_id=ccf7e5516ca2a44b7f3c1a9882ce805e&auth_token=f423b9c0a38388babfb5208be0b10d98c60ad370&player_id=3277015&game_id=3379&is_trial=false&query_id=1588739203516 HTTP/1.1
+Host: 127.0.0.1:17012
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Origin: https://www.gamehouse.com
+Connection: keep-alive
+
+
+
+
+
+members:
+
+GET / HTTP/1.1
+Host: gamehouse.com
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cookie: gamehouseuser=true; _ga=GA1.2.1163140542.1588578458; _fbp=fb.1.1588578459164.1121154376; gamehouse.privacy=GDPR-2018.05; gamehouse.welcome=true; __gads=ID=43535b23795bc810:T=1588581036:S=ALNI_MZf9pZwv39xX028oIysfUivEMFC1A; gzid="20200521:8f608de0756bcdf1a3a66f6e4d205855"; rks=9*6000; cid=222; lid=1; dastuttt=true; gamehouse.sid=s%3AXFOf5b_3RfXZvfqjfbtNnvAOTxAyLRfW%3Aanonymous.i5gKDYiYNoJsnFf6ULmQsP4tTRpt%2BuRLCe7kS5aG08I; ts_gh=aWQ9MjcxYmI4MiUzQTE3MjM4ODgyODJjJTNBLTRmNWMmZ2FtZVNldElEPTYwMDAmcGxheWVySUQ9LTEmdmlzaXRvcklEPTIwMjAwNTIxJTNBOGY2MDhkZTA3NTZiY2RmMWEzYTY2ZjZlNGQyMDU4NTU%3D; ets_gh=61149ad1993e96f3660028a187c4d71a268f41f99cd9d481d1c22db927f8938bc69ba0a1f19d4e92234b2b0e0faf04624a89e53a9161e52a5ca9678513d4014e887f37e21845f691f4755017df3384180664c402fdf05b0b74b519adcc047e968a0acdf39301f563485ea8a375820fdad898badcadbfa74bbaddafcb1ef66f6b; tks=9*6000; gsid=6000
+Upgrade-Insecure-Requests: 1
+
+
+
+
