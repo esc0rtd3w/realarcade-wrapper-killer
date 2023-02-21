@@ -1,0 +1,122 @@
+
+**--------------------------------------------------------------------------------**
+
+--------------------------------------------------------------------------------
+life.exe
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+cdaudio:
+
+00427CA3    B9 84CD4300     MOV ECX,0043CD84                         ; ASCII "cdaudio"
+00427CA8    8915 60764A00   MOV DWORD PTR DS:[4A7660],EDX
+00427CAE    8915 946C4A00   MOV DWORD PTR DS:[4A6C94],EDX
+00427CB4    894D DC         MOV DWORD PTR SS:[EBP-24],ECX
+00427CB7    8D45 D4         LEA EAX,DWORD PTR SS:[EBP-2C]
+00427CBA    50              PUSH EAX
+00427CBB    68 00200000     PUSH 2000
+00427CC0    68 03080000     PUSH 803
+00427CC5    52              PUSH EDX
+00427CC6    2E:FF15 FC904D0>CALL NEAR DWORD PTR CS:[<&WINMM.mciSendC>; WINMM.mciSendCommandA
+00427CCD    85C0            TEST EAX,EAX
+00427CCF    74 07           JE SHORT 00427CD8
+00427CD1    31C0            XOR EAX,EAX
+00427CD3    E9 B6000000     JMP 00427D8E
+00427CD8    8B45 D8         MOV EAX,DWORD PTR SS:[EBP-28]
+00427CDB    BE 0A000000     MOV ESI,0A
+00427CE0    A3 906C4A00     MOV DWORD PTR DS:[4A6C90],EAX
+00427CE5    8975 F8         MOV DWORD PTR SS:[EBP-8],ESI
+00427CE8    8D45 F4         LEA EAX,DWORD PTR SS:[EBP-C]
+00427CEB    50              PUSH EAX
+00427CEC    68 00040000     PUSH 400
+00427CF1    68 0D080000     PUSH 80D
+00427CF6    8B3D 906C4A00   MOV EDI,DWORD PTR DS:[4A6C90]
+00427CFC    57              PUSH EDI
+00427CFD    2E:FF15 FC904D0>CALL NEAR DWORD PTR CS:[<&WINMM.mciSendC>; WINMM.mciSendCommandA
+00427D04    85C0            TEST EAX,EAX
+00427D06    74 1F           JE SHORT 00427D27
+00427D08    6A 00           PUSH 0
+00427D0A    6A 00           PUSH 0
+00427D0C    68 04080000     PUSH 804
+00427D11    A1 906C4A00     MOV EAX,DWORD PTR DS:[4A6C90]
+00427D16    50              PUSH EAX
+00427D17    2E:FF15 FC904D0>CALL NEAR DWORD PTR CS:[<&WINMM.mciSendC>; WINMM.mciSendCommandA
+--------------------------------------------------------------------------------
+
+**--------------------------------------------------------------------------------**
+
+
+**--------------------------------------------------------------------------------**
+
+--------------------------------------------------------------------------------
+life_r1a.exe
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+launchFullGame:
+
+0040769A   . /0F84 44050000 JE 00407BE4
+004076A0   . |8D4C24 34     LEA ECX,DWORD PTR SS:[ESP+34]
+004076A4   . |897C24 4C     MOV DWORD PTR SS:[ESP+4C],EDI
+004076A8   . |895C24 48     MOV DWORD PTR SS:[ESP+48],EBX
+004076AC   . |885C24 38     MOV BYTE PTR SS:[ESP+38],BL
+004076B0   . |E8 2B9DFFFF   CALL 004013E0
+004076B5   . |6A 20         PUSH 20
+004076B7   . |68 10384300   PUSH 00433810                            ;  ASCII "Wrapper::startWrapper:demo:start"
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+RacNotRunning:
+
+00407740   . /0F85 5A010000 JNZ 004078A0
+00407746   . |E8 C5B40000   CALL 00412C10
+0040774B   . |84C0          TEST AL,AL
+0040774D     |0F84 4D010000 JE 004078A0
+00407753   . |68 2C394300   PUSH 0043392C                            ;  ASCII "Wrapper::startWrapper"
+00407758   . |8D4C24 58     LEA ECX,DWORD PTR SS:[ESP+58]
+0040775C   . |E8 6F9DFFFF   CALL 004014D0
+00407761   . |68 EC374300   PUSH 004337EC                            ;  ASCII "Wrapper::startWrapper:RacNotRunning"
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+prepareForLaunch:
+
+004158D4  |.  FF15 F8324300 CALL NEAR DWORD PTR DS:[<&USER32.SetSyst>; \SetSystemCursor
+004158DA  |.  39B424 840000>CMP DWORD PTR SS:[ESP+84],ESI
+004158E1  |.  C68424 C40100>MOV BYTE PTR SS:[ESP+1C4],2
+004158E9  |.  72 0D         JB SHORT 004158F8
+004158EB  |.  8B4C24 70     MOV ECX,DWORD PTR SS:[ESP+70]
+004158EF  |.  51            PUSH ECX
+004158F0  |.  E8 38BD0000   CALL 0042162D
+004158F5  |.  83C4 04       ADD ESP,4
+004158F8  |>  BE 0F000000   MOV ESI,0F
+004158FD  |>  6A 1A         PUSH 1A
+004158FF  |.  68 70474300   PUSH 00434770                            ;  ASCII "Launcher::prepareForLaunch"
+
+
+
+Safe EXIT Point to JMP to:
+
+00425C7F  |> \FF7424 04     PUSH DWORD PTR SS:[ESP+4]                ; /ExitCode
+00425C83  \.  FF15 B0314300 CALL NEAR DWORD PTR DS:[<&KERNEL32.ExitP>; \ExitProcess
+
+
+
+AFTER:
+
+004158D4  |.  FF15 F8324300 CALL NEAR DWORD PTR DS:[<&USER32.SetSyst>; \SetSystemCursor
+004158DA  |.  39B424 840000>CMP DWORD PTR SS:[ESP+84],ESI
+004158E1  |.  C68424 C40100>MOV BYTE PTR SS:[ESP+1C4],2
+004158E9      E9 91030100   JMP 00425C7F
+004158EE      90            NOP
+004158EF  |.  51            PUSH ECX
+004158F0  |.  E8 38BD0000   CALL 0042162D
+004158F5  |.  83C4 04       ADD ESP,4
+004158F8  |>  BE 0F000000   MOV ESI,0F
+004158FD  |>  6A 1A         PUSH 1A
+004158FF  |.  68 70474300   PUSH 00434770                            ;  ASCII "Launcher::prepareForLaunch"
+--------------------------------------------------------------------------------
+
+**--------------------------------------------------------------------------------**

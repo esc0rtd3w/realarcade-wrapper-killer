@@ -1,0 +1,57 @@
+btw0.pak (zip password):
+
+
+000C4380  |.  68 9C825D00   PUSH 005D829C                            ;  ASCII "lx5A1-20eDk5/2cv2+{4*"
+000C4385  |.  68 B4825D00   PUSH 005D82B4                            ;  ASCII "btw0.pak"
+
+
+
+
+
+
+
+
+system.dat (zip password):
+
+
+000C4094  |. /75 48         JNZ SHORT 000C40DE
+000C4096  |. |830D 243F6D00>OR DWORD PTR DS:[6D3F24],1
+000C409D  |. |895D FC       MOV DWORD PTR SS:[EBP-4],EBX
+000C40A0  |. |6A 0A         PUSH 0A                                  ; /Arg2 = 0000000A
+000C40A2  |. |BE 0F000000   MOV ESI,0F                               ; |
+000C40A7  |. |68 14825D00   PUSH 005D8214                            ; |Arg1 = 005D8214 ASCII "system.dat"
+000C40AC  |. |B9 083F6D00   MOV ECX,006D3F08                         ; |
+000C40B1  |. |8935 1C3F6D00 MOV DWORD PTR DS:[6D3F1C],ESI            ; |
+000C40B7  |. |891D 183F6D00 MOV DWORD PTR DS:[6D3F18],EBX            ; |
+000C40BD  |. |881D 083F6D00 MOV BYTE PTR DS:[6D3F08],BL              ; |
+000C40C3  |. |E8 88F0FFFF   CALL 000C3150                            ; \btw2.000C3150
+000C40C8  |. |68 30DD3F00   PUSH 003FDD30                            ; /Arg1 = 003FDD30
+000C40CD  |. |E8 23412500   CALL 003181F5                            ; \btw2.003181F5
+000C40D2  |. |83C4 04       ADD ESP,4
+000C40D5  |. |C745 FC FFFFF>MOV DWORD PTR SS:[EBP-4],-1
+000C40DC  |. |EB 05         JMP SHORT 000C40E3
+000C40DE  |> \BE 0F000000   MOV ESI,0F
+000C40E3  |>  F605 243F6D00>TEST BYTE PTR DS:[6D3F24],2
+000C40EA  |.  75 45         JNZ SHORT 000C4131
+000C40EC  |.  830D 243F6D00>OR DWORD PTR DS:[6D3F24],2
+000C40F3  |.  C745 FC 01000>MOV DWORD PTR SS:[EBP-4],1
+000C40FA  |.  6A 10         PUSH 10                                  ; /Arg2 = 00000010
+000C40FC  |.  68 20825D00   PUSH 005D8220                            ; |Arg1 = 005D8220 ASCII "iN42-0gx$8+azLD1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

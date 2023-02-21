@@ -1,0 +1,49 @@
+
+
+
+
+
+--------------------------------------------------------------------------------
+00408447   . /0F85 22010000 JNZ 0040856F
+0040844D   . |E8 BEEC0000   CALL 00417110
+00408452   . |84C0          TEST AL,AL
+00408454   . |0F84 15010000 JE 0040856F
+0040845A   . |68 348B4300   PUSH 00438B34                            ;  ASCII "Wrapper::startWrapper"
+0040845F   . |8D4C24 24     LEA ECX,DWORD PTR SS:[ESP+24]
+00408463   . |E8 6890FFFF   CALL 004014D0
+00408468   . |68 B4884300   PUSH 004388B4                            ;  ASCII "Wrapper::startWrapper:RacNotRunning"
+--------------------------------------------------------------------------------
+
+
+
+
+
+--------------------------------------------------------------------------------
+0041A079  |. /72 0D         JB SHORT 0041A088
+0041A07B  |. |8B4C24 70     MOV ECX,DWORD PTR SS:[ESP+70]
+0041A07F  |. |51            PUSH ECX
+0041A080  |. |E8 88B80000   CALL 0042590D
+0041A085  |. |83C4 04       ADD ESP,4
+0041A088  |> \BE 0F000000   MOV ESI,0F
+0041A08D  |>  6A 1A         PUSH 1A
+0041A08F  |.  68 E49F4300   PUSH 00439FE4                            ;  ASCII "Launcher::prepareForLaunch"
+
+
+
+Safe EXIT Point to JMP to:
+
+00429FFF  |> \FF7424 04     PUSH DWORD PTR SS:[ESP+4]                ; /ExitCode
+0042A003  \.  FF15 BC814300 CALL NEAR DWORD PTR DS:[<&KERNEL32.ExitP>; \ExitProcess
+
+
+AFTER:
+
+0041A079     /E9 81FF0000   JMP 00429FFF
+0041A07E     |90            NOP
+0041A07F  |. |51            PUSH ECX
+0041A080  |. |E8 88B80000   CALL 0042590D
+0041A085  |. |83C4 04       ADD ESP,4
+0041A088  |> |BE 0F000000   MOV ESI,0F
+0041A08D  |> |6A 1A         PUSH 1A
+0041A08F  |. |68 E49F4300   PUSH 00439FE4                            ;  ASCII "Launcher::prepareForLaunch"
+--------------------------------------------------------------------------------

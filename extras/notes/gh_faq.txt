@@ -1,0 +1,25 @@
+
+
+<div id="748">
+<b>http://support.gamehouse.com/app/answers/detail/a_id/748</b>
+
+Accessing games purchased under an old email address
+
+I bought games under an email address I no longer use. How can I access those games to redownload them?
+
+Your account should still be accessible using your old email address and password, even if you no longer have a paid subscription. Just click the My Games tab on <a href="http://www.realarcade.com/">www.realarcade.com</a> and log in using your previous email address and password.
+
+If you don't remember the password you used, you won't be able to reset it if you no longer have access to the old email address. In this case, you will need to <a href="http://rac.custhelp.com/app/contact">contact Customer Support</a> to reset your password and update the email address on your account.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<a href=""></a>

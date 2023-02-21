@@ -1,0 +1,6 @@
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse,DisplayIcon
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse,UninstallString
+REG,HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\Uninstall\GameHouse,DisplayName
+UNINSTSCR,C:\Program Files\RealArcade\Installer\uninstall\GameHouse.rguninst
+SHORTCUT,C:\Documents and Settings\user\Desktop\More Games at GameHouse.com.url
+SHORTCUT,C:\Documents and Settings\All Users\Start Menu\Programs\GameHouse\Visit GameHouse.url

@@ -1,0 +1,356 @@
+ Installation Started at   Tue Dec 13 [12/13/11], at 00:19:18.
+
+
+ %ENCSDK% c:\My Games\Tex Atomic's Big Bot Battles\
+ 
+ INTERNAL DEFINES INTERPRETATION STARTED...
+ 
+ %SPEC% C:\Users\Hacker\AppData\Local\Temp\27985284\
+ %ENCSDK% c:\My Games\Tex Atomic's Big Bot Battles\
+ %INSTALL% C:\Program Files\unRealArcade\loader\
+ %SETUP% C:\Program Files\unRealArcade\loader\
+ %SETUP_PATH% C:\Program Files\unRealArcade\loader\RGSinst.exe
+ %WINDOWS% C:\Windows\
+ %SystemRoot% C:\Windows\
+ %SystemDrive% C:\
+ %SYSTEM% C:\Windows\system32\
+ %STARTMENU% C:\Users\Hacker\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\
+ %STARTMENU2% C:\Users\Hacker\AppData\Roaming\Microsoft\Windows\Start Menu\
+ %QUICK_LAUNCH% 
+ %PROGRAM% C:\Program Files\
+ %RN_COMMON% C:\Program Files\Common Files\Real\Common\
+ %OS_COMMON% C:\Program Files\Common Files\
+ %DESKTOP% C:\Users\Hacker\Desktop\
+ %WBPLUGINS% C:\Program Files\Common Files\Real\Plugins\
+ %UPDATE% C:\Program Files\Common Files\Real\Update\
+ %CODECS% C:\Program Files\Common Files\Real\Codecs\
+ %PLUGINS% C:\Program Files\Common Files\Real\Plugins\
+ 
+ DEFINES INTERPRETATION ENDED...
+ 
+  Searching if previosly component 'fe872031:1.0' is installed. 
+  Component 'fe872031:1.0' has been detected. Verifying the FULL VERSION INFORMATION. 
+  - FULL VERSION Verification has succeeded. Version less than or equal to 1.0.0.1000.
+ 
+  - NEW Installation method detected.
+ 
+  Searching if previosly component 'fe872031:1.0' is installed. 
+  Component 'fe872031:1.0' has been detected. Verifying the FULL VERSION INFORMATION. 
+  - FULL VERSION Verification has succeeded. Version less than or equal to 1.0.0.1000.
+ 
+  - NEW Installation method detected.
+ 
+  Uninstall INI file 'c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile.txt' located.
+ Performing component UNINSTALLATION : 
+ 
+    <+> 24 files to delete.
+ 
+ 
+    <+> 10 registry keys to remove.
+ 
+ 
+    <+> 6 folders to destroy.
+ 
+     - Removing File1 - C:\Program Files\Common Files\Real\Plugins\lith3210.dll failed. Error Code 0. 
+     - Removing File2 - NOREMOVE flag honored for C:\PROGRA~1\UNREAL~1\LOADER\Lith\d3d.ren. 
+     - Removing File3 - NOREMOVE flag honored for C:\PROGRA~1\UNREAL~1\LOADER\Lith\dx7.snd. 
+     - Removing File4 - NOREMOVE flag honored for C:\PROGRA~1\UNREAL~1\LOADER\Lith\lithtech.exe. 
+     - Removing File5 - NOREMOVE flag honored for C:\PROGRA~1\UNREAL~1\LOADER\Lith\ltmsg.dll. 
+     - Removing File6 - NOREMOVE flag honored for C:\PROGRA~1\UNREAL~1\LOADER\Lith\server.dll. 
+     - Removing File7 - NOREMOVE flag honored for C:\PROGRA~1\UNREAL~1\LOADER\Lith\soft.ren. 
+     - Removing File8 - c:\My Games\Tex Atomic's Big Bot Battles\30c586c1-6f8a-48a8-b6e5-5a8b0647934c.mez succeeded. 
+     - Removing File9 - c:\My Games\Tex Atomic's Big Bot Battles\autoexec.cfg succeeded. 
+     - Removing File10 - c:\My Games\Tex Atomic's Big Bot Battles\bots.s14 succeeded. 
+     - Removing File11 - c:\My Games\Tex Atomic's Big Bot Battles\botsfree.rez succeeded. 
+     - Removing File12 - c:\My Games\Tex Atomic's Big Bot Battles\defaults.cfg succeeded. 
+     - Removing File13 - c:\My Games\Tex Atomic's Big Bot Battles\joystick.cfg succeeded. 
+     - Removing File14 - c:\My Games\Tex Atomic's Big Bot Battles\Music\Game\menutrack.mp3 failed. Error Code 5. 
+      + Creating registry key 'Software\Microsoft\Windows\CurrentVersion\RunOnce' has succeeded. 
+      + Setting registry key value 'command.com /c "C:\Users\Hacker\AppData\Local\Temp\RAE89.bat"' has succeeded. 
+     - Removing File15 - c:\My Games\Tex Atomic's Big Bot Battles\Music\track1.mp3 failed. Error Code 5. 
+     - Removing File16 - c:\My Games\Tex Atomic's Big Bot Battles\Music\track2.mp3 failed. Error Code 5. 
+     - Removing File17 - c:\My Games\Tex Atomic's Big Bot Battles\pxl.cfg succeeded. 
+     - Removing File18 - c:\My Games\Tex Atomic's Big Bot Battles\readme.txt succeeded. 
+     - Removing File19 - c:\My Games\Tex Atomic's Big Bot Battles\sidewinder.cfg succeeded. 
+     - Removing File20 - c:\My Games\Tex Atomic's Big Bot Battles\Video\intel.rm succeeded. 
+     - Removing File21 - c:\My Games\Tex Atomic's Big Bot Battles\Video\lithtech.rm succeeded. 
+     - Removing File22 - c:\My Games\Tex Atomic's Big Bot Battles\Video\real.rm succeeded. 
+     - Removing File23 - c:\My Games\Tex Atomic's Big Bot Battles\Setup.ini succeeded. 
+     - Removing File24 - C:\Users\Hacker\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Real\Games\Tex Atomic's Big Bot Battles.lnk succeeded. 
+     - Removing RegKey1 - -2147483648\SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\fe872031:1.0 succeeded. 
+     - Removing RegKey2 - -2147483648\SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\fe872031:1.0\Uninstall failed. 
+     - Removing RegKey3 - -2147483648\SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\fe872031:1.0\Product0 failed. 
+     - Removing RegKey4 - -2147483648\SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\fe872031:1.0\DisplayName failed. 
+     - Removing RegKey5 - -2147483648\SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\fe872031:1.0\DisplayName failed. 
+     - Removing RegKey6 - -2147483648\SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\fe872031:1.0\Product1 failed. 
+     - Removing RegKey7 - -2147483648\SOFTWARE\RealNetworks\Games\Tex Atomic's Big Bot Battles.fe872031 succeeded. 
+     - Removing RegKey8 - -2147483648\SOFTWARE\RealNetworks\Games\Tex Atomic's Big Bot Battles.fe872031\1.0 failed. 
+     - Removing RegKey9 - -2147483648\SOFTWARE\RealNetworks\Games\Tex Atomic's Big Bot Battles.fe872031\1.0\Executable failed. 
+     - Removing RegKey10 - -2147483648\SOFTWARE\RealNetworks\Games\Tex Atomic's Big Bot Battles.fe872031\1.0\InstallPath failed. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile0.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile1.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile2.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile3.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile4.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile5.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile6.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile7.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile8.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile9.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile10.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile11.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile12.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile13.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile14.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile15.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile16.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile17.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile18.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile19.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile20.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile21.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile22.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile23.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile24.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile25.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile26.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile27.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile28.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile29.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile30.txt succeeded. 
+     - Removing File0 - c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile31.txt succeeded. 
+     - Removing Folder1 - c:\My Games\Tex Atomic's Big Bot Battles\Video\ succeeded. 
+     - Removing Folder2 - c:\My Games\Tex Atomic's Big Bot Battles\Music\Game\ aborted because files exist. 
+     - Removing Folder3 - c:\My Games\Tex Atomic's Big Bot Battles\Music\ aborted because files exist. 
+     - Removing Folder4 - C:\PROGRA~1\UNREAL~1\LOADER\Lith\ aborted because files exist. 
+     - Removing Folder5 - C:\Program Files\Common Files\Real\Plugins\ aborted because files exist. 
+     - Removing Folder6 - c:\My Games\Tex Atomic's Big Bot Battles\ aborted because files exist. 
+ 
+    <+> Creating registry keys with Update/Uninstall information...
+ 
+      + Creating registry key 'SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\fe872031:1.0' has succeeded. 
+      + Setting registry key value '1.0.0.1000' has succeeded. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\fe872031:1.0\Uninstall' has succeeded. 
+      + Setting registry key value 'c:\My Games\Tex Atomic's Big Bot Battles\theUninstallFile.txt' has succeeded. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\fe872031:1.0\Product0' has succeeded. 
+      + Setting registry key value 'RealArcade:1:2' has succeeded. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\fe872031:1.0\DisplayName' has succeeded. 
+      + Setting registry key value 'Tex Atomic's Big Bot Battles' has succeeded. 
+ 
+ PREPARING COMMANDS UNQUEUING AND EXECUTION...
+ 
+ 
+ EXECUTING COMMAND #1 : 'COPY' 
+   - Script line : 2. 
+   - Parameter 1 : C:\Users\Hacker\AppData\Local\Temp\27985284\Plugins\LITH3210.DLL
+   - Parameter 2 : C:\Program Files\Common Files\Real\Plugins\
+   - Parameter 3 : NoRemove
+   - Executing... 
+      + Sending CALLBACK Code 16468. 
+      + Preparing COPY Command.
+ 
+      + Sending CALLBACK Code 16488. 
+      + A shared reference count in the registry for C:\Program Files\Common Files\Real\Plugins\lith3210.dll was created
+ 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Plugins\lith3210.dll' to 'C:\Program Files\Common Files\Real\Plugins\lith3210.dll' has succeeded.
+ 
+      + C:\Program Files\Common Files\Real\Plugins\lith3210.dll has the NOREMOVE flag set, adding to uninstall info.
+ 
+      + Adding SHARED flag to uninstall info for C:\Program Files\Common Files\Real\Plugins\lith3210.dll.
+ 
+ 
+ EXECUTING COMMAND #2 : 'COPY' 
+   - Script line : 3. 
+   - Parameter 1 : C:\Users\Hacker\AppData\Local\Temp\27985284\Engine\*.*
+   - Parameter 2 : C:\Program Files\unRealArcade\loader\Lith\
+   - Parameter 3 : VER
+   - Parameter 4 : NoRemove
+   - Executing... 
+      + Sending CALLBACK Code 16468. 
+      + Preparing COPY Command.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Engine\d3d.ren' to 'C:\Program Files\unRealArcade\loader\Lith\d3d.ren' has succeeded.
+ 
+      + C:\Program Files\unRealArcade\loader\Lith\d3d.ren has the NOREMOVE flag set, adding to uninstall info.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Engine\dx7.snd' to 'C:\Program Files\unRealArcade\loader\Lith\dx7.snd' has succeeded.
+ 
+      + C:\Program Files\unRealArcade\loader\Lith\dx7.snd has the NOREMOVE flag set, adding to uninstall info.
+ 
+      + Sending CALLBACK Code 16488. 
+      + VER flag set : The versions of 'C:\Users\Hacker\AppData\Local\Temp\27985284\Engine\lithtech.exe' is less than or equal to 'C:\Program Files\unRealArcade\loader\Lith\lithtech.exe, copy stopped'
+ 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Engine\lithtech.exe' to 'C:\Program Files\unRealArcade\loader\Lith\lithtech.exe' was not executed because of flag success.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Engine\ltmsg.dll' to 'C:\Program Files\unRealArcade\loader\Lith\ltmsg.dll' has succeeded.
+ 
+      + C:\Program Files\unRealArcade\loader\Lith\ltmsg.dll has the NOREMOVE flag set, adding to uninstall info.
+ 
+      + Sending CALLBACK Code 16488. 
+      + VER flag set : The versions of 'C:\Users\Hacker\AppData\Local\Temp\27985284\Engine\server.dll' is less than or equal to 'C:\Program Files\unRealArcade\loader\Lith\server.dll, copy stopped'
+ 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Engine\server.dll' to 'C:\Program Files\unRealArcade\loader\Lith\server.dll' was not executed because of flag success.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Engine\soft.ren' to 'C:\Program Files\unRealArcade\loader\Lith\soft.ren' has succeeded.
+ 
+      + C:\Program Files\unRealArcade\loader\Lith\soft.ren has the NOREMOVE flag set, adding to uninstall info.
+ 
+ 
+ EXECUTING COMMAND #3 : 'COPY' 
+   - Script line : 4. 
+   - Parameter 1 : C:\Users\Hacker\AppData\Local\Temp\27985284\Free\*.*
+   - Parameter 2 : c:\My Games\Tex Atomic's Big Bot Battles\
+   - Executing... 
+      + Sending CALLBACK Code 16468. 
+      + Preparing COPY Command.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Free\30c586c1-6f8a-48a8-b6e5-5a8b0647934c.mez' to 'c:\My Games\Tex Atomic's Big Bot Battles\30c586c1-6f8a-48a8-b6e5-5a8b0647934c.mez' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Free\autoexec.cfg' to 'c:\My Games\Tex Atomic's Big Bot Battles\autoexec.cfg' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Free\bots.s14' to 'c:\My Games\Tex Atomic's Big Bot Battles\bots.s14' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Free\botsfree.rez' to 'c:\My Games\Tex Atomic's Big Bot Battles\botsfree.rez' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Free\defaults.cfg' to 'c:\My Games\Tex Atomic's Big Bot Battles\defaults.cfg' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Free\joystick.cfg' to 'c:\My Games\Tex Atomic's Big Bot Battles\joystick.cfg' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Free\Music\Game\menutrack.mp3' to 'c:\My Games\Tex Atomic's Big Bot Battles\Music\Game\menutrack.mp3' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Free\Music\track1.mp3' to 'c:\My Games\Tex Atomic's Big Bot Battles\Music\track1.mp3' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Free\Music\track2.mp3' to 'c:\My Games\Tex Atomic's Big Bot Battles\Music\track2.mp3' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Free\pxl.cfg' to 'c:\My Games\Tex Atomic's Big Bot Battles\pxl.cfg' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Free\readme.txt' to 'c:\My Games\Tex Atomic's Big Bot Battles\readme.txt' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Free\sidewinder.cfg' to 'c:\My Games\Tex Atomic's Big Bot Battles\sidewinder.cfg' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Free\Video\intel.rm' to 'c:\My Games\Tex Atomic's Big Bot Battles\Video\intel.rm' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Free\Video\lithtech.rm' to 'c:\My Games\Tex Atomic's Big Bot Battles\Video\lithtech.rm' has succeeded.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\Free\Video\real.rm' to 'c:\My Games\Tex Atomic's Big Bot Battles\Video\real.rm' has succeeded.
+ 
+ 
+ EXECUTING COMMAND #4 : 'DEL' 
+   - Script line : 5. 
+   - Parameter 1 : c:\My Games\Tex Atomic's Big Bot Battles\generic.spc
+   - Executing... 
+      + Sending CALLBACK Code 16469. 
+      + Deleting file : c:\My Games\Tex Atomic's Big Bot Battles\generic.spc
+     + DeleteFile has failed. Extended ERROR Code 3. 
+ 
+ EXECUTING COMMAND #5 : 'CMPPREF' 
+   - Script line : 7. 
+   - Parameter 1 : DisplayName
+   - Parameter 2 : "Tex Atomic's Big Bot Battles"
+   - Executing... 
+      + Sending CALLBACK Code 16467. 
+      + Preparing CreateRegKey [DisplayName, "Tex Atomic's Big Bot Battles"]. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\fe872031:1.0\DisplayName' has succeeded. 
+      + Setting registry key value 'Tex Atomic's Big Bot Battles' has succeeded. 
+ 
+ EXECUTING COMMAND #6 : 'CMPPREF' 
+   - Script line : 8. 
+   - Parameter 1 : Product1
+   - Parameter 2 : "RealArcadeGames:1.0"
+   - Executing... 
+      + Sending CALLBACK Code 16467. 
+      + Preparing CreateRegKey [Product1, "RealArcadeGames:1.0"]. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\fe872031:1.0\Product1' has succeeded. 
+      + Setting registry key value 'RealArcadeGames:1.0' has succeeded. 
+ 
+ EXECUTING COMMAND #7 : 'COPY' 
+   - Script line : 9. 
+   - Parameter 1 : C:\Users\Hacker\AppData\Local\Temp\27985284\Setup.ini
+   - Parameter 2 : c:\My Games\Tex Atomic's Big Bot Battles\Setup.ini
+   - Executing... 
+      + Sending CALLBACK Code 16468. 
+      + Preparing COPY Command.
+ 
+      + Sending CALLBACK Code 16488. 
+      + Copying file 'C:\Users\Hacker\AppData\Local\Temp\27985284\setup.ini' to 'c:\My Games\Tex Atomic's Big Bot Battles\Setup.ini' has succeeded.
+ 
+ 
+ EXECUTING COMMAND #8 : 'REG' 
+   - Script line : 10. 
+   - Parameter 1 : HKCR
+   - Parameter 2 : "SOFTWARE\RealNetworks\Games\Tex Atomic's Big Bot Battles.fe872031"
+   - Executing... 
+      + Sending CALLBACK Code 16471. 
+      + Preparing REG Command.
+      + Creating Key '"SOFTWARE\RealNetworks\Games\Tex Atomic's Big Bot Battles.fe872031"' under 'HKEY_CLASSES_ROOT', Name = '', Value = ''. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Games\Tex Atomic's Big Bot Battles.fe872031' has succeeded. 
+ 
+ EXECUTING COMMAND #9 : 'REG' 
+   - Script line : 11. 
+   - Parameter 1 : HKCR
+   - Parameter 2 : "SOFTWARE\RealNetworks\Games\Tex Atomic's Big Bot Battles.fe872031\1.0"
+   - Executing... 
+      + Sending CALLBACK Code 16471. 
+      + Preparing REG Command.
+      + Creating Key '"SOFTWARE\RealNetworks\Games\Tex Atomic's Big Bot Battles.fe872031\1.0"' under 'HKEY_CLASSES_ROOT', Name = '', Value = ''. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Games\Tex Atomic's Big Bot Battles.fe872031\1.0' has succeeded. 
+ 
+ EXECUTING COMMAND #10 : 'REG' 
+   - Script line : 12. 
+   - Parameter 1 : HKCR
+   - Parameter 2 : "SOFTWARE\RealNetworks\Games\Tex Atomic's Big Bot Battles.fe872031\1.0"
+   - Parameter 3 : "Executable"
+   - Parameter 4 : "BotsFree.rez"
+   - Executing... 
+      + Sending CALLBACK Code 16471. 
+      + Preparing REG Command.
+      + Creating Key '"SOFTWARE\RealNetworks\Games\Tex Atomic's Big Bot Battles.fe872031\1.0"' under 'HKEY_CLASSES_ROOT', Name = '"Executable"', Value = '"BotsFree.rez"'. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Games\Tex Atomic's Big Bot Battles.fe872031\1.0' has succeeded. 
+      + Setting registry key value 'BotsFree.rez' has succeeded. 
+ 
+ EXECUTING COMMAND #11 : 'REG' 
+   - Script line : 13. 
+   - Parameter 1 : HKCR
+   - Parameter 2 : "SOFTWARE\RealNetworks\Games\Tex Atomic's Big Bot Battles.fe872031\1.0"
+   - Parameter 3 : "InstallPath"
+   - Parameter 4 : "c:\My Games\Tex Atomic's Big Bot Battles\"
+   - Executing... 
+      + Sending CALLBACK Code 16471. 
+      + Preparing REG Command.
+      + Creating Key '"SOFTWARE\RealNetworks\Games\Tex Atomic's Big Bot Battles.fe872031\1.0"' under 'HKEY_CLASSES_ROOT', Name = '"InstallPath"', Value = '"c:\My Games\Tex Atomic's Big Bot Battles\"'. 
+      + Creating registry key 'SOFTWARE\RealNetworks\Games\Tex Atomic's Big Bot Battles.fe872031\1.0' has succeeded. 
+      + Setting registry key value 'c:\My Games\Tex Atomic's Big Bot Battles\' has succeeded. 
+ 
+ EXECUTING COMMAND #12 : 'STARTMENU' 
+   - Script line : 14. 
+   - Parameter 1 : Real\Games
+   - Parameter 2 : "Tex Atomic's Big Bot Battles"
+   - Parameter 3 : "C:\Program Files\unRealArcade\loader\RNArcade.exe"
+   - Parameter 4 : "/launch 30C586C1-6F8A-48a8-B6E5-5A8B0647934C"
+   - Executing... 
+      + Sending CALLBACK Code 16475. 
+      + Creation of 'C:\Users\Hacker\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Real\Games\Tex Atomic's Big Bot Battles' has succeeded.
+ 
+ Installation Ended at   at 00:19:22.
+
+
