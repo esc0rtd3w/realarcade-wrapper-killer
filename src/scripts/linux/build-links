@@ -71,7 +71,7 @@ testPage="http://www.gamehouse.com/download-games/experiment"
 amiDirBase="C:\\\\ProgramData\\\\activeMARK\\\\instant\\\\apps\\\\"
 amiDirName="xxxx-xxxxxxxx-xxxx0000000000000000"
 
-#wgetHeader="--header=\"Cookie: gamehouseuser=true\" --header=\"User-Agent: RealArcade Wrapper Killer v5.7.1\""
+#wgetHeader="--header=\"Cookie: gamehouseuser=true\" --header=\"User-Agent: RealArcade Wrapper Killer v6.0.0\""
 
 # Data Gathering URL
 # http://www.gamehouse.com/datagathering/actiontracking?actiontrackingkindid=225&actiontrackingsourceid=4458
@@ -353,8 +353,8 @@ dumpPages(){
 dumpJsonGHRFS(){
 
 	
-	#wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.7.1" -O "$outputJSON" "$baseURLRFSGHWeb$nameDashes.json"
-	wget --quiet --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.7.1" -O "$outputJSON" "$baseURLRFSGHWeb$nameDashes.json"
+	#wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v6.0.0" -O "$outputJSON" "$baseURLRFSGHWeb$nameDashes.json"
+	wget --quiet --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v6.0.0" -O "$outputJSON" "$baseURLRFSGHWeb$nameDashes.json"
 
 	installerName=$(getinstallerName)
 	offeringName=$(getOfferingName)
@@ -592,8 +592,8 @@ removeBadChars(){
 
 dumpPageToTemp(){
 
-	#wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.7.1" -O "$outputTMP" "$1"
-	wget --quiet --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v5.7.1" -O "$outputTMP" "$1"
+	#wget --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v6.0.0" -O "$outputTMP" "$1"
+	wget --quiet --header="Cookie: gamehouseuser=true" --header="User-Agent: RealArcade Wrapper Killer v6.0.0" -O "$outputTMP" "$1"
 
 }
 

@@ -6,7 +6,7 @@ title RealArcade Wrapper Killer [Getting Version Info...]    (.-+'~^-+ Demo unWr
 ::RealArcade Wrapper Killer Release Version
 ::-----------------------------------------------------------------------------------
 
-set rawkver=5.7.1
+set rawkver=6.0.0
 
 :: Setting Debug Flag To 1 Will Force Extra Output and Logging using core_debug script
 set debug=0
